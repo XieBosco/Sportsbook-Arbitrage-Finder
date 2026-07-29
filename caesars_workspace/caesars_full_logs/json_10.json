@@ -1,0 +1,341 @@
+{
+  "_DEBUG_URL": "https://api.americanwagering.com/regions/ca/locations/on/brands/czr/gw/growth/v4/sports/baseball/banners",
+  "data": [
+    {
+      "collectionDisplayName": "Ben Rice & Kyle Schwarber Each 2+ Total Bases on 7/26",
+      "bannerTypeId": "event",
+      "bannerLayoutId": "selection_1",
+      "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+      "marketId": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+      "selectionId": "c9cec91d-8749-40d6-b2d0-b1cfc4226da8",
+      "bannerTitle": "Rice & Schwarber Each 2+ Total Bases",
+      "bannerSubtext3": "Was +400",
+      "selectionDisplayName": "Now",
+      "hideWhenLoggedIn": false,
+      "displayFrom": "2026-07-26T04:00:00Z",
+      "displayTo": "2027-07-26T04:00:00Z",
+      "imageUrl": "/us/assets/images/sportsbook/banners/RiceSchwarber26.png",
+      "includeSegments": [],
+      "excludeSegments": [],
+      "event": {
+        "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+        "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+        "startTime": "2026-07-26T23:20:00Z",
+        "state": "open",
+        "display": true,
+        "tradedInPlay": true,
+        "active": true,
+        "started": false,
+        "markets": [
+          {
+            "id": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+            "name": "|Odds Boost|",
+            "display": true,
+            "sixPackView": false,
+            "displayName": "|Odds Boost|",
+            "tradedInPlay": false,
+            "selections": [
+              {
+                "id": "c9cec91d-8749-40d6-b2d0-b1cfc4226da8",
+                "display": true,
+                "name": "Ben Rice & Kyle Schwarber Each 2+ Total Bases on 7/26",
+                "sportId": "baseball",
+                "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+                "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "marketId": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+                "active": true,
+                "type": "generic",
+                "price": {
+                  "f": "9/2",
+                  "d": 5.5,
+                  "a": 450
+                }
+              }
+            ],
+            "spOffered": false,
+            "type": "standard-market-template",
+            "active": true,
+            "byoEligible": false,
+            "displayOrder": 11
+          }
+        ],
+        "byoEligible": true,
+        "marketCountActivePreMatch": 0,
+        "marketCountActiveInPlay": 0,
+        "metadata": {
+          "variableSources": "don_best,event_ticker,WilliamHillFixture",
+          "awayTeamName": "New York Yankees",
+          "incidentSource": "bet_radar_livescout",
+          "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+          "homeTeamBiNumber": "930",
+          "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+          "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+          "currentAwayStartingPitcher": "W Warren",
+          "currentHomeStartingPitcherFrom": "1.785001140607E12",
+          "pricingSource": "CZRS",
+          "homeTeamName": "Philadelphia Phillies",
+          "displayOrder": "4",
+          "currentAwayStartingPitcherFrom": "1.785001140607E12",
+          "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+          "currentHomeStartingPitcherId": "360767",
+          "awayTeamBiNumber": "929",
+          "currentHomeStartingPitcher": "C Sanchez",
+          "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+          "currentAwayStartingPitcherId": "405431"
+        }
+      }
+    },
+    {
+      "collectionDisplayName": "Phillies Win & Bryce Harper HR on 7/26",
+      "bannerTypeId": "event",
+      "bannerLayoutId": "selection_1",
+      "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+      "marketId": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+      "selectionId": "8e23977c-c801-4450-9f6f-b8d362573380",
+      "bannerTitle": "Phillies Win & Harper HR",
+      "bannerSubtext3": "Was +425",
+      "selectionDisplayName": "Now",
+      "hideWhenLoggedIn": false,
+      "displayFrom": "2026-07-26T04:00:00Z",
+      "displayTo": "2027-07-26T04:00:00Z",
+      "imageUrl": "/us/assets/images/sportsbook/banners/Harper2026.jpg",
+      "includeSegments": [],
+      "excludeSegments": [],
+      "event": {
+        "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+        "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+        "startTime": "2026-07-26T23:20:00Z",
+        "state": "open",
+        "display": true,
+        "tradedInPlay": true,
+        "active": true,
+        "started": false,
+        "markets": [
+          {
+            "id": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+            "name": "|Odds Boost|",
+            "display": true,
+            "sixPackView": false,
+            "displayName": "|Odds Boost|",
+            "tradedInPlay": false,
+            "selections": [
+              {
+                "id": "8e23977c-c801-4450-9f6f-b8d362573380",
+                "display": true,
+                "name": "Phillies Win & Bryce Harper HR on 7/26",
+                "sportId": "baseball",
+                "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+                "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "marketId": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+                "active": true,
+                "type": "generic",
+                "price": {
+                  "f": "24/5",
+                  "d": 5.8,
+                  "a": 480
+                }
+              }
+            ],
+            "spOffered": false,
+            "type": "standard-market-template",
+            "active": true,
+            "byoEligible": false,
+            "displayOrder": 11
+          }
+        ],
+        "byoEligible": true,
+        "marketCountActivePreMatch": 0,
+        "marketCountActiveInPlay": 0,
+        "metadata": {
+          "variableSources": "don_best,event_ticker,WilliamHillFixture",
+          "awayTeamName": "New York Yankees",
+          "incidentSource": "bet_radar_livescout",
+          "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+          "homeTeamBiNumber": "930",
+          "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+          "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+          "currentAwayStartingPitcher": "W Warren",
+          "currentHomeStartingPitcherFrom": "1.785001140607E12",
+          "pricingSource": "CZRS",
+          "homeTeamName": "Philadelphia Phillies",
+          "displayOrder": "4",
+          "currentAwayStartingPitcherFrom": "1.785001140607E12",
+          "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+          "currentHomeStartingPitcherId": "360767",
+          "awayTeamBiNumber": "929",
+          "currentHomeStartingPitcher": "C Sanchez",
+          "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+          "currentAwayStartingPitcherId": "405431"
+        }
+      }
+    },
+    {
+      "collectionDisplayName": "Cristopher Sanchez 8+ Strikeouts & No Run in 1st Inning of Yankees @ Phillies on 7/26",
+      "bannerTypeId": "event",
+      "bannerLayoutId": "selection_1",
+      "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+      "marketId": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+      "selectionId": "74ddade7-c0c2-48e5-8b16-18b4e8ee17be",
+      "bannerTitle": "Sanchez 8+ Strikeouts & No Run in 1st Inning",
+      "bannerSubtext3": "Was +270",
+      "selectionDisplayName": "Now",
+      "hideWhenLoggedIn": false,
+      "displayFrom": "2026-07-26T04:00:00Z",
+      "displayTo": "2027-07-26T04:00:00Z",
+      "imageUrl": "/us/assets/images/sportsbook/banners/ChristopherSanchez26.png",
+      "includeSegments": [],
+      "excludeSegments": [],
+      "event": {
+        "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+        "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+        "startTime": "2026-07-26T23:20:00Z",
+        "state": "open",
+        "display": true,
+        "tradedInPlay": true,
+        "active": true,
+        "started": false,
+        "markets": [
+          {
+            "id": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+            "name": "|Odds Boost|",
+            "display": true,
+            "sixPackView": false,
+            "displayName": "|Odds Boost|",
+            "tradedInPlay": false,
+            "selections": [
+              {
+                "id": "74ddade7-c0c2-48e5-8b16-18b4e8ee17be",
+                "display": true,
+                "name": "Cristopher Sanchez 8+ Strikeouts & No Run in 1st Inning of Yankees @ Phillies on 7/26",
+                "sportId": "baseball",
+                "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+                "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "marketId": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+                "active": true,
+                "type": "generic",
+                "price": {
+                  "f": "3/1",
+                  "d": 4.0,
+                  "a": 300
+                }
+              }
+            ],
+            "spOffered": false,
+            "type": "standard-market-template",
+            "active": true,
+            "byoEligible": false,
+            "displayOrder": 11
+          }
+        ],
+        "byoEligible": true,
+        "marketCountActivePreMatch": 0,
+        "marketCountActiveInPlay": 0,
+        "metadata": {
+          "variableSources": "don_best,event_ticker,WilliamHillFixture",
+          "awayTeamName": "New York Yankees",
+          "incidentSource": "bet_radar_livescout",
+          "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+          "homeTeamBiNumber": "930",
+          "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+          "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+          "currentAwayStartingPitcher": "W Warren",
+          "currentHomeStartingPitcherFrom": "1.785001140607E12",
+          "pricingSource": "CZRS",
+          "homeTeamName": "Philadelphia Phillies",
+          "displayOrder": "4",
+          "currentAwayStartingPitcherFrom": "1.785001140607E12",
+          "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+          "currentHomeStartingPitcherId": "360767",
+          "awayTeamBiNumber": "929",
+          "currentHomeStartingPitcher": "C Sanchez",
+          "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+          "currentAwayStartingPitcherId": "405431"
+        }
+      }
+    },
+    {
+      "collectionDisplayName": "Alec Bohm, Paul Goldschmidt & J.T. Realmuto Each 1+ Hits on 7/26",
+      "bannerTypeId": "event",
+      "bannerLayoutId": "selection_1",
+      "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+      "marketId": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+      "selectionId": "9f573398-1e26-43ea-831f-d2ae4caf2358",
+      "bannerTitle": "Bohm, Goldschmidt & Realmuto Each 1+ Hits",
+      "bannerSubtext3": "Was +115",
+      "selectionDisplayName": "Now",
+      "hideWhenLoggedIn": false,
+      "displayFrom": "2026-07-26T04:00:00Z",
+      "displayTo": "2027-07-26T04:00:00Z",
+      "imageUrl": "/us/assets/images/sportsbook/banners/YankeesPhillies.jpg",
+      "includeSegments": [],
+      "excludeSegments": [],
+      "event": {
+        "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+        "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+        "startTime": "2026-07-26T23:20:00Z",
+        "state": "open",
+        "display": true,
+        "tradedInPlay": true,
+        "active": true,
+        "started": false,
+        "markets": [
+          {
+            "id": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+            "name": "|Odds Boost|",
+            "display": true,
+            "sixPackView": false,
+            "displayName": "|Odds Boost|",
+            "tradedInPlay": false,
+            "selections": [
+              {
+                "id": "9f573398-1e26-43ea-831f-d2ae4caf2358",
+                "display": true,
+                "name": "Alec Bohm, Paul Goldschmidt & J.T. Realmuto Each 1+ Hits on 7/26",
+                "sportId": "baseball",
+                "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+                "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "marketId": "895260ed-6a52-4ae8-b8bd-e3eac23907ff",
+                "active": true,
+                "type": "generic",
+                "price": {
+                  "f": "2/1",
+                  "d": 3.0,
+                  "a": 200
+                }
+              }
+            ],
+            "spOffered": false,
+            "type": "standard-market-template",
+            "active": true,
+            "byoEligible": false,
+            "displayOrder": 11
+          }
+        ],
+        "byoEligible": true,
+        "marketCountActivePreMatch": 0,
+        "marketCountActiveInPlay": 0,
+        "metadata": {
+          "variableSources": "don_best,event_ticker,WilliamHillFixture",
+          "awayTeamName": "New York Yankees",
+          "incidentSource": "bet_radar_livescout",
+          "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+          "homeTeamBiNumber": "930",
+          "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+          "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+          "currentAwayStartingPitcher": "W Warren",
+          "currentHomeStartingPitcherFrom": "1.785001140607E12",
+          "pricingSource": "CZRS",
+          "homeTeamName": "Philadelphia Phillies",
+          "displayOrder": "4",
+          "currentAwayStartingPitcherFrom": "1.785001140607E12",
+          "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+          "currentHomeStartingPitcherId": "360767",
+          "awayTeamBiNumber": "929",
+          "currentHomeStartingPitcher": "C Sanchez",
+          "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+          "currentAwayStartingPitcherId": "405431"
+        }
+      }
+    }
+  ]
+}

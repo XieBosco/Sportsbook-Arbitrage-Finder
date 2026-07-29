@@ -1,0 +1,3637 @@
+{
+  "_DEBUG_URL": "https://api.americanwagering.com/regions/ca/locations/on/brands/czr/sb/v3/teamMetadata",
+  "data": {
+    "Los Angeles Kings": {
+      "teamName": "Los Angeles Kings",
+      "teamShortName": "LA Kings",
+      "teamCity": "Los Angeles",
+      "teamNickName": "Kings",
+      "teamAbbreviation": "LAK"
+    },
+    "Ball State Cardinals": {
+      "teamName": "Ball State Cardinals",
+      "teamShortName": "BALL Cardinals",
+      "teamCity": "Ball State",
+      "teamNickName": "Cardinals",
+      "teamAbbreviation": "BALL"
+    },
+    "East Carolina Pirates": {
+      "teamName": "East Carolina Pirates",
+      "teamShortName": "ECU Pirates",
+      "teamCity": "Eastern Carolina",
+      "teamNickName": "Pirates",
+      "teamAbbreviation": "ECU"
+    },
+    "UNLV Rebels": {
+      "teamName": "UNLV Rebels",
+      "teamShortName": "UNLV Rebels",
+      "teamCity": "UNLV",
+      "teamNickName": "Rebels",
+      "teamAbbreviation": "UNLV"
+    },
+    "Jacksonville Jaguars": {
+      "teamName": "Jacksonville Jaguars",
+      "teamShortName": "JAX Jaguars",
+      "teamCity": "Jacksonville",
+      "teamNickName": "Jaguars",
+      "teamAbbreviation": "JAX"
+    },
+    "Brooklyn Nets": {
+      "teamName": "Brooklyn Nets",
+      "teamShortName": "BKN Nets",
+      "teamCity": "Brooklyn",
+      "teamNickName": "Nets",
+      "teamAbbreviation": "BKN"
+    },
+    "Alabama A&M Bulldogs": {
+      "teamName": "Alabama A&M Bulldogs",
+      "teamShortName": "AAMU Bulldogs",
+      "teamCity": "Alabama A&M",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "AAMU"
+    },
+    "Cincinnati Bengals": {
+      "teamName": "Cincinnati Bengals",
+      "teamShortName": "CIN Bengals",
+      "teamCity": "Cincinnati",
+      "teamNickName": "Bengals",
+      "teamAbbreviation": "CIN"
+    },
+    "St. Bonaventure Bonnies": {
+      "teamName": "St. Bonaventure Bonnies",
+      "teamShortName": "SBU Bonnies",
+      "teamCity": "St. Bonaventure",
+      "teamNickName": "Bonnies",
+      "teamAbbreviation": "SBU"
+    },
+    "UC Irvine Anteaters": {
+      "teamName": "UC Irvine Anteaters",
+      "teamShortName": "UCI Anteaters",
+      "teamCity": "UC Irvine",
+      "teamNickName": "Anteaters",
+      "teamAbbreviation": "UCI"
+    },
+    "Chicago White Sox": {
+      "teamName": "Chicago White Sox",
+      "teamShortName": "CHI White Sox",
+      "teamCity": "Chicago",
+      "teamNickName": "White Sox",
+      "teamAbbreviation": "CWS"
+    },
+    "Northwestern Wildcats": {
+      "teamName": "Northwestern Wildcats",
+      "teamShortName": "NU Wildcats",
+      "teamCity": "Northwestern",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "NU"
+    },
+    "Detroit Pistons": {
+      "teamName": "Detroit Pistons",
+      "teamShortName": "DET Pistons",
+      "teamCity": "Detroit",
+      "teamNickName": "Pistons",
+      "teamAbbreviation": "DET"
+    },
+    "Oklahoma Sooners": {
+      "teamName": "Oklahoma Sooners",
+      "teamShortName": "OU Sooners",
+      "teamCity": "Oklahoma",
+      "teamNickName": "Sooners",
+      "teamAbbreviation": "OU"
+    },
+    "Samford Bulldogs": {
+      "teamName": "Samford Bulldogs",
+      "teamShortName": "SAM Bulldogs",
+      "teamCity": "Samford",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "SAM"
+    },
+    "Incarnate Word Cardinals": {
+      "teamName": "Incarnate Word Cardinals",
+      "teamShortName": "IW Cardinals",
+      "teamCity": "Incarnate Word",
+      "teamNickName": "Cardinals",
+      "teamAbbreviation": "IW"
+    },
+    "Vermont Catamounts": {
+      "teamName": "Vermont Catamounts",
+      "teamShortName": "UVM Catamounts",
+      "teamCity": "Vermont",
+      "teamNickName": "Catamounts",
+      "teamAbbreviation": "UVM"
+    },
+    "Loyola Marymount Lions": {
+      "teamName": "Loyola Marymount Lions",
+      "teamShortName": "LMU Lions",
+      "teamCity": "Loyola Marymount",
+      "teamNickName": "Lions",
+      "teamAbbreviation": "LMU"
+    },
+    "Elon Phoenix": {
+      "teamName": "Elon Phoenix",
+      "teamShortName": "ELON Phoenix",
+      "teamCity": "Elon",
+      "teamNickName": "Phoenix",
+      "teamAbbreviation": "ELON"
+    },
+    "New Mexico Lobos": {
+      "teamName": "New Mexico Lobos",
+      "teamShortName": "UNM Lobos",
+      "teamCity": "New Mexico",
+      "teamNickName": "Lobos",
+      "teamAbbreviation": "UNM"
+    },
+    "Notre Dame Fighting Irish": {
+      "teamName": "Notre Dame Fighting Irish",
+      "teamShortName": "ND Fighting Irish",
+      "teamCity": "Notre Dame",
+      "teamNickName": "Fighting Irish",
+      "teamAbbreviation": "ND"
+    },
+    "Tennessee Martin Skyhawks": {
+      "teamName": "Tennessee Martin Skyhawks",
+      "teamShortName": "UTM Skyhawks",
+      "teamCity": "Tennessee-Martin",
+      "teamNickName": "Skyhawks",
+      "teamAbbreviation": "UTM"
+    },
+    "James Madison Dukes": {
+      "teamName": "James Madison Dukes",
+      "teamShortName": "JMU Dukes",
+      "teamCity": "James Madison",
+      "teamNickName": "Dukes",
+      "teamAbbreviation": "JMU"
+    },
+    "Central Conn. Blue Devils": {
+      "teamName": "Central Conn. Blue Devils",
+      "teamShortName": "CCSU Blue Devils",
+      "teamCity": "Central Connecticut",
+      "teamNickName": "Blue Devils",
+      "teamAbbreviation": "CCSU"
+    },
+    "Colorado Rockies": {
+      "teamName": "Colorado Rockies",
+      "teamShortName": "COL Rockies",
+      "teamCity": "Colorado",
+      "teamNickName": "Rockies",
+      "teamAbbreviation": "COL"
+    },
+    "Dallas Stars": {
+      "teamName": "Dallas Stars",
+      "teamShortName": "DAL Stars",
+      "teamCity": "Dallas",
+      "teamNickName": "Stars",
+      "teamAbbreviation": "DAL"
+    },
+    "Duke Blue Devils": {
+      "teamName": "Duke Blue Devils",
+      "teamShortName": "DUKE Blue Devils",
+      "teamCity": "Duke",
+      "teamNickName": "Blue Devils",
+      "teamAbbreviation": "DUKE"
+    },
+    "South Alabama Jaguars": {
+      "teamName": "South Alabama Jaguars",
+      "teamShortName": "USA Jaguars",
+      "teamCity": "South Alabama",
+      "teamNickName": "Jaguars",
+      "teamAbbreviation": "USA"
+    },
+    "Hofstra Pride": {
+      "teamName": "Hofstra Pride",
+      "teamShortName": "HOF Pride",
+      "teamCity": "Hofstra",
+      "teamNickName": "Pride",
+      "teamAbbreviation": "HOF"
+    },
+    "Houston Cougars": {
+      "teamName": "Houston Cougars",
+      "teamShortName": "HOU Cougars",
+      "teamCity": "Houston",
+      "teamNickName": "Cougars",
+      "teamAbbreviation": "HOU"
+    },
+    "Western Kentucky Hilltoppers": {
+      "teamName": "Western Kentucky Hilltoppers",
+      "teamShortName": "WKU Hilltoppers",
+      "teamCity": "Western Kentucky",
+      "teamNickName": "Hilltoppers",
+      "teamAbbreviation": "WKU"
+    },
+    "Western Illinois Leathernecks": {
+      "teamName": "Western Illinois Leathernecks",
+      "teamShortName": "WIU Leathernecks",
+      "teamCity": "Western Illinois",
+      "teamNickName": "Leathernecks",
+      "teamAbbreviation": "WIU"
+    },
+    "Washington Wizards": {
+      "teamName": "Washington Wizards",
+      "teamShortName": "WAS Wizards",
+      "teamCity": "Washington",
+      "teamNickName": "Wizards",
+      "teamAbbreviation": "WAS"
+    },
+    "FGCU Eagles": {
+      "teamName": "FGCU Eagles",
+      "teamShortName": "FGCU Eagles",
+      "teamCity": "FGCU",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "FGCU"
+    },
+    "Orlando Magic": {
+      "teamName": "Orlando Magic",
+      "teamShortName": "ORL Magic",
+      "teamCity": "Orlando",
+      "teamNickName": "Magic",
+      "teamAbbreviation": "ORL"
+    },
+    "Valparaiso Beacons": {
+      "teamName": "Valparaiso Beacons",
+      "teamShortName": "VALP Beacons",
+      "teamCity": "Valparaiso",
+      "teamNickName": "Beacons",
+      "teamAbbreviation": "VALP"
+    },
+    "LIU Sharks": {
+      "teamName": "LIU Sharks",
+      "teamShortName": "LIU Sharks",
+      "teamCity": "Long Island",
+      "teamNickName": "Sharks",
+      "teamAbbreviation": "LIU"
+    },
+    "UC Riverside Highlanders": {
+      "teamName": "UC Riverside Highlanders",
+      "teamShortName": "UCRV Highlanders",
+      "teamCity": "UC Riverside",
+      "teamNickName": "Highlanders",
+      "teamAbbreviation": "UCRV"
+    },
+    "Northwestern State Demons": {
+      "teamName": "Northwestern State Demons",
+      "teamShortName": "NWST Demons",
+      "teamCity": "Northwestern State",
+      "teamNickName": "Demons",
+      "teamAbbreviation": "NWST"
+    },
+    "Nashville Predators": {
+      "teamName": "Nashville Predators",
+      "teamShortName": "NSH Predators",
+      "teamCity": "Nashville",
+      "teamNickName": "Predators",
+      "teamAbbreviation": "NSH"
+    },
+    "UTSA Roadrunners": {
+      "teamName": "UTSA Roadrunners",
+      "teamShortName": "UTSA Roadrunners",
+      "teamCity": "UTSA",
+      "teamNickName": "Roadrunners",
+      "teamAbbreviation": "UTSA"
+    },
+    "Georgia State Panthers": {
+      "teamName": "Georgia State Panthers",
+      "teamShortName": "GSU Panthers",
+      "teamCity": "Georgia State",
+      "teamNickName": "Panthers",
+      "teamAbbreviation": "GSU"
+    },
+    "New England Patriots": {
+      "teamName": "New England Patriots",
+      "teamShortName": "NE Patriots",
+      "teamCity": "New England",
+      "teamNickName": "Patriots",
+      "teamAbbreviation": "NE"
+    },
+    "Saint Francis Red Flash": {
+      "teamName": "Saint Francis Red Flash",
+      "teamShortName": "SFU Red Flash",
+      "teamCity": "St. Francis (PA)",
+      "teamNickName": "Red Flash",
+      "teamAbbreviation": "SFU"
+    },
+    "Detroit Mercy Titans": {
+      "teamName": "Detroit Mercy Titans",
+      "teamShortName": "DET Titans",
+      "teamCity": "Detroit",
+      "teamNickName": "Titans",
+      "teamAbbreviation": "DET"
+    },
+    "Minnesota Wild": {
+      "teamName": "Minnesota Wild",
+      "teamShortName": "MIN Wild",
+      "teamCity": "Minnesota",
+      "teamNickName": "Wild",
+      "teamAbbreviation": "MIN"
+    },
+    "Delaware State Hornets": {
+      "teamName": "Delaware State Hornets",
+      "teamShortName": "DSU Hornets",
+      "teamCity": "Delaware State",
+      "teamNickName": "Hornets",
+      "teamAbbreviation": "DSU"
+    },
+    "Hartford Hawks": {
+      "teamName": "Hartford Hawks",
+      "teamShortName": "HART Hawks",
+      "teamCity": "Hartford",
+      "teamNickName": "Hawks",
+      "teamAbbreviation": "HART"
+    },
+    "USC Trojans": {
+      "teamName": "USC Trojans",
+      "teamShortName": "USC Trojans",
+      "teamCity": "USC",
+      "teamNickName": "Trojans",
+      "teamAbbreviation": "USC"
+    },
+    "Rice Owls": {
+      "teamName": "Rice Owls",
+      "teamShortName": "RICE Owls",
+      "teamCity": "Rice",
+      "teamNickName": "Owls",
+      "teamAbbreviation": "RICE"
+    },
+    "Kansas City Royals": {
+      "teamName": "Kansas City Royals",
+      "teamShortName": "KC Royals",
+      "teamCity": "Kansas City",
+      "teamNickName": "Royals",
+      "teamAbbreviation": "KC"
+    },
+    "Utah Jazz": {
+      "teamName": "Utah Jazz",
+      "teamShortName": "UTA Jazz",
+      "teamCity": "Utah",
+      "teamNickName": "Jazz",
+      "teamAbbreviation": "UTA"
+    },
+    "Alcorn State Braves": {
+      "teamName": "Alcorn State Braves",
+      "teamShortName": "ALCN Braves",
+      "teamCity": "Alcorn State",
+      "teamNickName": "Braves",
+      "teamAbbreviation": "ALCN"
+    },
+    "New York Rangers": {
+      "teamName": "New York Rangers",
+      "teamShortName": "NY Rangers",
+      "teamCity": "New York",
+      "teamNickName": "Rangers",
+      "teamAbbreviation": "NYR"
+    },
+    "Atlanta Falcons": {
+      "teamName": "Atlanta Falcons",
+      "teamShortName": "ATL Falcons",
+      "teamCity": "Atlanta",
+      "teamNickName": "Falcons",
+      "teamAbbreviation": "ATL"
+    },
+    "Delaware Fightin' Blue Hens": {
+      "teamName": "Delaware Fightin' Blue Hens",
+      "teamShortName": "DEL Fightin' Blue Hens",
+      "teamCity": "Delaware",
+      "teamNickName": "Fightin' Blue Hen",
+      "teamAbbreviation": "DEL"
+    },
+    "Colorado Avalanche": {
+      "teamName": "Colorado Avalanche",
+      "teamShortName": "COL Avalanche",
+      "teamCity": "Colorado",
+      "teamNickName": "Avalanche",
+      "teamAbbreviation": "COL"
+    },
+    "New York Mets": {
+      "teamName": "New York Mets",
+      "teamShortName": "NY Mets",
+      "teamCity": "New York",
+      "teamNickName": "Mets",
+      "teamAbbreviation": "NYM"
+    },
+    "Davidson Wildcats": {
+      "teamName": "Davidson Wildcats",
+      "teamShortName": "DAV Wildcats",
+      "teamCity": "Davidson",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "DAV"
+    },
+    "Las Vegas Raiders": {
+      "teamName": "Las Vegas Raiders",
+      "teamShortName": "LV Raiders",
+      "teamCity": "Las Vegas",
+      "teamNickName": "Raiders",
+      "teamAbbreviation": "LV"
+    },
+    "UAB Blazers": {
+      "teamName": "UAB Blazers",
+      "teamShortName": "UAB Blazers",
+      "teamCity": "UAB",
+      "teamNickName": "Blazers",
+      "teamAbbreviation": "UAB"
+    },
+    "Southern University Jaguars": {
+      "teamName": "Southern University Jaguars",
+      "teamShortName": "SUBR Jaguars",
+      "teamCity": "Southern University",
+      "teamNickName": "Jaguars",
+      "teamAbbreviation": "SUBR"
+    },
+    "Washington Football Team": {
+      "teamName": "Washington Football Team",
+      "teamShortName": "WAS Football Team",
+      "teamCity": "Washington",
+      "teamNickName": "Football Team",
+      "teamAbbreviation": "WAS"
+    },
+    "Indiana State Sycamores": {
+      "teamName": "Indiana State Sycamores",
+      "teamShortName": "INST Sycamores",
+      "teamCity": "Indiana State",
+      "teamNickName": "Sycamores",
+      "teamAbbreviation": "INST"
+    },
+    "Tampa Bay Rays": {
+      "teamName": "Tampa Bay Rays",
+      "teamShortName": "TB Rays",
+      "teamCity": "Tampa Bay",
+      "teamNickName": "Rays",
+      "teamAbbreviation": "TB"
+    },
+    "UT Rio Grande Valley Vaqueros": {
+      "teamName": "UT Rio Grande Valley Vaqueros",
+      "teamShortName": "UTRGV Vaqueros",
+      "teamCity": "UT Rio Grande Valley",
+      "teamNickName": "Vaqueros",
+      "teamAbbreviation": "UTRGV"
+    },
+    "Mississippi College Choctaws": {
+      "teamName": "Mississippi College Choctaws",
+      "teamPreferredName": "Mississippi College",
+      "teamShortName": "MI Choctaws",
+      "teamCity": "Mississippi",
+      "teamNickName": "Choctaws",
+      "teamPreferredNickName": "Mississippi",
+      "teamAbbreviation": "MCC"
+    },
+    "Phoenix Suns": {
+      "teamName": "Phoenix Suns",
+      "teamShortName": "PHX Suns",
+      "teamCity": "Phoenix",
+      "teamNickName": "Suns",
+      "teamAbbreviation": "PHX"
+    },
+    "Oral Roberts Golden Eagles": {
+      "teamName": "Oral Roberts Golden Eagles",
+      "teamShortName": "ORU Golden Eagles",
+      "teamCity": "Oral Roberts",
+      "teamNickName": "Golden Eagles",
+      "teamAbbreviation": "ORU"
+    },
+    "San Francisco Dons": {
+      "teamName": "San Francisco Dons",
+      "teamShortName": "SF Dons",
+      "teamCity": "San Francisco",
+      "teamNickName": "Dons",
+      "teamAbbreviation": "SF"
+    },
+    "Citadel Bulldogs": {
+      "teamName": "Citadel Bulldogs",
+      "teamShortName": "CIT Bulldogs",
+      "teamCity": "The Citadel",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "CIT"
+    },
+    "Lindenwood Lions": {
+      "teamName": "Lindenwood Lions",
+      "teamShortName": "LWU Lions",
+      "teamCity": "Lindenwood",
+      "teamNickName": "Lions",
+      "teamAbbreviation": "LWU"
+    },
+    "Winthrop Eagles": {
+      "teamName": "Winthrop Eagles",
+      "teamShortName": "WIN Eagles",
+      "teamCity": "Winthrop",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "WIN"
+    },
+    "Maine Black Bears": {
+      "teamName": "Maine Black Bears",
+      "teamShortName": "MAINE Black Bears",
+      "teamCity": "Maine",
+      "teamNickName": "Black Bears",
+      "teamAbbreviation": "MNE"
+    },
+    "Cleveland Guardians": {
+      "teamName": "Cleveland Guardians",
+      "teamShortName": "CLE Guardians",
+      "teamCity": "Cleveland",
+      "teamNickName": "Guardians",
+      "teamAbbreviation": "CLE"
+    },
+    "Vanderbilt Commodores": {
+      "teamName": "Vanderbilt Commodores",
+      "teamShortName": "VAN Commodores",
+      "teamCity": "Vanderbilt",
+      "teamNickName": "Commodores",
+      "teamAbbreviation": "VAN"
+    },
+    "Weber State Wildcats": {
+      "teamName": "Weber State Wildcats",
+      "teamShortName": "WEB Wildcats",
+      "teamCity": "Weber State",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "WEB"
+    },
+    "Buffalo Bills": {
+      "teamName": "Buffalo Bills",
+      "teamShortName": "BUF Bills",
+      "teamCity": "Buffalo",
+      "teamNickName": "Bills",
+      "teamAbbreviation": "BUF"
+    },
+    "Florida Atlantic Owls": {
+      "teamName": "Florida Atlantic Owls",
+      "teamShortName": "FAU Owls",
+      "teamCity": "Florida Atlantic",
+      "teamNickName": "Owls",
+      "teamAbbreviation": "FAU"
+    },
+    "Rutgers Scarlet Knights": {
+      "teamName": "Rutgers Scarlet Knights",
+      "teamShortName": "RUTG Scarlet Knights",
+      "teamCity": "Rutgers",
+      "teamNickName": "Scarlet Knights",
+      "teamAbbreviation": "RUTG"
+    },
+    "Nevada Wolf Pack": {
+      "teamName": "Nevada Wolf Pack",
+      "teamShortName": "NEV Wolf Pack",
+      "teamCity": "Nevada",
+      "teamNickName": "Wolf Pack",
+      "teamAbbreviation": "NEV"
+    },
+    "Idaho Vandals": {
+      "teamName": "Idaho Vandals",
+      "teamShortName": "IDHO Vandals",
+      "teamCity": "Idaho",
+      "teamNickName": "Vandals",
+      "teamAbbreviation": "IDHO"
+    },
+    "UMass Lowell River Hawks": {
+      "teamName": "UMass Lowell River Hawks",
+      "teamShortName": "UML River Hawks",
+      "teamCity": "UMass Lowell",
+      "teamNickName": "River Hawks",
+      "teamAbbreviation": "UML"
+    },
+    "Ole Miss Rebels": {
+      "teamName": "Ole Miss Rebels",
+      "teamShortName": "MISS Rebels",
+      "teamCity": "Ole Miss",
+      "teamNickName": "Rebels",
+      "teamAbbreviation": "MISS"
+    },
+    "Dallas Mavericks": {
+      "teamName": "Dallas Mavericks",
+      "teamShortName": "DAL Mavericks",
+      "teamCity": "Dallas",
+      "teamNickName": "Mavericks",
+      "teamAbbreviation": "DAL"
+    },
+    "Coppin State Eagles": {
+      "teamName": "Coppin State Eagles",
+      "teamShortName": "COPP Eagles",
+      "teamCity": "Coppin State",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "COPP"
+    },
+    "Bakersfield Roadrunners": {
+      "teamName": "Bakersfield Roadrunners",
+      "teamShortName": "CSB Roadrunners",
+      "teamCity": "Bakersfield",
+      "teamNickName": "Roadrunners",
+      "teamAbbreviation": "CSB"
+    },
+    "Central Connecticut State Blue Devils": {
+      "teamName": "Central Connecticut State Blue Devils",
+      "teamShortName": "CCSU Blue Devils",
+      "teamCity": "Central Connecticut",
+      "teamNickName": "Blue Devils",
+      "teamAbbreviation": "CCSU"
+    },
+    "Bucknell Bison": {
+      "teamName": "Bucknell Bison",
+      "teamShortName": "BUCK Bison",
+      "teamCity": "Bucknell",
+      "teamNickName": "Bison",
+      "teamAbbreviation": "BUCK"
+    },
+    "Morehead State Eagles": {
+      "teamName": "Morehead State Eagles",
+      "teamShortName": "MORE Eagles",
+      "teamCity": "Morehead State",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "MORE"
+    },
+    "Los Angeles Lakers": {
+      "teamName": "Los Angeles Lakers",
+      "teamShortName": "LA Lakers",
+      "teamCity": "Los Angeles",
+      "teamNickName": "Lakers",
+      "teamAbbreviation": "LAL"
+    },
+    "Bellarmine Knights": {
+      "teamName": "Bellarmine Knights",
+      "teamShortName": "BELL Knights",
+      "teamCity": "Bellarmine",
+      "teamNickName": "Knights",
+      "teamAbbreviation": "BELL"
+    },
+    "Texas State Bobcats": {
+      "teamName": "Texas State Bobcats",
+      "teamShortName": "TXST Bobcats",
+      "teamCity": "Texas State",
+      "teamNickName": "Bobcats",
+      "teamAbbreviation": "TXST"
+    },
+    "Dayton Flyers": {
+      "teamName": "Dayton Flyers",
+      "teamShortName": "DAY Flyers",
+      "teamCity": "Dayton",
+      "teamNickName": "Flyers",
+      "teamAbbreviation": "DAY"
+    },
+    "George Mason Patriots": {
+      "teamName": "George Mason Patriots",
+      "teamShortName": "GMU Patriots",
+      "teamCity": "George Mason",
+      "teamNickName": "Patriots",
+      "teamAbbreviation": "GMU"
+    },
+    "Boston Red Sox": {
+      "teamName": "Boston Red Sox",
+      "teamShortName": "BOS Red Sox",
+      "teamCity": "Boston",
+      "teamNickName": "Red Sox",
+      "teamAbbreviation": "BOS"
+    },
+    "Louisville Cardinals": {
+      "teamName": "Louisville Cardinals",
+      "teamShortName": "LOU Cardinals",
+      "teamCity": "Louisville",
+      "teamNickName": "Cardinals",
+      "teamAbbreviation": "LOU"
+    },
+    "Campbell Fighting Camels": {
+      "teamName": "Campbell Fighting Camels",
+      "teamShortName": "CAMP Fighting Camels",
+      "teamCity": "Campbell",
+      "teamNickName": "Fighting Camels",
+      "teamAbbreviation": "CAMP"
+    },
+    "UNC Greensboro Spartans": {
+      "teamName": "UNC Greensboro Spartans",
+      "teamShortName": "UNCG Spartans",
+      "teamCity": "UNCG",
+      "teamNickName": "Spartans",
+      "teamAbbreviation": "UNCG"
+    },
+    "Seattle Redhawks": {
+      "teamName": "Seattle Redhawks",
+      "teamShortName": "SEA Redhawks",
+      "teamCity": "Seattle",
+      "teamNickName": "Redhawks",
+      "teamAbbreviation": "SEA"
+    },
+    "Southeast Missouri State Redhawks": {
+      "teamName": "Southeast Missouri State Redhawks",
+      "teamShortName": "SEMO Redhawks",
+      "teamCity": "Southeast Missouri State",
+      "teamNickName": "Redhawks",
+      "teamAbbreviation": "SEMO"
+    },
+    "North Florida Ospreys": {
+      "teamName": "North Florida Ospreys",
+      "teamShortName": "UNF Ospreys",
+      "teamCity": "North Florida",
+      "teamNickName": "Ospreys",
+      "teamAbbreviation": "UNF"
+    },
+    "Florida Panthers": {
+      "teamName": "Florida Panthers",
+      "teamShortName": "FLA Panthers",
+      "teamCity": "Florida",
+      "teamNickName": "Panthers",
+      "teamAbbreviation": "FLA"
+    },
+    "Boston Bruins": {
+      "teamName": "Boston Bruins",
+      "teamShortName": "BOS Bruins",
+      "teamCity": "Boston",
+      "teamNickName": "Bruins",
+      "teamAbbreviation": "BOS"
+    },
+    "Tampa Bay Lightning": {
+      "teamName": "Tampa Bay Lightning",
+      "teamShortName": "TB Lightning",
+      "teamCity": "Tampa Bay",
+      "teamNickName": "Lightning",
+      "teamAbbreviation": "TBL"
+    },
+    "Missouri State Bears": {
+      "teamName": "Missouri State Bears",
+      "teamShortName": "MOST Bears",
+      "teamCity": "Missouri State",
+      "teamNickName": "Bears",
+      "teamAbbreviation": "MOST"
+    },
+    "Morgan State Bears": {
+      "teamName": "Morgan State Bears",
+      "teamShortName": "MORG",
+      "teamCity": "Morgan State",
+      "teamNickName": "Bears",
+      "teamAbbreviation": "MORG"
+    },
+    "San Antonio Spurs": {
+      "teamName": "San Antonio Spurs",
+      "teamShortName": "SA Spurs",
+      "teamCity": "San Antonio",
+      "teamNickName": "Spurs",
+      "teamAbbreviation": "SAS"
+    },
+    "Albany Great Danes": {
+      "teamName": "Albany Great Danes",
+      "teamShortName": "ALBY Great Danes",
+      "teamCity": "Albany",
+      "teamNickName": "Great Danes",
+      "teamAbbreviation": "ALBY"
+    },
+    "Hampton Pirates": {
+      "teamName": "Hampton Pirates",
+      "teamShortName": "HAMP Pirates",
+      "teamCity": "Hampton",
+      "teamNickName": "Pirates",
+      "teamAbbreviation": "HAMP"
+    },
+    "Grambling State Tigers": {
+      "teamName": "Grambling State Tigers",
+      "teamShortName": "GSU Tigers",
+      "teamCity": "Grambling State",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "GSU"
+    },
+    "UCLA Bruins": {
+      "teamName": "UCLA Bruins",
+      "teamShortName": "UCLA Bruins",
+      "teamCity": "UCLA",
+      "teamNickName": "Bruins",
+      "teamAbbreviation": "UCLA"
+    },
+    "Robert Morris Colonials": {
+      "teamName": "Robert Morris Colonials",
+      "teamShortName": "RMU Colonials",
+      "teamCity": "Robert Morris (PA)",
+      "teamNickName": "Colonials",
+      "teamAbbreviation": "RMU"
+    },
+    "Southern Indiana Screaming Eagles": {
+      "teamName": "Southern Indiana Screaming Eagles",
+      "teamShortName": "USI Screaming Eagles",
+      "teamCity": "Southern Indiana",
+      "teamNickName": "Screaming Eagles",
+      "teamAbbreviation": "USI"
+    },
+    "Winnipeg Jets": {
+      "teamName": "Winnipeg Jets",
+      "teamShortName": "WPG Jets",
+      "teamCity": "Winnipeg",
+      "teamNickName": "Jets",
+      "teamAbbreviation": "WPG"
+    },
+    "Massachusetts Minutemen": {
+      "teamName": "Massachusetts Minutemen",
+      "teamShortName": "UMASS Minutemen",
+      "teamCity": "Massachusetts",
+      "teamNickName": "Minutemen",
+      "teamAbbreviation": "UMASS"
+    },
+    "Gardner Webb Runnin' Bulldogs": {
+      "teamName": "Gardner Webb Runnin' Bulldogs",
+      "teamShortName": "WEBB Bulldogs",
+      "teamCity": "Gardner-Webb",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "WEBB"
+    },
+    "UCF Knights": {
+      "teamName": "UCF Knights",
+      "teamShortName": "UCF Knights",
+      "teamCity": "UCF",
+      "teamNickName": "Knights",
+      "teamAbbreviation": "UCF"
+    },
+    "Murray State Racers": {
+      "teamName": "Murray State Racers",
+      "teamShortName": "MURR Racers",
+      "teamCity": "Murray State",
+      "teamNickName": "Racers",
+      "teamAbbreviation": "MURR"
+    },
+    "William & Mary Tribe": {
+      "teamName": "William & Mary Tribe",
+      "teamShortName": "W&M Tribe",
+      "teamCity": "William & Mary",
+      "teamNickName": "Tribe",
+      "teamAbbreviation": "W&M"
+    },
+    "Montana Grizzlies": {
+      "teamName": "Montana Grizzlies",
+      "teamShortName": "MONT Grizzlies",
+      "teamCity": "Montana",
+      "teamNickName": "Grizzlies",
+      "teamAbbreviation": "MONT"
+    },
+    "Long Beach State 49ers": {
+      "teamName": "Long Beach State 49ers",
+      "teamShortName": "LBS 49ers",
+      "teamCity": "Long Beach State",
+      "teamNickName": "49ers",
+      "teamAbbreviation": "LBS"
+    },
+    "Toledo Rockets": {
+      "teamName": "Toledo Rockets",
+      "teamShortName": "TOL Rockets",
+      "teamCity": "Toledo",
+      "teamNickName": "Rockets",
+      "teamAbbreviation": "TOL"
+    },
+    "Cleveland State Vikings": {
+      "teamName": "Cleveland State Vikings",
+      "teamShortName": "CLEV Vikings",
+      "teamCity": "Cleveland State",
+      "teamNickName": "Vikings",
+      "teamAbbreviation": "CLEV"
+    },
+    "Louisiana Lafayette Ragin' Cajuns": {
+      "teamName": "Louisiana Lafayette Ragin' Cajuns",
+      "teamShortName": "ULL Ragin' Cajuns",
+      "teamCity": "Louisiana Lafayette",
+      "teamNickName": "Ragin' Cajuns",
+      "teamAbbreviation": "ULL"
+    },
+    "Furman Paladins": {
+      "teamName": "Furman Paladins",
+      "teamShortName": "FUR Paladins",
+      "teamCity": "Furman",
+      "teamNickName": "Paladins",
+      "teamAbbreviation": "FUR"
+    },
+    "New York Liberty": {
+      "teamName": "New York Liberty",
+      "teamShortName": "NY Liberty",
+      "teamCity": "New York",
+      "teamNickName": "Liberty",
+      "teamAbbreviation": "NYL"
+    },
+    "NC State Wolfpack": {
+      "teamName": "NC State Wolfpack",
+      "teamShortName": "NCST Wolfpack",
+      "teamCity": "NC State",
+      "teamNickName": "Wolfpack",
+      "teamAbbreviation": "NCST"
+    },
+    "Charleston Southern Buccaneers": {
+      "teamName": "Charleston Southern Buccaneers",
+      "teamShortName": "CHSO Buccaneers",
+      "teamCity": "Charleston Southern",
+      "teamNickName": "Buccaneers",
+      "teamAbbreviation": "CHSO"
+    },
+    "UC Davis Aggies": {
+      "teamName": "UC Davis Aggies",
+      "teamShortName": "UCD Aggies",
+      "teamCity": "UC Davis",
+      "teamNickName": "Aggies",
+      "teamAbbreviation": "UCD"
+    },
+    "Mississippi State Bulldogs": {
+      "teamName": "Mississippi State Bulldogs",
+      "teamShortName": "MSST Bulldogs",
+      "teamCity": "Mississippi State",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "MSST"
+    },
+    "TCU Horned Frogs": {
+      "teamName": "TCU Horned Frogs",
+      "teamShortName": "TCU Horned Frogs",
+      "teamCity": "TCU",
+      "teamNickName": "Horned Frogs",
+      "teamAbbreviation": "TCU"
+    },
+    "Arizona Cardinals": {
+      "teamName": "Arizona Cardinals",
+      "teamShortName": "ARI Cardinals",
+      "teamCity": "Arizona",
+      "teamNickName": "Cardinals",
+      "teamAbbreviation": "ARI"
+    },
+    "Dallas Cowboys": {
+      "teamName": "Dallas Cowboys",
+      "teamShortName": "DAL Cowboys",
+      "teamCity": "Dallas",
+      "teamNickName": "Cowboys",
+      "teamAbbreviation": "DAL"
+    },
+    "Boston College Eagles": {
+      "teamName": "Boston College Eagles",
+      "teamShortName": "BC Eagles",
+      "teamCity": "Boston College",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "BC"
+    },
+    "Saint Joseph's Hawks": {
+      "teamName": "Saint Joseph's Hawks",
+      "teamShortName": "St. Joe's Hawks",
+      "teamCity": "Saint Joseph's",
+      "teamNickName": "Hawks",
+      "teamAbbreviation": "SJU"
+    },
+    "Virginia Tech Hokies": {
+      "teamName": "Virginia Tech Hokies",
+      "teamShortName": "VT Hokies",
+      "teamCity": "Virginia Tech",
+      "teamNickName": "Hokies",
+      "teamAbbreviation": "VT"
+    },
+    "Maryland Terrapins": {
+      "teamName": "Maryland Terrapins",
+      "teamShortName": "UMD Terrapins",
+      "teamCity": "Maryland",
+      "teamNickName": "Terrapins",
+      "teamAbbreviation": "UMD"
+    },
+    "Air Force Falcons": {
+      "teamName": "Air Force Falcons",
+      "teamShortName": "AF Falcons",
+      "teamCity": "Air Force",
+      "teamNickName": "Falcons",
+      "teamAbbreviation": "AF"
+    },
+    "BYU Cougars": {
+      "teamName": "BYU Cougars",
+      "teamShortName": "BYU Cougars",
+      "teamCity": "BYU",
+      "teamNickName": "Cougars",
+      "teamAbbreviation": "BYU"
+    },
+    "Tennessee Titans": {
+      "teamName": "Tennessee Titans",
+      "teamShortName": "TEN Titans",
+      "teamCity": "Tennessee",
+      "teamNickName": "Titans",
+      "teamAbbreviation": "TEN"
+    },
+    "Canisius Golden Griffins": {
+      "teamName": "Canisius Golden Griffins",
+      "teamShortName": "CAN Golden Griffins",
+      "teamCity": "Canisius",
+      "teamNickName": "Golden Griffins",
+      "teamAbbreviation": "CAN"
+    },
+    "Texas A&M Corpus Islanders": {
+      "teamName": "Texas A&M Corpus Islanders",
+      "teamShortName": "TAMU-CC Islanders",
+      "teamCity": "Texas A&M-Corpus Christi",
+      "teamNickName": "Islanders",
+      "teamAbbreviation": "TAMU-CC"
+    },
+    "Stanford Cardinal": {
+      "teamName": "Stanford Cardinal",
+      "teamShortName": "STAN Cardinal",
+      "teamCity": "Stanford",
+      "teamNickName": "Cardinal",
+      "teamAbbreviation": "STAN"
+    },
+    "Arizona State Sun Devils": {
+      "teamName": "Arizona State Sun Devils",
+      "teamShortName": "ASU Sun Devils",
+      "teamCity": "Arizona State",
+      "teamNickName": "Sun Devils",
+      "teamAbbreviation": "ASU"
+    },
+    "Drexel Dragons": {
+      "teamName": "Drexel Dragons",
+      "teamShortName": "DREX Dragons",
+      "teamCity": "Drexel",
+      "teamNickName": "Dragons",
+      "teamAbbreviation": "DREX"
+    },
+    "Denver Pioneers": {
+      "teamName": "Denver Pioneers",
+      "teamShortName": "Denver Pioneers",
+      "teamCity": "Denver",
+      "teamNickName": "Pioneers",
+      "teamAbbreviation": "DEN"
+    },
+    "Calgary Flames": {
+      "teamName": "Calgary Flames",
+      "teamShortName": "CGY Flames",
+      "teamCity": "Calgary",
+      "teamNickName": "Flames",
+      "teamAbbreviation": "CGY"
+    },
+    "Sacramento State Hornets": {
+      "teamName": "Sacramento State Hornets",
+      "teamShortName": "SAC Hornets",
+      "teamCity": "Sacramento State",
+      "teamNickName": "Hornets",
+      "teamAbbreviation": "SAC"
+    },
+    "Presbyterian Blue Hose": {
+      "teamName": "Presbyterian Blue Hose",
+      "teamShortName": "PRE Blue Hose",
+      "teamCity": "Presbyterian",
+      "teamNickName": "Blue Hose",
+      "teamAbbreviation": "PRE"
+    },
+    "Sacramento Kings": {
+      "teamName": "Sacramento Kings",
+      "teamShortName": "SAC Kings",
+      "teamCity": "Sacramento",
+      "teamNickName": "Kings",
+      "teamAbbreviation": "SAC"
+    },
+    "Syracuse Orange": {
+      "teamName": "Syracuse Orange",
+      "teamShortName": "SYR Orange",
+      "teamCity": "Syracuse",
+      "teamNickName": "Orange",
+      "teamAbbreviation": "SYR"
+    },
+    "UAPB Golden Lions": {
+      "teamName": "UAPB Golden Lions",
+      "teamShortName": "ARPB Golden Lions",
+      "teamCity": "Arkansas-Pine Bluff",
+      "teamNickName": "Golden Lions",
+      "teamAbbreviation": "ARPB"
+    },
+    "Oakland Athletics": {
+      "teamName": "Oakland Athletics",
+      "teamShortName": "OAK Athletics",
+      "teamCity": "Oakland",
+      "teamNickName": "Athletics",
+      "teamAbbreviation": "OAK"
+    },
+    "Jacksonville State Gamecocks": {
+      "teamName": "Jacksonville State Gamecocks",
+      "teamShortName": "JVST Gamecocks",
+      "teamCity": "Jacksonville State",
+      "teamNickName": "Gamecocks",
+      "teamAbbreviation": "JVST"
+    },
+    "Sam Houston State Bearkats": {
+      "teamName": "Sam Houston State Bearkats",
+      "teamShortName": "SHSU Bearkats",
+      "teamCity": "Sam Houston State",
+      "teamNickName": "Bearkats",
+      "teamAbbreviation": "SHSU"
+    },
+    "Atlanta Hawks": {
+      "teamName": "Atlanta Hawks",
+      "teamShortName": "ATL Hawks",
+      "teamCity": "Atlanta",
+      "teamNickName": "Hawks",
+      "teamAbbreviation": "ATL"
+    },
+    "Green Bay Phoenix": {
+      "teamName": "Green Bay Phoenix",
+      "teamShortName": "GB Phoenix",
+      "teamCity": "Green Bay",
+      "teamNickName": "Phoenix",
+      "teamAbbreviation": "GBP"
+    },
+    "Denver Nuggets": {
+      "teamName": "Denver Nuggets",
+      "teamShortName": "DEN Nuggets",
+      "teamCity": "Denver",
+      "teamNickName": "Nuggets",
+      "teamAbbreviation": "DEN"
+    },
+    "Manhattan Jaspers": {
+      "teamName": "Manhattan Jaspers",
+      "teamShortName": "MAN Jaspers",
+      "teamCity": "Manhattan",
+      "teamNickName": "Jaspers",
+      "teamAbbreviation": "MAN"
+    },
+    "Cal Poly Mustangs": {
+      "teamName": "Cal Poly Mustangs",
+      "teamShortName": "CP Mustangs",
+      "teamCity": "Cal Poly",
+      "teamNickName": "Mustangs",
+      "teamAbbreviation": "CP"
+    },
+    "Louisiana Tech Bulldogs": {
+      "teamName": "Louisiana Tech Bulldogs",
+      "teamShortName": "LT Bulldogs",
+      "teamCity": "Louisiana Tech",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "LT"
+    },
+    "Stetson Hatters": {
+      "teamName": "Stetson Hatters",
+      "teamShortName": "STET Hatters",
+      "teamCity": "Stetson",
+      "teamNickName": "Hatters",
+      "teamAbbreviation": "STET"
+    },
+    "Louisiana Ragin' Cajuns": {
+      "teamName": "Louisiana Ragin' Cajuns",
+      "teamShortName": "ULL Ragin' Cajuns",
+      "teamCity": "Louisiana Lafayette",
+      "teamNickName": "Ragin' Cajuns",
+      "teamAbbreviation": "ULL"
+    },
+    "UT Arlington Mavericks": {
+      "teamName": "UT Arlington Mavericks",
+      "teamShortName": "UTA Mavericks",
+      "teamCity": "UT Arlington",
+      "teamNickName": "Mavericks",
+      "teamAbbreviation": "UTA"
+    },
+    "Longwood Lancers": {
+      "teamName": "Longwood Lancers",
+      "teamShortName": "LONG Lancers",
+      "teamCity": "Longwood",
+      "teamNickName": "Lancers",
+      "teamAbbreviation": "LONG"
+    },
+    "Arizona Wildcats": {
+      "teamName": "Arizona Wildcats",
+      "teamShortName": "ARIZ Wildcats",
+      "teamCity": "Arizona",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "ARIZ"
+    },
+    "Minnesota Vikings": {
+      "teamName": "Minnesota Vikings",
+      "teamShortName": "MIN Vikings",
+      "teamCity": "Minnesota",
+      "teamNickName": "Vikings",
+      "teamAbbreviation": "MIN"
+    },
+    "Columbia Lions": {
+      "teamName": "Columbia Lions",
+      "teamShortName": "CLMB Lions",
+      "teamCity": "Columbia",
+      "teamNickName": "Lions",
+      "teamAbbreviation": "CLMB"
+    },
+    "Prairie View A&M Panthers": {
+      "teamName": "Prairie View A&M Panthers",
+      "teamShortName": "PV",
+      "teamCity": "Prairie View A&M",
+      "teamNickName": "Panthers",
+      "teamAbbreviation": "PV"
+    },
+    "Eastern Kentucky Colonels": {
+      "teamName": "Eastern Kentucky Colonels",
+      "teamShortName": "EKY Colonels",
+      "teamCity": "Eastern Kentucky",
+      "teamNickName": "Colonels",
+      "teamAbbreviation": "EKY"
+    },
+    "Western Carolina Catamounts": {
+      "teamName": "Western Carolina Catamounts",
+      "teamShortName": "WCU Catamounts",
+      "teamCity": "Western Carolina",
+      "teamNickName": "Catamounts",
+      "teamAbbreviation": "WCU"
+    },
+    "Washington Huskies": {
+      "teamName": "Washington Huskies",
+      "teamShortName": "WASH Huskies",
+      "teamCity": "Washington",
+      "teamNickName": "Huskies",
+      "teamAbbreviation": "WASH"
+    },
+    "Charlotte Hornets": {
+      "teamName": "Charlotte Hornets",
+      "teamShortName": "CHA Hornets",
+      "teamCity": "Charlotte",
+      "teamNickName": "Hornets",
+      "teamAbbreviation": "CHA"
+    },
+    "Athletics": {
+      "teamName": "Athletics",
+      "teamShortName": "Athletics",
+      "teamCity": "A's",
+      "teamNickName": "Athletics",
+      "teamAbbreviation": "A's"
+    },
+    "Xavier Musketeers": {
+      "teamName": "Xavier Musketeers",
+      "teamShortName": "XAV Musketeers",
+      "teamCity": "Xavier",
+      "teamNickName": "Musketeers",
+      "teamAbbreviation": "XAV"
+    },
+    "Florida A&M Rattlers": {
+      "teamName": "Florida A&M Rattlers",
+      "teamShortName": "FAMU Rattlers",
+      "teamCity": "Florida A&M",
+      "teamNickName": "Rattlers",
+      "teamAbbreviation": "FAMU"
+    },
+    "Long Beach State Beach": {
+      "teamName": "Long Beach State Beach",
+      "teamShortName": "LBS Beach",
+      "teamCity": "Long Beach State",
+      "teamNickName": "Beach",
+      "teamAbbreviation": "LBS"
+    },
+    "North Dakota State Bison": {
+      "teamName": "North Dakota State Bison",
+      "teamShortName": "NDSU Bison",
+      "teamCity": "North Dakota State",
+      "teamNickName": "Bison",
+      "teamAbbreviation": "NDSU"
+    },
+    "Pittsburgh Steelers": {
+      "teamName": "Pittsburgh Steelers",
+      "teamShortName": "PIT Steelers",
+      "teamCity": "Pittsburgh",
+      "teamNickName": "Steelers",
+      "teamAbbreviation": "PIT"
+    },
+    "Houston Rockets": {
+      "teamName": "Houston Rockets",
+      "teamShortName": "HOU Rockets",
+      "teamCity": "Houston",
+      "teamNickName": "Rockets",
+      "teamAbbreviation": "HOU"
+    },
+    "Appalachian State Mountaineers": {
+      "teamName": "Appalachian State Mountaineers",
+      "teamShortName": "APP Mountaineers",
+      "teamCity": "Appalachian State",
+      "teamNickName": "Mountaineers",
+      "teamAbbreviation": "APP"
+    },
+    "Oklahoma State Cowboys": {
+      "teamName": "Oklahoma State Cowboys",
+      "teamShortName": "OKST Cowboys",
+      "teamCity": "Oklahoma State",
+      "teamNickName": "Cowboys",
+      "teamAbbreviation": "OKST"
+    },
+    "South Carolina State Bulldogs": {
+      "teamName": "South Carolina State Bulldogs",
+      "teamShortName": "SCST Bulldogs",
+      "teamCity": "South Carolina State",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "SCST"
+    },
+    "Phoenix Mercury": {
+      "teamName": "Phoenix Mercury",
+      "teamShortName": "PHX Mercury",
+      "teamCity": "Phoenix",
+      "teamNickName": "Mercury",
+      "teamAbbreviation": "PHX"
+    },
+    "Abilene Christian Wildcats": {
+      "teamName": "Abilene Christian Wildcats",
+      "teamShortName": "ACU Wildcats",
+      "teamCity": "Abilene Christian",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "ACU"
+    },
+    "Milwaukee Bucks": {
+      "teamName": "Milwaukee Bucks",
+      "teamShortName": "MIL Bucks",
+      "teamCity": "Milwaukee",
+      "teamNickName": "Bucks",
+      "teamAbbreviation": "MIL"
+    },
+    "Michigan Wolverines": {
+      "teamName": "Michigan Wolverines",
+      "teamShortName": "MICH Wolverines",
+      "teamCity": "Michigan",
+      "teamNickName": "Wolverines",
+      "teamAbbreviation": "MICH"
+    },
+    "Miami (FL) Hurricanes": {
+      "teamName": "Miami (FL) Hurricanes",
+      "teamShortName": "MIA Hurricanes",
+      "teamCity": "Miami (FL)",
+      "teamNickName": "Hurricanes",
+      "teamAbbreviation": "MIA"
+    },
+    "Philadelphia 76ers": {
+      "teamName": "Philadelphia 76ers",
+      "teamShortName": "PHI 76ers",
+      "teamCity": "Philadelphia",
+      "teamNickName": "76ers",
+      "teamAbbreviation": "PHI"
+    },
+    "North Texas Mean Green": {
+      "teamName": "North Texas Mean Green",
+      "teamShortName": "UNT Mean Green",
+      "teamCity": "North Texas",
+      "teamNickName": "Mean Green",
+      "teamAbbreviation": "UNT"
+    },
+    "Nebraska Cornhuskers": {
+      "teamName": "Nebraska Cornhuskers",
+      "teamShortName": "NEB Cornhuskers",
+      "teamCity": "Nebraska",
+      "teamNickName": "Cornhuskers",
+      "teamAbbreviation": "NEB"
+    },
+    "Dartmouth Big Green": {
+      "teamName": "Dartmouth Big Green",
+      "teamShortName": "DART Big Green",
+      "teamCity": "Dartmouth",
+      "teamNickName": "Big Green",
+      "teamAbbreviation": "DART"
+    },
+    "Nicholls Colonels": {
+      "teamName": "Nicholls Colonels",
+      "teamShortName": "NICH Colonels",
+      "teamCity": "Nicholls State",
+      "teamNickName": "Colonels",
+      "teamAbbreviation": "NICH"
+    },
+    "DePaul Blue Demons": {
+      "teamName": "DePaul Blue Demons",
+      "teamShortName": "DPU Blue Demons",
+      "teamCity": "DePaul",
+      "teamNickName": "Blue Demons",
+      "teamAbbreviation": "DPU"
+    },
+    "Monmouth Hawks": {
+      "teamName": "Monmouth Hawks",
+      "teamShortName": "MONM Hawks",
+      "teamCity": "Monmouth",
+      "teamNickName": "Hawks",
+      "teamAbbreviation": "MONM"
+    },
+    "Marquette Golden Eagles": {
+      "teamName": "Marquette Golden Eagles",
+      "teamShortName": "MARQ Golden Eagles",
+      "teamCity": "Marquette",
+      "teamNickName": "Golden Eagles",
+      "teamAbbreviation": "MARQ"
+    },
+    "VCU Rams": {
+      "teamName": "VCU Rams",
+      "teamShortName": "VCU Rams",
+      "teamCity": "VCU",
+      "teamNickName": "Rams",
+      "teamAbbreviation": "VCU"
+    },
+    "Oklahoma City Thunder": {
+      "teamName": "Oklahoma City Thunder",
+      "teamShortName": "OKC Thunder",
+      "teamCity": "Oklahoma City",
+      "teamNickName": "Thunder",
+      "teamAbbreviation": "OKC"
+    },
+    "San Diego Toreros": {
+      "teamName": "San Diego Toreros",
+      "teamShortName": "USD Toreros",
+      "teamCity": "San Diego",
+      "teamNickName": "Toreros",
+      "teamAbbreviation": "USD"
+    },
+    "Charleston Cougars": {
+      "teamName": "Charleston Cougars",
+      "teamShortName": "COFC Cougars",
+      "teamCity": "Charleston",
+      "teamNickName": "Cougars",
+      "teamAbbreviation": "COFC"
+    },
+    "North Carolina State Wolfpack": {
+      "teamName": "North Carolina State Wolfpack",
+      "teamShortName": "NCST Wolfpack",
+      "teamCity": "North Carolina State",
+      "teamNickName": "Wolfpack",
+      "teamAbbreviation": "NCST"
+    },
+    "Houston Baptist Huskies": {
+      "teamName": "Houston Baptist Huskies",
+      "teamShortName": "HBU",
+      "teamCity": "Houston Baptist",
+      "teamNickName": "Huskies",
+      "teamAbbreviation": "HBU"
+    },
+    "Minnesota Timberwolves": {
+      "teamName": "Minnesota Timberwolves",
+      "teamShortName": "MIN Timberwolves",
+      "teamCity": "Minnesota",
+      "teamNickName": "Timberwolves",
+      "teamAbbreviation": "MIN"
+    },
+    "Wake Forest Demon Deacons": {
+      "teamName": "Wake Forest Demon Deacons",
+      "teamShortName": "WAKE Demon Deacons",
+      "teamCity": "Wake Forest",
+      "teamNickName": "Demon Deacons",
+      "teamAbbreviation": "WAKE"
+    },
+    "Army Black Knights": {
+      "teamName": "Army Black Knights",
+      "teamShortName": "ARMY Black Knights",
+      "teamCity": "Army",
+      "teamNickName": "Black Knights",
+      "teamAbbreviation": "ARMY"
+    },
+    "Portland Pilots": {
+      "teamName": "Portland Pilots",
+      "teamShortName": "PORT Pilots",
+      "teamCity": "Portland",
+      "teamNickName": "Pilots",
+      "teamAbbreviation": "PORT"
+    },
+    "Seattle Storm": {
+      "teamName": "Seattle Storm",
+      "teamShortName": "SEA Storm",
+      "teamCity": "Seattle",
+      "teamNickName": "Storm",
+      "teamAbbreviation": "SEA"
+    },
+    "Fairfield Stags": {
+      "teamName": "Fairfield Stags",
+      "teamShortName": "FAIR Stags",
+      "teamCity": "Fairfield",
+      "teamNickName": "Stags",
+      "teamAbbreviation": "FAIR"
+    },
+    "Texas Longhorns": {
+      "teamName": "Texas Longhorns",
+      "teamShortName": "UT Longhorns",
+      "teamCity": "Texas",
+      "teamNickName": "Longhorns",
+      "teamAbbreviation": "TEX"
+    },
+    "Miami (OH) RedHawks": {
+      "teamName": "Miami (OH) RedHawks",
+      "teamShortName": "Miami RedHawks",
+      "teamCity": "Miami (OH)",
+      "teamNickName": "Redhawks",
+      "teamAbbreviation": "M-OH"
+    },
+    "New Mexico State Aggies": {
+      "teamName": "New Mexico State Aggies",
+      "teamShortName": "NMSU Aggies",
+      "teamCity": "New Mexico State",
+      "teamNickName": "Aggies",
+      "teamAbbreviation": "NMSU"
+    },
+    "Memphis Grizzlies": {
+      "teamName": "Memphis Grizzlies",
+      "teamShortName": "MEM Grizzlies",
+      "teamCity": "Memphis",
+      "teamNickName": "Grizzlies",
+      "teamAbbreviation": "MEM"
+    },
+    "IUPUI Jaguars": {
+      "teamName": "IUPUI Jaguars",
+      "teamShortName": "IUPUI Jaguars",
+      "teamCity": "IUPUI",
+      "teamNickName": "Jaguars",
+      "teamAbbreviation": "IUPU"
+    },
+    "Utah Utes": {
+      "teamName": "Utah Utes",
+      "teamPreferredName": "Utah",
+      "teamShortName": "UTAH Utes",
+      "teamCity": "Utah",
+      "teamNickName": "Utes",
+      "teamPreferredNickName": "Utah",
+      "teamAbbreviation": "UTAH"
+    },
+    "Miami Marlins": {
+      "teamName": "Miami Marlins",
+      "teamShortName": "MIA Marlins",
+      "teamCity": "Miami",
+      "teamNickName": "Marlins",
+      "teamAbbreviation": "MIA"
+    },
+    "Portland State Vikings": {
+      "teamName": "Portland State Vikings",
+      "teamShortName": "PRST Vikings",
+      "teamCity": "Portland State",
+      "teamNickName": "Vikings",
+      "teamAbbreviation": "PRST"
+    },
+    "Purdue Boilermakers": {
+      "teamName": "Purdue Boilermakers",
+      "teamShortName": "PUR Boilermakers",
+      "teamCity": "Purdue",
+      "teamNickName": "Boilermakers",
+      "teamAbbreviation": "PUR"
+    },
+    "Pittsburgh Pirates": {
+      "teamName": "Pittsburgh Pirates",
+      "teamShortName": "PIT Pirates",
+      "teamCity": "Pittsburgh",
+      "teamNickName": "Pirates",
+      "teamAbbreviation": "PIT"
+    },
+    "American Eagles": {
+      "teamName": "American Eagles",
+      "teamShortName": "AMER Eagles",
+      "teamCity": "American University",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "AMER"
+    },
+    "Toronto Maple Leafs": {
+      "teamName": "Toronto Maple Leafs",
+      "teamShortName": "TOR Maple Leafs",
+      "teamCity": "Toronto",
+      "teamNickName": "Maple Leafs",
+      "teamAbbreviation": "TOR"
+    },
+    "Grand Canyon Antelopes": {
+      "teamName": "Grand Canyon Antelopes",
+      "teamShortName": "GCU Antelopes",
+      "teamCity": "Grand Canyon",
+      "teamNickName": "Antelopes",
+      "teamAbbreviation": "GCU"
+    },
+    "Louisiana-Lafayette Ragin' Cajuns": {
+      "teamName": "Louisiana-Lafayette Ragin' Cajuns",
+      "teamShortName": "ULL Ragin' Cajuns",
+      "teamCity": "Louisiana Lafayette",
+      "teamNickName": "Ragin' Cajuns",
+      "teamAbbreviation": "ULL"
+    },
+    "Seattle Seahawks": {
+      "teamName": "Seattle Seahawks",
+      "teamShortName": "SEA Seahawks",
+      "teamCity": "Seattle",
+      "teamNickName": "Seahawks",
+      "teamAbbreviation": "SEA"
+    },
+    "Eastern Michigan Eagles": {
+      "teamName": "Eastern Michigan Eagles",
+      "teamShortName": "EMU Eagles",
+      "teamCity": "Eastern Michigan",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "EMU"
+    },
+    "Indiana Hoosiers": {
+      "teamName": "Indiana Hoosiers",
+      "teamShortName": "IND Hoosiers",
+      "teamCity": "Indiana",
+      "teamNickName": "Hoosiers",
+      "teamAbbreviation": "IU"
+    },
+    "Northern Arizona Lumberjacks": {
+      "teamName": "Northern Arizona Lumberjacks",
+      "teamShortName": "NAU Lumberjacks",
+      "teamCity": "Northern Arizona",
+      "teamNickName": "Lumberjacks",
+      "teamAbbreviation": "NAU"
+    },
+    "Vancouver Canucks": {
+      "teamName": "Vancouver Canucks",
+      "teamShortName": "VAN Canucks",
+      "teamCity": "Vancouver",
+      "teamNickName": "Canucks",
+      "teamAbbreviation": "VAN"
+    },
+    "Washington Nationals": {
+      "teamName": "Washington Nationals",
+      "teamShortName": "WSH Nationals",
+      "teamCity": "Washington",
+      "teamNickName": "Nationals",
+      "teamAbbreviation": "WSH"
+    },
+    "Ohio Bobcats": {
+      "teamName": "Ohio Bobcats",
+      "teamShortName": "OHIO Bobcats",
+      "teamCity": "Ohio",
+      "teamNickName": "Bobcats",
+      "teamAbbreviation": "OHIO"
+    },
+    "Southern Illinois Salukis": {
+      "teamName": "Southern Illinois Salukis",
+      "teamShortName": "SIU Salukis",
+      "teamCity": "Southern Illinois",
+      "teamNickName": "Salukis",
+      "teamAbbreviation": "SIU"
+    },
+    "Wyoming Cowboys": {
+      "teamName": "Wyoming Cowboys",
+      "teamShortName": "WY Cowboys",
+      "teamCity": "Wyoming",
+      "teamNickName": "Cowboys",
+      "teamAbbreviation": "WYO"
+    },
+    "Cal State Northridge Matadors": {
+      "teamName": "Cal State Northridge Matadors",
+      "teamShortName": "CSUN Matadors",
+      "teamCity": "CSUN",
+      "teamNickName": "Matadors",
+      "teamAbbreviation": "CSUN"
+    },
+    "Los Angeles Clippers": {
+      "teamName": "Los Angeles Clippers",
+      "teamShortName": "LA Clippers",
+      "teamCity": "Los Angeles",
+      "teamNickName": "Clippers",
+      "teamAbbreviation": "LAC"
+    },
+    "Chicago Cubs": {
+      "teamName": "Chicago Cubs",
+      "teamShortName": "CHI Cubs",
+      "teamCity": "Chicago",
+      "teamNickName": "Cubs",
+      "teamAbbreviation": "CHC"
+    },
+    "Iona Gaels": {
+      "teamName": "Iona Gaels",
+      "teamShortName": "IONA Gaels",
+      "teamCity": "Iona",
+      "teamNickName": "Gaels",
+      "teamAbbreviation": "IONA"
+    },
+    "Texas Tech Red Raiders": {
+      "teamName": "Texas Tech Red Raiders",
+      "teamShortName": "TTU Red Raiders",
+      "teamCity": "Texas Tech",
+      "teamNickName": "Red Raiders",
+      "teamAbbreviation": "TTU"
+    },
+    "Montreal Canadiens": {
+      "teamName": "Montreal Canadiens",
+      "teamShortName": "MTL Canadiens",
+      "teamCity": "Montreal",
+      "teamNickName": "Canadiens",
+      "teamAbbreviation": "MTL"
+    },
+    "Cal State Fullerton Titans": {
+      "teamName": "Cal State Fullerton Titans",
+      "teamShortName": "CSF Titans",
+      "teamCity": "Cal State Fullerton",
+      "teamNickName": "Titans",
+      "teamAbbreviation": "CSF"
+    },
+    "Seattle Mariners": {
+      "teamName": "Seattle Mariners",
+      "teamShortName": "SEA Mariners",
+      "teamCity": "Seattle",
+      "teamNickName": "Mariners",
+      "teamAbbreviation": "SEA"
+    },
+    "New Jersey Devils": {
+      "teamName": "New Jersey Devils",
+      "teamShortName": "NJ Devils",
+      "teamCity": "New Jersey",
+      "teamNickName": "Devils",
+      "teamAbbreviation": "NJD"
+    },
+    "Queens University Royals": {
+      "teamName": "Queens University Royals",
+      "teamShortName": "QUC Royals",
+      "teamCity": "Queens University",
+      "teamNickName": "Royals",
+      "teamAbbreviation": "QUC"
+    },
+    "Northern Iowa Panthers": {
+      "teamName": "Northern Iowa Panthers",
+      "teamShortName": "UNI Panthers",
+      "teamCity": "Northern Iowa",
+      "teamNickName": "Panthers",
+      "teamAbbreviation": "UNI"
+    },
+    "Merrimack Warriors": {
+      "teamName": "Merrimack Warriors",
+      "teamShortName": "MRMK Warriors",
+      "teamCity": "Merrimack",
+      "teamNickName": "Warriors",
+      "teamAbbreviation": "MRMK"
+    },
+    "Baltimore Orioles": {
+      "teamName": "Baltimore Orioles",
+      "teamShortName": "BAL Orioles",
+      "teamCity": "Baltimore",
+      "teamNickName": "Orioles",
+      "teamAbbreviation": "BAL"
+    },
+    "Drake Bulldogs": {
+      "teamName": "Drake Bulldogs",
+      "teamShortName": "DRKE Bulldogs",
+      "teamCity": "Drake",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "DRKE"
+    },
+    "UC San Diego Tritons": {
+      "teamName": "UC San Diego Tritons",
+      "teamShortName": "UCSD Tritons",
+      "teamCity": "UC San Diego",
+      "teamNickName": "Tritons",
+      "teamAbbreviation": "UCSD"
+    },
+    "Kansas State Wildcats": {
+      "teamName": "Kansas State Wildcats",
+      "teamShortName": "KSU Wildcats",
+      "teamCity": "Kansas State",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "KSU"
+    },
+    "The Citadel Bulldogs": {
+      "teamName": "The Citadel Bulldogs",
+      "teamShortName": "CIT Bulldogs",
+      "teamCity": "The Citadel",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "CIT"
+    },
+    "Stephen F. Austin Lumberjacks": {
+      "teamName": "Stephen F. Austin Lumberjacks",
+      "teamShortName": "SFA Lumberjacks",
+      "teamCity": "Stephen F. Austin",
+      "teamNickName": "Lumberjacks",
+      "teamAbbreviation": "SFA"
+    },
+    "Philadelphia Flyers": {
+      "teamName": "Philadelphia Flyers",
+      "teamShortName": "PHI Flyers",
+      "teamCity": "Philadelphia",
+      "teamNickName": "Flyers",
+      "teamAbbreviation": "PHI"
+    },
+    "Indiana Pacers": {
+      "teamName": "Indiana Pacers",
+      "teamShortName": "IND Pacers",
+      "teamCity": "Indiana",
+      "teamNickName": "Pacers",
+      "teamAbbreviation": "IND"
+    },
+    "Southeastern Louisiana Lions": {
+      "teamName": "Southeastern Louisiana Lions",
+      "teamShortName": "SELA",
+      "teamCity": "Southeastern Louisiana",
+      "teamNickName": "Lions",
+      "teamAbbreviation": "SELA"
+    },
+    "Minnesota Golden Gophers": {
+      "teamName": "Minnesota Golden Gophers",
+      "teamShortName": "MINN Golden Gophers",
+      "teamCity": "Minnesota",
+      "teamNickName": "Golden Gophers",
+      "teamAbbreviation": "MINN"
+    },
+    "Utah Tech Trailblazers": {
+      "teamName": "Utah Tech Trailblazers",
+      "teamShortName": "UT Trailblazers",
+      "teamCity": "Utah Tech",
+      "teamNickName": "Trailblazers",
+      "teamAbbreviation": "UT"
+    },
+    "Arizona Diamondbacks": {
+      "teamName": "Arizona Diamondbacks",
+      "teamShortName": "ARI Diamondbacks",
+      "teamCity": "Arizona",
+      "teamNickName": "Diamondbacks",
+      "teamAbbreviation": "ARI"
+    },
+    "Portland Trail Blazers": {
+      "teamName": "Portland Trail Blazers",
+      "teamShortName": "POR Trail Blazers",
+      "teamCity": "Portland",
+      "teamNickName": "Trail Blazers",
+      "teamAbbreviation": "POR"
+    },
+    "Atlanta Dream": {
+      "teamName": "Atlanta Dream",
+      "teamShortName": "ATL Dream",
+      "teamCity": "Atlanta",
+      "teamNickName": "Dream",
+      "teamAbbreviation": "ATL"
+    },
+    "Georgetown Hoyas": {
+      "teamName": "Georgetown Hoyas",
+      "teamShortName": "GTWN Hoyas",
+      "teamCity": "Georgetown",
+      "teamNickName": "Hoyas",
+      "teamAbbreviation": "GTWN"
+    },
+    "Savannah State Tigers": {
+      "teamName": "Savannah State Tigers",
+      "teamShortName": "SAV Tigers",
+      "teamCity": "Savannah State",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "SAV"
+    },
+    "Green Bay Packers": {
+      "teamName": "Green Bay Packers",
+      "teamShortName": "GB Packers",
+      "teamCity": "Green Bay",
+      "teamNickName": "Packers",
+      "teamAbbreviation": "GB"
+    },
+    "Tennessee State Tigers": {
+      "teamName": "Tennessee State Tigers",
+      "teamShortName": "TNST Tigers",
+      "teamCity": "Tennessee State",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "TNST"
+    },
+    "Navy Midshipmen": {
+      "teamName": "Navy Midshipmen",
+      "teamShortName": "NAVY Midshipmen",
+      "teamCity": "Navy",
+      "teamNickName": "Midshipmen",
+      "teamAbbreviation": "NAVY"
+    },
+    "Carolina Hurricanes": {
+      "teamName": "Carolina Hurricanes",
+      "teamShortName": "CAR Hurricanes",
+      "teamCity": "Carolina",
+      "teamNickName": "Hurricanes",
+      "teamAbbreviation": "CAR"
+    },
+    "LSU Tigers": {
+      "teamName": "LSU Tigers",
+      "teamShortName": "LSU Tigers",
+      "teamCity": "LSU",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "LSU"
+    },
+    "Brown Bears": {
+      "teamName": "Brown Bears",
+      "teamShortName": "BRWN Bears",
+      "teamCity": "Brown",
+      "teamNickName": "Bears",
+      "teamAbbreviation": "BRWN"
+    },
+    "Lamar Cardinals": {
+      "teamName": "Lamar Cardinals",
+      "teamShortName": "LAM Cardinals",
+      "teamCity": "Lamar Cardinals",
+      "teamNickName": "Cardinals",
+      "teamAbbreviation": "LAM"
+    },
+    "Connecticut Sun": {
+      "teamName": "Connecticut Sun",
+      "teamShortName": "CONN Sun",
+      "teamCity": "Connecticut",
+      "teamNickName": "Sun",
+      "teamAbbreviation": "CON"
+    },
+    "Columbus Blue Jackets": {
+      "teamName": "Columbus Blue Jackets",
+      "teamShortName": "CLB Blue Jackets",
+      "teamCity": "Columbus",
+      "teamNickName": "Blue Jackets",
+      "teamAbbreviation": "CBJ"
+    },
+    "Arkansas Razorbacks": {
+      "teamName": "Arkansas Razorbacks",
+      "teamShortName": "ARK Razorbacks",
+      "teamCity": "Arkansas",
+      "teamNickName": "Razorbacks",
+      "teamAbbreviation": "ARK"
+    },
+    "Pittsburgh Penguins": {
+      "teamName": "Pittsburgh Penguins",
+      "teamShortName": "PIT Penguins",
+      "teamCity": "Pittsburgh",
+      "teamNickName": "Penguins",
+      "teamAbbreviation": "PIT"
+    },
+    "Troy Trojans": {
+      "teamName": "Troy Trojans",
+      "teamShortName": "TROY Trojans",
+      "teamCity": "Troy",
+      "teamNickName": "Trojans",
+      "teamAbbreviation": "TROY"
+    },
+    "St. Peter's Peacocks": {
+      "teamName": "St. Peter's Peacocks",
+      "teamShortName": "SPU Peacocks",
+      "teamCity": "Saint Peter's",
+      "teamNickName": "Peacocks",
+      "teamAbbreviation": "SPU"
+    },
+    "Kennesaw State Owls": {
+      "teamName": "Kennesaw State Owls",
+      "teamShortName": "KENN Owls",
+      "teamCity": "Kennesaw State",
+      "teamNickName": "Owls",
+      "teamAbbreviation": "KENN"
+    },
+    "Providence Friars": {
+      "teamName": "Providence Friars",
+      "teamShortName": "PROV Friars",
+      "teamCity": "Providence",
+      "teamNickName": "Friars",
+      "teamAbbreviation": "PROV"
+    },
+    "Houston Texans": {
+      "teamName": "Houston Texans",
+      "teamShortName": "HOU Texans",
+      "teamCity": "Houston",
+      "teamNickName": "Texans",
+      "teamAbbreviation": "HOU"
+    },
+    "Princeton Tigers": {
+      "teamName": "Princeton Tigers",
+      "teamShortName": "PRIN Tigers",
+      "teamCity": "Princeton",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "PRIN"
+    },
+    "Utah State Aggies": {
+      "teamName": "Utah State Aggies",
+      "teamShortName": "USU Aggies",
+      "teamCity": "Utah State",
+      "teamNickName": "Aggies",
+      "teamAbbreviation": "USU"
+    },
+    "UNC Wilmington Seahawks": {
+      "teamName": "UNC Wilmington Seahawks",
+      "teamShortName": "UNCW Seahawks",
+      "teamCity": "UNCW",
+      "teamNickName": "Seahawks",
+      "teamAbbreviation": "UNCW"
+    },
+    "Baltimore Ravens": {
+      "teamName": "Baltimore Ravens",
+      "teamShortName": "BAL Ravens",
+      "teamCity": "Baltimore",
+      "teamNickName": "Ravens",
+      "teamAbbreviation": "BAL"
+    },
+    "FIU Panthers": {
+      "teamName": "FIU Panthers",
+      "teamShortName": "FIU Panthers",
+      "teamCity": "FIU",
+      "teamNickName": "Panthers",
+      "teamAbbreviation": "FIU"
+    },
+    "Toronto Raptors": {
+      "teamName": "Toronto Raptors",
+      "teamShortName": "TOR Raptors",
+      "teamCity": "Toronto",
+      "teamNickName": "Raptors",
+      "teamAbbreviation": "TOR"
+    },
+    "High Point Panthers": {
+      "teamName": "High Point Panthers",
+      "teamShortName": "HPU Panthers",
+      "teamCity": "High Point",
+      "teamNickName": "Panthers",
+      "teamAbbreviation": "HPU"
+    },
+    "Cincinnati Bearcats": {
+      "teamName": "Cincinnati Bearcats",
+      "teamShortName": "CIN Bearcats",
+      "teamCity": "Cincinnati",
+      "teamNickName": "Bearcats",
+      "teamAbbreviation": "CIN"
+    },
+    "San Jose Sharks": {
+      "teamName": "San Jose Sharks",
+      "teamShortName": "SJ Sharks",
+      "teamCity": "San Jose",
+      "teamNickName": "Sharks",
+      "teamAbbreviation": "SJS"
+    },
+    "Chicago Bulls": {
+      "teamName": "Chicago Bulls",
+      "teamShortName": "CHI Bulls",
+      "teamCity": "Chicago",
+      "teamNickName": "Bulls",
+      "teamAbbreviation": "CHI"
+    },
+    "San Diego State Aztecs": {
+      "teamName": "San Diego State Aztecs",
+      "teamShortName": "SDSU Aztecs",
+      "teamCity": "San Diego State",
+      "teamNickName": "Aztecs",
+      "teamAbbreviation": "SDSU"
+    },
+    "Lafayette Leopards": {
+      "teamName": "Lafayette Leopards",
+      "teamShortName": "LAF Leopards",
+      "teamCity": "Lafayette",
+      "teamNickName": "Leopards",
+      "teamAbbreviation": "LAF"
+    },
+    "Iowa State Cyclones": {
+      "teamName": "Iowa State Cyclones",
+      "teamShortName": "ISU Cyclones",
+      "teamCity": "Iowa State",
+      "teamNickName": "Cyclones",
+      "teamAbbreviation": "ISU"
+    },
+    "St. Francis (PA) Red Flash": {
+      "teamName": "St. Francis (PA) Red Flash",
+      "teamShortName": "SFU Red Flash",
+      "teamCity": "St. Francis (PA)",
+      "teamNickName": "Red Flash",
+      "teamAbbreviation": "SFU"
+    },
+    "Pepperdine Waves": {
+      "teamName": "Pepperdine Waves",
+      "teamShortName": "PEPP Waves",
+      "teamCity": "Pepperdine",
+      "teamNickName": "Waves",
+      "teamAbbreviation": "PEPP"
+    },
+    "Loyola Ramblers": {
+      "teamName": "Loyola Ramblers",
+      "teamShortName": "Ly-Il Ramblers",
+      "teamCity": "Loyola Chicago",
+      "teamNickName": "Ramblers",
+      "teamAbbreviation": "LCHI"
+    },
+    "UTEP Miners": {
+      "teamName": "UTEP Miners",
+      "teamShortName": "UTEP Miners",
+      "teamCity": "UTEP",
+      "teamNickName": "Miners",
+      "teamAbbreviation": "UTEP"
+    },
+    "Mercer Bears": {
+      "teamName": "Mercer Bears",
+      "teamShortName": "MER",
+      "teamCity": "Mercer",
+      "teamNickName": "Bears",
+      "teamAbbreviation": "MER"
+    },
+    "Bryant Bulldogs": {
+      "teamName": "Bryant Bulldogs",
+      "teamShortName": "BRY Bulldogs",
+      "teamCity": "Bryant",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "BRY"
+    },
+    "Kansas City Chiefs": {
+      "teamName": "Kansas City Chiefs",
+      "teamShortName": "KC Chiefs",
+      "teamCity": "Kansas City",
+      "teamNickName": "Chiefs",
+      "teamAbbreviation": "KC"
+    },
+    "New Orleans Saints": {
+      "teamName": "New Orleans Saints",
+      "teamShortName": "NO Saints",
+      "teamCity": "New Orleans",
+      "teamNickName": "Saints",
+      "teamAbbreviation": "NO"
+    },
+    "Oregon Ducks": {
+      "teamName": "Oregon Ducks",
+      "teamShortName": "ORE Ducks",
+      "teamCity": "Oregon",
+      "teamNickName": "Ducks",
+      "teamAbbreviation": "ORE"
+    },
+    "Alabama Crimson Tide": {
+      "teamName": "Alabama Crimson Tide",
+      "teamShortName": "ALA Crimson Tide",
+      "teamCity": "Alabama",
+      "teamNickName": "Crimson Tide",
+      "teamAbbreviation": "ALA"
+    },
+    "Mount Saint Mary's Mountaineers": {
+      "teamName": "Mount Saint Mary's Mountaineers",
+      "teamShortName": "MSM Mountaineers",
+      "teamCity": "Mount St. Mary's",
+      "teamNickName": "Mountaineers",
+      "teamAbbreviation": "MSM"
+    },
+    "Loyola Greyhounds": {
+      "teamName": "Loyola Greyhounds",
+      "teamShortName": "LMD Greyhounds",
+      "teamCity": "Loyola Maryland",
+      "teamNickName": "Greyhounds",
+      "teamAbbreviation": "LMD"
+    },
+    "Anaheim Ducks": {
+      "teamName": "Anaheim Ducks",
+      "teamShortName": "ANA Ducks",
+      "teamCity": "Anaheim",
+      "teamNickName": "Ducks",
+      "teamAbbreviation": "ANA"
+    },
+    "South Dakota Coyotes": {
+      "teamName": "South Dakota Coyotes",
+      "teamShortName": "SDAK Coyotes",
+      "teamCity": "South Dakota",
+      "teamNickName": "Coyotes",
+      "teamAbbreviation": "SDAK"
+    },
+    "South Dakota State Jackrabbits": {
+      "teamName": "South Dakota State Jackrabbits",
+      "teamShortName": "SDSU Jackrabbits",
+      "teamCity": "South Dakota State",
+      "teamNickName": "Jackrabbits",
+      "teamAbbreviation": "SDSU"
+    },
+    "North Dakota Fighting Hawks": {
+      "teamName": "North Dakota Fighting Hawks",
+      "teamShortName": "UND Fighting Hawks",
+      "teamCity": "North Dakota",
+      "teamNickName": "Fighting Hawks",
+      "teamAbbreviation": "UND"
+    },
+    "Indiana Fever": {
+      "teamName": "Indiana Fever",
+      "teamShortName": "IND Fever",
+      "teamCity": "Indiana",
+      "teamNickName": "Fever",
+      "teamAbbreviation": "IND"
+    },
+    "Washington Mystics": {
+      "teamName": "Washington Mystics",
+      "teamShortName": "WAS Mystics",
+      "teamCity": "Washington",
+      "teamNickName": "Mystics",
+      "teamAbbreviation": "WAS"
+    },
+    "Arkansas State Red Wolves": {
+      "teamName": "Arkansas State Red Wolves",
+      "teamShortName": "ARST Red Wolves",
+      "teamCity": "Arkansas State",
+      "teamNickName": "Red Wolves",
+      "teamAbbreviation": "ARST"
+    },
+    "Eastern Illinois Panthers": {
+      "teamName": "Eastern Illinois Panthers",
+      "teamShortName": "EIU Panthers",
+      "teamCity": "Eastern Illinois",
+      "teamNickName": "Panthers",
+      "teamAbbreviation": "EIU"
+    },
+    "South Carolina Gamecocks": {
+      "teamName": "South Carolina Gamecocks",
+      "teamShortName": "SC Gamecocks",
+      "teamCity": "South Carolina",
+      "teamNickName": "Gamecocks",
+      "teamAbbreviation": "SC"
+    },
+    "Louisiana-Monroe Warhawks": {
+      "teamName": "Louisiana-Monroe Warhawks",
+      "teamShortName": "ULM Warhawks",
+      "teamCity": "Louisiana-Monroe",
+      "teamNickName": "Warhawks",
+      "teamAbbreviation": "ULM"
+    },
+    "Tampa Bay Buccaneers": {
+      "teamName": "Tampa Bay Buccaneers",
+      "teamShortName": "TB Buccaneers",
+      "teamCity": "Tampa Bay",
+      "teamNickName": "Buccaneers",
+      "teamAbbreviation": "TB"
+    },
+    "Wofford Terriers": {
+      "teamName": "Wofford Terriers",
+      "teamShortName": "WOF Terriers",
+      "teamCity": "Wofford Terriers",
+      "teamNickName": "Terriers",
+      "teamAbbreviation": "WOF"
+    },
+    "Miami (OH) Redhawks": {
+      "teamName": "Miami (OH) Redhawks",
+      "teamShortName": "M-OH Redhawks",
+      "teamCity": "Miami (OH)",
+      "teamNickName": "Redhawks",
+      "teamAbbreviation": "M-OH"
+    },
+    "Buffalo Bulls": {
+      "teamName": "Buffalo Bulls",
+      "teamShortName": "BUFF Bulls",
+      "teamCity": "Buffalo",
+      "teamNickName": "Bulls",
+      "teamAbbreviation": "BUFF"
+    },
+    "Lehigh Mountain Hawks": {
+      "teamName": "Lehigh Mountain Hawks",
+      "teamShortName": "LEH Mountain Hawks",
+      "teamCity": "Lehigh",
+      "teamNickName": "Mountain Hawks",
+      "teamAbbreviation": "LEH"
+    },
+    "St. Francis Brooklyn Terriers": {
+      "teamName": "St. Francis Brooklyn Terriers",
+      "teamShortName": "SFNY NY Terriers",
+      "teamCity": "St. Francis Brooklyn",
+      "teamNickName": "Terriers",
+      "teamAbbreviation": "SFNY"
+    },
+    "Villanova Wildcats": {
+      "teamName": "Villanova Wildcats",
+      "teamShortName": "NOVA Wildcats",
+      "teamCity": "Villanova",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "NOVA"
+    },
+    "Old Dominion Monarchs": {
+      "teamName": "Old Dominion Monarchs",
+      "teamShortName": "ODU Monarchs",
+      "teamCity": "Old Dominion",
+      "teamNickName": "Monarchs",
+      "teamAbbreviation": "ODU"
+    },
+    "St. Louis Blues": {
+      "teamName": "St. Louis Blues",
+      "teamShortName": "STL Blues",
+      "teamCity": "St. Louis",
+      "teamNickName": "Blues",
+      "teamAbbreviation": "STL"
+    },
+    "Minnesota Lynx": {
+      "teamName": "Minnesota Lynx",
+      "teamShortName": "MIN Lynx",
+      "teamCity": "Minnesota",
+      "teamNickName": "Lynx",
+      "teamAbbreviation": "MIN"
+    },
+    "Florida Gators": {
+      "teamName": "Florida Gators",
+      "teamShortName": "UF Gators",
+      "teamCity": "Florida",
+      "teamNickName": "Gators",
+      "teamAbbreviation": "UF"
+    },
+    "Northern Colorado Bears": {
+      "teamName": "Northern Colorado Bears",
+      "teamShortName": "UNCO Bears",
+      "teamCity": "Northern Colorado",
+      "teamNickName": "Bears",
+      "teamAbbreviation": "UNCO"
+    },
+    "Iowa Hawkeyes": {
+      "teamName": "Iowa Hawkeyes",
+      "teamShortName": "IOWA Hawkeyes",
+      "teamCity": "Iowa",
+      "teamNickName": "Hawkeyes",
+      "teamAbbreviation": "IOWA"
+    },
+    "New York Knicks": {
+      "teamName": "New York Knicks",
+      "teamShortName": "NY Knicks",
+      "teamCity": "New York",
+      "teamNickName": "Knicks",
+      "teamAbbreviation": "NYK"
+    },
+    "USC Upstate Spartans": {
+      "teamName": "USC Upstate Spartans",
+      "teamShortName": "UPST Spartans",
+      "teamCity": "Spartanburg",
+      "teamNickName": "Spartans",
+      "teamAbbreviation": "UPST"
+    },
+    "St. John's Red Storm": {
+      "teamName": "St. John's Red Storm",
+      "teamShortName": "SJU Red Storm",
+      "teamCity": "St. John's",
+      "teamNickName": "Red Storm",
+      "teamAbbreviation": "SJU"
+    },
+    "Ottawa Senators": {
+      "teamName": "Ottawa Senators",
+      "teamShortName": "OTT Senators",
+      "teamCity": "Ottawa",
+      "teamNickName": "Senators",
+      "teamAbbreviation": "OTT"
+    },
+    "Kent State Golden Flashes": {
+      "teamName": "Kent State Golden Flashes",
+      "teamShortName": "KENT Golden Flashes",
+      "teamCity": "Kent State",
+      "teamNickName": "Golden Flashes",
+      "teamAbbreviation": "KENT"
+    },
+    "Houston Christian Huskies": {
+      "teamName": "Houston Christian Huskies",
+      "teamShortName": "HCU Huskies",
+      "teamCity": "Houston Christian",
+      "teamNickName": "Huskies",
+      "teamAbbreviation": "HCU"
+    },
+    "Southern Jaguars": {
+      "teamName": "Southern Jaguars",
+      "teamShortName": "SUBR Jaguars",
+      "teamCity": "Southern University",
+      "teamNickName": "Jaguars",
+      "teamAbbreviation": "SUBR"
+    },
+    "Jackson State Tigers": {
+      "teamName": "Jackson State Tigers",
+      "teamShortName": "JKST Tigers",
+      "teamCity": "Jackson State",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "JKST"
+    },
+    "Rider Broncs": {
+      "teamName": "Rider Broncs",
+      "teamShortName": "RID Broncs",
+      "teamCity": "Rider",
+      "teamNickName": "Broncs",
+      "teamAbbreviation": "RID"
+    },
+    "Texas A&M Aggies": {
+      "teamName": "Texas A&M Aggies",
+      "teamShortName": "A&M Aggies",
+      "teamCity": "Texas A&M",
+      "teamNickName": "Aggies",
+      "teamAbbreviation": "A&M"
+    },
+    "Maryland Eastern Shore Hawks": {
+      "teamName": "Maryland Eastern Shore Hawks",
+      "teamShortName": "UMES Hawks",
+      "teamCity": "Maryland Eastern Shore",
+      "teamNickName": "Hawks",
+      "teamAbbreviation": "UMES"
+    },
+    "Central Michigan Chippewas": {
+      "teamName": "Central Michigan Chippewas",
+      "teamPreferredName": "Central Michigan",
+      "teamShortName": "CMU Chippewas",
+      "teamCity": "Central Michigan",
+      "teamNickName": "Chippewas",
+      "teamPreferredNickName": "Central Michigan",
+      "teamAbbreviation": "CMU"
+    },
+    "Norfolk State Spartans": {
+      "teamName": "Norfolk State Spartans",
+      "teamShortName": "NORF",
+      "teamCity": "Norfolk State",
+      "teamNickName": "Spartans",
+      "teamAbbreviation": "NORF"
+    },
+    "Tulsa Golden Hurricane": {
+      "teamName": "Tulsa Golden Hurricane",
+      "teamShortName": "TLSA Golden Hurricane",
+      "teamCity": "Tulsa",
+      "teamNickName": "Golden Hurricane",
+      "teamAbbreviation": "TLSA"
+    },
+    "Cornell Big Red": {
+      "teamName": "Cornell Big Red",
+      "teamShortName": "COR Big Red",
+      "teamCity": "Cornell",
+      "teamNickName": "Big Red",
+      "teamAbbreviation": "COR"
+    },
+    "East Tennessee State Buccaneers": {
+      "teamName": "East Tennessee State Buccaneers",
+      "teamShortName": "ETSU Buccaneers",
+      "teamCity": "East Tennessee State",
+      "teamNickName": "Buccaneers",
+      "teamAbbreviation": "ETSU"
+    },
+    "Miami Dolphins": {
+      "teamName": "Miami Dolphins",
+      "teamShortName": "MIA Dolphins",
+      "teamCity": "Miami",
+      "teamNickName": "Dolphins",
+      "teamAbbreviation": "MIA"
+    },
+    "UC Santa Barbara Gauchos": {
+      "teamName": "UC Santa Barbara Gauchos",
+      "teamShortName": "UCSB Gauchos",
+      "teamCity": "UC Santa Barbara",
+      "teamNickName": "Gauchos",
+      "teamAbbreviation": "UCSB"
+    },
+    "Quinnipiac Bobcats": {
+      "teamName": "Quinnipiac Bobcats",
+      "teamShortName": "QU Bobcats",
+      "teamCity": "Quinnipiac",
+      "teamNickName": "Bobcats",
+      "teamAbbreviation": "QU"
+    },
+    "Cleveland Browns": {
+      "teamName": "Cleveland Browns",
+      "teamShortName": "CLE Browns",
+      "teamCity": "Cleveland",
+      "teamNickName": "Browns",
+      "teamAbbreviation": "CLE"
+    },
+    "Cleveland Cavaliers": {
+      "teamName": "Cleveland Cavaliers",
+      "teamShortName": "CLE Cavaliers",
+      "teamCity": "Cleveland",
+      "teamNickName": "Cavaliers",
+      "teamAbbreviation": "CLE"
+    },
+    "South Florida Bulls": {
+      "teamName": "South Florida Bulls",
+      "teamShortName": "USF Bulls",
+      "teamCity": "South Florida",
+      "teamNickName": "Bulls",
+      "teamAbbreviation": "USF"
+    },
+    "Middle Tennessee Blue Raiders": {
+      "teamName": "Middle Tennessee Blue Raiders",
+      "teamShortName": "MTSU Blue Raiders",
+      "teamCity": "Middle Tennessee",
+      "teamNickName": "Blue Raiders",
+      "teamAbbreviation": "MTSU"
+    },
+    "Bethune Cookman Wildcats": {
+      "teamName": "Bethune Cookman Wildcats",
+      "teamShortName": "COOK Wildcats",
+      "teamCity": "Bethune Cookman Wildcats",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "COOK"
+    },
+    "Philadelphia Phillies": {
+      "teamName": "Philadelphia Phillies",
+      "teamShortName": "PHI Phillies",
+      "teamCity": "Philadelphia",
+      "teamNickName": "Phillies",
+      "teamAbbreviation": "PHI"
+    },
+    "Youngstown State Penguins": {
+      "teamName": "Youngstown State Penguins",
+      "teamShortName": "YSU Penguins",
+      "teamCity": "Youngstown State",
+      "teamNickName": "Penguins",
+      "teamAbbreviation": "YSU"
+    },
+    "New York Giants": {
+      "teamName": "New York Giants",
+      "teamShortName": "NY Giants",
+      "teamCity": "New York",
+      "teamNickName": "Giants",
+      "teamAbbreviation": "NYG"
+    },
+    "Eastern Washington Eagles": {
+      "teamName": "Eastern Washington Eagles",
+      "teamShortName": "EWU Eagles",
+      "teamCity": "Eastern Washington",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "EWU"
+    },
+    "Pennsylvania Quakers": {
+      "teamName": "Pennsylvania Quakers",
+      "teamShortName": "PENN Quakers",
+      "teamCity": "UPenn",
+      "teamNickName": "Quakers",
+      "teamAbbreviation": "PENN"
+    },
+    "UT Martin Skyhawks": {
+      "teamName": "UT Martin Skyhawks",
+      "teamShortName": "UTM Skyhawks",
+      "teamCity": "Tennessee-Martin",
+      "teamNickName": "Skyhawks",
+      "teamAbbreviation": "UTM"
+    },
+    "Radford Highlanders": {
+      "teamName": "Radford Highlanders",
+      "teamShortName": "RAD Highlanders",
+      "teamCity": "Radford",
+      "teamNickName": "Highlanders",
+      "teamAbbreviation": "RAD"
+    },
+    "Milwaukee Panthers": {
+      "teamName": "Milwaukee Panthers",
+      "teamShortName": "UWM Panthers",
+      "teamCity": "Milwaukee",
+      "teamNickName": "Panthers",
+      "teamAbbreviation": "UWM"
+    },
+    "San Jose State Spartans": {
+      "teamName": "San Jose State Spartans",
+      "teamShortName": "SJSU Spartans",
+      "teamCity": "San Jose",
+      "teamNickName": "Spartans",
+      "teamAbbreviation": "SJSU"
+    },
+    "Georgia Bulldogs": {
+      "teamName": "Georgia Bulldogs",
+      "teamShortName": "UGA Bulldogs",
+      "teamCity": "Georgia",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "UGA"
+    },
+    "Seattle Kraken": {
+      "teamName": "Seattle Kraken",
+      "teamShortName": "SEA Kraken",
+      "teamCity": "Seattle",
+      "teamNickName": "Kraken",
+      "teamAbbreviation": "SEA"
+    },
+    "New Orleans Pelicans": {
+      "teamName": "New Orleans Pelicans",
+      "teamShortName": "NO Pelicans",
+      "teamCity": "New Orleans",
+      "teamNickName": "Pelicans",
+      "teamAbbreviation": "NOP"
+    },
+    "Penn State Nittany Lions": {
+      "teamName": "Penn State Nittany Lions",
+      "teamShortName": "PSU Nittany Lions",
+      "teamCity": "Penn State",
+      "teamNickName": "Nittany Lions",
+      "teamAbbreviation": "PSU"
+    },
+    "Catawba College": {
+      "teamName": "Catawba College",
+      "teamShortName": "Catawba",
+      "teamCity": "Catawba",
+      "teamNickName": "Indians",
+      "teamPreferredNickName": "Catawba",
+      "teamAbbreviation": "CAT"
+    },
+    "Liberty Flames": {
+      "teamName": "Liberty Flames",
+      "teamShortName": "LIB Flames",
+      "teamCity": "Liberty",
+      "teamNickName": "Flames",
+      "teamAbbreviation": "LIB"
+    },
+    "Detroit Lions": {
+      "teamName": "Detroit Lions",
+      "teamShortName": "DET Lions",
+      "teamCity": "Detroit",
+      "teamNickName": "Lions",
+      "teamAbbreviation": "DET"
+    },
+    "Colorado State Rams": {
+      "teamName": "Colorado State Rams",
+      "teamShortName": "CSU Rams",
+      "teamCity": "Colorado State",
+      "teamNickName": "Rams",
+      "teamAbbreviation": "CSU"
+    },
+    "Gonzaga Bulldogs": {
+      "teamName": "Gonzaga Bulldogs",
+      "teamShortName": "Gonz Bulldogs",
+      "teamCity": "Gonzaga",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "GONZ"
+    },
+    "Kansas City Roos": {
+      "teamName": "Kansas City Roos",
+      "teamShortName": "UMKC Roos",
+      "teamCity": "Kansas City",
+      "teamNickName": "Roos",
+      "teamAbbreviation": "UMKC"
+    },
+    "Wichita State Shockers": {
+      "teamName": "Wichita State Shockers",
+      "teamShortName": "Wich Shockers",
+      "teamCity": "Wichita State",
+      "teamNickName": "Shockers",
+      "teamAbbreviation": "WICH"
+    },
+    "Tennessee Tech Golden Eagles": {
+      "teamName": "Tennessee Tech Golden Eagles",
+      "teamShortName": "TNTC",
+      "teamCity": "Tennessee Tech",
+      "teamNickName": "Golden Eagles",
+      "teamAbbreviation": "TNTC"
+    },
+    "Northern Illinois Huskies": {
+      "teamName": "Northern Illinois Huskies",
+      "teamShortName": "NIU Huskies",
+      "teamCity": "Northern Illinois",
+      "teamNickName": "Huskies",
+      "teamAbbreviation": "NIU"
+    },
+    "Chattanooga Mocs": {
+      "teamName": "Chattanooga Mocs",
+      "teamShortName": "CHAT Mocs",
+      "teamCity": "Chattanooga",
+      "teamNickName": "Mocs",
+      "teamAbbreviation": "CHAT"
+    },
+    "Tennessee Volunteers": {
+      "teamName": "Tennessee Volunteers",
+      "teamShortName": "TENN Volunteers",
+      "teamCity": "Tennessee",
+      "teamNickName": "Volunteers",
+      "teamAbbreviation": "TENN"
+    },
+    "Marshall Thundering Herd": {
+      "teamName": "Marshall Thundering Herd",
+      "teamShortName": "MRSH Thundering Herd",
+      "teamCity": "Marshall",
+      "teamNickName": "Thundering Herd",
+      "teamAbbreviation": "MRSH"
+    },
+    "Toronto Blue Jays": {
+      "teamName": "Toronto Blue Jays",
+      "teamShortName": "TOR Blue Jays",
+      "teamCity": "Toronto",
+      "teamNickName": "Blue Jays",
+      "teamAbbreviation": "TOR"
+    },
+    "Alabama State Hornets": {
+      "teamName": "Alabama State Hornets",
+      "teamShortName": "ALST Hornets",
+      "teamCity": "Alabama State",
+      "teamNickName": "Hornets",
+      "teamAbbreviation": "ALST"
+    },
+    "Memphis Tigers": {
+      "teamName": "Memphis Tigers",
+      "teamShortName": "MEM Tigers",
+      "teamCity": "Memphis",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "MEM"
+    },
+    "Pittsburgh Panthers": {
+      "teamName": "Pittsburgh Panthers",
+      "teamShortName": "PITT Panthers",
+      "teamCity": "Pittsburgh",
+      "teamNickName": "Panthers",
+      "teamAbbreviation": "PITT"
+    },
+    "Wright State Raiders": {
+      "teamName": "Wright State Raiders",
+      "teamShortName": "WRST Raiders",
+      "teamCity": "Wright State",
+      "teamNickName": "Raiders",
+      "teamAbbreviation": "WRST"
+    },
+    "North Carolina A&T Aggies": {
+      "teamName": "North Carolina A&T Aggies",
+      "teamShortName": "NCAT",
+      "teamCity": "North Carolina A&T",
+      "teamNickName": "Aggies",
+      "teamAbbreviation": "NCAT"
+    },
+    "Auburn Tigers": {
+      "teamName": "Auburn Tigers",
+      "teamShortName": "AUB Tigers",
+      "teamCity": "Auburn",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "AUB"
+    },
+    "Holy Cross Crusaders": {
+      "teamName": "Holy Cross Crusaders",
+      "teamShortName": "HC Crusaders",
+      "teamCity": "Holy Cross",
+      "teamNickName": "Crusaders",
+      "teamAbbreviation": "HC"
+    },
+    "Chicago Bears": {
+      "teamName": "Chicago Bears",
+      "teamShortName": "CHI Bears",
+      "teamCity": "Chicago",
+      "teamNickName": "Bears",
+      "teamAbbreviation": "CHI"
+    },
+    "Baylor Bears": {
+      "teamName": "Baylor Bears",
+      "teamShortName": "BAY Bears",
+      "teamCity": "Baylor",
+      "teamNickName": "Bears",
+      "teamAbbreviation": "BAY"
+    },
+    "New York Islanders": {
+      "teamName": "New York Islanders",
+      "teamShortName": "NY Islanders",
+      "teamCity": "New York",
+      "teamNickName": "Islanders",
+      "teamAbbreviation": "NYI"
+    },
+    "Miami Heat": {
+      "teamName": "Miami Heat",
+      "teamShortName": "MIA Heat",
+      "teamCity": "Miami",
+      "teamNickName": "Heat",
+      "teamAbbreviation": "MIA"
+    },
+    "Kentucky Wildcats": {
+      "teamName": "Kentucky Wildcats",
+      "teamShortName": "UK Wildcats",
+      "teamCity": "Kentucky",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "UK"
+    },
+    "New York Jets": {
+      "teamName": "New York Jets",
+      "teamShortName": "NY Jets",
+      "teamCity": "New York",
+      "teamNickName": "Jets",
+      "teamAbbreviation": "NYJ"
+    },
+    "New Orleans Privateers": {
+      "teamName": "New Orleans Privateers",
+      "teamShortName": "UNO Privateers",
+      "teamCity": "New Orleans",
+      "teamNickName": "Privateers",
+      "teamAbbreviation": "UNO"
+    },
+    "Marist Red Foxes": {
+      "teamName": "Marist Red Foxes",
+      "teamShortName": "MRST Red Foxes",
+      "teamCity": "Marist",
+      "teamNickName": "Red Foxes",
+      "teamAbbreviation": "MRST"
+    },
+    "St. Louis Cardinals": {
+      "teamName": "St. Louis Cardinals",
+      "teamShortName": "STL Cardinals",
+      "teamCity": "St. Louis",
+      "teamNickName": "Cardinals",
+      "teamAbbreviation": "STL"
+    },
+    "Clemson Tigers": {
+      "teamName": "Clemson Tigers",
+      "teamShortName": "CLEM Tigers",
+      "teamCity": "Clemson",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "CLEM"
+    },
+    "Stonehill Skyhawks": {
+      "teamName": "Stonehill Skyhawks",
+      "teamShortName": "SHC Skyhawks",
+      "teamCity": "Stonehill",
+      "teamNickName": "Skyhawks",
+      "teamAbbreviation": "SHC"
+    },
+    "Duquesne Dukes": {
+      "teamName": "Duquesne Dukes",
+      "teamShortName": "DUQ Dukes",
+      "teamCity": "Duquesne",
+      "teamNickName": "Dukes",
+      "teamAbbreviation": "DUQ"
+    },
+    "Mississippi Valley State Delta Devils": {
+      "teamName": "Mississippi Valley State Delta Devils",
+      "teamShortName": "MVSU Delta Devils",
+      "teamCity": "Mississippi Valley State",
+      "teamNickName": "Delta Devils",
+      "teamAbbreviation": "MVSU"
+    },
+    "Washington State Cougars": {
+      "teamName": "Washington State Cougars",
+      "teamShortName": "WSU Cougars",
+      "teamCity": "Washington State",
+      "teamNickName": "Cougars",
+      "teamAbbreviation": "WSU"
+    },
+    "Rhode Island Rams": {
+      "teamName": "Rhode Island Rams",
+      "teamShortName": "URI Rams",
+      "teamCity": "Rhode Island",
+      "teamNickName": "Rams",
+      "teamAbbreviation": "URI"
+    },
+    "North Carolina Central Eagles": {
+      "teamName": "North Carolina Central Eagles",
+      "teamShortName": "NCCU",
+      "teamCity": "NC Central",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "NCCU"
+    },
+    "Boston University Terriers": {
+      "teamName": "Boston University Terriers",
+      "teamShortName": "BU Terriers",
+      "teamCity": "Boston University",
+      "teamNickName": "Terriers",
+      "teamAbbreviation": "BU"
+    },
+    "Siena Saints": {
+      "teamName": "Siena Saints",
+      "teamShortName": "SIE Saints",
+      "teamCity": "Siena",
+      "teamNickName": "Saints",
+      "teamAbbreviation": "SIE"
+    },
+    "Seton Hall Pirates": {
+      "teamName": "Seton Hall Pirates",
+      "teamShortName": "SH Pirates",
+      "teamCity": "Seton Hall",
+      "teamNickName": "Pirates",
+      "teamAbbreviation": "HALL"
+    },
+    "Detroit Tigers": {
+      "teamName": "Detroit Tigers",
+      "teamShortName": "DET Tigers",
+      "teamCity": "Detroit",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "DET"
+    },
+    "Chicago State Cougars": {
+      "teamName": "Chicago State Cougars",
+      "teamShortName": "CHS Cougars",
+      "teamCity": "Chicago State",
+      "teamNickName": "Cougars",
+      "teamAbbreviation": "CHS"
+    },
+    "UMBC Retrievers": {
+      "teamName": "UMBC Retrievers",
+      "teamShortName": "UMBC Retrievers",
+      "teamCity": "UMBC",
+      "teamNickName": "Retrievers",
+      "teamAbbreviation": "UMBC"
+    },
+    "Tulane Green Wave": {
+      "teamName": "Tulane Green Wave",
+      "teamShortName": "TULN Green Wave",
+      "teamCity": "Tulane",
+      "teamNickName": "Green Wave",
+      "teamAbbreviation": "TULN"
+    },
+    "Akron Zips": {
+      "teamName": "Akron Zips",
+      "teamShortName": "AKR Zips",
+      "teamCity": "Akron",
+      "teamNickName": "Zips",
+      "teamAbbreviation": "AKR"
+    },
+    "George Washington Colonials": {
+      "teamName": "George Washington Colonials",
+      "teamShortName": "GW Revolutionaries",
+      "teamCity": "George Washington",
+      "teamNickName": "Colonials",
+      "teamAbbreviation": "GW"
+    },
+    "California Baptist Lancers": {
+      "teamName": "California Baptist Lancers",
+      "teamShortName": "CalBap Lancers",
+      "teamCity": "California Baptist",
+      "teamNickName": "Lancers",
+      "teamAbbreviation": "CALBAP"
+    },
+    "Minnesota Twins": {
+      "teamName": "Minnesota Twins",
+      "teamShortName": "MIN Twins",
+      "teamCity": "Minnesota",
+      "teamNickName": "Twins",
+      "teamAbbreviation": "MIN"
+    },
+    "La Salle Explorers": {
+      "teamName": "La Salle Explorers",
+      "teamShortName": "LaSal Explorers",
+      "teamCity": "La Salle",
+      "teamNickName": "Explorers",
+      "teamAbbreviation": "LAS"
+    },
+    "Philadelphia Eagles": {
+      "teamName": "Philadelphia Eagles",
+      "teamShortName": "PHI Eagles",
+      "teamCity": "Philadelphia",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "PHI"
+    },
+    "Washington Commanders": {
+      "teamName": "Washington Commanders",
+      "teamShortName": "WAS Commanders",
+      "teamCity": "Washington",
+      "teamNickName": "Commanders",
+      "teamAbbreviation": "WAS"
+    },
+    "Utah Valley Wolverines": {
+      "teamName": "Utah Valley Wolverines",
+      "teamShortName": "UVU Wolverines",
+      "teamCity": "Utah Valley",
+      "teamNickName": "Wolverines",
+      "teamAbbreviation": "UVU"
+    },
+    "Coastal Carolina Chanticleers": {
+      "teamName": "Coastal Carolina Chanticleers",
+      "teamShortName": "CCU Chanticleers",
+      "teamCity": "Coastal Carolina",
+      "teamNickName": "Chanticleers",
+      "teamAbbreviation": "CCU"
+    },
+    "Washington Capitals": {
+      "teamName": "Washington Capitals",
+      "teamShortName": "WSH Capitals",
+      "teamCity": "Washington",
+      "teamNickName": "Capitals",
+      "teamAbbreviation": "WSH"
+    },
+    "McNeese State Cowboys": {
+      "teamName": "McNeese State Cowboys",
+      "teamShortName": "MCNS",
+      "teamCity": "McNeese State Cowboys",
+      "teamNickName": "Cowboys",
+      "teamAbbreviation": "MCNS"
+    },
+    "Cincinnati Reds": {
+      "teamName": "Cincinnati Reds",
+      "teamShortName": "CIN Reds",
+      "teamCity": "Cincinnati",
+      "teamNickName": "Reds",
+      "teamAbbreviation": "CIN"
+    },
+    "New Hampshire Wildcats": {
+      "teamName": "New Hampshire Wildcats",
+      "teamShortName": "UNH Wildcats",
+      "teamCity": "New Hampshire",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "UNH"
+    },
+    "Howard Bison": {
+      "teamName": "Howard Bison",
+      "teamShortName": "HOW Bison",
+      "teamCity": "Howard",
+      "teamNickName": "Bison",
+      "teamAbbreviation": "HOW"
+    },
+    "Illinois Fighting Illini": {
+      "teamName": "Illinois Fighting Illini",
+      "teamShortName": "ILL Fighting Illini",
+      "teamCity": "Illinois",
+      "teamNickName": "Fighting Illini",
+      "teamAbbreviation": "ILL"
+    },
+    "Charlotte 49ers": {
+      "teamName": "Charlotte 49ers",
+      "teamShortName": "CHAR 49ers",
+      "teamCity": "Charlotte",
+      "teamNickName": "49ers",
+      "teamAbbreviation": "CLT"
+    },
+    "Fairleigh Dickinson Knights": {
+      "teamName": "Fairleigh Dickinson Knights",
+      "teamShortName": "FDU Knights",
+      "teamCity": "Fairleigh Dickinson",
+      "teamNickName": "Knights",
+      "teamAbbreviation": "FDU"
+    },
+    "Temple Owls": {
+      "teamName": "Temple Owls",
+      "teamShortName": "TEM Owls",
+      "teamCity": "Temple",
+      "teamNickName": "Owls",
+      "teamAbbreviation": "TEM"
+    },
+    "Richmond Spiders": {
+      "teamName": "Richmond Spiders",
+      "teamShortName": "RICH Spiders",
+      "teamCity": "Richmond",
+      "teamNickName": "Spiders",
+      "teamAbbreviation": "RICH"
+    },
+    "California Golden Bears": {
+      "teamName": "California Golden Bears",
+      "teamShortName": "CAL Golden Bears",
+      "teamCity": "CAL",
+      "teamNickName": "Golden Bears",
+      "teamAbbreviation": "CAL"
+    },
+    "Connecticut Huskies": {
+      "teamName": "Connecticut Huskies",
+      "teamShortName": "UCONN Huskies",
+      "teamCity": "Connecticut",
+      "teamNickName": "Huskies",
+      "teamAbbreviation": "CONN"
+    },
+    "Chicago Blackhawks": {
+      "teamName": "Chicago Blackhawks",
+      "teamPreferredName": "Chicago",
+      "teamShortName": "CHI Blackhawks",
+      "teamCity": "Chicago",
+      "teamNickName": "Blackhawks",
+      "teamPreferredNickName": "Chicago",
+      "teamAbbreviation": "CHI"
+    },
+    "Vegas Golden Knights": {
+      "teamName": "Vegas Golden Knights",
+      "teamShortName": "VEG Golden Knights",
+      "teamCity": "Vegas",
+      "teamNickName": "Golden Knights",
+      "teamAbbreviation": "VGK"
+    },
+    "Texas Southern Tigers": {
+      "teamName": "Texas Southern Tigers",
+      "teamShortName": "TXSO Tigers",
+      "teamCity": "Texas Southern",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "TXSO"
+    },
+    "Sacred Heart Pioneers": {
+      "teamName": "Sacred Heart Pioneers",
+      "teamShortName": "SHU Pioneers",
+      "teamCity": "Sacred Heart",
+      "teamNickName": "Pioneers",
+      "teamAbbreviation": "SHU"
+    },
+    "Atlanta Braves": {
+      "teamName": "Atlanta Braves",
+      "teamShortName": "ATL Braves",
+      "teamCity": "Atlanta",
+      "teamNickName": "Braves",
+      "teamAbbreviation": "ATL"
+    },
+    "Las Vegas Aces": {
+      "teamName": "Las Vegas Aces",
+      "teamShortName": "LV Aces",
+      "teamCity": "Las Vegas",
+      "teamNickName": "Aces",
+      "teamAbbreviation": "LVA"
+    },
+    "San Diego Padres": {
+      "teamName": "San Diego Padres",
+      "teamShortName": "SD Padres",
+      "teamCity": "San Diego",
+      "teamNickName": "Padres",
+      "teamAbbreviation": "SD"
+    },
+    "Omaha Mavericks": {
+      "teamName": "Omaha Mavericks",
+      "teamShortName": "OMA Mavericks",
+      "teamCity": "Omaha",
+      "teamNickName": "Mavericks",
+      "teamAbbreviation": "OMA"
+    },
+    "Illinois State Redbirds": {
+      "teamName": "Illinois State Redbirds",
+      "teamShortName": "ILST Redbirds",
+      "teamCity": "Illinois State",
+      "teamNickName": "Redbirds",
+      "teamAbbreviation": "ILST"
+    },
+    "Bradley Braves": {
+      "teamName": "Bradley Braves",
+      "teamShortName": "BRAD Braves",
+      "teamCity": "Bradley",
+      "teamNickName": "Braves",
+      "teamAbbreviation": "BRAD"
+    },
+    "Boise State Broncos": {
+      "teamName": "Boise State Broncos",
+      "teamShortName": "BSU Broncos",
+      "teamCity": "Boise State",
+      "teamNickName": "Broncos",
+      "teamAbbreviation": "BSU"
+    },
+    "Yale Bulldogs": {
+      "teamName": "Yale Bulldogs",
+      "teamShortName": "YALE Bulldogs",
+      "teamCity": "Yale",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "YALE"
+    },
+    "Binghamton Bearcats": {
+      "teamName": "Binghamton Bearcats",
+      "teamShortName": "BING Bearcats",
+      "teamCity": "Binghamton",
+      "teamNickName": "Bearcats",
+      "teamAbbreviation": "BING"
+    },
+    "North Alabama Lions": {
+      "teamName": "North Alabama Lions",
+      "teamShortName": "NortAL Lions",
+      "teamCity": "North Alabama",
+      "teamNickName": "Lions",
+      "teamAbbreviation": "UNA"
+    },
+    "Wagner Seahawks": {
+      "teamName": "Wagner Seahawks",
+      "teamShortName": "WAG Seahawks",
+      "teamCity": "Wagner",
+      "teamNickName": "Seahawks",
+      "teamAbbreviation": "WAG"
+    },
+    "Los Angeles Dodgers": {
+      "teamName": "Los Angeles Dodgers",
+      "teamShortName": "LA Dodgers",
+      "teamCity": "Los Angeles",
+      "teamNickName": "Dodgers",
+      "teamAbbreviation": "LAD"
+    },
+    "Missouri Tigers": {
+      "teamName": "Missouri Tigers",
+      "teamShortName": "MU Tigers",
+      "teamCity": "Missouri",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "MU"
+    },
+    "Pacific Tigers": {
+      "teamName": "Pacific Tigers",
+      "teamShortName": "Pac Tigers",
+      "teamCity": "Pacific",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "PAC"
+    },
+    "Northern Kentucky Norse": {
+      "teamName": "Northern Kentucky Norse",
+      "teamShortName": "NKU Norse",
+      "teamCity": "Northern Kentucky",
+      "teamNickName": "Norse",
+      "teamAbbreviation": "NKU"
+    },
+    "VMI Keydets": {
+      "teamName": "VMI Keydets",
+      "teamShortName": "VMI Keydets",
+      "teamCity": "VMI",
+      "teamNickName": "Keydets",
+      "teamAbbreviation": "VMI"
+    },
+    "Towson Tigers": {
+      "teamName": "Towson Tigers",
+      "teamShortName": "TOWS Tigers",
+      "teamCity": "Towson",
+      "teamNickName": "Tigers",
+      "teamAbbreviation": "TOWS"
+    },
+    "Texas Rangers": {
+      "teamName": "Texas Rangers",
+      "teamShortName": "TEX Rangers",
+      "teamCity": "Texas",
+      "teamNickName": "Rangers",
+      "teamAbbreviation": "TEX"
+    },
+    "Golden State Valkyries": {
+      "teamName": "Golden State Valkyries",
+      "teamShortName": "GS Valkyries",
+      "teamCity": "Golden State",
+      "teamNickName": "Valkyries",
+      "teamAbbreviation": "GSV"
+    },
+    "Creighton Bluejays": {
+      "teamName": "Creighton Bluejays",
+      "teamShortName": "CREI Bluejays",
+      "teamCity": "Creighton",
+      "teamNickName": "Bluejays",
+      "teamAbbreviation": "CREI"
+    },
+    "UIC Flames": {
+      "teamName": "UIC Flames",
+      "teamShortName": "UIC Flames",
+      "teamCity": "UIC",
+      "teamNickName": "Flames",
+      "teamAbbreviation": "UIC"
+    },
+    "Kansas Jayhawks": {
+      "teamName": "Kansas Jayhawks",
+      "teamShortName": "KU Jayhawks",
+      "teamCity": "Kansas",
+      "teamNickName": "Jayhawks",
+      "teamAbbreviation": "KU"
+    },
+    "Georgia Southern Eagles": {
+      "teamName": "Georgia Southern Eagles",
+      "teamShortName": "GASO Eagles",
+      "teamCity": "Georgia Southern",
+      "teamNickName": "Eagles",
+      "teamAbbreviation": "GASO"
+    },
+    "Jacksonville Dolphins": {
+      "teamName": "Jacksonville Dolphins",
+      "teamShortName": "JAC Dolphins",
+      "teamCity": "Jacksonville",
+      "teamNickName": "Dolphins",
+      "teamAbbreviation": "JAC"
+    },
+    "Boston Celtics": {
+      "teamName": "Boston Celtics",
+      "teamShortName": "BOS Celtics",
+      "teamCity": "Boston",
+      "teamNickName": "Celtics",
+      "teamAbbreviation": "BOS"
+    },
+    "Oregon State Beavers": {
+      "teamName": "Oregon State Beavers",
+      "teamShortName": "OSU Beavers",
+      "teamCity": "Oregon State",
+      "teamNickName": "Beavers",
+      "teamAbbreviation": "OSU"
+    },
+    "Los Angeles Rams": {
+      "teamName": "Los Angeles Rams",
+      "teamShortName": "LA Rams",
+      "teamCity": "Los Angeles",
+      "teamNickName": "Rams",
+      "teamAbbreviation": "LAR"
+    },
+    "Dallas Wings": {
+      "teamName": "Dallas Wings",
+      "teamShortName": "DAL Wings",
+      "teamCity": "Dallas",
+      "teamNickName": "Wings",
+      "teamAbbreviation": "DAL"
+    },
+    "Saint Louis Billikens": {
+      "teamName": "Saint Louis Billikens",
+      "teamShortName": "SLU Billikens",
+      "teamCity": "Saint Louis",
+      "teamNickName": "Billikens",
+      "teamAbbreviation": "SLU"
+    },
+    "Catawba Indians": {
+      "teamName": "Catawba Indians",
+      "teamPreferredName": "Catawba",
+      "teamShortName": "Catawba",
+      "teamCity": "Catawba",
+      "teamNickName": "Indians",
+      "teamPreferredNickName": "Catawba",
+      "teamAbbreviation": "CAT"
+    },
+    "Ohio State Buckeyes": {
+      "teamName": "Ohio State Buckeyes",
+      "teamShortName": "OSU Buckeyes",
+      "teamCity": "Ohio State",
+      "teamNickName": "Buckeyes",
+      "teamAbbreviation": "OSU"
+    },
+    "Florida State Seminoles": {
+      "teamName": "Florida State Seminoles",
+      "teamPreferredName": "Florida State",
+      "teamShortName": "FSU Seminoles",
+      "teamCity": "Florida State",
+      "teamNickName": "Seminoles",
+      "teamPreferredNickName": "Florida State",
+      "teamAbbreviation": "FSU"
+    },
+    "Butler Bulldogs": {
+      "teamName": "Butler Bulldogs",
+      "teamShortName": "BUT Bulldogs",
+      "teamCity": "Butler",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "BUT"
+    },
+    "Golden State Warriors": {
+      "teamName": "Golden State Warriors",
+      "teamShortName": "GS Warriors",
+      "teamCity": "Golden State",
+      "teamNickName": "Warriors",
+      "teamAbbreviation": "GSW"
+    },
+    "Buffalo Sabres": {
+      "teamName": "Buffalo Sabres",
+      "teamShortName": "BUF Sabres",
+      "teamCity": "Buffalo",
+      "teamNickName": "Sabres",
+      "teamAbbreviation": "BUF"
+    },
+    "Western Michigan Broncos": {
+      "teamName": "Western Michigan Broncos",
+      "teamShortName": "WMU Broncos",
+      "teamCity": "Western Michigan",
+      "teamNickName": "Broncos",
+      "teamAbbreviation": "WMU"
+    },
+    "Colgate Raiders": {
+      "teamName": "Colgate Raiders",
+      "teamShortName": "COLG Raiders",
+      "teamCity": "Colgate",
+      "teamNickName": "Raiders",
+      "teamAbbreviation": "COLG"
+    },
+    "Central Arkansas Bears": {
+      "teamName": "Central Arkansas Bears",
+      "teamShortName": "UCA Bears",
+      "teamCity": "Central Arkansas",
+      "teamNickName": "Bears",
+      "teamAbbreviation": "UCA"
+    },
+    "Los Angeles Sparks": {
+      "teamName": "Los Angeles Sparks",
+      "teamShortName": "LA Sparks",
+      "teamCity": "Los Angeles",
+      "teamNickName": "Sparks",
+      "teamAbbreviation": "LAS"
+    },
+    "Chicago Sky": {
+      "teamName": "Chicago Sky",
+      "teamShortName": "CHI Sky",
+      "teamCity": "Chicago",
+      "teamNickName": "Sky",
+      "teamAbbreviation": "CHI"
+    },
+    "St. Thomas (MN) Tommies": {
+      "teamName": "St. Thomas (MN) Tommies",
+      "teamShortName": "UST Tommies",
+      "teamCity": "St. Thomas (MN)",
+      "teamNickName": "Tommies",
+      "teamAbbreviation": "UST"
+    },
+    "Indianapolis Colts": {
+      "teamName": "Indianapolis Colts",
+      "teamShortName": "IND Colts",
+      "teamCity": "Indianapolis",
+      "teamNickName": "Colts",
+      "teamAbbreviation": "IND"
+    },
+    "San Francisco Giants": {
+      "teamName": "San Francisco Giants",
+      "teamShortName": "SF Giants",
+      "teamCity": "San Francisco",
+      "teamNickName": "Giants",
+      "teamAbbreviation": "SF"
+    },
+    "Southern Miss Golden Eagles": {
+      "teamName": "Southern Miss Golden Eagles",
+      "teamShortName": "USM Golden Eagles",
+      "teamCity": "Southern Miss",
+      "teamNickName": "Golden Eagles",
+      "teamAbbreviation": "USM"
+    },
+    "Arizona Coyotes": {
+      "teamName": "Arizona Coyotes",
+      "teamShortName": "ARI Coyotes",
+      "teamCity": "Arizona",
+      "teamNickName": "Coyotes",
+      "teamAbbreviation": "ARI"
+    },
+    "Southern Utah Thunderbirds": {
+      "teamName": "Southern Utah Thunderbirds",
+      "teamShortName": "SUU Thunderbirds",
+      "teamCity": "Southern Utah",
+      "teamNickName": "Thunderbirds",
+      "teamAbbreviation": "SUU"
+    },
+    "Virginia Cavaliers": {
+      "teamName": "Virginia Cavaliers",
+      "teamShortName": "UVA Cavaliers",
+      "teamCity": "Virginia",
+      "teamNickName": "Cavaliers",
+      "teamAbbreviation": "UVA"
+    },
+    "Idaho State Bengals": {
+      "teamName": "Idaho State Bengals",
+      "teamShortName": "IDST Bengals",
+      "teamCity": "Idaho State",
+      "teamNickName": "Bengals",
+      "teamAbbreviation": "IDST"
+    },
+    "NJIT Highlanders": {
+      "teamName": "NJIT Highlanders",
+      "teamShortName": "NJIT Highlanders",
+      "teamCity": "NJIT",
+      "teamNickName": "Highlanders",
+      "teamAbbreviation": "NJIT"
+    },
+    "Harvard Crimson": {
+      "teamName": "Harvard Crimson",
+      "teamShortName": "HARV Crimson",
+      "teamCity": "Harvard",
+      "teamNickName": "Crimson",
+      "teamAbbreviation": "HARV"
+    },
+    "Saint Mary's Gaels": {
+      "teamName": "Saint Mary's Gaels",
+      "teamShortName": "STM Gaels",
+      "teamCity": "Saint Mary's",
+      "teamNickName": "Gaels",
+      "teamAbbreviation": "STM"
+    },
+    "Michigan State Spartans": {
+      "teamName": "Michigan State Spartans",
+      "teamShortName": "MSU Spartans",
+      "teamCity": "Michigan State",
+      "teamNickName": "Spartans",
+      "teamAbbreviation": "MSU"
+    },
+    "West Virginia Mountaineers": {
+      "teamName": "West Virginia Mountaineers",
+      "teamShortName": "WVU Mountaineers",
+      "teamCity": "West Virginia",
+      "teamNickName": "Mountaineers",
+      "teamAbbreviation": "WVU"
+    },
+    "Milwaukee Brewers": {
+      "teamName": "Milwaukee Brewers",
+      "teamShortName": "MIL Brewers",
+      "teamCity": "Milwaukee",
+      "teamNickName": "Brewers",
+      "teamAbbreviation": "MIL"
+    },
+    "Colorado Buffaloes": {
+      "teamName": "Colorado Buffaloes",
+      "teamShortName": "COLO Buffaloes",
+      "teamCity": "Colorado",
+      "teamNickName": "Buffaloes",
+      "teamAbbreviation": "COLO"
+    },
+    "Purdue Fort Wayne Mastodons": {
+      "teamName": "Purdue Fort Wayne Mastodons",
+      "teamShortName": "PFW Mastodons",
+      "teamCity": "Purdue Fort Wayne",
+      "teamNickName": "Mastodons",
+      "teamAbbreviation": "PFW"
+    },
+    "Bowling Green Falcons": {
+      "teamName": "Bowling Green Falcons",
+      "teamShortName": "BGSU Falcons",
+      "teamCity": "Bowling Green",
+      "teamNickName": "Falcons",
+      "teamAbbreviation": "BGSU"
+    },
+    "Stony Brook Seawolves": {
+      "teamName": "Stony Brook Seawolves",
+      "teamShortName": "STON Seawolves",
+      "teamCity": "Stony Brook",
+      "teamNickName": "Seawolves",
+      "teamAbbreviation": "STON"
+    },
+    "Denver Broncos": {
+      "teamName": "Denver Broncos",
+      "teamShortName": "DEN Broncos",
+      "teamCity": "Denver",
+      "teamNickName": "Broncos",
+      "teamAbbreviation": "DEN"
+    },
+    "UNC Asheville Bulldogs": {
+      "teamName": "UNC Asheville Bulldogs",
+      "teamShortName": "UNCA Bulldogs",
+      "teamCity": "UNC Asheville",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "UNCA"
+    },
+    "Houston Astros": {
+      "teamName": "Houston Astros",
+      "teamShortName": "HOU Astros",
+      "teamCity": "Houston",
+      "teamNickName": "Astros",
+      "teamAbbreviation": "HOU"
+    },
+    "Detroit Red Wings": {
+      "teamName": "Detroit Red Wings",
+      "teamShortName": "DET Red Wings",
+      "teamCity": "Detroit",
+      "teamNickName": "Red Wings",
+      "teamAbbreviation": "DET"
+    },
+    "Georgia Tech Yellow Jackets": {
+      "teamName": "Georgia Tech Yellow Jackets",
+      "teamShortName": "GT Yellow Jackets",
+      "teamCity": "Georgia Tech",
+      "teamNickName": "Yellow Jackets",
+      "teamAbbreviation": "GT"
+    },
+    "Santa Clara Broncos": {
+      "teamName": "Santa Clara Broncos",
+      "teamShortName": "SCU Broncos",
+      "teamCity": "Santa Clara",
+      "teamNickName": "Broncos",
+      "teamAbbreviation": "SCU"
+    },
+    "Texas A&M-Commerce Lions": {
+      "teamName": "Texas A&M-Commerce Lions",
+      "teamShortName": "TAMC Lions",
+      "teamCity": "Texas A&M-Commerce",
+      "teamNickName": "Lions",
+      "teamAbbreviation": "TAMC"
+    },
+    "San Francisco 49ers": {
+      "teamName": "San Francisco 49ers",
+      "teamShortName": "SF 49ers",
+      "teamCity": "San Francisco",
+      "teamNickName": "49ers",
+      "teamAbbreviation": "SF"
+    },
+    "Austin Peay Governors": {
+      "teamName": "Austin Peay Governors",
+      "teamShortName": "PEAY Governors",
+      "teamCity": "Austin Peay",
+      "teamNickName": "Governors",
+      "teamAbbreviation": "PEAY"
+    },
+    "New York Yankees": {
+      "teamName": "New York Yankees",
+      "teamShortName": "NY Yankees",
+      "teamCity": "New York",
+      "teamNickName": "Yankees",
+      "teamAbbreviation": "NYY"
+    },
+    "Lipscomb Bisons": {
+      "teamName": "Lipscomb Bisons",
+      "teamShortName": "LIP Bisons",
+      "teamCity": "Lipscomb",
+      "teamNickName": "Bisons",
+      "teamAbbreviation": "LIP"
+    },
+    "Montana State Bobcats": {
+      "teamName": "Montana State Bobcats",
+      "teamShortName": "MTST Bobcats",
+      "teamCity": "Montana State",
+      "teamNickName": "Bobcats",
+      "teamAbbreviation": "MTST"
+    },
+    "SIU Edwardsville Cougars": {
+      "teamName": "SIU Edwardsville Cougars",
+      "teamShortName": "SIUE Cougars",
+      "teamCity": "SIUE",
+      "teamNickName": "Cougars",
+      "teamAbbreviation": "SIUE"
+    },
+    "Belmont Bruins": {
+      "teamName": "Belmont Bruins",
+      "teamShortName": "BEL Bruins",
+      "teamCity": "Belmont",
+      "teamNickName": "Bruins",
+      "teamAbbreviation": "BEL"
+    },
+    "Niagara Purple Eagles": {
+      "teamName": "Niagara Purple Eagles",
+      "teamShortName": "NIAG Purple Eagles",
+      "teamCity": "Niagara",
+      "teamNickName": "Purple Eagles",
+      "teamAbbreviation": "NIAG"
+    },
+    "Los Angeles Chargers": {
+      "teamName": "Los Angeles Chargers",
+      "teamShortName": "LA Chargers",
+      "teamCity": "Los Angeles",
+      "teamNickName": "Chargers",
+      "teamAbbreviation": "LAC"
+    },
+    "Carolina Panthers": {
+      "teamName": "Carolina Panthers",
+      "teamShortName": "CAR Panthers",
+      "teamCity": "Carolina",
+      "teamNickName": "Panthers",
+      "teamAbbreviation": "CAR"
+    },
+    "Edmonton Oilers": {
+      "teamName": "Edmonton Oilers",
+      "teamShortName": "EDM Oilers",
+      "teamCity": "Edmonton",
+      "teamNickName": "Oilers",
+      "teamAbbreviation": "EDM"
+    },
+    "Oakland Golden Grizzlies": {
+      "teamName": "Oakland Golden Grizzlies",
+      "teamShortName": "OAK Golden Grizzlies",
+      "teamCity": "Oakland",
+      "teamNickName": "Golden Grizzlies",
+      "teamAbbreviation": "OAK"
+    },
+    "Evansville Purple Aces": {
+      "teamName": "Evansville Purple Aces",
+      "teamShortName": "EVAN Aces",
+      "teamCity": "Evansville",
+      "teamNickName": "Aces",
+      "teamAbbreviation": "EVAN"
+    },
+    "Fordham Rams": {
+      "teamName": "Fordham Rams",
+      "teamShortName": "FOR Rams",
+      "teamCity": "Fordham",
+      "teamNickName": "Rams",
+      "teamAbbreviation": "FOR"
+    },
+    "Northeastern Huskies": {
+      "teamName": "Northeastern Huskies",
+      "teamShortName": "NE Huskies",
+      "teamCity": "Northeastern",
+      "teamNickName": "Huskies",
+      "teamAbbreviation": "NE"
+    },
+    "SMU Mustangs": {
+      "teamName": "SMU Mustangs",
+      "teamShortName": "SMU Mustangs",
+      "teamCity": "Southern Methodist",
+      "teamNickName": "Mustangs",
+      "teamAbbreviation": "SMU"
+    },
+    "Fresno State Bulldogs": {
+      "teamName": "Fresno State Bulldogs",
+      "teamShortName": "FRES Bulldogs",
+      "teamCity": "Fresno State",
+      "teamNickName": "Bulldogs",
+      "teamAbbreviation": "FRES"
+    },
+    "Los Angeles Angels": {
+      "teamName": "Los Angeles Angels",
+      "teamShortName": "LA Angels",
+      "teamCity": "Los Angeles",
+      "teamNickName": "Angels",
+      "teamAbbreviation": "LAA"
+    },
+    "Hawaii Rainbow Warriors": {
+      "teamName": "Hawaii Rainbow Warriors",
+      "teamShortName": "HAW Rainbow Warriors",
+      "teamCity": "Hawaii",
+      "teamNickName": "Rainbow Warriors",
+      "teamAbbreviation": "HAW"
+    },
+    "Bethune-Cookman Wildcats": {
+      "teamName": "Bethune-Cookman Wildcats",
+      "teamShortName": "COOK Wildcats",
+      "teamCity": "Bethune-Cookman Wildcats",
+      "teamNickName": "Wildcats",
+      "teamAbbreviation": "COOK"
+    },
+    "North Carolina Tar Heels": {
+      "teamName": "North Carolina Tar Heels",
+      "teamShortName": "UNC Tar Heels",
+      "teamCity": "North Carolina",
+      "teamNickName": "Tar Heels",
+      "teamAbbreviation": "UNC"
+    },
+    "Little Rock Trojans": {
+      "teamName": "Little Rock Trojans",
+      "teamShortName": "UALR Trojans",
+      "teamCity": "Little Rock",
+      "teamNickName": "Trojans",
+      "teamAbbreviation": "UALR"
+    },
+    "Wisconsin Badgers": {
+      "teamName": "Wisconsin Badgers",
+      "teamShortName": "WIS Badgers",
+      "teamCity": "Wisconsin",
+      "teamNickName": "Badgers",
+      "teamAbbreviation": "WIS"
+    }
+  }
+}

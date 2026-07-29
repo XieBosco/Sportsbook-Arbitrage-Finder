@@ -1,0 +1,6 @@
+websocket-client
+requests
+pyyaml
+fastapi
+uvicorn
+pytest

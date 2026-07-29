@@ -1,0 +1,4206 @@
+{
+  "_DEBUG_URL": "https://api.americanwagering.com/regions/ca/locations/on/brands/czr/sb/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs",
+  "data": {
+    "sportId": "baseball",
+    "name": "Baseball",
+    "groupedCompetitionsView": false,
+    "selectedTabId": "SCHEDULE%7CGames%20%E2%9A%BE",
+    "tabs": [
+      {
+        "id": "SCHEDULE%7CGames%20%E2%9A%BE",
+        "displayName": "Games \u26be",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE"
+      },
+      {
+        "id": "SCHEDULE%7CBatter%20Props",
+        "displayName": "Batter Props",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CBatter%20Props"
+      },
+      {
+        "id": "SCHEDULE%7CPitcher%20Props",
+        "displayName": "Pitcher Props",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CPitcher%20Props"
+      },
+      {
+        "id": "FUTURE_BETS%7CWorld%20Series",
+        "displayName": "World Series",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/FUTURE_BETS%7CWorld%20Series"
+      },
+      {
+        "id": "SCHEDULE%7CTeam%20Futures",
+        "displayName": "Team Futures",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CTeam%20Futures"
+      },
+      {
+        "id": "SCHEDULE%7CQuick%20Bets",
+        "displayName": "Quick Bets",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CQuick%20Bets"
+      },
+      {
+        "id": "IN_PLAY%7CLive%20Now",
+        "displayName": "Live Now",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/IN_PLAY%7CLive%20Now"
+      }
+    ],
+    "selectedSecondaryTabId": "_7cRun_20Line_7c%7C_7cMoney_20Line_7c%7C_7cTotal_20Runs_7c%7C_7cRun_20Line_20Live_7c%7C_7cMoney_20Line_20Live_7c%7C_7cTotal_20Runs_20Live_7c",
+    "secondaryTabs": [
+      {
+        "id": "_7cRun_20Line_7c%7C_7cMoney_20Line_7c%7C_7cTotal_20Runs_7c%7C_7cRun_20Line_20Live_7c%7C_7cMoney_20Line_20Live_7c%7C_7cTotal_20Runs_20Live_7c",
+        "displayName": "Game Lines",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7cRun_20Line_7c%7C_7cMoney_20Line_7c%7C_7cTotal_20Runs_7c%7C_7cRun_20Line_20Live_7c%7C_7cMoney_20Line_20Live_7c%7C_7cTotal_20Runs_20Live_7c"
+      },
+      {
+        "id": "_7cRun_20In_20The_201st_20Inning_3f_7c",
+        "displayName": "Run In 1st Inning ",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7cRun_20In_20The_201st_20Inning_3f_7c"
+      },
+      {
+        "id": "_7cFirst_20Pitch_20Of_20The_20Game_7c",
+        "displayName": "First Pitch",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7cFirst_20Pitch_20Of_20The_20Game_7c"
+      },
+      {
+        "id": "_7c1st_203_20Innings_20Run_20Line_7c%7C_7c1st_203_20Innings_20Money_20Line_7c%7C_7c1st_203_20Innings_20Total_20Runs_7c%7C_7c1st_203_20Innings_20Run_20Line_7c_20_7cLive_7c%7C_7c1st_203_20Innings_20Money_20Line_7c_20_7cLive_7c%7C_7c1st_203_20Innings_20Total_20Runs_7c_20_7cLive_7c",
+        "displayName": "1st 3 Innings",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7c1st_203_20Innings_20Run_20Line_7c%7C_7c1st_203_20Innings_20Money_20Line_7c%7C_7c1st_203_20Innings_20Total_20Runs_7c%7C_7c1st_203_20Innings_20Run_20Line_7c_20_7cLive_7c%7C_7c1st_203_20Innings_20Money_20Line_7c_20_7cLive_7c%7C_7c1st_203_20Innings_20Total_20Runs_7c_20_7cLive_7c"
+      },
+      {
+        "id": "_7c1st_205_20Innings_20Run_20Line_7c%7C_7c1st_205_20Innings_20Money_20Line_7c%7C_7c1st_205_20Innings_20Total_20Runs_7c%7C_7c1st_205_20Innings_20Run_20Line_7c_20_7cLive_7c%7C_7c1st_205_20Innings_20Money_20Line_7c_20_7cLive_7c%7C_7c1st_205_20Innings_20Total_20Runs_7c_20_7cLive_7c",
+        "displayName": "1st 5 Innings",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7c1st_205_20Innings_20Run_20Line_7c%7C_7c1st_205_20Innings_20Money_20Line_7c%7C_7c1st_205_20Innings_20Total_20Runs_7c%7C_7c1st_205_20Innings_20Run_20Line_7c_20_7cLive_7c%7C_7c1st_205_20Innings_20Money_20Line_7c_20_7cLive_7c%7C_7c1st_205_20Innings_20Total_20Runs_7c_20_7cLive_7c"
+      },
+      {
+        "id": "_7c1st_207_20Innings_20Run_20Line_7c_20_7cLive_7c%7C_7c1st_207_20Innings_20Money_20Line_7c_20_7cLive_7c%7C_7c1st_207_20Innings_20Total_20Runs_7c_20_7cLive_7c",
+        "displayName": "1st 7 Innings",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7c1st_207_20Innings_20Run_20Line_7c_20_7cLive_7c%7C_7c1st_207_20Innings_20Money_20Line_7c_20_7cLive_7c%7C_7c1st_207_20Innings_20Total_20Runs_7c_20_7cLive_7c"
+      },
+      {
+        "id": "_7c1st_20Inning_20Money_20Line_7c%7C_7c2nd_20Inning_20Money_20Line_7c%7C_7c3rd_20Inning_20Money_20Line_7c%7C_7c4th_20Inning_20Money_20Line_7c%7C_7c5th_20Inning_20Money_20Line_7c%7C_7c6th_20Inning_20Money_20Line_7c%7C_7cInning_20Money_20Line_7c%7C_7cInning_20Money_20Line_7c_20_7cLive_7c",
+        "displayName": "Inning Money Line",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7c1st_20Inning_20Money_20Line_7c%7C_7c2nd_20Inning_20Money_20Line_7c%7C_7c3rd_20Inning_20Money_20Line_7c%7C_7c4th_20Inning_20Money_20Line_7c%7C_7c5th_20Inning_20Money_20Line_7c%7C_7c6th_20Inning_20Money_20Line_7c%7C_7cInning_20Money_20Line_7c%7C_7cInning_20Money_20Line_7c_20_7cLive_7c"
+      },
+      {
+        "id": "_7cWinning_20Margin_7c",
+        "displayName": "Winning Margin",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7cWinning_20Margin_7c"
+      },
+      {
+        "id": "_7cMatch_20Correct_20Score_7c",
+        "displayName": "Game Correct Score",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7cMatch_20Correct_20Score_7c"
+      },
+      {
+        "id": "_7c1st_7c_20_7cTeam_20To_20Score_7c",
+        "displayName": "1st Team To Score",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7c1st_7c_20_7cTeam_20To_20Score_7c"
+      },
+      {
+        "id": "_7cMoney_20Line_20_28Action_29_7c",
+        "displayName": "Listed Pitcher",
+        "dataPath": "/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/tabs/SCHEDULE%7CGames%20%E2%9A%BE/secondary/_7cMoney_20Line_20_28Action_29_7c"
+      }
+    ],
+    "competitions": [
+      {
+        "id": "04f90892-3afa-4e84-acce-5b89f151063d",
+        "name": "MLB",
+        "collectionName": "MLB",
+        "events": [
+          {
+            "id": "f7bdf6e6-fcb0-4184-ab84-99ed2a961826",
+            "name": "Toronto Blue Jays at Boston Red Sox",
+            "startTime": "2026-07-26T17:35:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "d6938958-9ded-3c02-9dea-4d7b7ea04095",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -2.5,
+                    "selections": [
+                      {
+                        "id": "bd9bf767-a588-31d9-b297-215f9ff45921",
+                        "eventId": "f7bdf6e6-fcb0-4184-ab84-99ed2a961826",
+                        "marketId": "d6938958-9ded-3c02-9dea-4d7b7ea04095",
+                        "display": true,
+                        "name": "|Toronto Blue Jays|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "13/10",
+                          "d": 2.3,
+                          "a": 130
+                        }
+                      },
+                      {
+                        "id": "5b1d689d-178a-3bed-8c96-21909ad6fa2f",
+                        "eventId": "f7bdf6e6-fcb0-4184-ab84-99ed2a961826",
+                        "marketId": "d6938958-9ded-3c02-9dea-4d7b7ea04095",
+                        "display": true,
+                        "name": "|Boston Red Sox|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "4/7",
+                          "d": 1.57143,
+                          "a": -175
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "line": "-2.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "4798f479-9bfd-3232-a987-3362de99a839",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "5c33e0db-1055-38f3-b27a-2451e3d50b45",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "0ce7189c-4623-38e9-940f-7a72e729e5f9",
+                        "eventId": "f7bdf6e6-fcb0-4184-ab84-99ed2a961826",
+                        "marketId": "5c33e0db-1055-38f3-b27a-2451e3d50b45",
+                        "display": true,
+                        "name": "|Toronto Blue Jays|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "699/100",
+                          "d": 7.99,
+                          "a": 699
+                        }
+                      },
+                      {
+                        "id": "10b5d2f1-5ab8-3c1c-8f1b-481fc041b660",
+                        "eventId": "f7bdf6e6-fcb0-4184-ab84-99ed2a961826",
+                        "marketId": "5c33e0db-1055-38f3-b27a-2451e3d50b45",
+                        "display": true,
+                        "name": "|Boston Red Sox|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "25/501",
+                          "d": 1.0499,
+                          "a": -2004
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "f738baa6-669a-33a2-862c-d0cb2c1dcad0",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 5.5,
+                    "selections": [
+                      {
+                        "id": "2c2fd9f4-1920-3b73-bd2e-15a3380abc4a",
+                        "eventId": "f7bdf6e6-fcb0-4184-ab84-99ed2a961826",
+                        "marketId": "f738baa6-669a-33a2-862c-d0cb2c1dcad0",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "7/10",
+                          "d": 1.7,
+                          "a": -143
+                        }
+                      },
+                      {
+                        "id": "dff5dd7e-26d3-3823-a30f-67050df56ad0",
+                        "eventId": "f7bdf6e6-fcb0-4184-ab84-99ed2a961826",
+                        "marketId": "f738baa6-669a-33a2-862c-d0cb2c1dcad0",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "21/20",
+                          "d": 2.05,
+                          "a": 105
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "line": "5.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "84f1de1b-c467-3687-b74c-0e230216bb4e",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "currentScore": "3.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Toronto Blue Jays",
+                  "Boston Red Sox"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Toronto Blue Jays",
+                    "team": "Toronto Blue Jays",
+                    "selectionIds": [
+                      "bd9bf767-a588-31d9-b297-215f9ff45921",
+                      "0ce7189c-4623-38e9-940f-7a72e729e5f9",
+                      "2c2fd9f4-1920-3b73-bd2e-15a3380abc4a"
+                    ]
+                  },
+                  {
+                    "displayName": "Boston Red Sox",
+                    "team": "Boston Red Sox",
+                    "selectionIds": [
+                      "5b1d689d-178a-3bed-8c96-21909ad6fa2f",
+                      "10b5d2f1-5ab8-3c1c-8f1b-481fc041b660",
+                      "dff5dd7e-26d3-3823-a30f-67050df56ad0"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "4f13bdc7-8af9-45ba-8031-aa14058d0889",
+              "homeTeamBiNumber": "916",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "8b3cfb81-b2a3-444b-b341-e56b1272d651",
+              "currentAwayStartingPitcher": "K Gausman",
+              "currentHomeStartingPitcherFrom": "1.78500582032E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Boston Red Sox",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "2e1c9b0c-15c0-42f5-a195-69843e3bff6e",
+              "currentHomeStartingPitcherId": "360774",
+              "incidentSources": "bet_radar_livescout,UNKNOWN",
+              "awayTeamName": "Toronto Blue Jays",
+              "awayTeamBiNumber": "915",
+              "currentHomeStartingPitcher": "R Suarez",
+              "awayTeamId": "0eec3ee3-c676-4c1b-be27-27a28f69ba07",
+              "currentAwayStartingPitcherId": "436269"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "ac312532-31b1-4b11-98a1-348d2936618e",
+            "name": "Atlanta Braves at Baltimore Orioles",
+            "startTime": "2026-07-26T17:35:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "8916d91b-cde5-3afe-8da4-f00d3e6ca998",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 2.5,
+                    "selections": [
+                      {
+                        "id": "26fb7d22-bb55-3f92-ac2f-137eaf537a53",
+                        "eventId": "ac312532-31b1-4b11-98a1-348d2936618e",
+                        "marketId": "8916d91b-cde5-3afe-8da4-f00d3e6ca998",
+                        "display": true,
+                        "name": "|Atlanta Braves|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      },
+                      {
+                        "id": "a9076be7-14a9-387f-9c5d-98e122b1ec92",
+                        "eventId": "ac312532-31b1-4b11-98a1-348d2936618e",
+                        "marketId": "8916d91b-cde5-3afe-8da4-f00d3e6ca998",
+                        "display": true,
+                        "name": "|Baltimore Orioles|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "line": "2.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "55330570-a8e4-3090-99e2-082a2795830c",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "177a3635-a0ab-335c-94f3-ba0722491a68",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "f2f3d814-5e8b-3dd1-ba22-b1854382e2cc",
+                        "eventId": "ac312532-31b1-4b11-98a1-348d2936618e",
+                        "marketId": "177a3635-a0ab-335c-94f3-ba0722491a68",
+                        "display": true,
+                        "name": "|Atlanta Braves|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "100/479",
+                          "d": 1.20877,
+                          "a": -479
+                        }
+                      },
+                      {
+                        "id": "112dc0d1-d0a4-3798-a2a6-0593336d80f1",
+                        "eventId": "ac312532-31b1-4b11-98a1-348d2936618e",
+                        "marketId": "177a3635-a0ab-335c-94f3-ba0722491a68",
+                        "display": true,
+                        "name": "|Baltimore Orioles|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "3/1",
+                          "d": 4.0,
+                          "a": 300
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "1a4eafe6-8625-3334-8b52-a2eef4a79859",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 6.5,
+                    "selections": [
+                      {
+                        "id": "98122619-0dd8-31ed-8853-bd3ce61b151d",
+                        "eventId": "ac312532-31b1-4b11-98a1-348d2936618e",
+                        "marketId": "1a4eafe6-8625-3334-8b52-a2eef4a79859",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "10/11",
+                          "d": 1.91,
+                          "a": -110
+                        }
+                      },
+                      {
+                        "id": "c640be8c-a86d-3f9b-9fc6-5b7aa747bcae",
+                        "eventId": "ac312532-31b1-4b11-98a1-348d2936618e",
+                        "marketId": "1a4eafe6-8625-3334-8b52-a2eef4a79859",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "10/11",
+                          "d": 1.91,
+                          "a": -110
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "line": "6.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "debc362b-f57e-370c-8dc3-dcf7d22ea84b",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "currentScore": "2.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Atlanta Braves",
+                  "Baltimore Orioles"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Atlanta Braves",
+                    "team": "Atlanta Braves",
+                    "selectionIds": [
+                      "26fb7d22-bb55-3f92-ac2f-137eaf537a53",
+                      "f2f3d814-5e8b-3dd1-ba22-b1854382e2cc",
+                      "98122619-0dd8-31ed-8853-bd3ce61b151d"
+                    ]
+                  },
+                  {
+                    "displayName": "Baltimore Orioles",
+                    "team": "Baltimore Orioles",
+                    "selectionIds": [
+                      "a9076be7-14a9-387f-9c5d-98e122b1ec92",
+                      "112dc0d1-d0a4-3798-a2a6-0593336d80f1",
+                      "c640be8c-a86d-3f9b-9fc6-5b7aa747bcae"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "6561c04c-7217-4218-b90d-9945e52dda51",
+              "homeTeamBiNumber": "926",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "be8d9875-72dd-4d14-abac-b9f54ab754ab",
+              "currentAwayStartingPitcher": "R Lopez",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Baltimore Orioles",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "cfbc1a77-d544-43a3-85db-b27f76ea7d30",
+              "currentHomeStartingPitcherId": "373540",
+              "incidentSources": "bet_radar_livescout,UNKNOWN",
+              "awayTeamName": "Atlanta Braves",
+              "awayTeamBiNumber": "925",
+              "currentHomeStartingPitcher": "S Baz",
+              "awayTeamId": "d03e51cb-3c86-40c4-838a-c67af8aa9440",
+              "currentAwayStartingPitcherId": "419145"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "4043b972-0b46-4993-a5b0-4c1f69103106",
+            "name": "Arizona Diamondbacks at Washington Nationals",
+            "startTime": "2026-07-26T17:35:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "1cc176f7-e6c2-3916-8939-77dfc6b9a645",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -1.5,
+                    "selections": [
+                      {
+                        "id": "73f643f5-51c5-3374-aca8-626e30e8887e",
+                        "eventId": "4043b972-0b46-4993-a5b0-4c1f69103106",
+                        "marketId": "1cc176f7-e6c2-3916-8939-77dfc6b9a645",
+                        "display": true,
+                        "name": "|Arizona Diamondbacks|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "4/9",
+                          "d": 1.44444,
+                          "a": -225
+                        }
+                      },
+                      {
+                        "id": "3998b5fe-c381-3c91-a03b-0c0315936cea",
+                        "eventId": "4043b972-0b46-4993-a5b0-4c1f69103106",
+                        "marketId": "1cc176f7-e6c2-3916-8939-77dfc6b9a645",
+                        "display": true,
+                        "name": "|Washington Nationals|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "13/8",
+                          "d": 2.62,
+                          "a": 162
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "line": "-1.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "1bf42975-0d04-3016-b787-848b868ee447",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "9d3b35d3-3869-31c8-bc86-aac65eafffb2",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "2e7c24f0-aea0-37c3-b993-030b6700c6bd",
+                        "eventId": "4043b972-0b46-4993-a5b0-4c1f69103106",
+                        "marketId": "9d3b35d3-3869-31c8-bc86-aac65eafffb2",
+                        "display": true,
+                        "name": "|Arizona Diamondbacks|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "63/50",
+                          "d": 2.26,
+                          "a": 126
+                        }
+                      },
+                      {
+                        "id": "26d56e6c-697c-357b-924f-f8aaa060c930",
+                        "eventId": "4043b972-0b46-4993-a5b0-4c1f69103106",
+                        "marketId": "9d3b35d3-3869-31c8-bc86-aac65eafffb2",
+                        "display": true,
+                        "name": "|Washington Nationals|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "50/87",
+                          "d": 1.57471,
+                          "a": -174
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "72511031-88b2-319f-b416-1251fe1998cf",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 13.5,
+                    "selections": [
+                      {
+                        "id": "e314d78a-704d-389e-9082-f7ce9ddc55b1",
+                        "eventId": "4043b972-0b46-4993-a5b0-4c1f69103106",
+                        "marketId": "72511031-88b2-319f-b416-1251fe1998cf",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      },
+                      {
+                        "id": "55ab34b7-2b00-3904-99b4-78226087ce78",
+                        "eventId": "4043b972-0b46-4993-a5b0-4c1f69103106",
+                        "marketId": "72511031-88b2-319f-b416-1251fe1998cf",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "line": "13.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "307cf2ec-14d4-315e-a25c-8e339fab6cf4",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "currentScore": "8.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Arizona Diamondbacks",
+                  "Washington Nationals"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Arizona Diamondbacks",
+                    "team": "Arizona Diamondbacks",
+                    "selectionIds": [
+                      "73f643f5-51c5-3374-aca8-626e30e8887e",
+                      "2e7c24f0-aea0-37c3-b993-030b6700c6bd",
+                      "e314d78a-704d-389e-9082-f7ce9ddc55b1"
+                    ]
+                  },
+                  {
+                    "displayName": "Washington Nationals",
+                    "team": "Washington Nationals",
+                    "selectionIds": [
+                      "3998b5fe-c381-3c91-a03b-0c0315936cea",
+                      "26d56e6c-697c-357b-924f-f8aaa060c930",
+                      "55ab34b7-2b00-3904-99b4-78226087ce78"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "cee97276-a85f-44ad-8d4e-e7bde4ea5690",
+              "homeTeamBiNumber": "902",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "40e3d0a3-1100-4400-924e-e5991eccc9f4",
+              "currentAwayStartingPitcher": "K Drake",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Washington Nationals",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "96770cc1-41a7-40e9-b86f-a4710df155ec",
+              "currentHomeStartingPitcherId": "144482",
+              "incidentSources": "bet_radar_livescout,UNKNOWN",
+              "awayTeamName": "Arizona Diamondbacks",
+              "awayTeamBiNumber": "901",
+              "currentHomeStartingPitcher": "M Mikolas",
+              "awayTeamId": "22a5376c-93a1-4882-86c4-b01299f40fde",
+              "currentAwayStartingPitcherId": "436202"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "5c90990e-973e-4954-949b-b7d96c261684",
+            "name": "Chicago Cubs at Pittsburgh Pirates",
+            "startTime": "2026-07-26T17:35:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "1d3a0172-4fe1-3ed6-95fb-6cce08fb784d",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -3.5,
+                    "selections": [
+                      {
+                        "id": "5ddd03cc-f3c1-3fb5-852d-63f5645ed761",
+                        "eventId": "5c90990e-973e-4954-949b-b7d96c261684",
+                        "marketId": "1d3a0172-4fe1-3ed6-95fb-6cce08fb784d",
+                        "display": true,
+                        "name": "|Chicago Cubs|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      },
+                      {
+                        "id": "c659a758-f42e-3815-8272-21bd22dd85bb",
+                        "eventId": "5c90990e-973e-4954-949b-b7d96c261684",
+                        "marketId": "1d3a0172-4fe1-3ed6-95fb-6cce08fb784d",
+                        "display": true,
+                        "name": "|Pittsburgh Pirates|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout",
+                      "line": "-3.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "00c75bbc-dabf-3287-9e37-112fe580bb6e",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "e4fc876a-166b-38a3-9768-430f11f45b79",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "96062031-5808-3250-b1bf-f63cfc2087fc",
+                        "eventId": "5c90990e-973e-4954-949b-b7d96c261684",
+                        "marketId": "e4fc876a-166b-38a3-9768-430f11f45b79",
+                        "display": true,
+                        "name": "|Chicago Cubs|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "297/50",
+                          "d": 6.94,
+                          "a": 594
+                        }
+                      },
+                      {
+                        "id": "045f03a1-be5f-3cc4-9bde-82d73ddd2c4a",
+                        "eventId": "5c90990e-973e-4954-949b-b7d96c261684",
+                        "marketId": "e4fc876a-166b-38a3-9768-430f11f45b79",
+                        "display": true,
+                        "name": "|Pittsburgh Pirates|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "25/351",
+                          "d": 1.07123,
+                          "a": -1404
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "8c5bcffb-cb11-345d-a64c-c0ffd53355ee",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 15.5,
+                    "selections": [
+                      {
+                        "id": "94e0f4ae-257c-320f-9314-27422583a994",
+                        "eventId": "5c90990e-973e-4954-949b-b7d96c261684",
+                        "marketId": "8c5bcffb-cb11-345d-a64c-c0ffd53355ee",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "10/11",
+                          "d": 1.91,
+                          "a": -110
+                        }
+                      },
+                      {
+                        "id": "530ab9c8-4208-345f-8196-ccb6f552fecb",
+                        "eventId": "5c90990e-973e-4954-949b-b7d96c261684",
+                        "marketId": "8c5bcffb-cb11-345d-a64c-c0ffd53355ee",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "10/11",
+                          "d": 1.91,
+                          "a": -110
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "line": "15.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "863e3e9e-4e0e-3720-be91-8dc3c1ce19a8",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout",
+                      "currentScore": "12.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Chicago Cubs",
+                  "Pittsburgh Pirates"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Chicago Cubs",
+                    "team": "Chicago Cubs",
+                    "selectionIds": [
+                      "5ddd03cc-f3c1-3fb5-852d-63f5645ed761",
+                      "96062031-5808-3250-b1bf-f63cfc2087fc",
+                      "94e0f4ae-257c-320f-9314-27422583a994"
+                    ]
+                  },
+                  {
+                    "displayName": "Pittsburgh Pirates",
+                    "team": "Pittsburgh Pirates",
+                    "selectionIds": [
+                      "c659a758-f42e-3815-8272-21bd22dd85bb",
+                      "045f03a1-be5f-3cc4-9bde-82d73ddd2c4a",
+                      "530ab9c8-4208-345f-8196-ccb6f552fecb"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "b8648203-e7a6-4c73-be8a-d8922d1c1957",
+              "homeTeamBiNumber": "904",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "75527bc4-145c-40ca-9e7d-020978df0311",
+              "currentAwayStartingPitcher": "J Taillon",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Pittsburgh Pirates",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "9ae44913-e002-40de-b681-0af1b41b3fc3",
+              "currentHomeStartingPitcherId": "420264",
+              "incidentSources": "bet_radar_livescout",
+              "awayTeamName": "Chicago Cubs",
+              "awayTeamBiNumber": "903",
+              "currentHomeStartingPitcher": "B Ashcraft",
+              "awayTeamId": "102d97ee-4bc0-4b84-a9ae-4571f93ca8cf",
+              "currentAwayStartingPitcherId": "373309"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "ad975ab3-28ba-4a9f-a57b-a10a7b397669",
+            "name": "Kansas City Royals at Detroit Tigers",
+            "startTime": "2026-07-26T17:40:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "3b43a7e3-b29d-3fea-99db-4d87e130ab10",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 2.5,
+                    "selections": [
+                      {
+                        "id": "42ed5663-8697-3b01-8b7a-5ab9bfd07a21",
+                        "eventId": "ad975ab3-28ba-4a9f-a57b-a10a7b397669",
+                        "marketId": "3b43a7e3-b29d-3fea-99db-4d87e130ab10",
+                        "display": true,
+                        "name": "|Kansas City Royals|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "10/11",
+                          "d": 1.91,
+                          "a": -110
+                        }
+                      },
+                      {
+                        "id": "a0d03148-0355-30e5-b3c8-01853fad37c3",
+                        "eventId": "ad975ab3-28ba-4a9f-a57b-a10a7b397669",
+                        "marketId": "3b43a7e3-b29d-3fea-99db-4d87e130ab10",
+                        "display": true,
+                        "name": "|Detroit Tigers|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "10/11",
+                          "d": 1.91,
+                          "a": -110
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout",
+                      "line": "2.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "0ea11262-05d2-3b61-9c06-6c1f62b30ed1",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "c2e5888c-0d7c-3909-9292-a536c645efb7",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "6a20e2b5-6236-3247-b30d-354103f632ef",
+                        "eventId": "ad975ab3-28ba-4a9f-a57b-a10a7b397669",
+                        "marketId": "c2e5888c-0d7c-3909-9292-a536c645efb7",
+                        "display": true,
+                        "name": "|Kansas City Royals|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "50/227",
+                          "d": 1.22026,
+                          "a": -454
+                        }
+                      },
+                      {
+                        "id": "ef6b7a92-1a14-32ae-b28f-9179d7d17d7e",
+                        "eventId": "ad975ab3-28ba-4a9f-a57b-a10a7b397669",
+                        "marketId": "c2e5888c-0d7c-3909-9292-a536c645efb7",
+                        "display": true,
+                        "name": "|Detroit Tigers|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "287/100",
+                          "d": 3.87,
+                          "a": 287
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "49a5c9cb-d12e-3c12-b36a-cc8a6af2d176",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 7.5,
+                    "selections": [
+                      {
+                        "id": "d59c878d-a4d8-3d02-8d15-e14550a88b91",
+                        "eventId": "ad975ab3-28ba-4a9f-a57b-a10a7b397669",
+                        "marketId": "49a5c9cb-d12e-3c12-b36a-cc8a6af2d176",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      },
+                      {
+                        "id": "31a6872a-3bb9-3bbc-8b5e-3c1deea6c369",
+                        "eventId": "ad975ab3-28ba-4a9f-a57b-a10a7b397669",
+                        "marketId": "49a5c9cb-d12e-3c12-b36a-cc8a6af2d176",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+                      "line": "7.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "0994a4f9-cda0-3f8c-8838-344f5ea982c4",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout",
+                      "currentScore": "3.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Kansas City Royals",
+                  "Detroit Tigers"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Kansas City Royals",
+                    "team": "Kansas City Royals",
+                    "selectionIds": [
+                      "42ed5663-8697-3b01-8b7a-5ab9bfd07a21",
+                      "6a20e2b5-6236-3247-b30d-354103f632ef",
+                      "d59c878d-a4d8-3d02-8d15-e14550a88b91"
+                    ]
+                  },
+                  {
+                    "displayName": "Detroit Tigers",
+                    "team": "Detroit Tigers",
+                    "selectionIds": [
+                      "a0d03148-0355-30e5-b3c8-01853fad37c3",
+                      "ef6b7a92-1a14-32ae-b28f-9179d7d17d7e",
+                      "31a6872a-3bb9-3bbc-8b5e-3c1deea6c369"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "fa06fc21-b91e-4a4b-9e73-a13298174b87",
+              "homeTeamBiNumber": "918",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "e698d313-cbaf-49e9-9e79-2d4cb5eb1caf",
+              "currentAwayStartingPitcher": "L Avila",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Detroit Tigers",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785021660558E12",
+              "awayTeam_hubId": "d58e26cb-159b-415a-8ad7-59116ecf0ea7",
+              "currentHomeStartingPitcherId": "342482",
+              "incidentSources": "bet_radar_livescout",
+              "awayTeamName": "Kansas City Royals",
+              "awayTeamBiNumber": "917",
+              "currentHomeStartingPitcher": "F Valdez",
+              "awayTeamId": "9d6caf5d-70c7-4867-bf2c-399efec9ca63",
+              "currentAwayStartingPitcherId": "419633"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "8e767a58-7f55-4521-9e53-92b01a3add69",
+            "name": "San Diego Padres at Miami Marlins",
+            "startTime": "2026-07-26T17:40:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "31a32aaa-d329-3071-b75b-8ef4c7582723",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -2.5,
+                    "selections": [
+                      {
+                        "id": "4b1d5189-d046-3a56-b509-1718cf911390",
+                        "eventId": "8e767a58-7f55-4521-9e53-92b01a3add69",
+                        "marketId": "31a32aaa-d329-3071-b75b-8ef4c7582723",
+                        "display": true,
+                        "name": "|San Diego Padres|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "6/10",
+                          "d": 1.6,
+                          "a": -167
+                        }
+                      },
+                      {
+                        "id": "710b8dfb-5cda-32b6-abc0-8461f3759e36",
+                        "eventId": "8e767a58-7f55-4521-9e53-92b01a3add69",
+                        "marketId": "31a32aaa-d329-3071-b75b-8ef4c7582723",
+                        "display": true,
+                        "name": "|Miami Marlins|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "5/4",
+                          "d": 2.25,
+                          "a": 125
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "line": "-2.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "92b1a470-1515-3972-b454-4688cea2727a",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "bbb12aec-0456-3631-ba6a-3ecfbcc53f07",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "33f70511-f571-386b-be33-8dcf5c25cea4",
+                        "eventId": "8e767a58-7f55-4521-9e53-92b01a3add69",
+                        "marketId": "bbb12aec-0456-3631-ba6a-3ecfbcc53f07",
+                        "display": true,
+                        "name": "|San Diego Padres|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "311/100",
+                          "d": 4.11,
+                          "a": 311
+                        }
+                      },
+                      {
+                        "id": "236fc471-7bc9-362c-a7ab-d61be0d34c9c",
+                        "eventId": "8e767a58-7f55-4521-9e53-92b01a3add69",
+                        "marketId": "bbb12aec-0456-3631-ba6a-3ecfbcc53f07",
+                        "display": true,
+                        "name": "|Miami Marlins|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "25/126",
+                          "d": 1.19841,
+                          "a": -504
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "c208c457-edce-3b8a-b553-c028eb7258c4",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 7.5,
+                    "selections": [
+                      {
+                        "id": "df9166ad-a2a4-325e-ab34-a6dc4853ba8e",
+                        "eventId": "8e767a58-7f55-4521-9e53-92b01a3add69",
+                        "marketId": "c208c457-edce-3b8a-b553-c028eb7258c4",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      },
+                      {
+                        "id": "65e150c0-0fa5-3e24-963f-76a627873a1b",
+                        "eventId": "8e767a58-7f55-4521-9e53-92b01a3add69",
+                        "marketId": "c208c457-edce-3b8a-b553-c028eb7258c4",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "line": "7.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "8d4b515f-2b9d-366b-bcfd-41e9e7bfc3ed",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "currentScore": "4.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "San Diego Padres",
+                  "Miami Marlins"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "San Diego Padres",
+                    "team": "San Diego Padres",
+                    "selectionIds": [
+                      "4b1d5189-d046-3a56-b509-1718cf911390",
+                      "33f70511-f571-386b-be33-8dcf5c25cea4",
+                      "df9166ad-a2a4-325e-ab34-a6dc4853ba8e"
+                    ]
+                  },
+                  {
+                    "displayName": "Miami Marlins",
+                    "team": "Miami Marlins",
+                    "selectionIds": [
+                      "710b8dfb-5cda-32b6-abc0-8461f3759e36",
+                      "236fc471-7bc9-362c-a7ab-d61be0d34c9c",
+                      "65e150c0-0fa5-3e24-963f-76a627873a1b"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "5fe3ebbe-875e-46c8-a5b3-e9f2ffb49114",
+              "homeTeamBiNumber": "908",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "2dd57508-7a09-4471-be6c-0963b31819af",
+              "currentAwayStartingPitcher": "W Buehler",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Miami Marlins",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "5b38a236-1d3c-4789-8e31-6776e1752ba0",
+              "currentHomeStartingPitcherId": "435540",
+              "incidentSources": "bet_radar_livescout,UNKNOWN",
+              "awayTeamName": "San Diego Padres",
+              "awayTeamBiNumber": "907",
+              "currentHomeStartingPitcher": "J Junk",
+              "awayTeamId": "f5c907c0-51df-4436-afd1-934d53ab049f",
+              "currentAwayStartingPitcherId": "435013"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "1093b158-344a-47a0-b672-59bd36c04e13",
+            "name": "Los Angeles Dodgers at New York Mets",
+            "startTime": "2026-07-26T17:40:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "8d701ec2-c583-36ae-8d03-4cbdf8ec48ad",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 2.5,
+                    "selections": [
+                      {
+                        "id": "680b3c45-3f81-3610-9302-be5a532c02c0",
+                        "eventId": "1093b158-344a-47a0-b672-59bd36c04e13",
+                        "marketId": "8d701ec2-c583-36ae-8d03-4cbdf8ec48ad",
+                        "display": true,
+                        "name": "|Los Angeles Dodgers|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "1/1",
+                          "d": 2.0,
+                          "a": 100
+                        }
+                      },
+                      {
+                        "id": "d931885b-2184-3497-bce5-67eef04547c9",
+                        "eventId": "1093b158-344a-47a0-b672-59bd36c04e13",
+                        "marketId": "8d701ec2-c583-36ae-8d03-4cbdf8ec48ad",
+                        "display": true,
+                        "name": "|New York Mets|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "8/11",
+                          "d": 1.72727,
+                          "a": -137
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "line": "2.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "2fd2e219-f84a-350e-9f02-d3913a0c5cf1",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "4c671879-338c-3d28-9099-c255c1ee42d9",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "b5ff6ccb-932e-3698-a92b-f9c98d219e58",
+                        "eventId": "1093b158-344a-47a0-b672-59bd36c04e13",
+                        "marketId": "4c671879-338c-3d28-9099-c255c1ee42d9",
+                        "display": true,
+                        "name": "|Los Angeles Dodgers|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "50/277",
+                          "d": 1.18051,
+                          "a": -554
+                        }
+                      },
+                      {
+                        "id": "8e94fb54-3828-31b0-9bc8-8f647af65478",
+                        "eventId": "1093b158-344a-47a0-b672-59bd36c04e13",
+                        "marketId": "4c671879-338c-3d28-9099-c255c1ee42d9",
+                        "display": true,
+                        "name": "|New York Mets|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "167/50",
+                          "d": 4.34,
+                          "a": 334
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "0be86050-dcac-381a-b8e8-b177896e8a7b",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 8.5,
+                    "selections": [
+                      {
+                        "id": "c4376f31-c6fe-34ba-94ce-9e727cac78a8",
+                        "eventId": "1093b158-344a-47a0-b672-59bd36c04e13",
+                        "marketId": "0be86050-dcac-381a-b8e8-b177896e8a7b",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      },
+                      {
+                        "id": "5c94ffd5-1a22-3317-adf1-9db135071555",
+                        "eventId": "1093b158-344a-47a0-b672-59bd36c04e13",
+                        "marketId": "0be86050-dcac-381a-b8e8-b177896e8a7b",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+                      "line": "8.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "97ff09f6-e8a8-3195-be41-ff120d6fe73a",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "currentScore": "4.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Los Angeles Dodgers",
+                  "New York Mets"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Los Angeles Dodgers",
+                    "team": "Los Angeles Dodgers",
+                    "selectionIds": [
+                      "680b3c45-3f81-3610-9302-be5a532c02c0",
+                      "b5ff6ccb-932e-3698-a92b-f9c98d219e58",
+                      "c4376f31-c6fe-34ba-94ce-9e727cac78a8"
+                    ]
+                  },
+                  {
+                    "displayName": "New York Mets",
+                    "team": "New York Mets",
+                    "selectionIds": [
+                      "d931885b-2184-3497-bce5-67eef04547c9",
+                      "8e94fb54-3828-31b0-9bc8-8f647af65478",
+                      "5c94ffd5-1a22-3317-adf1-9db135071555"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "62d909c9-9669-4bcd-a44c-04a1316c1096",
+              "homeTeamBiNumber": "906",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "346fc121-ceed-4491-8fc3-f6429bc6d3f3",
+              "currentAwayStartingPitcher": "E Sheehan",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "New York Mets",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "c354e157-08ad-4207-a87e-199b100c11e6",
+              "currentHomeStartingPitcherId": "342962",
+              "incidentSources": "bet_radar_livescout,UNKNOWN",
+              "awayTeamName": "Los Angeles Dodgers",
+              "awayTeamBiNumber": "905",
+              "currentHomeStartingPitcher": "F Peralta",
+              "awayTeamId": "fe40ddad-e36d-4b6d-a95d-ecc6e3fff671",
+              "currentAwayStartingPitcherId": "406177"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "5fa22431-e98c-40d9-ac0f-7e1513b6b213",
+            "name": "Athletics at Minnesota Twins",
+            "startTime": "2026-07-26T18:10:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "1e92b09f-748e-3d27-ae08-bc4b7e31a220",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -6.5,
+                    "selections": [
+                      {
+                        "id": "46a93260-3c4e-3cfd-8708-07480ba21d34",
+                        "eventId": "5fa22431-e98c-40d9-ac0f-7e1513b6b213",
+                        "marketId": "1e92b09f-748e-3d27-ae08-bc4b7e31a220",
+                        "display": true,
+                        "name": "|Athletics|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      },
+                      {
+                        "id": "9de4d5ab-d854-39e6-9d36-47c572b05732",
+                        "eventId": "5fa22431-e98c-40d9-ac0f-7e1513b6b213",
+                        "marketId": "1e92b09f-748e-3d27-ae08-bc4b7e31a220",
+                        "display": true,
+                        "name": "|Minnesota Twins|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "inplay_ui,don_best,event_ticker,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "line": "-6.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "926c504a-d4bf-3602-8a95-91ae12ff2054",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "5af3ab81-bc3d-3bac-bdde-d9ab8b370be6",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "c2ceb090-733e-3927-8e95-4f4b35019f2c",
+                        "eventId": "5fa22431-e98c-40d9-ac0f-7e1513b6b213",
+                        "marketId": "5af3ab81-bc3d-3bac-bdde-d9ab8b370be6",
+                        "display": true,
+                        "name": "|Athletics|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "241/25",
+                          "d": 10.64,
+                          "a": 964
+                        }
+                      },
+                      {
+                        "id": "e04638c3-6bde-3278-9f3a-f76d5e11b67d",
+                        "eventId": "5fa22431-e98c-40d9-ac0f-7e1513b6b213",
+                        "marketId": "5af3ab81-bc3d-3bac-bdde-d9ab8b370be6",
+                        "display": true,
+                        "name": "|Minnesota Twins|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "25/1501",
+                          "d": 1.01666,
+                          "a": -6004
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "inplay_ui,don_best,event_ticker,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "97a64bc2-d810-3627-a6b4-5b2d38559d1d",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 13.5,
+                    "selections": [
+                      {
+                        "id": "10c55fad-2023-3082-a6e2-1b99d5f282df",
+                        "eventId": "5fa22431-e98c-40d9-ac0f-7e1513b6b213",
+                        "marketId": "97a64bc2-d810-3627-a6b4-5b2d38559d1d",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "1/1",
+                          "d": 2.0,
+                          "a": 100
+                        }
+                      },
+                      {
+                        "id": "f4eedeea-d7c0-3f3b-a74d-b8d5e9bb556e",
+                        "eventId": "5fa22431-e98c-40d9-ac0f-7e1513b6b213",
+                        "marketId": "97a64bc2-d810-3627-a6b4-5b2d38559d1d",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "8/11",
+                          "d": 1.72727,
+                          "a": -137
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "inplay_ui,don_best,event_ticker,WilliamHillFixture",
+                      "line": "13.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "44a16d30-f969-37b7-90e3-65ed445e0dec",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "currentScore": "6.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Athletics",
+                  "Minnesota Twins"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Athletics",
+                    "team": "Athletics",
+                    "selectionIds": [
+                      "46a93260-3c4e-3cfd-8708-07480ba21d34",
+                      "c2ceb090-733e-3927-8e95-4f4b35019f2c",
+                      "10c55fad-2023-3082-a6e2-1b99d5f282df"
+                    ]
+                  },
+                  {
+                    "displayName": "Minnesota Twins",
+                    "team": "Minnesota Twins",
+                    "selectionIds": [
+                      "9de4d5ab-d854-39e6-9d36-47c572b05732",
+                      "e04638c3-6bde-3278-9f3a-f76d5e11b67d",
+                      "f4eedeea-d7c0-3f3b-a74d-b8d5e9bb556e"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "inplay_ui,don_best,event_ticker,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "3a50dd07-9485-4c8f-89d2-1e45326c2be5",
+              "homeTeamBiNumber": "920",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "80bdc5d0-55e4-4c77-a0d5-8a516bd1211c",
+              "currentAwayStartingPitcher": "J Springs",
+              "currentHomeStartingPitcherFrom": "1.785011580279E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Minnesota Twins",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "b3120a2b-daad-4ef4-81d9-434de8549152",
+              "currentHomeStartingPitcherId": "419970",
+              "incidentSources": "bet_radar_livescout,UNKNOWN",
+              "awayTeamName": "Athletics",
+              "awayTeamBiNumber": "919",
+              "currentHomeStartingPitcher": "C Prielipp",
+              "awayTeamId": "00210219-bc50-4bcc-a5cf-1b820c16ac25",
+              "currentAwayStartingPitcherId": "435840"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "3c1bc075-fd47-4c87-9ff7-1f5411799830",
+            "name": "Houston Astros at Chicago White Sox",
+            "startTime": "2026-07-26T18:10:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "4713765a-8428-32c0-ae57-bc1bb2c66227",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -1.5,
+                    "selections": [
+                      {
+                        "id": "dcebb835-1c47-35d2-ab54-033e5a9bbe1a",
+                        "eventId": "3c1bc075-fd47-4c87-9ff7-1f5411799830",
+                        "marketId": "4713765a-8428-32c0-ae57-bc1bb2c66227",
+                        "display": true,
+                        "name": "|Houston Astros|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "10/11",
+                          "d": 1.91,
+                          "a": -110
+                        }
+                      },
+                      {
+                        "id": "7d540e17-f51c-350c-85aa-fbcf6c66a7a9",
+                        "eventId": "3c1bc075-fd47-4c87-9ff7-1f5411799830",
+                        "marketId": "4713765a-8428-32c0-ae57-bc1bb2c66227",
+                        "display": true,
+                        "name": "|Chicago White Sox|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "10/11",
+                          "d": 1.91,
+                          "a": -110
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "line": "-1.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "a44aff55-1b3f-3b1e-8432-d6b25248cf2f",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "c2478eac-8f1a-3cdf-bb5c-05a290ae16ca",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "8a217672-c2c6-3f70-a85f-2645ed64acdb",
+                        "eventId": "3c1bc075-fd47-4c87-9ff7-1f5411799830",
+                        "marketId": "c2478eac-8f1a-3cdf-bb5c-05a290ae16ca",
+                        "display": true,
+                        "name": "|Houston Astros|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "19/10",
+                          "d": 2.9,
+                          "a": 190
+                        }
+                      },
+                      {
+                        "id": "d6436ecc-dc2e-30d0-beae-0214efad6ce8",
+                        "eventId": "3c1bc075-fd47-4c87-9ff7-1f5411799830",
+                        "marketId": "c2478eac-8f1a-3cdf-bb5c-05a290ae16ca",
+                        "display": true,
+                        "name": "|Chicago White Sox|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "50/137",
+                          "d": 1.36496,
+                          "a": -274
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "52a88c6f-1d13-30bd-b185-1cffa3063282",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 10.5,
+                    "selections": [
+                      {
+                        "id": "96b4bf13-96f8-3071-8627-fec9741edb8f",
+                        "eventId": "3c1bc075-fd47-4c87-9ff7-1f5411799830",
+                        "marketId": "52a88c6f-1d13-30bd-b185-1cffa3063282",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      },
+                      {
+                        "id": "b14a846b-87df-31d0-b1e9-5f5b292d4ae5",
+                        "eventId": "3c1bc075-fd47-4c87-9ff7-1f5411799830",
+                        "marketId": "52a88c6f-1d13-30bd-b185-1cffa3063282",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "line": "10.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "d4354f5f-73ae-3d81-943b-dae8854a470e",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "currentScore": "5.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Houston Astros",
+                  "Chicago White Sox"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Houston Astros",
+                    "team": "Houston Astros",
+                    "selectionIds": [
+                      "dcebb835-1c47-35d2-ab54-033e5a9bbe1a",
+                      "8a217672-c2c6-3f70-a85f-2645ed64acdb",
+                      "96b4bf13-96f8-3071-8627-fec9741edb8f"
+                    ]
+                  },
+                  {
+                    "displayName": "Chicago White Sox",
+                    "team": "Chicago White Sox",
+                    "selectionIds": [
+                      "7d540e17-f51c-350c-85aa-fbcf6c66a7a9",
+                      "d6436ecc-dc2e-30d0-beae-0214efad6ce8",
+                      "b14a846b-87df-31d0-b1e9-5f5b292d4ae5"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "32afce68-009c-4310-875a-eb343c936423",
+              "homeTeamBiNumber": "922",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "5321cc65-d517-40a8-ac72-a2eba0772fa2",
+              "currentAwayStartingPitcher": "R Blanco",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Chicago White Sox",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "9176495f-20cc-43da-87a4-f625af3c887f",
+              "currentHomeStartingPitcherId": "344365",
+              "incidentSources": "bet_radar_livescout,UNKNOWN",
+              "awayTeamName": "Houston Astros",
+              "awayTeamBiNumber": "921",
+              "currentHomeStartingPitcher": "E Fedde",
+              "awayTeamId": "ad9ce4ec-a42e-47d4-b897-e258575b0ef2",
+              "currentAwayStartingPitcherId": "312924"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "f2870d8e-bf78-4f68-89fd-04134463d207",
+            "name": "Colorado Rockies at Milwaukee Brewers",
+            "startTime": "2026-07-26T18:10:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": false,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "82e6b8b5-52d0-38b0-a02e-0744d2ac342d",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -4.5,
+                    "selections": [
+                      {
+                        "id": "9064c04a-7d6c-31c0-9963-f3672e81df89",
+                        "eventId": "f2870d8e-bf78-4f68-89fd-04134463d207",
+                        "marketId": "82e6b8b5-52d0-38b0-a02e-0744d2ac342d",
+                        "display": true,
+                        "name": "|Colorado Rockies|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "10/11",
+                          "d": 1.91,
+                          "a": -110
+                        }
+                      },
+                      {
+                        "id": "bccb6828-369e-381d-9cd4-979b0a784687",
+                        "eventId": "f2870d8e-bf78-4f68-89fd-04134463d207",
+                        "marketId": "82e6b8b5-52d0-38b0-a02e-0744d2ac342d",
+                        "display": true,
+                        "name": "|Milwaukee Brewers|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "10/11",
+                          "d": 1.91,
+                          "a": -110
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "line": "-4.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "7548436a-0ae2-38c1-9172-db7521c655be",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "d277b5c2-db19-3e45-9baa-8d890e26c1cd",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "7f8609fa-7ec3-3888-8582-434969e8d579",
+                        "eventId": "f2870d8e-bf78-4f68-89fd-04134463d207",
+                        "marketId": "d277b5c2-db19-3e45-9baa-8d890e26c1cd",
+                        "display": true,
+                        "name": "|Colorado Rockies|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "929/100",
+                          "d": 10.29,
+                          "a": 929
+                        }
+                      },
+                      {
+                        "id": "9e135362-21b5-318d-b5d9-a126165be08b",
+                        "eventId": "f2870d8e-bf78-4f68-89fd-04134463d207",
+                        "marketId": "d277b5c2-db19-3e45-9baa-8d890e26c1cd",
+                        "display": true,
+                        "name": "|Milwaukee Brewers|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "25/1251",
+                          "d": 1.01998,
+                          "a": -5004
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "1bc281d9-075a-3500-b471-58adb40fa48d",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 7.5,
+                    "selections": [
+                      {
+                        "id": "d020c27f-89db-343c-9290-cedde066af7c",
+                        "eventId": "f2870d8e-bf78-4f68-89fd-04134463d207",
+                        "marketId": "1bc281d9-075a-3500-b471-58adb40fa48d",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "8/11",
+                          "d": 1.72727,
+                          "a": -137
+                        }
+                      },
+                      {
+                        "id": "d6993a70-8571-3396-b264-3d671df8aabd",
+                        "eventId": "f2870d8e-bf78-4f68-89fd-04134463d207",
+                        "marketId": "1bc281d9-075a-3500-b471-58adb40fa48d",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "1/1",
+                          "d": 2.0,
+                          "a": 100
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+                      "line": "7.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "81a36dae-f97a-3dc3-acd2-f0c7f94c70dc",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout,UNKNOWN",
+                      "currentScore": "3.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Colorado Rockies",
+                  "Milwaukee Brewers"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Colorado Rockies",
+                    "team": "Colorado Rockies",
+                    "selectionIds": [
+                      "9064c04a-7d6c-31c0-9963-f3672e81df89",
+                      "7f8609fa-7ec3-3888-8582-434969e8d579",
+                      "d020c27f-89db-343c-9290-cedde066af7c"
+                    ]
+                  },
+                  {
+                    "displayName": "Milwaukee Brewers",
+                    "team": "Milwaukee Brewers",
+                    "selectionIds": [
+                      "bccb6828-369e-381d-9cd4-979b0a784687",
+                      "9e135362-21b5-318d-b5d9-a126165be08b",
+                      "d6993a70-8571-3396-b264-3d671df8aabd"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "event_ticker,inplay_ui,don_best,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "2aceb4f3-33d6-4951-a4b2-395e610c0147",
+              "homeTeamBiNumber": "910",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "4092c146-cdf5-403c-bbaf-fbc0d623e664",
+              "currentAwayStartingPitcher": "K Freeland",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Milwaukee Brewers",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "78fbbdcf-3555-47e8-9819-bd104e0fdd4b",
+              "currentHomeStartingPitcherId": "436612",
+              "incidentSources": "bet_radar_livescout,UNKNOWN",
+              "awayTeamName": "Colorado Rockies",
+              "awayTeamBiNumber": "909",
+              "currentHomeStartingPitcher": "J Misiorowski",
+              "awayTeamId": "85d6edce-34e7-4e3b-b207-28ed7f6d28c1",
+              "currentAwayStartingPitcherId": "312695"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "3ca1c437-544a-4188-a929-f752cc2e4d4d",
+            "name": "Cincinnati Reds at St. Louis Cardinals",
+            "startTime": "2026-07-26T18:15:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "df75e9ea-c782-36be-a57c-613517bf1f6c",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -1.5,
+                    "selections": [
+                      {
+                        "id": "1ba2e858-5202-31b5-8bb8-959578d9dd80",
+                        "eventId": "3ca1c437-544a-4188-a929-f752cc2e4d4d",
+                        "marketId": "df75e9ea-c782-36be-a57c-613517bf1f6c",
+                        "display": true,
+                        "name": "|Cincinnati Reds|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "4/6",
+                          "d": 1.66667,
+                          "a": -150
+                        }
+                      },
+                      {
+                        "id": "b0f2be16-93ed-3796-80da-ea7c933dbb57",
+                        "eventId": "3ca1c437-544a-4188-a929-f752cc2e4d4d",
+                        "marketId": "df75e9ea-c782-36be-a57c-613517bf1f6c",
+                        "display": true,
+                        "name": "|St. Louis Cardinals|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "11/10",
+                          "d": 2.1,
+                          "a": 110
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "inplay_ui,don_best,event_ticker,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout",
+                      "line": "-1.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "b62b95e8-4ff9-3dc1-a6bf-7d6d2c4a61ad",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "ac8b4a3e-efe0-3f26-8806-a42b5eec71ff",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "b7cbb454-890f-3d0d-b5cb-d05e41ac4391",
+                        "eventId": "3ca1c437-544a-4188-a929-f752cc2e4d4d",
+                        "marketId": "ac8b4a3e-efe0-3f26-8806-a42b5eec71ff",
+                        "display": true,
+                        "name": "|Cincinnati Reds|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "43/25",
+                          "d": 2.72,
+                          "a": 172
+                        }
+                      },
+                      {
+                        "id": "7f90734b-a872-3b40-bc3a-c2ad7ef07fe6",
+                        "eventId": "3ca1c437-544a-4188-a929-f752cc2e4d4d",
+                        "marketId": "ac8b4a3e-efe0-3f26-8806-a42b5eec71ff",
+                        "display": true,
+                        "name": "|St. Louis Cardinals|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "25/61",
+                          "d": 1.40984,
+                          "a": -244
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "inplay_ui,don_best,event_ticker,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "6d1be683-49f0-39a5-ba46-14379b2a206c",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 8.5,
+                    "selections": [
+                      {
+                        "id": "46d74831-6646-34a5-b023-6d32ea8db3cd",
+                        "eventId": "3ca1c437-544a-4188-a929-f752cc2e4d4d",
+                        "marketId": "6d1be683-49f0-39a5-ba46-14379b2a206c",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      },
+                      {
+                        "id": "583dfc1e-89ee-349f-96ed-6731ad59ae2d",
+                        "eventId": "3ca1c437-544a-4188-a929-f752cc2e4d4d",
+                        "marketId": "6d1be683-49f0-39a5-ba46-14379b2a206c",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "inplay_ui,don_best,event_ticker,WilliamHillFixture",
+                      "line": "8.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "4fe865fe-6070-3491-9e49-f70dd82fd6ca",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout",
+                      "currentScore": "3.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Cincinnati Reds",
+                  "St. Louis Cardinals"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Cincinnati Reds",
+                    "team": "Cincinnati Reds",
+                    "selectionIds": [
+                      "1ba2e858-5202-31b5-8bb8-959578d9dd80",
+                      "b7cbb454-890f-3d0d-b5cb-d05e41ac4391",
+                      "46d74831-6646-34a5-b023-6d32ea8db3cd"
+                    ]
+                  },
+                  {
+                    "displayName": "St. Louis Cardinals",
+                    "team": "St. Louis Cardinals",
+                    "selectionIds": [
+                      "b0f2be16-93ed-3796-80da-ea7c933dbb57",
+                      "7f90734b-a872-3b40-bc3a-c2ad7ef07fe6",
+                      "583dfc1e-89ee-349f-96ed-6731ad59ae2d"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "inplay_ui,don_best,event_ticker,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "035e1369-141f-4bbe-bcb4-73312d11f804",
+              "homeTeamBiNumber": "912",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "77ffdc70-c3b5-47c8-a1e9-a512ba3fb646",
+              "currentAwayStartingPitcher": "A Abbott",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "St. Louis Cardinals",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "27b033d4-740d-4fd9-987e-255a9319e3f1",
+              "currentHomeStartingPitcherId": "389172",
+              "incidentSources": "bet_radar_livescout",
+              "awayTeamName": "Cincinnati Reds",
+              "awayTeamBiNumber": "911",
+              "currentHomeStartingPitcher": "K Leahy",
+              "awayTeamId": "78e90d0d-2d42-4e87-a39d-11375ceb4f74",
+              "currentAwayStartingPitcherId": "404119"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "a4262d62-9e88-4f5e-bb9b-2ab9fadba30e",
+            "name": "Seattle Mariners at Texas Rangers",
+            "startTime": "2026-07-26T18:35:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": true,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "c1c578c8-8191-3f48-b597-b697a55b7f29",
+                    "name": "|Run Line Live|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 510,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -1.5,
+                    "selections": [
+                      {
+                        "id": "1142be4c-5ae6-325a-9516-2ea2b9073632",
+                        "eventId": "a4262d62-9e88-4f5e-bb9b-2ab9fadba30e",
+                        "marketId": "c1c578c8-8191-3f48-b597-b697a55b7f29",
+                        "display": true,
+                        "name": "|Seattle Mariners|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      },
+                      {
+                        "id": "76bb6ffb-a103-327d-9c28-f4ca203f274d",
+                        "eventId": "a4262d62-9e88-4f5e-bb9b-2ab9fadba30e",
+                        "marketId": "c1c578c8-8191-3f48-b597-b697a55b7f29",
+                        "display": true,
+                        "name": "|Texas Rangers|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout",
+                      "line": "-1.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "6a5258e1-a29f-3202-95a3-70f2d038fd9e",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "510",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_20Live_7c",
+                    "templateName": "|Run Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "208401e7-8bfa-3579-a860-7e728c261f5f",
+                    "name": "|Money Line Live|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 500,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": false,
+                    "selections": [
+                      {
+                        "id": "41348096-c1a7-3224-a7fa-5e98ed143108",
+                        "eventId": "a4262d62-9e88-4f5e-bb9b-2ab9fadba30e",
+                        "marketId": "208401e7-8bfa-3579-a860-7e728c261f5f",
+                        "display": true,
+                        "name": "|Seattle Mariners|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "46/25",
+                          "d": 2.84,
+                          "a": 184
+                        }
+                      },
+                      {
+                        "id": "241081bd-63ca-3100-bab4-252471db9a7c",
+                        "eventId": "a4262d62-9e88-4f5e-bb9b-2ab9fadba30e",
+                        "marketId": "208401e7-8bfa-3579-a860-7e728c261f5f",
+                        "display": true,
+                        "name": "|Texas Rangers|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "25/66",
+                          "d": 1.37879,
+                          "a": -264
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "500",
+                      "pricingSource": "CZRS",
+                      "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+                      "incidentSources": "bet_radar_livescout"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_20Live_7c",
+                    "templateName": "|Money Line Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  },
+                  {
+                    "id": "fa50d853-b0a2-3f96-945f-23768eaedfec",
+                    "name": "|Total Runs Live|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 520,
+                    "display": true,
+                    "tradedInPlay": true,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 6.5,
+                    "selections": [
+                      {
+                        "id": "08fe305e-906c-336d-a224-93a8bc4f3492",
+                        "eventId": "a4262d62-9e88-4f5e-bb9b-2ab9fadba30e",
+                        "marketId": "fa50d853-b0a2-3f96-945f-23768eaedfec",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "4/5",
+                          "d": 1.8,
+                          "a": -125
+                        }
+                      },
+                      {
+                        "id": "e052c3ff-1ef2-3fd4-a17f-c7062022d865",
+                        "eventId": "a4262d62-9e88-4f5e-bb9b-2ab9fadba30e",
+                        "marketId": "fa50d853-b0a2-3f96-945f-23768eaedfec",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "19/20",
+                          "d": 1.95,
+                          "a": -105
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+                      "line": "6.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "964d2a7b-69c7-3c11-bf09-fbf7df335815",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "520",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED",
+                      "incidentSources": "bet_radar_livescout",
+                      "currentScore": "1.0"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_20Live_7c",
+                    "templateName": "|Total Runs Live|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "InPlay"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Seattle Mariners",
+                  "Texas Rangers"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": false
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Seattle Mariners",
+                    "team": "Seattle Mariners",
+                    "selectionIds": [
+                      "1142be4c-5ae6-325a-9516-2ea2b9073632",
+                      "41348096-c1a7-3224-a7fa-5e98ed143108",
+                      "08fe305e-906c-336d-a224-93a8bc4f3492"
+                    ]
+                  },
+                  {
+                    "displayName": "Texas Rangers",
+                    "team": "Texas Rangers",
+                    "selectionIds": [
+                      "76bb6ffb-a103-327d-9c28-f4ca203f274d",
+                      "241081bd-63ca-3100-bab4-252471db9a7c",
+                      "e052c3ff-1ef2-3fd4-a17f-c7062022d865"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "inplay_ui,event_ticker,don_best,WilliamHillFixture",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "58ac55d9-faa5-4f99-8f62-9b69bb2e0f8b",
+              "homeTeamBiNumber": "924",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "3332e09d-ca2f-4f05-883f-4296f9e0885f",
+              "currentAwayStartingPitcher": "L Gilbert",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Texas Rangers",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "d8de0c9d-3d3d-4ead-968d-8d7b91f6b72e",
+              "currentHomeStartingPitcherId": "343151",
+              "incidentSources": "bet_radar_livescout",
+              "awayTeamName": "Seattle Mariners",
+              "awayTeamBiNumber": "923",
+              "currentHomeStartingPitcher": "J Degrom",
+              "awayTeamId": "0d7f1150-759d-4cbc-b2b5-c5285ee99b28",
+              "currentAwayStartingPitcherId": "360805"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+            "name": "Los Angeles Angels at San Francisco Giants",
+            "startTime": "2026-07-26T20:05:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": false,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "f57a1792-a1f0-3545-b330-83499fd649e3",
+                    "name": "|Run Line|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 10,
+                    "display": true,
+                    "tradedInPlay": false,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -1.5,
+                    "selections": [
+                      {
+                        "id": "1c22a17c-fa63-35a4-9b07-dcf337fb4b3a",
+                        "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                        "marketId": "f57a1792-a1f0-3545-b330-83499fd649e3",
+                        "display": true,
+                        "name": "|Los Angeles Angels|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "4/9",
+                          "d": 1.44444,
+                          "a": -225
+                        }
+                      },
+                      {
+                        "id": "624dbc33-356a-3f0e-b710-5ede940f22d9",
+                        "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                        "marketId": "f57a1792-a1f0-3545-b330-83499fd649e3",
+                        "display": true,
+                        "name": "|San Francisco Giants|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "37/20",
+                          "d": 2.85,
+                          "a": 185
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "don_best,event_ticker,WilliamHillFixture",
+                      "line": "-1.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "5397ea04-9404-3b24-9650-ad0bbc8a4e7e",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "10",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_7c",
+                    "templateName": "|Run Line|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "PreMatch"
+                    ]
+                  },
+                  {
+                    "id": "3db354e8-de36-34d5-a104-f06fb46f5e9d",
+                    "name": "|Money Line|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 0,
+                    "display": true,
+                    "tradedInPlay": false,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "selections": [
+                      {
+                        "id": "b934a732-8273-386a-8c1d-773451b2bd10",
+                        "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                        "marketId": "3db354e8-de36-34d5-a104-f06fb46f5e9d",
+                        "display": true,
+                        "name": "|Los Angeles Angels|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "5/6",
+                          "d": 1.83,
+                          "a": -120
+                        }
+                      },
+                      {
+                        "id": "ed71751b-ac8f-3757-ace0-7873ea50f096",
+                        "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                        "marketId": "3db354e8-de36-34d5-a104-f06fb46f5e9d",
+                        "display": true,
+                        "name": "|San Francisco Giants|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "1/1",
+                          "d": 2.0,
+                          "a": 100
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "0",
+                      "pricingSource": "CZRS",
+                      "variableSources": "don_best,event_ticker,WilliamHillFixture"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_7c",
+                    "templateName": "|Money Line|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "PreMatch"
+                    ]
+                  },
+                  {
+                    "id": "330ad5e5-63b3-38e9-979d-d82e6f539a5a",
+                    "name": "|Total Runs|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 20,
+                    "display": true,
+                    "tradedInPlay": false,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 8.5,
+                    "selections": [
+                      {
+                        "id": "bf01477b-edb6-3dda-9a5e-6fa8e73d5680",
+                        "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                        "marketId": "330ad5e5-63b3-38e9-979d-d82e6f539a5a",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "20/21",
+                          "d": 1.95238,
+                          "a": -105
+                        }
+                      },
+                      {
+                        "id": "5066400a-4e07-3da6-a1ab-3a1160984509",
+                        "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                        "marketId": "330ad5e5-63b3-38e9-979d-d82e6f539a5a",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "20/23",
+                          "d": 1.86957,
+                          "a": -115
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "don_best,event_ticker,WilliamHillFixture",
+                      "currentScore": "0.0",
+                      "line": "8.5",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "e19adb49-5101-339e-8ed2-ac1d4cf89683",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "20",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_7c",
+                    "templateName": "|Total Runs|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "PreMatch"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "Los Angeles Angels",
+                  "San Francisco Giants"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "Los Angeles Angels",
+                    "team": "Los Angeles Angels",
+                    "selectionIds": [
+                      "1c22a17c-fa63-35a4-9b07-dcf337fb4b3a",
+                      "b934a732-8273-386a-8c1d-773451b2bd10",
+                      "bf01477b-edb6-3dda-9a5e-6fa8e73d5680"
+                    ]
+                  },
+                  {
+                    "displayName": "San Francisco Giants",
+                    "team": "San Francisco Giants",
+                    "selectionIds": [
+                      "624dbc33-356a-3f0e-b710-5ede940f22d9",
+                      "ed71751b-ac8f-3757-ace0-7873ea50f096",
+                      "5066400a-4e07-3da6-a1ab-3a1160984509"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "don_best,event_ticker,WilliamHillFixture",
+              "awayTeamName": "Los Angeles Angels",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "fa8003c1-d4e2-4479-9c45-2bd3fd62ce68",
+              "homeTeamBiNumber": "928",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "b2789f04-7952-464d-9c22-a0902a5c0604",
+              "currentAwayStartingPitcher": "J Soriano",
+              "currentHomeStartingPitcherFrom": "1.785005100302E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "San Francisco Giants",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "959091be-2af0-4303-ba46-7e63c18fa5a9",
+              "currentHomeStartingPitcherId": "420424",
+              "awayTeamBiNumber": "927",
+              "currentHomeStartingPitcher": "C Whisenhunt",
+              "awayTeamId": "4ef07fcb-c652-4639-bff7-482e0b25e2e6",
+              "currentAwayStartingPitcherId": "404254"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          },
+          {
+            "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+            "name": "New York Yankees at Philadelphia Phillies",
+            "startTime": "2026-07-26T23:20:00Z",
+            "type": "MATCH",
+            "sportId": "baseball",
+            "competitionName": "MLB",
+            "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+            "competitionType": "mlb",
+            "display": true,
+            "tradedInPlay": true,
+            "active": true,
+            "started": false,
+            "byoEligible": true,
+            "keyMarketGroups": [
+              {
+                "marketDisplayTypeId": "standard_six_pack",
+                "marketDisplayGroupDisplayName": "Game Lines",
+                "isOddsBoost": false,
+                "markets": [
+                  {
+                    "id": "cc5f02d1-eaf6-3ff3-931f-78e4f1bfae0a",
+                    "name": "|Run Line|",
+                    "type": "two-way-handicap",
+                    "gtpMarketClass": "HANDICAP",
+                    "templateType": "generic",
+                    "displayOrder": 10,
+                    "display": true,
+                    "tradedInPlay": false,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": -1.5,
+                    "selections": [
+                      {
+                        "id": "4424aff2-4396-3356-81a1-977cb6d06a7e",
+                        "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                        "marketId": "cc5f02d1-eaf6-3ff3-931f-78e4f1bfae0a",
+                        "display": true,
+                        "name": "|New York Yankees|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "5/7",
+                          "d": 1.71429,
+                          "a": -140
+                        }
+                      },
+                      {
+                        "id": "dee69350-88d2-3c94-ae3d-386445c56e73",
+                        "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                        "marketId": "cc5f02d1-eaf6-3ff3-931f-78e4f1bfae0a",
+                        "display": true,
+                        "name": "|Philadelphia Phillies|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "59/50",
+                          "d": 2.18,
+                          "a": 118
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "don_best,event_ticker,WilliamHillFixture",
+                      "line": "-1.5",
+                      "marketCategory": "POINTS_HANDICAP",
+                      "marketCode": "26bec86b-0579-3fa9-bc70-d4d740c8efd6",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "10",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "HANDICAP"
+                    },
+                    "displayName": "Spread",
+                    "templateId": "_7cRun_20Line_7c",
+                    "templateName": "|Run Line|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "PreMatch"
+                    ]
+                  },
+                  {
+                    "id": "4affc672-f0ae-3f30-932f-164680946568",
+                    "name": "|Money Line|",
+                    "type": "standard-market-template",
+                    "gtpMarketClass": "HEAD_TO_HEAD",
+                    "templateType": "generic",
+                    "displayOrder": 0,
+                    "display": true,
+                    "tradedInPlay": false,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "selections": [
+                      {
+                        "id": "7eeca164-6e79-3808-9295-d53a989414eb",
+                        "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                        "marketId": "4affc672-f0ae-3f30-932f-164680946568",
+                        "display": true,
+                        "name": "|New York Yankees|",
+                        "active": true,
+                        "type": "away",
+                        "price": {
+                          "f": "79/50",
+                          "d": 2.58,
+                          "a": 158
+                        }
+                      },
+                      {
+                        "id": "f3f89967-b7f2-3560-a58f-8f02ee3d21f0",
+                        "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                        "marketId": "4affc672-f0ae-3f30-932f-164680946568",
+                        "display": true,
+                        "name": "|Philadelphia Phillies|",
+                        "active": true,
+                        "type": "home",
+                        "price": {
+                          "f": "10/19",
+                          "d": 1.52632,
+                          "a": -190
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "metadata": {
+                      "displayOrder": "0",
+                      "pricingSource": "CZRS",
+                      "variableSources": "don_best,event_ticker,WilliamHillFixture"
+                    },
+                    "displayName": "Money",
+                    "templateId": "_7cMoney_20Line_7c",
+                    "templateName": "|Money Line|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "PreMatch"
+                    ]
+                  },
+                  {
+                    "id": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+                    "name": "|Total Runs|",
+                    "type": "over-under",
+                    "gtpMarketClass": "OVER_UNDER",
+                    "templateType": "generic",
+                    "displayOrder": 20,
+                    "display": true,
+                    "tradedInPlay": false,
+                    "spOffered": false,
+                    "active": true,
+                    "placeholder": false,
+                    "byoEligible": true,
+                    "line": 8.0,
+                    "selections": [
+                      {
+                        "id": "b4a14565-30e3-33f8-8130-e9d672d260cb",
+                        "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                        "marketId": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+                        "display": true,
+                        "name": "|Over|",
+                        "active": true,
+                        "type": "over",
+                        "price": {
+                          "f": "20/21",
+                          "d": 1.95238,
+                          "a": -105
+                        }
+                      },
+                      {
+                        "id": "c0d85bbe-0a97-3077-9daf-950da6499bb8",
+                        "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                        "marketId": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+                        "display": true,
+                        "name": "|Under|",
+                        "active": true,
+                        "type": "under",
+                        "price": {
+                          "f": "20/23",
+                          "d": 1.86957,
+                          "a": -115
+                        }
+                      }
+                    ],
+                    "cashoutAvailable": true,
+                    "hasOddsBoost": false,
+                    "hasMovingLines": true,
+                    "metadata": {
+                      "variableSources": "don_best,event_ticker,WilliamHillFixture",
+                      "currentScore": "0.0",
+                      "line": "8.0",
+                      "marketCategory": "TOTAL_POINTS",
+                      "marketCode": "6065c13e-ead6-3d94-8b83-42184df30f4e",
+                      "pricingSource": "CZRS",
+                      "displayOrder": "20",
+                      "period": "MATCH_INC_OT",
+                      "marketType": "LINEBASED"
+                    },
+                    "displayName": "Total",
+                    "templateId": "_7cTotal_20Runs_7c",
+                    "templateName": "|Total Runs|",
+                    "sixPackView": true,
+                    "keyMarket": true,
+                    "specialConditions": "",
+                    "phases": [
+                      "PreMatch"
+                    ]
+                  }
+                ],
+                "teams": [
+                  "New York Yankees",
+                  "Philadelphia Phillies"
+                ],
+                "columnHeaders": [
+                  {
+                    "name": "Spread",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Money",
+                    "hasSGP": true
+                  },
+                  {
+                    "name": "Total",
+                    "hasSGP": true
+                  }
+                ],
+                "marketDisplayRows": [
+                  {
+                    "displayName": "New York Yankees",
+                    "team": "New York Yankees",
+                    "selectionIds": [
+                      "4424aff2-4396-3356-81a1-977cb6d06a7e",
+                      "7eeca164-6e79-3808-9295-d53a989414eb",
+                      "b4a14565-30e3-33f8-8130-e9d672d260cb"
+                    ]
+                  },
+                  {
+                    "displayName": "Philadelphia Phillies",
+                    "team": "Philadelphia Phillies",
+                    "selectionIds": [
+                      "dee69350-88d2-3c94-ae3d-386445c56e73",
+                      "f3f89967-b7f2-3560-a58f-8f02ee3d21f0",
+                      "c0d85bbe-0a97-3077-9daf-950da6499bb8"
+                    ]
+                  }
+                ],
+                "contextDisplay": {
+                  "expandMarkets": true,
+                  "showMoreLimit": 5,
+                  "useMarketHeader": false,
+                  "useMarketTitle": false
+                }
+              }
+            ],
+            "metadata": {
+              "variableSources": "don_best,event_ticker,WilliamHillFixture",
+              "awayTeamName": "New York Yankees",
+              "incidentSource": "bet_radar_livescout",
+              "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+              "homeTeamBiNumber": "930",
+              "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+              "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+              "currentAwayStartingPitcher": "W Warren",
+              "currentHomeStartingPitcherFrom": "1.785001140607E12",
+              "pricingSource": "CZRS",
+              "homeTeamName": "Philadelphia Phillies",
+              "displayOrder": "4",
+              "currentAwayStartingPitcherFrom": "1.785001140607E12",
+              "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+              "currentHomeStartingPitcherId": "360767",
+              "awayTeamBiNumber": "929",
+              "currentHomeStartingPitcher": "C Sanchez",
+              "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+              "currentAwayStartingPitcherId": "405431"
+            },
+            "eventDisplay": {
+              "showEventHeader": false
+            },
+            "marketCountActivePreMatch": 0,
+            "marketCountActiveInPlay": 0
+          }
+        ],
+        "displayAsEvent": false,
+        "collectionDisplayOrder": 0,
+        "displayOrder": 0
+      }
+    ],
+    "displayOrder": 0,
+    "eventCount": 14
+  }
+}

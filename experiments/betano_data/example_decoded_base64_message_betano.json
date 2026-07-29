@@ -1,0 +1,749 @@
+[
+  {
+    "version": 151,
+    "eventId": 88075744,
+    "sportId": 6,
+    "type": 300,
+    "payload": {
+      "liveData": {
+        "score": {
+          "home": "0",
+          "away": "0"
+        },
+        "clock": {
+          "secondsSinceStart": 545
+        },
+        "results": {
+          "period": "1",
+          "balls": 0,
+          "strikes": 1,
+          "outs": 0,
+          "baseballActs": {
+            "home": "batting",
+            "away": "pitching"
+          },
+          "sportId": 6,
+          "sortingIndex": 1
+        },
+        "periodDescription": "1st Inning"
+      }
+    }
+  },
+  {
+    "version": 152,
+    "eventId": 88075744,
+    "sportId": 6,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2838845176": [
+          {
+            "id": 9924560440,
+            "price": 1.5
+          },
+          {
+            "id": 9924560441,
+            "price": 2.37
+          }
+        ]
+      },
+      "totalMarketsAvailable": 494
+    }
+  },
+  {
+    "version": 2463,
+    "eventId": 87902461,
+    "sportId": 6,
+    "type": 300,
+    "payload": {
+      "liveData": {
+        "score": {
+          "home": "5",
+          "away": "2"
+        },
+        "clock": {
+          "secondsSinceStart": 1517
+        },
+        "results": {
+          "period": "8",
+          "balls": 1,
+          "strikes": 1,
+          "outs": 2,
+          "baseballActs": {
+            "home": "pitching",
+            "away": "batting"
+          },
+          "sportId": 6,
+          "sortingIndex": 8
+        },
+        "periodDescription": "8th inning"
+      }
+    }
+  },
+  {
+    "version": 74,
+    "eventId": 88406779,
+    "sportId": 21,
+    "type": 300,
+    "payload": {
+      "liveData": {
+        "score": {
+          "home": "0",
+          "away": "0"
+        },
+        "results": {
+          "serverHome": true,
+          "currentSetNumber": 2,
+          "currentScore": {
+            "home": "1",
+            "away": "0"
+          },
+          "setScoreList": [
+            {
+              "home": "11",
+              "away": "9"
+            }
+          ],
+          "totalSetsScore": {
+            "home": "1",
+            "away": "0"
+          },
+          "sportId": 21
+        },
+        "periodDescription": "Game 2"
+      }
+    }
+  },
+  {
+    "version": 55,
+    "eventId": 88352541,
+    "sportId": 1,
+    "type": 103,
+    "payload": {
+      "oldMarketId": 2840615527,
+      "market": {
+        "selections": [
+          {
+            "price": 1.6,
+            "handicap": 6.5,
+            "typeId": 39,
+            "renderingLayout": 2,
+            "columnIndex": 0,
+            "displayOrder": 1,
+            "id": 9932045682,
+            "name": "Over 6.5",
+            "fullName": "Over"
+          },
+          {
+            "price": 2.1,
+            "handicap": 6.5,
+            "typeId": 40,
+            "renderingLayout": 2,
+            "columnIndex": 1,
+            "displayOrder": 2,
+            "id": 9932045683,
+            "name": "Under 6.5",
+            "fullName": "Under"
+          }
+        ],
+        "type": "HCTG",
+        "typeId": 13,
+        "handicap": 6.5,
+        "marketCloseTimeMillis": 0,
+        "renderingLayout": 2,
+        "displayOrder": 55,
+        "id": 2840666966,
+        "name": "Over/Under Total Goals"
+      },
+      "totalMarketsAvailable": 7
+    }
+  },
+  {
+    "version": 56,
+    "eventId": 88352541,
+    "sportId": 1,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2836657040": [
+          {
+            "id": 9915630709,
+            "price": 4.7
+          }
+        ],
+        "2840672955": [
+          {
+            "id": 9932069549,
+            "price": 90
+          }
+        ],
+        "2836657037": [
+          {
+            "id": 9915630705,
+            "price": 1.14
+          },
+          {
+            "id": 9915630704,
+            "price": 1.82
+          }
+        ]
+      },
+      "totalMarketsAvailable": 7
+    }
+  },
+  {
+    "version": 389,
+    "eventId": 87691907,
+    "sportId": 2,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2832848725": [
+          {
+            "id": 9899958664,
+            "price": 1.88
+          },
+          {
+            "id": 9899958665,
+            "price": 1.85
+          }
+        ]
+      },
+      "totalMarketsAvailable": 134
+    }
+  },
+  {
+    "version": 390,
+    "eventId": 87691907,
+    "sportId": 2,
+    "type": 103,
+    "payload": {
+      "oldMarketId": 2832848705,
+      "market": {
+        "selections": [
+          {
+            "price": 1.85,
+            "handicap": 176.5,
+            "typeId": 451,
+            "renderingLayout": 2,
+            "columnIndex": 0,
+            "displayOrder": 1,
+            "id": 9899958628,
+            "name": "Over 176.5",
+            "fullName": "Over",
+            "shortName": "O 176.5"
+          },
+          {
+            "price": 1.88,
+            "handicap": 176.5,
+            "typeId": 452,
+            "renderingLayout": 2,
+            "columnIndex": 1,
+            "displayOrder": 2,
+            "id": 9899958629,
+            "name": "Under 176.5",
+            "fullName": "Under",
+            "shortName": "U 176.5"
+          }
+        ],
+        "type": "FTPO",
+        "typeId": 157,
+        "handicap": 176.5,
+        "marketCloseTimeMillis": 0,
+        "renderingLayout": 2,
+        "displayOrder": -9830,
+        "id": 2832848707,
+        "name": "Points"
+      },
+      "totalMarketsAvailable": 134
+    }
+  },
+  {
+    "version": 391,
+    "eventId": 87691907,
+    "sportId": 2,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2817840161": [
+          {
+            "id": 9838742851,
+            "price": 1.25
+          },
+          {
+            "id": 9838742852,
+            "price": 3.7
+          }
+        ]
+      },
+      "totalMarketsAvailable": 134
+    }
+  },
+  {
+    "version": 132,
+    "eventId": 88466139,
+    "sportId": 3,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2839956431": [
+          {
+            "id": 9929319003,
+            "price": 14,
+            "originalPrice": 11.5,
+            "percentageOffer": 21
+          }
+        ]
+      },
+      "totalMarketsAvailable": 5
+    }
+  },
+  {
+    "version": 2464,
+    "eventId": 87902461,
+    "sportId": 6,
+    "type": 3,
+    "payload": {}
+  },
+  {
+    "version": 33,
+    "eventId": 88345941,
+    "sportId": 6,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2839834929": [
+          {
+            "id": 9928656181,
+            "price": 1.91
+          },
+          {
+            "id": 9928656182,
+            "price": 1.83
+          }
+        ],
+        "2836442771": [
+          {
+            "id": 9914787259,
+            "price": 2.12
+          }
+        ]
+      },
+      "totalMarketsAvailable": 34
+    }
+  },
+  {
+    "version": 17,
+    "eventId": 88396778,
+    "sportId": 1,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2839293579": [
+          {
+            "id": 9926477452,
+            "price": 2
+          }
+        ],
+        "2837923049": [
+          {
+            "id": 9920900172,
+            "price": 1.11
+          },
+          {
+            "id": 9920900174,
+            "price": 5.4
+          }
+        ],
+        "2837923047": [
+          {
+            "id": 9920900167,
+            "price": 2.1
+          },
+          {
+            "id": 9920900168,
+            "price": 1.6
+          }
+        ]
+      },
+      "totalMarketsAvailable": 30
+    }
+  },
+  {
+    "version": 897,
+    "eventId": 87934246,
+    "sportId": 6,
+    "type": 300,
+    "payload": {
+      "liveData": {
+        "score": {
+          "home": "0",
+          "away": "7"
+        },
+        "clock": {
+          "secondsSinceStart": 2203
+        },
+        "results": {
+          "period": "2",
+          "balls": 0,
+          "strikes": 2,
+          "outs": 2,
+          "baseballActs": {
+            "home": "batting",
+            "away": "pitching"
+          },
+          "sportId": 6,
+          "sortingIndex": 2
+        },
+        "periodDescription": "2nd inning"
+      }
+    }
+  },
+  {
+    "version": 1000,
+    "eventId": 88440693,
+    "sportId": 3,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2839208954": [
+          {
+            "id": 9926096029,
+            "price": 2.05
+          },
+          {
+            "id": 9926096030,
+            "price": 1.67
+          }
+        ]
+      },
+      "totalMarketsAvailable": 6
+    }
+  },
+  {
+    "version": 810,
+    "eventId": 88441671,
+    "sportId": 3,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2839231376": [
+          {
+            "id": 9926213305,
+            "price": 1.33
+          },
+          {
+            "id": 9926213306,
+            "price": 2.95
+          }
+        ],
+        "2839270255": [
+          {
+            "id": 9926360297,
+            "price": 2.1
+          },
+          {
+            "id": 9926360298,
+            "price": 1.62
+          }
+        ],
+        "2840666960": [
+          {
+            "id": 9932045664,
+            "price": 2.7
+          },
+          {
+            "id": 9932045665,
+            "price": 1.39
+          }
+        ],
+        "2840658227": [
+          {
+            "id": 9932008547,
+            "price": 1.85
+          },
+          {
+            "id": 9932008548,
+            "price": 1.8
+          }
+        ]
+      },
+      "totalMarketsAvailable": 15
+    }
+  },
+  {
+    "version": 811,
+    "eventId": 88441671,
+    "sportId": 3,
+    "type": 300,
+    "payload": {
+      "liveData": {
+        "score": {
+          "home": "0",
+          "away": "30"
+        },
+        "results": {
+          "serverHome": true,
+          "currentTennisGame": 16,
+          "setScoreList": [
+            {
+              "home": "7",
+              "away": "5"
+            },
+            {
+              "home": "1",
+              "away": "2"
+            }
+          ],
+          "completedSetsGamesScore": {
+            "home": "1",
+            "away": "0"
+          },
+          "currentSetGamesScore": {
+            "home": "1",
+            "away": "2"
+          },
+          "currentSet": "Set 2",
+          "currentGame": "Game 4",
+          "sportId": 3
+        },
+        "periodDescription": "Game 16"
+      }
+    }
+  },
+  {
+    "version": 812,
+    "eventId": 88441671,
+    "sportId": 3,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2839231376": [
+          {
+            "id": 9926213305,
+            "price": 1.37
+          },
+          {
+            "id": 9926213306,
+            "price": 2.8
+          }
+        ],
+        "2839270255": [
+          {
+            "id": 9926360297,
+            "price": 2.37
+          },
+          {
+            "id": 9926360298,
+            "price": 1.5
+          }
+        ],
+        "2840658227": [
+          {
+            "id": 9932008547,
+            "price": 1.72
+          },
+          {
+            "id": 9932008548,
+            "price": 1.91
+          }
+        ]
+      },
+      "totalMarketsAvailable": 15
+    }
+  },
+  {
+    "version": 153,
+    "eventId": 88075744,
+    "sportId": 6,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2838845151": [
+          {
+            "id": 9924560378,
+            "price": 1.83
+          },
+          {
+            "id": 9924560379,
+            "price": 1.87
+          }
+        ]
+      },
+      "totalMarketsAvailable": 494
+    }
+  },
+  {
+    "version": 154,
+    "eventId": 88075744,
+    "sportId": 6,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2828827439": [
+          {
+            "id": 9883544281,
+            "price": 1.95
+          },
+          {
+            "id": 9883544282,
+            "price": 1.85
+          }
+        ]
+      },
+      "totalMarketsAvailable": 494
+    }
+  },
+  {
+    "version": 813,
+    "eventId": 88441671,
+    "sportId": 3,
+    "type": 300,
+    "payload": {
+      "liveData": {
+        "score": {
+          "home": "0",
+          "away": "30"
+        },
+        "results": {
+          "serverHome": true,
+          "currentTennisGame": 16,
+          "setScoreList": [
+            {
+              "home": "7",
+              "away": "5"
+            },
+            {
+              "home": "1",
+              "away": "2"
+            }
+          ],
+          "completedSetsGamesScore": {
+            "home": "1",
+            "away": "0"
+          },
+          "currentSetGamesScore": {
+            "home": "1",
+            "away": "2"
+          },
+          "currentSet": "Set 2",
+          "currentGame": "Game 4",
+          "sportId": 3
+        },
+        "periodDescription": "Game 16"
+      }
+    }
+  },
+  {
+    "version": 223,
+    "eventId": 88075718,
+    "sportId": 6,
+    "type": 300,
+    "payload": {
+      "liveData": {
+        "score": {
+          "home": "0",
+          "away": "1"
+        },
+        "clock": {
+          "secondsSinceStart": 567
+        },
+        "results": {
+          "period": "1",
+          "balls": 1,
+          "strikes": 1,
+          "outs": 1,
+          "baseballActs": {
+            "home": "pitching",
+            "away": "batting"
+          },
+          "sportId": 6,
+          "sortingIndex": 1
+        },
+        "periodDescription": "1st Inning"
+      }
+    }
+  },
+  {
+    "version": 836,
+    "eventId": 88443426,
+    "sportId": 3,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2840658285": [
+          {
+            "id": 9932008675,
+            "price": 1.32
+          }
+        ]
+      },
+      "totalMarketsAvailable": 29
+    }
+  },
+  {
+    "version": 492,
+    "eventId": 86388113,
+    "sportId": 1,
+    "type": 100,
+    "payload": {
+      "selectionChanges": {
+        "2780679344": [
+          {
+            "id": 9686762554,
+            "price": 35
+          },
+          {
+            "id": 9686762523,
+            "price": 300
+          },
+          {
+            "id": 9686762535,
+            "price": 30
+          },
+          {
+            "id": 9686762525,
+            "price": 2.92
+          },
+          {
+            "id": 9686762541,
+            "price": 14
+          },
+          {
+            "id": 9686762515,
+            "price": 150
+          },
+          {
+            "id": 9686762538,
+            "price": 35
+          },
+          {
+            "id": 9686762527,
+            "price": 2500
+          },
+          {
+            "id": 9686762514,
+            "price": 12.5
+          },
+          {
+            "id": 9686762550,
+            "price": 55
+          },
+          {
+            "id": 9686762534,
+            "price": 25
+          },
+          {
+            "id": 9686762548,
+            "price": 6.9
+          },
+          {
+            "id": 9686762512,
+            "price": 55
+          }
+        ]
+      },
+      "totalMarketsAvailable": 3
+    }
+  }
+]

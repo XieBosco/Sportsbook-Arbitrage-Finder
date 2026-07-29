@@ -1,0 +1,9 @@
+{
+  "_DEBUG_URL": "https://api.americanwagering.com/configs/sportsbook/ca-on/splash",
+  "data": {
+    "splash": {
+      "splashPlatforms": "",
+      "splashStatus": "DISABLED"
+    }
+  }
+}

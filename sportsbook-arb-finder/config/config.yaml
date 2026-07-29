@@ -1,0 +1,18 @@
+# Sportsbooks to monitor
+sportsbooks: List[Sportsbook] = None
+
+# Arbitrage settings
+min_profit_percentage: float = 2.5
+total_bet_amount: float = 100.0
+unit_size: float = 100.0
+
+# 1 = total_bet_amount, 2 = unit_size (1 unit on underdog and calculator balances hedge bet accordingly)
+stake_calculating_method: int = 2
+
+# Note: Betting on Player Props and Alt Lines will lead you to getting limited more quickly.
+mainlines_only: bool = True
+
+kelly_bankroll: float = 1000.0
+kelly_multiplier: float = 0.25 # Adjustment factor used to scale the Kelly Criterion
+
+cdp_port: 19222

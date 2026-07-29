@@ -1,0 +1,10 @@
+- name: DraftKings
+  url_pattern: '*draftkings.com*'
+- name: Betano
+  url_pattern: '*betano.ca*'
+- name: Caesars
+  url_pattern: '*caesars.com*'
+- name: FanDuel
+  url_pattern: '*fanduel.com*'
+- name: BetMGM
+  url_pattern: '*betmgm.com*'

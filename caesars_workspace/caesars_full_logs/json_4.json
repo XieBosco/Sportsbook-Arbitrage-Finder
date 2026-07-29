@@ -1,0 +1,25 @@
+{
+  "_DEBUG_URL": "https://api.americanwagering.com/regions/ca/locations/on/brands/czr/sb/bets/configuration",
+  "data": {
+    "defaultBetLimits": {
+      "maxBet": null,
+      "maxWin": 1000000
+    },
+    "betReferralEnabled": true,
+    "minTotalStake": 10,
+    "cashoutMappings": {
+      "defaultMessage": "Cash Out Disabled",
+      "mappings": {
+        "MissingMovingLinePrice": "Cash Out Suspended",
+        "BetPlacedWithRewardCredits": "Cash Out disabled on Reward Credits",
+        "OddBoostApplied": "Cash Out disabled on odds boost",
+        "BetWithFreeBetToken": "Cash Out disabled on Bonus Bets",
+        "CashOutValueToLow": "Cash Out Suspended",
+        "MissingMLMLines": "Cash Out Suspended",
+        "SelectionNotActive": "Cash Out Suspended",
+        "MarketNotActive": "Cash Out Suspended",
+        "EventNotActive": "Cash Out Suspended"
+      }
+    }
+  }
+}

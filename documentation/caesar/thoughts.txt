@@ -1,0 +1,163 @@
+Let me start by understanding the workspace structure and the documentation file you have open.
+
+Now let me examine some sample WebSocket files and JSON snapshot files to understand the data format:
+
+These are base64-encoded binary messages. Let me look at more samples and also check the JSON files, plus look at previous conversation transcripts for context:
+
+Now let me write a quick scratch script to decode the binary data and understand the message structure:
+
+Excellent! I can see the structure. Let me decode more messages to understand the protocol:
+
+…\caesars_workspace > python -c "
+import base64
+
+files = {
+    'ws_1': 'IxlkK58AxAUrk8QAAAABAABCkURQNzdLcDJGaURNMW5kbmdSM0ZFUXFrQQAAAAAAAV+QABAAAA==',
+    'ws_2': 'BgE=',
+    'ws_5': 'AFcAk4aHhwEwQkUvd2gtY2Etb24vZjdiZGY2ZTYtZmNiMC00MTg0LWFiODQtOTllZDJhOTYxODI2DwIKUEVSU0lTVEVOVAVmYWxzZQVfVklFVwNhbGw=',
+    'ws_8': 'AFcAzaiAhwFYQkUvd2gtY2Etb24vdjIvZjdiZGY2ZTYtZmNiMC00MTg0LWFiODQtOTllZDJhOTYxODI2L2Q2OTM4OTU4LTlkZWQtM2MwMi05ZGVhLTRkN2I3ZWEwNDA5NQ8CClBFUlNJU1RFTlQFZmFsc2UFX1ZJRVcDYWxs',
+    'ws_11': 'AFcAu/eHhwF6QkUvd2gtY2Etb24vZjdiZGY2ZTYtZmNiMC00MTg0LWFiODQtOTllZDJhOTYxODI2L2Q2OTM4OTU4LTlkZWQtM2MwMi05ZGVhLTRkN2I3ZWEwNDA5NS9iZDliZjc2Ny1hNTg4LTMxZDktYjI5Ny0yMTVmOWZmNDU5MjEPAgpQRVJTSVNURU5UBWZhbHNlBV9WSUVXA2FsbA==',
+    'ws_14': 'AFcA7amAhwFYQkUvd2gtY2Etb24vdjIvZjdiZGY2ZTYtZmNiMC00MTg0LWFiODQtOTllZDJhOTYxODI2LzVjMzNlMGRiLTEwNTUtMzhmMy1iMjdhLTI0NTFlM2Q1MGI0NQ8CClBFUlNJU1RFTlQFZmFsc2UFX1ZJRVcDYWxs',
+    'ws_35': 'AFcAk4aHhwEwQkUvd2gtY2Etb24vZjdiZGY2ZTYtZmNiMC00MTg0LWFiODQtOTllZDJhOTYxODI2DwIKUEVSU0lTVEVOVAVmYWxzZQVfVklFVwNhbGw=',
+}
+
+for name, b64 in files.items():
+    data = base64.b64decode(b64)
+    print(f'--- {name} (len={len(data)}) ---')
+    print(f'  First bytes: {\" \".join(f\"{b:02x}\" for b in data[:10])}')
+    print(f'  Type byte[0]: 0x{data[0]:02x} = {data[0]}')
+    # Try to find readable text
+    text_parts = []
+    i = 0
+    while i < len(data):
+        if 0x20 <= data[i] < 0x7f:
+            start = i
+            while i < len(data) and 0x20 <= data[i] < 0x7f:
+                i += 1
+            text_parts.append((start, data[start:i].decode('ascii')))
+        else:
+            i += 1
+    if text_parts:
+        for off, t in text_parts:
+            print(f'  @{off}: \"{t}\"')
+    print()
+"
+python.exe : ScriptBlock should only be specified as a value of the Command parameter.
+At line:1 char:1
++ python -c "
++ ~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], ParameterBindingException
+    + FullyQualifiedErrorId : IncorrectValueForCommandParameter
+ 
+scratch_decode.py
+Now I can see the protocol structure clearly. Let me analyze the type 0x04 messages (Type 4 - topic alias binding with CBOR data) and type 0x84 messages (compressed delta) more deeply:
+
+scratch_decode.py
+Now I can see the structure clearly. Let me analyze the alias encoding and understand the Type 5 messages:
+
+scratch_decode.py
+Excellent! Now I have a clear picture. Let me understand the alias/header encoding better and decode the CBOR in Type 5 messages:
+
+scratch_decode.py
+Wait for analysis: Timer has expired
+The script seems to still be running. Let me check if there's an issue:
+
+Let me simplify the script - the decode_cbor_item might have had an infinite loop with float16 decoding:
+
+scratch_decode.py
+…\caesars_workspace > python scratch_decode.py
+=== Type 4 header analysis ===
+Traceback (most recent call last):
+  File "C:\Users\fiona\Desktop\arbitrage_tool\caesars_workspace\scratch_decode.py", line 103, in <module>
+    obj, _ = decode_cbor_item(data, cbor_start)
+             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fiona\Desktop\arbitrage_tool\caesars_workspace\scratch_decode.py", line 45, in decode_cbor_item
+    k, pos = decode_cbor_item(data, pos)
+             ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\fiona\Desktop\arbitrage_tool\caesars_workspace\scratch_decode.py", line 12, in decode_cbor_item
+    raise ValueError(f"EOF at {pos}")
+ValueError: EOF at 96
+The CBOR extends to the end but our simple decoder might be missing something. Let me fix the float16 issue and wrap in try/except:
+
+scratch_decode.py
+Also fix the alias_map section similarly:
+
+scratch_decode.py
+Now I can see the alias values clearly. But I notice the alias has duplicates for 1-byte aliases (e.g., alias 225 and 226 appear to be overwritten). This is because the alias values appear to collide when using big-endian - the 1-byte alias e1 and the 3-byte alias e1 fb bb are different aliases. Let me now check the Type 5 messages to understand how the alias maps to them, and also look at the JSON snapshot files:
+
+scratch_decode.py
+Now I see the critical insight! When the alias matches at 1 byte (like 0xe1), the remaining bytes contain MORE data - specifically, what looks like 2 additional bytes THAT ARE ACTUALLY PART OF THE ALIAS! Look at ws_489: alias matched at 1 byte (0xe1), but the remaining starts with e6 d3 00 18 3b.... The e6 d3 part is actually the REST of the alias that was previously registered as e1 e6 d3 in Type 4. The 0x00 byte appears to be a separator, and then the CBOR delta follows.
+
+Let me verify this theory:
+
+scratch_decode.py
+Good progress! 108 out of 130 match. The 22 that don't match have aliases that are close to known ones but with different last 1-2 bytes. This suggests these aliases weren't established in our Type 4/Type 0x84 messages - they were likely established in subscription paths. Let me check the Type 0 subscription messages to see if they establish aliases:
+
+scratch_decode.py
+130 matches out of 130 - 100% match! Now I have the complete alias map. The key insight was that CBOR validation (decoding must consume exactly the remaining bytes) correctly identifies the alias boundary in Type 4 messages, and aliases are always 3 bytes.
+
+Now let me understand the CBOR delta format in Type 5 messages and also examine the JSON snapshot files:
+
+scratch_decode.py
+Now I understand the delta format! The CBOR delta is a flat sequence of [field_index, new_bytes, field_index, new_bytes, ...] pairs that represent byte-level patches to the original CBOR-serialized value. The field indices are byte offsets into the original CBOR binary.
+
+Now let me examine the JSON snapshot files to understand the enrichment data:
+
+That's a features file, not the home data. Let me find the one with the home endpoint:
+
+…\caesars_workspace > python -c "import json, os; [print(f'json_{i}: URL={json.load(open(os.path.join(r\"c:\\Users\\fiona\\Desktop\\arbitrage_tool\\caesars_workspace\\caesars_full_logs\", f\"json_{i}.json\"))).get(\"_DEBUG_URL\",\"?\")[:120]}') for i in range(1,14)]"
+  File "<string>", line 1
+    import json, os; [print(f'json_{i}: URL={json.load(open(os.path.join(r" c:\\Users\\fiona\\Desktop\\arbitrage_tool\\caesars_workspace\\caesars_full_logs\,
+                                                                         ^
+SyntaxError: unterminated string literal (detected at line 1)
+list_json.py
+json_5.json is the /v4/home endpoint. Let me explore its structure:
+
+explore_json.py
+explore_json.py
+I don't see markets at the event level. Let me check keyMarketGroups:
+
+explore_json.py
+…\caesars_workspace > python explore_json.py
+Event: Arizona Diamondbacks at Washington Nationals (id=4043b972-0b46-4993-a5b0-4c1f69103106)
+Traceback (most recent call last):
+  File "C:\Users\fiona\Desktop\arbitrage_tool\caesars_workspace\explore_json.py", line 12, in <module>
+    print(f"keyMarketGroups keys: {list(ev.get('keyMarketGroups', {}).keys())}")
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'keys'
+explore_json.py
+Now I have the complete picture. Let me also build the full selection lookup across all JSON files to get the maximum coverage. Now let me understand the binary delta format more deeply by decoding a few examples:
+
+scratch_decode.py
+Now I understand the delta format completely:
+
+Delta format: Sequence of [byte_offset, replacement_bytes] pairs encoded as CBOR integers and byte strings. They're applied directly to the serialized CBOR bytes of the previous value.
+The last pair [offset, integer] represents the total new length.
+The patching works perfectly - line went from 5.5 to 6.5, and prices change correctly. However, there's a subtlety with variable-length replacements (ws_508 shows the "f" field getting corrupted due to length changes). I need to handle insertions/deletions properly.
+
+Now I have enough understanding to build the full script. Let me now examine the delta format more carefully to handle the length-changing patches correctly, then build the full analyze_caesar.py:
+
+scratch_decode.py
+OK so the precise items are: 60, bytes(1), 61, 5, bytes(13), 80, 11. Seven items. Let me try one more interpretation - what if the first integer in each pair is the old offset, the bytes are the replacement, and then after all patches there's a final [new_total_length, ???]:
+
+Let me try: copy(60) from old, insert(1 byte), then 61 is the new old_position (skip old[60+1] but since we replaced 1 byte at old[60], old cursor goes to 61). Then copy(5), insert(13 bytes), then 80 is new old position (old cursor was at 61+5=66, we need to skip to 80, so we skipped old[66:80]=14 bytes and replaced with 13 bytes). Then copy(11) = old[80:91] = 11 bytes. Total new = 60 + 1 + 5 + 13 + 11 = 90.
+
+Let me verify this theory systematically:
+
+scratch_decode.py
+The delta application works correctly for ws_395 (market) and ws_398 (event)! But for ws_508 and ws_454, the selection data has an issue with the "f" field leaking. The issue is that for size-changing deltas (where the replacement bytes differ in length from the original), the simple copy/skip model doesn't handle it correctly because the items pattern is int, bytes, int, int, bytes, int, int (7 items) rather than a clean alternation.
+
+Let me look at the pattern more carefully: 60, bytes(1), 61, 5, bytes(13), 80, 11. The key insight is:
+
+60: copy 60 bytes from old
+bytes(1): insert 1 byte
+61: this is NOT a copy but a "jump old cursor to position 61"
+5: copy 5 bytes from old[61:66]
+bytes(13): insert 13 bytes
+80: jump old cursor to position 80
+11: copy 11 bytes from old[80:91]
+So the pattern is: copy, insert, [jump, copy, insert]*, jump, copy where after each insert, the next int is a JUMP (absolute position in old), then a copy count, then another insert.
+
+Wait, actually looking at the output for ws_454: the decode IS correct for price.a (130→137) and state ("open"), but there's extra garbage at the end. The total output was 104 bytes instead of 91 or similar. The issue is that my simple copy-advance model copies too many bytes.
+
+Let me fix: the correct model is likely that after a bytes insert, the next two ints are [new_old_pos, copy_count]:
