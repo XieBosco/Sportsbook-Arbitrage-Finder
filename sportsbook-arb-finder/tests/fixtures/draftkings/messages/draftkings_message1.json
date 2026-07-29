@@ -1,0 +1,302 @@
+[
+  "eca1af32-878c-4109-af5f-1d6e0fa34c1e",
+  "update",
+  [
+    [
+      [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      [
+        [],
+        [],
+        []
+      ],
+      [
+        [
+          [
+            22,
+            [
+              "34376883",
+              "2026-07-12T01:10:54+00:00",
+              [
+                [
+                  "29931",
+                  "LA Dodgers",
+                  "Home",
+                  "Team",
+                  {
+                    "rosettaTeamId": "29931",
+                    "rosettaTeamName": "Dodgers",
+                    "shortName": "LAD",
+                    "startingPitcherPlayerId": "178159",
+                    "teamColor": "#005A9C",
+                    "teamColorSecondary": "#EF3E42",
+                    "teamColorTertiary": "#A5ACAF",
+                    "startingPitcherPlayerName": "Yoshinobu Yamamoto"
+                  },
+                  2,
+                  "Dodgers",
+                  [],
+                  false,
+                  "US"
+                ],
+                [
+                  "29934",
+                  "ARI Diamondbacks",
+                  "Away",
+                  "Team",
+                  {
+                    "rosettaTeamId": "29934",
+                    "rosettaTeamName": "Diamondbacks",
+                    "shortName": "ARI",
+                    "startingPitcherPlayerId": "161929",
+                    "teamColor": "#AA182C",
+                    "teamColorSecondary": "#3EC1CC",
+                    "teamColorTertiary": "#000000",
+                    "startingPitcherPlayerName": "Brandon Pfaadt"
+                  },
+                  1,
+                  "Diamondbacks",
+                  [],
+                  false,
+                  "US"
+                ]
+              ],
+              "STARTED",
+              [
+                "5th",
+                null,
+                false
+              ],
+              [
+                [
+                  null,
+                  "T",
+                  2147483647,
+                  "1",
+                  "0",
+                  null,
+                  {
+                    "onServe": "1",
+                    "baseballBase": "0",
+                    "baseballOuts": "0"
+                  },
+                  null
+                ],
+                [
+                  [
+                    null,
+                    "1",
+                    1,
+                    "0",
+                    "0",
+                    null,
+                    null
+                  ],
+                  [
+                    null,
+                    "2",
+                    2,
+                    "0",
+                    "0",
+                    null,
+                    null
+                  ],
+                  [
+                    null,
+                    "3",
+                    3,
+                    "0",
+                    "0",
+                    null,
+                    null
+                  ],
+                  [
+                    null,
+                    "4",
+                    4,
+                    "1",
+                    "0",
+                    null,
+                    null
+                  ],
+                  [
+                    null,
+                    "5",
+                    5,
+                    "0",
+                    "0",
+                    null,
+                    null
+                  ],
+                  [
+                    null,
+                    "6",
+                    6,
+                    "",
+                    "",
+                    null,
+                    null
+                  ],
+                  [
+                    null,
+                    "7",
+                    7,
+                    "",
+                    "",
+                    null,
+                    null
+                  ],
+                  [
+                    null,
+                    "8",
+                    8,
+                    "",
+                    "",
+                    null,
+                    null
+                  ],
+                  [
+                    null,
+                    "9",
+                    9,
+                    "",
+                    "",
+                    null,
+                    null
+                  ],
+                  [
+                    null,
+                    "T",
+                    2147483647,
+                    "1",
+                    "0",
+                    null,
+                    {
+                      "onServe": "1",
+                      "baseballBase": "0",
+                      "baseballOuts": "0"
+                    }
+                  ]
+                ],
+                1
+              ],
+              [
+                "FeaturedSubcategory",
+                "Flashbet",
+                "LiveBoxScore",
+                "LiveStreaming",
+                "MatchTracker",
+                "OSB",
+                "SGP",
+                "Scoreboard",
+                "SgpDynamicOdds",
+                "Stats",
+                "YourBetEligible"
+              ],
+              {
+                "masterLeagueId": "233",
+                "numberOfParts": "9"
+              },
+              238039083,
+              [
+                null,
+                [
+                  "0",
+                  "1",
+                  "R"
+                ],
+                [
+                  [
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  [
+                    "0",
+                    "0",
+                    "2"
+                  ],
+                  [
+                    "0",
+                    "0",
+                    "3"
+                  ],
+                  [
+                    "0",
+                    "1",
+                    "4"
+                  ],
+                  [
+                    "0",
+                    "0",
+                    "5"
+                  ],
+                  [
+                    null,
+                    null,
+                    "6"
+                  ],
+                  [
+                    null,
+                    null,
+                    "7"
+                  ],
+                  [
+                    null,
+                    null,
+                    "8"
+                  ],
+                  [
+                    null,
+                    null,
+                    "9"
+                  ]
+                ],
+                null,
+                null,
+                [
+                  [
+                    "2",
+                    "2",
+                    "H"
+                  ]
+                ],
+                {
+                  "atBat": "home",
+                  "awayCurrentBatter": "108914",
+                  "awayNextBatter": "108855",
+                  "awayNextPlusOneBatter": "105852",
+                  "balls": "0",
+                  "bases": "000",
+                  "homeCurrentBatter": "108752",
+                  "homeNextBatter": "108670",
+                  "homeNextPlusOneBatter": "155912",
+                  "outs": "0",
+                  "strikes": "0"
+                }
+              ]
+            ]
+          ]
+        ],
+        [],
+        []
+      ]
+    ],
+    null,
+    {
+      "createdTime": "2026-07-12T02:28:03.043Z",
+      "receivedTime": "2026-07-12T02:28:03.050Z",
+      "publishedTime": "2026-07-12T02:28:03.055Z"
+    }
+  ],
+  null,
+  [
+    "2026-07-12T02:28:03+00:00",
+    0
+  ]
+]

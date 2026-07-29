@@ -216,3 +216,235 @@ basis for your signatures — add nothing beyond what's implied):
 
 After creating all files, print a tree of the final directory structure to confirm it matches
 the spec above.
+
+
+## Implement CDP, Parsers, and Normalize Prompt
+
+You are implementing real logic into an existing wireframed Python project called
+"sportsbook-arb-finder" (already scaffolded under src/arbfinder/ with empty `pass` bodies).
+I've attached 5 working single-file prototype scrapers (caesars_scraper.py, betano_scraper.py,
+betmgm_scraper.py, draftkings_scraper.py, fanduel_scraper.py) and 6 markdown docs describing
+each book's protocol (caesars.md, diffusion_protocol_analysis.md, betano.md, betmgm.md,
+draftkings.md, fanduel.md). These prototypes are proven, working code — do not "clean up" their
+core decoding logic, only restructure it into the target files below. Read every doc fully before
+writing code; several of the gotchas they describe (null-tolerant parsing, SignalR delimiters,
+alias boundary detection) are easy to silently regress if you skip them.
+
+Only touch these directories: src/arbfinder/cdp/, src/arbfinder/parsers/, src/arbfinder/normalize/.
+Do not touch engine/, alerts/, ui/, or main.py yet.
+
+============================================================
+PART 1 — cdp/ (shared transport layer, book-agnostic)
+============================================================
+
+cdp/discovery.py
+- Implement list_tabs() and find_tab() using `requests` against http://127.0.0.1:{port}/json,
+  matching the polling pattern from the prototypes (loop with a short sleep until a `type=="page"`
+  tab is found, ignoring `devtools://` urls).
+
+cdp/client.py — CDPClient
+- All 5 prototypes independently reinvent the same pattern: send `Network.enable` on open,
+  listen for `Network.responseReceived` to trigger `Network.getResponseBody`, and listen for
+  `Network.webSocketFrameReceived` for live pushes. Consolidate this into one reusable client:
+  - Maintain an incrementing `id` counter for outgoing CDP commands via `send()`.
+  - Maintain a `dict[int, str]` mapping outgoing `getResponseBody` command ids -> the original
+    `requestId`, so that when the reply arrives (as `{"id":.., "result":{"body":...}}`) you know
+    which HTTP response it belongs to. (The prototypes use `hash(request_id) % 100000` as a
+    throwaway id and never map it back cleanly — fix this properly with a real dict instead.)
+  - On `Network.responseReceived`, do NOT filter by URL here — that's book-specific. Instead,
+    expose a constructor param `url_filter: Callable[[str], bool]` so each parser tells the client
+    which URLs are worth fetching bodies for. Only call `getResponseBody` when `url_filter` matches,
+    to avoid needlessly pulling every response body.
+  - On `Network.webSocketFrameReceived`, always forward `params.response.payloadData` to a
+    registered `on_ws_frame` callback — don't filter by socket URL at the CDP layer; let the
+    parser's `can_handle` decide.
+  - Preserve the reconnect-tolerant `run_forever()` behavior from the prototypes.
+
+cdp/session_manager.py
+- Port the "loop discovery.list_tabs() until match found, sleep N seconds between attempts"
+  logic seen identically in all 5 `main()` functions.
+- One CDPClient per configured book (from config/sportsbooks.yaml), each on its own thread.
+- Add reattachment: if a tab's socket closes (browser refresh/navigation — this is EXPLICITLY
+  the reason the docs tell users to "refresh the page to reload the reference dictionary"),
+  re-run discovery and re-attach rather than dying. This is new behavior not in the prototypes —
+  the prototypes only handle a clean startup, not a live reconnect. Add it.
+
+============================================================
+PART 2 — parsers/ (per-book, stateful)
+============================================================
+
+IMPORTANT CONTRACT CHANGE FROM THE WIREFRAME:
+The original wireframe's `BookParser.parse(raw: str) -> list[OddsUpdate]` is too narrow —
+every real book needs to (a) hold in-memory reference-dictionary state across calls, and
+(b) distinguish HTTP response bodies from WS frames, since some books (FanDuel) get
+their odds via HTTP, not WS. Update parsers/base.py to:
+
+    class BookParser(ABC):
+        book_name: str
+
+        @abstractmethod
+        def relevant_http_url(self, url: str) -> bool:
+            """True if this HTTP response body should be fetched via getResponseBody."""
+
+        @abstractmethod
+        def handle_http_body(self, url: str, body: str) -> list[OddsUpdate]:
+            """Parse an HTTP response body — reference dictionaries AND/OR live odds
+            depending on the book (see each book's .md for which URLs carry which)."""
+
+        @abstractmethod
+        def handle_ws_frame(self, payload: str) -> list[OddsUpdate]:
+            """Parse a raw WebSocket frame payload. Return [] for non-odds frames
+            (handshakes, acks, keepalives)."""
+
+Each parser keeps its own reference-dictionary state as instance attributes (mirroring each
+prototype's global `reference_data` dict, but scoped to the instance, not module-global).
+
+--- parsers/draftkings.py ---
+Port from draftkings_scraper.py + draftkings.md:
+- `relevant_http_url`: match `/v1/markets` + `api/sportscontent` (the control-data endpoint).
+- `handle_http_body`: parse `events`/`markets`/`selections` arrays into the reference dict
+  exactly as the prototype does (id-keyed dicts).
+- `handle_ws_frame`:
+  - Sanitize the base64 string (strip illegal chars, re-pad to a multiple of 4) before decoding
+    — DraftKings' base64 is sometimes unpadded, this is NOT optional.
+  - Unpack with `msgpack.Unpacker(strict_map_key=False)`.
+  - Recursively walk the unpacked structure with the exact `find_outcomes` shape-matching
+    heuristic from the prototype (len>=7, string/string/list/...list/str-or-None signature) —
+    do not replace this with a schema assumption, DraftKings does not tag message types.
+  - Preserve the two critical bugs-avoided-by-design from the doc:
+    1. `marketId` (last array element) can legitimately be `None` for Moneyline — must not be
+       treated as a missing/invalid field.
+    2. When a selection ID isn't in the reference dict (dynamic handicap), extract the CORE_ID
+       via `^0[A-Z]{2}(\d+)` and find a sibling selection sharing that core id to resolve the
+       event — implement this exact fallback chain, including the final string-matching fallback
+       against known event names.
+
+--- parsers/fanduel.py ---
+Port from fanduel_scraper.py + fanduel.md:
+- `relevant_http_url`: match `content-managed-page` (reference dict) OR `getMarketPrices`
+  (live odds) — both are HTTP, there is no WS parsing needed for this book at all.
+- `handle_http_body`:
+  - If body has `attachments.markets` → this is the reference dictionary; parse
+    `attachments.events`, `attachments.markets` (with nested `runners`), same shape as prototype.
+  - Otherwise, recursively search the body for any dict containing BOTH `marketId` and
+    `runnerDetails` keys (do not hardcode a path — the doc explicitly warns FanDuel's JSON
+    hierarchy shifts). Reuse the exact recursive `find_markets` approach from the prototype.
+  - Odds extraction must try `winRunnerOdds.americanDisplayOdds.americanOdds` first, then fall
+    back to `winRunnerOdds.trueOdds.americanOdds` — keep both branches, do not simplify to one.
+- `handle_ws_frame`: not used for this book — return `[]` unconditionally (document why in a
+  docstring: FanDuel is long-polling only, per fanduel.md).
+
+--- parsers/betmgm.py ---
+Port from betmgm_scraper.py + betmgm.md:
+- `relevant_http_url`: match `fixture-view` — this is the only reference-dict source; the doc
+  is explicit that the WS stream never carries human-readable names.
+- `handle_http_body`: extract `fixture.id` / `fixture.name.value` into the reference dict.
+- `handle_ws_frame`:
+  - Split on `\x1e` (SignalR record separator) BEFORE calling `json.loads` on each fragment —
+    this is called out as CRITICAL in the doc, don't skip it.
+  - Each parsed fragment's `arguments` list may contain dicts with `messageType` of either
+    `"GameUpdate"` or `"OptionMarketUpdate"` — implement both branches (primary markets vs.
+    prop markets), each with its own field paths as in the prototype
+    (`payload.game.results[].americanOdds` vs `payload.optionMarket.options[].price.americanOdds`).
+
+--- parsers/betano.py ---
+Port from betano_scraper.py + betano.md:
+- `relevant_http_url`: match the regex
+  `^https://www\.betano\.ca/danae-webapi/api/live/overview/\d+\?isInit=false&includeVirtuals=true$`.
+- `handle_http_body`: populate `events`/`markets`/`selections` reference dict as in the prototype.
+- `handle_ws_frame`:
+  - Split on `\x1e` first (same SignalR pattern as BetMGM).
+  - Skip any fragment that doesn't contain the substring `"NewLiveOverviewDiffs"` (keepalive
+    filter — do this as a pre-check before attempting JSON parse, exactly as the prototype does).
+  - `arguments[0]` is base64 → LZ4 frame decompress → utf-8 → json.loads. Implement exactly this
+    chain (`base64.b64decode` → `lz4.frame.decompress` → `json.loads`); add `lz4` to requirements.
+  - Two update scenarios must both be handled: `payload.selectionChanges` (odds-only changes,
+    resolved via the reference dict) AND `payload.market` (a full new market block sent inline
+    when a handicap line moves — this must be merged directly into the instance's reference
+    dict as a side effect of parsing, not just returned as an OddsUpdate).
+
+--- parsers/caesars.py + parsers/diffusion_codec.py (NEW FILE, not in original wireframe) ---
+Caesars' protocol is materially more complex than the other four (binary CBOR + delta
+patching, per diffusion_protocol_analysis.md and caesars.md) and deserves a dedicated codec
+module separate from the parser itself, so the byte-level decoding is independently testable.
+
+Create `parsers/diffusion_codec.py` with:
+- `def decode_frame_type(raw: bytes) -> int` — returns the leading type byte.
+- `def find_alias_boundary_uncompressed(data: bytes) -> int` — brute-force CBOR decode starting
+  at offsets 3, 4, 5... and return the first offset where decoding succeeds AND consumes exactly
+  the remaining bytes (per section 8.1 of the analysis doc).
+- `def find_alias_boundary_compressed(data: bytes) -> int` — scan forward from offset 2 for the
+  zlib magic bytes `0x78 0x01`.
+- `def decode_full_state(raw: bytes, compressed: bool) -> tuple[bytes, dict]` — returns
+  `(alias_bytes, decoded_cbor_dict)`, zlib-decompressing first if `compressed`.
+- `def apply_delta(old_bytes: bytes, delta_items: list) -> bytes` — implement the exact
+  copy/insert/jump grammar from section 3.2: `initial_copy_count, [insert, jump, copy]*`.
+- `class AliasStateStore`:
+  - `def __init__(self) -> None` — holds `dict[bytes, bytes]` (alias -> current raw CBOR bytes).
+  - `def bind_full_state(self, alias: bytes, raw_cbor: bytes) -> dict` — store + decode.
+  - `def apply_delta(self, alias: bytes, delta_items: list) -> dict` — apply grammar, store
+    result as new "old buffer" for this alias (deltas are chained per section 3.2/8.2 — this
+    is stateful and must persist across calls), decode + return.
+  - `def classify(self, obj: dict) -> str` — returns "selection"/"market"/"event" using the
+    field-presence heuristic in section 5.4 (`price` → selection, `templateId`/`marketCode`/`type`
+    → market, `started` → event).
+
+Then `parsers/caesars.py`:
+- `relevant_http_url`: match `/v4/home`.
+- `handle_http_body`: walk `data.eventDisplayGroups[].events[].keyMarketGroups[].markets[]`
+  (note `keyMarketGroups` is a LIST not a dict, per the doc) to build a
+  `selectionId -> {name, market_name, line, event_name}` lookup.
+- `handle_ws_frame`: dispatch on the type byte via `diffusion_codec.decode_frame_type`:
+  - `0x23` handshake, `0x00` subscription, `0x06` ack → return `[]`, no odds data.
+  - `0x04` / `0x84` → decode full state via the codec, classify it, and if it's a selection,
+    resolve via the `/v4/home` lookup and emit an `OddsUpdate`.
+  - `0x05` → parse the CBOR item sequence after the alias + `0x00` separator into
+    `initial_copy_count, [insert, jump, copy]*` and call `AliasStateStore.apply_delta`.
+- Add `cbor2` to requirements.txt for CBOR decoding.
+
+============================================================
+PART 3 — normalize/
+============================================================
+
+normalize/odds_math.py
+- Implement `implied_prob`, `american_to_decimal`, `decimal_to_american` using standard formulas.
+  (None of the prototypes needed decimal/fractional conversion since books already provide
+  american odds directly — but the arb engine downstream needs implied probability, so keep
+  this file focused on that, don't over-build fractional-odds support nobody asked for.)
+
+normalize/team_aliases.py
+- None of the 5 prototypes needed cross-book name normalization (each just displays whatever
+  name string its own reference dict provides). This is new, needed only for the arb-matching
+  step downstream. Implement a simple normalizer: lowercase, strip common suffixes/punctuation,
+  and a small manually-maintained alias table loaded from a JSON/YAML file via `load_alias_table`.
+
+normalize/models.py
+- Keep `OddsUpdate` as already stubbed, but note: each parser's `handle_http_body` and
+  `handle_ws_frame` above should construct these directly rather than returning raw dicts —
+  make sure the `line` field is populated from the handicap-formatting logic each prototype
+  has inline (e.g. DraftKings/Betano's `handicap_str` sign logic) as a numeric field instead
+  of a formatted string, since that logic currently exists only for display purposes.
+
+============================================================
+GENERAL RULES
+============================================================
+- Do not deduplicate the per-book SignalR/base64/CBOR logic into a shared abstraction — each
+  book's binary format is different enough that a shared "decoder" would just be an if/elif
+  in disguise. Keep per-book logic in its own parser file.
+- Preserve every explicit gotcha called out in the .md docs as a code comment at the point where
+  it's handled, referencing the doc section (e.g. `# see draftkings.md §4 — core-ID fallback`).
+- Add unit tests under tests/test_parsers/ using short synthetic fixtures for the trickiest
+  logic specifically: DraftKings core-ID fallback, Betano's dual selectionChanges/market
+  scenarios, and Caesars' delta apply_delta grammar (use the worked examples in section 3.3
+  of diffusion_protocol_analysis.md as literal test cases — they include expected input/output).
+- Leave engine/, alerts/, ui/, and main.py untouched — I'll wire those in a follow-up pass.
+
+I've also populated raw captured frame data and reference dictionaries for their respective sportsbooks in tests/fixtures.
+
+Use these to:
+1. Write parser unit tests against these real frames rather than synthetic ones wherever possible.
+   Synthetic fixtures are fine only where a real example isn't available for a given branch
+   (e.g. FanDuel's fallback americanOdds path).
+2. If you find any frame that doesn't decode cleanly with the logic described in the .md docs,
+   flag it explicitly in your response rather than silently swallowing the error — that's a sign
+   the doc's spec has an edge case it didn't capture.

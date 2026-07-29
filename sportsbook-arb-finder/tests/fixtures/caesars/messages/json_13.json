@@ -1,0 +1,3767 @@
+{
+  "_DEBUG_URL": "https://api.americanwagering.com/regions/ca/locations/on/brands/czr/sb/v4/sports/baseball/competitions/04f90892-3afa-4e84-acce-5b89f151063d/quick-picks",
+  "data": [
+    {
+      "id": "bb6fc719-e679-42bd-a5c8-f8c7d01f94d5",
+      "title": "L\u26beng G\u26bene ",
+      "description": "",
+      "collectionDisplayName": "L\u26beng G\u26bene ",
+      "iconId": "team_logos###Los Angeles Angels###mlb@team_logos###San Francisco Giants###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T13:14:00Z",
+      "displayTo": "2026-07-26T20:15:00Z",
+      "price": {
+        "decimal": 33.0,
+        "fractional": "32/1",
+        "american": "+3200"
+      },
+      "legs": [
+        {
+          "selectionId": "7ce74c9c-d906-3075-831e-6d62f7586129",
+          "marketId": "3456fc22-5c35-3f26-b733-75ffd11f4f89",
+          "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+          "selectionDisplayName": "Mike Trout HR",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/da4dad0a-fe21-42f3-809b-fdb7236c1c4b/market-display-groups/_7cPlayer_20to_20Hit_20A_20Home_20Run_7c"
+        },
+        {
+          "selectionId": "c2130d49-7e16-33d1-85ef-4c8b02de5f30",
+          "marketId": "3456fc22-5c35-3f26-b733-75ffd11f4f89",
+          "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+          "selectionDisplayName": "Rafael Devers HR",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/da4dad0a-fe21-42f3-809b-fdb7236c1c4b/market-display-groups/_7cPlayer_20to_20Hit_20A_20Home_20Run_7c"
+        },
+        {
+          "selectionId": "bf01477b-edb6-3dda-9a5e-6fa8e73d5680",
+          "marketId": "330ad5e5-63b3-38e9-979d-d82e6f539a5a",
+          "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+          "selectionDisplayName": "LAA @ SF Total Runs - Over 8.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/da4dad0a-fe21-42f3-809b-fdb7236c1c4b/market-display-groups/_7cTotal_20Runs_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+          "name": "|Los Angeles Angels| |at| |San Francisco Giants|",
+          "startTime": "2026-07-26T20:05:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "330ad5e5-63b3-38e9-979d-d82e6f539a5a",
+              "name": "|Total Runs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cTotal_20Runs_7c",
+              "active": true,
+              "line": 8.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": true,
+              "selections": [
+                {
+                  "id": "bf01477b-edb6-3dda-9a5e-6fa8e73d5680",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "330ad5e5-63b3-38e9-979d-d82e6f539a5a",
+                  "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.95238,
+                    "fractional": "20/21",
+                    "american": "-105"
+                  }
+                }
+              ],
+              "metadata": {
+                "variableSources": "don_best,event_ticker,WilliamHillFixture",
+                "currentScore": "0.0",
+                "line": "8.5",
+                "marketCategory": "TOTAL_POINTS",
+                "marketCode": "e19adb49-5101-339e-8ed2-ac1d4cf89683",
+                "pricingSource": "CZRS",
+                "displayOrder": "20",
+                "period": "MATCH_INC_OT",
+                "marketType": "LINEBASED"
+              }
+            },
+            {
+              "id": "3456fc22-5c35-3f26-b733-75ffd11f4f89",
+              "name": "|Player to Hit A Home Run|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cPlayer_20to_20Hit_20A_20Home_20Run_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "c2130d49-7e16-33d1-85ef-4c8b02de5f30",
+                  "display": true,
+                  "name": "|Rafael Devers|",
+                  "marketId": "3456fc22-5c35-3f26-b733-75ffd11f4f89",
+                  "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                  "active": true,
+                  "type": "home",
+                  "price": {
+                    "decimal": 5.75,
+                    "fractional": "19/4",
+                    "american": "+475"
+                  }
+                },
+                {
+                  "id": "7ce74c9c-d906-3075-831e-6d62f7586129",
+                  "display": true,
+                  "name": "|Mike Trout|",
+                  "marketId": "3456fc22-5c35-3f26-b733-75ffd11f4f89",
+                  "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                  "active": true,
+                  "type": "away",
+                  "price": {
+                    "decimal": 5.0,
+                    "fractional": "4/1",
+                    "american": "+400"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "reportingGroup": "reporting-group-player-props",
+                "marketCategory": "SCORER",
+                "zfBookKey": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                "sourceMarketKey": "11937c31-7dbe-0034-00a5-cdc170453d1f",
+                "sourceEventKey": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                "zfMarketKey": "11937c31-7dbe-0034-00a5-cdc170453d1f",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "home-run-anytime",
+                "displayOrder": "30300"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "Los Angeles Angels",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "fa8003c1-d4e2-4479-9c45-2bd3fd62ce68",
+            "homeTeamBiNumber": "928",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "b2789f04-7952-464d-9c22-a0902a5c0604",
+            "currentAwayStartingPitcher": "J Soriano",
+            "currentHomeStartingPitcherFrom": "1.785005100302E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "San Francisco Giants",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "959091be-2af0-4303-ba46-7e63c18fa5a9",
+            "currentHomeStartingPitcherId": "420424",
+            "awayTeamBiNumber": "927",
+            "currentHomeStartingPitcher": "C Whisenhunt",
+            "awayTeamId": "4ef07fcb-c652-4639-bff7-482e0b25e2e6",
+            "currentAwayStartingPitcherId": "404254"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "5cebff29-7698-41ef-8c97-012f150b646d",
+      "title": "\u26beBay Area Combos\u26be",
+      "description": "",
+      "collectionDisplayName": "\u26beBay Area Combos\u26be",
+      "iconId": "team_logos###Los Angeles Angels###mlb@team_logos###San Francisco Giants###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T13:15:22Z",
+      "displayTo": "2026-07-26T20:15:00Z",
+      "price": {
+        "decimal": 8.25,
+        "fractional": "29/4",
+        "american": "+725"
+      },
+      "legs": [
+        {
+          "selectionId": "998eba47-8eb8-3988-80bf-0a65185b997f",
+          "marketId": "75af65f5-f1c6-33fb-916e-aeff4d845d6a",
+          "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+          "selectionDisplayName": "Mike Trout Hits + Runs + RBI - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/da4dad0a-fe21-42f3-809b-fdb7236c1c4b/market-display-groups/_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c"
+        },
+        {
+          "selectionId": "aa601120-5d46-38ed-9e75-507c5fa11808",
+          "marketId": "c06f6a85-8289-3d9a-85e3-65163abc445a",
+          "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+          "selectionDisplayName": "Casey Schmitt Hits + Runs + RBI - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/da4dad0a-fe21-42f3-809b-fdb7236c1c4b/market-display-groups/_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c"
+        },
+        {
+          "selectionId": "f0d92e0b-0e8e-3ff6-ab24-cb2c81933cff",
+          "marketId": "42f80285-8900-34cc-88f3-c508d874b6d2",
+          "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+          "selectionDisplayName": "Vaughn Grissom Hits + Runs + RBI - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/da4dad0a-fe21-42f3-809b-fdb7236c1c4b/market-display-groups/_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c"
+        },
+        {
+          "selectionId": "df7b8daf-164b-36f7-a0b7-397960d61796",
+          "marketId": "ece34136-79f0-38ee-8dd8-9a45356dde61",
+          "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+          "selectionDisplayName": "Bryce Eldridge Hits + Runs + RBI - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/da4dad0a-fe21-42f3-809b-fdb7236c1c4b/market-display-groups/_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+          "name": "|Los Angeles Angels| |at| |San Francisco Giants|",
+          "startTime": "2026-07-26T20:05:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "c06f6a85-8289-3d9a-85e3-65163abc445a",
+              "name": "|Casey Schmitt - Total Hits + Runs + RBIs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": false,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "aa601120-5d46-38ed-9e75-507c5fa11808",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "c06f6a85-8289-3d9a-85e3-65163abc445a",
+                  "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.84746,
+                    "fractional": "50/59",
+                    "american": "-118"
+                  }
+                }
+              ],
+              "metadata": {
+                "teamName": "San Francisco Giants",
+                "hubId": "f1312741-56e7-4b21-8552-bf03cf4807c8",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "f6992bb4-952d-003c-00bd-57633828a6ad",
+                "line": "1.5",
+                "teamId": "fa8003c1-d4e2-4479-9c45-2bd3fd62ce68",
+                "player": "Casey Schmitt",
+                "zfBookKey": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                "sourceEventKey": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                "team": "HOME",
+                "zfMarketKey": "f6992bb4-952d-003c-00bd-57633828a6ad",
+                "playerId": "f1312741-56e7-4b21-8552-bf03cf4807c8",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-hits-runs-rbis",
+                "displayOrder": "40750"
+              }
+            },
+            {
+              "id": "ece34136-79f0-38ee-8dd8-9a45356dde61",
+              "name": "|Bryce Eldridge - Total Hits + Runs + RBIs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": false,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "df7b8daf-164b-36f7-a0b7-397960d61796",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "ece34136-79f0-38ee-8dd8-9a45356dde61",
+                  "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.9434,
+                    "fractional": "50/53",
+                    "american": "-106"
+                  }
+                }
+              ],
+              "metadata": {
+                "teamName": "San Francisco Giants",
+                "hubId": "00cbe6c5-1c69-4bfd-89c7-a237af86ab56",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "92bca252-c5e8-0031-008a-8b8e05482403",
+                "line": "1.5",
+                "teamId": "fa8003c1-d4e2-4479-9c45-2bd3fd62ce68",
+                "player": "Bryce Eldridge",
+                "zfBookKey": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                "sourceEventKey": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                "team": "HOME",
+                "zfMarketKey": "92bca252-c5e8-0031-008a-8b8e05482403",
+                "playerId": "00cbe6c5-1c69-4bfd-89c7-a237af86ab56",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-hits-runs-rbis",
+                "displayOrder": "40750"
+              }
+            },
+            {
+              "id": "75af65f5-f1c6-33fb-916e-aeff4d845d6a",
+              "name": "|Mike Trout - Total Hits + Runs + RBIs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": false,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "998eba47-8eb8-3988-80bf-0a65185b997f",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "75af65f5-f1c6-33fb-916e-aeff4d845d6a",
+                  "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.77,
+                    "fractional": "10/13",
+                    "american": "-130"
+                  }
+                }
+              ],
+              "metadata": {
+                "teamName": "Los Angeles Angels",
+                "hubId": "cc9c9fad-d532-487d-9fcc-5139fdad2d3e",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "6c591536-8a2e-0030-008b-381d632b3c97",
+                "line": "1.5",
+                "teamId": "959091be-2af0-4303-ba46-7e63c18fa5a9",
+                "player": "Mike Trout",
+                "zfBookKey": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                "sourceEventKey": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                "team": "AWAY",
+                "zfMarketKey": "6c591536-8a2e-0030-008b-381d632b3c97",
+                "playerId": "cc9c9fad-d532-487d-9fcc-5139fdad2d3e",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-hits-runs-rbis",
+                "displayOrder": "40750"
+              }
+            },
+            {
+              "id": "42f80285-8900-34cc-88f3-c508d874b6d2",
+              "name": "|Vaughn Grissom - Total Hits + Runs + RBIs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": false,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "f0d92e0b-0e8e-3ff6-ab24-cb2c81933cff",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "42f80285-8900-34cc-88f3-c508d874b6d2",
+                  "eventId": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.82645,
+                    "fractional": "100/121",
+                    "american": "-121"
+                  }
+                }
+              ],
+              "metadata": {
+                "teamName": "Los Angeles Angels",
+                "hubId": "cc13748f-05eb-4fc6-8bd9-0106917ce6bd",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "203a230f-f90b-0037-00ab-27de068a7816",
+                "line": "1.5",
+                "teamId": "959091be-2af0-4303-ba46-7e63c18fa5a9",
+                "player": "Vaughn Grissom",
+                "zfBookKey": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                "sourceEventKey": "da4dad0a-fe21-42f3-809b-fdb7236c1c4b",
+                "team": "AWAY",
+                "zfMarketKey": "203a230f-f90b-0037-00ab-27de068a7816",
+                "playerId": "cc13748f-05eb-4fc6-8bd9-0106917ce6bd",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-hits-runs-rbis",
+                "displayOrder": "40750"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "Los Angeles Angels",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "fa8003c1-d4e2-4479-9c45-2bd3fd62ce68",
+            "homeTeamBiNumber": "928",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "b2789f04-7952-464d-9c22-a0902a5c0604",
+            "currentAwayStartingPitcher": "J Soriano",
+            "currentHomeStartingPitcherFrom": "1.785005100302E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "San Francisco Giants",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "959091be-2af0-4303-ba46-7e63c18fa5a9",
+            "currentHomeStartingPitcherId": "420424",
+            "awayTeamBiNumber": "927",
+            "currentHomeStartingPitcher": "C Whisenhunt",
+            "awayTeamId": "4ef07fcb-c652-4639-bff7-482e0b25e2e6",
+            "currentAwayStartingPitcherId": "404254"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "be7b3ae2-d531-4257-a2a9-3e991f5632f6",
+      "title": "\ud83d\udd14Bell Bombs\ud83d\udca3",
+      "description": "",
+      "collectionDisplayName": "\ud83d\udd14Bell Bombs\ud83d\udca3 ",
+      "iconId": "team_logos###New York Yankees###mlb@team_logos###Philadelphia Phillies###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T04:00:00Z",
+      "displayTo": "2026-07-27T00:00:00Z",
+      "price": {
+        "decimal": 32.0,
+        "fractional": "31/1",
+        "american": "+3100"
+      },
+      "legs": [
+        {
+          "selectionId": "7c85bbb2-b6c0-398d-a7ae-269292eb4189",
+          "marketId": "89dca687-fe86-3aa4-81fe-3426151ca5f2",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Cristopher Sanchez 5+ Strikeouts",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cPitcher_7c_20_7cAlternate_20Pitching_20Strikeouts_7c"
+        },
+        {
+          "selectionId": "d074527e-113b-3aad-9637-54577559a82b",
+          "marketId": "c656a04b-f572-3776-bb65-8e30b27eff2f",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Will Warren 5+ Strikeouts",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cPitcher_7c_20_7cAlternate_20Pitching_20Strikeouts_7c"
+        },
+        {
+          "selectionId": "37b059fd-8a01-3fc7-8789-4cd78c14089b",
+          "marketId": "69f9b9b5-9761-3775-9310-26e7f052e3b2",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Kyle Schwarber HR",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Home-Runs_7c"
+        },
+        {
+          "selectionId": "5df72774-da40-38ad-955f-810b8cc532d6",
+          "marketId": "01ac3c1b-6ac8-37ea-a997-04b08dea46a1",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Ben Rice HR",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Home-Runs_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "69f9b9b5-9761-3775-9310-26e7f052e3b2",
+              "name": "|Kyle Schwarber - Home Runs|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Home-Runs_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "37b059fd-8a01-3fc7-8789-4cd78c14089b",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "69f9b9b5-9761-3775-9310-26e7f052e3b2",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.92,
+                    "fractional": "48/25",
+                    "american": "+192"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "09bf52e7-b6ca-4714-92da-8f2c43a5cc21",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "6f1ca1aa-9fa9-0034-008b-9bc164632e5b",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Kyle Schwarber",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "6f1ca1aa-9fa9-0034-008b-9bc164632e5b",
+                "playerId": "09bf52e7-b6ca-4714-92da-8f2c43a5cc21",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-home-runs",
+                "displayOrder": "50400"
+              }
+            },
+            {
+              "id": "89dca687-fe86-3aa4-81fe-3426151ca5f2",
+              "name": "|Cristopher Sanchez - Pitching Strikeouts|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cPitcher_7c_20_7cAlternate_20Pitching_20Strikeouts_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "7c85bbb2-b6c0-398d-a7ae-269292eb4189",
+                  "display": true,
+                  "name": "|5+|",
+                  "marketId": "89dca687-fe86-3aa4-81fe-3426151ca5f2",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.05882,
+                    "fractional": "1/17",
+                    "american": "-1700"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "a3702861-f138-430e-8a4e-c4f7d3ac253a",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "3d262d5f-e054-003d-00bc-6b603cde3941",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Cristopher Sanchez",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "3d262d5f-e054-003d-00bc-6b603cde3941",
+                "playerId": "a3702861-f138-430e-8a4e-c4f7d3ac253a",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-strikeouts",
+                "displayOrder": "70000"
+              }
+            },
+            {
+              "id": "01ac3c1b-6ac8-37ea-a997-04b08dea46a1",
+              "name": "|Ben Rice - Home Runs|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Home-Runs_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "5df72774-da40-38ad-955f-810b8cc532d6",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "01ac3c1b-6ac8-37ea-a997-04b08dea46a1",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 5.0,
+                    "fractional": "4/1",
+                    "american": "+400"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "2307e795-5bfe-4c8c-8831-653b9c88b3a1",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "2e5452aa-f073-003f-009d-a78b4baa2ebd",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Ben Rice",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "2e5452aa-f073-003f-009d-a78b4baa2ebd",
+                "playerId": "2307e795-5bfe-4c8c-8831-653b9c88b3a1",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-home-runs",
+                "displayOrder": "50400"
+              }
+            },
+            {
+              "id": "c656a04b-f572-3776-bb65-8e30b27eff2f",
+              "name": "|Will Warren - Pitching Strikeouts|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cPitcher_7c_20_7cAlternate_20Pitching_20Strikeouts_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "d074527e-113b-3aad-9637-54577559a82b",
+                  "display": true,
+                  "name": "|5+|",
+                  "marketId": "c656a04b-f572-3776-bb65-8e30b27eff2f",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.1,
+                    "fractional": "11/10",
+                    "american": "+110"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "10af1c99-72cf-4b07-a024-76515db5e46f",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "1dafd4f3-cd05-003e-0084-bd5461b21ec9",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Will Warren",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "1dafd4f3-cd05-003e-0084-bd5461b21ec9",
+                "playerId": "10af1c99-72cf-4b07-a024-76515db5e46f",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-strikeouts",
+                "displayOrder": "70000"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "abae0bb9-36a7-43fd-bc2c-5ee86c8e5d0c",
+      "title": "Base Collectors",
+      "description": "",
+      "collectionDisplayName": "Base Collectors",
+      "iconId": "team_logos###New York Yankees###mlb@team_logos###Philadelphia Phillies###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T13:20:28Z",
+      "displayTo": "2026-07-26T23:45:00Z",
+      "price": {
+        "decimal": 20.0,
+        "fractional": "19/1",
+        "american": "+1900"
+      },
+      "legs": [
+        {
+          "selectionId": "ffadaa94-1424-3b18-8fda-8d7f76b2ffc0",
+          "marketId": "bed18117-48d9-3fc0-aaff-1ff6fcedbf05",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Bryce Harper Total Bases - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Bases_7c"
+        },
+        {
+          "selectionId": "c708b5a5-f71b-3454-92cb-effe1c06aaf9",
+          "marketId": "960ffbf4-dea5-3349-a856-97c44cea3b31",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Paul Goldschmidt Total Bases - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Bases_7c"
+        },
+        {
+          "selectionId": "43520ba1-91f1-3bd0-9874-a00884a9e8ee",
+          "marketId": "b5c76c7f-9554-3c17-ab6c-5e0bedb8c87a",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Alec Bohm Total Bases - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Bases_7c"
+        },
+        {
+          "selectionId": "dac79106-aedf-32d2-9d67-fd38c6354d8a",
+          "marketId": "0cae8c4a-e999-329f-bff5-b7aa319e71b7",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Ben Rice Total Bases - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Bases_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "bed18117-48d9-3fc0-aaff-1ff6fcedbf05",
+              "name": "|Bryce Harper - Total Bases|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Bases_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "ffadaa94-1424-3b18-8fda-8d7f76b2ffc0",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "bed18117-48d9-3fc0-aaff-1ff6fcedbf05",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.13,
+                    "fractional": "113/100",
+                    "american": "+113"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "cff79ac0-2cef-49fb-81ff-0c012d116a50",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "a52a5e0c-e87d-003b-00b3-9d05568715e2",
+                "reportingGroup": "reporting-group-player-props",
+                "line": "1.5",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "marketCode": "63905651-6a84-38db-b889-50e6a8e460fb",
+                "player": "Bryce Harper",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "a52a5e0c-e87d-003b-00b3-9d05568715e2",
+                "playerId": "cff79ac0-2cef-49fb-81ff-0c012d116a50",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-bases",
+                "displayOrder": "40500"
+              }
+            },
+            {
+              "id": "b5c76c7f-9554-3c17-ab6c-5e0bedb8c87a",
+              "name": "|Alec Bohm - Total Bases|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Bases_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "43520ba1-91f1-3bd0-9874-a00884a9e8ee",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "b5c76c7f-9554-3c17-ab6c-5e0bedb8c87a",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.34,
+                    "fractional": "67/50",
+                    "american": "+134"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "e4c59e2f-c0fb-412b-94d3-813a82b110ba",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "73353808-7020-0034-009f-25f81bb44b15",
+                "reportingGroup": "reporting-group-player-props",
+                "line": "1.5",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "marketCode": "52d7cde1-45e5-36f3-bbfc-01a467c34ea6",
+                "player": "Alec Bohm",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "73353808-7020-0034-009f-25f81bb44b15",
+                "playerId": "e4c59e2f-c0fb-412b-94d3-813a82b110ba",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-bases",
+                "displayOrder": "40500"
+              }
+            },
+            {
+              "id": "0cae8c4a-e999-329f-bff5-b7aa319e71b7",
+              "name": "|Ben Rice - Total Bases|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Bases_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "dac79106-aedf-32d2-9d67-fd38c6354d8a",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "0cae8c4a-e999-329f-bff5-b7aa319e71b7",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.35,
+                    "fractional": "27/20",
+                    "american": "+135"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "2307e795-5bfe-4c8c-8831-653b9c88b3a1",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "cbc20f33-7751-0036-009d-83d42064b4ba",
+                "reportingGroup": "reporting-group-player-props",
+                "line": "1.5",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "marketCode": "d3035b4e-ca3a-30d4-853e-b4799fa94742",
+                "player": "Ben Rice",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "cbc20f33-7751-0036-009d-83d42064b4ba",
+                "playerId": "2307e795-5bfe-4c8c-8831-653b9c88b3a1",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-bases",
+                "displayOrder": "40500"
+              }
+            },
+            {
+              "id": "960ffbf4-dea5-3349-a856-97c44cea3b31",
+              "name": "|Paul Goldschmidt - Total Bases|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Bases_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "c708b5a5-f71b-3454-92cb-effe1c06aaf9",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "960ffbf4-dea5-3349-a856-97c44cea3b31",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.12,
+                    "fractional": "28/25",
+                    "american": "+112"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "69d8076a-32ac-4425-83d7-486b680f5cf3",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "be6e9563-d072-003b-0084-34a4530d994e",
+                "reportingGroup": "reporting-group-player-props",
+                "line": "1.5",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "marketCode": "9874a3fa-522a-303b-a2d9-114f8dcf4c2b",
+                "player": "Paul Goldschmidt",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "be6e9563-d072-003b-0084-34a4530d994e",
+                "playerId": "69d8076a-32ac-4425-83d7-486b680f5cf3",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-bases",
+                "displayOrder": "40500"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "c104ef21-d4c8-4db7-852a-e75cd29c8f21",
+      "title": "Hit Party\ud83e\udd73\ud83c\udf89",
+      "description": "",
+      "collectionDisplayName": "Hit Party\ud83e\udd73\ud83c\udf89",
+      "iconId": "team_logos###New York Yankees###mlb@team_logos###Philadelphia Phillies###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T13:21:55Z",
+      "displayTo": "2026-07-26T23:45:00Z",
+      "price": {
+        "decimal": 8.75,
+        "fractional": "31/4",
+        "american": "+775"
+      },
+      "legs": [
+        {
+          "selectionId": "3348f252-a30d-3fe6-84fc-df615a108b21",
+          "marketId": "98d5a605-b55a-34ae-8d11-47a7f8696931",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Trea Turner 1+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        },
+        {
+          "selectionId": "6204835d-946b-3256-9998-8981fa842b42",
+          "marketId": "8b4beb11-77f5-380e-a166-d8faf2913147",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Trent Grisham 1+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        },
+        {
+          "selectionId": "b1a9e9c4-5385-36ad-afaa-ce0f0d370903",
+          "marketId": "d4962dc5-20fc-3b46-bd7c-cf5baba881f2",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Bryce Harper 1+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        },
+        {
+          "selectionId": "b3b7d6c1-9e06-3773-bbcc-09dd9452c7d8",
+          "marketId": "efa652f5-3264-30ce-abde-c1f3619e1575",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Amed Rosario 1+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        },
+        {
+          "selectionId": "9d561d42-8613-3b58-a0d4-72fe36e0938e",
+          "marketId": "23cefdbd-37f8-3ac7-bcaa-5b6326a2b765",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Kyle Schwarber 1+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        },
+        {
+          "selectionId": "a11041ff-a64b-3fd4-995c-696d76c8b316",
+          "marketId": "b920cec5-6d3c-3488-80f6-21bcc3e82d7b",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Jazz Chisholm Jr. 1+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "efa652f5-3264-30ce-abde-c1f3619e1575",
+              "name": "|Amed Rosario - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "b3b7d6c1-9e06-3773-bbcc-09dd9452c7d8",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "efa652f5-3264-30ce-abde-c1f3619e1575",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.50761,
+                    "fractional": "100/197",
+                    "american": "-197"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "5e415755-a206-4832-b357-4781f671d9e9",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "74d3e47d-e8c3-0039-0097-3f2983e1bac2",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Amed Rosario",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "74d3e47d-e8c3-0039-0097-3f2983e1bac2",
+                "playerId": "5e415755-a206-4832-b357-4781f671d9e9",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            },
+            {
+              "id": "8b4beb11-77f5-380e-a166-d8faf2913147",
+              "name": "|Trent Grisham - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "6204835d-946b-3256-9998-8981fa842b42",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "8b4beb11-77f5-380e-a166-d8faf2913147",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.67568,
+                    "fractional": "25/37",
+                    "american": "-148"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "eca9db41-2d4f-4a99-b2e7-e7c2aa30819c",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "ab63abdb-bb44-003e-00ad-22c0b89a12e3",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Trent Grisham",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "ab63abdb-bb44-003e-00ad-22c0b89a12e3",
+                "playerId": "eca9db41-2d4f-4a99-b2e7-e7c2aa30819c",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            },
+            {
+              "id": "23cefdbd-37f8-3ac7-bcaa-5b6326a2b765",
+              "name": "|Kyle Schwarber - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "9d561d42-8613-3b58-a0d4-72fe36e0938e",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "23cefdbd-37f8-3ac7-bcaa-5b6326a2b765",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.51813,
+                    "fractional": "100/193",
+                    "american": "-193"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "09bf52e7-b6ca-4714-92da-8f2c43a5cc21",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "ee7aa534-2cde-003c-008e-633a35c01afc",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Kyle Schwarber",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "ee7aa534-2cde-003c-008e-633a35c01afc",
+                "playerId": "09bf52e7-b6ca-4714-92da-8f2c43a5cc21",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            },
+            {
+              "id": "b920cec5-6d3c-3488-80f6-21bcc3e82d7b",
+              "name": "|Jazz Chisholm Jr. - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "a11041ff-a64b-3fd4-995c-696d76c8b316",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "b920cec5-6d3c-3488-80f6-21bcc3e82d7b",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.74627,
+                    "fractional": "50/67",
+                    "american": "-134"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "a9f58935-c598-4365-9645-f56a93438132",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "43620b44-649b-0038-0093-97c2ee28ff06",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Jazz Chisholm Jr.",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "43620b44-649b-0038-0093-97c2ee28ff06",
+                "playerId": "a9f58935-c598-4365-9645-f56a93438132",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            },
+            {
+              "id": "98d5a605-b55a-34ae-8d11-47a7f8696931",
+              "name": "|Trea Turner - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "3348f252-a30d-3fe6-84fc-df615a108b21",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "98d5a605-b55a-34ae-8d11-47a7f8696931",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.38462,
+                    "fractional": "5/13",
+                    "american": "-260"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "3f95ea9d-e6d9-4f7a-8d70-56094a094259",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "2a935494-0981-003b-00bc-df19ec7880f9",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Trea Turner",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "2a935494-0981-003b-00bc-df19ec7880f9",
+                "playerId": "3f95ea9d-e6d9-4f7a-8d70-56094a094259",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            },
+            {
+              "id": "d4962dc5-20fc-3b46-bd7c-cf5baba881f2",
+              "name": "|Bryce Harper - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "b1a9e9c4-5385-36ad-afaa-ce0f0d370903",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "d4962dc5-20fc-3b46-bd7c-cf5baba881f2",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.43478,
+                    "fractional": "10/23",
+                    "american": "-230"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "cff79ac0-2cef-49fb-81ff-0c012d116a50",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "5158405a-24b5-003c-009e-c7541b7e3ec1",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Bryce Harper",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "5158405a-24b5-003c-009e-c7541b7e3ec1",
+                "playerId": "cff79ac0-2cef-49fb-81ff-0c012d116a50",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "5c6a1712-cdf5-457f-8fc4-4d3c8492f9fc",
+      "title": "\u26beBalls Over Walls\ud83e\uddf1",
+      "description": "",
+      "collectionDisplayName": "\u26beBalls Over Walls\ud83e\uddf1",
+      "iconId": "team_logos###New York Yankees###mlb@team_logos###Philadelphia Phillies###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T13:23:37Z",
+      "displayTo": "2026-07-26T23:45:00Z",
+      "price": {
+        "decimal": 24.5,
+        "fractional": "47/2",
+        "american": "+2350"
+      },
+      "legs": [
+        {
+          "selectionId": "b4a14565-30e3-33f8-8130-e9d672d260cb",
+          "marketId": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "NYY @ PHI Total Runs - Over 8.0",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cTotal_20Runs_7c"
+        },
+        {
+          "selectionId": "84af7b89-57bc-392e-90aa-a00c26f6a8be",
+          "marketId": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Bryce Harper HR",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cPlayer_20to_20Hit_20A_20Home_20Run_7c"
+        },
+        {
+          "selectionId": "b7f7421c-3d8f-329c-8409-a111c8d06e6b",
+          "marketId": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Paul Goldschmidt HR",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cPlayer_20to_20Hit_20A_20Home_20Run_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+              "name": "|Player to Hit A Home Run|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cPlayer_20to_20Hit_20A_20Home_20Run_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "84af7b89-57bc-392e-90aa-a00c26f6a8be",
+                  "display": true,
+                  "name": "|Bryce Harper|",
+                  "marketId": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "home",
+                  "price": {
+                    "decimal": 4.2,
+                    "fractional": "16/5",
+                    "american": "+320"
+                  }
+                },
+                {
+                  "id": "b7f7421c-3d8f-329c-8409-a111c8d06e6b",
+                  "display": true,
+                  "name": "|Paul Goldschmidt|",
+                  "marketId": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "away",
+                  "price": {
+                    "decimal": 5.25,
+                    "fractional": "17/4",
+                    "american": "+425"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "reportingGroup": "reporting-group-player-props",
+                "marketCategory": "SCORER",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceMarketKey": "11937c31-7dbe-0034-00a5-cdc170453d1f",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "zfMarketKey": "11937c31-7dbe-0034-00a5-cdc170453d1f",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "home-run-anytime",
+                "displayOrder": "30300"
+              }
+            },
+            {
+              "id": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+              "name": "|Total Runs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cTotal_20Runs_7c",
+              "active": true,
+              "line": 8.0,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": true,
+              "selections": [
+                {
+                  "id": "b4a14565-30e3-33f8-8130-e9d672d260cb",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.95238,
+                    "fractional": "20/21",
+                    "american": "-105"
+                  }
+                }
+              ],
+              "metadata": {
+                "variableSources": "don_best,event_ticker,WilliamHillFixture",
+                "currentScore": "0.0",
+                "line": "8.0",
+                "marketCategory": "TOTAL_POINTS",
+                "marketCode": "6065c13e-ead6-3d94-8b83-42184df30f4e",
+                "pricingSource": "CZRS",
+                "displayOrder": "20",
+                "period": "MATCH_INC_OT",
+                "marketType": "LINEBASED"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "74c9a206-f4a7-476a-b7cc-77de7a5e80e2",
+      "title": "Sanchie Shutdown",
+      "description": "",
+      "collectionDisplayName": "Sanchie Shutdown",
+      "playerImageUrl": "https://midfield.mlbstatic.com/v1/people/650911/headshot/silo/current",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-25T04:00:00Z",
+      "displayTo": "2026-07-26T23:45:00Z",
+      "price": {
+        "decimal": 10.0,
+        "fractional": "9/1",
+        "american": "+900"
+      },
+      "legs": [
+        {
+          "selectionId": "f3f89967-b7f2-3560-a58f-8f02ee3d21f0",
+          "marketId": "4affc672-f0ae-3f30-932f-164680946568",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Phillies Win vs NYY",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cMoney_20Line_7c"
+        },
+        {
+          "selectionId": "b9e1aa1e-f313-3aa9-9adb-7b0cf4f43af3",
+          "marketId": "89dca687-fe86-3aa4-81fe-3426151ca5f2",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Cristopher Sanchez 8+ Strikeouts",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cPitcher_7c_20_7cAlternate_20Pitching_20Strikeouts_7c"
+        },
+        {
+          "selectionId": "808e717a-81ee-306b-99d9-69cefe710e4d",
+          "marketId": "1e949fec-a7a2-334b-bacc-fc842ea39b85",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "NYY @ PHI - NRFI",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cRun_20In_20The_201st_20Inning_3f_7c"
+        },
+        {
+          "selectionId": "d825500c-5dee-3b05-aeea-5bbe8280e802",
+          "marketId": "879c0001-e298-3e95-917a-d5dc8a51d400",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "1st Team To Score - Phillies",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7c1st_7c_20_7cTeam_20To_20Score_7c"
+        },
+        {
+          "selectionId": "c0d85bbe-0a97-3077-9daf-950da6499bb8",
+          "marketId": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "NYY @ PHI Total Runs - Under 8.0",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cTotal_20Runs_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "89dca687-fe86-3aa4-81fe-3426151ca5f2",
+              "name": "|Cristopher Sanchez - Pitching Strikeouts|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cPitcher_7c_20_7cAlternate_20Pitching_20Strikeouts_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "b9e1aa1e-f313-3aa9-9adb-7b0cf4f43af3",
+                  "display": true,
+                  "name": "|8+|",
+                  "marketId": "89dca687-fe86-3aa4-81fe-3426151ca5f2",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.96154,
+                    "fractional": "25/26",
+                    "american": "-104"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "a3702861-f138-430e-8a4e-c4f7d3ac253a",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "3d262d5f-e054-003d-00bc-6b603cde3941",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Cristopher Sanchez",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "3d262d5f-e054-003d-00bc-6b603cde3941",
+                "playerId": "a3702861-f138-430e-8a4e-c4f7d3ac253a",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-strikeouts",
+                "displayOrder": "70000"
+              }
+            },
+            {
+              "id": "879c0001-e298-3e95-917a-d5dc8a51d400",
+              "name": "|1st| |Team To Score|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7c1st_7c_20_7cTeam_20To_20Score_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "d825500c-5dee-3b05-aeea-5bbe8280e802",
+                  "display": true,
+                  "name": "|Philadelphia Phillies|",
+                  "marketId": "879c0001-e298-3e95-917a-d5dc8a51d400",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "home",
+                  "price": {
+                    "decimal": 1.83,
+                    "fractional": "5/6",
+                    "american": "-120"
+                  },
+                  "teamData": {
+                    "teamName": "Philadelphia Phillies",
+                    "teamShortName": "PHI Phillies",
+                    "teamCity": "Philadelphia",
+                    "teamNickName": "Phillies",
+                    "teamAbbreviation": "PHI"
+                  }
+                }
+              ],
+              "metadata": {
+                "displayOrder": "46",
+                "pricingSource": "CZRS",
+                "variableSources": "don_best,event_ticker,WilliamHillFixture"
+              }
+            },
+            {
+              "id": "1e949fec-a7a2-334b-bacc-fc842ea39b85",
+              "name": "|Any Run In 1st Inning?|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cRun_20In_20The_201st_20Inning_3f_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "808e717a-81ee-306b-99d9-69cefe710e4d",
+                  "display": true,
+                  "name": "|No|",
+                  "marketId": "1e949fec-a7a2-334b-bacc-fc842ea39b85",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "generic",
+                  "price": {
+                    "decimal": 1.8,
+                    "fractional": "4/5",
+                    "american": "-125"
+                  }
+                }
+              ],
+              "metadata": {
+                "displayOrder": "56",
+                "pricingSource": "CZRS",
+                "variableSources": "don_best,event_ticker,WilliamHillFixture"
+              }
+            },
+            {
+              "id": "4affc672-f0ae-3f30-932f-164680946568",
+              "name": "|Money Line|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cMoney_20Line_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "f3f89967-b7f2-3560-a58f-8f02ee3d21f0",
+                  "display": true,
+                  "name": "|Philadelphia Phillies|",
+                  "marketId": "4affc672-f0ae-3f30-932f-164680946568",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "home",
+                  "price": {
+                    "decimal": 1.52632,
+                    "fractional": "10/19",
+                    "american": "-190"
+                  },
+                  "teamData": {
+                    "teamName": "Philadelphia Phillies",
+                    "teamShortName": "PHI Phillies",
+                    "teamCity": "Philadelphia",
+                    "teamNickName": "Phillies",
+                    "teamAbbreviation": "PHI"
+                  }
+                }
+              ],
+              "metadata": {
+                "displayOrder": "0",
+                "pricingSource": "CZRS",
+                "variableSources": "don_best,event_ticker,WilliamHillFixture"
+              }
+            },
+            {
+              "id": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+              "name": "|Total Runs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cTotal_20Runs_7c",
+              "active": true,
+              "line": 8.0,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": true,
+              "selections": [
+                {
+                  "id": "c0d85bbe-0a97-3077-9daf-950da6499bb8",
+                  "display": true,
+                  "name": "|Under|",
+                  "marketId": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "under",
+                  "price": {
+                    "decimal": 1.86957,
+                    "fractional": "20/23",
+                    "american": "-115"
+                  }
+                }
+              ],
+              "metadata": {
+                "variableSources": "don_best,event_ticker,WilliamHillFixture",
+                "currentScore": "0.0",
+                "line": "8.0",
+                "marketCategory": "TOTAL_POINTS",
+                "marketCode": "6065c13e-ead6-3d94-8b83-42184df30f4e",
+                "pricingSource": "CZRS",
+                "displayOrder": "20",
+                "period": "MATCH_INC_OT",
+                "marketType": "LINEBASED"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "2eef2fd7-d141-4271-8121-0ba5e2f7c572",
+      "title": "Stat Sheet Stuffers",
+      "description": "",
+      "collectionDisplayName": "Stat Sheet Stuffers",
+      "iconId": "team_logos###New York Yankees###mlb@team_logos###Philadelphia Phillies###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T13:25:04Z",
+      "displayTo": "2026-07-26T23:45:00Z",
+      "price": {
+        "decimal": 10.0,
+        "fractional": "9/1",
+        "american": "+900"
+      },
+      "legs": [
+        {
+          "selectionId": "2eae7dc5-21c8-308b-a038-f01c3d1bf6bc",
+          "marketId": "d032f159-e89a-39bb-ae16-23737cfaec08",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Kyle Schwarber Hits + Runs + RBI - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c"
+        },
+        {
+          "selectionId": "821912e7-b3c4-3d27-9416-172b26429749",
+          "marketId": "7f34a4b0-97e9-343b-bb2f-9eadad706663",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Trent Grisham Hits + Runs + RBI - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c"
+        },
+        {
+          "selectionId": "ac794163-7ec7-32ab-aaea-a07b8670adcb",
+          "marketId": "4945216e-3b5e-3ceb-8cb2-d6018223a2ad",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Paul Goldschmidt Hits + Runs + RBI - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c"
+        },
+        {
+          "selectionId": "1b8b0f40-e1b8-356d-8950-f7506afc8687",
+          "marketId": "91759801-d212-3056-af00-75d3d059e9d2",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "J.T. Realmuto Hits + Runs + RBI - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "7f34a4b0-97e9-343b-bb2f-9eadad706663",
+              "name": "|Trent Grisham - Total Hits + Runs + RBIs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": false,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "821912e7-b3c4-3d27-9416-172b26429749",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "7f34a4b0-97e9-343b-bb2f-9eadad706663",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.25,
+                    "fractional": "5/4",
+                    "american": "+125"
+                  }
+                }
+              ],
+              "metadata": {
+                "teamName": "New York Yankees",
+                "hubId": "eca9db41-2d4f-4a99-b2e7-e7c2aa30819c",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "24d45c1a-36a6-003d-00bd-4e89caa4ac00",
+                "line": "1.5",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Trent Grisham",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "24d45c1a-36a6-003d-00bd-4e89caa4ac00",
+                "playerId": "eca9db41-2d4f-4a99-b2e7-e7c2aa30819c",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-hits-runs-rbis",
+                "displayOrder": "40750"
+              }
+            },
+            {
+              "id": "d032f159-e89a-39bb-ae16-23737cfaec08",
+              "name": "|Kyle Schwarber - Total Hits + Runs + RBIs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": false,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "2eae7dc5-21c8-308b-a038-f01c3d1bf6bc",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "d032f159-e89a-39bb-ae16-23737cfaec08",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.74627,
+                    "fractional": "50/67",
+                    "american": "-134"
+                  }
+                }
+              ],
+              "metadata": {
+                "teamName": "Philadelphia Phillies",
+                "hubId": "09bf52e7-b6ca-4714-92da-8f2c43a5cc21",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "f58031b9-255e-0030-0089-19989aa7cfeb",
+                "line": "1.5",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Kyle Schwarber",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "f58031b9-255e-0030-0089-19989aa7cfeb",
+                "playerId": "09bf52e7-b6ca-4714-92da-8f2c43a5cc21",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-hits-runs-rbis",
+                "displayOrder": "40750"
+              }
+            },
+            {
+              "id": "4945216e-3b5e-3ceb-8cb2-d6018223a2ad",
+              "name": "|Paul Goldschmidt - Total Hits + Runs + RBIs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": false,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "ac794163-7ec7-32ab-aaea-a07b8670adcb",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "4945216e-3b5e-3ceb-8cb2-d6018223a2ad",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.81967,
+                    "fractional": "50/61",
+                    "american": "-122"
+                  }
+                }
+              ],
+              "metadata": {
+                "teamName": "New York Yankees",
+                "hubId": "69d8076a-32ac-4425-83d7-486b680f5cf3",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "f80d9055-ac4a-0036-0084-23fbb3e000fb",
+                "line": "1.5",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Paul Goldschmidt",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "f80d9055-ac4a-0036-0084-23fbb3e000fb",
+                "playerId": "69d8076a-32ac-4425-83d7-486b680f5cf3",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-hits-runs-rbis",
+                "displayOrder": "40750"
+              }
+            },
+            {
+              "id": "91759801-d212-3056-af00-75d3d059e9d2",
+              "name": "|J.T. Realmuto - Total Hits + Runs + RBIs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": false,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "1b8b0f40-e1b8-356d-8950-f7506afc8687",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "91759801-d212-3056-af00-75d3d059e9d2",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.01,
+                    "fractional": "101/100",
+                    "american": "+101"
+                  }
+                }
+              ],
+              "metadata": {
+                "teamName": "Philadelphia Phillies",
+                "hubId": "fca8b24b-a720-4f76-942f-84c2cdd12298",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "35ccb97a-da6c-003a-0087-45f3ee71d8e4",
+                "line": "1.5",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "J.T. Realmuto",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "35ccb97a-da6c-003a-0087-45f3ee71d8e4",
+                "playerId": "fca8b24b-a720-4f76-942f-84c2cdd12298",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-hits-runs-rbis",
+                "displayOrder": "40750"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "eb65a0c3-5225-47f4-8b29-dd4133a5611c",
+      "title": "Covering Our Bases",
+      "description": "",
+      "collectionDisplayName": "Covering Our Bases",
+      "iconId": "team_logos###New York Yankees###mlb@team_logos###Philadelphia Phillies###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T13:26:36Z",
+      "displayTo": "2026-07-26T23:45:00Z",
+      "price": {
+        "decimal": 12.0,
+        "fractional": "11/1",
+        "american": "+1100"
+      },
+      "legs": [
+        {
+          "selectionId": "ecb3689f-f33b-3cf7-9cb1-35ce0227244d",
+          "marketId": "1de5fc26-42ae-30e5-9b1f-2c9183acce6c",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Trea Turner Total Bases - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Bases_7c"
+        },
+        {
+          "selectionId": "3a991096-77ba-3342-8a39-434ae59e46b6",
+          "marketId": "b04193fd-2c00-3681-bcfd-dbee27da4bd6",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Jazz Chisholm Jr. Total Bases - Over 0.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Bases_7c"
+        },
+        {
+          "selectionId": "2e49bc56-b573-3ee3-a5fd-5064433012d1",
+          "marketId": "01799191-9b5c-39ca-935d-a624ba999c5f",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Brandon Marsh Total Bases - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Bases_7c"
+        },
+        {
+          "selectionId": "5d161ed0-43fe-3522-8be5-1694aeceb6e2",
+          "marketId": "3241fbde-f688-3257-9cec-490140fa604a",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Trent Grisham Total Bases - Over 0.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Bases_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "b04193fd-2c00-3681-bcfd-dbee27da4bd6",
+              "name": "|Jazz Chisholm Jr. - Total Bases|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Bases_7c",
+              "active": true,
+              "line": 0.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "3a991096-77ba-3342-8a39-434ae59e46b6",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "b04193fd-2c00-3681-bcfd-dbee27da4bd6",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.74627,
+                    "fractional": "50/67",
+                    "american": "-134"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "a9f58935-c598-4365-9645-f56a93438132",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "9e95a520-6fa0-0035-00bc-e089c9d3db57",
+                "reportingGroup": "reporting-group-player-props",
+                "line": "0.5",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "marketCode": "81b5e1eb-0242-3528-a791-9f39b252b995",
+                "player": "Jazz Chisholm Jr.",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "9e95a520-6fa0-0035-00bc-e089c9d3db57",
+                "playerId": "a9f58935-c598-4365-9645-f56a93438132",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-bases",
+                "displayOrder": "40500"
+              }
+            },
+            {
+              "id": "3241fbde-f688-3257-9cec-490140fa604a",
+              "name": "|Trent Grisham - Total Bases|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Bases_7c",
+              "active": true,
+              "line": 0.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "5d161ed0-43fe-3522-8be5-1694aeceb6e2",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "3241fbde-f688-3257-9cec-490140fa604a",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.70922,
+                    "fractional": "100/141",
+                    "american": "-141"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "eca9db41-2d4f-4a99-b2e7-e7c2aa30819c",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "0296521a-4e9a-0034-0081-93c27e8ed379",
+                "reportingGroup": "reporting-group-player-props",
+                "line": "0.5",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "marketCode": "7d724c3f-9d98-3f6b-bd2b-fb49b38c6ea6",
+                "player": "Trent Grisham",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "0296521a-4e9a-0034-0081-93c27e8ed379",
+                "playerId": "eca9db41-2d4f-4a99-b2e7-e7c2aa30819c",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-bases",
+                "displayOrder": "40500"
+              }
+            },
+            {
+              "id": "01799191-9b5c-39ca-935d-a624ba999c5f",
+              "name": "|Brandon Marsh - Total Bases|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Bases_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "2e49bc56-b573-3ee3-a5fd-5064433012d1",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "01799191-9b5c-39ca-935d-a624ba999c5f",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.34,
+                    "fractional": "67/50",
+                    "american": "+134"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "58476663-9aa7-44f0-bc60-6fd0e9ed1ae2",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "7a871264-3d8f-003f-00b0-2a5eb6de2f46",
+                "reportingGroup": "reporting-group-player-props",
+                "line": "1.5",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "marketCode": "32d5693c-4199-35c5-bc92-7aff663b66f6",
+                "player": "Brandon Marsh",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "7a871264-3d8f-003f-00b0-2a5eb6de2f46",
+                "playerId": "58476663-9aa7-44f0-bc60-6fd0e9ed1ae2",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-bases",
+                "displayOrder": "40500"
+              }
+            },
+            {
+              "id": "1de5fc26-42ae-30e5-9b1f-2c9183acce6c",
+              "name": "|Trea Turner - Total Bases|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Bases_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "ecb3689f-f33b-3cf7-9cb1-35ce0227244d",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "1de5fc26-42ae-30e5-9b1f-2c9183acce6c",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.09,
+                    "fractional": "109/100",
+                    "american": "+109"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "3f95ea9d-e6d9-4f7a-8d70-56094a094259",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "1980c6f7-d3a7-0035-0086-b94c4038691e",
+                "reportingGroup": "reporting-group-player-props",
+                "line": "1.5",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "marketCode": "bed37361-7424-354d-9008-bea53845f463",
+                "player": "Trea Turner",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "1980c6f7-d3a7-0035-0086-b94c4038691e",
+                "playerId": "3f95ea9d-e6d9-4f7a-8d70-56094a094259",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-bases",
+                "displayOrder": "40500"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "249b600a-707c-4a85-997c-b56aa4214c00",
+      "title": "Schwar-bomb\ud83d\udca3",
+      "description": "",
+      "collectionDisplayName": "Schwar-bomb\ud83d\udca3",
+      "playerImageUrl": "https://midfield.mlbstatic.com/v1/people/656941/headshot/silo/current",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T04:00:00Z",
+      "displayTo": "2026-07-27T00:00:00Z",
+      "price": {
+        "decimal": 9.75,
+        "fractional": "35/4",
+        "american": "+875"
+      },
+      "legs": [
+        {
+          "selectionId": "dee69350-88d2-3c94-ae3d-386445c56e73",
+          "marketId": "cc5f02d1-eaf6-3ff3-931f-78e4f1bfae0a",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Phillies Cover -1.5 vs NYY",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cRun_20Line_7c"
+        },
+        {
+          "selectionId": "37b059fd-8a01-3fc7-8789-4cd78c14089b",
+          "marketId": "69f9b9b5-9761-3775-9310-26e7f052e3b2",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Kyle Schwarber HR",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Home-Runs_7c"
+        },
+        {
+          "selectionId": "d825500c-5dee-3b05-aeea-5bbe8280e802",
+          "marketId": "879c0001-e298-3e95-917a-d5dc8a51d400",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Phillies 1st Team To Score ",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7c1st_7c_20_7cTeam_20To_20Score_7c"
+        },
+        {
+          "selectionId": "b4a14565-30e3-33f8-8130-e9d672d260cb",
+          "marketId": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Total Runs - Over 8.0",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cTotal_20Runs_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "69f9b9b5-9761-3775-9310-26e7f052e3b2",
+              "name": "|Kyle Schwarber - Home Runs|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Home-Runs_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "37b059fd-8a01-3fc7-8789-4cd78c14089b",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "69f9b9b5-9761-3775-9310-26e7f052e3b2",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.92,
+                    "fractional": "48/25",
+                    "american": "+192"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "09bf52e7-b6ca-4714-92da-8f2c43a5cc21",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "6f1ca1aa-9fa9-0034-008b-9bc164632e5b",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Kyle Schwarber",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "6f1ca1aa-9fa9-0034-008b-9bc164632e5b",
+                "playerId": "09bf52e7-b6ca-4714-92da-8f2c43a5cc21",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-home-runs",
+                "displayOrder": "50400"
+              }
+            },
+            {
+              "id": "cc5f02d1-eaf6-3ff3-931f-78e4f1bfae0a",
+              "name": "|Run Line|",
+              "type": "two-way-handicap",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cRun_20Line_7c",
+              "active": true,
+              "line": -1.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": true,
+              "selections": [
+                {
+                  "id": "dee69350-88d2-3c94-ae3d-386445c56e73",
+                  "display": true,
+                  "name": "|Philadelphia Phillies|",
+                  "marketId": "cc5f02d1-eaf6-3ff3-931f-78e4f1bfae0a",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "home",
+                  "price": {
+                    "decimal": 2.18,
+                    "fractional": "59/50",
+                    "american": "+118"
+                  },
+                  "teamData": {
+                    "teamName": "Philadelphia Phillies",
+                    "teamShortName": "PHI Phillies",
+                    "teamCity": "Philadelphia",
+                    "teamNickName": "Phillies",
+                    "teamAbbreviation": "PHI"
+                  }
+                }
+              ],
+              "metadata": {
+                "variableSources": "don_best,event_ticker,WilliamHillFixture",
+                "line": "-1.5",
+                "marketCategory": "POINTS_HANDICAP",
+                "marketCode": "26bec86b-0579-3fa9-bc70-d4d740c8efd6",
+                "pricingSource": "CZRS",
+                "displayOrder": "10",
+                "period": "MATCH_INC_OT",
+                "marketType": "HANDICAP"
+              }
+            },
+            {
+              "id": "879c0001-e298-3e95-917a-d5dc8a51d400",
+              "name": "|1st| |Team To Score|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7c1st_7c_20_7cTeam_20To_20Score_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "d825500c-5dee-3b05-aeea-5bbe8280e802",
+                  "display": true,
+                  "name": "|Philadelphia Phillies|",
+                  "marketId": "879c0001-e298-3e95-917a-d5dc8a51d400",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "home",
+                  "price": {
+                    "decimal": 1.83,
+                    "fractional": "5/6",
+                    "american": "-120"
+                  },
+                  "teamData": {
+                    "teamName": "Philadelphia Phillies",
+                    "teamShortName": "PHI Phillies",
+                    "teamCity": "Philadelphia",
+                    "teamNickName": "Phillies",
+                    "teamAbbreviation": "PHI"
+                  }
+                }
+              ],
+              "metadata": {
+                "displayOrder": "46",
+                "pricingSource": "CZRS",
+                "variableSources": "don_best,event_ticker,WilliamHillFixture"
+              }
+            },
+            {
+              "id": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+              "name": "|Total Runs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cTotal_20Runs_7c",
+              "active": true,
+              "line": 8.0,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": true,
+              "selections": [
+                {
+                  "id": "b4a14565-30e3-33f8-8130-e9d672d260cb",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.95238,
+                    "fractional": "20/21",
+                    "american": "-105"
+                  }
+                }
+              ],
+              "metadata": {
+                "variableSources": "don_best,event_ticker,WilliamHillFixture",
+                "currentScore": "0.0",
+                "line": "8.0",
+                "marketCategory": "TOTAL_POINTS",
+                "marketCode": "6065c13e-ead6-3d94-8b83-42184df30f4e",
+                "pricingSource": "CZRS",
+                "displayOrder": "20",
+                "period": "MATCH_INC_OT",
+                "marketType": "LINEBASED"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "29e71d2b-cadc-4693-b2d0-1536ecb4ad73",
+      "title": "\u26beBaseball & Arroz\ud83c\udf5a",
+      "description": "",
+      "collectionDisplayName": "\u26beBaseball & Arroz\ud83c\udf5a",
+      "playerImageUrl": "https://midfield.mlbstatic.com/v1/people/700250/headshot/silo/current",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T04:00:00Z",
+      "displayTo": "2026-07-27T00:00:00Z",
+      "price": {
+        "decimal": 11.0,
+        "fractional": "10/1",
+        "american": "+1000"
+      },
+      "legs": [
+        {
+          "selectionId": "7eeca164-6e79-3808-9295-d53a989414eb",
+          "marketId": "4affc672-f0ae-3f30-932f-164680946568",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Yankees Win vs PHI",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cMoney_20Line_7c"
+        },
+        {
+          "selectionId": "0d4cce64-985a-3f41-9f17-6c24555e3a76",
+          "marketId": "858e030c-14c9-3f28-86f4-eb6339bed3ea",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Ben Rice 2+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        },
+        {
+          "selectionId": "3d8b7557-a3ff-3028-88fd-96754787209c",
+          "marketId": "879c0001-e298-3e95-917a-d5dc8a51d400",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Yankees 1st Team To Score ",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7c1st_7c_20_7cTeam_20To_20Score_7c"
+        },
+        {
+          "selectionId": "b4a14565-30e3-33f8-8130-e9d672d260cb",
+          "marketId": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Total Runs - Over 8.0",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cTotal_20Runs_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "858e030c-14c9-3f28-86f4-eb6339bed3ea",
+              "name": "|Ben Rice - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "0d4cce64-985a-3f41-9f17-6c24555e3a76",
+                  "display": true,
+                  "name": "|2+|",
+                  "marketId": "858e030c-14c9-3f28-86f4-eb6339bed3ea",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 3.6,
+                    "fractional": "13/5",
+                    "american": "+260"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "2307e795-5bfe-4c8c-8831-653b9c88b3a1",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "5d024248-fa28-003b-00b3-a0b35bf26e2b",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Ben Rice",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "5d024248-fa28-003b-00b3-a0b35bf26e2b",
+                "playerId": "2307e795-5bfe-4c8c-8831-653b9c88b3a1",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            },
+            {
+              "id": "879c0001-e298-3e95-917a-d5dc8a51d400",
+              "name": "|1st| |Team To Score|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7c1st_7c_20_7cTeam_20To_20Score_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "3d8b7557-a3ff-3028-88fd-96754787209c",
+                  "display": true,
+                  "name": "|New York Yankees|",
+                  "marketId": "879c0001-e298-3e95-917a-d5dc8a51d400",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "away",
+                  "price": {
+                    "decimal": 1.91,
+                    "fractional": "10/11",
+                    "american": "-110"
+                  },
+                  "teamData": {
+                    "teamName": "New York Yankees",
+                    "teamShortName": "NY Yankees",
+                    "teamCity": "New York",
+                    "teamNickName": "Yankees",
+                    "teamAbbreviation": "NYY"
+                  }
+                }
+              ],
+              "metadata": {
+                "displayOrder": "46",
+                "pricingSource": "CZRS",
+                "variableSources": "don_best,event_ticker,WilliamHillFixture"
+              }
+            },
+            {
+              "id": "4affc672-f0ae-3f30-932f-164680946568",
+              "name": "|Money Line|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cMoney_20Line_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "7eeca164-6e79-3808-9295-d53a989414eb",
+                  "display": true,
+                  "name": "|New York Yankees|",
+                  "marketId": "4affc672-f0ae-3f30-932f-164680946568",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "away",
+                  "price": {
+                    "decimal": 2.58,
+                    "fractional": "79/50",
+                    "american": "+158"
+                  },
+                  "teamData": {
+                    "teamName": "New York Yankees",
+                    "teamShortName": "NY Yankees",
+                    "teamCity": "New York",
+                    "teamNickName": "Yankees",
+                    "teamAbbreviation": "NYY"
+                  }
+                }
+              ],
+              "metadata": {
+                "displayOrder": "0",
+                "pricingSource": "CZRS",
+                "variableSources": "don_best,event_ticker,WilliamHillFixture"
+              }
+            },
+            {
+              "id": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+              "name": "|Total Runs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cTotal_20Runs_7c",
+              "active": true,
+              "line": 8.0,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": true,
+              "selections": [
+                {
+                  "id": "b4a14565-30e3-33f8-8130-e9d672d260cb",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "6ba1813f-d4ea-3406-b9eb-4f6020a5b80e",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.95238,
+                    "fractional": "20/21",
+                    "american": "-105"
+                  }
+                }
+              ],
+              "metadata": {
+                "variableSources": "don_best,event_ticker,WilliamHillFixture",
+                "currentScore": "0.0",
+                "line": "8.0",
+                "marketCategory": "TOTAL_POINTS",
+                "marketCode": "6065c13e-ead6-3d94-8b83-42184df30f4e",
+                "pricingSource": "CZRS",
+                "displayOrder": "20",
+                "period": "MATCH_INC_OT",
+                "marketType": "LINEBASED"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "d363a03d-823b-4678-8c4d-696a1762a0f7",
+      "title": "\u26be\ud83c\udf7f\ud83c\udf66\ud83c\udf6b\ud83c\udf6c",
+      "description": "",
+      "collectionDisplayName": "\u26be\ud83c\udf7f\ud83c\udf66\ud83c\udf6b\ud83c\udf6c",
+      "iconId": "team_logos###New York Yankees###mlb@team_logos###Philadelphia Phillies###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T13:28:09Z",
+      "displayTo": "2026-07-26T23:45:00Z",
+      "price": {
+        "decimal": 27.0,
+        "fractional": "26/1",
+        "american": "+2600"
+      },
+      "legs": [
+        {
+          "selectionId": "7b5c2c61-7e39-38be-88a4-22a987e26ddc",
+          "marketId": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Ben Rice HR",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cPlayer_20to_20Hit_20A_20Home_20Run_7c"
+        },
+        {
+          "selectionId": "ffadaa94-1424-3b18-8fda-8d7f76b2ffc0",
+          "marketId": "bed18117-48d9-3fc0-aaff-1ff6fcedbf05",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Bryce Harper Total Bases - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Bases_7c"
+        },
+        {
+          "selectionId": "3348f252-a30d-3fe6-84fc-df615a108b21",
+          "marketId": "98d5a605-b55a-34ae-8d11-47a7f8696931",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Trea Turner 1+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        },
+        {
+          "selectionId": "01e42fa0-cca2-3196-9f03-0d88e4ff46b2",
+          "marketId": "1fad47db-83ea-325e-a09d-1dc09de9680b",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Paul Goldschmidt 1+ RBI",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20RBIs_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "bed18117-48d9-3fc0-aaff-1ff6fcedbf05",
+              "name": "|Bryce Harper - Total Bases|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Bases_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "ffadaa94-1424-3b18-8fda-8d7f76b2ffc0",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "bed18117-48d9-3fc0-aaff-1ff6fcedbf05",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.13,
+                    "fractional": "113/100",
+                    "american": "+113"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "cff79ac0-2cef-49fb-81ff-0c012d116a50",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "a52a5e0c-e87d-003b-00b3-9d05568715e2",
+                "reportingGroup": "reporting-group-player-props",
+                "line": "1.5",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "marketCode": "63905651-6a84-38db-b889-50e6a8e460fb",
+                "player": "Bryce Harper",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "a52a5e0c-e87d-003b-00b3-9d05568715e2",
+                "playerId": "cff79ac0-2cef-49fb-81ff-0c012d116a50",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-bases",
+                "displayOrder": "40500"
+              }
+            },
+            {
+              "id": "1fad47db-83ea-325e-a09d-1dc09de9680b",
+              "name": "|Paul Goldschmidt - RBIs|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20RBIs_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "01e42fa0-cca2-3196-9f03-0d88e4ff46b2",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "1fad47db-83ea-325e-a09d-1dc09de9680b",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.9,
+                    "fractional": "19/10",
+                    "american": "+190"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "69d8076a-32ac-4425-83d7-486b680f5cf3",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "f7c81d72-0a68-003b-00b4-8a61db9ab9b2",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Paul Goldschmidt",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "f7c81d72-0a68-003b-00b4-8a61db9ab9b2",
+                "playerId": "69d8076a-32ac-4425-83d7-486b680f5cf3",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-rbis",
+                "displayOrder": "50700"
+              }
+            },
+            {
+              "id": "98d5a605-b55a-34ae-8d11-47a7f8696931",
+              "name": "|Trea Turner - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "3348f252-a30d-3fe6-84fc-df615a108b21",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "98d5a605-b55a-34ae-8d11-47a7f8696931",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.38462,
+                    "fractional": "5/13",
+                    "american": "-260"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "3f95ea9d-e6d9-4f7a-8d70-56094a094259",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "2a935494-0981-003b-00bc-df19ec7880f9",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Trea Turner",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "2a935494-0981-003b-00bc-df19ec7880f9",
+                "playerId": "3f95ea9d-e6d9-4f7a-8d70-56094a094259",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            },
+            {
+              "id": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+              "name": "|Player to Hit A Home Run|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cPlayer_20to_20Hit_20A_20Home_20Run_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "7b5c2c61-7e39-38be-88a4-22a987e26ddc",
+                  "display": true,
+                  "name": "|Ben Rice|",
+                  "marketId": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "away",
+                  "price": {
+                    "decimal": 5.0,
+                    "fractional": "4/1",
+                    "american": "+400"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "reportingGroup": "reporting-group-player-props",
+                "marketCategory": "SCORER",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceMarketKey": "11937c31-7dbe-0034-00a5-cdc170453d1f",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "zfMarketKey": "11937c31-7dbe-0034-00a5-cdc170453d1f",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "home-run-anytime",
+                "displayOrder": "30300"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "060b6b25-3b2f-4636-becd-2060fc9716c1",
+      "title": "Pinstripe Power\ud83d\udcaa",
+      "description": "",
+      "collectionDisplayName": "Pinstripe Power\ud83d\udcaa",
+      "iconId": "team_logos###New York Yankees###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T17:58:02Z",
+      "displayTo": "2026-07-26T23:45:00Z",
+      "price": {
+        "decimal": 19.0,
+        "fractional": "18/1",
+        "american": "+1800"
+      },
+      "legs": [
+        {
+          "selectionId": "7eeca164-6e79-3808-9295-d53a989414eb",
+          "marketId": "4affc672-f0ae-3f30-932f-164680946568",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Yankees Win vs PHI",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cMoney_20Line_7c"
+        },
+        {
+          "selectionId": "7fef3812-25e2-3ecd-baef-8f1dd4fe2e82",
+          "marketId": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Trent Grisham HR",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cPlayer_20to_20Hit_20A_20Home_20Run_7c"
+        },
+        {
+          "selectionId": "50e8491c-05a6-32d5-869a-7672144ad2b8",
+          "marketId": "858e030c-14c9-3f28-86f4-eb6339bed3ea",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Ben Rice 1+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        },
+        {
+          "selectionId": "0d261b3f-7b7b-339a-8da6-7d7ec114085f",
+          "marketId": "f645a2f5-97d8-3135-bd04-37247558dda7",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Anthony Volpe Hits + Runs + RBI - Over 1.5",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "858e030c-14c9-3f28-86f4-eb6339bed3ea",
+              "name": "|Ben Rice - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "50e8491c-05a6-32d5-869a-7672144ad2b8",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "858e030c-14c9-3f28-86f4-eb6339bed3ea",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.50761,
+                    "fractional": "100/197",
+                    "american": "-197"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "New York Yankees",
+                "hubId": "2307e795-5bfe-4c8c-8831-653b9c88b3a1",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "5d024248-fa28-003b-00b3-a0b35bf26e2b",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Ben Rice",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "5d024248-fa28-003b-00b3-a0b35bf26e2b",
+                "playerId": "2307e795-5bfe-4c8c-8831-653b9c88b3a1",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            },
+            {
+              "id": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+              "name": "|Player to Hit A Home Run|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cPlayer_20to_20Hit_20A_20Home_20Run_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "7fef3812-25e2-3ecd-baef-8f1dd4fe2e82",
+                  "display": true,
+                  "name": "|Trent Grisham|",
+                  "marketId": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "away",
+                  "price": {
+                    "decimal": 7.25,
+                    "fractional": "25/4",
+                    "american": "+625"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "reportingGroup": "reporting-group-player-props",
+                "marketCategory": "SCORER",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceMarketKey": "11937c31-7dbe-0034-00a5-cdc170453d1f",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "zfMarketKey": "11937c31-7dbe-0034-00a5-cdc170453d1f",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "home-run-anytime",
+                "displayOrder": "30300"
+              }
+            },
+            {
+              "id": "4affc672-f0ae-3f30-932f-164680946568",
+              "name": "|Money Line|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cMoney_20Line_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "7eeca164-6e79-3808-9295-d53a989414eb",
+                  "display": true,
+                  "name": "|New York Yankees|",
+                  "marketId": "4affc672-f0ae-3f30-932f-164680946568",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "away",
+                  "price": {
+                    "decimal": 2.58,
+                    "fractional": "79/50",
+                    "american": "+158"
+                  },
+                  "teamData": {
+                    "teamName": "New York Yankees",
+                    "teamShortName": "NY Yankees",
+                    "teamCity": "New York",
+                    "teamNickName": "Yankees",
+                    "teamAbbreviation": "NYY"
+                  }
+                }
+              ],
+              "metadata": {
+                "displayOrder": "0",
+                "pricingSource": "CZRS",
+                "variableSources": "don_best,event_ticker,WilliamHillFixture"
+              }
+            },
+            {
+              "id": "f645a2f5-97d8-3135-bd04-37247558dda7",
+              "name": "|Anthony Volpe - Total Hits + Runs + RBIs|",
+              "type": "over-under",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cTotal_20Hits_20_2b_20Runs_20_2b_20RBIs_7c",
+              "active": true,
+              "line": 1.5,
+              "cashoutAvailable": false,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "0d261b3f-7b7b-339a-8da6-7d7ec114085f",
+                  "display": true,
+                  "name": "|Over|",
+                  "marketId": "f645a2f5-97d8-3135-bd04-37247558dda7",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 2.2,
+                    "fractional": "6/5",
+                    "american": "+120"
+                  }
+                }
+              ],
+              "metadata": {
+                "teamName": "New York Yankees",
+                "hubId": "4d3e5d8e-f492-46e8-a143-5c3e075fbd23",
+                "marketCategory": "TOTAL_POINTS",
+                "sourceMarketKey": "bb7af1bd-14f0-0035-00ad-6faceddf23c4",
+                "line": "1.5",
+                "teamId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+                "player": "Anthony Volpe",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "AWAY",
+                "zfMarketKey": "bb7af1bd-14f0-0035-00ad-6faceddf23c4",
+                "playerId": "4d3e5d8e-f492-46e8-a143-5c3e075fbd23",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-total-hits-runs-rbis",
+                "displayOrder": "40750"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    },
+    {
+      "id": "ddb0084b-fb30-4679-ac94-aacabbb4a18a",
+      "title": "\ud83d\udd14\ud83d\udd34\ud83d\udd14\ud83d\udd34\ud83d\udd14",
+      "description": "",
+      "collectionDisplayName": "\ud83d\udd14\ud83d\udd34\ud83d\udd14\ud83d\udd34\ud83d\udd14",
+      "iconId": "team_logos###Philadelphia Phillies###mlb",
+      "display": true,
+      "showTime": false,
+      "displayFrom": "2026-07-26T18:00:41Z",
+      "displayTo": "2026-07-26T23:45:00Z",
+      "price": {
+        "decimal": 14.5,
+        "fractional": "27/2",
+        "american": "+1350"
+      },
+      "legs": [
+        {
+          "selectionId": "f3f89967-b7f2-3560-a58f-8f02ee3d21f0",
+          "marketId": "4affc672-f0ae-3f30-932f-164680946568",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Phillies Win vs NYY",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cMoney_20Line_7c"
+        },
+        {
+          "selectionId": "0dda7aa3-5de6-3680-8210-38706cd354d2",
+          "marketId": "89dca687-fe86-3aa4-81fe-3426151ca5f2",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Cristopher Sanchez 7+ Strikeouts",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cPitcher_7c_20_7cAlternate_20Pitching_20Strikeouts_7c"
+        },
+        {
+          "selectionId": "e215ec85-5f25-3d88-929e-78b6e10eb1c8",
+          "marketId": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Trea Turner HR",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cPlayer_20to_20Hit_20A_20Home_20Run_7c"
+        },
+        {
+          "selectionId": "b1a9e9c4-5385-36ad-afaa-ce0f0d370903",
+          "marketId": "d4962dc5-20fc-3b46-bd7c-cf5baba881f2",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Bryce Harper 1+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        },
+        {
+          "selectionId": "9d561d42-8613-3b58-a0d4-72fe36e0938e",
+          "marketId": "23cefdbd-37f8-3ac7-bcaa-5b6326a2b765",
+          "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "selectionDisplayName": "Kyle Schwarber 1+ Hits",
+          "dataPath": "/v4/sport/baseball/competition/04f90892-3afa-4e84-acce-5b89f151063d/event/37aa0fdc-4c79-490f-b600-b375e2e694d9/market-display-groups/_7cBatter_7c_20_7cAlternate_20Hits_7c"
+        }
+      ],
+      "events": [
+        {
+          "id": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+          "name": "|New York Yankees| |at| |Philadelphia Phillies|",
+          "startTime": "2026-07-26T23:20:00Z",
+          "display": true,
+          "tradedInPlay": true,
+          "sportId": "baseball",
+          "competitionId": "04f90892-3afa-4e84-acce-5b89f151063d",
+          "competitionName": "MLB",
+          "active": true,
+          "started": false,
+          "byoEligible": true,
+          "markets": [
+            {
+              "id": "89dca687-fe86-3aa4-81fe-3426151ca5f2",
+              "name": "|Cristopher Sanchez - Pitching Strikeouts|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cPitcher_7c_20_7cAlternate_20Pitching_20Strikeouts_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "0dda7aa3-5de6-3680-8210-38706cd354d2",
+                  "display": true,
+                  "name": "|7+|",
+                  "marketId": "89dca687-fe86-3aa4-81fe-3426151ca5f2",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.5,
+                    "fractional": "1/2",
+                    "american": "-200"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "a3702861-f138-430e-8a4e-c4f7d3ac253a",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "3d262d5f-e054-003d-00bc-6b603cde3941",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Cristopher Sanchez",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "3d262d5f-e054-003d-00bc-6b603cde3941",
+                "playerId": "a3702861-f138-430e-8a4e-c4f7d3ac253a",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-strikeouts",
+                "displayOrder": "70000"
+              }
+            },
+            {
+              "id": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+              "name": "|Player to Hit A Home Run|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cPlayer_20to_20Hit_20A_20Home_20Run_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "e215ec85-5f25-3d88-929e-78b6e10eb1c8",
+                  "display": true,
+                  "name": "|Trea Turner|",
+                  "marketId": "8b8a212c-6c63-3ecb-8fad-53f2d54c761a",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "home",
+                  "price": {
+                    "decimal": 5.75,
+                    "fractional": "19/4",
+                    "american": "+475"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "reportingGroup": "reporting-group-player-props",
+                "marketCategory": "SCORER",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceMarketKey": "11937c31-7dbe-0034-00a5-cdc170453d1f",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "zfMarketKey": "11937c31-7dbe-0034-00a5-cdc170453d1f",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "home-run-anytime",
+                "displayOrder": "30300"
+              }
+            },
+            {
+              "id": "4affc672-f0ae-3f30-932f-164680946568",
+              "name": "|Money Line|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cMoney_20Line_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "f3f89967-b7f2-3560-a58f-8f02ee3d21f0",
+                  "display": true,
+                  "name": "|Philadelphia Phillies|",
+                  "marketId": "4affc672-f0ae-3f30-932f-164680946568",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "home",
+                  "price": {
+                    "decimal": 1.52632,
+                    "fractional": "10/19",
+                    "american": "-190"
+                  },
+                  "teamData": {
+                    "teamName": "Philadelphia Phillies",
+                    "teamShortName": "PHI Phillies",
+                    "teamCity": "Philadelphia",
+                    "teamNickName": "Phillies",
+                    "teamAbbreviation": "PHI"
+                  }
+                }
+              ],
+              "metadata": {
+                "displayOrder": "0",
+                "pricingSource": "CZRS",
+                "variableSources": "don_best,event_ticker,WilliamHillFixture"
+              }
+            },
+            {
+              "id": "23cefdbd-37f8-3ac7-bcaa-5b6326a2b765",
+              "name": "|Kyle Schwarber - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "9d561d42-8613-3b58-a0d4-72fe36e0938e",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "23cefdbd-37f8-3ac7-bcaa-5b6326a2b765",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.51813,
+                    "fractional": "100/193",
+                    "american": "-193"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "09bf52e7-b6ca-4714-92da-8f2c43a5cc21",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "ee7aa534-2cde-003c-008e-633a35c01afc",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Kyle Schwarber",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "ee7aa534-2cde-003c-008e-633a35c01afc",
+                "playerId": "09bf52e7-b6ca-4714-92da-8f2c43a5cc21",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            },
+            {
+              "id": "d4962dc5-20fc-3b46-bd7c-cf5baba881f2",
+              "name": "|Bryce Harper - Hits|",
+              "type": "standard-market-template",
+              "display": true,
+              "tradedInPlay": false,
+              "templateId": "_7cBatter_7c_20_7cAlternate_20Hits_7c",
+              "active": true,
+              "cashoutAvailable": true,
+              "byoEligible": true,
+              "hasMovingLines": false,
+              "selections": [
+                {
+                  "id": "b1a9e9c4-5385-36ad-afaa-ce0f0d370903",
+                  "display": true,
+                  "name": "|1+|",
+                  "marketId": "d4962dc5-20fc-3b46-bd7c-cf5baba881f2",
+                  "eventId": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                  "active": true,
+                  "type": "over",
+                  "price": {
+                    "decimal": 1.43478,
+                    "fractional": "10/23",
+                    "american": "-230"
+                  }
+                }
+              ],
+              "metadata": {
+                "marketSourceType": "reporting-group-player-props",
+                "teamName": "Philadelphia Phillies",
+                "hubId": "cff79ac0-2cef-49fb-81ff-0c012d116a50",
+                "marketCategory": "NONE",
+                "sourceMarketKey": "5158405a-24b5-003c-009e-c7541b7e3ec1",
+                "reportingGroup": "reporting-group-player-props",
+                "teamId": "a6d32d30-c846-4061-8e24-416aef051b72",
+                "player": "Bryce Harper",
+                "zfBookKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "sourceEventKey": "37aa0fdc-4c79-490f-b600-b375e2e694d9",
+                "team": "HOME",
+                "zfMarketKey": "5158405a-24b5-003c-009e-c7541b7e3ec1",
+                "playerId": "cff79ac0-2cef-49fb-81ff-0c012d116a50",
+                "feedSource": "ZF",
+                "pricingSource": "ZF",
+                "marketTypeCode": "player-alt-hits",
+                "displayOrder": "50000"
+              }
+            }
+          ],
+          "metadata": {
+            "variableSources": "don_best,event_ticker,WilliamHillFixture",
+            "awayTeamName": "New York Yankees",
+            "incidentSource": "bet_radar_livescout",
+            "homeTeam_hubId": "a6d32d30-c846-4061-8e24-416aef051b72",
+            "homeTeamBiNumber": "930",
+            "competition_hubId": "66049bd1-7a90-49ba-98bc-1bf4332c3ad6",
+            "homeTeamId": "f986bcef-01d5-4bed-ae4c-0a7ced76ffb3",
+            "currentAwayStartingPitcher": "W Warren",
+            "currentHomeStartingPitcherFrom": "1.785001140607E12",
+            "pricingSource": "CZRS",
+            "homeTeamName": "Philadelphia Phillies",
+            "displayOrder": "4",
+            "currentAwayStartingPitcherFrom": "1.785001140607E12",
+            "awayTeam_hubId": "81aa1267-cbd5-4791-822a-e650fa6e3692",
+            "currentHomeStartingPitcherId": "360767",
+            "awayTeamBiNumber": "929",
+            "currentHomeStartingPitcher": "C Sanchez",
+            "awayTeamId": "dafac5fa-6813-4358-a364-d744ca5903d8",
+            "currentAwayStartingPitcherId": "405431"
+          }
+        }
+      ],
+      "editable": true
+    }
+  ]
+}
