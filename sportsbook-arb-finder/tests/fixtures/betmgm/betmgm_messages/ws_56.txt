@@ -1,0 +1,1 @@
+{"type":1,"target":"Receive","arguments":[{"producer":"v1","messageType":"OptionMarketDelete","payload":{"marketId":1552368961,"fixtureId":"19865373","latencyMs":439,"sequence":54029},"timestamp":"2026-08-21T02:34:11Z","topic":"v1|en-us|19865373|grd","latencyMs":826},42]}

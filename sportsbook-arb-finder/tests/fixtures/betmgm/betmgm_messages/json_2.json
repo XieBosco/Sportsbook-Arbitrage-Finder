@@ -1,0 +1,3370 @@
+{
+  "_DEBUG_URL": "https://www.on.betmgm.ca/cds-api/bettingoffer/fixture-view?x-bwin-accessid=MzViOTU5Y2EtNzgyMy00ZTBmLThkNDctYjRlYjgwNjMwZDQy&lang=en-us&country=CA&userCountry=CA&subdivision=CA-Ontario&offerMapping=Filtered&scoreboardMode=Full&fixtureIds=19865345&state=Latest&includePrecreatedBetBuilder=true&supportVirtual=true&isBettingInsightsEnabled=true&useRegionalisedConfiguration=true&includeRelatedFixtures=false&statisticsModes=Rank,Pitchers&firstMarketGroupOnly=true",
+  "data": {
+    "fixture": {
+      "optionMarkets": [
+        {
+          "id": 1549408904,
+          "name": {
+            "value": "Moneyline"
+          },
+          "status": "Visible",
+          "options": [
+            {
+              "id": 2271527465,
+              "status": "Visible",
+              "name": {
+                "value": "Braves"
+              },
+              "sourceName": {
+                "value": "1"
+              },
+              "price": {
+                "id": -1,
+                "numerator": 5,
+                "denominator": 4,
+                "odds": 2.25,
+                "americanOdds": 125,
+                "priceHistory": []
+              },
+              "participantId": 2582401
+            },
+            {
+              "id": 2271527466,
+              "status": "Visible",
+              "name": {
+                "value": "Brewers"
+              },
+              "sourceName": {
+                "value": "2"
+              },
+              "price": {
+                "id": -1,
+                "numerator": 4,
+                "denominator": 6,
+                "odds": 1.67,
+                "americanOdds": -150,
+                "priceHistory": []
+              },
+              "participantId": 2582415
+            }
+          ],
+          "parameters": [
+            {
+              "key": "TemplateId",
+              "type": "Integer",
+              "value": "11299"
+            },
+            {
+              "key": "CategoryId",
+              "type": "Integer",
+              "value": "110"
+            }
+          ],
+          "grouping": {
+            "gridGroups": [
+              "8utzsqlcq"
+            ],
+            "detailed": [
+              {
+                "subIndex": 2,
+                "marketTabId": 37,
+                "optionColumnId": 1,
+                "displayType": "SixPack",
+                "marketGroupId": "5732dc0b-cb8b-4c07-9581-fcd925ba9f84",
+                "marketGroupItemId": "2a3e6a9b-bd97-4061-8f15-bb8a459c530d",
+                "orderType": "None"
+              },
+              {
+                "subIndex": 2,
+                "marketTabId": 37,
+                "optionColumnId": 1,
+                "displayType": "SixPack",
+                "marketGroupId": "f751b25d-7939-4a8f-b9ea-06ac6def12f1",
+                "marketGroupItemId": "55a9cab7-91e7-4eaa-a490-852f9769a97a",
+                "orderType": "None"
+              }
+            ]
+          },
+          "spread": 0.58,
+          "balanced": 1,
+          "isMain": true,
+          "templateCategory": {
+            "id": 110,
+            "name": {
+              "value": "Moneyline"
+            },
+            "category": "Gridable",
+            "dynamicCategories": [
+              "bbplus_test"
+            ]
+          },
+          "comboPrevention": "NoEventCombo",
+          "minCombo": 1,
+          "resultOrder": "Default",
+          "source": "V1",
+          "isBetBuilder": true,
+          "oddsKey": 104.32
+        },
+        {
+          "id": 1549408906,
+          "name": {
+            "value": "Run Line Spread"
+          },
+          "status": "Visible",
+          "options": [
+            {
+              "id": 2271527469,
+              "status": "Visible",
+              "name": {
+                "value": "Atlanta Braves +1.5 "
+              },
+              "price": {
+                "id": -1,
+                "numerator": 1,
+                "denominator": 2,
+                "odds": 1.5,
+                "americanOdds": -200,
+                "priceHistory": []
+              },
+              "participantId": 2582401,
+              "attr": "+1.5"
+            },
+            {
+              "id": 2271527470,
+              "status": "Visible",
+              "name": {
+                "value": "Milwaukee Brewers -1.5"
+              },
+              "price": {
+                "id": -1,
+                "numerator": 33,
+                "denominator": 20,
+                "odds": 2.65,
+                "americanOdds": 165,
+                "priceHistory": []
+              },
+              "participantId": 2582415,
+              "attr": "-1.5"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "TemplateId",
+              "type": "Integer",
+              "value": "698"
+            },
+            {
+              "key": "CategoryId",
+              "type": "Integer",
+              "value": "112"
+            }
+          ],
+          "grouping": {
+            "gridGroups": [
+              "r6vh7gysf"
+            ],
+            "detailed": [
+              {
+                "subIndex": 0,
+                "marketTabId": 37,
+                "optionColumnId": 2,
+                "displayType": "SixPack",
+                "marketGroupId": "5732dc0b-cb8b-4c07-9581-fcd925ba9f84",
+                "marketGroupItemId": "2a3e6a9b-bd97-4061-8f15-bb8a459c530d",
+                "orderType": "None"
+              },
+              {
+                "subIndex": 0,
+                "marketTabId": 37,
+                "optionColumnId": 2,
+                "displayType": "SixPack",
+                "marketGroupId": "f751b25d-7939-4a8f-b9ea-06ac6def12f1",
+                "marketGroupItemId": "55a9cab7-91e7-4eaa-a490-852f9769a97a",
+                "orderType": "None"
+              },
+              {
+                "marketTabId": 37,
+                "displayType": "Spread",
+                "marketGroupId": "f751b25d-7939-4a8f-b9ea-06ac6def12f1",
+                "marketGroupItemId": "341e7236-8e74-4743-8f2a-bb0b6d80a248",
+                "orderType": "None"
+              },
+              {
+                "subIndex": 0,
+                "marketTabId": 44,
+                "displayType": "Spread",
+                "marketGroupId": "ff7428e5-0871-4d8e-918b-b56668649875",
+                "marketGroupItemId": "07168019-d83e-4308-85cc-55b2457e5fed",
+                "orderType": "None"
+              }
+            ]
+          },
+          "spread": 1.15,
+          "balanced": 1,
+          "isMain": false,
+          "templateCategory": {
+            "id": 112,
+            "name": {
+              "value": "Run Line"
+            },
+            "category": "Gridable",
+            "dynamicCategories": [
+              "hybridtest",
+              "hybridtv1",
+              "alttest",
+              "spreadtotals",
+              "spread",
+              "spreadwinningmargin",
+              "bbplus_test"
+            ]
+          },
+          "comboPrevention": "NoEventCombo",
+          "minCombo": 1,
+          "resultOrder": "Default",
+          "source": "V1",
+          "isBetBuilder": true,
+          "oddsKey": 104.4
+        },
+        {
+          "id": 1549408907,
+          "name": {
+            "value": "Run Line Spread"
+          },
+          "status": "Visible",
+          "options": [
+            {
+              "id": 2271527471,
+              "status": "Visible",
+              "name": {
+                "value": "Atlanta Braves -1.5"
+              },
+              "price": {
+                "id": -1,
+                "numerator": 11,
+                "denominator": 5,
+                "odds": 3.2,
+                "americanOdds": 220,
+                "priceHistory": []
+              },
+              "participantId": 2582401,
+              "attr": "-1.5"
+            },
+            {
+              "id": 2271527472,
+              "status": "Visible",
+              "name": {
+                "value": "Milwaukee Brewers +1.5"
+              },
+              "price": {
+                "id": -1,
+                "numerator": 4,
+                "denominator": 11,
+                "odds": 1.36,
+                "americanOdds": -275,
+                "priceHistory": []
+              },
+              "participantId": 2582415,
+              "attr": "+1.5"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "TemplateId",
+              "type": "Integer",
+              "value": "698"
+            },
+            {
+              "key": "CategoryId",
+              "type": "Integer",
+              "value": "112"
+            }
+          ],
+          "grouping": {
+            "gridGroups": [
+              "r6vh7gysf"
+            ],
+            "detailed": [
+              {
+                "subIndex": 0,
+                "marketTabId": 37,
+                "optionColumnId": 2,
+                "displayType": "SixPack",
+                "marketGroupId": "5732dc0b-cb8b-4c07-9581-fcd925ba9f84",
+                "marketGroupItemId": "2a3e6a9b-bd97-4061-8f15-bb8a459c530d",
+                "orderType": "None"
+              },
+              {
+                "subIndex": 0,
+                "marketTabId": 37,
+                "optionColumnId": 2,
+                "displayType": "SixPack",
+                "marketGroupId": "f751b25d-7939-4a8f-b9ea-06ac6def12f1",
+                "marketGroupItemId": "55a9cab7-91e7-4eaa-a490-852f9769a97a",
+                "orderType": "None"
+              },
+              {
+                "marketTabId": 37,
+                "displayType": "Spread",
+                "marketGroupId": "f751b25d-7939-4a8f-b9ea-06ac6def12f1",
+                "marketGroupItemId": "341e7236-8e74-4743-8f2a-bb0b6d80a248",
+                "orderType": "None"
+              },
+              {
+                "subIndex": 0,
+                "marketTabId": 44,
+                "displayType": "Spread",
+                "marketGroupId": "ff7428e5-0871-4d8e-918b-b56668649875",
+                "marketGroupItemId": "07168019-d83e-4308-85cc-55b2457e5fed",
+                "orderType": "None"
+              }
+            ]
+          },
+          "spread": 1.84,
+          "balanced": 1,
+          "isMain": false,
+          "templateCategory": {
+            "id": 112,
+            "name": {
+              "value": "Run Line"
+            },
+            "category": "Gridable",
+            "dynamicCategories": [
+              "hybridtest",
+              "hybridtv1",
+              "alttest",
+              "spreadtotals",
+              "spread",
+              "spreadwinningmargin",
+              "bbplus_test"
+            ]
+          },
+          "comboPrevention": "NoEventCombo",
+          "minCombo": 1,
+          "resultOrder": "Default",
+          "source": "V1",
+          "isBetBuilder": true,
+          "oddsKey": 104.78
+        },
+        {
+          "id": 1549408915,
+          "name": {
+            "value": "Totals"
+          },
+          "status": "Visible",
+          "options": [
+            {
+              "id": 2271527487,
+              "status": "Visible",
+              "name": {
+                "value": "Over 6.5"
+              },
+              "price": {
+                "id": -1,
+                "numerator": 49,
+                "denominator": 50,
+                "odds": 1.98,
+                "americanOdds": -102,
+                "priceHistory": []
+              },
+              "totalsPrefix": "Over"
+            },
+            {
+              "id": 2271527488,
+              "status": "Visible",
+              "name": {
+                "value": "Under 6.5"
+              },
+              "price": {
+                "id": -1,
+                "numerator": 17,
+                "denominator": 20,
+                "odds": 1.85,
+                "americanOdds": -118,
+                "priceHistory": []
+              },
+              "totalsPrefix": "Under"
+            }
+          ],
+          "parameters": [
+            {
+              "key": "TemplateId",
+              "type": "Integer",
+              "value": "114"
+            },
+            {
+              "key": "CategoryId",
+              "type": "Integer",
+              "value": "243"
+            }
+          ],
+          "grouping": {
+            "gridGroups": [
+              "sorhj56up"
+            ],
+            "detailed": [
+              {
+                "subIndex": 1,
+                "marketTabId": 37,
+                "optionColumnId": 3,
+                "displayType": "SixPack",
+                "marketGroupId": "5732dc0b-cb8b-4c07-9581-fcd925ba9f84",
+                "marketGroupItemId": "2a3e6a9b-bd97-4061-8f15-bb8a459c530d",
+                "orderType": "None"
+              },
+              {
+                "subIndex": 0,
+                "marketTabId": 44,
+                "displayType": "OverUnder",
+                "marketGroupId": "5732dc0b-cb8b-4c07-9581-fcd925ba9f84",
+                "marketGroupItemId": "a9df5d30-308e-43b3-bd87-1dbbf0c9077e",
+                "orderType": "None"
+              },
+              {
+                "subIndex": 1,
+                "marketTabId": 37,
+                "optionColumnId": 3,
+                "displayType": "SixPack",
+                "marketGroupId": "f751b25d-7939-4a8f-b9ea-06ac6def12f1",
+                "marketGroupItemId": "55a9cab7-91e7-4eaa-a490-852f9769a97a",
+                "orderType": "None"
+              },
+              {
+                "marketTabId": 37,
+                "displayType": "OverUnder",
+                "marketGroupId": "f751b25d-7939-4a8f-b9ea-06ac6def12f1",
+                "marketGroupItemId": "4dfea911-23d4-4762-84cd-3b2ff037400a",
+                "orderType": "None"
+              },
+              {
+                "subIndex": 0,
+                "marketTabId": 44,
+                "displayType": "OverUnder",
+                "marketGroupId": "ad05eee8-9651-4017-8ddd-83befb4a9fad",
+                "marketGroupItemId": "37f13a8a-3657-4383-969f-b12d89c96675",
+                "orderType": "None"
+              }
+            ]
+          },
+          "attr": "6.5",
+          "spread": 0.13,
+          "balanced": 1,
+          "isMain": false,
+          "templateCategory": {
+            "id": 243,
+            "name": {
+              "value": "Totals"
+            },
+            "category": "Gridable",
+            "dynamicCategories": [
+              "alttest",
+              "spreadtotals",
+              "totals",
+              "bbplus_test"
+            ]
+          },
+          "comboPrevention": "NoEventCombo",
+          "minCombo": 1,
+          "resultOrder": "Default",
+          "source": "V1",
+          "isBetBuilder": true,
+          "oddsKey": 104.56
+        }
+      ],
+      "games": [],
+      "participants": [
+        {
+          "participantId": 2582401,
+          "name": {
+            "value": "Atlanta Braves",
+            "short": "Braves"
+          },
+          "image": {
+            "logo": "6fc29441.svg",
+            "rotateJersey": false,
+            "logoColor": "002B5C",
+            "lightColor": "CE1141",
+            "darkColor": "002B5C",
+            "isParticipantProfile": true,
+            "headshot": "6fc29441.svg"
+          },
+          "options": [],
+          "source": "V1"
+        },
+        {
+          "participantId": 2582415,
+          "name": {
+            "value": "Milwaukee Brewers",
+            "short": "Brewers"
+          },
+          "image": {
+            "logo": "ddc354e8.svg",
+            "rotateJersey": false,
+            "logoColor": "002B5C",
+            "lightColor": "FEC524",
+            "darkColor": "002B5C",
+            "isParticipantProfile": true,
+            "headshot": "ddc354e8.svg"
+          },
+          "options": [],
+          "source": "V1"
+        },
+        {
+          "participantId": 2850482,
+          "name": {
+            "value": "Ozzie Albies (ATL)",
+            "short": "Ozzie Albies"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2850488,
+          "name": {
+            "value": "Ronald Acuna (Atl)",
+            "short": "Ronald Acuna"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2856563,
+          "name": {
+            "value": "Austin Riley (ATL)",
+            "short": "Austin Riley"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2870072,
+          "name": {
+            "value": "Charlie Morton (Atl)",
+            "short": "Charlie Morton"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2895717,
+          "name": {
+            "value": "Matt Olson (ATL)",
+            "short": "Matt Olson"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2896796,
+          "name": {
+            "value": "Orlando Arcia (ATL)",
+            "short": "Orlando Arcia"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2898021,
+          "name": {
+            "value": "Bryce Elder (Atl)",
+            "short": "Bryce Elder"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2902626,
+          "name": {
+            "value": "Michael Harris (ATL)",
+            "short": "Michael Harris"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2903192,
+          "name": {
+            "value": "Spencer Strider (Atl)",
+            "short": "Spencer Strider"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2923751,
+          "name": {
+            "value": "Sean Murphy (ATL)",
+            "short": "Sean Murphy"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2927635,
+          "name": {
+            "value": "Dylan Dodd (Atl)",
+            "short": "Dylan Dodd"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2930381,
+          "name": {
+            "value": "AJ Smith-Shawver (Atl)",
+            "short": "AJ Smith-Shawver"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2950514,
+          "name": {
+            "value": "David Fletcher (ATL)",
+            "short": "David Fletcher"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2950516,
+          "name": {
+            "value": "Chris Sale (ATL)",
+            "short": "Chris Sale"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2950967,
+          "name": {
+            "value": "Reynaldo Lopez (ATL)",
+            "short": "Reynaldo Lopez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2952647,
+          "name": {
+            "value": "J.P. Martinez (ATL)",
+            "short": "J.P. Martinez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2953093,
+          "name": {
+            "value": "Dylan Lee (ATL)",
+            "short": "Dylan Lee"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2953114,
+          "name": {
+            "value": "Luke Williams (ATL)",
+            "short": "Luke Williams"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2954752,
+          "name": {
+            "value": "Hurston Waldrep (ATL)",
+            "short": "Hurston Waldrep"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2956017,
+          "name": {
+            "value": "Spencer Schwellenbach (ATL)",
+            "short": "Spencer Schwellenbach"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2956404,
+          "name": {
+            "value": "Brian Anderson (ATL)",
+            "short": "Brian Anderson"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2957366,
+          "name": {
+            "value": "Grant Holmes (ATL)",
+            "short": "Grant Holmes"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2959550,
+          "name": {
+            "value": "Nacho Alvarez (ATL)",
+            "short": "Nacho Alvarez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2959599,
+          "name": {
+            "value": "Whit Merrifield (ATL)",
+            "short": "Whit Merrifield"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2961386,
+          "name": {
+            "value": "Parker Dunshee (ATL)",
+            "short": "Parker Dunshee"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2966326,
+          "name": {
+            "value": "John Brebbia (ATL)",
+            "short": "John Brebbia"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2974914,
+          "name": {
+            "value": "Davis Daniel (ATL)",
+            "short": "Davis Daniel"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2976058,
+          "name": {
+            "value": "Drake Baldwin (ATL)",
+            "short": "Drake Baldwin"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2976132,
+          "name": {
+            "value": "Jurickson Profar (ATL)",
+            "short": "Jurickson Profar"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2979933,
+          "name": {
+            "value": "Carlos D. Rodrguez (ATL)",
+            "short": "Carlos D. Rodrguez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2979935,
+          "name": {
+            "value": "Amos Willingham (ATL)",
+            "short": "Amos Willingham"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2979937,
+          "name": {
+            "value": "Rolddy Munoz (ATL)",
+            "short": "Rolddy Munoz"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2979938,
+          "name": {
+            "value": "Domingo Gonzalez (ATL)",
+            "short": "Domingo Gonzalez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2980039,
+          "name": {
+            "value": "Nick Allen (ATL)",
+            "short": "Nick Allen"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2980468,
+          "name": {
+            "value": "Alex Verdugo (ATL)",
+            "short": "Alex Verdugo"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2982814,
+          "name": {
+            "value": "Scott Blewett (ATL)",
+            "short": "Scott Blewett"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2982823,
+          "name": {
+            "value": "Michael Petersen (ATL)",
+            "short": "Michael Petersen"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2984234,
+          "name": {
+            "value": "Austin Cox (ATL)",
+            "short": "Austin Cox"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2986649,
+          "name": {
+            "value": "Jose Azocar (ATL)",
+            "short": "Jose Azocar"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2987052,
+          "name": {
+            "value": "Craig Kimbrel (ATL)",
+            "short": "C. Kimbrel"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2987424,
+          "name": {
+            "value": "Jose Ruiz (ATL)",
+            "short": "J. Ruiz"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2988801,
+          "name": {
+            "value": "Didier Fuentes (ATL)",
+            "short": "Didier Fuentes"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2991046,
+          "name": {
+            "value": "Hunter Stratton (ATL)",
+            "short": "H. Stratton"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2992070,
+          "name": {
+            "value": "Wander Suero (ATL)",
+            "short": "W. Suero"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2992072,
+          "name": {
+            "value": "Joey Wentz (ATL)",
+            "short": "Joey Wentz"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2992682,
+          "name": {
+            "value": "Dane Dunning (ATL)",
+            "short": "D. Dunning"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2992902,
+          "name": {
+            "value": "Sandy Leon (ATL)",
+            "short": "Sandy Leon"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2993413,
+          "name": {
+            "value": "Erick Fedde (ATL)",
+            "short": "Erick Fedde"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2993931,
+          "name": {
+            "value": "Carlos Carrasco (ATL)",
+            "short": "Carlos Carrasco"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2994237,
+          "name": {
+            "value": "Tyler Kinley (ATL)",
+            "short": "T. Kinley"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2994827,
+          "name": {
+            "value": "Vidal Brujan (ATL)",
+            "short": "Vidal Brujan"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2996415,
+          "name": {
+            "value": "Cal Quantrill (ATL)",
+            "short": "C. Quantrill"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2998161,
+          "name": {
+            "value": "Ha-Seong Kim (ATL)",
+            "short": "Ha-Seong Kim"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3000308,
+          "name": {
+            "value": "Brett Wisely (ATL)",
+            "short": "Brett Wisely"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3000431,
+          "name": {
+            "value": "Jhancarlos Lara (ATL)",
+            "short": "Jhancarlos Lara"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3000435,
+          "name": {
+            "value": "Chuckie Robinson (ATL)",
+            "short": "Chuckie Robinson"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3007966,
+          "name": {
+            "value": "Mauricio Dubon (ATL)",
+            "short": "Mauricio Dubon"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3008222,
+          "name": {
+            "value": "Joel Payamps (ATL)",
+            "short": "Joel Payamps"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3009110,
+          "name": {
+            "value": "Danny Young (ATL)",
+            "short": "Danny Young"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3009695,
+          "name": {
+            "value": "Mike Yastrzemski (ATL)",
+            "short": "Mike Yastrzemski"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3009735,
+          "name": {
+            "value": "Robert Suarez (ATL)",
+            "short": "Robert Suarez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3010144,
+          "name": {
+            "value": "Ian Hamilton (ATL)",
+            "short": "Ian Hamilton"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3013718,
+          "name": {
+            "value": "Walt Weiss (ATL)",
+            "short": "Walt Weiss"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3013838,
+          "name": {
+            "value": "Jonah Heim (ATL)",
+            "short": "Jonah Heim"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3016325,
+          "name": {
+            "value": "Dominic Smith (ATL)",
+            "short": "Dominic Smith"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3018272,
+          "name": {
+            "value": "Kyle Farmer (ATL)",
+            "short": "Kyle Farmer"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3018273,
+          "name": {
+            "value": "Osvaldo Bido (ATL)",
+            "short": "Osvaldo Bido"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3018715,
+          "name": {
+            "value": "Martin Perez (ATL)",
+            "short": "Martin Perez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3020624,
+          "name": {
+            "value": "JR Ritchie (ATL)",
+            "short": "JR Ritchie"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3022449,
+          "name": {
+            "value": "Jim Jarvis (ATL)",
+            "short": "Jim Jarvis"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3023822,
+          "name": {
+            "value": "Maverick Handley (ATL)",
+            "short": "Maverick Handley"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3025078,
+          "name": {
+            "value": "Austin Wynns (ATL)",
+            "short": "Austin Wynns"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3025079,
+          "name": {
+            "value": "DaShawn Keirsey (ATL)",
+            "short": "DaShawn Keirsey"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3026314,
+          "name": {
+            "value": "Jair Camargo (ATL)",
+            "short": "Jair Camargo"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3027076,
+          "name": {
+            "value": "Carlos Santana (ATL)",
+            "short": "Carlos Santana"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3027723,
+          "name": {
+            "value": "Andrew McCutchen (ATL)",
+            "short": "Andrew McCutchen"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3027782,
+          "name": {
+            "value": "Owen Murphy (ATL)",
+            "short": "Owen Murphy"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3028334,
+          "name": {
+            "value": "Brewer Hicklen (ATL)",
+            "short": "Brewer Hicklen"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029413,
+          "name": {
+            "value": "Elieser Hernandez (ATL)",
+            "short": "Elieser Hernandez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029684,
+          "name": {
+            "value": "Bailey Falter (ATL)",
+            "short": "Bailey Falter"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029685,
+          "name": {
+            "value": "Lane Thomas (ATL)",
+            "short": "Lane Thomas"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029736,
+          "name": {
+            "value": "Tyler Mahle (ATL)",
+            "short": "Tyler Mahle"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029808,
+          "name": {
+            "value": "Tyler Uberstine (ATL)",
+            "short": "Tyler Uberstine"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029882,
+          "name": {
+            "value": "Brent Suter (ATL)",
+            "short": "Brent Suter"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "6fc29441.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582401
+          },
+          "options": []
+        },
+        {
+          "participantId": 2850583,
+          "name": {
+            "value": "Brandon Woodruff (Mil)",
+            "short": "Brandon Woodruff"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2850593,
+          "name": {
+            "value": "Christian Yelich (MIL)",
+            "short": "Christian Yelich"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2868703,
+          "name": {
+            "value": "Luis Urias (Mil)",
+            "short": "Luis Urias"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2871130,
+          "name": {
+            "value": "Pablo Reyes (Mil)",
+            "short": "P. Reyes"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2896688,
+          "name": {
+            "value": "Hunter Renfroe (Mil)",
+            "short": "Hunter Renfroe"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2898020,
+          "name": {
+            "value": "Aaron Ashby (Mil)",
+            "short": "Aaron Ashby"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2911358,
+          "name": {
+            "value": "Garrett Mitchell (MIL)",
+            "short": "Garrett Mitchell"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2923715,
+          "name": {
+            "value": "Blake Perkins (Mil)",
+            "short": "Blake Perkins"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2923719,
+          "name": {
+            "value": "William Contreras (MIL)",
+            "short": "William Contreras"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2927185,
+          "name": {
+            "value": "Brice Turang (MIL)",
+            "short": "Brice Turang"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2929887,
+          "name": {
+            "value": "Andruw Monasterio (MIL)",
+            "short": "Andruw Monasterio"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2930005,
+          "name": {
+            "value": "Jonathan Singleton (Mil)",
+            "short": "Jonathan Singleton"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2933272,
+          "name": {
+            "value": "Sal Frelick (MIL)",
+            "short": "Sal Frelick"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2950467,
+          "name": {
+            "value": "Gary Sanchez (MIL)",
+            "short": "Gary Sanchez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2950471,
+          "name": {
+            "value": "Joey Ortiz (MIL)",
+            "short": "Joey Ortiz"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2950472,
+          "name": {
+            "value": "DL Hall (MIL)",
+            "short": "DL Hall"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2950473,
+          "name": {
+            "value": "Jackson Chourio (MIL)",
+            "short": "Jackson Chourio"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2951016,
+          "name": {
+            "value": "Jake Bauers (MIL)",
+            "short": "Jake Bauers"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2951017,
+          "name": {
+            "value": "Trevor Megill (MIL)",
+            "short": "Trevor Megill"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2952649,
+          "name": {
+            "value": "Vinny Capra (MIL)",
+            "short": "Vinny Capra"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2953375,
+          "name": {
+            "value": "Jeferson Quero (MIL)",
+            "short": "Jeferson Quero"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2953972,
+          "name": {
+            "value": "Tyler Black (MIL)",
+            "short": "Tyler Black"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2954536,
+          "name": {
+            "value": "Robert Gasser (MIL)",
+            "short": "Robert Gasser"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2954666,
+          "name": {
+            "value": "Jacob Misiorowski (MIL)",
+            "short": "Jacob Misiorowski"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2955549,
+          "name": {
+            "value": "Jared Koenig (MIL)",
+            "short": "Jared Koenig"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2955804,
+          "name": {
+            "value": "Chad Patrick (MIL)",
+            "short": "Chad Patrick"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2956679,
+          "name": {
+            "value": "Carlos Rodriguez (MIL)",
+            "short": "Carlos Rodriguez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2958327,
+          "name": {
+            "value": "Rob Zastryzny (MIL)",
+            "short": "Rob Zastryzny"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2958686,
+          "name": {
+            "value": "Aaron Civale (MIL)",
+            "short": "Aaron Civale"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2966321,
+          "name": {
+            "value": "Isaac Collins (MIL)",
+            "short": "Isaac Collins"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2974014,
+          "name": {
+            "value": "Nestor Cortes (MIL)",
+            "short": "Nestor Cortes"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2974389,
+          "name": {
+            "value": "Caleb Durbin (MIL)",
+            "short": "Caleb Durbin"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2975225,
+          "name": {
+            "value": "Grant Anderson (MIL)",
+            "short": "Grant Anderson"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2976070,
+          "name": {
+            "value": "Mike Boeve (MIL)",
+            "short": "Mike Boeve"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2977651,
+          "name": {
+            "value": "Tyler Alexander (MIL)",
+            "short": "Tyler Alexander"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2979780,
+          "name": {
+            "value": "Logan Henderson (MIL)",
+            "short": "Logan Henderson"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2979781,
+          "name": {
+            "value": "Connor Thomas (MIL)",
+            "short": "Connor Thomas"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2980032,
+          "name": {
+            "value": "Elvin Rodriguez (MIL)",
+            "short": "Elvin Rodriguez"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2981843,
+          "name": {
+            "value": "Quinn Priester (MIL)",
+            "short": "Quinn Priester"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2985153,
+          "name": {
+            "value": "Eddie Rosario (MIL)",
+            "short": "E. Rosario"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2985373,
+          "name": {
+            "value": "Easton McGee (MIL)",
+            "short": "E. McGee"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2987275,
+          "name": {
+            "value": "Drew Avans (MIL)",
+            "short": "D. Avans"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2988270,
+          "name": {
+            "value": "Andrew Vaughn (MIL)",
+            "short": "Andrew Vaughn"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2990799,
+          "name": {
+            "value": "Anthony Seigler (MIL)",
+            "short": "Anthony Seigler"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2991820,
+          "name": {
+            "value": "Steward Berroa (MIL)",
+            "short": "Steward Berroa"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2994040,
+          "name": {
+            "value": "Brandon Lockridge (MIL)",
+            "short": "Brandon Lockridge"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2994981,
+          "name": {
+            "value": "Julian Merryweather (MIL)",
+            "short": "J. Merryweather"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3009740,
+          "name": {
+            "value": "Akil Baddoo (MIL)",
+            "short": "Akil Baddoo"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3009967,
+          "name": {
+            "value": "Angel Zerpa (MIL)",
+            "short": "Angel Zerpa"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3011828,
+          "name": {
+            "value": "Brandon Sproat (MIL)",
+            "short": "Brandon Sproat"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3011829,
+          "name": {
+            "value": "Jett Williams (MIL)",
+            "short": "Jett Williams"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3013506,
+          "name": {
+            "value": "Kyle Harrison (MIL)",
+            "short": "Kyle Harrison"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3013507,
+          "name": {
+            "value": "David Hamilton (MIL)",
+            "short": "David Hamilton"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3013508,
+          "name": {
+            "value": "Shane Drohan (MIL)",
+            "short": "Shane Drohan"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3013716,
+          "name": {
+            "value": "Pat Murphy (MIL)",
+            "short": "Pat Murphy"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3014569,
+          "name": {
+            "value": "Luis Rengifo (MIL)",
+            "short": "Luis Rengifo"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3018714,
+          "name": {
+            "value": "Luis Matos (MIL)",
+            "short": "Luis Matos"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3024424,
+          "name": {
+            "value": "Coleman Crow (MIL)",
+            "short": "Coleman Crow"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3025884,
+          "name": {
+            "value": "Cooper Pratt (MIL)",
+            "short": "Cooper Pratt"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3025889,
+          "name": {
+            "value": "Craig Yoho (MIL)",
+            "short": "Craig Yoho"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3027714,
+          "name": {
+            "value": "Drew Rom (MIL)",
+            "short": "Drew Rom"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3027856,
+          "name": {
+            "value": "Luis Lara (MIL)",
+            "short": "Luis Lara"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3028344,
+          "name": {
+            "value": "Braden Shewmake (MIL)",
+            "short": "Braden Shewmake"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3028565,
+          "name": {
+            "value": "Lance McCullers Jr. (MIL)",
+            "short": "Lance McCullers Jr."
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3028566,
+          "name": {
+            "value": "Colton Gordon (MIL)",
+            "short": "Colton Gordon"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029410,
+          "name": {
+            "value": "Garrett Stallings (MIL)",
+            "short": "Garrett Stallings"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029692,
+          "name": {
+            "value": "Bo Naylor (MIL)",
+            "short": "Bo Naylor"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029788,
+          "name": {
+            "value": "Dustin May (MIL)",
+            "short": "Dustin May"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029791,
+          "name": {
+            "value": "JoJo Romero (MIL)",
+            "short": "JoJo Romero"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3029828,
+          "name": {
+            "value": "Antonio Senzatela (MIL)",
+            "short": "Antonio Senzatela"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3030172,
+          "name": {
+            "value": "Ji-Hwan Bae (MIL)",
+            "short": "Ji-Hwan Bae"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3030174,
+          "name": {
+            "value": "Lyon Richardson (MIL)",
+            "short": "Lyon Richardson"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 2923716,
+          "name": {
+            "value": "Bryse Wilson (Mil)",
+            "short": "Bryse Wilson"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        },
+        {
+          "participantId": 3030644,
+          "name": {
+            "value": "Jonathan Ornelas (MIL)",
+            "short": "Jonathan Ornelas"
+          },
+          "image": {
+            "rotateJersey": false,
+            "isParticipantProfile": false,
+            "headshot": "ddc354e8.svg"
+          },
+          "properties": {
+            "type": "Player",
+            "team": 2582415
+          },
+          "options": []
+        }
+      ],
+      "id": "19865345",
+      "name": {
+        "value": "Atlanta Braves at Milwaukee Brewers"
+      },
+      "sourceId": 19865345,
+      "source": "V1",
+      "fixtureType": "Standard",
+      "context": "v1|en-us|19865345",
+      "addons": {
+        "betRadar": 63302893,
+        "statistics": true,
+        "videoStream": {
+          "provider": "Betradar",
+          "status": "Scheduled",
+          "providerStreamId": "32094603",
+          "providerEventId": "7013223",
+          "streamType": "Mobile"
+        },
+        "participantDividend": {},
+        "liveMatchTracker": {
+          "sportradarId": 63302893,
+          "coverageLevel": 3
+        },
+        "fixtureStatistics": {
+          "startingPitcher": {
+            "homeTeam": {
+              "firstName": "Jacob",
+              "lastName": "Misiorowski",
+              "preferredName": "Jacob"
+            },
+            "awayTeam": {
+              "firstName": "Christopher",
+              "lastName": "Sale",
+              "preferredName": "Chris"
+            }
+          }
+        },
+        "angstromBetBuilderId": "76931246-5b15-442c-bfbf-86c23f737ba0",
+        "betBuilderProvider": "Angstrom",
+        "betBuilderId": "76931246-5b15-442c-bfbf-86c23f737ba0",
+        "betBuilderTradingV2FixtureId": "2:7827988"
+      },
+      "stage": "PreMatch",
+      "groupId": 4411816,
+      "liveType": "NotSet",
+      "liveAlert": true,
+      "startDate": "2026-08-21T20:10:00Z",
+      "cutOffDate": "2026-08-21T20:10:00Z",
+      "sport": {
+        "type": "Sport",
+        "id": 23,
+        "name": {
+          "value": "Baseball",
+          "sign": "oKRqpw=="
+        }
+      },
+      "competition": {
+        "parentLeagueId": 75,
+        "statistics": true,
+        "sportId": 23,
+        "compoundId": "1:75",
+        "imageProfile": {
+          "logo": "78380d24.svg",
+          "logoColor": "C4CED3"
+        },
+        "type": "Competition",
+        "id": 75,
+        "parentId": 9,
+        "name": {
+          "value": "MLB",
+          "sign": "ZfCOyA=="
+        }
+      },
+      "region": {
+        "code": "N-A",
+        "sportId": 23,
+        "type": "Region",
+        "id": 9,
+        "parentId": 23,
+        "name": {
+          "value": "USA",
+          "sign": "ULdUtw=="
+        }
+      },
+      "viewType": "American",
+      "isOpenForBetting": true,
+      "isVirtual": false,
+      "taggedLocations": [],
+      "totalMarketsCount": 4,
+      "conferences": [
+        {
+          "competitionId": "1:75",
+          "type": "Conference",
+          "id": 1,
+          "parentId": 23,
+          "name": {
+            "value": "America East Conference"
+          }
+        }
+      ],
+      "marketGroups": {
+        "outrightMarketGroupIds": [],
+        "specialMarketGroupIds": [],
+        "type": "MarketGroups",
+        "id": 0
+      },
+      "priceBoostCount": 0,
+      "tv2RelatedFixtureId": "2:7827988",
+      "linkedTv1EventIds": [],
+      "hybridFixtureData": {
+        "fixtureId": "2:7827988",
+        "status": "Unavailable"
+      },
+      "contexts": [
+        "v1|en-us|19865345"
+      ],
+      "playerStats": [],
+      "isPlannedInPlay": false
+    },
+    "splitFixtures": [],
+    "groupingVersion": "mg_Qw7Q9ndTfY85Q4Ub0Z+CGmGx6IM=",
+    "bettingInsights": {
+      "marketOptions": [
+        {
+          "marketId": 1549408904,
+          "options": [
+            {
+              "optionId": 2271527466,
+              "percentageBets": 0.83
+            },
+            {
+              "optionId": 2271527465,
+              "percentageBets": 0.17
+            }
+          ]
+        },
+        {
+          "marketId": 1549408915,
+          "options": [
+            {
+              "optionId": 2271527487,
+              "percentageBets": 0.51
+            },
+            {
+              "optionId": 2271527488,
+              "percentageBets": 0.49
+            }
+          ]
+        },
+        {
+          "marketId": 1549408906,
+          "options": [
+            {
+              "optionId": 2271527470,
+              "percentageBets": 0.52
+            },
+            {
+              "optionId": 2271527469,
+              "percentageBets": 0.48
+            }
+          ]
+        }
+      ]
+    },
+    "availableMarketGroupIds": [
+      "5732dc0b-cb8b-4c07-9581-fcd925ba9f84",
+      "f751b25d-7939-4a8f-b9ea-06ac6def12f1",
+      "ff7428e5-0871-4d8e-918b-b56668649875",
+      "ad05eee8-9651-4017-8ddd-83befb4a9fad"
+    ]
+  }
+}

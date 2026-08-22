@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: sportsbook-arb-finder
+Version: 0.1.0
+Requires-Dist: websocket-client
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: pytest
