@@ -448,3 +448,120 @@ Use these to:
 2. If you find any frame that doesn't decode cleanly with the logic described in the .md docs,
    flag it explicitly in your response rather than silently swallowing the error — that's a sign
    the doc's spec has an edge case it didn't capture.
+
+
+## Claude Continuation Prompt Response
+
+CONTEXT: sportsbook-arb-finder project — continuing work on parsers/ and normalize/ only
+
+## Project summary
+Python arbitrage finder that connects to Chrome via CDP (remote debugging port 19222) using
+websocket-client, passively eavesdrops on WebSocket frames and long-poll HTTP responses from
+5 sportsbooks (DraftKings, FanDuel, BetMGM, Betano, Caesars), and normalizes odds into a common
+format for cross-book arbitrage detection. The cdp/ folder (discovery.py, client.py,
+session_manager.py) is COMPLETE and verified — do not touch it. This pass is scoped strictly to
+parsers/ and normalize/.
+
+I've attached: (1) the 5 original working prototype scripts and 6 markdown protocol docs that are
+the ground-truth source of behavior, and (2) the current state of every file in parsers/ and
+normalize/. Read every doc fully before writing code — they contain hard-won gotchas that are
+easy to silently regress.
+
+## BookParser contract (already finalized in base.py — do not change)
+    class BookParser(ABC):
+        book_name: str
+        @abstractmethod def relevant_http_url(self, url: str) -> bool
+        def relevant_ws_url(self, url: str) -> bool  # default True, override only if multi-socket
+        @abstractmethod def handle_http_body(self, url: str, body: str) -> list[OddsUpdate]
+        @abstractmethod def handle_ws_frame(self, payload: str) -> list[OddsUpdate]
+
+## STATUS BY FILE — read this before touching anything
+
+### ✅ Correct, don't rewrite (light polish only if you spot something)
+- parsers/draftkings.py — base64 sanitize/repad, msgpack unpack, shape-matching heuristic,
+  None-tolerant marketId, full core-ID regex fallback chain — all correctly ported.
+- parsers/fanduel.py — correct branch between reference-dict body vs. live-odds body, recursive
+  marketId+runnerDetails search (no hardcoded paths, as the doc requires), correct odds fallback
+  chain (americanDisplayOdds → trueOdds). handle_ws_frame correctly returns [] (long-poll only book).
+- parsers/betmgm.py — correct \x1e SignalR split BEFORE json.loads, both GameUpdate and
+  OptionMarketUpdate branches implemented correctly. NOTE: silently drops updates when
+  fixture_name == "Unknown Game" instead of emitting — a deliberate-looking deviation from the
+  prototype worth a second look, not necessarily wrong.
+- normalize/odds_math.py — implied_prob, american_to_decimal, decimal_to_american all verified
+  correct against known odds pairs.
+- normalize/models.py, normalize/team_aliases.py — fine as-is, no changes needed.
+
+### ❌ BROKEN — needs full rewrite from prototype + doc
+
+**parsers/betano.py** — does not implement the real protocol at all:
+- relevant_http_url checks wrong/fabricated URL substrings ("api/rs/sport", "api/rs/events").
+  Real endpoint (see betano.md): regex-matched
+  `https://www.betano.ca/danae-webapi/api/live/overview/{id}?isInit=false&includeVirtuals=true`
+- handle_http_body assumes wrong reference-dict schema (hunts for id/shortName/markets keys via
+  recursion). Real schema is 3 flat dicts (events/markets/selections) keyed by ID — see
+  betano_scraper.py's on_message handler for the exact parse.
+- handle_ws_frame is missing the ENTIRE base64 → LZ4 frame decompress → UTF-8 → JSON pipeline
+  that betano.md marks CRITICAL (with working example code in the doc, section "Decoding the
+  Compressed Payload"). No lz4 import exists in the file. Currently just splits on \x1e and looks
+  for a fictional "UpdateSelectionOdds" message type that appears nowhere in the doc or prototype.
+- Missing the dual-scenario handling from betano.md §4: `selectionChanges` (odds-only changes,
+  resolve via reference dict) vs. `market` (a full new market block sent inline on handicap
+  moves — must be merged into the parser's reference_data as a side effect of parsing).
+- Add `lz4` to requirements.txt.
+
+**parsers/caesars.py + parsers/diffusion_codec.py** — most damaged module, needs rebuild against
+diffusion_protocol_analysis.md sections 3 (delta grammar), 5 (CBOR schemas), 6 (/v4/home structure):
+- relevant_http_url checks fabricated endpoint ("api/v1/events"/"api/v1/markets"). Real endpoint
+  is `/v4/home` (see caesars.md).
+- handle_http_body assumes wrong reference-dict schema (flat payload["events"]/["markets"]).
+  Real structure: data.eventDisplayGroups[].events[].keyMarketGroups[].markets[].selections[] —
+  note keyMarketGroups is explicitly a LIST not a dict, per the doc's repeated warning (this
+  warning exists because it's a documented trap).
+- diffusion_codec.py's decode_diffusion_message only branches on 0x84/0x04 (full state) — NO
+  0x05 (delta) handling exists anywhere. Per the doc, live odds flow almost entirely through
+  Type 5 deltas after initial subscribe/bind (131/131 in the corpus, starting mid-capture at
+  ws_304) — without this, odds go silent after each selection's first snapshot.
+- diffusion_codec.py never extracts/uses the 3-byte topic alias at all — the entire alias-boundary
+  detection algorithm from doc §8.1 (brute-force CBOR offset search for 0x04 uncompressed, zlib
+  magic-byte scan for 0x84 compressed) is unimplemented. AliasStateStore is instantiated and
+  passed around but its methods are never called from decode_diffusion_message — dead code.
+- AliasStateStore.update_cbor_bytes APPENDS new bytes instead of REPLACING the buffer. Per doc
+  §8.2, delta application must produce a new buffer that becomes the new stored state — append-
+  only accumulation is wrong even once wired up.
+- _extract_cbor_from_payload accepts the first CBOR-decodable offset without verifying it
+  consumes ALL remaining bytes — doc §8.1/§3.4 are explicit that "consumes exactly all remaining
+  bytes" is the correctness check that makes offset brute-forcing reliable.
+- caesars.py's _find_odds matches on invented field names ("odds", "p", "o") that appear nowhere
+  in the doc's CBOR schemas (§5.1-5.3 only define price: {a, d, f}). Also: `odds = item.get("price", ...)`
+  assigns the ENTIRE {a,d,f} dict to odds instead of price["a"] — float(odds) on a dict raises
+  TypeError, silently caught, so every record is currently dropped even if everything above were
+  fixed. This is the most severe individual bug — fix it even if you fix nothing else here.
+- relevant_ws_url is already correct (`"/diffusion?ty=WB" in url`) — don't touch, it was verified
+  in a prior review pass against caesars.md's socket URL.
+
+### ⚠️ Cross-cutting concern, all 5 parsers
+None of the prototypes split event names into home_team/away_team (they only ever printed the
+full name string). Every parser's home/away split logic (" @ ", " vs ", " - ", " | " heuristics)
+was invented by the prior implementation pass to satisfy the OddsUpdate dataclass shape — it is
+NOT verified against real name strings from any book, especially Caesars/Betano where no example
+name format appears in the docs at all. If real raw frame/reference-dict samples are available,
+validate against them. Otherwise, at minimum flag this as an assumption in a code comment
+per-parser rather than presenting it as settled.
+
+## Priority order for this pass
+1. diffusion_codec.py + caesars.py — non-functional end to end, highest-value fix
+2. betano.py — non-functional, LZ4 pipeline and correct URL/schema entirely missing
+3. Verify/tighten the home/away name-splitting heuristics across all 5 parsers
+4. Add missing unit test coverage: tests/test_parsers/ has none of the tricky logic tested yet —
+   specifically the Caesars delta apply_delta grammar (use the WORKED EXAMPLES in
+   diffusion_protocol_analysis.md §3.3 as literal test cases — they give exact byte-level
+   input/output you can assert against), DraftKings core-ID fallback (already correct, but
+   untested), and Betano's dual selectionChanges/market scenarios.
+
+## Ground rules (carried over from earlier scoping)
+- Do not deduplicate per-book binary/decode logic into a shared abstraction — each book's format
+  is different enough that a shared decoder becomes an if/elif in disguise.
+- Preserve every explicit gotcha from the .md docs as an inline comment citing the doc section
+  where it's handled (e.g. `# see draftkings.md §4 — core-ID fallback`) — this convention is
+  already used correctly in draftkings.py, match it elsewhere.
+- Do not touch cdp/, engine/, alerts/, ui/, or main.py in this pass.

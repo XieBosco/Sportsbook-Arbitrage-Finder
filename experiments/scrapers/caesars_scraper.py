@@ -1,5 +1,5 @@
 """
-caesars_scraper.py – Live Caesars Sportsbook odds scraper via CDP.
+caesars_scraper.py - Live Caesars Sportsbook odds scraper via CDP.
 
 Passively intercepts Diffusion WebSocket traffic from an already-running
 Chrome instance using Chrome DevTools Protocol (CDP).  Decodes binary

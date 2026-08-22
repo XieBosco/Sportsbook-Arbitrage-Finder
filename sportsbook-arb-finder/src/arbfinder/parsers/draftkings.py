@@ -1,18 +1,222 @@
 """DraftKings parser."""
-from arbfinder.parsers.base import BookParser
+
+import base64
+import json
+import logging
+import re
+from datetime import datetime
+
+import msgpack
+
 from arbfinder.normalize.models import OddsUpdate
+from arbfinder.parsers._helpers import clean_american_odds, split_fixture_name
+from arbfinder.parsers.base import BookParser
 
 __all__ = ["DraftKingsParser"]
+
+logger = logging.getLogger(__name__)
+
 
 class DraftKingsParser(BookParser):
     """Parser for DraftKings."""
 
     book_name: str = "DraftKings"
 
-    def can_handle(self, raw: str) -> bool:
-        """Determine if this parser can handle the raw CDP message."""
-        pass
+    def __init__(self):
+        # Global state to store reference data
+        self.reference_data = {
+            "events": {},  # eventId -> event name
+            "markets": {},  # marketId -> {eventId, name}
+            "selections": {},  # selectionId -> marketId
+        }
 
-    def parse(self, raw: str) -> list[OddsUpdate]:
-        """Parse the raw CDP message into odds updates."""
-        pass
+    def relevant_http_url(self, url: str) -> bool:
+        """True if this HTTP response body should be fetched via getResponseBody."""
+        return "/v1/markets" in url and "api/sportscontent" in url
+
+    def handle_http_body(self, url: str, body: str) -> list[OddsUpdate]:
+        """Parse an HTTP response body."""
+        try:
+            payload = json.loads(body)
+        except json.JSONDecodeError:
+            return []
+
+        if "events" in payload and "markets" in payload and "selections" in payload:
+            # Parse Events (Games)
+            for ev in payload.get("events", []):
+                self.reference_data["events"][str(ev.get("id"))] = ev.get(
+                    "name", "Unknown Event"
+                )
+
+            # Parse Markets
+            for m in payload.get("markets", []):
+                m_id = str(m.get("id"))
+                self.reference_data["markets"][m_id] = {
+                    "eventId": str(m.get("eventId")),
+                    "name": m.get("name", "Unknown Market"),
+                }
+
+            # Parse Selections
+            for s in payload.get("selections", []):
+                s_id = str(s.get("id"))
+                self.reference_data["selections"][s_id] = str(s.get("marketId"))
+
+        return []
+
+    def _decode_payload(self, b64_payload: str) -> list:
+        # Clean the string
+        cleaned = re.sub(r"[^a-zA-Z0-9+/=]", "", b64_payload)
+        # Add padding if necessary
+        cleaned += "=" * ((4 - len(cleaned) % 4) % 4)
+
+        objects = []
+        try:
+            raw_bytes = base64.b64decode(cleaned)
+            unpacker = msgpack.Unpacker(strict_map_key=False)
+            unpacker.feed(raw_bytes)
+            for obj in unpacker:
+                objects.append(obj)
+        except Exception:
+            pass
+        return objects
+
+    def _find_outcomes(self, obj: object) -> list:
+        outcomes = []
+        if isinstance(obj, list):
+            # Check if this array matches the known outcome signature
+            # [selectionId, selectionName, odds_array, ..., tags_array, marketId]
+            # Example len is usually >= 7
+            if (
+                len(obj) >= 7
+                and isinstance(obj[0], str)
+                and isinstance(obj[1], str)
+                and isinstance(obj[2], list)
+                and (
+                    isinstance(obj[-1], str) or obj[-1] is None
+                )  # see draftkings.md §3 - marketId can legitimately be None
+                and isinstance(obj[-2], list)
+            ):
+                outcomes.append(obj)
+
+            # Traverse recursively
+            for item in obj:
+                outcomes.extend(self._find_outcomes(item))
+
+        elif isinstance(obj, dict):
+            for k, v in obj.items():
+                outcomes.extend(self._find_outcomes(v))
+
+        return outcomes
+
+    # _clean_american_odds and _split_fixture_name extracted to parsers/_helpers.py
+
+    def handle_ws_frame(self, payload: str) -> list[OddsUpdate]:
+        """Parse a raw WebSocket frame payload."""
+        objects = self._decode_payload(payload)
+        outcomes = self._find_outcomes(objects)
+        updates = []
+
+        if not outcomes or not self.reference_data["events"]:
+            return updates
+
+        now = datetime.now()
+
+        for outcome in outcomes:
+            selection_id = str(outcome[0])
+            selection_name = str(outcome[1])
+            odds_array = outcome[2]
+
+            raw_odds = odds_array[0] if len(odds_array) > 0 else None
+            american_odds = clean_american_odds(raw_odds)
+            if american_odds is None:
+                continue
+
+            market_id = self.reference_data["selections"].get(selection_id, "")
+
+            # Some updates have the market_id as the last element of the outcome array!
+            if not market_id and len(outcome) > 0 and isinstance(outcome[-1], str):
+                market_id = str(outcome[-1])
+
+            market_meta = self.reference_data["markets"].get(market_id, {})
+            market_type = market_meta.get("name")
+            if not market_type:
+                if selection_id.startswith("0ML"):
+                    market_type = "Moneyline"
+                elif selection_id.startswith("0HC"):
+                    market_type = "Spread"
+                elif selection_id.startswith("0OU"):
+                    market_type = "Total"
+                else:
+                    tags = outcome[-2]
+                    market_type = str(tags[0]) if len(tags) > 0 else "UNKNOWN_MARKET"
+
+            event_id = market_meta.get("eventId", "")
+            event_name = self.reference_data["events"].get(event_id, "Unknown Game")
+
+            # see draftkings.md §4 — core-ID fallback
+            # HEURISTIC FALLBACK: If DraftKings created a new market/handicap on the fly,
+            # the ID won't be in our static dictionary.
+            # DraftKings IDs look like: 0OU85458301O850_1 (Prefix + CoreID + Handicap)
+            # We can extract the CoreID and find a sibling selection in our dictionary to get the game!
+            if event_name == "Unknown Game":
+                core_id_match = re.search(r"^0[A-Z]{2}(\d+)", selection_id)
+                if core_id_match:
+                    core_id = core_id_match.group(1)
+                    # Find any known selection with this core ID
+                    for known_sel_id, known_market_id in self.reference_data[
+                        "selections"
+                    ].items():
+                        if core_id in known_sel_id:
+                            fallback_meta = self.reference_data["markets"].get(
+                                known_market_id, {}
+                            )
+                            fallback_event_id = fallback_meta.get("eventId", "")
+                            if fallback_event_id in self.reference_data["events"]:
+                                event_name = self.reference_data["events"][
+                                    fallback_event_id
+                                ]
+                                event_id = fallback_event_id
+                                break
+
+                # If STILL unknown, try the string-matching heuristic for Spreads/Moneylines
+                if event_name == "Unknown Game":
+                    for known_id, known_game in self.reference_data["events"].items():
+                        clean_selection = (
+                            selection_name.replace("Over ", "")
+                            .replace("Under ", "")
+                            .strip()
+                        )
+                        if clean_selection and clean_selection in known_game:
+                            event_name = known_game
+                            event_id = known_id
+                            break
+
+            handicap_val = None
+            if market_type in [
+                "Spread",
+                "Total",
+                "Run Line",
+                "Total Runs",
+                "Point Spread",
+                "Total Points",
+            ]:
+                if len(outcome) > 4 and isinstance(outcome[4], (int, float)):
+                    handicap_val = float(outcome[4])
+
+            home_team, away_team = split_fixture_name(event_name)
+
+            updates.append(
+                OddsUpdate(
+                    book=self.book_name,
+                    event_id=event_id,
+                    home_team=home_team,
+                    away_team=away_team,
+                    market=market_type,
+                    selection=selection_name,
+                    line=handicap_val,
+                    price_american=american_odds,
+                    timestamp=now,
+                )
+            )
+
+        return updates
