@@ -1,0 +1,25 @@
+arbfinder/
+├── normalization/
+│   ├── __init__.py
+│   ├── schema.py                # NormalizedOddsUpdate + related dataclasses
+│   ├── normalizer.py            # dispatches OddsUpdate -> per-book Normalizer
+│   ├── base_normalizer.py       # abstract Normalizer interface
+│   ├── book_normalizers/
+│   │   ├── bookA_normalizer.py
+│   │   ├── bookB_normalizer.py
+│   │   └── bookC_normalizer.py
+│   ├── maps/
+│   │   ├── team_aliases.json
+│   │   ├── league_map.json
+│   │   ├── market_type_map.json
+│   │   └── selection_map.json   # "Over"/"O"/"over_2_5" -> canonical "over"
+│   └── unresolved_log.py        # records names normalizer couldn't resolve
+│
+└── matching/
+    ├── __init__.py
+    ├── bucket.py                 # Bucket key definition + Bucket data structure
+    ├── bucket_store.py           # in-memory index: bucket_key -> Bucket
+    ├── matcher.py                # NormalizedOddsUpdate -> bucket assignment
+    ├── time_resolver.py          # start-time tolerance / clustering logic
+    ├── team_resolver.py          # fallback fuzzy resolution for unmapped teams
+    └── output.py                 # MatchedSelection dataclass — what scanner consumes

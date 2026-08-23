@@ -29,6 +29,25 @@ __all__ = ["CaesarsParser"]
 logger = logging.getLogger(__name__)
 
 
+def _extract_american_odds(price: dict) -> int | None:
+    """Extract American odds from a decoded selection's price dict.
+
+    Prefers the direct American odds field ("a"), falling back to converting
+    the decimal field ("d"). Returns None if neither is usable.
+    """
+    if "a" in price and price["a"] is not None:
+        try:
+            return int(price["a"])
+        except (ValueError, TypeError):
+            return None
+    if "d" in price and price["d"] is not None:
+        try:
+            return decimal_to_american(float(price["d"]))
+        except (ValueError, TypeError):
+            return None
+    return None
+
+
 class CaesarsParser(BookParser):
     """Parser for Caesars Sportsbook."""
 
@@ -87,36 +106,42 @@ class CaesarsParser(BookParser):
             for event in edg.get("events", []):
                 if not isinstance(event, dict):
                     continue
-                event_id = str(event.get("id", ""))
-                event_name = event.get("name", "").replace("|", "").strip()
-                self.reference_data["events"][event_id] = {"name": event_name}
-
-                for group in event.get("keyMarketGroups", []):
-                    if not isinstance(group, dict):
-                        continue
-                    for market in group.get("markets", []):
-                        if not isinstance(market, dict):
-                            continue
-                        market_id = str(market.get("id", ""))
-                        market_name = market.get("name", "").replace("|", "").strip()
-                        market_line = market.get("line", None)
-                        self.reference_data["markets"][market_id] = {
-                            "name": market_name,
-                            "handicap": market_line,
-                            "event_id": event_id,
-                        }
-
-                        for sel in market.get("selections", []):
-                            if not isinstance(sel, dict):
-                                continue
-                            sel_id = str(sel.get("id", ""))
-                            sel_name = sel.get("name", "").replace("|", "").strip()
-                            self.reference_data["selections"][sel_id] = {
-                                "name": sel_name,
-                                "market_id": market_id,
-                            }
+                self._register_event(event)
 
         return []
+
+    def _register_event(self, event: dict) -> None:
+        event_id = str(event.get("id", ""))
+        event_name = event.get("name", "").replace("|", "").strip()
+        self.reference_data["events"][event_id] = {"name": event_name}
+
+        for group in event.get("keyMarketGroups", []):
+            if not isinstance(group, dict):
+                continue
+            for market in group.get("markets", []):
+                if not isinstance(market, dict):
+                    continue
+                self._register_market(market, event_id)
+
+    def _register_market(self, market: dict, event_id: str) -> None:
+        market_id = str(market.get("id", ""))
+        market_name = market.get("name", "").replace("|", "").strip()
+        market_line = market.get("line", None)
+        self.reference_data["markets"][market_id] = {
+            "name": market_name,
+            "handicap": market_line,
+            "event_id": event_id,
+        }
+
+        for sel in market.get("selections", []):
+            if not isinstance(sel, dict):
+                continue
+            sel_id = str(sel.get("id", ""))
+            sel_name = sel.get("name", "").replace("|", "").strip()
+            self.reference_data["selections"][sel_id] = {
+                "name": sel_name,
+                "market_id": market_id,
+            }
 
     def update_enrichment_line(
         self, market_uuid: str, new_line: float | int | None
@@ -138,18 +163,8 @@ class CaesarsParser(BookParser):
         if not isinstance(price, dict):
             return []
 
-        # American odds extraction: prefer "a" direct, fallback to converting decimal "d"
-        if "a" in price and price["a"] is not None:
-            try:
-                american_odds = int(price["a"])
-            except (ValueError, TypeError):
-                return []
-        elif "d" in price and price["d"] is not None:
-            try:
-                american_odds = decimal_to_american(float(price["d"]))
-            except (ValueError, TypeError):
-                return []
-        else:
+        american_odds = _extract_american_odds(price)
+        if american_odds is None:
             return []
 
         enr = self.reference_data["selections"].get(uuid, {})
@@ -165,7 +180,7 @@ class CaesarsParser(BookParser):
         if cbor_name and isinstance(cbor_name, str):
             cbor_name = cbor_name.replace("|", "").strip()
         sel_name = enr.get("name") or cbor_name or obj.get("id", uuid)
-        
+
         m_name = market_enr.get("name", "UNKNOWN_MARKET")
         ev_name = event_enr.get("name", "")
         ev_id = event_id
@@ -198,6 +213,27 @@ class CaesarsParser(BookParser):
             )
         ]
 
+    def _process_decoded_object(
+        self, alias_hex: str, obj: object, now: datetime
+    ) -> list[OddsUpdate]:
+        """Update alias/enrichment state from a freshly decoded CBOR object and,
+        if it's a selection, emit the corresponding OddsUpdate.
+
+        Shared by full-state frames (Type 4/0x84) and post-delta state (Type 5).
+        """
+        if isinstance(obj, dict) and "id" in obj:
+            self.store.set_uuid(alias_hex, obj["id"])
+
+        uuid = self.store.get_uuid(alias_hex) or alias_hex
+        obj_type = classify_object(obj) if isinstance(obj, dict) else "unknown"
+
+        if obj_type == "market" and isinstance(obj, dict) and "line" in obj:
+            self.update_enrichment_line(uuid, obj["line"])
+
+        if obj_type == "selection" and isinstance(obj, dict):
+            return self._build_odds_update(obj, uuid, now)
+        return []
+
     def _handle_full_state(
         self, alias_hex: str, cbor_bytes: bytes, now: datetime
     ) -> list[OddsUpdate]:
@@ -214,18 +250,30 @@ class CaesarsParser(BookParser):
             logger.debug("Caesars: failed to decode CBOR for alias %s", alias_hex)
             return []
 
-        if isinstance(obj, dict) and "id" in obj:
-            self.store.set_uuid(alias_hex, obj["id"])
+        return self._process_decoded_object(alias_hex, obj, now)
 
-        uuid = self.store.get_uuid(alias_hex) or alias_hex
-        obj_type = classify_object(obj) if isinstance(obj, dict) else "unknown"
+    def _handle_binary_delta(
+        self, alias_hex: str, delta_payload: bytes, now: datetime
+    ) -> list[OddsUpdate]:
+        """Handle a Type 0x05 binary delta frame: patch the stored CBOR state,
+        decode the result, and process it like a full-state update."""
+        if not self.store.contains(alias_hex):
+            # Mid-session attach: skip gracefully per prototype
+            return []
 
-        if obj_type == "market" and isinstance(obj, dict) and "line" in obj:
-            self.update_enrichment_line(uuid, obj["line"])
+        old_cbor = self.store.get(alias_hex)
+        try:
+            new_cbor = apply_binary_delta(old_cbor, delta_payload)
+            obj, end = decode_cbor_item(new_cbor, 0)
+            if not (isinstance(obj, dict) and end == len(new_cbor)):
+                return []
+        except Exception:
+            logger.debug("Caesars: failed to apply delta for alias %s", alias_hex)
+            return []
 
-        if obj_type == "selection" and isinstance(obj, dict):
-            return self._build_odds_update(obj, uuid, now)
-        return []
+        # Chained state replacement
+        self.store.set(alias_hex, new_cbor)
+        return self._process_decoded_object(alias_hex, obj, now)
 
     def handle_ws_frame(self, payload: str) -> list[OddsUpdate]:
         """Parse a raw Diffusion WebSocket frame payload."""
@@ -272,35 +320,7 @@ class CaesarsParser(BookParser):
             alias_hex, delta_payload = parse_type05(raw_bytes)
             if not alias_hex:
                 return []
-
-            if not self.store.contains(alias_hex):
-                # Mid-session attach: skip gracefully per prototype
-                return []
-
-            old_cbor = self.store.get(alias_hex)
-            try:
-                new_cbor = apply_binary_delta(old_cbor, delta_payload)
-                obj, end = decode_cbor_item(new_cbor, 0)
-                if not (isinstance(obj, dict) and end == len(new_cbor)):
-                    return []
-            except Exception:
-                logger.debug("Caesars: failed to apply delta for alias %s", alias_hex)
-                return []
-
-            # Chained state replacement
-            self.store.set(alias_hex, new_cbor)
-            if "id" in obj:
-                self.store.set_uuid(alias_hex, obj["id"])
-
-            uuid = self.store.get_uuid(alias_hex) or alias_hex
-            obj_type = classify_object(obj)
-
-            if obj_type == "market" and isinstance(obj, dict) and "line" in obj:
-                self.update_enrichment_line(uuid, obj["line"])
-
-            if obj_type == "selection":
-                return self._build_odds_update(obj, uuid, now)
-            return []
+            return self._handle_binary_delta(alias_hex, delta_payload, now)
 
         logger.debug("Caesars: unknown message type 0x%02x, skipping", msg_type)
         return []

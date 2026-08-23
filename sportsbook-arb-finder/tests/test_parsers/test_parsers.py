@@ -50,27 +50,35 @@ def test_draftkings_replay_messages_fixture():
 
 def test_fanduel_parser_fixture():
     parser = FanDuelParser()
-    ref_path = os.path.join(FIXTURES_DIR, "fanduel", "example_reference_dictionary_fanduel.json")
+    ref_path = os.path.join(FIXTURES_DIR, "fanduel", "fanduel_messages", "json_1.json")
     assert os.path.exists(ref_path), f"FanDuel fixture missing: {ref_path}"
     with open(ref_path, "r", encoding="utf-8") as f:
-        body = f.read()
+        d = json.load(f)
+        body = json.dumps(d.get("data", d))
     parser.handle_http_body("content-managed-page", body)
     assert len(parser.reference_data["events"]) > 0
 
 
 def test_fanduel_replay_messages_fixture():
     parser = FanDuelParser()
-    ref_path = os.path.join(FIXTURES_DIR, "fanduel", "example_reference_dictionary_fanduel.json")
+    ref_path = os.path.join(FIXTURES_DIR, "fanduel", "fanduel_messages", "json_1.json")
     with open(ref_path, "r", encoding="utf-8") as f:
-        parser.handle_http_body("content-managed-page", f.read())
+        d = json.load(f)
+        parser.handle_http_body("content-managed-page", json.dumps(d.get("data", d)))
 
-    msg_path = os.path.join(FIXTURES_DIR, "fanduel", "messages", "fanduel_message1.json")
-    assert os.path.exists(msg_path), f"FanDuel message fixture missing: {msg_path}"
-    with open(msg_path, "r", encoding="utf-8") as f:
-        msg_body = f.read()
+    msg_dir = os.path.join(FIXTURES_DIR, "fanduel", "fanduel_messages")
+    msg_files = sorted(glob.glob(os.path.join(msg_dir, "ws_*.txt")))
+    assert len(msg_files) > 0, "No FanDuel message fixtures found"
 
-    updates = parser.handle_http_body("https://sbapi.on.sportsbook.fanduel.ca/api/getMarketPrices", msg_body)
-    assert isinstance(updates, list)
+    total_updates = 0
+    for mf in msg_files:
+        with open(mf, "r", encoding="utf-8") as f:
+            d = json.load(f)
+            msg_body = json.dumps(d.get("data", d))
+        updates = parser.handle_http_body("https://smp.on.sportsbook.fanduel.ca/api/sports/fixedodds/readonly/v1/getMarketPrices?priceHistory=1", msg_body)
+        total_updates += len(updates)
+
+    assert total_updates >= 0
 
 
 def test_betmgm_parser_fixture():

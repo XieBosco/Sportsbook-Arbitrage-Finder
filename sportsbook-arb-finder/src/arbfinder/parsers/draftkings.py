@@ -16,6 +16,19 @@ __all__ = ["DraftKingsParser"]
 
 logger = logging.getLogger(__name__)
 
+# see draftkings.md §4 — core-ID fallback
+# DraftKings IDs look like: 0OU85458301O850_1 (Prefix + CoreID + Handicap)
+_CORE_ID_RE = re.compile(r"^0[A-Z]{2}(\d+)")
+
+_HANDICAP_MARKET_TYPES = {
+    "Spread",
+    "Total",
+    "Run Line",
+    "Total Runs",
+    "Point Spread",
+    "Total Points",
+}
+
 
 class DraftKingsParser(BookParser):
     """Parser for DraftKings."""
@@ -108,7 +121,75 @@ class DraftKingsParser(BookParser):
 
         return outcomes
 
-    # _clean_american_odds and _split_fixture_name extracted to parsers/_helpers.py
+    def _resolve_market_type(
+        self, market_meta: dict, selection_id: str, outcome: list
+    ) -> str:
+        """Resolve a human-readable market type, falling back to selection-ID
+        prefix conventions and finally the outcome's own tags."""
+        market_type = market_meta.get("name")
+        if market_type:
+            return market_type
+
+        if selection_id.startswith("0ML"):
+            return "Moneyline"
+        if selection_id.startswith("0HC"):
+            return "Spread"
+        if selection_id.startswith("0OU"):
+            return "Total"
+
+        tags = outcome[-2]
+        return str(tags[0]) if len(tags) > 0 else "UNKNOWN_MARKET"
+
+    def _resolve_event(
+        self, event_id: str, event_name: str, selection_id: str, selection_name: str
+    ) -> tuple[str, str]:
+        """Resolve (event_id, event_name) via fallback heuristics when the
+        static reference dictionary doesn't have a mapping for this selection.
+
+        HEURISTIC FALLBACK: If DraftKings created a new market/handicap on the fly,
+        the ID won't be in our static dictionary. We can extract the CoreID from the
+        selection ID and find a sibling selection in our dictionary to get the game,
+        or otherwise fall back to matching the selection name against known games.
+        """
+        if event_name != "Unknown Game":
+            return event_id, event_name
+
+        core_id_match = _CORE_ID_RE.search(selection_id)
+        if core_id_match:
+            core_id = core_id_match.group(1)
+            # Find any known selection with this core ID
+            for known_sel_id, known_market_id in self.reference_data[
+                "selections"
+            ].items():
+                if core_id in known_sel_id:
+                    fallback_meta = self.reference_data["markets"].get(
+                        known_market_id, {}
+                    )
+                    fallback_event_id = fallback_meta.get("eventId", "")
+                    if fallback_event_id in self.reference_data["events"]:
+                        event_id = fallback_event_id
+                        event_name = self.reference_data["events"][fallback_event_id]
+                        break
+
+        # If STILL unknown, try the string-matching heuristic for Spreads/Moneylines
+        if event_name == "Unknown Game":
+            for known_id, known_game in self.reference_data["events"].items():
+                clean_selection = (
+                    selection_name.replace("Over ", "").replace("Under ", "").strip()
+                )
+                if clean_selection and clean_selection in known_game:
+                    event_name = known_game
+                    event_id = known_id
+                    break
+
+        return event_id, event_name
+
+    @staticmethod
+    def _resolve_handicap(market_type: str, outcome: list) -> float | None:
+        if market_type in _HANDICAP_MARKET_TYPES:
+            if len(outcome) > 4 and isinstance(outcome[4], (int, float)):
+                return float(outcome[4])
+        return None
 
     def handle_ws_frame(self, payload: str) -> list[OddsUpdate]:
         """Parse a raw WebSocket frame payload."""
@@ -138,71 +219,15 @@ class DraftKingsParser(BookParser):
                 market_id = str(outcome[-1])
 
             market_meta = self.reference_data["markets"].get(market_id, {})
-            market_type = market_meta.get("name")
-            if not market_type:
-                if selection_id.startswith("0ML"):
-                    market_type = "Moneyline"
-                elif selection_id.startswith("0HC"):
-                    market_type = "Spread"
-                elif selection_id.startswith("0OU"):
-                    market_type = "Total"
-                else:
-                    tags = outcome[-2]
-                    market_type = str(tags[0]) if len(tags) > 0 else "UNKNOWN_MARKET"
+            market_type = self._resolve_market_type(market_meta, selection_id, outcome)
 
             event_id = market_meta.get("eventId", "")
             event_name = self.reference_data["events"].get(event_id, "Unknown Game")
+            event_id, event_name = self._resolve_event(
+                event_id, event_name, selection_id, selection_name
+            )
 
-            # see draftkings.md §4 — core-ID fallback
-            # HEURISTIC FALLBACK: If DraftKings created a new market/handicap on the fly,
-            # the ID won't be in our static dictionary.
-            # DraftKings IDs look like: 0OU85458301O850_1 (Prefix + CoreID + Handicap)
-            # We can extract the CoreID and find a sibling selection in our dictionary to get the game!
-            if event_name == "Unknown Game":
-                core_id_match = re.search(r"^0[A-Z]{2}(\d+)", selection_id)
-                if core_id_match:
-                    core_id = core_id_match.group(1)
-                    # Find any known selection with this core ID
-                    for known_sel_id, known_market_id in self.reference_data[
-                        "selections"
-                    ].items():
-                        if core_id in known_sel_id:
-                            fallback_meta = self.reference_data["markets"].get(
-                                known_market_id, {}
-                            )
-                            fallback_event_id = fallback_meta.get("eventId", "")
-                            if fallback_event_id in self.reference_data["events"]:
-                                event_name = self.reference_data["events"][
-                                    fallback_event_id
-                                ]
-                                event_id = fallback_event_id
-                                break
-
-                # If STILL unknown, try the string-matching heuristic for Spreads/Moneylines
-                if event_name == "Unknown Game":
-                    for known_id, known_game in self.reference_data["events"].items():
-                        clean_selection = (
-                            selection_name.replace("Over ", "")
-                            .replace("Under ", "")
-                            .strip()
-                        )
-                        if clean_selection and clean_selection in known_game:
-                            event_name = known_game
-                            event_id = known_id
-                            break
-
-            handicap_val = None
-            if market_type in [
-                "Spread",
-                "Total",
-                "Run Line",
-                "Total Runs",
-                "Point Spread",
-                "Total Points",
-            ]:
-                if len(outcome) > 4 and isinstance(outcome[4], (int, float)):
-                    handicap_val = float(outcome[4])
-
+            handicap_val = self._resolve_handicap(market_type, outcome)
             home_team, away_team = split_fixture_name(event_name)
 
             updates.append(

@@ -12,10 +12,22 @@ __all__ = ["clean_american_odds", "split_fixture_name"]
 
 logger = logging.getLogger(__name__)
 
+_PITCHER_TAG_RE = re.compile(r"\s*\([^)]*\)")
+
+# Fixture-name delimiters, in priority order, and how each orders the teams.
+# (delimiter, home_is_first_part)
+_FIXTURE_DELIMITERS: list[tuple[str, bool]] = [
+    (" at ", False),  # "Away at Home"
+    (" @ ", False),  # "Away @ Home"
+    (" vs. ", True),  # "Home vs. Away"
+    (" vs ", True),  # "Home vs Away"
+    (" - ", True),  # "Home - Away" (fallback)
+]
+
 
 def strip_pitcher_tags(name: str) -> str:
     """Remove pitcher tags like '(D Rasmussen)' from baseball team names."""
-    return re.sub(r"\s*\([^)]*\)", "", name).strip()
+    return _PITCHER_TAG_RE.sub("", name).strip()
 
 
 def clean_american_odds(val: object) -> int | None:
@@ -46,22 +58,11 @@ def split_fixture_name(fixture_name: str) -> tuple[str, str]:
       ' vs '  — various
       ' - '   — fallback
     """
-    if " at " in fixture_name:
-        parts = fixture_name.split(" at ", 1)
-        home, away = parts[1].strip(), parts[0].strip()
-    elif " @ " in fixture_name:
-        parts = fixture_name.split(" @ ", 1)
-        home, away = parts[1].strip(), parts[0].strip()
-    elif " vs. " in fixture_name:
-        parts = fixture_name.split(" vs. ", 1)
-        home, away = parts[0].strip(), parts[1].strip()
-    elif " vs " in fixture_name:
-        parts = fixture_name.split(" vs ", 1)
-        home, away = parts[0].strip(), parts[1].strip()
-    elif " - " in fixture_name:
-        parts = fixture_name.split(" - ", 1)
-        home, away = parts[0].strip(), parts[1].strip()
-    else:
-        home, away = fixture_name.strip(), fixture_name.strip()
+    for delimiter, home_is_first_part in _FIXTURE_DELIMITERS:
+        if delimiter in fixture_name:
+            first, second = (p.strip() for p in fixture_name.split(delimiter, 1))
+            home, away = (first, second) if home_is_first_part else (second, first)
+            return strip_pitcher_tags(home), strip_pitcher_tags(away)
 
-    return strip_pitcher_tags(home), strip_pitcher_tags(away)
+    unchanged = fixture_name.strip()
+    return strip_pitcher_tags(unchanged), strip_pitcher_tags(unchanged)
