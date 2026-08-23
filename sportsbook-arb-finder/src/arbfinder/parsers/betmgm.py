@@ -2,7 +2,9 @@
 
 import json
 import logging
+from collections.abc import Callable
 from datetime import datetime
+from typing import Any
 
 from arbfinder.normalize.models import OddsUpdate
 from arbfinder.parsers._helpers import clean_american_odds, split_fixture_name
@@ -11,6 +13,15 @@ from arbfinder.parsers.base import BookParser
 __all__ = ["BetMGMParser"]
 
 logger = logging.getLogger(__name__)
+
+
+def _to_float_or_none(val: Any) -> float | None:
+    if val is None:
+        return None
+    try:
+        return float(val)
+    except (ValueError, TypeError):
+        return None
 
 
 class BetMGMParser(BookParser):
@@ -47,113 +58,101 @@ class BetMGMParser(BookParser):
 
         return []
 
-    # _clean_american_odds and _split_fixture_name extracted to parsers/_helpers.py
+    def _resolve_fixture_teams(self, fixture_id: object) -> tuple[str, str] | None:
+        """Look up a fixture's teams by ID, or None if the fixture is unknown."""
+        fixture_name = self.reference_data["events"].get(str(fixture_id), "Unknown Game")
+        if fixture_name == "Unknown Game":
+            return None
+        return split_fixture_name(fixture_name)
+
+    def _build_selection_updates(
+        self,
+        *,
+        fixture_id: object,
+        market_name: str,
+        items: list[dict],
+        get_name: Callable[[dict], str],
+        get_raw_odds: Callable[[dict], object],
+        get_attr: Callable[[dict], object],
+        fallback_attr: object,
+        now: datetime,
+    ) -> list[OddsUpdate]:
+        """Build OddsUpdate entries for a market's selections/options.
+
+        Shared by GameUpdate ("results") and OptionMarketUpdate ("options")
+        messages, which carry the same shape modulo field names.
+        """
+        teams = self._resolve_fixture_teams(fixture_id)
+        if teams is None:
+            return []
+        home_team, away_team = teams
+
+        updates = []
+        for item in items:
+            selection_name = get_name(item)
+            odds = clean_american_odds(get_raw_odds(item))
+            if odds is None:
+                continue
+
+            attr = get_attr(item)
+            if attr is None:
+                attr = fallback_attr
+            handicap_val = _to_float_or_none(attr)
+
+            updates.append(
+                OddsUpdate(
+                    book=self.book_name,
+                    event_id=str(fixture_id),
+                    home_team=home_team,
+                    away_team=away_team,
+                    market=market_name,
+                    selection=selection_name,
+                    line=handicap_val,
+                    price_american=odds,
+                    timestamp=now,
+                )
+            )
+
+        return updates
 
     def _parse_game_update(self, payload: dict, now: datetime) -> list[OddsUpdate]:
-        updates = []
         game = payload.get("game", {})
         fixture_id = payload.get("fixtureId")
         market_id = game.get("id")
         market_name = game.get("name", {}).get("value", f"Market {market_id}")
         results = game.get("results", [])
 
-        fixture_name = self.reference_data["events"].get(
-            str(fixture_id), "Unknown Game"
-        )
-
-        if fixture_name == "Unknown Game":
-            return updates
-
-        home_team, away_team = split_fixture_name(fixture_name)
-
-        for result in results:
-            selection_name = result.get("name", {}).get("value", "Unknown Selection")
-            raw_odds = result.get("americanOdds")
-            odds = clean_american_odds(raw_odds)
-
-            if odds is None:
-                continue
-
+        return self._build_selection_updates(
+            fixture_id=fixture_id,
+            market_name=market_name,
+            items=results,
+            get_name=lambda r: r.get("name", {}).get("value", "Unknown Selection"),
+            get_raw_odds=lambda r: r.get("americanOdds"),
             # Fallback to game-level attr (e.g. 3rd quarter totals handicap on game object)
-            attr = (
-                result.get("attr")
-                if result.get("attr") is not None
-                else game.get("attr")
-            )
-            handicap_val = None
-            if attr is not None:
-                try:
-                    handicap_val = float(attr)
-                except (ValueError, TypeError):
-                    pass
-
-            updates.append(
-                OddsUpdate(
-                    book=self.book_name,
-                    event_id=str(fixture_id),
-                    home_team=home_team,
-                    away_team=away_team,
-                    market=market_name,
-                    selection=selection_name,
-                    line=handicap_val,
-                    price_american=odds,
-                    timestamp=now,
-                )
-            )
-
-        return updates
+            get_attr=lambda r: r.get("attr"),
+            fallback_attr=game.get("attr"),
+            now=now,
+        )
 
     def _parse_option_market_update(
         self, payload: dict, now: datetime
     ) -> list[OddsUpdate]:
-        updates = []
         option_market = payload.get("optionMarket", {})
         fixture_id = payload.get("fixtureId")
         market_id = option_market.get("id")
         market_name = option_market.get("name", {}).get("value", f"Market {market_id}")
         options = option_market.get("options", [])
 
-        fixture_name = self.reference_data["events"].get(
-            str(fixture_id), "Unknown Game"
+        return self._build_selection_updates(
+            fixture_id=fixture_id,
+            market_name=market_name,
+            items=options,
+            get_name=lambda o: o.get("name", {}).get("value", "Unknown Selection"),
+            get_raw_odds=lambda o: o.get("price", {}).get("americanOdds"),
+            get_attr=lambda o: o.get("attr"),
+            fallback_attr=option_market.get("attr"),
+            now=now,
         )
-
-        if fixture_name == "Unknown Game":
-            return updates
-
-        home_team, away_team = split_fixture_name(fixture_name)
-
-        for option in options:
-            selection_name = option.get("name", {}).get("value", "Unknown Selection")
-            price = option.get("price", {})
-            raw_odds = price.get("americanOdds")
-            odds = clean_american_odds(raw_odds)
-
-            if odds is None:
-                continue
-
-            attr = option.get("attr") if option.get("attr") is not None else option_market.get("attr")
-            handicap_val = None
-            if attr is not None:
-                try:
-                    handicap_val = float(attr)
-                except (ValueError, TypeError):
-                    pass
-
-            updates.append(
-                OddsUpdate(
-                    book=self.book_name,
-                    event_id=str(fixture_id),
-                    home_team=home_team,
-                    away_team=away_team,
-                    market=market_name,
-                    selection=selection_name,
-                    line=handicap_val,
-                    price_american=odds,
-                    timestamp=now,
-                )
-            )
-
-        return updates
 
     def handle_ws_frame(self, payload: str) -> list[OddsUpdate]:
         """Parse a raw WebSocket frame payload."""

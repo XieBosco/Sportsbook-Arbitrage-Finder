@@ -276,24 +276,30 @@
         "events": {
             "28197722": "MLB Player Markets",
             "32041755": "MLB Player Awards",
-            "34094249": "MLB",
             "34821316": "MLB Futures",
-            "35778993": "MLB Player Awards",
-            "35863043": "Cincinnati Reds (A Abbott) @ St. Louis Cardinals (K Leahy)",
-            "35863044": "Los Angeles Angels (J Soriano) @ San Francisco Giants (C Whisenhunt)",
-            "35863045": "Atlanta Braves (R Lopez) @ Baltimore Orioles (S Baz)",
-            "35863046": "Toronto Blue Jays (K Gausman) @ Boston Red Sox (R Suarez)",
-            "35863047": "Seattle Mariners (L Gilbert) @ Texas Rangers (J deGrom)",
-            "35863048": "Arizona Diamondbacks (K Drake) @ Washington Nationals (M Mikolas)",
-            "35863049": "New York Yankees (W Warren) @ Philadelphia Phillies (C Sanchez)",
-            "35863050": "Los Angeles Dodgers (E Sheehan) @ New York Mets (F Peralta)",
-            "35863051": "Chicago Cubs (J Taillon) @ Pittsburgh Pirates (B Ashcraft)",
-            "35863052": "Colorado Rockies (K Freeland) @ Milwaukee Brewers (J Misiorowski)",
-            "35863053": "San Diego Padres (W Buehler) @ Miami Marlins (J Junk)",
-            "35863054": "Athletics (J Springs) @ Minnesota Twins (C Prielipp)",
-            "35863055": "Kansas City Royals (L Avila) @ Detroit Tigers (F Valdez)",
-            "35863056": "Cleveland Guardians (P Messick) @ Tampa Bay Rays (D Rasmussen)",
-            "35863057": "Houston Astros (R Blanco) @ Chicago White Sox (E Fedde)"
+            "35965298": "New York Mets (C Scott) @ Chicago White Sox (L Castillo)",
+            "35965299": "Tampa Bay Rays (S McClanahan) @ Baltimore Orioles (B Young)",
+            "35965300": "Cincinnati Reds (R Lowder) @ Arizona Diamondbacks (M Soroka)",
+            "35965302": "Athletics (J Lopez) @ Houston Astros (H Brown)",
+            "35965303": "Detroit Tigers (D Anderson) @ Kansas City Royals (M Wacha)",
+            "35965305": "Los Angeles Angels (R Johnson) @ Texas Rangers (C Bradford)",
+            "35965308": "San Francisco Giants (B Tidwell) @ Boston Red Sox (P Sandoval)",
+            "35965309": "Cleveland Guardians (T Bibee) @ Colorado Rockies (G Hughes)",
+            "35965311": "Chicago Cubs (D Peterson) @ Seattle Mariners (K Anderson)",
+            "35965313": "Pittsburgh Pirates (J Jones) @ Los Angeles Dodgers (T Skubal)",
+            "35965314": "Minnesota Twins (D Kremer) @ San Diego Padres (C Mize)",
+            "35965315": "St. Louis Cardinals (Q Mathews) @ Philadelphia Phillies (A Painter)",
+            "35969209": "Pittsburgh Pirates (TBD) @ Los Angeles Dodgers (B Snell)",
+            "35969211": "Chicago Cubs (S Imanaga) @ Seattle Mariners (B Miller)",
+            "35969212": "Minnesota Twins (B Ober) @ San Diego Padres (W Buehler)",
+            "35969214": "Tampa Bay Rays (N Martinez) @ Baltimore Orioles (S Baz)",
+            "35969217": "Cincinnati Reds (A Abbott) @ Arizona Diamondbacks (M Bratt)",
+            "35969218": "San Francisco Giants (M Wilkinson) @ Boston Red Sox (J Bennett)",
+            "35969219": "Washington Nationals (J Kent) @ Miami Marlins (J Junk)",
+            "35969220": "St. Louis Cardinals (TBD) @ Philadelphia Phillies (C Sanchez)",
+            "35969221": "Atlanta Braves (T Mahle) @ Milwaukee Brewers (S Drohan)",
+            "35969222": "Toronto Blue Jays (J Soriano) @ New York Yankees (C Rodon)",
+            "35969224": "Cleveland Guardians (F Griffin) @ Colorado Rockies (T Sugano)"
         },
         "markets": {
             "801.150807420": {
@@ -335,156 +341,6 @@
                 "eventId": "32041755",
                 "marketName": "National League Manager of the Year 2026",
                 "marketType": "MANAGER_OF_THE_YEAR"
-            },
-            "801.157188573": {
-                "eventId": "34821316",
-                "marketName": "Athletics - X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157190041": {
-                "eventId": "34821316",
-                "marketName": "Arizona Diamondbacks X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157190609": {
-                "eventId": "34821316",
-                "marketName": "Atlanta Braves X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157191740": {
-                "eventId": "34821316",
-                "marketName": "Baltimore Orioles X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157192118": {
-                "eventId": "34821316",
-                "marketName": "Red Sox X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157192707": {
-                "eventId": "34821316",
-                "marketName": "Chicago Cubs X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157193633": {
-                "eventId": "34821316",
-                "marketName": "White Sox X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157193750": {
-                "eventId": "34821316",
-                "marketName": "Cincinnati Reds X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157193809": {
-                "eventId": "34821316",
-                "marketName": "Cleveland Guardians X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157193849": {
-                "eventId": "34821316",
-                "marketName": "Colorado Rockies X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157193962": {
-                "eventId": "34821316",
-                "marketName": "Detroit Tigers X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157194084": {
-                "eventId": "34821316",
-                "marketName": "Houston Astros X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157194422": {
-                "eventId": "34821316",
-                "marketName": "KC Royals X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157194558": {
-                "eventId": "34821316",
-                "marketName": "LA Angels X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157194692": {
-                "eventId": "34821316",
-                "marketName": "LA Dodgers X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157194759": {
-                "eventId": "34821316",
-                "marketName": "Miami Marlins X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157194943": {
-                "eventId": "34821316",
-                "marketName": "Milwaukee Brewers X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157194959": {
-                "eventId": "34821316",
-                "marketName": "Minnesota Twins - X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195032": {
-                "eventId": "34821316",
-                "marketName": "NY Mets X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195184": {
-                "eventId": "34821316",
-                "marketName": "NY Yankees X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195355": {
-                "eventId": "34821316",
-                "marketName": "Philadelphia Phillies X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195394": {
-                "eventId": "34821316",
-                "marketName": "Pittsburgh Pirates X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195479": {
-                "eventId": "34821316",
-                "marketName": "SD Padres X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195688": {
-                "eventId": "34821316",
-                "marketName": "SF Giants X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195735": {
-                "eventId": "34821316",
-                "marketName": "Seattle Mariners X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195871": {
-                "eventId": "34821316",
-                "marketName": "STL Cardinals X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195898": {
-                "eventId": "34821316",
-                "marketName": "TB Rays X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195952": {
-                "eventId": "34821316",
-                "marketName": "Texas Rangers X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157195976": {
-                "eventId": "34821316",
-                "marketName": "Toronto Blue Jays - X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
-            },
-            "801.157196017": {
-                "eventId": "34821316",
-                "marketName": "Washington Nationals X+ Regular Season Wins 2026",
-                "marketType": "MLB_TEAM_TO_WIN_X+_GAMES_SB_SPP"
             },
             "801.158374225": {
                 "eventId": "34821316",
@@ -556,11 +412,6 @@
                 "marketName": "National League 2026 - Team to Earn 6 Seed",
                 "marketType": "MLB_TEAM_TO_EARN_6_SEED_SB"
             },
-            "801.159321169": {
-                "eventId": "34094249",
-                "marketName": "Total Loonie Dogs Sold at Rogers Centre",
-                "marketType": "TOTAL_2"
-            },
             "801.145544788": {
                 "eventId": "34821316",
                 "marketName": "World Series 2026 Winner",
@@ -607,7 +458,7 @@
                 "marketType": "CY_YOUNG"
             },
             "801.152443988": {
-                "eventId": "35778993",
+                "eventId": "32041755",
                 "marketName": "American League MVP 2026",
                 "marketType": "REGULAR_SEASON_MVP"
             },
@@ -641,293 +492,408 @@
                 "marketName": "MVP & Cy Young Award Parlays 2026",
                 "marketType": "MVP/CY_PARLAY_SB"
             },
-            "801.157937534": {
-                "eventId": "32041755",
-                "marketName": "MVP & Rookie of the Year Award Parlays 2026",
-                "marketType": "MVP/ROY_PARLAY_SB"
-            },
             "801.157937945": {
                 "eventId": "32041755",
                 "marketName": "Cy Young & Rookie of the Year Award Parlays 2026",
                 "marketType": "CY/ROY_PARLAY_SB"
             },
-            "801.178177934": {
-                "eventId": "35863046",
-                "marketName": "Run Line",
-                "marketType": "MATCH_HANDICAP_(2-WAY)"
-            },
-            "801.178177932": {
-                "eventId": "35863046",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178179658": {
-                "eventId": "35863054",
-                "marketName": "Run Line",
-                "marketType": "MATCH_HANDICAP_(2-WAY)"
-            },
-            "801.178178789": {
-                "eventId": "35863053",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178179656": {
-                "eventId": "35863054",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178177455": {
-                "eventId": "35863056",
-                "marketName": "Run Line",
-                "marketType": "MATCH_HANDICAP_(2-WAY)"
-            },
-            "801.178179898": {
-                "eventId": "35863057",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178177532": {
-                "eventId": "35863045",
-                "marketName": "Run Line",
-                "marketType": "MATCH_HANDICAP_(2-WAY)"
-            },
-            "801.178177456": {
-                "eventId": "35863056",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178137368": {
-                "eventId": "35863050",
+            "801.182226065": {
+                "eventId": "35965303",
                 "marketName": "Moneyline",
                 "marketType": "MONEY_LINE"
             },
-            "801.178137367": {
-                "eventId": "35863049",
+            "801.182226064": {
+                "eventId": "35965302",
                 "marketName": "Moneyline",
                 "marketType": "MONEY_LINE"
             },
-            "801.178181472": {
-                "eventId": "35863044",
+            "801.182426233": {
+                "eventId": "35969220",
                 "marketName": "Total Runs",
                 "marketType": "TOTAL_POINTS_(OVER/UNDER)"
             },
-            "801.178137369": {
-                "eventId": "35863051",
+            "801.182364022": {
+                "eventId": "35969217",
                 "marketName": "Moneyline",
                 "marketType": "MONEY_LINE"
             },
-            "801.178137364": {
-                "eventId": "35863046",
-                "marketName": "Moneyline",
-                "marketType": "MONEY_LINE"
-            },
-            "801.178181474": {
-                "eventId": "35863044",
+            "801.182425661": {
+                "eventId": "35969222",
                 "marketName": "Run Line",
                 "marketType": "MATCH_HANDICAP_(2-WAY)"
             },
-            "801.178137363": {
-                "eventId": "35863045",
-                "marketName": "Moneyline",
-                "marketType": "MONEY_LINE"
-            },
-            "801.178137366": {
-                "eventId": "35863048",
-                "marketName": "Moneyline",
-                "marketType": "MONEY_LINE"
-            },
-            "801.178137365": {
-                "eventId": "35863047",
-                "marketName": "Moneyline",
-                "marketType": "MONEY_LINE"
-            },
-            "801.178137360": {
-                "eventId": "35863043",
-                "marketName": "Moneyline",
-                "marketType": "MONEY_LINE"
-            },
-            "801.178137362": {
-                "eventId": "35863044",
-                "marketName": "Moneyline",
-                "marketType": "MONEY_LINE"
-            },
-            "801.178178791": {
-                "eventId": "35863053",
+            "801.182425982": {
+                "eventId": "35969214",
                 "marketName": "Run Line",
                 "marketType": "MATCH_HANDICAP_(2-WAY)"
             },
-            "801.178178131": {
-                "eventId": "35863048",
-                "marketName": "Run Line",
-                "marketType": "MATCH_HANDICAP_(2-WAY)"
-            },
-            "801.178178132": {
-                "eventId": "35863048",
+            "801.182290425": {
+                "eventId": "35965305",
                 "marketName": "Total Runs",
                 "marketType": "TOTAL_POINTS_(OVER/UNDER)"
             },
-            "801.178181658": {
-                "eventId": "35863049",
+            "801.182290423": {
+                "eventId": "35965305",
                 "marketName": "Run Line",
                 "marketType": "MATCH_HANDICAP_(2-WAY)"
             },
-            "801.178179900": {
-                "eventId": "35863057",
+            "801.182290663": {
+                "eventId": "35965300",
                 "marketName": "Run Line",
                 "marketType": "MATCH_HANDICAP_(2-WAY)"
             },
-            "801.178179095": {
-                "eventId": "35863055",
-                "marketName": "Run Line",
-                "marketType": "MATCH_HANDICAP_(2-WAY)"
-            },
-            "801.178179096": {
-                "eventId": "35863055",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178180491": {
-                "eventId": "35863043",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178179293": {
-                "eventId": "35863052",
-                "marketName": "Run Line",
-                "marketType": "MATCH_HANDICAP_(2-WAY)"
-            },
-            "801.178179292": {
-                "eventId": "35863052",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178180493": {
-                "eventId": "35863043",
-                "marketName": "Run Line",
-                "marketType": "MATCH_HANDICAP_(2-WAY)"
-            },
-            "801.178137375": {
-                "eventId": "35863057",
+            "801.182364020": {
+                "eventId": "35969212",
                 "marketName": "Moneyline",
                 "marketType": "MONEY_LINE"
             },
-            "801.178137374": {
-                "eventId": "35863056",
-                "marketName": "Moneyline",
-                "marketType": "MONEY_LINE"
-            },
-            "801.178181661": {
-                "eventId": "35863049",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178178663": {
-                "eventId": "35863050",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178180874": {
-                "eventId": "35863047",
+            "801.182290671": {
+                "eventId": "35965309",
                 "marketName": "Run Line",
                 "marketType": "MATCH_HANDICAP_(2-WAY)"
             },
-            "801.178137371": {
-                "eventId": "35863053",
-                "marketName": "Moneyline",
-                "marketType": "MONEY_LINE"
-            },
-            "801.178137370": {
-                "eventId": "35863052",
-                "marketName": "Moneyline",
-                "marketType": "MONEY_LINE"
-            },
-            "801.178177531": {
-                "eventId": "35863045",
+            "801.182290670": {
+                "eventId": "35965309",
                 "marketName": "Total Runs",
                 "marketType": "TOTAL_POINTS_(OVER/UNDER)"
             },
-            "801.178180873": {
-                "eventId": "35863047",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178137373": {
-                "eventId": "35863055",
+            "801.182226108": {
+                "eventId": "35965313",
                 "marketName": "Moneyline",
                 "marketType": "MONEY_LINE"
             },
-            "801.178178364": {
-                "eventId": "35863051",
-                "marketName": "Total Runs",
-                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
-            },
-            "801.178137372": {
-                "eventId": "35863054",
+            "801.182226101": {
+                "eventId": "35965311",
                 "marketName": "Moneyline",
                 "marketType": "MONEY_LINE"
             },
-            "801.178178662": {
-                "eventId": "35863050",
+            "801.182226067": {
+                "eventId": "35965305",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182290637": {
+                "eventId": "35965308",
                 "marketName": "Run Line",
                 "marketType": "MATCH_HANDICAP_(2-WAY)"
             },
-            "801.178178363": {
-                "eventId": "35863051",
+            "801.182427257": {
+                "eventId": "35969224",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182426489": {
+                "eventId": "35969219",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182364078": {
+                "eventId": "35969220",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182427335": {
+                "eventId": "35969218",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182364079": {
+                "eventId": "35969221",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182290677": {
+                "eventId": "35965314",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182427337": {
+                "eventId": "35969218",
                 "marketName": "Run Line",
                 "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182290676": {
+                "eventId": "35965314",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182290434": {
+                "eventId": "35965298",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182290433": {
+                "eventId": "35965298",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182290640": {
+                "eventId": "35965308",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182427252": {
+                "eventId": "35969224",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182426485": {
+                "eventId": "35969219",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182226059": {
+                "eventId": "35965300",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182226058": {
+                "eventId": "35965299",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182226056": {
+                "eventId": "35965298",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182226120": {
+                "eventId": "35965315",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182427706": {
+                "eventId": "35969217",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182226086": {
+                "eventId": "35965309",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182364009": {
+                "eventId": "35969209",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182427705": {
+                "eventId": "35969217",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182226083": {
+                "eventId": "35965308",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182290606": {
+                "eventId": "35965303",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182290605": {
+                "eventId": "35965303",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182364044": {
+                "eventId": "35969218",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182427820": {
+                "eventId": "35969221",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182427465": {
+                "eventId": "35969211",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182364045": {
+                "eventId": "35969219",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182290644": {
+                "eventId": "35965311",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182290643": {
+                "eventId": "35965311",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182428558": {
+                "eventId": "35969209",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182427821": {
+                "eventId": "35969221",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182428559": {
+                "eventId": "35969209",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182364080": {
+                "eventId": "35969222",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182290650": {
+                "eventId": "35965313",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182290494": {
+                "eventId": "35965302",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182364082": {
+                "eventId": "35969224",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182290493": {
+                "eventId": "35965302",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182427461": {
+                "eventId": "35969211",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182289826": {
+                "eventId": "35965315",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182364019": {
+                "eventId": "35969214",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182425977": {
+                "eventId": "35969214",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182364014": {
+                "eventId": "35969211",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
+            },
+            "801.182289827": {
+                "eventId": "35965315",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182290419": {
+                "eventId": "35965299",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182290416": {
+                "eventId": "35965299",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182426229": {
+                "eventId": "35969220",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182425657": {
+                "eventId": "35969222",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182290652": {
+                "eventId": "35965313",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182427592": {
+                "eventId": "35969212",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182290661": {
+                "eventId": "35965300",
+                "marketName": "Total Runs",
+                "marketType": "TOTAL_POINTS_(OVER/UNDER)"
+            },
+            "801.182427596": {
+                "eventId": "35969212",
+                "marketName": "Run Line",
+                "marketType": "MATCH_HANDICAP_(2-WAY)"
+            },
+            "801.182226113": {
+                "eventId": "35965314",
+                "marketName": "Moneyline",
+                "marketType": "MONEY_LINE"
             }
         },
         "selections": {
-            "801.150807420_29161": {
-                "name": "New York Yankees",
-                "handicap": 0
-            },
             "801.150807420_29162": {
                 "name": "Tampa Bay Rays",
+                "handicap": 0
+            },
+            "801.150807420_29161": {
+                "name": "New York Yankees",
                 "handicap": 0
             },
             "801.150807420_29158": {
                 "name": "Boston Red Sox",
                 "handicap": 0
             },
-            "801.150807420_29157": {
-                "name": "Baltimore Orioles",
-                "handicap": 0
-            },
             "801.150807420_29164": {
                 "name": "Toronto Blue Jays",
                 "handicap": 0
             },
-            "801.150807332_41541473": {
-                "name": "Cleveland Guardians",
+            "801.150807420_29157": {
+                "name": "Baltimore Orioles",
                 "handicap": 0
             },
             "801.150807332_5408012": {
                 "name": "Chicago White Sox",
                 "handicap": 0
             },
-            "801.150807332_29159": {
-                "name": "Detroit Tigers",
+            "801.150807332_41541473": {
+                "name": "Cleveland Guardians",
                 "handicap": 0
             },
             "801.150807332_29160": {
                 "name": "Minnesota Twins",
                 "handicap": 0
             },
+            "801.150807332_29159": {
+                "name": "Detroit Tigers",
+                "handicap": 0
+            },
             "801.150807332_29179": {
                 "name": "Kansas City Royals",
                 "handicap": 0
             },
-            "801.150807422_29163": {
-                "name": "Texas Rangers",
+            "801.150807422_29170": {
+                "name": "Houston Astros",
                 "handicap": 0
             },
             "801.150807422_7100968": {
                 "name": "Seattle Mariners",
                 "handicap": 0
             },
-            "801.150807422_29170": {
-                "name": "Houston Astros",
+            "801.150807422_29163": {
+                "name": "Texas Rangers",
                 "handicap": 0
             },
             "801.150807422_75117758": {
@@ -946,16 +912,16 @@
                 "name": "Philadelphia Phillies",
                 "handicap": 0
             },
+            "801.150807424_29174": {
+                "name": "New York Mets",
+                "handicap": 0
+            },
             "801.150807424_1033687": {
                 "name": "Washington Nationals",
                 "handicap": 0
             },
             "801.150807424_6266193": {
                 "name": "Miami Marlins",
-                "handicap": 0
-            },
-            "801.150807424_29174": {
-                "name": "New York Mets",
                 "handicap": 0
             },
             "801.150807423_29172": {
@@ -966,28 +932,28 @@
                 "name": "Chicago Cubs",
                 "handicap": 0
             },
-            "801.150807423_29176": {
-                "name": "Pittsburgh Pirates",
-                "handicap": 0
-            },
             "801.150807423_50291": {
                 "name": "St. Louis Cardinals",
+                "handicap": 0
+            },
+            "801.150807423_29176": {
+                "name": "Pittsburgh Pirates",
                 "handicap": 0
             },
             "801.150807423_29167": {
                 "name": "Cincinnati Reds",
                 "handicap": 0
             },
-            "801.161280106_24676176": {
-                "name": "Yordan Alvarez",
-                "handicap": 0
-            },
             "801.161280106_10885583": {
                 "name": "Kyle Schwarber",
                 "handicap": 0
             },
-            "801.161280106_59869727": {
-                "name": "Hunter Goodman",
+            "801.161280106_24676176": {
+                "name": "Yordan Alvarez",
+                "handicap": 0
+            },
+            "801.161280106_14384441": {
+                "name": "Matt Olson",
                 "handicap": 0
             },
             "801.161280106_60937884": {
@@ -998,540 +964,88 @@
                 "name": "Ben Rice",
                 "handicap": 0
             },
-            "801.161280106_64795485": {
-                "name": "James Wood",
-                "handicap": 0
-            },
-            "801.161280106_14384441": {
-                "name": "Matt Olson",
-                "handicap": 0
-            },
-            "801.161280106_79285411": {
-                "name": "Colson Montgomery",
-                "handicap": 0
-            },
-            "801.161280106_11280722": {
-                "name": "Byron Buxton",
-                "handicap": 0
-            },
             "801.161280106_17511224": {
                 "name": "Shohei Ohtani",
+                "handicap": 0
+            },
+            "801.161280106_43744518": {
+                "name": "CJ Abrams",
                 "handicap": 0
             },
             "801.159707342_80082549": {
                 "name": "Will Venable (CHW)",
                 "handicap": 0
             },
-            "801.159707342_65291616": {
-                "name": "Kevin Cash (TBR)",
-                "handicap": 0
-            },
             "801.159707342_97910167": {
                 "name": "Chad Tracy (BOS)",
                 "handicap": 0
             },
-            "801.159707342_65291618": {
-                "name": "Stephen Vogt (CLE)",
-                "handicap": 0
-            },
-            "801.159707342_96331533": {
-                "name": "Derek Shelton (MIN)",
-                "handicap": 0
-            },
-            "801.159707342_96331534": {
-                "name": "Skip Schumaker (TEX)",
+            "801.159707342_65291616": {
+                "name": "Kevin Cash (TBR)",
                 "handicap": 0
             },
             "801.159707342_80082552": {
                 "name": "A.J. Hinch (DET)",
                 "handicap": 0
             },
-            "801.159707342_65291611": {
-                "name": "Aaron Boone (NYY)",
-                "handicap": 0
-            },
-            "801.159707342_80082553": {
-                "name": "Dan Wilson (SEA)",
-                "handicap": 0
-            },
-            "801.159707342_96331535": {
-                "name": "Craig Albernaz (BAL)",
-                "handicap": 0
-            },
             "801.159707342_80082551": {
                 "name": "Joe Espada (HOU)",
                 "handicap": 0
             },
-            "801.159707342_80082550": {
-                "name": "Mark Kotsay (ATH)",
-                "handicap": 0
-            },
-            "801.159707342_65291637": {
-                "name": "John Schneider (TOR)",
-                "handicap": 0
-            },
-            "801.159707342_65291615": {
-                "name": "Matt Quatraro (KCR)",
-                "handicap": 0
-            },
-            "801.159707342_96331532": {
-                "name": "Kurt Suzuki (LAA)",
-                "handicap": 0
-            },
-            "801.159708036_98226261": {
-                "name": "Don Mattingly (PHI)",
-                "handicap": 0
-            },
-            "801.159708036_77718707": {
-                "name": "Clayton McCullough (MIA)",
-                "handicap": 0
-            },
-            "801.159708036_65291323": {
-                "name": "Pat Murphy (MIL)",
-                "handicap": 0
-            },
-            "801.159708036_65291328": {
-                "name": "Oliver Marmol (STL)",
-                "handicap": 0
-            },
-            "801.159708036_96322848": {
-                "name": "Blake Butera (WSN)",
+            "801.159707342_65291611": {
+                "name": "Aaron Boone (NYY)",
                 "handicap": 0
             },
             "801.159708036_96322849": {
                 "name": "Walt Weiss (ATL)",
                 "handicap": 0
             },
-            "801.159708036_85093858": {
-                "name": "Don Kelly (PIT)",
-                "handicap": 0
-            },
-            "801.159708036_65284964": {
-                "name": "Craig Counsell (CHC)",
+            "801.159708036_65291323": {
+                "name": "Pat Murphy (MIL)",
                 "handicap": 0
             },
             "801.159708036_65285184": {
                 "name": "Torey Lovullo (ARI)",
                 "handicap": 0
             },
-            "801.159708036_65285094": {
-                "name": "Dave Roberts (LAD)",
+            "801.159708036_98226261": {
+                "name": "Don Mattingly (PHI)",
+                "handicap": 0
+            },
+            "801.159708036_65284964": {
+                "name": "Craig Counsell (CHC)",
+                "handicap": 0
+            },
+            "801.159708036_65291328": {
+                "name": "Oliver Marmol (STL)",
                 "handicap": 0
             },
             "801.159708036_35833601": {
                 "name": "Craig Stammen (SDP)",
                 "handicap": 0
             },
-            "801.159708036_77718706": {
-                "name": "Terry Francona (CIN)",
+            "801.159708036_77718707": {
+                "name": "Clayton McCullough (MIA)",
                 "handicap": 0
             },
-            "801.159708036_96322847": {
-                "name": "Tony Vitello (SFG)",
+            "801.159708036_65285094": {
+                "name": "Dave Roberts (LAD)",
                 "handicap": 0
             },
-            "801.159708036_100069279": {
-                "name": "Andy Green (NYM)",
+            "801.158374225_29162": {
+                "name": "Tampa Bay Rays",
                 "handicap": 0
             },
-            "801.159708036_85093859": {
-                "name": "Warren Schaeffer (COL)",
-                "handicap": 0
-            },
-            "801.157188573_95394809": {
-                "name": "Athletics 70+ Wins",
-                "handicap": 0
-            },
-            "801.157188573_95394808": {
-                "name": "Athletics 80+ Wins",
-                "handicap": 0
-            },
-            "801.157188573_95394811": {
-                "name": "Athletics 90+ Wins",
-                "handicap": 0
-            },
-            "801.157190041_95395488": {
-                "name": "Arizona Diamondbacks 80+ Wins",
-                "handicap": 0
-            },
-            "801.157190041_95395487": {
-                "name": "Arizona Diamondbacks 90+ Wins",
-                "handicap": 0
-            },
-            "801.157190041_95395486": {
-                "name": "Arizona Diamondbacks 100+ Wins",
-                "handicap": 0
-            },
-            "801.157190609_95396031": {
-                "name": "Atlanta Braves 90+ Wins",
-                "handicap": 0
-            },
-            "801.157190609_95396033": {
-                "name": "Atlanta Braves 100+ Wins",
-                "handicap": 0
-            },
-            "801.157190609_95396034": {
-                "name": "Atlanta Braves 110+ Wins",
-                "handicap": 0
-            },
-            "801.157191740_99508825": {
-                "name": "Baltimore Orioles 70+ Wins",
-                "handicap": 0
-            },
-            "801.157191740_95396132": {
-                "name": "Baltimore Orioles 100+ Wins",
-                "handicap": 0
-            },
-            "801.157191740_95396133": {
-                "name": "Baltimore Orioles 80+ Wins",
-                "handicap": 0
-            },
-            "801.157191740_95396134": {
-                "name": "Baltimore Orioles 90+ Wins",
-                "handicap": 0
-            },
-            "801.157192118_95396189": {
-                "name": "Boston Red Sox 80+ Wins",
-                "handicap": 0
-            },
-            "801.157192118_95396191": {
-                "name": "Boston Red Sox 90+ Wins",
-                "handicap": 0
-            },
-            "801.157192118_95396188": {
-                "name": "Boston Red Sox 100+ Wins",
-                "handicap": 0
-            },
-            "801.157192707_95401606": {
-                "name": "Chicago Cubs 80+ Wins",
-                "handicap": 0
-            },
-            "801.157192707_95401603": {
-                "name": "Chicago Cubs 90+ Wins",
-                "handicap": 0
-            },
-            "801.157192707_95401605": {
-                "name": "Chicago Cubs 100+ Wins",
-                "handicap": 0
-            },
-            "801.157192707_95401604": {
-                "name": "Chicago Cubs 110+ Wins",
-                "handicap": 0
-            },
-            "801.157193633_95401649": {
-                "name": "Chicago White Sox 80+ Wins",
-                "handicap": 0
-            },
-            "801.157193633_95401648": {
-                "name": "Chicago White Sox 90+ Wins",
-                "handicap": 0
-            },
-            "801.157193633_98516844": {
-                "name": "Chicago White Sox 100+ Wins",
-                "handicap": 0
-            },
-            "801.157193750_95402579": {
-                "name": "Cincinnati Reds 70+ Wins",
-                "handicap": 0
-            },
-            "801.157193750_95401650": {
-                "name": "Cincinnati Reds 80+ Wins",
-                "handicap": 0
-            },
-            "801.157193750_95401652": {
-                "name": "Cincinnati Reds 90+ Wins",
-                "handicap": 0
-            },
-            "801.157193809_95401656": {
-                "name": "Cleveland Guardians 80+ Wins",
-                "handicap": 0
-            },
-            "801.157193809_95401655": {
-                "name": "Cleveland Guardians 90+ Wins",
-                "handicap": 0
-            },
-            "801.157193809_95401657": {
-                "name": "Cleveland Guardians 100+ Wins",
-                "handicap": 0
-            },
-            "801.157193849_95401659": {
-                "name": "Colorado Rockies 70+ Wins",
-                "handicap": 0
-            },
-            "801.157193849_95401658": {
-                "name": "Colorado Rockies 80+ Wins",
-                "handicap": 0
-            },
-            "801.157193962_98516833": {
-                "name": "Detroit Tigers 70+ Wins",
-                "handicap": 0
-            },
-            "801.157193962_95401665": {
-                "name": "Detroit Tigers 80+ Wins",
-                "handicap": 0
-            },
-            "801.157193962_95401663": {
-                "name": "Detroit Tigers 90+ Wins",
-                "handicap": 0
-            },
-            "801.157193962_95401664": {
-                "name": "Detroit Tigers 100+ Wins",
-                "handicap": 0
-            },
-            "801.157194084_98516836": {
-                "name": "Houston Astros 70+ Wins",
-                "handicap": 0
-            },
-            "801.157194084_95401668": {
-                "name": "Houston Astros 80+ Wins",
-                "handicap": 0
-            },
-            "801.157194084_95401670": {
-                "name": "Houston Astros 90+ Wins",
-                "handicap": 0
-            },
-            "801.157194084_95401669": {
-                "name": "Houston Astros 100+ Wins",
-                "handicap": 0
-            },
-            "801.157194422_98516831": {
-                "name": "Kansas City Royals 70+ Wins",
-                "handicap": 0
-            },
-            "801.157194422_95401712": {
-                "name": "Kansas City Royals 80+ Wins",
-                "handicap": 0
-            },
-            "801.157194422_95401714": {
-                "name": "Kansas City Royals 90+ Wins",
-                "handicap": 0
-            },
-            "801.157194558_95401717": {
-                "name": "Los Angeles Angels 70+ Wins",
-                "handicap": 0
-            },
-            "801.157194558_95401719": {
-                "name": "Los Angeles Angels 80+ Wins",
-                "handicap": 0
-            },
-            "801.157194692_95401730": {
-                "name": "Los Angeles Dodgers 100+ Wins",
-                "handicap": 0
-            },
-            "801.157194692_95401729": {
-                "name": "Los Angeles Dodgers 110+ Wins",
-                "handicap": 0
-            },
-            "801.157194692_95401731": {
-                "name": "Los Angeles Dodgers to Break MLB Record and Win 117+ Regular Season Games",
-                "handicap": 0
-            },
-            "801.157194759_95401740": {
-                "name": "Miami Marlins 70+ Wins",
-                "handicap": 0
-            },
-            "801.157194759_95401741": {
-                "name": "Miami Marlins 80+ Wins",
-                "handicap": 0
-            },
-            "801.157194759_95401738": {
-                "name": "Miami Marlins 90+ Wins",
-                "handicap": 0
-            },
-            "801.157194759_95401739": {
-                "name": "Miami Marlins 100+ Wins",
-                "handicap": 0
-            },
-            "801.157194943_95401750": {
-                "name": "Milwaukee Brewers 90+ Wins",
-                "handicap": 0
-            },
-            "801.157194943_95401751": {
-                "name": "Milwaukee Brewers 100+ Wins",
-                "handicap": 0
-            },
-            "801.157194943_95401753": {
-                "name": "Milwaukee Brewers 110+ Wins",
-                "handicap": 0
-            },
-            "801.157194943_100304364": {
-                "name": "Milwaukee Brewers to Break MLB Record and Win 117+ Regular Season Games",
-                "handicap": 0
-            },
-            "801.157194959_95401757": {
-                "name": "Minnesota Twins 70+ Wins",
-                "handicap": 0
-            },
-            "801.157194959_95401755": {
-                "name": "Minnesota Twins 80+ Wins",
-                "handicap": 0
-            },
-            "801.157194959_95401754": {
-                "name": "Minnesota Twins 90+ Wins",
-                "handicap": 0
-            },
-            "801.157194959_95401756": {
-                "name": "Minnesota Twins 100+ Wins",
-                "handicap": 0
-            },
-            "801.157195032_98516837": {
-                "name": "New York Mets 70+ Wins",
-                "handicap": 0
-            },
-            "801.157195032_95401764": {
-                "name": "New York Mets 80+ Wins",
-                "handicap": 0
-            },
-            "801.157195032_95401766": {
-                "name": "New York Mets 90+ Wins",
-                "handicap": 0
-            },
-            "801.157195184_95401771": {
-                "name": "New York Yankees 90+ Wins",
-                "handicap": 0
-            },
-            "801.157195184_95401774": {
-                "name": "New York Yankees 100+ Wins",
-                "handicap": 0
-            },
-            "801.157195184_95401770": {
-                "name": "New York Yankees 110+ Wins",
-                "handicap": 0
-            },
-            "801.157195355_95401785": {
-                "name": "Philadelphia Phillies 80+ Wins",
-                "handicap": 0
-            },
-            "801.157195355_95401784": {
-                "name": "Philadelphia Phillies 90+ Wins",
-                "handicap": 0
-            },
-            "801.157195355_95401783": {
-                "name": "Philadelphia Phillies 100+ Wins",
-                "handicap": 0
-            },
-            "801.157195355_95401786": {
-                "name": "Philadelphia Phillies 110+ Wins",
-                "handicap": 0
-            },
-            "801.157195394_95401792": {
-                "name": "Pittsburgh Pirates 80+ Wins",
-                "handicap": 0
-            },
-            "801.157195394_95401794": {
-                "name": "Pittsburgh Pirates 90+ Wins",
-                "handicap": 0
-            },
-            "801.157195394_95401791": {
-                "name": "Pittsburgh Pirates 100+ Wins",
-                "handicap": 0
-            },
-            "801.157195479_95401798": {
-                "name": "San Diego Padres 80+ Wins",
-                "handicap": 0
-            },
-            "801.157195479_95401797": {
-                "name": "San Diego Padres 90+ Wins",
-                "handicap": 0
-            },
-            "801.157195479_95401799": {
-                "name": "San Diego Padres 100+ Wins",
-                "handicap": 0
-            },
-            "801.157195688_95401823": {
-                "name": "San Francisco Giants 70+ Wins",
-                "handicap": 0
-            },
-            "801.157195688_95401822": {
-                "name": "San Francisco Giants 80+ Wins",
-                "handicap": 0
-            },
-            "801.157195688_95401820": {
-                "name": "San Francisco Giants 90+ Wins",
-                "handicap": 0
-            },
-            "801.157195735_95401840": {
-                "name": "Seattle Mariners 80+ Wins",
-                "handicap": 0
-            },
-            "801.157195735_95401836": {
-                "name": "Seattle Mariners 90+ Wins",
-                "handicap": 0
-            },
-            "801.157195735_95401839": {
-                "name": "Seattle Mariners 100+ Wins",
-                "handicap": 0
-            },
-            "801.157195871_95401854": {
-                "name": "St. Louis Cardinals 80+ Wins",
-                "handicap": 0
-            },
-            "801.157195871_95401855": {
-                "name": "St. Louis Cardinals 90+ Wins",
-                "handicap": 0
-            },
-            "801.157195871_95401856": {
-                "name": "St. Louis Cardinals 100+ Wins",
-                "handicap": 0
-            },
-            "801.157195898_95401858": {
-                "name": "Tampa Bay Rays 90+ Wins",
-                "handicap": 0
-            },
-            "801.157195898_95401859": {
-                "name": "Tampa Bay Rays 100+ Wins",
-                "handicap": 0
-            },
-            "801.157195898_98163276": {
-                "name": "Tampa Bay Rays 110+ Wins",
-                "handicap": 0
-            },
-            "801.157195952_95401863": {
-                "name": "Texas Rangers 80+ Wins",
-                "handicap": 0
-            },
-            "801.157195952_95401861": {
-                "name": "Texas Rangers 90+ Wins",
-                "handicap": 0
-            },
-            "801.157195952_95401865": {
-                "name": "Texas Rangers 100+ Wins",
-                "handicap": 0
-            },
-            "801.157195976_98516834": {
-                "name": "Toronto Blue Jays 70+ Wins",
-                "handicap": 0
-            },
-            "801.157195976_95401871": {
-                "name": "Toronto Blue Jays 80+ Wins",
-                "handicap": 0
-            },
-            "801.157195976_95401874": {
-                "name": "Toronto Blue Jays 90+ Wins",
-                "handicap": 0
-            },
-            "801.157196017_95401877": {
-                "name": "Washington Nationals 70+ Wins",
-                "handicap": 0
-            },
-            "801.157196017_95401875": {
-                "name": "Washington Nationals 80+ Wins",
-                "handicap": 0
-            },
-            "801.157196017_95401876": {
-                "name": "Washington Nationals 90+ Wins",
-                "handicap": 0
-            },
-            "801.157196017_99784935": {
-                "name": "Washington Nationals 100+ Wins",
+            "801.158374225_5408012": {
+                "name": "Chicago White Sox",
                 "handicap": 0
             },
             "801.158374225_29161": {
                 "name": "New York Yankees",
                 "handicap": 0
             },
-            "801.158374225_29162": {
-                "name": "Tampa Bay Rays",
+            "801.158374225_29170": {
+                "name": "Houston Astros",
                 "handicap": 0
             },
             "801.158374225_29163": {
@@ -1542,80 +1056,48 @@
                 "name": "Cleveland Guardians",
                 "handicap": 0
             },
-            "801.158374225_5408012": {
-                "name": "Chicago White Sox",
+            "801.158374225_29160": {
+                "name": "Minnesota Twins",
                 "handicap": 0
             },
             "801.158374225_7100968": {
                 "name": "Seattle Mariners",
                 "handicap": 0
             },
-            "801.158374225_29159": {
-                "name": "Detroit Tigers",
-                "handicap": 0
-            },
-            "801.158374225_29170": {
-                "name": "Houston Astros",
-                "handicap": 0
-            },
             "801.158374225_29158": {
                 "name": "Boston Red Sox",
                 "handicap": 0
             },
-            "801.158374225_29160": {
-                "name": "Minnesota Twins",
-                "handicap": 0
-            },
-            "801.158374225_29157": {
-                "name": "Baltimore Orioles",
+            "801.158374225_29159": {
+                "name": "Detroit Tigers",
                 "handicap": 0
             },
             "801.158374225_29164": {
                 "name": "Toronto Blue Jays",
                 "handicap": 0
             },
-            "801.158374225_75117758": {
-                "name": "Athletics",
-                "handicap": 0
-            },
-            "801.158374225_29179": {
-                "name": "Kansas City Royals",
-                "handicap": 0
-            },
-            "801.158374225_1093236": {
-                "name": "Los Angeles Angels",
+            "801.158374224_29162": {
+                "name": "Tampa Bay Rays",
                 "handicap": 0
             },
             "801.158374224_29161": {
                 "name": "New York Yankees",
                 "handicap": 0
             },
-            "801.158374224_29162": {
-                "name": "Tampa Bay Rays",
-                "handicap": 0
-            },
             "801.158374224_29158": {
                 "name": "Boston Red Sox",
                 "handicap": 0
             },
-            "801.158374224_29163": {
-                "name": "Texas Rangers",
-                "handicap": 0
-            },
-            "801.158374224_5408012": {
-                "name": "Chicago White Sox",
-                "handicap": 0
-            },
-            "801.158374224_7100968": {
-                "name": "Seattle Mariners",
-                "handicap": 0
-            },
-            "801.158374224_41541473": {
-                "name": "Cleveland Guardians",
-                "handicap": 0
-            },
             "801.158374224_29159": {
                 "name": "Detroit Tigers",
+                "handicap": 0
+            },
+            "801.158374224_29164": {
+                "name": "Toronto Blue Jays",
+                "handicap": 0
+            },
+            "801.158374224_29163": {
+                "name": "Texas Rangers",
                 "handicap": 0
             },
             "801.158374224_29157": {
@@ -1626,24 +1108,20 @@
                 "name": "Houston Astros",
                 "handicap": 0
             },
-            "801.158374224_29164": {
-                "name": "Toronto Blue Jays",
-                "handicap": 0
-            },
-            "801.158374224_29179": {
-                "name": "Kansas City Royals",
-                "handicap": 0
-            },
-            "801.158374224_1093236": {
-                "name": "Los Angeles Angels",
-                "handicap": 0
-            },
-            "801.158374224_75117758": {
-                "name": "Athletics",
+            "801.158374224_5408012": {
+                "name": "Chicago White Sox",
                 "handicap": 0
             },
             "801.158374224_29160": {
                 "name": "Minnesota Twins",
+                "handicap": 0
+            },
+            "801.158374224_41541473": {
+                "name": "Cleveland Guardians",
+                "handicap": 0
+            },
+            "801.158374224_7100968": {
+                "name": "Seattle Mariners",
                 "handicap": 0
             },
             "801.158575321_29159": {
@@ -1666,20 +1144,8 @@
                 "name": "Cleveland Guardians",
                 "handicap": 0
             },
-            "801.158575321_29157": {
-                "name": "Baltimore Orioles",
-                "handicap": 0
-            },
             "801.158575321_29170": {
                 "name": "Houston Astros",
-                "handicap": 0
-            },
-            "801.158575321_75117758": {
-                "name": "Athletics",
-                "handicap": 0
-            },
-            "801.158575321_29179": {
-                "name": "Kansas City Royals",
                 "handicap": 0
             },
             "801.158575321_29164": {
@@ -1696,10 +1162,6 @@
             },
             "801.158575321_29162": {
                 "name": "Tampa Bay Rays",
-                "handicap": 0
-            },
-            "801.158575321_1093236": {
-                "name": "Los Angeles Angels",
                 "handicap": 0
             },
             "801.158575321_5408012": {
@@ -1726,16 +1188,8 @@
                 "name": "New York Yankees",
                 "handicap": 0
             },
-            "801.158575324_29179": {
-                "name": "Kansas City Royals",
-                "handicap": 0
-            },
             "801.158575324_29160": {
                 "name": "Minnesota Twins",
-                "handicap": 0
-            },
-            "801.158575324_75117758": {
-                "name": "Athletics",
                 "handicap": 0
             },
             "801.158575324_29170": {
@@ -1744,10 +1198,6 @@
             },
             "801.158575324_29157": {
                 "name": "Baltimore Orioles",
-                "handicap": 0
-            },
-            "801.158575324_1093236": {
-                "name": "Los Angeles Angels",
                 "handicap": 0
             },
             "801.158575324_29164": {
@@ -1802,24 +1252,12 @@
                 "name": "Cleveland Guardians",
                 "handicap": 0
             },
-            "801.158575322_75117758": {
-                "name": "Athletics",
-                "handicap": 0
-            },
             "801.158575322_29170": {
                 "name": "Houston Astros",
                 "handicap": 0
             },
-            "801.158575322_29179": {
-                "name": "Kansas City Royals",
-                "handicap": 0
-            },
             "801.158575322_29160": {
                 "name": "Minnesota Twins",
-                "handicap": 0
-            },
-            "801.158575322_1093236": {
-                "name": "Los Angeles Angels",
                 "handicap": 0
             },
             "801.158575322_5408012": {
@@ -1862,44 +1300,40 @@
                 "name": "Detroit Tigers",
                 "handicap": 0
             },
-            "801.158575323_75117758": {
-                "name": "Athletics",
-                "handicap": 0
-            },
             "801.158575323_29170": {
                 "name": "Houston Astros",
-                "handicap": 0
-            },
-            "801.158575323_29179": {
-                "name": "Kansas City Royals",
                 "handicap": 0
             },
             "801.158575323_29160": {
                 "name": "Minnesota Twins",
                 "handicap": 0
             },
-            "801.158575323_1093236": {
-                "name": "Los Angeles Angels",
-                "handicap": 0
-            },
             "801.158575323_5408012": {
                 "name": "Chicago White Sox",
                 "handicap": 0
             },
-            "801.158374223_29158": {
-                "name": "Boston Red Sox",
-                "handicap": 0
-            },
-            "801.158374223_7100968": {
-                "name": "Seattle Mariners",
+            "801.158374223_29164": {
+                "name": "Toronto Blue Jays",
                 "handicap": 0
             },
             "801.158374223_41541473": {
                 "name": "Cleveland Guardians",
                 "handicap": 0
             },
+            "801.158374223_29160": {
+                "name": "Minnesota Twins",
+                "handicap": 0
+            },
+            "801.158374223_29158": {
+                "name": "Boston Red Sox",
+                "handicap": 0
+            },
             "801.158374223_29157": {
                 "name": "Baltimore Orioles",
+                "handicap": 0
+            },
+            "801.158374223_29163": {
+                "name": "Texas Rangers",
                 "handicap": 0
             },
             "801.158374223_5408012": {
@@ -1910,40 +1344,20 @@
                 "name": "Houston Astros",
                 "handicap": 0
             },
-            "801.158374223_29163": {
-                "name": "Texas Rangers",
-                "handicap": 0
-            },
             "801.158374223_29159": {
                 "name": "Detroit Tigers",
                 "handicap": 0
             },
-            "801.158374223_29160": {
-                "name": "Minnesota Twins",
-                "handicap": 0
-            },
-            "801.158374223_29164": {
-                "name": "Toronto Blue Jays",
-                "handicap": 0
-            },
-            "801.158374223_29162": {
-                "name": "Tampa Bay Rays",
+            "801.158374223_7100968": {
+                "name": "Seattle Mariners",
                 "handicap": 0
             },
             "801.158374223_29161": {
                 "name": "New York Yankees",
                 "handicap": 0
             },
-            "801.158374223_75117758": {
-                "name": "Athletics",
-                "handicap": 0
-            },
-            "801.158374223_29179": {
-                "name": "Kansas City Royals",
-                "handicap": 0
-            },
-            "801.158374223_1093236": {
-                "name": "Los Angeles Angels",
+            "801.158374223_29162": {
+                "name": "Tampa Bay Rays",
                 "handicap": 0
             },
             "801.158374319_29171": {
@@ -1990,10 +1404,6 @@
                 "name": "St. Louis Cardinals",
                 "handicap": 0
             },
-            "801.158374319_29178": {
-                "name": "San Francisco Giants",
-                "handicap": 0
-            },
             "801.158374319_29174": {
                 "name": "New York Mets",
                 "handicap": 0
@@ -2002,12 +1412,12 @@
                 "name": "Pittsburgh Pirates",
                 "handicap": 0
             },
-            "801.158374321_29171": {
-                "name": "Los Angeles Dodgers",
-                "handicap": 0
-            },
             "801.158374321_29172": {
                 "name": "Milwaukee Brewers",
+                "handicap": 0
+            },
+            "801.158374321_29171": {
+                "name": "Los Angeles Dodgers",
                 "handicap": 0
             },
             "801.158374321_7100960": {
@@ -2016,10 +1426,6 @@
             },
             "801.158374321_29166": {
                 "name": "Chicago Cubs",
-                "handicap": 0
-            },
-            "801.158374321_29175": {
-                "name": "Philadelphia Phillies",
                 "handicap": 0
             },
             "801.158374321_50291": {
@@ -2038,8 +1444,8 @@
                 "name": "Cincinnati Reds",
                 "handicap": 0
             },
-            "801.158374321_29178": {
-                "name": "San Francisco Giants",
+            "801.158374321_29175": {
+                "name": "Philadelphia Phillies",
                 "handicap": 0
             },
             "801.158374321_29174": {
@@ -2106,10 +1512,6 @@
                 "name": "Miami Marlins",
                 "handicap": 0
             },
-            "801.158575326_29178": {
-                "name": "San Francisco Giants",
-                "handicap": 0
-            },
             "801.158575326_1033687": {
                 "name": "Washington Nationals",
                 "handicap": 0
@@ -2166,10 +1568,6 @@
                 "name": "Arizona Diamondbacks",
                 "handicap": 0
             },
-            "801.158575325_29178": {
-                "name": "San Francisco Giants",
-                "handicap": 0
-            },
             "801.158575329_29177": {
                 "name": "San Diego Padres",
                 "handicap": 0
@@ -2184,10 +1582,6 @@
             },
             "801.158575329_29175": {
                 "name": "Philadelphia Phillies",
-                "handicap": 0
-            },
-            "801.158575329_29178": {
-                "name": "San Francisco Giants",
                 "handicap": 0
             },
             "801.158575329_29165": {
@@ -2254,10 +1648,6 @@
                 "name": "New York Mets",
                 "handicap": 0
             },
-            "801.158575328_29178": {
-                "name": "San Francisco Giants",
-                "handicap": 0
-            },
             "801.158575328_29175": {
                 "name": "Philadelphia Phillies",
                 "handicap": 0
@@ -2282,20 +1672,20 @@
                 "name": "Washington Nationals",
                 "handicap": 0
             },
-            "801.158374320_29165": {
-                "name": "Arizona Diamondbacks",
-                "handicap": 0
-            },
             "801.158374320_29177": {
                 "name": "San Diego Padres",
+                "handicap": 0
+            },
+            "801.158374320_29165": {
+                "name": "Arizona Diamondbacks",
                 "handicap": 0
             },
             "801.158374320_29175": {
                 "name": "Philadelphia Phillies",
                 "handicap": 0
             },
-            "801.158374320_29176": {
-                "name": "Pittsburgh Pirates",
+            "801.158374320_7100960": {
+                "name": "Atlanta Braves",
                 "handicap": 0
             },
             "801.158374320_29166": {
@@ -2306,16 +1696,12 @@
                 "name": "St. Louis Cardinals",
                 "handicap": 0
             },
-            "801.158374320_1033687": {
-                "name": "Washington Nationals",
-                "handicap": 0
-            },
             "801.158374320_6266193": {
                 "name": "Miami Marlins",
                 "handicap": 0
             },
-            "801.158374320_7100960": {
-                "name": "Atlanta Braves",
+            "801.158374320_29176": {
+                "name": "Pittsburgh Pirates",
                 "handicap": 0
             },
             "801.158374320_29167": {
@@ -2326,48 +1712,16 @@
                 "name": "Milwaukee Brewers",
                 "handicap": 0
             },
-            "801.158374320_29178": {
-                "name": "San Francisco Giants",
-                "handicap": 0
-            },
             "801.158374320_29174": {
                 "name": "New York Mets",
                 "handicap": 0
             },
+            "801.158374320_1033687": {
+                "name": "Washington Nationals",
+                "handicap": 0
+            },
             "801.158374320_29171": {
                 "name": "Los Angeles Dodgers",
-                "handicap": 0
-            },
-            "801.159321169_68115489": {
-                "name": "600,000 and less",
-                "handicap": 0
-            },
-            "801.159321169_68112082": {
-                "name": "600,001 - 650,000",
-                "handicap": 0
-            },
-            "801.159321169_68112081": {
-                "name": "650,001 - 700,000",
-                "handicap": 0
-            },
-            "801.159321169_68112132": {
-                "name": "700,001 - 750,000",
-                "handicap": 0
-            },
-            "801.159321169_68112083": {
-                "name": "750,001 - 800,000",
-                "handicap": 0
-            },
-            "801.159321169_68112087": {
-                "name": "800,001 - 850,000",
-                "handicap": 0
-            },
-            "801.159321169_68112086": {
-                "name": "850,001 - 900,000",
-                "handicap": 0
-            },
-            "801.159321169_68112088": {
-                "name": "900,001 +",
                 "handicap": 0
             },
             "801.145544788_29171": {
@@ -2382,128 +1736,92 @@
                 "name": "Milwaukee Brewers",
                 "handicap": 0
             },
-            "801.145544788_7100960": {
-                "name": "Atlanta Braves",
-                "handicap": 0
-            },
-            "801.145544788_7100968": {
-                "name": "Seattle Mariners",
-                "handicap": 0
-            },
-            "801.145544788_29175": {
-                "name": "Philadelphia Phillies",
-                "handicap": 0
-            },
             "801.145544788_29162": {
                 "name": "Tampa Bay Rays",
-                "handicap": 0
-            },
-            "801.145544788_29158": {
-                "name": "Boston Red Sox",
                 "handicap": 0
             },
             "801.145544788_29166": {
                 "name": "Chicago Cubs",
                 "handicap": 0
             },
-            "801.145544788_29163": {
-                "name": "Texas Rangers",
+            "801.145544788_29158": {
+                "name": "Boston Red Sox",
                 "handicap": 0
             },
-            "801.145544788_5408012": {
-                "name": "Chicago White Sox",
+            "801.145544788_7100960": {
+                "name": "Atlanta Braves",
                 "handicap": 0
             },
-            "801.145544788_41541473": {
-                "name": "Cleveland Guardians",
-                "handicap": 0
-            },
-            "801.145544788_29159": {
-                "name": "Detroit Tigers",
+            "801.145544788_29175": {
+                "name": "Philadelphia Phillies",
                 "handicap": 0
             },
             "801.145544788_29170": {
                 "name": "Houston Astros",
                 "handicap": 0
             },
-            "801.145544788_29157": {
-                "name": "Baltimore Orioles",
+            "801.145544788_5408012": {
+                "name": "Chicago White Sox",
                 "handicap": 0
             },
-            "801.145544788_29176": {
-                "name": "Pittsburgh Pirates",
-                "handicap": 0
-            },
-            "801.145544788_29165": {
-                "name": "Arizona Diamondbacks",
+            "801.145544788_7100968": {
+                "name": "Seattle Mariners",
                 "handicap": 0
             },
             "801.145544788_29177": {
                 "name": "San Diego Padres",
                 "handicap": 0
             },
+            "801.145544788_29163": {
+                "name": "Texas Rangers",
+                "handicap": 0
+            },
+            "801.145544788_41541473": {
+                "name": "Cleveland Guardians",
+                "handicap": 0
+            },
             "801.145544788_29160": {
                 "name": "Minnesota Twins",
+                "handicap": 0
+            },
+            "801.145544788_29165": {
+                "name": "Arizona Diamondbacks",
                 "handicap": 0
             },
             "801.145544788_29164": {
                 "name": "Toronto Blue Jays",
                 "handicap": 0
             },
-            "801.145544788_7687401": {
-                "name": "St. Louis Cardinals",
+            "801.145544788_29159": {
+                "name": "Detroit Tigers",
+                "handicap": 0
+            },
+            "801.145544788_29157": {
+                "name": "Baltimore Orioles",
                 "handicap": 0
             },
             "801.145544788_6266193": {
                 "name": "Miami Marlins",
                 "handicap": 0
             },
-            "801.145544788_1033687": {
-                "name": "Washington Nationals",
+            "801.145544788_50291": {
+                "name": "St. Louis Cardinals",
                 "handicap": 0
             },
-            "801.145544788_29167": {
-                "name": "Cincinnati Reds",
+            "801.145544788_29176": {
+                "name": "Pittsburgh Pirates",
                 "handicap": 0
             },
-            "801.145544788_75117758": {
-                "name": "Athletics",
-                "handicap": 0
-            },
-            "801.145544788_29179": {
-                "name": "Kansas City Royals",
-                "handicap": 0
-            },
-            "801.145544788_29174": {
-                "name": "New York Mets",
-                "handicap": 0
-            },
-            "801.145544788_29168": {
-                "name": "Colorado Rockies",
-                "handicap": 0
-            },
-            "801.145544788_29178": {
-                "name": "San Francisco Giants",
-                "handicap": 0
-            },
-            "801.145544788_1093236": {
-                "name": "Los Angeles Angels",
+            "801.145808890_64162739": {
+                "name": "Arizona Diamondbacks to beat Chicago White Sox",
                 "handicap": 0
             },
             "801.145808890_64162780": {
                 "name": "Arizona Diamondbacks to beat New York Yankees",
                 "handicap": 0
             },
-            "801.145808890_61078191": {
-                "name": "Arizona Diamondbacks to beat Seattle Mariners",
-                "handicap": 0
-            },
             "801.145808890_61078229": {
                 "name": "Arizona Diamondbacks to beat Tampa Bay Rays",
-                "handicap": 0
-            },
-            "801.145808890_47634961": {
-                "name": "Atlanta Braves to beat Baltimore Orioles",
                 "handicap": 0
             },
             "801.145808890_40667338": {
@@ -2550,20 +1868,8 @@
                 "name": "Atlanta Braves to beat Toronto Blue Jays",
                 "handicap": 0
             },
-            "801.145808890_47634929": {
-                "name": "Baltimore Orioles to beat Atlanta Braves",
-                "handicap": 0
-            },
-            "801.145808890_47634967": {
-                "name": "Baltimore Orioles to beat Los Angeles Dodgers",
-                "handicap": 0
-            },
-            "801.145808890_47634951": {
-                "name": "Baltimore Orioles to beat Milwaukee Brewers",
-                "handicap": 0
-            },
-            "801.145808890_47634979": {
-                "name": "Baltimore Orioles to beat Philadelphia Phillies",
+            "801.145808890_64162931": {
+                "name": "Boston Red Sox to beat Arizona Diamondbacks",
                 "handicap": 0
             },
             "801.145808890_40667385": {
@@ -2586,8 +1892,8 @@
                 "name": "Boston Red Sox to beat Philadelphia Phillies",
                 "handicap": 0
             },
-            "801.145808890_61078230": {
-                "name": "Chicago Cubs to beat Baltimore Orioles",
+            "801.145808890_40667373": {
+                "name": "Boston Red Sox to beat San Diego Padres",
                 "handicap": 0
             },
             "801.145808890_64162916": {
@@ -2610,6 +1916,10 @@
                 "name": "Chicago Cubs to beat Houston Astros",
                 "handicap": 0
             },
+            "801.145808890_61078193": {
+                "name": "Chicago Cubs to beat Minnesota Twins",
+                "handicap": 0
+            },
             "801.145808890_64162885": {
                 "name": "Chicago Cubs to beat New York Yankees",
                 "handicap": 0
@@ -2624,6 +1934,14 @@
             },
             "801.145808890_61078210": {
                 "name": "Chicago Cubs to beat Texas Rangers",
+                "handicap": 0
+            },
+            "801.145808890_61078218": {
+                "name": "Chicago Cubs to beat Toronto Blue Jays",
+                "handicap": 0
+            },
+            "801.145808890_64162859": {
+                "name": "Chicago White Sox to beat Arizona Diamondbacks",
                 "handicap": 0
             },
             "801.145808890_40667396": {
@@ -2646,6 +1964,10 @@
                 "name": "Chicago White Sox to beat Philadelphia Phillies",
                 "handicap": 0
             },
+            "801.145808890_40667400": {
+                "name": "Chicago White Sox to beat San Diego Padres",
+                "handicap": 0
+            },
             "801.145808890_47634973": {
                 "name": "Cleveland Guardians to beat Atlanta Braves",
                 "handicap": 0
@@ -2664,10 +1986,6 @@
             },
             "801.145808890_47634935": {
                 "name": "Cleveland Guardians to beat Philadelphia Phillies",
-                "handicap": 0
-            },
-            "801.145808890_64162750": {
-                "name": "Detroit Tigers to beat Atlanta Braves",
                 "handicap": 0
             },
             "801.145808890_64162820": {
@@ -2704,6 +2022,10 @@
             },
             "801.145808890_40667445": {
                 "name": "Houston Astros to beat Philadelphia Phillies",
+                "handicap": 0
+            },
+            "801.145808890_40667346": {
+                "name": "Houston Astros to beat San Diego Padres",
                 "handicap": 0
             },
             "801.145808890_47634966": {
@@ -2798,8 +2120,16 @@
                 "name": "Milwaukee Brewers to beat Texas Rangers",
                 "handicap": 0
             },
+            "801.145808890_40667462": {
+                "name": "Milwaukee Brewers to beat Toronto Blue Jays",
+                "handicap": 0
+            },
             "801.145808890_47634953": {
                 "name": "Minnesota Twins to beat Atlanta Braves",
+                "handicap": 0
+            },
+            "801.145808890_61078196": {
+                "name": "Minnesota Twins to beat Chicago Cubs",
                 "handicap": 0
             },
             "801.145808890_47634980": {
@@ -2808,6 +2138,10 @@
             },
             "801.145808890_47634937": {
                 "name": "Minnesota Twins to beat Milwaukee Brewers",
+                "handicap": 0
+            },
+            "801.145808890_47634925": {
+                "name": "Minnesota Twins to beat Philadelphia Phillies",
                 "handicap": 0
             },
             "801.145808890_64162756": {
@@ -2834,20 +2168,8 @@
                 "name": "New York Yankees to beat Philadelphia Phillies",
                 "handicap": 0
             },
-            "801.145808890_64162783": {
-                "name": "New York Yankees to beat Pittsburgh Pirates",
-                "handicap": 0
-            },
             "801.145808890_40667349": {
                 "name": "New York Yankees to beat San Diego Padres",
-                "handicap": 0
-            },
-            "801.145808890_47634930": {
-                "name": "New York Yankees to beat St. Louis Cardinals",
-                "handicap": 0
-            },
-            "801.145808890_47634968": {
-                "name": "Philadelphia Phillies to beat Baltimore Orioles",
                 "handicap": 0
             },
             "801.145808890_40667393": {
@@ -2890,28 +2212,28 @@
                 "name": "Philadelphia Phillies to beat Texas Rangers",
                 "handicap": 0
             },
-            "801.145808890_64162779": {
-                "name": "Pittsburgh Pirates to beat New York Yankees",
+            "801.145808890_40667380": {
+                "name": "Philadelphia Phillies to beat Toronto Blue Jays",
                 "handicap": 0
             },
-            "801.145808890_64162854": {
-                "name": "Pittsburgh Pirates to beat Seattle Mariners",
+            "801.145808890_40667433": {
+                "name": "San Diego Padres to beat Boston Red Sox",
                 "handicap": 0
             },
-            "801.145808890_64162839": {
-                "name": "Pittsburgh Pirates to beat Tampa Bay Rays",
+            "801.145808890_40667398": {
+                "name": "San Diego Padres to beat Chicago White Sox",
+                "handicap": 0
+            },
+            "801.145808890_40667444": {
+                "name": "San Diego Padres to beat Houston Astros",
                 "handicap": 0
             },
             "801.145808890_40667419": {
                 "name": "San Diego Padres to beat New York Yankees",
                 "handicap": 0
             },
-            "801.145808890_64162835": {
-                "name": "San Diego Padres to beat Texas Rangers",
-                "handicap": 0
-            },
-            "801.145808890_61078240": {
-                "name": "Seattle Mariners to beat Arizona Diamondbacks",
+            "801.145808890_40667427": {
+                "name": "San Diego Padres to beat Tampa Bay Rays",
                 "handicap": 0
             },
             "801.145808890_40667374": {
@@ -2932,10 +2254,6 @@
             },
             "801.145808890_40667383": {
                 "name": "Seattle Mariners to beat Philadelphia Phillies",
-                "handicap": 0
-            },
-            "801.145808890_64162743": {
-                "name": "Seattle Mariners to beat Pittsburgh Pirates",
                 "handicap": 0
             },
             "801.145808890_40667441": {
@@ -2966,6 +2284,10 @@
                 "name": "Tampa Bay Rays to beat Philadelphia Phillies",
                 "handicap": 0
             },
+            "801.145808890_40667356": {
+                "name": "Tampa Bay Rays to beat San Diego Padres",
+                "handicap": 0
+            },
             "801.145808890_61078189": {
                 "name": "Texas Rangers to beat Atlanta Braves",
                 "handicap": 0
@@ -2984,6 +2306,14 @@
             },
             "801.145808890_61078223": {
                 "name": "Texas Rangers to beat Philadelphia Phillies",
+                "handicap": 0
+            },
+            "801.145808890_40667410": {
+                "name": "Toronto Blue Jays to beat Atlanta Braves",
+                "handicap": 0
+            },
+            "801.145808890_61078222": {
+                "name": "Toronto Blue Jays to beat Chicago Cubs",
                 "handicap": 0
             },
             "801.145808890_40667443": {
@@ -4310,20 +3640,20 @@
                 "name": "New York (NYM, NYY)",
                 "handicap": 0
             },
-            "801.147553508_67924725": {
-                "name": "Pennsylvania (PHI, PIT)",
-                "handicap": 0
-            },
             "801.147553508_67924731": {
                 "name": "Illinois (CHC, CHW)",
+                "handicap": 0
+            },
+            "801.147553508_67924727": {
+                "name": "Florida (MIA, TBR)",
                 "handicap": 0
             },
             "801.147553508_67924732": {
                 "name": "Texas (HOU, TEX)",
                 "handicap": 0
             },
-            "801.147553508_67924727": {
-                "name": "Florida (MIA, TBR)",
+            "801.147553508_67924725": {
+                "name": "Pennsylvania (PHI, PIT)",
                 "handicap": 0
             },
             "801.147553508_67924730": {
@@ -4378,56 +3708,20 @@
                 "name": "Drew Rasmussen",
                 "handicap": 0
             },
-            "801.152444265_40787918": {
-                "name": "Joe Ryan",
-                "handicap": 0
-            },
-            "801.152444265_32578665": {
-                "name": "Logan Gilbert",
-                "handicap": 0
-            },
             "801.152444265_12011566": {
                 "name": "Sonny Gray",
-                "handicap": 0
-            },
-            "801.152444265_38684581": {
-                "name": "Tarik Skubal",
-                "handicap": 0
-            },
-            "801.152444265_15270224": {
-                "name": "Jacob deGrom",
-                "handicap": 0
-            },
-            "801.152444265_40426013": {
-                "name": "Ranger Suarez",
-                "handicap": 0
-            },
-            "801.152444265_89265203": {
-                "name": "Parker Messick",
                 "handicap": 0
             },
             "801.152444265_57607137": {
                 "name": "Gavin Williams",
                 "handicap": 0
             },
-            "801.152444265_55494392": {
-                "name": "Bryce Miller",
-                "handicap": 0
-            },
-            "801.152444265_73886407": {
-                "name": "Sean Burke",
-                "handicap": 0
-            },
-            "801.152444265_90525874": {
-                "name": "Louis Varland",
+            "801.152444265_89265203": {
+                "name": "Parker Messick",
                 "handicap": 0
             },
             "801.152444331_83655125": {
                 "name": "Jacob Misiorowski",
-                "handicap": 0
-            },
-            "801.152444331_20689597": {
-                "name": "Zack Wheeler",
                 "handicap": 0
             },
             "801.152444331_11434121": {
@@ -4438,36 +3732,16 @@
                 "name": "Cristopher Sanchez",
                 "handicap": 0
             },
-            "801.152444331_65321016": {
-                "name": "Chase Burns",
-                "handicap": 0
-            },
             "801.152444331_63429483": {
                 "name": "Yoshinobu Yamamoto",
                 "handicap": 0
             },
-            "801.152444331_57671857": {
-                "name": "Paul Skenes",
+            "801.152444331_65321016": {
+                "name": "Chase Burns",
                 "handicap": 0
             },
-            "801.152444331_23494791": {
-                "name": "Jesus Luzardo",
-                "handicap": 0
-            },
-            "801.152444331_54968283": {
-                "name": "Mason Miller",
-                "handicap": 0
-            },
-            "801.152444331_96874598": {
-                "name": "Michael McGreevy",
-                "handicap": 0
-            },
-            "801.152444331_27942306": {
-                "name": "Eduardo Rodriguez",
-                "handicap": 0
-            },
-            "801.152444331_52013230": {
-                "name": "Kyle Harrison",
+            "801.152444331_20689597": {
+                "name": "Zack Wheeler",
                 "handicap": 0
             },
             "801.152443988_24676176": {
@@ -4478,16 +3752,12 @@
                 "name": "Junior Caminero",
                 "handicap": 0
             },
-            "801.152443988_70614184": {
-                "name": "Ben Rice",
-                "handicap": 0
-            },
-            "801.152443988_65312398": {
-                "name": "Nick Kurtz",
-                "handicap": 0
-            },
             "801.152443988_38944611": {
                 "name": "Bobby Witt Jr.",
+                "handicap": 0
+            },
+            "801.152443988_70614184": {
+                "name": "Ben Rice",
                 "handicap": 0
             },
             "801.152443988_72101852": {
@@ -4498,72 +3768,12 @@
                 "name": "Willson Contreras",
                 "handicap": 0
             },
-            "801.152443988_11280722": {
-                "name": "Byron Buxton",
-                "handicap": 0
-            },
-            "801.152443988_47635197": {
-                "name": "Shea Langeliers",
-                "handicap": 0
-            },
-            "801.152443988_38684580": {
-                "name": "Julio Rodriguez",
-                "handicap": 0
-            },
-            "801.152443988_94749094": {
-                "name": "Kevin McGonigle",
-                "handicap": 0
-            },
-            "801.152443988_43744430": {
-                "name": "Riley Greene",
-                "handicap": 0
-            },
-            "801.152443988_47266115": {
-                "name": "Miguel Vargas",
-                "handicap": 0
-            },
-            "801.152443988_13069472": {
-                "name": "Cody Bellinger",
-                "handicap": 0
-            },
-            "801.152444207_17511224": {
-                "name": "Shohei Ohtani",
-                "handicap": 0
-            },
             "801.152444207_60489486": {
                 "name": "Pete Crow-Armstrong",
                 "handicap": 0
             },
-            "801.152444207_64795485": {
-                "name": "James Wood",
-                "handicap": 0
-            },
-            "801.152444207_10885583": {
-                "name": "Kyle Schwarber",
-                "handicap": 0
-            },
-            "801.152444207_52013228": {
-                "name": "Jordan Walker",
-                "handicap": 0
-            },
-            "801.152444207_49086892": {
-                "name": "Otto Lopez",
-                "handicap": 0
-            },
-            "801.152444207_47989104": {
-                "name": "Corbin Carroll",
-                "handicap": 0
-            },
-            "801.152444207_11280735": {
-                "name": "Ketel Marte",
-                "handicap": 0
-            },
-            "801.152444207_7423201": {
-                "name": "Bryce Harper",
-                "handicap": 0
-            },
-            "801.152444207_83655125": {
-                "name": "Jacob Misiorowski",
+            "801.152444207_17511224": {
+                "name": "Shohei Ohtani",
                 "handicap": 0
             },
             "801.155520687_94749094": {
@@ -4578,6 +3788,10 @@
                 "name": "Parker Messick",
                 "handicap": 0
             },
+            "801.155520687_65359967": {
+                "name": "Payton Tolle",
+                "handicap": 0
+            },
             "801.155520687_94749086": {
                 "name": "Kazuma Okamoto",
                 "handicap": 0
@@ -4586,36 +3800,24 @@
                 "name": "Chase DeLauter",
                 "handicap": 0
             },
-            "801.155520687_95833188": {
-                "name": "Sam Antonacci",
+            "801.155520687_87020670": {
+                "name": "Tristan Peters",
                 "handicap": 0
             },
             "801.155520687_65321014": {
                 "name": "Travis Bazzana",
                 "handicap": 0
             },
-            "801.155520687_88140245": {
-                "name": "Carter Jensen",
-                "handicap": 0
-            },
-            "801.155520687_87020670": {
-                "name": "Tristan Peters",
-                "handicap": 0
-            },
-            "801.155520687_65359967": {
-                "name": "Payton Tolle",
-                "handicap": 0
-            },
-            "801.155520687_87350822": {
-                "name": "Samuel Basallo",
+            "801.155520687_95833188": {
+                "name": "Sam Antonacci",
                 "handicap": 0
             },
             "801.155520687_100773135": {
                 "name": "Jake Bennett",
                 "handicap": 0
             },
-            "801.155520687_99419115": {
-                "name": "Walbert Urena",
+            "801.155520687_94749093": {
+                "name": "George Lombard Jr.",
                 "handicap": 0
             },
             "801.155523879_65321017": {
@@ -4626,108 +3828,72 @@
                 "name": "Sal Stewart",
                 "handicap": 0
             },
-            "801.155523879_98772116": {
-                "name": "Esmerlyn Valdez",
+            "801.155523879_65321015": {
+                "name": "Carson Benge",
                 "handicap": 0
             },
             "801.155523879_93819969": {
                 "name": "Nolan McLean",
                 "handicap": 0
             },
-            "801.155523879_97200661": {
-                "name": "Foster Griffin",
-                "handicap": 0
-            },
             "801.155523879_96802357": {
                 "name": "TJ Rumfield",
                 "handicap": 0
             },
-            "801.155523879_88650443": {
-                "name": "Bryce Eldridge",
-                "handicap": 0
-            },
-            "801.155523879_65321015": {
-                "name": "Carson Benge",
-                "handicap": 0
-            },
-            "801.155523879_98418793": {
-                "name": "A.J. Ewing",
-                "handicap": 0
-            },
-            "801.155523879_94750500": {
-                "name": "Joe Mack",
-                "handicap": 0
-            },
-            "801.155523879_100497391": {
-                "name": "Shane Drohan",
-                "handicap": 0
-            },
-            "801.155523879_82811192": {
-                "name": "Logan Henderson",
-                "handicap": 0
-            },
-            "801.157219238_7100960": {
-                "name": "Atlanta Braves",
-                "handicap": 0
-            },
-            "801.157219238_29161": {
-                "name": "New York Yankees",
-                "handicap": 0
-            },
-            "801.157219238_29162": {
-                "name": "Tampa Bay Rays",
+            "801.155523879_101725700": {
+                "name": "Joshua Baez",
                 "handicap": 0
             },
             "801.157219238_29166": {
                 "name": "Chicago Cubs",
                 "handicap": 0
             },
-            "801.157219238_29175": {
-                "name": "Philadelphia Phillies",
-                "handicap": 0
-            },
-            "801.157219238_29163": {
-                "name": "Texas Rangers",
-                "handicap": 0
-            },
             "801.157219238_29158": {
                 "name": "Boston Red Sox",
                 "handicap": 0
             },
-            "801.157219238_41541473": {
-                "name": "Cleveland Guardians",
-                "handicap": 0
-            },
-            "801.157219238_7100968": {
-                "name": "Seattle Mariners",
+            "801.157219238_29175": {
+                "name": "Philadelphia Phillies",
                 "handicap": 0
             },
             "801.157219238_5408012": {
                 "name": "Chicago White Sox",
                 "handicap": 0
             },
-            "801.157219238_29165": {
-                "name": "Arizona Diamondbacks",
+            "801.157219238_29177": {
+                "name": "San Diego Padres",
                 "handicap": 0
             },
             "801.157219238_29170": {
                 "name": "Houston Astros",
                 "handicap": 0
             },
-            "801.157219238_29159": {
-                "name": "Detroit Tigers",
+            "801.157219238_29165": {
+                "name": "Arizona Diamondbacks",
                 "handicap": 0
             },
-            "801.157219238_29177": {
-                "name": "San Diego Padres",
+            "801.157219238_29163": {
+                "name": "Texas Rangers",
                 "handicap": 0
             },
-            "801.157219238_29176": {
-                "name": "Pittsburgh Pirates",
+            "801.157219238_7100968": {
+                "name": "Seattle Mariners",
+                "handicap": 0
+            },
+            "801.157219238_41541473": {
+                "name": "Cleveland Guardians",
+                "handicap": 0
+            },
+            "801.157219238_29164": {
+                "name": "Toronto Blue Jays",
                 "handicap": 0
             },
             "801.157219238_29160": {
                 "name": "Minnesota Twins",
+                "handicap": 0
+            },
+            "801.157219238_29159": {
+                "name": "Detroit Tigers",
                 "handicap": 0
             },
             "801.157219238_29157": {
@@ -4738,72 +3904,36 @@
                 "name": "St. Louis Cardinals",
                 "handicap": 0
             },
+            "801.157219238_6266193": {
+                "name": "Miami Marlins",
+                "handicap": 0
+            },
+            "801.157219238_29176": {
+                "name": "Pittsburgh Pirates",
+                "handicap": 0
+            },
             "801.157219238_1033687": {
                 "name": "Washington Nationals",
                 "handicap": 0
             },
-            "801.157219238_29164": {
-                "name": "Toronto Blue Jays",
-                "handicap": 0
-            },
-            "801.157219238_6266193": {
-                "name": "Miami Marlins",
+            "801.157219238_29174": {
+                "name": "New York Mets",
                 "handicap": 0
             },
             "801.157219238_29167": {
                 "name": "Cincinnati Reds",
                 "handicap": 0
             },
-            "801.157223690_1033687": {
-                "name": "Washington Nationals",
-                "handicap": 0
-            },
-            "801.157223690_5408012": {
-                "name": "Chicago White Sox",
-                "handicap": 0
-            },
-            "801.157223690_50291": {
-                "name": "St. Louis Cardinals",
+            "801.157223690_29176": {
+                "name": "Pittsburgh Pirates",
                 "handicap": 0
             },
             "801.157223690_6266193": {
                 "name": "Miami Marlins",
                 "handicap": 0
             },
-            "801.157223690_29160": {
-                "name": "Minnesota Twins",
-                "handicap": 0
-            },
-            "801.157223690_29162": {
-                "name": "Tampa Bay Rays",
-                "handicap": 0
-            },
-            "801.157223690_29176": {
-                "name": "Pittsburgh Pirates",
-                "handicap": 0
-            },
-            "801.157223690_29165": {
-                "name": "Arizona Diamondbacks",
-                "handicap": 0
-            },
-            "801.157223690_41541473": {
-                "name": "Cleveland Guardians",
-                "handicap": 0
-            },
-            "801.157223690_29167": {
-                "name": "Cincinnati Reds",
-                "handicap": 0
-            },
-            "801.157223690_29163": {
-                "name": "Texas Rangers",
-                "handicap": 0
-            },
-            "801.157223690_29177": {
-                "name": "San Diego Padres",
-                "handicap": 0
-            },
-            "801.157223690_29170": {
-                "name": "Houston Astros",
+            "801.157223690_50291": {
+                "name": "St. Louis Cardinals",
                 "handicap": 0
             },
             "801.157223690_29157": {
@@ -4814,32 +3944,52 @@
                 "name": "Detroit Tigers",
                 "handicap": 0
             },
-            "801.157223690_29158": {
-                "name": "Boston Red Sox",
+            "801.157223690_29160": {
+                "name": "Minnesota Twins",
                 "handicap": 0
             },
             "801.157223690_29164": {
                 "name": "Toronto Blue Jays",
                 "handicap": 0
             },
-            "801.157223690_7100960": {
-                "name": "Atlanta Braves",
+            "801.157223690_41541473": {
+                "name": "Cleveland Guardians",
                 "handicap": 0
             },
-            "801.157223690_29166": {
-                "name": "Chicago Cubs",
+            "801.157223690_7100968": {
+                "name": "Seattle Mariners",
+                "handicap": 0
+            },
+            "801.157223690_29163": {
+                "name": "Texas Rangers",
+                "handicap": 0
+            },
+            "801.157223690_29165": {
+                "name": "Arizona Diamondbacks",
+                "handicap": 0
+            },
+            "801.157223690_29170": {
+                "name": "Houston Astros",
+                "handicap": 0
+            },
+            "801.157223690_29177": {
+                "name": "San Diego Padres",
+                "handicap": 0
+            },
+            "801.157223690_5408012": {
+                "name": "Chicago White Sox",
                 "handicap": 0
             },
             "801.157223690_29175": {
                 "name": "Philadelphia Phillies",
                 "handicap": 0
             },
-            "801.157223690_29161": {
-                "name": "New York Yankees",
+            "801.157223690_29158": {
+                "name": "Boston Red Sox",
                 "handicap": 0
             },
-            "801.157223690_7100968": {
-                "name": "Seattle Mariners",
+            "801.157223690_29166": {
+                "name": "Chicago Cubs",
                 "handicap": 0
             },
             "801.157937686_98444413": {
@@ -4850,409 +4000,561 @@
                 "name": "Shohei Ohtani to win NL MVP & Yoshinobu Yamamoto to win NL Cy Young",
                 "handicap": 0
             },
-            "801.157937686_95654090": {
-                "name": "Kyle Schwarber to win NL MVP & Cristopher Sanchez to win NL Cy Young",
-                "handicap": 0
-            },
-            "801.157937686_95654091": {
-                "name": "Bryce Harper to win NL MVP & Cristopher Sanchez to win NL Cy Young",
-                "handicap": 0
-            },
-            "801.157937534_99291318": {
-                "name": "Jordan Walker to win NL MVP & JJ Wetherholt to win NL Rookie of the Year",
-                "handicap": 0
-            },
-            "801.157937534_99291320": {
-                "name": "Riley Greene to win AL MVP & Kevin McGonigle to win AL Rookie of the Year",
-                "handicap": 0
-            },
-            "801.157937534_95654017": {
-                "name": "Elly De La Cruz to win NL MVP & Sal Stewart to win NL Rookie of the Year",
-                "handicap": 0
-            },
-            "801.157937534_95654033": {
-                "name": "Bobby Witt Jr. to win AL MVP & Carter Jensen to win AL Rookie of the Year",
-                "handicap": 0
-            },
-            "801.157937534_98450494": {
-                "name": "Colson Montgomery to win AL MVP & Munetaka Murakami to win AL Rookie of the Year",
-                "handicap": 0
-            },
-            "801.157937534_99291322": {
-                "name": "Miguel Vargas to win AL MVP & Munetaka Murakami to win AL Rookie of the Year",
-                "handicap": 0
-            },
             "801.157937945_95654127": {
                 "name": "Chase Burns to win NL Cy Young & Sal Stewart to win NL Rookie of the Year",
                 "handicap": 0
             },
-            "801.157937945_95654112": {
-                "name": "Dylan Cease to win AL Cy Young & Trey Yesavage to win AL Rookie of the Year",
-                "handicap": 0
-            },
-            "801.157937945_99291286": {
-                "name": "Davis Martin to win AL Cy Young & Munetaka Murakami to win AL Rookie of the Year",
-                "handicap": 0
-            },
-            "801.178177934_29164": {
-                "name": "Toronto Blue Jays",
-                "handicap": 1.5
-            },
-            "801.178177934_29158": {
-                "name": "Boston Red Sox",
-                "handicap": -1.5
-            },
-            "801.178177932_7017905": {
-                "name": "Over",
-                "handicap": 8.5
-            },
-            "801.178177932_7017906": {
-                "name": "Under",
-                "handicap": 8.5
-            },
-            "801.178179658_75117758": {
-                "name": "Athletics",
-                "handicap": 1.5
-            },
-            "801.178179658_29160": {
-                "name": "Minnesota Twins",
-                "handicap": -1.5
-            },
-            "801.178178789_7017905": {
-                "name": "Over",
-                "handicap": 8.5
-            },
-            "801.178178789_7017906": {
-                "name": "Under",
-                "handicap": 8.5
-            },
-            "801.178179656_7017905": {
-                "name": "Over",
-                "handicap": 10.5
-            },
-            "801.178179656_7017906": {
-                "name": "Under",
-                "handicap": 10.5
-            },
-            "801.178177455_41541473": {
-                "name": "Cleveland Guardians",
-                "handicap": 1.5
-            },
-            "801.178177455_29162": {
-                "name": "Tampa Bay Rays",
-                "handicap": -1.5
-            },
-            "801.178179898_7017905": {
-                "name": "Over",
-                "handicap": 9.5
-            },
-            "801.178179898_7017906": {
-                "name": "Under",
-                "handicap": 9.5
-            },
-            "801.178177532_7100960": {
-                "name": "Atlanta Braves",
-                "handicap": -1.5
-            },
-            "801.178177532_29157": {
-                "name": "Baltimore Orioles",
-                "handicap": 1.5
-            },
-            "801.178177456_7017905": {
-                "name": "Over",
-                "handicap": 7
-            },
-            "801.178177456_7017906": {
-                "name": "Under",
-                "handicap": 7
-            },
-            "801.178137368_29171": {
-                "name": "Los Angeles Dodgers",
-                "handicap": 0
-            },
-            "801.178137368_29174": {
-                "name": "New York Mets",
-                "handicap": 0
-            },
-            "801.178137367_29161": {
-                "name": "New York Yankees",
-                "handicap": 0
-            },
-            "801.178137367_29175": {
-                "name": "Philadelphia Phillies",
-                "handicap": 0
-            },
-            "801.178181472_7017905": {
-                "name": "Over",
-                "handicap": 7.5
-            },
-            "801.178181472_7017906": {
-                "name": "Under",
-                "handicap": 7.5
-            },
-            "801.178137369_29166": {
-                "name": "Chicago Cubs",
-                "handicap": 0
-            },
-            "801.178137369_29176": {
-                "name": "Pittsburgh Pirates",
-                "handicap": 0
-            },
-            "801.178137364_29164": {
-                "name": "Toronto Blue Jays",
-                "handicap": 0
-            },
-            "801.178137364_29158": {
-                "name": "Boston Red Sox",
-                "handicap": 0
-            },
-            "801.178181474_1093236": {
-                "name": "Los Angeles Angels",
-                "handicap": -1.5
-            },
-            "801.178181474_29178": {
-                "name": "San Francisco Giants",
-                "handicap": 1.5
-            },
-            "801.178137363_7100960": {
-                "name": "Atlanta Braves",
-                "handicap": 0
-            },
-            "801.178137363_29157": {
-                "name": "Baltimore Orioles",
-                "handicap": 0
-            },
-            "801.178137366_29165": {
-                "name": "Arizona Diamondbacks",
-                "handicap": 0
-            },
-            "801.178137366_1033687": {
-                "name": "Washington Nationals",
-                "handicap": 0
-            },
-            "801.178137365_7100968": {
-                "name": "Seattle Mariners",
-                "handicap": 0
-            },
-            "801.178137365_29163": {
-                "name": "Texas Rangers",
-                "handicap": 0
-            },
-            "801.178137360_29167": {
-                "name": "Cincinnati Reds",
-                "handicap": 0
-            },
-            "801.178137360_50291": {
-                "name": "St. Louis Cardinals",
-                "handicap": 0
-            },
-            "801.178137362_1093236": {
-                "name": "Los Angeles Angels",
-                "handicap": 0
-            },
-            "801.178137362_29178": {
-                "name": "San Francisco Giants",
-                "handicap": 0
-            },
-            "801.178178791_29177": {
-                "name": "San Diego Padres",
-                "handicap": 1.5
-            },
-            "801.178178791_6266193": {
-                "name": "Miami Marlins",
-                "handicap": -1.5
-            },
-            "801.178178131_29165": {
-                "name": "Arizona Diamondbacks",
-                "handicap": -1.5
-            },
-            "801.178178131_1033687": {
-                "name": "Washington Nationals",
-                "handicap": 1.5
-            },
-            "801.178178132_7017905": {
-                "name": "Over",
-                "handicap": 10.5
-            },
-            "801.178178132_7017906": {
-                "name": "Under",
-                "handicap": 10.5
-            },
-            "801.178181658_29161": {
-                "name": "New York Yankees",
-                "handicap": 1.5
-            },
-            "801.178181658_29175": {
-                "name": "Philadelphia Phillies",
-                "handicap": -1.5
-            },
-            "801.178179900_29170": {
-                "name": "Houston Astros",
-                "handicap": -1.5
-            },
-            "801.178179900_5408012": {
-                "name": "Chicago White Sox",
-                "handicap": 1.5
-            },
-            "801.178179095_29179": {
-                "name": "Kansas City Royals",
-                "handicap": 1.5
-            },
-            "801.178179095_29159": {
-                "name": "Detroit Tigers",
-                "handicap": -1.5
-            },
-            "801.178179096_7017905": {
-                "name": "Over",
-                "handicap": 9.5
-            },
-            "801.178179096_7017906": {
-                "name": "Under",
-                "handicap": 9.5
-            },
-            "801.178180491_7017905": {
-                "name": "Over",
-                "handicap": 9
-            },
-            "801.178180491_7017906": {
-                "name": "Under",
-                "handicap": 9
-            },
-            "801.178179293_29168": {
-                "name": "Colorado Rockies",
-                "handicap": 1.5
-            },
-            "801.178179293_29172": {
-                "name": "Milwaukee Brewers",
-                "handicap": -1.5
-            },
-            "801.178179292_7017905": {
-                "name": "Over",
-                "handicap": 7.5
-            },
-            "801.178179292_7017906": {
-                "name": "Under",
-                "handicap": 7.5
-            },
-            "801.178180493_29167": {
-                "name": "Cincinnati Reds",
-                "handicap": 1.5
-            },
-            "801.178180493_50291": {
-                "name": "St. Louis Cardinals",
-                "handicap": -1.5
-            },
-            "801.178137375_29170": {
-                "name": "Houston Astros",
-                "handicap": 0
-            },
-            "801.178137375_5408012": {
-                "name": "Chicago White Sox",
-                "handicap": 0
-            },
-            "801.178137374_41541473": {
-                "name": "Cleveland Guardians",
-                "handicap": 0
-            },
-            "801.178137374_29162": {
-                "name": "Tampa Bay Rays",
-                "handicap": 0
-            },
-            "801.178181661_7017905": {
-                "name": "Over",
-                "handicap": 7.5
-            },
-            "801.178181661_7017906": {
-                "name": "Under",
-                "handicap": 7.5
-            },
-            "801.178178663_7017905": {
-                "name": "Over",
-                "handicap": 9.5
-            },
-            "801.178178663_7017906": {
-                "name": "Under",
-                "handicap": 9.5
-            },
-            "801.178180874_7100968": {
-                "name": "Seattle Mariners",
-                "handicap": -1.5
-            },
-            "801.178180874_29163": {
-                "name": "Texas Rangers",
-                "handicap": 1.5
-            },
-            "801.178137371_29177": {
-                "name": "San Diego Padres",
-                "handicap": 0
-            },
-            "801.178137371_6266193": {
-                "name": "Miami Marlins",
-                "handicap": 0
-            },
-            "801.178137370_29168": {
-                "name": "Colorado Rockies",
-                "handicap": 0
-            },
-            "801.178137370_29172": {
-                "name": "Milwaukee Brewers",
-                "handicap": 0
-            },
-            "801.178177531_7017905": {
-                "name": "Over",
-                "handicap": 8.5
-            },
-            "801.178177531_7017906": {
-                "name": "Under",
-                "handicap": 8.5
-            },
-            "801.178180873_7017905": {
-                "name": "Over",
-                "handicap": 7.5
-            },
-            "801.178180873_7017906": {
-                "name": "Under",
-                "handicap": 7.5
-            },
-            "801.178137373_29179": {
-                "name": "Kansas City Royals",
-                "handicap": 0
-            },
-            "801.178137373_29159": {
+            "801.182226065_29159": {
                 "name": "Detroit Tigers",
                 "handicap": 0
             },
-            "801.178178364_7017905": {
-                "name": "Over",
-                "handicap": 8.5
+            "801.182226065_29179": {
+                "name": "Kansas City Royals",
+                "handicap": 0
             },
-            "801.178178364_7017906": {
-                "name": "Under",
-                "handicap": 8.5
-            },
-            "801.178137372_75117758": {
+            "801.182226064_75117758": {
                 "name": "Athletics",
                 "handicap": 0
             },
-            "801.178137372_29160": {
+            "801.182226064_29170": {
+                "name": "Houston Astros",
+                "handicap": 0
+            },
+            "801.182426233_7017905": {
+                "name": "Over",
+                "handicap": 7.5
+            },
+            "801.182426233_7017906": {
+                "name": "Under",
+                "handicap": 7.5
+            },
+            "801.182364022_29167": {
+                "name": "Cincinnati Reds",
+                "handicap": 0
+            },
+            "801.182364022_29165": {
+                "name": "Arizona Diamondbacks",
+                "handicap": 0
+            },
+            "801.182425661_29164": {
+                "name": "Toronto Blue Jays",
+                "handicap": 1.5
+            },
+            "801.182425661_29161": {
+                "name": "New York Yankees",
+                "handicap": -1.5
+            },
+            "801.182425982_29162": {
+                "name": "Tampa Bay Rays",
+                "handicap": -1.5
+            },
+            "801.182425982_29157": {
+                "name": "Baltimore Orioles",
+                "handicap": 1.5
+            },
+            "801.182290425_7017905": {
+                "name": "Over",
+                "handicap": 6.5
+            },
+            "801.182290425_7017906": {
+                "name": "Under",
+                "handicap": 6.5
+            },
+            "801.182290423_1093236": {
+                "name": "Los Angeles Angels",
+                "handicap": -1.5
+            },
+            "801.182290423_29163": {
+                "name": "Texas Rangers",
+                "handicap": 1.5
+            },
+            "801.182290663_29167": {
+                "name": "Cincinnati Reds",
+                "handicap": 1.5
+            },
+            "801.182290663_29165": {
+                "name": "Arizona Diamondbacks",
+                "handicap": -1.5
+            },
+            "801.182364020_29160": {
                 "name": "Minnesota Twins",
                 "handicap": 0
             },
-            "801.178178662_29171": {
-                "name": "Los Angeles Dodgers",
+            "801.182364020_29177": {
+                "name": "San Diego Padres",
+                "handicap": 0
+            },
+            "801.182290671_41541473": {
+                "name": "Cleveland Guardians",
                 "handicap": -1.5
             },
-            "801.178178662_29174": {
-                "name": "New York Mets",
+            "801.182290671_29168": {
+                "name": "Colorado Rockies",
                 "handicap": 1.5
             },
-            "801.178178363_29166": {
+            "801.182290670_7017905": {
+                "name": "Over",
+                "handicap": 10.5
+            },
+            "801.182290670_7017906": {
+                "name": "Under",
+                "handicap": 10.5
+            },
+            "801.182226108_29176": {
+                "name": "Pittsburgh Pirates",
+                "handicap": 0
+            },
+            "801.182226108_29171": {
+                "name": "Los Angeles Dodgers",
+                "handicap": 0
+            },
+            "801.182226101_29166": {
+                "name": "Chicago Cubs",
+                "handicap": 0
+            },
+            "801.182226101_7100968": {
+                "name": "Seattle Mariners",
+                "handicap": 0
+            },
+            "801.182226067_1093236": {
+                "name": "Los Angeles Angels",
+                "handicap": 0
+            },
+            "801.182226067_29163": {
+                "name": "Texas Rangers",
+                "handicap": 0
+            },
+            "801.182290637_29178": {
+                "name": "San Francisco Giants",
+                "handicap": -1.5
+            },
+            "801.182290637_29158": {
+                "name": "Boston Red Sox",
+                "handicap": 1.5
+            },
+            "801.182427257_7017905": {
+                "name": "Over",
+                "handicap": 11
+            },
+            "801.182427257_7017906": {
+                "name": "Under",
+                "handicap": 11
+            },
+            "801.182426489_7017905": {
+                "name": "Over",
+                "handicap": 8
+            },
+            "801.182426489_7017906": {
+                "name": "Under",
+                "handicap": 8
+            },
+            "801.182364078_50291": {
+                "name": "St. Louis Cardinals",
+                "handicap": 0
+            },
+            "801.182364078_29175": {
+                "name": "Philadelphia Phillies",
+                "handicap": 0
+            },
+            "801.182427335_7017905": {
+                "name": "Over",
+                "handicap": 8
+            },
+            "801.182427335_7017906": {
+                "name": "Under",
+                "handicap": 8
+            },
+            "801.182364079_7100960": {
+                "name": "Atlanta Braves",
+                "handicap": 0
+            },
+            "801.182364079_29172": {
+                "name": "Milwaukee Brewers",
+                "handicap": 0
+            },
+            "801.182290677_7017905": {
+                "name": "Over",
+                "handicap": 8
+            },
+            "801.182290677_7017906": {
+                "name": "Under",
+                "handicap": 8
+            },
+            "801.182427337_29178": {
+                "name": "San Francisco Giants",
+                "handicap": 1.5
+            },
+            "801.182427337_29158": {
+                "name": "Boston Red Sox",
+                "handicap": -1.5
+            },
+            "801.182290676_29160": {
+                "name": "Minnesota Twins",
+                "handicap": 1.5
+            },
+            "801.182290676_29177": {
+                "name": "San Diego Padres",
+                "handicap": -1.5
+            },
+            "801.182290434_29174": {
+                "name": "New York Mets",
+                "handicap": -1.5
+            },
+            "801.182290434_5408012": {
+                "name": "Chicago White Sox",
+                "handicap": 1.5
+            },
+            "801.182290433_7017905": {
+                "name": "Over",
+                "handicap": 9.5
+            },
+            "801.182290433_7017906": {
+                "name": "Under",
+                "handicap": 9.5
+            },
+            "801.182290640_7017905": {
+                "name": "Over",
+                "handicap": 7.5
+            },
+            "801.182290640_7017906": {
+                "name": "Under",
+                "handicap": 7.5
+            },
+            "801.182427252_41541473": {
+                "name": "Cleveland Guardians",
+                "handicap": -1.5
+            },
+            "801.182427252_29168": {
+                "name": "Colorado Rockies",
+                "handicap": 1.5
+            },
+            "801.182426485_1033687": {
+                "name": "Washington Nationals",
+                "handicap": 1.5
+            },
+            "801.182426485_6266193": {
+                "name": "Miami Marlins",
+                "handicap": -1.5
+            },
+            "801.182226059_29167": {
+                "name": "Cincinnati Reds",
+                "handicap": 0
+            },
+            "801.182226059_29165": {
+                "name": "Arizona Diamondbacks",
+                "handicap": 0
+            },
+            "801.182226058_29162": {
+                "name": "Tampa Bay Rays",
+                "handicap": 0
+            },
+            "801.182226058_29157": {
+                "name": "Baltimore Orioles",
+                "handicap": 0
+            },
+            "801.182226056_29174": {
+                "name": "New York Mets",
+                "handicap": 0
+            },
+            "801.182226056_5408012": {
+                "name": "Chicago White Sox",
+                "handicap": 0
+            },
+            "801.182226120_50291": {
+                "name": "St. Louis Cardinals",
+                "handicap": 0
+            },
+            "801.182226120_29175": {
+                "name": "Philadelphia Phillies",
+                "handicap": 0
+            },
+            "801.182427706_29167": {
+                "name": "Cincinnati Reds",
+                "handicap": 1.5
+            },
+            "801.182427706_29165": {
+                "name": "Arizona Diamondbacks",
+                "handicap": -1.5
+            },
+            "801.182226086_41541473": {
+                "name": "Cleveland Guardians",
+                "handicap": 0
+            },
+            "801.182226086_29168": {
+                "name": "Colorado Rockies",
+                "handicap": 0
+            },
+            "801.182364009_29176": {
+                "name": "Pittsburgh Pirates",
+                "handicap": 0
+            },
+            "801.182364009_29171": {
+                "name": "Los Angeles Dodgers",
+                "handicap": 0
+            },
+            "801.182427705_7017905": {
+                "name": "Over",
+                "handicap": 8.5
+            },
+            "801.182427705_7017906": {
+                "name": "Under",
+                "handicap": 8.5
+            },
+            "801.182226083_29178": {
+                "name": "San Francisco Giants",
+                "handicap": 0
+            },
+            "801.182226083_29158": {
+                "name": "Boston Red Sox",
+                "handicap": 0
+            },
+            "801.182290606_7017905": {
+                "name": "Over",
+                "handicap": 6.5
+            },
+            "801.182290606_7017906": {
+                "name": "Under",
+                "handicap": 6.5
+            },
+            "801.182290605_29159": {
+                "name": "Detroit Tigers",
+                "handicap": 1.5
+            },
+            "801.182290605_29179": {
+                "name": "Kansas City Royals",
+                "handicap": -1.5
+            },
+            "801.182364044_29178": {
+                "name": "San Francisco Giants",
+                "handicap": 0
+            },
+            "801.182364044_29158": {
+                "name": "Boston Red Sox",
+                "handicap": 0
+            },
+            "801.182427820_7100960": {
+                "name": "Atlanta Braves",
+                "handicap": 1.5
+            },
+            "801.182427820_29172": {
+                "name": "Milwaukee Brewers",
+                "handicap": -1.5
+            },
+            "801.182427465_29166": {
+                "name": "Chicago Cubs",
+                "handicap": -1.5
+            },
+            "801.182427465_7100968": {
+                "name": "Seattle Mariners",
+                "handicap": 1.5
+            },
+            "801.182364045_1033687": {
+                "name": "Washington Nationals",
+                "handicap": 0
+            },
+            "801.182364045_6266193": {
+                "name": "Miami Marlins",
+                "handicap": 0
+            },
+            "801.182290644_29166": {
                 "name": "Chicago Cubs",
                 "handicap": 1.5
             },
-            "801.178178363_29176": {
+            "801.182290644_7100968": {
+                "name": "Seattle Mariners",
+                "handicap": -1.5
+            },
+            "801.182290643_7017905": {
+                "name": "Over",
+                "handicap": 6.5
+            },
+            "801.182290643_7017906": {
+                "name": "Under",
+                "handicap": 6.5
+            },
+            "801.182428558_7017905": {
+                "name": "Over",
+                "handicap": 8.5
+            },
+            "801.182428558_7017906": {
+                "name": "Under",
+                "handicap": 8.5
+            },
+            "801.182427821_7017905": {
+                "name": "Over",
+                "handicap": 7.5
+            },
+            "801.182427821_7017906": {
+                "name": "Under",
+                "handicap": 7.5
+            },
+            "801.182428559_29176": {
+                "name": "Pittsburgh Pirates",
+                "handicap": 1.5
+            },
+            "801.182428559_29171": {
+                "name": "Los Angeles Dodgers",
+                "handicap": -1.5
+            },
+            "801.182364080_29164": {
+                "name": "Toronto Blue Jays",
+                "handicap": 0
+            },
+            "801.182364080_29161": {
+                "name": "New York Yankees",
+                "handicap": 0
+            },
+            "801.182290650_29176": {
                 "name": "Pittsburgh Pirates",
                 "handicap": -1.5
+            },
+            "801.182290650_29171": {
+                "name": "Los Angeles Dodgers",
+                "handicap": 1.5
+            },
+            "801.182290494_75117758": {
+                "name": "Athletics",
+                "handicap": -1.5
+            },
+            "801.182290494_29170": {
+                "name": "Houston Astros",
+                "handicap": 1.5
+            },
+            "801.182364082_41541473": {
+                "name": "Cleveland Guardians",
+                "handicap": 0
+            },
+            "801.182364082_29168": {
+                "name": "Colorado Rockies",
+                "handicap": 0
+            },
+            "801.182290493_7017905": {
+                "name": "Over",
+                "handicap": 8.5
+            },
+            "801.182290493_7017906": {
+                "name": "Under",
+                "handicap": 8.5
+            },
+            "801.182427461_7017905": {
+                "name": "Over",
+                "handicap": 7.5
+            },
+            "801.182427461_7017906": {
+                "name": "Under",
+                "handicap": 7.5
+            },
+            "801.182289826_7017905": {
+                "name": "Over",
+                "handicap": 14.5
+            },
+            "801.182289826_7017906": {
+                "name": "Under",
+                "handicap": 14.5
+            },
+            "801.182364019_29162": {
+                "name": "Tampa Bay Rays",
+                "handicap": 0
+            },
+            "801.182364019_29157": {
+                "name": "Baltimore Orioles",
+                "handicap": 0
+            },
+            "801.182425977_7017905": {
+                "name": "Over",
+                "handicap": 8.5
+            },
+            "801.182425977_7017906": {
+                "name": "Under",
+                "handicap": 8.5
+            },
+            "801.182364014_29166": {
+                "name": "Chicago Cubs",
+                "handicap": 0
+            },
+            "801.182364014_7100968": {
+                "name": "Seattle Mariners",
+                "handicap": 0
+            },
+            "801.182289827_50291": {
+                "name": "St. Louis Cardinals",
+                "handicap": 9.5
+            },
+            "801.182289827_29175": {
+                "name": "Philadelphia Phillies",
+                "handicap": -9.5
+            },
+            "801.182290419_7017905": {
+                "name": "Over",
+                "handicap": 5.5
+            },
+            "801.182290419_7017906": {
+                "name": "Under",
+                "handicap": 5.5
+            },
+            "801.182290416_29162": {
+                "name": "Tampa Bay Rays",
+                "handicap": -1.5
+            },
+            "801.182290416_29157": {
+                "name": "Baltimore Orioles",
+                "handicap": 1.5
+            },
+            "801.182426229_50291": {
+                "name": "St. Louis Cardinals",
+                "handicap": 1.5
+            },
+            "801.182426229_29175": {
+                "name": "Philadelphia Phillies",
+                "handicap": -1.5
+            },
+            "801.182425657_7017905": {
+                "name": "Over",
+                "handicap": 8.5
+            },
+            "801.182425657_7017906": {
+                "name": "Under",
+                "handicap": 8.5
+            },
+            "801.182290652_7017905": {
+                "name": "Over",
+                "handicap": 8.5
+            },
+            "801.182290652_7017906": {
+                "name": "Under",
+                "handicap": 8.5
+            },
+            "801.182427592_7017905": {
+                "name": "Over",
+                "handicap": 8.5
+            },
+            "801.182427592_7017906": {
+                "name": "Under",
+                "handicap": 8.5
+            },
+            "801.182290661_7017905": {
+                "name": "Over",
+                "handicap": 8
+            },
+            "801.182290661_7017906": {
+                "name": "Under",
+                "handicap": 8
+            },
+            "801.182427596_29160": {
+                "name": "Minnesota Twins",
+                "handicap": 1.5
+            },
+            "801.182427596_29177": {
+                "name": "San Diego Padres",
+                "handicap": -1.5
+            },
+            "801.182226113_29160": {
+                "name": "Minnesota Twins",
+                "handicap": 0
+            },
+            "801.182226113_29177": {
+                "name": "San Diego Padres",
+                "handicap": 0
             }
         }
     },

@@ -565,3 +565,83 @@ per-parser rather than presenting it as settled.
   where it's handled (e.g. `# see draftkings.md §4 — core-ID fallback`) — this convention is
   already used correctly in draftkings.py, match it elsewhere.
 - Do not touch cdp/, engine/, alerts/, ui/, or main.py in this pass.
+
+# Normalization and Matching Pipeline Prompt
+
+Complete the normalization and matching pipeline modules within sportsbook-arb-finder/src/arbfinder. 
+Use dataclasses (frozen where noted), type hints throughout, and no external 
+dependencies beyond the standard library except where noted.
+
+STAGE 1 — normalization/
+In schema.py, define a frozen dataclass `NormalizedOddsUpdate` with fields: book_id, 
+book_event_id, sport_key, league_key, home_team, away_team, start_time (tz-aware UTC datetime), 
+market_type, period, selection, line (float | None), odds_decimal (float), captured_at, source_ref.
+In base_normalizer.py, define abstract class `BaseNormalizer` with method 
+`normalize(self, update: OddsUpdate) -> NormalizedOddsUpdate | None` — returns None 
+(does not raise) when a field (e.g. team name) cannot be resolved.
+In normalizer.py, implement class `Normalizer` that holds a dict of book_id -> BaseNormalizer 
+and exposes `normalize_batch(self, updates: list[OddsUpdate]) -> list[NormalizedOddsUpdate]`, 
+logging and skipping any update whose book has no registered normalizer or that returns None.
+In unresolved_log.py, implement simple functions `record_unknown_book(update)` and 
+`record_failed_normalization(update)` that append structured records (as dicts, with a 
+timestamp) to an in-memory list and to a rotating log file — this will later feed a manual 
+review queue for growing the alias maps.
+Create maps/team_aliases.json, maps/league_map.json, maps/market_type_map.json, 
+maps/selection_map.json as JSON files with a schema of 
+`{"canonical_name": {"book_id": "raw_name", ...}, ...}` and write a small `AliasResolver` 
+class (in normalization/alias_resolver.py) with method 
+`resolve(self, book_id: str, raw_value: str) -> str | None` that does a reverse lookup 
+(raw_value -> canonical) built from the JSON at load time, returning None on a miss.
+Write one example concrete normalizer, book_normalizers/bookA_normalizer.py, implementing 
+BaseNormalizer using AliasResolver instances for team/league/market/selection resolution, 
+a timezone-aware timestamp parser, an odds-format converter (american/fractional -> decimal), 
+and a line-sign normalizer that expresses all spread lines relative to the home team.
+
+STAGE 2 — matching/
+In bucket.py, define frozen dataclass `BucketKey` with fields: sport_key, league_key, 
+time_window (str, a start_time rounded/floored to the nearest 15-minute UTC boundary, 
+formatted as ISO string), home_team, away_team, market_type, period, selection, line (float | None).
+Define dataclass `Bucket` with fields: key (BucketKey), canonical_game_id (str), 
+entries (dict[str, NormalizedOddsUpdate] keyed by book_id), created_at (datetime), 
+last_updated (datetime).
+In bucket_store.py, implement class `BucketStore` with an in-memory dict index keyed by 
+BucketKey, exposing: `get(self, key: BucketKey) -> Bucket | None` (exact key lookup), 
+`get_time_tolerant(self, key: BucketKey, resolver: TimeResolver) -> Bucket | None` 
+(checks neighboring time_window buckets — e.g. the window before/after — for a match using 
+the resolver's tolerance, to handle a game landing right at a 15-minute boundary split 
+across two windows), and `create(self, key: BucketKey, first_entry: NormalizedOddsUpdate) -> Bucket` 
+(generates a new canonical_game_id via uuid4, guards against duplicate creation races with an 
+asyncio.Lock or threading.Lock around check-then-create).
+In time_resolver.py, implement class `TimeResolver` with method 
+`is_within_tolerance(self, time_a: datetime, time_b: datetime, tolerance_minutes: int = 5) -> bool`.
+In matcher.py, implement class `Matcher` wrapping a BucketStore and TimeResolver, exposing 
+`assign(self, update: NormalizedOddsUpdate) -> Bucket`: build a BucketKey from the update 
+(computing time_window via floor-to-15-minutes), try store.get(), fall back to 
+store.get_time_tolerant(), fall back to store.create(); on match, update bucket.entries[book_id] 
+and bucket.last_updated. Must never raise for a well-formed NormalizedOddsUpdate.
+In output.py, define dataclass `MatchedSelection` with fields: canonical_game_id, sport_key, 
+league_key, market_type, period, selection, line, book_odds (dict[str, float]), 
+updated_at (dict[str, datetime]). Implement class `MatchOutputBuilder` with static method 
+`from_bucket(bucket: Bucket) -> MatchedSelection`.
+
+STAGE 3 — pipeline/orchestrator.py
+Implement function `handle_raw_payload(book_id: str, raw_payload: bytes, parser_registry: dict, 
+normalizer: Normalizer, matcher: Matcher, bucket_store: BucketStore) -> list[MatchedSelection]` 
+that runs the full parse -> normalize -> match -> output flow and returns the list of 
+MatchedSelection objects for every bucket touched by this payload (deduplicated).
+
+TESTING
+Write pytest unit tests for each stage using plain dataclass fixtures (no mocking frameworks 
+needed given the pure-function/dataclass design):
+- test_normalizer.py: verify a known-good OddsUpdate normalizes correctly; verify an 
+  unresolvable team name returns None and is logged.
+- test_bucket_matching.py: verify two NormalizedOddsUpdate from different books for the same 
+  game/market/selection land in the same bucket; verify a start_time 3 minutes apart from an 
+  existing bucket still matches via get_time_tolerant; verify a genuinely different game creates 
+  a new bucket; verify concurrent bucket creation for the same key doesn't produce duplicates 
+  (simulate with asyncio.gather on two assign() calls for identical keys).
+- test_pipeline_integration.py: end-to-end from a raw dict payload through to MatchedSelection 
+  output, using a fixture book normalizer.
+
+Keep every stage's function signature exactly as specified above so each module can be tested 
+in isolation with no dependency on the others beyond the shared dataclasses.

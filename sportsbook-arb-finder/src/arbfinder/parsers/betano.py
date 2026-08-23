@@ -26,6 +26,74 @@ __all__ = ["BetanoParser"]
 
 logger = logging.getLogger(__name__)
 
+_LIVE_OVERVIEW_URL_RE = re.compile(
+    r"danae-webapi/api/live/overview/\d+\?isInit=false&includeVirtuals=true"
+)
+
+
+def _build_event_dict(ev_data: dict) -> dict:
+    """Build an event reference entry, resolving home/away teams from the
+    two-participant list when present."""
+    ev_dict = {"name": ev_data.get("name")}
+    participants = ev_data.get("participants", [])
+    if len(participants) == 2:
+        t1, t2 = participants[0], participants[1]
+        if t1.get("isHome"):
+            ev_dict["home_team"] = t1.get("name", "")
+            ev_dict["away_team"] = t2.get("name", "")
+        else:
+            ev_dict["home_team"] = t2.get("name", "")
+            ev_dict["away_team"] = t1.get("name", "")
+    return ev_dict
+
+
+def _build_selection_dict(s_data: dict) -> dict:
+    """Build a selection reference entry."""
+    sel_dict = {"name": s_data.get("name")}
+    if s_data.get("fullName") != s_data.get("name"):
+        sel_dict["fullName"] = s_data.get("fullName")
+    if s_data.get("handicap") is not None:
+        sel_dict["handicap"] = s_data.get("handicap")
+    return sel_dict
+
+
+def _resolve_handicap_from_change(change: dict, sel_meta: dict) -> float | None:
+    """Resolve a Scenario-1 selection change's handicap: the change's own
+    handicap wins, then the selection's stored handicap, then its shortName
+    (Betano sometimes encodes the handicap there, e.g. "+1.5", "-2.5")."""
+    if "handicap" in change and change["handicap"] is not None:
+        try:
+            return float(change["handicap"])
+        except (ValueError, TypeError):
+            return None
+    if "handicap" in sel_meta and sel_meta["handicap"] is not None:
+        try:
+            return float(sel_meta["handicap"])
+        except (ValueError, TypeError):
+            return None
+    if "shortName" in sel_meta and sel_meta["shortName"]:
+        try:
+            return float(sel_meta["shortName"])
+        except (ValueError, TypeError):
+            return None
+    return None
+
+
+def _resolve_handicap_from_selection(sel: dict) -> float | None:
+    """Resolve a Scenario-2 (inline market injection) selection's handicap:
+    its own handicap field, else its shortName fallback."""
+    if "handicap" in sel and sel["handicap"] is not None:
+        try:
+            return float(sel["handicap"])
+        except (ValueError, TypeError):
+            return None
+    if "shortName" in sel and sel["shortName"]:
+        try:
+            return float(sel["shortName"])
+        except (ValueError, TypeError):
+            return None
+    return None
+
 
 class BetanoParser(BookParser):
     """Parser for Betano Sportsbook."""
@@ -46,18 +114,47 @@ class BetanoParser(BookParser):
         Matches exact live overview endpoint pattern from betano_scraper.py:
         danae-webapi/api/live/overview/<id>?isInit=false&includeVirtuals=true
         """
-        return (
-            re.search(
-                r"danae-webapi/api/live/overview/\d+\?isInit=false&includeVirtuals=true",
-                url,
-            )
-            is not None
-        )
+        return _LIVE_OVERVIEW_URL_RE.search(url) is not None
 
     def relevant_ws_url(self, url: str) -> bool:
         """True if this WebSocket connection's frames should be parsed."""
         # Confirmed odds WebSocket endpoint from betano.md & betano_scraper.py: wss://www.betano.ca/contenthub?platformType=1
         return "contenthub" in url
+
+    def _register_events(self, events: object) -> None:
+        if isinstance(events, dict):
+            for ev_id, ev_data in events.items():
+                self.reference_data["events"][str(ev_id)] = _build_event_dict(ev_data)
+        elif isinstance(events, list):
+            for ev_data in events:
+                if isinstance(ev_data, dict) and "id" in ev_data:
+                    self.reference_data["events"][str(ev_data["id"])] = (
+                        _build_event_dict(ev_data)
+                    )
+
+    def _register_markets(self, markets: object) -> None:
+        if isinstance(markets, dict):
+            for m_id, m_data in markets.items():
+                self.reference_data["markets"][str(m_id)] = {"name": m_data.get("name")}
+        elif isinstance(markets, list):
+            for m_data in markets:
+                if isinstance(m_data, dict) and "id" in m_data:
+                    self.reference_data["markets"][str(m_data["id"])] = {
+                        "name": m_data.get("name")
+                    }
+
+    def _register_selections(self, selections: object) -> None:
+        if isinstance(selections, dict):
+            for s_id, s_data in selections.items():
+                self.reference_data["selections"][str(s_id)] = _build_selection_dict(
+                    s_data
+                )
+        elif isinstance(selections, list):
+            for s_data in selections:
+                if isinstance(s_data, dict) and "id" in s_data:
+                    self.reference_data["selections"][str(s_data["id"])] = (
+                        _build_selection_dict(s_data)
+                    )
 
     def handle_http_body(self, url: str, body: str) -> list[OddsUpdate]:
         """Parse the reference dictionary HTTP payload."""
@@ -70,73 +167,161 @@ class BetanoParser(BookParser):
         if not isinstance(data, dict):
             return []
 
-        # Parse Events
-        events = data.get("events", {})
-        if isinstance(events, dict):
-            for ev_id, ev_data in events.items():
-                ev_dict = {"name": ev_data.get("name")}
-                participants = ev_data.get("participants", [])
-                if len(participants) == 2:
-                    t1, t2 = participants[0], participants[1]
-                    if t1.get("isHome"):
-                        ev_dict["home_team"] = t1.get("name", "")
-                        ev_dict["away_team"] = t2.get("name", "")
-                    else:
-                        ev_dict["home_team"] = t2.get("name", "")
-                        ev_dict["away_team"] = t1.get("name", "")
-                self.reference_data["events"][str(ev_id)] = ev_dict
-        elif isinstance(events, list):
-            for ev_data in events:
-                if isinstance(ev_data, dict) and "id" in ev_data:
-                    ev_dict = {"name": ev_data.get("name")}
-                    participants = ev_data.get("participants", [])
-                    if len(participants) == 2:
-                        t1, t2 = participants[0], participants[1]
-                        if t1.get("isHome"):
-                            ev_dict["home_team"] = t1.get("name", "")
-                            ev_dict["away_team"] = t2.get("name", "")
-                        else:
-                            ev_dict["home_team"] = t2.get("name", "")
-                            ev_dict["away_team"] = t1.get("name", "")
-                    self.reference_data["events"][str(ev_data["id"])] = ev_dict
-
-        # Parse Markets
-        markets = data.get("markets", {})
-        if isinstance(markets, dict):
-            for m_id, m_data in markets.items():
-                self.reference_data["markets"][str(m_id)] = {
-                    "name": m_data.get("name")
-                }
-        elif isinstance(markets, list):
-            for m_data in markets:
-                if isinstance(m_data, dict) and "id" in m_data:
-                    self.reference_data["markets"][str(m_data["id"])] = {
-                        "name": m_data.get("name")
-                    }
-
-        # Parse Selections
-        selections = data.get("selections", {})
-        if isinstance(selections, dict):
-            for s_id, s_data in selections.items():
-                sel_dict = {"name": s_data.get("name")}
-                if s_data.get("fullName") != s_data.get("name"):
-                    sel_dict["fullName"] = s_data.get("fullName")
-                if s_data.get("handicap") is not None:
-                    sel_dict["handicap"] = s_data.get("handicap")
-                self.reference_data["selections"][str(s_id)] = sel_dict
-        elif isinstance(selections, list):
-            for s_data in selections:
-                if isinstance(s_data, dict) and "id" in s_data:
-                    sel_dict = {"name": s_data.get("name")}
-                    if s_data.get("fullName") != s_data.get("name"):
-                        sel_dict["fullName"] = s_data.get("fullName")
-                    if s_data.get("handicap") is not None:
-                        sel_dict["handicap"] = s_data.get("handicap")
-                    self.reference_data["selections"][str(s_data["id"])] = sel_dict
+        self._register_events(data.get("events", {}))
+        self._register_markets(data.get("markets", {}))
+        self._register_selections(data.get("selections", {}))
 
         return []
 
-    # _split_fixture_name extracted to parsers/_helpers.py
+    def _resolve_teams(self, event_id: str, event_meta: dict) -> tuple[str, str]:
+        if "home_team" in event_meta and "away_team" in event_meta:
+            return event_meta["home_team"], event_meta["away_team"]
+        ev_name = event_meta.get("name", f"Event {event_id}")
+        return split_fixture_name(ev_name)
+
+    def _process_selection_changes(
+        self,
+        event_id: str,
+        home_team: str,
+        away_team: str,
+        selection_changes: object,
+        now: datetime,
+    ) -> list[OddsUpdate]:
+        """Scenario 1: selection price changes under existing markets."""
+        updates = []
+        if not isinstance(selection_changes, dict):
+            return updates
+
+        for market_id_str, changes in selection_changes.items():
+            if not isinstance(changes, list):
+                continue
+
+            market_meta = self.reference_data["markets"].get(str(market_id_str), {})
+            market_name = market_meta.get("name", f"Market {market_id_str}")
+
+            for change in changes:
+                if not isinstance(change, dict):
+                    continue
+
+                selection_id = str(change.get("id", ""))
+                price = change.get("price")
+                if price is None:
+                    continue
+
+                try:
+                    american_odds = decimal_to_american(float(price))
+                except (ValueError, TypeError, ZeroDivisionError):
+                    continue
+
+                sel_meta = self.reference_data["selections"].get(selection_id, {})
+                sel_name = sel_meta.get(
+                    "fullName", sel_meta.get("name", f"Selection {selection_id}")
+                )
+                handicap_val = _resolve_handicap_from_change(change, sel_meta)
+
+                updates.append(
+                    OddsUpdate(
+                        book=self.book_name,
+                        event_id=event_id,
+                        home_team=home_team,
+                        away_team=away_team,
+                        market=market_name,
+                        selection=sel_name,
+                        line=handicap_val,
+                        price_american=american_odds,
+                        timestamp=now,
+                    )
+                )
+
+        return updates
+
+    def _process_new_market(
+        self,
+        event_id: str,
+        home_team: str,
+        away_team: str,
+        new_market: object,
+        now: datetime,
+    ) -> list[OddsUpdate]:
+        """Scenario 2: new inline market injection."""
+        updates = []
+        if not isinstance(new_market, dict):
+            return updates
+
+        market_id_str = str(new_market.get("id", ""))
+        market_name = new_market.get("name", f"Market {market_id_str}")
+        self.reference_data["markets"][market_id_str] = {"name": new_market.get("name")}
+
+        for sel in new_market.get("selections", []):
+            if not isinstance(sel, dict):
+                continue
+
+            selection_id = str(sel.get("id", ""))
+            price = sel.get("price")
+            if price is None:
+                continue
+
+            try:
+                american_odds = decimal_to_american(float(price))
+            except (ValueError, TypeError, ZeroDivisionError):
+                continue
+
+            sel_name = sel.get("fullName", sel.get("name", f"Selection {selection_id}"))
+            self.reference_data["selections"][selection_id] = _build_selection_dict(sel)
+            handicap_val = _resolve_handicap_from_selection(sel)
+
+            updates.append(
+                OddsUpdate(
+                    book=self.book_name,
+                    event_id=event_id,
+                    home_team=home_team,
+                    away_team=away_team,
+                    market=market_name,
+                    selection=sel_name,
+                    line=handicap_val,
+                    price_american=american_odds,
+                    timestamp=now,
+                )
+            )
+
+        return updates
+
+    def _process_diff_item(self, item: object, now: datetime) -> list[OddsUpdate]:
+        if not isinstance(item, dict):
+            return []
+
+        event_id = str(item.get("eventId", ""))
+        payload_data = item.get("payload", {})
+        if not isinstance(payload_data, dict):
+            return []
+
+        # Note on Betano live event registration:
+        # Betano's live WS stream can push full event definitions (type 1 with participants/url/sport,
+        # e.g., betano_message2.json / betano_message3.json). When participants/event metadata arrives
+        # mid-session in payload_data, we dynamically register/update self.reference_data["events"]
+        # so subsequent updates can resolve home/away team names even without an HTTP refresh.
+        if "participants" in payload_data:
+            self.reference_data["events"][event_id] = _build_event_dict(payload_data)
+
+        event_meta = self.reference_data["events"].get(event_id, {})
+        home_team, away_team = self._resolve_teams(event_id, event_meta)
+
+        updates = []
+        updates.extend(
+            self._process_selection_changes(
+                event_id,
+                home_team,
+                away_team,
+                payload_data.get("selectionChanges", {}),
+                now,
+            )
+        )
+        updates.extend(
+            self._process_new_market(
+                event_id, home_team, away_team, payload_data.get("market"), now
+            )
+        )
+        return updates
 
     def handle_ws_frame(self, payload: str) -> list[OddsUpdate]:
         """Parse a WebSocket frame payload from Betano.
@@ -179,169 +364,6 @@ class BetanoParser(BookParser):
                 continue
 
             for item in diff_data:
-                if not isinstance(item, dict):
-                    continue
-
-                event_id = str(item.get("eventId", ""))
-                payload_data = item.get("payload", {})
-                if not isinstance(payload_data, dict):
-                    continue
-
-                # Note on Betano live event registration:
-                # Betano's live WS stream can push full event definitions (type 1 with participants/url/sport,
-                # e.g., betano_message2.json / betano_message3.json). When participants/event metadata arrives
-                # mid-session in payload_data, we dynamically register/update self.reference_data["events"]
-                # so subsequent updates can resolve home/away team names even without an HTTP refresh.
-                if "participants" in payload_data:
-                    ev_dict = {"name": payload_data.get("name")}
-                    participants = payload_data.get("participants", [])
-                    if len(participants) == 2:
-                        t1, t2 = participants[0], participants[1]
-                        if t1.get("isHome"):
-                            ev_dict["home_team"] = t1.get("name", "")
-                            ev_dict["away_team"] = t2.get("name", "")
-                        else:
-                            ev_dict["home_team"] = t2.get("name", "")
-                            ev_dict["away_team"] = t1.get("name", "")
-                    self.reference_data["events"][event_id] = ev_dict
-
-                event_meta = self.reference_data["events"].get(event_id, {})
-
-                # Team resolution natively from pre-parsed reference_data
-                if "home_team" in event_meta and "away_team" in event_meta:
-                    home_team = event_meta["home_team"]
-                    away_team = event_meta["away_team"]
-                else:
-                    ev_name = event_meta.get("name", f"Event {event_id}")
-                    home_team, away_team = split_fixture_name(ev_name)
-
-                # ── Scenario 1: Selection price changes under existing markets ──
-                selection_changes = payload_data.get("selectionChanges", {})
-                if isinstance(selection_changes, dict):
-                    for market_id_str, changes in selection_changes.items():
-                        if not isinstance(changes, list):
-                            continue
-
-                        market_meta = self.reference_data["markets"].get(
-                            str(market_id_str), {}
-                        )
-                        market_name = market_meta.get("name", f"Market {market_id_str}")
-
-                        for change in changes:
-                            if not isinstance(change, dict):
-                                continue
-
-                            selection_id = str(change.get("id", ""))
-                            price = change.get("price")
-                            if price is None:
-                                continue
-
-                            try:
-                                american_odds = decimal_to_american(float(price))
-                            except (ValueError, TypeError, ZeroDivisionError):
-                                continue
-
-                            sel_meta = self.reference_data["selections"].get(
-                                selection_id, {}
-                            )
-                            sel_name = sel_meta.get(
-                                "fullName",
-                                sel_meta.get("name", f"Selection {selection_id}"),
-                            )
-
-                            handicap_val = None
-                            if "handicap" in change and change["handicap"] is not None:
-                                try:
-                                    handicap_val = float(change["handicap"])
-                                except (ValueError, TypeError):
-                                    pass
-                            elif (
-                                "handicap" in sel_meta
-                                and sel_meta["handicap"] is not None
-                            ):
-                                try:
-                                    handicap_val = float(sel_meta["handicap"])
-                                except (ValueError, TypeError):
-                                    pass
-                            elif "shortName" in sel_meta and sel_meta["shortName"]:
-                                # Ported from betano_scraper.py: sometimes handicap is stored in shortName e.g. "+1.5", "-2.5"
-                                try:
-                                    handicap_val = float(sel_meta["shortName"])
-                                except (ValueError, TypeError):
-                                    pass
-
-                            updates.append(
-                                OddsUpdate(
-                                    book=self.book_name,
-                                    event_id=event_id,
-                                    home_team=home_team,
-                                    away_team=away_team,
-                                    market=market_name,
-                                    selection=sel_name,
-                                    line=handicap_val,
-                                    price_american=american_odds,
-                                    timestamp=now,
-                                )
-                            )
-
-                # ── Scenario 2: New inline market injection ──
-                new_market = payload_data.get("market")
-                if isinstance(new_market, dict):
-                    market_id_str = str(new_market.get("id", ""))
-                    market_name = new_market.get("name", f"Market {market_id_str}")
-                    self.reference_data["markets"][market_id_str] = {
-                        "name": new_market.get("name")
-                    }
-
-                    for sel in new_market.get("selections", []):
-                        if not isinstance(sel, dict):
-                            continue
-
-                        selection_id = str(sel.get("id", ""))
-                        price = sel.get("price")
-                        if price is None:
-                            continue
-
-                        try:
-                            american_odds = decimal_to_american(float(price))
-                        except (ValueError, TypeError, ZeroDivisionError):
-                            continue
-
-                        sel_name = sel.get(
-                            "fullName", sel.get("name", f"Selection {selection_id}")
-                        )
-                        sel_dict = {"name": sel.get("name")}
-                        if sel.get("fullName") != sel.get("name"):
-                            sel_dict["fullName"] = sel.get("fullName")
-                        if sel.get("handicap") is not None:
-                            sel_dict["handicap"] = sel.get("handicap")
-                        self.reference_data["selections"][selection_id] = sel_dict
-
-                        handicap_val = None
-                        if "handicap" in sel and sel["handicap"] is not None:
-                            try:
-                                handicap_val = float(sel["handicap"])
-                            except (ValueError, TypeError):
-                                pass
-                        elif "shortName" in sel and sel["shortName"]:
-                            # Ported from betano_scraper.py: shortName fallback
-                            try:
-                                handicap_val = float(sel["shortName"])
-                            except (ValueError, TypeError):
-                                pass
-
-                        updates.append(
-                            OddsUpdate(
-                                book=self.book_name,
-                                event_id=event_id,
-                                home_team=home_team,
-                                away_team=away_team,
-                                market=market_name,
-                                selection=sel_name,
-                                line=handicap_val,
-                                price_american=american_odds,
-                                timestamp=now,
-                            )
-                        )
+                updates.extend(self._process_diff_item(item, now))
 
         return updates

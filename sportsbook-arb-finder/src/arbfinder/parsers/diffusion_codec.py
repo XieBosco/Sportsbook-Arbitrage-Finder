@@ -23,6 +23,38 @@ __all__ = [
 
 
 # ── CBOR decoder (RFC 8949 hand-rolled) ──────────────────────────────────────
+def _read_cbor_argument(data: bytes, pos: int, additional: int) -> tuple[int, int]:
+    """Decode a CBOR item's "argument" (the value carried by the additional-info
+    field), per RFC 8949 §3. Returns (argument_value, new_pos)."""
+    if additional < 24:
+        return additional, pos
+    if additional == 24:
+        return data[pos], pos + 1
+    if additional == 25:
+        return struct.unpack(">H", data[pos : pos + 2])[0], pos + 2
+    if additional == 26:
+        return struct.unpack(">I", data[pos : pos + 4])[0], pos + 4
+    if additional == 27:
+        return struct.unpack(">Q", data[pos : pos + 8])[0], pos + 8
+    raise ValueError(f"CBOR: unsupported additional info {additional}")
+
+
+def _decode_float16(raw: int) -> float:
+    """Decode an IEEE 754 half-precision float from its 16-bit representation."""
+    sign = (raw >> 15) & 1
+    exp = (raw >> 10) & 0x1F
+    frac = raw & 0x3FF
+    if exp == 0:
+        val = (-1) ** sign * 2 ** (-14) * (frac / 1024.0)
+    elif exp == 31:
+        val = float("inf") if frac == 0 else float("nan")
+        if sign:
+            val = -val
+    else:
+        val = (-1) ** sign * 2 ** (exp - 15) * (1 + frac / 1024.0)
+    return val
+
+
 def decode_cbor_item(data: bytes, pos: int):
     """Decode one CBOR data item starting at *pos*. Returns (value, new_pos).
 
@@ -42,23 +74,7 @@ def decode_cbor_item(data: bytes, pos: int):
     additional = initial & 0x1F
     pos += 1
 
-    # --- argument extraction ---
-    if additional < 24:
-        arg = additional
-    elif additional == 24:
-        arg = data[pos]
-        pos += 1
-    elif additional == 25:
-        arg = struct.unpack(">H", data[pos : pos + 2])[0]
-        pos += 2
-    elif additional == 26:
-        arg = struct.unpack(">I", data[pos : pos + 4])[0]
-        pos += 4
-    elif additional == 27:
-        arg = struct.unpack(">Q", data[pos : pos + 8])[0]
-        pos += 8
-    else:
-        raise ValueError(f"CBOR: unsupported additional info {additional}")
+    arg, pos = _read_cbor_argument(data, pos, additional)
 
     # --- major types ---
     if major == 0:  # unsigned int
@@ -91,18 +107,7 @@ def decode_cbor_item(data: bytes, pos: int):
             return None, pos
         if additional == 25:  # float16
             raw = struct.unpack(">H", data[pos - 2 : pos])[0]
-            sign = (raw >> 15) & 1
-            exp = (raw >> 10) & 0x1F
-            frac = raw & 0x3FF
-            if exp == 0:
-                val = (-1) ** sign * 2 ** (-14) * (frac / 1024.0)
-            elif exp == 31:
-                val = float("inf") if frac == 0 else float("nan")
-                if sign:
-                    val = -val
-            else:
-                val = (-1) ** sign * 2 ** (exp - 15) * (1 + frac / 1024.0)
-            return val, pos
+            return _decode_float16(raw), pos
         if additional == 26:  # float32
             return struct.unpack(">f", data[pos - 4 : pos])[0], pos
         if additional == 27:  # float64

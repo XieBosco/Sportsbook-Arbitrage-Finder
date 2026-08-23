@@ -13,6 +13,26 @@ __all__ = ["FanDuelParser"]
 logger = logging.getLogger(__name__)
 
 
+def _extract_raw_american_odds(runner: dict) -> object:
+    """Dig a runner's raw American odds out of winRunnerOdds, preferring the
+    display odds and falling back to trueOdds (see fanduel.md §4.2)."""
+    win_odds = runner.get("winRunnerOdds", {})
+    if not isinstance(win_odds, dict):
+        return None
+
+    odds = None
+    american = win_odds.get("americanDisplayOdds", {})
+    if isinstance(american, dict):
+        odds = american.get("americanOdds")
+
+    if odds is None:
+        true_odds = win_odds.get("trueOdds", {})
+        if isinstance(true_odds, dict):
+            odds = true_odds.get("americanOdds")
+
+    return odds
+
+
 class FanDuelParser(BookParser):
     """Parser for FanDuel."""
 
@@ -30,8 +50,6 @@ class FanDuelParser(BookParser):
         """True if this HTTP response body should be fetched via getResponseBody."""
         return "content-managed-page" in url or "getMarketPrices" in url
 
-    # _clean_american_odds and _split_fixture_name extracted to parsers/_helpers.py
-
     def _find_markets(self, obj: object) -> list:
         markets = []
         if isinstance(obj, dict):
@@ -44,50 +62,38 @@ class FanDuelParser(BookParser):
                 markets.extend(self._find_markets(item))
         return markets
 
-    def handle_http_body(self, url: str, body: str) -> list[OddsUpdate]:
-        """Parse an HTTP response body."""
-        try:
-            payload = json.loads(body)
-        except json.JSONDecodeError:
-            return []
+    def _register_reference_data(self, attachments: dict) -> None:
+        """Parse the events/markets/runners reference dictionary."""
+        events = attachments.get("events", {})
+        for ev_id, ev_data in events.items():
+            self.reference_data["events"][str(ev_id)] = ev_data.get(
+                "name", "Unknown Event"
+            )
 
-        # --- PARSE REFERENCE DICTIONARY ---
-        if "attachments" in payload and "markets" in payload["attachments"]:
-            # Parse Events (Games)
-            events = payload["attachments"].get("events", {})
-            for ev_id, ev_data in events.items():
-                self.reference_data["events"][str(ev_id)] = ev_data.get(
-                    "name", "Unknown Event"
-                )
+        markets = attachments.get("markets", {})
+        for m_id, m_data in markets.items():
+            self.reference_data["markets"][str(m_id)] = {
+                "eventId": str(m_data.get("eventId")),
+                "marketName": m_data.get("marketName", ""),
+                "marketType": m_data.get("marketType", ""),
+            }
 
-            # Parse Markets & Runners
-            markets = payload["attachments"].get("markets", {})
-            for m_id, m_data in markets.items():
-                self.reference_data["markets"][str(m_id)] = {
-                    "eventId": str(m_data.get("eventId")),
-                    "marketName": m_data.get("marketName", ""),
-                    "marketType": m_data.get("marketType", ""),
+            for runner in m_data.get("runners", []):
+                s_id = str(runner.get("selectionId"))
+                r_name = runner.get("runnerName", "Unknown")
+                handicap = runner.get("handicap", 0)
+
+                self.reference_data["selections"][f"{m_id}_{s_id}"] = {
+                    "name": r_name,
+                    "handicap": handicap,
                 }
 
-                for runner in m_data.get("runners", []):
-                    s_id = str(runner.get("selectionId"))
-                    r_name = runner.get("runnerName", "Unknown")
-                    handicap = runner.get("handicap", 0)
-
-                    self.reference_data["selections"][f"{m_id}_{s_id}"] = {
-                        "name": r_name,
-                        "handicap": handicap,
-                    }
-            return []
-
-        # --- PARSE LIVE ODDS UPDATE ---
+    def _parse_live_odds(self, payload: dict, now: datetime) -> list[OddsUpdate]:
         markets = self._find_markets(payload)
         updates = []
 
         if not markets or not self.reference_data["events"]:
             return updates
-
-        now = datetime.now()
 
         for market in markets:
             m_id = str(market.get("marketId"))
@@ -102,23 +108,13 @@ class FanDuelParser(BookParser):
             if event_name == "Unknown Game":
                 continue
 
+            home_team, away_team = split_fixture_name(event_name)
+
             for runner in market.get("runnerDetails", []):
                 s_id = str(runner.get("selectionId"))
-                odds = None
 
-                # Dig for american odds
-                win_odds = runner.get("winRunnerOdds", {})
-                if isinstance(win_odds, dict):
-                    american = win_odds.get("americanDisplayOdds", {})
-                    if isinstance(american, dict):
-                        odds = american.get("americanOdds")
-                    if odds is None:
-                        # see fanduel.md §4.2 - Fallback to trueOdds
-                        true_odds = win_odds.get("trueOdds", {})
-                        if isinstance(true_odds, dict):
-                            odds = true_odds.get("americanOdds")
-
-                clean_odds = clean_american_odds(odds)
+                raw_odds = _extract_raw_american_odds(runner)
+                clean_odds = clean_american_odds(raw_odds)
                 if clean_odds is None:
                     continue
 
@@ -128,8 +124,6 @@ class FanDuelParser(BookParser):
                 handicap = sel_meta.get("handicap", 0)
 
                 handicap_val = None if handicap == 0 else float(handicap)
-
-                home_team, away_team = split_fixture_name(event_name)
 
                 updates.append(
                     OddsUpdate(
@@ -146,6 +140,21 @@ class FanDuelParser(BookParser):
                 )
 
         return updates
+
+    def handle_http_body(self, url: str, body: str) -> list[OddsUpdate]:
+        """Parse an HTTP response body."""
+        try:
+            payload = json.loads(body)
+        except json.JSONDecodeError:
+            return []
+
+        # --- PARSE REFERENCE DICTIONARY ---
+        if "attachments" in payload and "markets" in payload["attachments"]:
+            self._register_reference_data(payload["attachments"])
+            return []
+
+        # --- PARSE LIVE ODDS UPDATE ---
+        return self._parse_live_odds(payload, datetime.now())
 
     def handle_ws_frame(self, payload: str) -> list[OddsUpdate]:
         """FanDuel uses long-polling HTTP requests for updates, no WebSocket odds."""
