@@ -111,13 +111,13 @@ def test_betano_ws_scenario1_selection_changes(sample_betano_ref):
 
     updates = parser.handle_ws_frame(signalr_frame)
     assert len(updates) == 1
-    assert updates[0].book == "Betano"
-    assert updates[0].home_team == "Partizan"
-    assert updates[0].away_team == "Zalgiris Kaunas"
-    assert updates[0].market == "Spread"
-    assert updates[0].selection == "Partizan +2.5"
-    assert updates[0].line == 2.5
-    assert updates[0].price_american == -110
+    assert updates[0].book_id == "Betano"
+    assert updates[0].raw_home_team == "Partizan"
+    assert updates[0].raw_away_team == "Zalgiris Kaunas"
+    assert updates[0].raw_market_type == "Spread"
+    assert updates[0].raw_selection == "Partizan +2.5"
+    assert updates[0].raw_line == 2.5
+    assert updates[0].odds_value == -110
 
 
 def test_betano_ws_scenario2_inline_market_injection(sample_betano_ref):
@@ -164,13 +164,13 @@ def test_betano_ws_scenario2_inline_market_injection(sample_betano_ref):
 
     updates = parser.handle_ws_frame(signalr_frame)
     assert len(updates) == 2
-    assert updates[0].market == "Total Points"
-    assert updates[0].selection == "Over 160.5"
-    assert updates[0].price_american == 105
-    assert updates[0].line == 160.5
-    assert updates[1].selection == "Under 160.5"
-    assert updates[1].price_american == -128
-    assert updates[1].line == 160.5
+    assert updates[0].raw_market_type == "Total Points"
+    assert updates[0].raw_selection == "Over 160.5"
+    assert updates[0].odds_value == 105
+    assert updates[0].raw_line == 160.5
+    assert updates[1].raw_selection == "Under 160.5"
+    assert updates[1].odds_value == -128
+    assert updates[1].raw_line == 160.5
 
     # Verify market was saved into reference data
     assert "999999" in parser.reference_data["markets"]
@@ -218,8 +218,8 @@ def test_betano_shortname_handicap_fallback(sample_betano_ref):
 
     updates = parser.handle_ws_frame(signalr_frame)
     assert len(updates) == 1
-    assert updates[0].line == 3.5
-    assert updates[0].price_american == -105
+    assert updates[0].raw_line == 3.5
+    assert updates[0].odds_value == -105
 
 
 def test_betano_team_resolution_fallback():
@@ -253,8 +253,8 @@ def test_betano_team_resolution_fallback():
 
     updates = parser.handle_ws_frame(signalr_frame)
     assert len(updates) == 1
-    assert updates[0].away_team == "Toronto Maple Leafs"
-    assert updates[0].home_team == "Montreal Canadiens"
+    assert updates[0].raw_away_team == "Toronto Maple Leafs"
+    assert updates[0].raw_home_team == "Montreal Canadiens"
 
 
 def test_betano_live_event_registration():

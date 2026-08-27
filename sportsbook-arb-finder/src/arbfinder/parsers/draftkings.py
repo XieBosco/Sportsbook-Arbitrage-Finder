@@ -8,10 +8,9 @@ from datetime import datetime
 
 import msgpack
 
-from arbfinder.normalize.models import OddsUpdate
-from arbfinder.parsers._helpers import clean_american_odds, split_fixture_name
+from arbfinder.normalization.models import OddsUpdate
+from arbfinder.parsers._helpers import split_fixture_name
 from arbfinder.parsers.base import BookParser
-
 __all__ = ["DraftKingsParser"]
 
 logger = logging.getLogger(__name__)
@@ -57,9 +56,12 @@ class DraftKingsParser(BookParser):
         if "events" in payload and "markets" in payload and "selections" in payload:
             # Parse Events (Games)
             for ev in payload.get("events", []):
-                self.reference_data["events"][str(ev.get("id"))] = ev.get(
-                    "name", "Unknown Event"
-                )
+                self.reference_data["events"][str(ev.get("id"))] = {
+                    "name": ev.get("name", "Unknown Event"),
+                    "sport_code": str(ev.get("sportId", "")),
+                    "league_name": str(ev.get("leagueId", "")),
+                    "start_time": str(ev.get("startEventDate", "")),
+                }
 
             # Parse Markets
             for m in payload.get("markets", []):
@@ -141,9 +143,9 @@ class DraftKingsParser(BookParser):
         return str(tags[0]) if len(tags) > 0 else "UNKNOWN_MARKET"
 
     def _resolve_event(
-        self, event_id: str, event_name: str, selection_id: str, selection_name: str
-    ) -> tuple[str, str]:
-        """Resolve (event_id, event_name) via fallback heuristics when the
+        self, event_id: str, event_meta: dict, selection_id: str, selection_name: str
+    ) -> tuple[str, dict]:
+        """Resolve (event_id, event_meta) via fallback heuristics when the
         static reference dictionary doesn't have a mapping for this selection.
 
         HEURISTIC FALLBACK: If DraftKings created a new market/handicap on the fly,
@@ -151,8 +153,9 @@ class DraftKingsParser(BookParser):
         selection ID and find a sibling selection in our dictionary to get the game,
         or otherwise fall back to matching the selection name against known games.
         """
+        event_name = event_meta.get("name", "Unknown Game")
         if event_name != "Unknown Game":
-            return event_id, event_name
+            return event_id, event_meta
 
         core_id_match = _CORE_ID_RE.search(selection_id)
         if core_id_match:
@@ -168,21 +171,23 @@ class DraftKingsParser(BookParser):
                     fallback_event_id = fallback_meta.get("eventId", "")
                     if fallback_event_id in self.reference_data["events"]:
                         event_id = fallback_event_id
-                        event_name = self.reference_data["events"][fallback_event_id]
+                        event_meta = self.reference_data["events"][fallback_event_id]
+                        event_name = event_meta.get("name", "Unknown Game")
                         break
 
         # If STILL unknown, try the string-matching heuristic for Spreads/Moneylines
         if event_name == "Unknown Game":
-            for known_id, known_game in self.reference_data["events"].items():
+            for known_id, known_meta in self.reference_data["events"].items():
+                known_game = known_meta.get("name", "")
                 clean_selection = (
                     selection_name.replace("Over ", "").replace("Under ", "").strip()
                 )
                 if clean_selection and clean_selection in known_game:
-                    event_name = known_game
+                    event_meta = known_meta
                     event_id = known_id
                     break
 
-        return event_id, event_name
+        return event_id, event_meta
 
     @staticmethod
     def _resolve_handicap(market_type: str, outcome: list) -> float | None:
@@ -208,8 +213,7 @@ class DraftKingsParser(BookParser):
             odds_array = outcome[2]
 
             raw_odds = odds_array[0] if len(odds_array) > 0 else None
-            american_odds = clean_american_odds(raw_odds)
-            if american_odds is None:
+            if raw_odds is None:
                 continue
 
             market_id = self.reference_data["selections"].get(selection_id, "")
@@ -222,25 +226,30 @@ class DraftKingsParser(BookParser):
             market_type = self._resolve_market_type(market_meta, selection_id, outcome)
 
             event_id = market_meta.get("eventId", "")
-            event_name = self.reference_data["events"].get(event_id, "Unknown Game")
-            event_id, event_name = self._resolve_event(
-                event_id, event_name, selection_id, selection_name
+            event_meta = self.reference_data["events"].get(event_id, {})
+            event_id, event_meta = self._resolve_event(
+                event_id, event_meta, selection_id, selection_name
             )
 
             handicap_val = self._resolve_handicap(market_type, outcome)
+            event_name = event_meta.get("name", "Unknown Game")
             home_team, away_team = split_fixture_name(event_name)
 
             updates.append(
                 OddsUpdate(
-                    book=self.book_name,
-                    event_id=event_id,
-                    home_team=home_team,
-                    away_team=away_team,
-                    market=market_type,
-                    selection=selection_name,
-                    line=handicap_val,
-                    price_american=american_odds,
-                    timestamp=now,
+                    book_id=self.book_name,
+                    raw_event_id=event_id,
+                    raw_sport_code=event_meta.get("sport_code", ""),
+                    raw_league_name=event_meta.get("league_name", ""),
+                    raw_home_team=home_team,
+                    raw_away_team=away_team,
+                    raw_start_time=event_meta.get("start_time", ""),
+                    raw_market_type=market_type,
+                    raw_selection=selection_name,
+                    raw_line=handicap_val,
+                    odds_value=raw_odds,
+                    odds_format="american",
+                    captured_at=now,
                 )
             )
 

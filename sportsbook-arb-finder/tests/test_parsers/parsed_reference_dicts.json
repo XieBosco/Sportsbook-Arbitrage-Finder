@@ -1,20 +1,90 @@
 {
     "DraftKings": {
         "events": {
-            "34542846": "WAS Nationals @ TEX Rangers",
-            "34542847": "LA Angels @ HOU Astros",
-            "34547331": "ATL Braves @ MIL Brewers",
-            "34547408": "SF Giants @ BOS Red Sox",
-            "34547409": "WAS Nationals @ MIA Marlins",
-            "34547418": "TB Rays @ BAL Orioles",
-            "34547435": "NY Mets @ CHI White Sox",
-            "34547437": "DET Tigers @ KC Royals",
-            "34547436": "Athletics @ HOU Astros",
-            "34547438": "LA Angels @ TEX Rangers",
-            "34547444": "CLE Guardians @ COL Rockies",
-            "34547445": "CIN Reds @ ARI Diamondbacks",
-            "34547457": "PIT Pirates @ LA Dodgers",
-            "34547458": "CHI Cubs @ SEA Mariners"
+            "34542846": {
+                "name": "WAS Nationals @ TEX Rangers",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-21T00:08:08.0000000Z"
+            },
+            "34542847": {
+                "name": "LA Angels @ HOU Astros",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-21T00:10:12.0000000Z"
+            },
+            "34547331": {
+                "name": "ATL Braves @ MIL Brewers",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-21T20:10:00.0000000Z"
+            },
+            "34547408": {
+                "name": "SF Giants @ BOS Red Sox",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-21T23:10:00.0000000Z"
+            },
+            "34547409": {
+                "name": "WAS Nationals @ MIA Marlins",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-21T23:10:00.0000000Z"
+            },
+            "34547418": {
+                "name": "TB Rays @ BAL Orioles",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-21T23:15:00.0000000Z"
+            },
+            "34547435": {
+                "name": "NY Mets @ CHI White Sox",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-21T23:40:00.0000000Z"
+            },
+            "34547437": {
+                "name": "DET Tigers @ KC Royals",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-22T00:10:00.0000000Z"
+            },
+            "34547436": {
+                "name": "Athletics @ HOU Astros",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-22T00:10:00.0000000Z"
+            },
+            "34547438": {
+                "name": "LA Angels @ TEX Rangers",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-22T00:15:00.0000000Z"
+            },
+            "34547444": {
+                "name": "CLE Guardians @ COL Rockies",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-22T00:40:00.0000000Z"
+            },
+            "34547445": {
+                "name": "CIN Reds @ ARI Diamondbacks",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-22T01:40:00.0000000Z"
+            },
+            "34547457": {
+                "name": "PIT Pirates @ LA Dodgers",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-22T02:10:00.0000000Z"
+            },
+            "34547458": {
+                "name": "CHI Cubs @ SEA Mariners",
+                "sport_code": "7",
+                "league_name": "84240",
+                "start_time": "2026-08-22T02:10:00.0000000Z"
+            }
         },
         "markets": {
             "1_85950327": {
@@ -274,32 +344,162 @@
     },
     "FanDuel": {
         "events": {
-            "28197722": "MLB Player Markets",
-            "32041755": "MLB Player Awards",
-            "34821316": "MLB Futures",
-            "35965298": "New York Mets (C Scott) @ Chicago White Sox (L Castillo)",
-            "35965299": "Tampa Bay Rays (S McClanahan) @ Baltimore Orioles (B Young)",
-            "35965300": "Cincinnati Reds (R Lowder) @ Arizona Diamondbacks (M Soroka)",
-            "35965302": "Athletics (J Lopez) @ Houston Astros (H Brown)",
-            "35965303": "Detroit Tigers (D Anderson) @ Kansas City Royals (M Wacha)",
-            "35965305": "Los Angeles Angels (R Johnson) @ Texas Rangers (C Bradford)",
-            "35965308": "San Francisco Giants (B Tidwell) @ Boston Red Sox (P Sandoval)",
-            "35965309": "Cleveland Guardians (T Bibee) @ Colorado Rockies (G Hughes)",
-            "35965311": "Chicago Cubs (D Peterson) @ Seattle Mariners (K Anderson)",
-            "35965313": "Pittsburgh Pirates (J Jones) @ Los Angeles Dodgers (T Skubal)",
-            "35965314": "Minnesota Twins (D Kremer) @ San Diego Padres (C Mize)",
-            "35965315": "St. Louis Cardinals (Q Mathews) @ Philadelphia Phillies (A Painter)",
-            "35969209": "Pittsburgh Pirates (TBD) @ Los Angeles Dodgers (B Snell)",
-            "35969211": "Chicago Cubs (S Imanaga) @ Seattle Mariners (B Miller)",
-            "35969212": "Minnesota Twins (B Ober) @ San Diego Padres (W Buehler)",
-            "35969214": "Tampa Bay Rays (N Martinez) @ Baltimore Orioles (S Baz)",
-            "35969217": "Cincinnati Reds (A Abbott) @ Arizona Diamondbacks (M Bratt)",
-            "35969218": "San Francisco Giants (M Wilkinson) @ Boston Red Sox (J Bennett)",
-            "35969219": "Washington Nationals (J Kent) @ Miami Marlins (J Junk)",
-            "35969220": "St. Louis Cardinals (TBD) @ Philadelphia Phillies (C Sanchez)",
-            "35969221": "Atlanta Braves (T Mahle) @ Milwaukee Brewers (S Drohan)",
-            "35969222": "Toronto Blue Jays (J Soriano) @ New York Yankees (C Rodon)",
-            "35969224": "Cleveland Guardians (F Griffin) @ Colorado Rockies (T Sugano)"
+            "28197722": {
+                "name": "MLB Player Markets",
+                "sport_code": "7511",
+                "league_name": "11195275",
+                "start_time": "2099-01-01T00:00:00.000Z"
+            },
+            "32041755": {
+                "name": "MLB Player Awards",
+                "sport_code": "7511",
+                "league_name": "12551860",
+                "start_time": "2027-01-19T20:48:21.000Z"
+            },
+            "34821316": {
+                "name": "MLB Futures",
+                "sport_code": "7511",
+                "league_name": "12765173",
+                "start_time": "2026-10-31T00:00:00.000Z"
+            },
+            "35965298": {
+                "name": "New York Mets (C Scott) @ Chicago White Sox (L Castillo)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-22T23:11:00.000Z"
+            },
+            "35965299": {
+                "name": "Tampa Bay Rays (S McClanahan) @ Baltimore Orioles (B Young)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-22T23:06:00.000Z"
+            },
+            "35965300": {
+                "name": "Cincinnati Reds (R Lowder) @ Arizona Diamondbacks (M Soroka)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T00:11:00.000Z"
+            },
+            "35965302": {
+                "name": "Athletics (J Lopez) @ Houston Astros (H Brown)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-22T23:11:00.000Z"
+            },
+            "35965303": {
+                "name": "Detroit Tigers (D Anderson) @ Kansas City Royals (M Wacha)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-22T23:16:00.000Z"
+            },
+            "35965305": {
+                "name": "Los Angeles Angels (R Johnson) @ Texas Rangers (C Bradford)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-22T23:06:00.000Z"
+            },
+            "35965308": {
+                "name": "San Francisco Giants (B Tidwell) @ Boston Red Sox (P Sandoval)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-22T23:16:00.000Z"
+            },
+            "35965309": {
+                "name": "Cleveland Guardians (T Bibee) @ Colorado Rockies (G Hughes)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T00:11:00.000Z"
+            },
+            "35965311": {
+                "name": "Chicago Cubs (D Peterson) @ Seattle Mariners (K Anderson)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-22T23:16:00.000Z"
+            },
+            "35965313": {
+                "name": "Pittsburgh Pirates (J Jones) @ Los Angeles Dodgers (T Skubal)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-22T23:16:00.000Z"
+            },
+            "35965314": {
+                "name": "Minnesota Twins (D Kremer) @ San Diego Padres (C Mize)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T00:41:00.000Z"
+            },
+            "35965315": {
+                "name": "St. Louis Cardinals (Q Mathews) @ Philadelphia Phillies (A Painter)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-22T22:06:00.000Z"
+            },
+            "35969209": {
+                "name": "Pittsburgh Pirates (TBD) @ Los Angeles Dodgers (B Snell)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T20:11:00.000Z"
+            },
+            "35969211": {
+                "name": "Chicago Cubs (S Imanaga) @ Seattle Mariners (B Miller)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T20:11:00.000Z"
+            },
+            "35969212": {
+                "name": "Minnesota Twins (B Ober) @ San Diego Padres (W Buehler)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T20:11:00.000Z"
+            },
+            "35969214": {
+                "name": "Tampa Bay Rays (N Martinez) @ Baltimore Orioles (S Baz)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T17:36:00.000Z"
+            },
+            "35969217": {
+                "name": "Cincinnati Reds (A Abbott) @ Arizona Diamondbacks (M Bratt)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T20:16:00.000Z"
+            },
+            "35969218": {
+                "name": "San Francisco Giants (M Wilkinson) @ Boston Red Sox (J Bennett)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T19:11:00.000Z"
+            },
+            "35969219": {
+                "name": "Washington Nationals (J Kent) @ Miami Marlins (J Junk)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T17:41:00.000Z"
+            },
+            "35969220": {
+                "name": "St. Louis Cardinals (TBD) @ Philadelphia Phillies (C Sanchez)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T17:36:00.000Z"
+            },
+            "35969221": {
+                "name": "Atlanta Braves (T Mahle) @ Milwaukee Brewers (S Drohan)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T23:11:00.000Z"
+            },
+            "35969222": {
+                "name": "Toronto Blue Jays (J Soriano) @ New York Yankees (C Rodon)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T17:36:00.000Z"
+            },
+            "35969224": {
+                "name": "Cleveland Guardians (F Griffin) @ Colorado Rockies (T Sugano)",
+                "sport_code": "7511",
+                "league_name": "11196870",
+                "start_time": "2026-08-23T19:11:00.000Z"
+            }
         },
         "markets": {
             "801.150807420": {
@@ -4560,7 +4760,12 @@
     },
     "BetMGM": {
         "events": {
-            "19865373": "Los Angeles Angels at Houston Astros"
+            "19865373": {
+                "name": "Los Angeles Angels at Houston Astros",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-08-21T00:10:00Z"
+            }
         },
         "markets": {},
         "selections": {}
@@ -4569,543 +4774,897 @@
         "events": {
             "91123880": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "203064",
+                "start_time": "1787278020000",
                 "home_team": "Slovakia",
                 "away_team": "Hungary"
             },
             "90742080": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "200266",
+                "start_time": "1787272200000",
                 "home_team": "Botafogo RJ",
                 "away_team": "Club Cienciano"
             },
             "91077300": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "204604",
+                "start_time": "1787277420000",
                 "home_team": "Atletico De Madrid (EMPEROR) (Esports)",
                 "away_team": "Napoli (FAITH) (Esports)"
             },
             "90953010": {
-                "name": "Top Oceania Player"
+                "name": "Top Oceania Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91124990": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "195679",
+                "start_time": "1787278080000",
                 "home_team": "Manchester",
                 "away_team": "Burnley"
             },
             "90748610": {
                 "name": null,
+                "sport_code": "BASE",
+                "league_name": "199208",
+                "start_time": "1787269500000",
                 "home_team": "Memphis Redbirds",
                 "away_team": "Jacksonville Jumbo Shrimp"
             },
             "91035570": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204894",
+                "start_time": "1787278200000",
                 "home_team": "Jakub Skorupa",
                 "away_team": "Zbigniew Nocun"
             },
             "90952950": {
-                "name": "Top French Player"
+                "name": "Top French Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90989660": {
-                "name": "Group B (Henderson, Yin, Lee, Lopez, Choi)"
+                "name": "Group B (Henderson, Yin, Lee, Lopez, Choi)",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91077500": {
                 "name": null,
+                "sport_code": "BASK",
+                "league_name": "204599",
+                "start_time": "1787276340000",
                 "home_team": "Orlando Magic (CONQUEST)",
                 "away_team": "Charlotte Hornets (KOBOLD)"
             },
             "91030900": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204851",
+                "start_time": "1787277600000",
                 "home_team": "Martin Stefek",
                 "away_team": "Petr Picek"
             },
             "90770771": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "198532",
+                "start_time": "1787274900000",
                 "home_team": "Eric Tripathi",
                 "away_team": "Oscar Andrews"
             },
             "91074421": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "205093",
+                "start_time": "1787275500000",
                 "home_team": "Moise Kouame",
                 "away_team": "Roman Andres Burruchaga"
             },
             "90953011": {
-                "name": "Top Rest of the World Player"
+                "name": "Top Rest of the World Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91077511": {
                 "name": null,
+                "sport_code": "BASK",
+                "league_name": "204599",
+                "start_time": "1787277780000",
                 "home_team": "Brooklyn Nets (KNIGHT)",
                 "away_team": "Miami Heat (KOBRA)"
             },
             "91047841": {
                 "name": null,
+                "sport_code": "VOLL",
+                "league_name": "183991",
+                "start_time": "1787277600000",
                 "home_team": "Chinese Taipei (W)",
                 "away_team": "Iran (W)"
             },
             "88122541": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "198819",
+                "start_time": "1787277600000",
                 "home_team": "Los Angeles FC II",
                 "away_team": "Sporting Kansas City II"
             },
             "90800591": {
                 "name": null,
+                "sport_code": "VOLL",
+                "league_name": "197833",
+                "start_time": "1787272200000",
                 "home_team": "Huracan (W)",
                 "away_team": "La Patriada Florencio Varela (W)"
             },
             "88248381": {
                 "name": null,
+                "sport_code": "BASE",
+                "league_name": "199208",
+                "start_time": "1787272500000",
                 "home_team": "Salt Lake Bees",
                 "away_team": "Reno Aces"
             },
             "89941601": {
                 "name": null,
+                "sport_code": "BASE",
+                "league_name": "199208",
+                "start_time": "1787270700000",
                 "home_team": "Sugar Land Space Cowboys",
                 "away_team": "Oklahoma City Comets"
             },
             "91026531": {
                 "name": null,
+                "sport_code": "BASE",
+                "league_name": "18395",
+                "start_time": "1787275800000",
                 "home_team": "Olmecas de Tabasco",
                 "away_team": "Guerreros de Oaxaca"
             },
             "91057181": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204848",
+                "start_time": "1787277600000",
                 "home_team": "Rak Serhii",
                 "away_team": "Denys Pesternikov"
             },
             "91077521": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277300000",
                 "home_team": "Dallas Mavericks (ARCHITECT)",
                 "away_team": "Charlotte Hornets (PRODIGY)"
             },
             "90733952": {
                 "name": null,
+                "sport_code": "AMFO",
+                "league_name": "10116",
+                "start_time": "1787268600000",
                 "home_team": "Montreal Alouettes",
                 "away_team": "Ottawa Redblacks"
             },
             "91123882": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "203064",
+                "start_time": "1787278200000",
                 "home_team": "Italy",
                 "away_team": "Poland"
             },
             "91067212": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277840000",
                 "home_team": "Liverpool (R0ge) (Esports)",
                 "away_team": "Bayern Munchen (SPACE) (Esports)"
             },
             "90952942": {
-                "name": "Top Danish"
+                "name": "Top Danish",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90325012": {
                 "name": null,
+                "sport_code": "BASK",
+                "league_name": "17089",
+                "start_time": "1787277600000",
                 "home_team": "Los Angeles Sparks (W)",
                 "away_team": "Atlanta Dream (W)"
             },
             "91123712": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "203063",
+                "start_time": "1787278260000",
                 "home_team": "Peru",
                 "away_team": "Uruguay"
             },
             "90297272": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787270400000",
                 "home_team": "Dallas Wings (W)",
                 "away_team": "Indiana Fever (W)"
             },
             "90953012": {
-                "name": "Top Spanish Player"
+                "name": "Top Spanish Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91077512": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787278020000",
                 "home_team": "Milwaukee Bucks (ADMIRAL)",
                 "away_team": "Memphis Grizzlies (arachne)"
             },
             "91067273": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277780000",
                 "home_team": "Arsenal (Nightxx) (Esports)",
                 "away_team": "Juventus (Aveaaaaa) (Esports)"
             },
             "88248463": {
                 "name": null,
+                "sport_code": "BASE",
+                "league_name": "1662",
+                "start_time": "1787271000000",
                 "home_team": "Houston Astros",
                 "away_team": "Los Angeles Angels"
             },
             "90764283": {
                 "name": null,
+                "sport_code": "BASK",
+                "league_name": "181599",
+                "start_time": "1787277600000",
                 "home_team": "Freseros de Irapuato",
                 "away_team": "El Calor de Cancun"
             },
             "91077523": {
                 "name": null,
+                "sport_code": "BASK",
+                "league_name": "204599",
+                "start_time": "1787276580000",
                 "home_team": "Cleveland Cavaliers (VANDAL)",
                 "away_team": "Memphis Grizzlies (AZURE)"
             },
             "86597463": {
                 "name": null,
+                "sport_code": "AMFO",
+                "league_name": "14453",
+                "start_time": "1787271000000",
                 "home_team": "Houston Texans",
                 "away_team": "Las Vegas Raiders"
             },
             "90952923": {
-                "name": "Top Australian Player"
+                "name": "Top Australian Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90750923": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "195435",
+                "start_time": "1787274000000",
                 "home_team": "Club Atletico Morelia",
                 "away_team": "Correcaminos UAT"
             },
             "90771073": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "198533",
+                "start_time": "1787273400000",
                 "home_team": "Sara Mickoska",
                 "away_team": "I Wen Wan"
             },
             "90771083": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "198533",
+                "start_time": "1787273400000",
                 "home_team": "Lucie Gale",
                 "away_team": "Ramey Yu"
             },
             "90771084": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "198532",
+                "start_time": "1787270700000",
                 "home_team": "Charlie Pade",
                 "away_team": "Scott Jones"
             },
             "91067274": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277780000",
                 "home_team": "Man City (noeN) (Esports)",
                 "away_team": "B Dortmund (Kavviro) (Esports)"
             },
             "91035564": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204894",
+                "start_time": "1787277600000",
                 "home_team": "Marek Tkocz",
                 "away_team": "Kacper Adamus"
             },
             "90771094": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "198532",
+                "start_time": "1787273700000",
                 "home_team": "Enzo Aguiard",
                 "away_team": "Elijah Cham"
             },
             "90952914": {
-                "name": "Top Asian Player"
+                "name": "Top Asian Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90952924": {
-                "name": "Top Canadian Player"
+                "name": "Top Canadian Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91052064": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "196214",
+                "start_time": "1787274000000",
                 "home_team": "Champions Academy",
                 "away_team": "CD Arabe Unido II"
             },
             "91124334": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "199829",
+                "start_time": "1787278200000",
                 "home_team": "Munich",
                 "away_team": "Barcelona"
             },
             "91086954": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "182014",
+                "start_time": "1787277720000",
                 "home_team": "Chenting Zhu",
                 "away_team": "Peangtarn Plipuech"
             },
             "90952974": {
-                "name": "Top Irish Player"
+                "name": "Top Irish Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91056714": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204848",
+                "start_time": "1787276700000",
                 "home_team": "Denys Maltsev",
                 "away_team": "Oleksandr Storozhenko"
             },
             "91086955": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "182014",
+                "start_time": "1787277720000",
                 "home_team": "Eva Marie Desvignes",
                 "away_team": "Sunam Jeong"
             },
             "91056995": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204848",
+                "start_time": "1787277600000",
                 "home_team": "Nicolae Salaru",
                 "away_team": "Sergiu Barancean"
             },
             "90953015": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "201479",
+                "start_time": "1787274000000",
                 "home_team": "Alianza FC Panama",
                 "away_team": "CD Olimpia"
             },
             "91067275": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277840000",
                 "home_team": "Paris (DangerDim77) (Esports)",
                 "away_team": "Real Madrid (cl1vlind) (Esports)"
             },
             "88392615": {
                 "name": null,
+                "sport_code": "BASE",
+                "league_name": "1662",
+                "start_time": "1787270700000",
                 "home_team": "Texas Rangers",
                 "away_team": "Washington Nationals"
             },
             "86601695": {
                 "name": null,
+                "sport_code": "AMFO",
+                "league_name": "14453",
+                "start_time": "1787277900000",
                 "home_team": "Los Angeles Chargers",
                 "away_team": "San Francisco 49ers"
             },
             "91056725": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204848",
+                "start_time": "1787277900000",
                 "home_team": "Mykola Polysynskyi",
                 "away_team": "Dmytro Kim"
             },
             "91124335": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "199829",
+                "start_time": "1787277840000",
                 "home_team": "Celtic",
                 "away_team": "Benfica"
             },
             "91031045": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204851",
+                "start_time": "1787277600000",
                 "home_team": "Jakub Tazler",
                 "away_team": "Sebastian Kasnik"
             },
             "90952975": {
-                "name": "Top Japanese Player"
+                "name": "Top Japanese Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90953016": {
-                "name": "Top Swedish Player"
+                "name": "Top Swedish Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90953006": {
-                "name": "Top North American Player"
+                "name": "Top North American Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90742116": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "200262",
+                "start_time": "1787272200000",
                 "home_team": "Corinthians SP",
                 "away_team": "CA Rosario Central"
             },
             "91089366": {
                 "name": null,
+                "sport_code": "ESPS",
+                "league_name": "197718",
+                "start_time": "1787277600000",
                 "home_team": "1win",
                 "away_team": "BetBoom Team"
             },
             "91025946": {
                 "name": null,
+                "sport_code": "FUTS",
+                "league_name": "200372",
+                "start_time": "1787275800000",
                 "home_team": "Dismarc",
                 "away_team": "Farmaceuticos FSC"
             },
             "90952976": {
-                "name": "Top Korean Player"
+                "name": "Top Korean Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90952926": {
-                "name": "Top Continental European Player"
+                "name": "Top Continental European Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91030936": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204851",
+                "start_time": "1787277600000",
                 "home_team": "Jaroslav Prokupek",
                 "away_team": "Jiri Dedek"
             },
             "91077236": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277900000",
                 "home_team": "Portugal (RIFT) (Esports)",
                 "away_team": "Spain (TROOPER) (Esports)"
             },
             "90952996": {
-                "name": "Top Nordic Player"
+                "name": "Top Nordic Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90981526": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "201037",
+                "start_time": "1787277900000",
                 "home_team": "Arsenal FC (Iron) (Esports)",
                 "away_team": "Newcastle United (William) (Esports)"
             },
             "90989667": {
-                "name": "Group C (Iwai, Green, Katsu, Hataoka, Im)"
+                "name": "Group C (Iwai, Green, Katsu, Hataoka, Im)",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90981357": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "201034",
+                "start_time": "1787277600000",
                 "home_team": "England (Odin) (Esports)",
                 "away_team": "Sweden (Dominic) (Esports)"
             },
             "91070477": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "205093",
+                "start_time": "1787275200000",
                 "home_team": "Sebastian Baez",
                 "away_team": "Rodrigo Pacheco Mendez"
             },
             "91124987": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "195679",
+                "start_time": "1787277900000",
                 "home_team": "Chelsea",
                 "away_team": "Highbury"
             },
             "91086957": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "18061",
+                "start_time": "1787277840000",
                 "home_team": "Ku Keon Kang",
                 "away_team": "Yun-Seong Chung"
             },
             "91123707": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "203063",
+                "start_time": "1787277900000",
                 "home_team": "Peru",
                 "away_team": "Brazil"
             },
             "91035557": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204894",
+                "start_time": "1787277300000",
                 "home_team": "Miroslaw Lewczuk",
                 "away_team": "Mateusz Karpiuk"
             },
             "90981367": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "201034",
+                "start_time": "1787277600000",
                 "home_team": "Argentina (Cleo) (Esports)",
                 "away_team": "Germany (Panther) (Esports)"
             },
             "90953017": {
-                "name": "Top UK and Ireland Player"
+                "name": "Top UK and Ireland Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91123877": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "203064",
+                "start_time": "1787277840000",
                 "home_team": "Germany",
                 "away_team": "Georgia"
             },
             "89455377": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "195435",
+                "start_time": "1787274000000",
                 "home_team": "Tepatitlan FC",
                 "away_team": "Tlaxcala FC"
             },
             "91026518": {
                 "name": null,
+                "sport_code": "BASE",
+                "league_name": "18395",
+                "start_time": "1787274000000",
                 "home_team": "Diablos Rojos del M\u00e9xico",
                 "away_team": "Pericos de Puebla"
             },
             "91086958": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "182014",
+                "start_time": "1787277660000",
                 "home_team": "Meng Yi Chen",
                 "away_team": "Sijia Wei"
             },
             "90952948": {
-                "name": "Top English Player"
+                "name": "Top English Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91045188": {
                 "name": null,
+                "sport_code": "BASK",
+                "league_name": "206393",
+                "start_time": "1787276400000",
                 "home_team": "Dubai (Koko)",
                 "away_team": "Crvena Zvezda (Deenou) (Esports)"
             },
             "90953018": {
-                "name": "Top USA Player"
+                "name": "Top USA Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90325138": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "",
                 "home_team": "Las Vegas Aces (W)",
                 "away_team": "Connecticut Sun (W)"
             },
             "90989638": {
-                "name": "Group A (Korda, Yamashita, Kim, Ko, Kim)"
+                "name": "Group A (Korda, Yamashita, Kim, Ko, Kim)",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91045238": {
                 "name": null,
+                "sport_code": "BASK",
+                "league_name": "206393",
+                "start_time": "1787276400000",
                 "home_team": "Zalgiris Kaunas (CRAMON)",
                 "away_team": "Bayern Munich (HolyPurp)"
             },
             "90981598": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "201037",
+                "start_time": "1787277900000",
                 "home_team": "Tottenham Hotspur FC (Sebastian) (Esports)",
                 "away_team": "Aston Villa (Mateo) (Esports)"
             },
             "90981538": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "201033",
+                "start_time": "1787278500000",
                 "home_team": "Atletico Madrid (Cleo) (Esports)",
                 "away_team": "Manchester City FC (Odin) (Esports)"
             },
             "91124338": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "199829",
+                "start_time": "1787278020000",
                 "home_team": "Milan",
                 "away_team": "Amsterdam"
             },
             "90952969": {
-                "name": "Top German Player"
+                "name": "Top German Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91077519": {
                 "name": null,
+                "sport_code": "BASK",
+                "league_name": "204599",
+                "start_time": "1787277540000",
                 "home_team": "Dallas Mavericks (silver)",
                 "away_team": "Charlotte Hornets (MALICE)"
             },
             "90952949": {
-                "name": "Top European Player"
+                "name": "Top European Player",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "91056719": {
                 "name": null,
+                "sport_code": "TABL",
+                "league_name": "204848",
+                "start_time": "1787277300000",
                 "home_team": "Volodymyr Panasenko",
                 "away_team": "Oleksandr Melashenko"
             },
             "91077189": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277660000",
                 "home_team": "FC Bayern Munchen (EDEN) (Esports)",
                 "away_team": "Manchester City (DANTE) (Esports)"
             },
             "91124989": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787278260000",
                 "home_team": "Wolves",
                 "away_team": "City"
             },
             "91083319": {
                 "name": null,
+                "sport_code": "TENN",
+                "league_name": "182686",
+                "start_time": "1787274120000",
                 "home_team": "Noritaka Koizumi",
                 "away_team": "Masamichi Imamura"
             },
             "91123709": {
                 "name": null,
+                "sport_code": "VRTS",
+                "league_name": "203063",
+                "start_time": "1787278080000",
                 "home_team": "Chile",
                 "away_team": "USA"
             },
             "90989669": {
-                "name": "Group D (Lee, Furue, Saigo, Wannasaen, Anannarukarn)"
+                "name": "Group D (Lee, Furue, Saigo, Wannasaen, Anannarukarn)",
+                "sport_code": "GOLF",
+                "league_name": "205133",
+                "start_time": "1787230800000"
             },
             "90981349": {
                 "name": null,
+                "sport_code": "FOOT",
+                "league_name": "201033",
+                "start_time": "1787278500000",
                 "home_team": "Liverpool FC (Dexter) (Esports)",
                 "away_team": "Real Madrid (Dominic) (Esports)"
             },
             "91034449": {
                 "name": null,
+                "sport_code": "BASK",
+                "league_name": "181599",
+                "start_time": "1787277600000",
                 "home_team": "Dorados De Chihuahua",
                 "away_team": "Abejas de Leon"
             },
             "91034450": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277600000",
                 "home_team": "Melaka (W) U21",
                 "away_team": "Pahang (W) U21"
             },
             "91086959": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787278080000",
                 "home_team": "Petr Bar Biryukov",
                 "away_team": "Tianhui Zhang"
             },
             "91078442": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787278080000",
                 "home_team": "Kokoro Isomura",
                 "away_team": "Yusuke Takahashi"
             },
             "91123884": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787278380000",
                 "home_team": "France",
                 "away_team": "Ukraine"
             },
             "91124332": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787278380000",
                 "home_team": "Rome",
                 "away_team": "Turin"
             },
             "91086956": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277900000",
                 "home_team": "Isaac Becroft",
                 "away_team": "Muhammad Rifqi Fitriadi"
             },
             "90945560": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277900000",
                 "home_team": "Santiago Gonzalez / Ho Ray",
                 "away_team": "Mac Kiger / Ryan Seggerman"
             },
             "91086960": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277900000",
                 "home_team": "Rinko Matsuda",
                 "away_team": "Ya Yi Yang"
             },
             "91077498": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787278260000",
                 "home_team": "Los Angeles Lakers (CONQUEST)",
                 "away_team": "New York Knicks (THOR)"
             },
             "91067031": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787278560000",
                 "home_team": "Bayern Munchen (SPACE) (Esports)",
                 "away_team": "Paris (DangerDim77) (Esports)"
             },
             "91067060": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787278560000",
                 "home_team": "Atleti (A1ose) (Esports)",
                 "away_team": "Liverpool (R0ge) (Esports)"
             },
             "90754923": {
                 "name": null,
+                "sport_code": "",
+                "league_name": "",
+                "start_time": "1787277600000",
                 "home_team": "Anthony Susanto",
                 "away_team": "Aarjun Pandit"
             }
@@ -11162,79 +11721,154 @@
     "Caesars": {
         "events": {
             "4043b972-0b46-4993-a5b0-4c1f69103106": {
-                "name": "Arizona Diamondbacks at Washington Nationals"
+                "name": "Arizona Diamondbacks at Washington Nationals",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T17:35:00Z"
             },
             "f7bdf6e6-fcb0-4184-ab84-99ed2a961826": {
-                "name": "Toronto Blue Jays at Boston Red Sox"
+                "name": "Toronto Blue Jays at Boston Red Sox",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T17:35:00Z"
             },
             "ac312532-31b1-4b11-98a1-348d2936618e": {
-                "name": "Atlanta Braves at Baltimore Orioles"
+                "name": "Atlanta Braves at Baltimore Orioles",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T17:35:00Z"
             },
             "5c90990e-973e-4954-949b-b7d96c261684": {
-                "name": "Chicago Cubs at Pittsburgh Pirates"
+                "name": "Chicago Cubs at Pittsburgh Pirates",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T17:35:00Z"
             },
             "1093b158-344a-47a0-b672-59bd36c04e13": {
-                "name": "Los Angeles Dodgers at New York Mets"
+                "name": "Los Angeles Dodgers at New York Mets",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T17:40:00Z"
             },
             "8e767a58-7f55-4521-9e53-92b01a3add69": {
-                "name": "San Diego Padres at Miami Marlins"
+                "name": "San Diego Padres at Miami Marlins",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T17:40:00Z"
             },
             "ad975ab3-28ba-4a9f-a57b-a10a7b397669": {
-                "name": "Kansas City Royals at Detroit Tigers"
+                "name": "Kansas City Royals at Detroit Tigers",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T17:40:00Z"
             },
             "f2870d8e-bf78-4f68-89fd-04134463d207": {
-                "name": "Colorado Rockies at Milwaukee Brewers"
+                "name": "Colorado Rockies at Milwaukee Brewers",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T18:10:00Z"
             },
             "5fa22431-e98c-40d9-ac0f-7e1513b6b213": {
-                "name": "Athletics at Minnesota Twins"
+                "name": "Athletics at Minnesota Twins",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T18:10:00Z"
             },
             "3c1bc075-fd47-4c87-9ff7-1f5411799830": {
-                "name": "Houston Astros at Chicago White Sox"
+                "name": "Houston Astros at Chicago White Sox",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T18:10:00Z"
             },
             "3ca1c437-544a-4188-a929-f752cc2e4d4d": {
-                "name": "Cincinnati Reds at St. Louis Cardinals"
+                "name": "Cincinnati Reds at St. Louis Cardinals",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T18:15:00Z"
             },
             "a4262d62-9e88-4f5e-bb9b-2ab9fadba30e": {
-                "name": "Seattle Mariners at Texas Rangers"
+                "name": "Seattle Mariners at Texas Rangers",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T18:35:00Z"
             },
             "da4dad0a-fe21-42f3-809b-fdb7236c1c4b": {
-                "name": "Los Angeles Angels at San Francisco Giants"
+                "name": "Los Angeles Angels at San Francisco Giants",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T20:05:00Z"
             },
             "37aa0fdc-4c79-490f-b600-b375e2e694d9": {
-                "name": "New York Yankees at Philadelphia Phillies"
+                "name": "New York Yankees at Philadelphia Phillies",
+                "sport_code": "Baseball",
+                "league_name": "MLB",
+                "start_time": "2026-07-26T23:20:00Z"
             },
             "a0f9e1cd-5441-4d22-b61b-36ef9014c722": {
-                "name": "3M Open"
+                "name": "3M Open",
+                "sport_code": "Golf",
+                "league_name": "3M Open",
+                "start_time": "2026-07-24T11:45:00Z"
             },
             "74b3b606-86d4-374a-9045-865deea3d347": {
-                "name": "NASCAR Cup Series 2026 Brickyard 400"
+                "name": "NASCAR Cup Series 2026 Brickyard 400",
+                "sport_code": "Auto",
+                "league_name": "NASCAR Cup Series",
+                "start_time": "2026-07-26T18:20:00Z"
             },
             "896a1e5f-3e6e-425b-9d68-35cf2d5cad08": {
-                "name": "Connecticut Sun at Washington Mystics"
+                "name": "Connecticut Sun at Washington Mystics",
+                "sport_code": "Basketball",
+                "league_name": "WNBA",
+                "start_time": "2026-07-28T23:30:00Z"
             },
             "f635af6b-490e-4cd7-a442-cfc9643cb778": {
-                "name": "Toronto Tempo at Minnesota Lynx"
+                "name": "Toronto Tempo at Minnesota Lynx",
+                "sport_code": "Basketball",
+                "league_name": "WNBA",
+                "start_time": "2026-07-29T00:00:00Z"
             },
             "6fbb8bc6-cc92-434e-bae1-bb6f54be2e51": {
-                "name": "Indiana Fever at Seattle Storm"
+                "name": "Indiana Fever at Seattle Storm",
+                "sport_code": "Basketball",
+                "league_name": "WNBA",
+                "start_time": "2026-07-29T01:30:00Z"
             },
             "49dcdabd-2e1c-41ea-862e-02718d4f91fa": {
-                "name": "Portland Fire at Las Vegas Aces"
+                "name": "Portland Fire at Las Vegas Aces",
+                "sport_code": "Basketball",
+                "league_name": "WNBA",
+                "start_time": "2026-07-29T02:00:00Z"
             },
             "7c5c420c-8a85-4375-a0dd-7fd2ece06a33": {
-                "name": "New York Liberty at Los Angeles Sparks"
+                "name": "New York Liberty at Los Angeles Sparks",
+                "sport_code": "Basketball",
+                "league_name": "WNBA",
+                "start_time": "2026-07-29T02:00:00Z"
             },
             "bf5a7df9-36b9-4305-affd-2809ce9786dd": {
-                "name": "Atlanta Dream at Dallas Wings"
+                "name": "Atlanta Dream at Dallas Wings",
+                "sport_code": "Basketball",
+                "league_name": "WNBA",
+                "start_time": "2026-07-30T00:00:00Z"
             },
             "73815f78-6a24-487b-b864-9893586812b0": {
-                "name": "Golden State Valkyries at Phoenix Mercury"
+                "name": "Golden State Valkyries at Phoenix Mercury",
+                "sport_code": "Basketball",
+                "league_name": "WNBA",
+                "start_time": "2026-07-30T02:00:00Z"
             },
             "182251ad-be17-4bb9-a5ac-a6b968405a7d": {
-                "name": "Carolina Panthers at Arizona Cardinals"
+                "name": "Carolina Panthers at Arizona Cardinals",
+                "sport_code": "Football",
+                "league_name": "NFL",
+                "start_time": "2026-08-07T00:00:00Z"
             },
             "2ecce02f-f973-31ed-939f-f6467ac7d72d": {
-                "name": "2026-27 NBA Season"
+                "name": "2026-27 NBA Season",
+                "sport_code": "Basketball",
+                "league_name": "NBA",
+                "start_time": "2027-06-01T15:00:00Z"
             }
         },
         "markets": {

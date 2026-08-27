@@ -4,8 +4,8 @@ import json
 import logging
 from datetime import datetime
 
-from arbfinder.normalize.models import OddsUpdate
-from arbfinder.parsers._helpers import clean_american_odds, split_fixture_name
+from arbfinder.normalization.models import OddsUpdate
+from arbfinder.parsers._helpers import split_fixture_name
 from arbfinder.parsers.base import BookParser
 
 __all__ = ["FanDuelParser"]
@@ -66,9 +66,12 @@ class FanDuelParser(BookParser):
         """Parse the events/markets/runners reference dictionary."""
         events = attachments.get("events", {})
         for ev_id, ev_data in events.items():
-            self.reference_data["events"][str(ev_id)] = ev_data.get(
-                "name", "Unknown Event"
-            )
+            self.reference_data["events"][str(ev_id)] = {
+                "name": ev_data.get("name", "Unknown Event"),
+                "sport_code": str(ev_data.get("eventTypeId", "")),
+                "league_name": str(ev_data.get("competitionId", "")),
+                "start_time": str(ev_data.get("openDate", "")),
+            }
 
         markets = attachments.get("markets", {})
         for m_id, m_data in markets.items():
@@ -101,7 +104,8 @@ class FanDuelParser(BookParser):
             # Lookup metadata from the reference dictionary
             market_meta = self.reference_data["markets"].get(m_id, {})
             event_id = market_meta.get("eventId", "")
-            event_name = self.reference_data["events"].get(event_id, "Unknown Game")
+            event_meta = self.reference_data["events"].get(event_id, {})
+            event_name = event_meta.get("name", "Unknown Game")
             market_type = market_meta.get("marketType", "UNKNOWN_MARKET")
 
             # Skip if event is unknown
@@ -114,8 +118,7 @@ class FanDuelParser(BookParser):
                 s_id = str(runner.get("selectionId"))
 
                 raw_odds = _extract_raw_american_odds(runner)
-                clean_odds = clean_american_odds(raw_odds)
-                if clean_odds is None:
+                if raw_odds is None:
                     continue
 
                 # Lookup Selection metadata
@@ -127,15 +130,19 @@ class FanDuelParser(BookParser):
 
                 updates.append(
                     OddsUpdate(
-                        book=self.book_name,
-                        event_id=event_id,
-                        home_team=home_team,
-                        away_team=away_team,
-                        market=market_type,
-                        selection=runner_name,
-                        line=handicap_val,
-                        price_american=clean_odds,
-                        timestamp=now,
+                        book_id=self.book_name,
+                        raw_event_id=event_id,
+                        raw_sport_code=event_meta.get("sport_code", ""),
+                        raw_league_name=event_meta.get("league_name", ""),
+                        raw_home_team=home_team,
+                        raw_away_team=away_team,
+                        raw_start_time=event_meta.get("start_time", ""),
+                        raw_market_type=market_type,
+                        raw_selection=runner_name,
+                        raw_line=handicap_val,
+                        odds_value=raw_odds,
+                        odds_format="american",
+                        captured_at=now,
                     )
                 )
 

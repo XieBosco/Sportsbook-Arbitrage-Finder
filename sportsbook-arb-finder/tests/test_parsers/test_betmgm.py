@@ -70,14 +70,14 @@ def test_betmgm_ws_game_update(sample_betmgm_ref):
 
     updates = parser.handle_ws_frame(signalr_payload)
     assert len(updates) == 1
-    assert updates[0].book == "BetMGM"
-    assert updates[0].event_id == "987654"
-    assert updates[0].away_team == "Chicago Cubs"
-    assert updates[0].home_team == "St. Louis Cardinals"
-    assert updates[0].market == "Run Line"
-    assert updates[0].selection == "Chicago Cubs"
-    assert updates[0].line == 1.5
-    assert updates[0].price_american == 140
+    assert updates[0].book_id == "BetMGM"
+    assert updates[0].raw_event_id == "987654"
+    assert updates[0].raw_away_team == "Chicago Cubs"
+    assert updates[0].raw_home_team == "St. Louis Cardinals"
+    assert updates[0].raw_market_type == "Run Line"
+    assert updates[0].raw_selection == "Chicago Cubs"
+    assert updates[0].raw_line == 1.5
+    assert updates[0].odds_value == 140
 
 
 def test_betmgm_ws_game_update_at_delimiter(sample_betmgm_ref_at_delimiter):
@@ -109,13 +109,13 @@ def test_betmgm_ws_game_update_at_delimiter(sample_betmgm_ref_at_delimiter):
 
     updates = parser.handle_ws_frame(signalr_payload)
     assert len(updates) == 1
-    assert updates[0].book == "BetMGM"
-    assert updates[0].event_id == "19766272"
-    assert updates[0].away_team == "Indiana Fever"
-    assert updates[0].home_team == "Las Vegas Aces"
-    assert updates[0].market == "Moneyline"
-    assert updates[0].selection == "Fever"
-    assert updates[0].price_american == -220
+    assert updates[0].book_id == "BetMGM"
+    assert updates[0].raw_event_id == "19766272"
+    assert updates[0].raw_away_team == "Indiana Fever"
+    assert updates[0].raw_home_team == "Las Vegas Aces"
+    assert updates[0].raw_market_type == "Moneyline"
+    assert updates[0].raw_selection == "Fever"
+    assert updates[0].odds_value == -220
 
 
 def test_betmgm_ws_option_market_update(sample_betmgm_ref):
@@ -146,12 +146,12 @@ def test_betmgm_ws_option_market_update(sample_betmgm_ref):
 
     updates = parser.handle_ws_frame(signalr_payload)
     assert len(updates) == 1
-    assert updates[0].book == "BetMGM"
-    assert updates[0].away_team == "Chicago Cubs"
-    assert updates[0].home_team == "St. Louis Cardinals"
-    assert updates[0].market == "Moneyline"
-    assert updates[0].selection == "St. Louis Cardinals"
-    assert updates[0].price_american == -165
+    assert updates[0].book_id == "BetMGM"
+    assert updates[0].raw_away_team == "Chicago Cubs"
+    assert updates[0].raw_home_team == "St. Louis Cardinals"
+    assert updates[0].raw_market_type == "Moneyline"
+    assert updates[0].raw_selection == "St. Louis Cardinals"
+    assert updates[0].odds_value == -165
 
 
 def test_betmgm_fixture_name_splitting_delimiters():
@@ -193,10 +193,10 @@ def test_betmgm_game_level_attr_fallback(sample_betmgm_ref_at_delimiter):
 
     updates = parser.handle_ws_frame(signalr_payload)
     assert len(updates) == 2
-    assert updates[0].market == "3rd quarter totals"
-    assert updates[0].selection == "Over 45.5"
-    assert updates[0].line == 45.5
-    assert updates[0].price_american == -118
-    assert updates[1].selection == "Under 45.5"
-    assert updates[1].line == 45.5
-    assert updates[1].price_american == -115
+    assert updates[0].raw_market_type == "3rd quarter totals"
+    assert updates[0].raw_selection == "Over"
+    assert updates[0].raw_line == 45.5
+    assert updates[0].odds_value == -118
+    assert updates[1].raw_selection == "Under"
+    assert updates[1].raw_line == 45.5
+    assert updates[1].odds_value == -115

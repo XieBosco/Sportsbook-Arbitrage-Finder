@@ -1,5 +1,5 @@
 """In-memory data store for odds."""
-from arbfinder.normalize.models import OddsUpdate
+from arbfinder.normalization.models import OddsUpdate
 
 __all__ = ["OddsStore"]
 

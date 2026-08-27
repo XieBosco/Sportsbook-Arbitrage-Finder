@@ -13,5 +13,6 @@ dependencies = [
     "uvicorn",
     "msgpack",
     "lz4",
-    "pytest"
+    "pytest",
+    "tzdata"
 ]

@@ -60,11 +60,11 @@ def test_draftkings_ws_msgpack_parsing(sample_dk_ref):
 
     updates = parser.handle_ws_frame(b64_payload)
     assert len(updates) == 1
-    assert updates[0].book == "DraftKings"
-    assert updates[0].home_team == "San Francisco Giants"
-    assert updates[0].away_team == "Los Angeles Dodgers"
-    assert updates[0].selection == "Los Angeles Dodgers"
-    assert updates[0].price_american == -150
+    assert updates[0].book_id == "DraftKings"
+    assert updates[0].raw_home_team == "San Francisco Giants"
+    assert updates[0].raw_away_team == "Los Angeles Dodgers"
+    assert updates[0].raw_selection == "Los Angeles Dodgers"
+    assert updates[0].odds_value == -150
 
 
 def test_draftkings_core_id_fallback(sample_dk_ref):
@@ -87,11 +87,11 @@ def test_draftkings_core_id_fallback(sample_dk_ref):
 
     updates = parser.handle_ws_frame(b64_payload)
     assert len(updates) == 1
-    assert updates[0].event_id == "ev-100"
-    assert updates[0].home_team == "San Francisco Giants"
-    assert updates[0].selection == "Over 9.5"
-    assert updates[0].line == 9.5
-    assert updates[0].price_american == 110
+    assert updates[0].raw_event_id == "ev-100"
+    assert updates[0].raw_home_team == "San Francisco Giants"
+    assert updates[0].raw_selection == "Over 9.5"
+    assert updates[0].raw_line == 9.5
+    assert updates[0].odds_value == 110
 
 
 def test_draftkings_unicode_minus_odds(sample_dk_ref):
@@ -114,4 +114,4 @@ def test_draftkings_unicode_minus_odds(sample_dk_ref):
 
     updates = parser.handle_ws_frame(b64_payload)
     assert len(updates) == 1
-    assert updates[0].price_american == -248
+    assert updates[0].odds_value == -248

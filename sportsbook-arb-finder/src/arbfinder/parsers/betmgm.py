@@ -6,7 +6,7 @@ from collections.abc import Callable
 from datetime import datetime
 from typing import Any
 
-from arbfinder.normalize.models import OddsUpdate
+from arbfinder.normalization.models import OddsUpdate
 from arbfinder.parsers._helpers import clean_american_odds, split_fixture_name
 from arbfinder.parsers.base import BookParser
 
@@ -22,6 +22,18 @@ def _to_float_or_none(val: Any) -> float | None:
         return float(val)
     except (ValueError, TypeError):
         return None
+
+
+def _clean_selection_name(name: str) -> str:
+    """Remove handicap from selection name, e.g. 'Houston Astros +1.5' -> 'Houston Astros', 'Over 8.5' -> 'Over'."""
+    low = name.lower()
+    if low.startswith("over "):
+        return "Over"
+    if low.startswith("under "):
+        return "Under"
+    import re
+    return re.sub(r"\s+[+-][\d.]+$", "", name).strip()
+
 
 
 class BetMGMParser(BookParser):
@@ -53,17 +65,30 @@ class BetMGMParser(BookParser):
             fixture_id = str(fixture["id"])
             fixture_name = fixture.get("name", {}).get("value", "Unknown Game")
 
+            sport_obj = fixture.get("sport", {})
+            sport_code = str(sport_obj.get("name", {}).get("value") or sport_obj.get("id", ""))
+            
+            comp_obj = fixture.get("competition", {})
+            league_name = str(comp_obj.get("name", {}).get("value") or comp_obj.get("id", ""))
+            
+            start_time = fixture.get("startDate", "")
+
             if fixture_id not in self.reference_data["events"]:
-                self.reference_data["events"][fixture_id] = fixture_name
+                self.reference_data["events"][fixture_id] = {
+                    "name": fixture_name,
+                    "sport_code": sport_code,
+                    "league_name": league_name,
+                    "start_time": start_time,
+                }
 
         return []
 
-    def _resolve_fixture_teams(self, fixture_id: object) -> tuple[str, str] | None:
-        """Look up a fixture's teams by ID, or None if the fixture is unknown."""
-        fixture_name = self.reference_data["events"].get(str(fixture_id), "Unknown Game")
-        if fixture_name == "Unknown Game":
+    def _resolve_fixture_meta(self, fixture_id: object) -> dict | None:
+        """Look up a fixture's metadata by ID, or None if the fixture is unknown."""
+        meta = self.reference_data["events"].get(str(fixture_id))
+        if not meta:
             return None
-        return split_fixture_name(fixture_name)
+        return meta
 
     def _build_selection_updates(
         self,
@@ -82,15 +107,17 @@ class BetMGMParser(BookParser):
         Shared by GameUpdate ("results") and OptionMarketUpdate ("options")
         messages, which carry the same shape modulo field names.
         """
-        teams = self._resolve_fixture_teams(fixture_id)
-        if teams is None:
+        meta = self._resolve_fixture_meta(fixture_id)
+        if meta is None:
             return []
-        home_team, away_team = teams
+        
+        home_team, away_team = split_fixture_name(meta["name"])
 
         updates = []
         for item in items:
-            selection_name = get_name(item)
-            odds = clean_american_odds(get_raw_odds(item))
+            selection_name = _clean_selection_name(get_name(item))
+            raw_odds = get_raw_odds(item)
+            odds = clean_american_odds(raw_odds)
             if odds is None:
                 continue
 
@@ -101,15 +128,19 @@ class BetMGMParser(BookParser):
 
             updates.append(
                 OddsUpdate(
-                    book=self.book_name,
-                    event_id=str(fixture_id),
-                    home_team=home_team,
-                    away_team=away_team,
-                    market=market_name,
-                    selection=selection_name,
-                    line=handicap_val,
-                    price_american=odds,
-                    timestamp=now,
+                    book_id=self.book_name,
+                    raw_event_id=str(fixture_id),
+                    raw_sport_code=meta["sport_code"],
+                    raw_league_name=meta["league_name"],
+                    raw_home_team=home_team,
+                    raw_away_team=away_team,
+                    raw_start_time=meta["start_time"],
+                    raw_market_type=market_name,
+                    raw_selection=selection_name,
+                    raw_line=handicap_val,
+                    odds_value=float(odds),
+                    odds_format="american",
+                    captured_at=now,
                 )
             )
 

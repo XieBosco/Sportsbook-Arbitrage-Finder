@@ -1,0 +1,21 @@
+{
+    "Baseball": {
+        "DraftKings": "7",
+        "FanDuel": "7511",
+        "BetMGM": "Baseball",
+        "Betano": "BASE",
+        "Caesars": "Baseball"
+    },
+    "Basketball": {
+        "Betano": "BASK"
+    },
+    "Football": {
+        "Betano": "AMFO"
+    },
+    "Soccer": {
+        "Betano": "FOOT"
+    },
+    "Tennis": {
+        "Betano": "TENN"
+    }
+}

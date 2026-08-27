@@ -575,7 +575,7 @@ dependencies beyond the standard library except where noted.
 STAGE 1 — normalization/
 In schema.py, define a frozen dataclass `NormalizedOddsUpdate` with fields: book_id, 
 book_event_id, sport_key, league_key, home_team, away_team, start_time (tz-aware UTC datetime), 
-market_type, period, selection, line (float | None), odds_decimal (float), captured_at, source_ref.
+market_type, period, selection, line (float | None), odds_decimal (float), captured_at.
 In base_normalizer.py, define abstract class `BaseNormalizer` with method 
 `normalize(self, update: OddsUpdate) -> NormalizedOddsUpdate | None` — returns None 
 (does not raise) when a field (e.g. team name) cannot be resolved.

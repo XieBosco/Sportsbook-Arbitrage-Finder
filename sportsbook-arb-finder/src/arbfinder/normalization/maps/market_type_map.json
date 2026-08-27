@@ -1,0 +1,22 @@
+{
+    "moneyline": {
+        "DraftKings": "Moneyline",
+        "FanDuel": "MONEY_LINE",
+        "Caesars": "Money Line",
+        "Betano": "Winner"
+    },
+    "total": {
+        "DraftKings": "Total",
+        "FanDuel": "TOTAL_POINTS_(OVER/UNDER)",
+        "BetMGM": "Totals",
+        "Caesars": "Total Runs",
+        "Betano": "Over/Under Total Goals"
+    },
+    "run_line": {
+        "DraftKings": "Run Line",
+        "FanDuel": "MATCH_HANDICAP_(2-WAY)",
+        "BetMGM": "Run Line Spread",
+        "Caesars": "Run Line",
+        "Betano": "Spread"
+    }
+}
