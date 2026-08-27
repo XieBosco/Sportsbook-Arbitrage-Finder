@@ -10,8 +10,8 @@ import json
 import logging
 from datetime import datetime
 
-from arbfinder.normalize.models import OddsUpdate
-from arbfinder.normalize.odds_math import decimal_to_american
+from arbfinder.normalization.models import OddsUpdate
+from arbfinder.normalization.odds_math import decimal_to_american
 from arbfinder.parsers._helpers import split_fixture_name
 from arbfinder.parsers.base import BookParser
 from arbfinder.parsers.diffusion_codec import (
@@ -103,17 +103,26 @@ class CaesarsParser(BookParser):
         for edg in home.get("eventDisplayGroups", []):
             if not isinstance(edg, dict):
                 continue
+            sport_code = str(edg.get("sportName") or edg.get("sportId", ""))
+            league_name = str(edg.get("competitionName") or edg.get("competitionId", ""))
+            
             for event in edg.get("events", []):
                 if not isinstance(event, dict):
                     continue
-                self._register_event(event)
+                self._register_event(event, sport_code, league_name)
 
         return []
 
-    def _register_event(self, event: dict) -> None:
+    def _register_event(self, event: dict, sport_code: str, league_name: str) -> None:
         event_id = str(event.get("id", ""))
         event_name = event.get("name", "").replace("|", "").strip()
-        self.reference_data["events"][event_id] = {"name": event_name}
+        start_time = event.get("startTime", "")
+        self.reference_data["events"][event_id] = {
+            "name": event_name,
+            "sport_code": sport_code,
+            "league_name": league_name,
+            "start_time": start_time,
+        }
 
         for group in event.get("keyMarketGroups", []):
             if not isinstance(group, dict):
@@ -163,8 +172,8 @@ class CaesarsParser(BookParser):
         if not isinstance(price, dict):
             return []
 
-        american_odds = _extract_american_odds(price)
-        if american_odds is None:
+        # Get decimal odds directly
+        if "d" not in price:
             return []
 
         enr = self.reference_data["selections"].get(uuid, {})
@@ -199,17 +208,26 @@ class CaesarsParser(BookParser):
         # split_fixture_name returns (home, away) for ' at '/' @ ' delimiters,
         # which matches the Caesars convention.
 
+        try:
+            price_val = float(price.get("d"))
+        except (ValueError, TypeError):
+            return []
+
         return [
             OddsUpdate(
-                book=self.book_name,
-                event_id=ev_id,
-                home_team=home_team,
-                away_team=away_team,
-                market=m_name,
-                selection=sel_name,
-                line=handicap_val,
-                price_american=american_odds,
-                timestamp=now,
+                book_id=self.book_name,
+                raw_event_id=ev_id,
+                raw_sport_code=event_enr.get("sport_code", ""),
+                raw_league_name=event_enr.get("league_name", ""),
+                raw_home_team=home_team,
+                raw_away_team=away_team,
+                raw_start_time=event_enr.get("start_time", ""),
+                raw_market_type=m_name,
+                raw_selection=sel_name,
+                raw_line=handicap_val,
+                odds_value=price_val,
+                odds_format="decimal",
+                captured_at=now,
             )
         ]
 

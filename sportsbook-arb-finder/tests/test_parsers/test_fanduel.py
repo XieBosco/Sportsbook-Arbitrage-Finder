@@ -40,7 +40,7 @@ def test_fanduel_http_reference_parsing(sample_fanduel_ref):
     parser.handle_http_body("content-managed-page", json.dumps(sample_fanduel_ref))
 
     assert "31234567" in parser.reference_data["events"]
-    assert parser.reference_data["events"]["31234567"] == "Baltimore Orioles @ New York Yankees"
+    assert parser.reference_data["events"]["31234567"]["name"] == "Baltimore Orioles @ New York Yankees"
     assert "71.123456" in parser.reference_data["markets"]
     assert "71.123456_1001" in parser.reference_data["selections"]
 
@@ -73,11 +73,11 @@ def test_fanduel_live_odds_update(sample_fanduel_ref):
 
     updates = parser.handle_http_body("getMarketPrices", json.dumps(odds_payload))
     assert len(updates) == 2
-    assert updates[0].book == "FanDuel"
-    assert updates[0].home_team == "New York Yankees"
-    assert updates[0].away_team == "Baltimore Orioles"
-    assert updates[0].market == "MONEYLINE"
-    assert updates[0].selection == "Baltimore Orioles"
-    assert updates[0].price_american == 130
-    assert updates[1].selection == "New York Yankees"
-    assert updates[1].price_american == -155
+    assert updates[0].book_id == "FanDuel"
+    assert updates[0].raw_home_team == "New York Yankees"
+    assert updates[0].raw_away_team == "Baltimore Orioles"
+    assert updates[0].raw_market_type == "MONEYLINE"
+    assert updates[0].raw_selection == "Baltimore Orioles"
+    assert updates[0].odds_value == "+130"
+    assert updates[1].raw_selection == "New York Yankees"
+    assert updates[1].odds_value == "-155"

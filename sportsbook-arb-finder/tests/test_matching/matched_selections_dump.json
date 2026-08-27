@@ -1,0 +1,3546 @@
+[
+  {
+    "canonical_game_id": "ec506ddb-fe64-49f2-8648-062312eef53b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 11.5,
+    "book_odds": {
+      "DraftKings": -139,
+      "Betano": -125
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.019507-04:00",
+      "Betano": "2026-08-27T02:27:11.506348-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "94a989a8-2138-4ebe-a0cf-f80cea3652e2",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 20.5,
+    "book_odds": {
+      "DraftKings": 102,
+      "BetMGM": 175
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.019821-04:00",
+      "BetMGM": "2026-08-27T02:27:11.419931-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3229a8e9-15b6-4daa-b184-e2ecb1fd2d20",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -11.5,
+    "book_odds": {
+      "DraftKings": 107,
+      "Betano": -115
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.020140-04:00",
+      "Betano": "2026-08-27T02:27:11.506348-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "9aa9ca95-9765-40f1-a0d6-038143b253f7",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 20.5,
+    "book_odds": {
+      "DraftKings": -133,
+      "BetMGM": -225
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.020754-04:00",
+      "BetMGM": "2026-08-27T02:27:11.419931-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "928e7902-f1a5-44cf-b9f3-359afc37e143",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "DraftKings": -720,
+      "Betano": -455
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.015684-04:00",
+      "Betano": "2026-08-27T02:27:11.501902-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "dcf43a87-3276-4221-a60f-50d70f42e5ab",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 3.5,
+    "book_odds": {
+      "DraftKings": -117
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.009744-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "133ddb41-530c-43a0-ab46-434638607dc5",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "DraftKings": 543,
+      "Betano": 340
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.016308-04:00",
+      "Betano": "2026-08-27T02:27:11.510532-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "1e22077b-922a-4e25-bba0-3e852c65fe6e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 3.5,
+    "book_odds": {
+      "DraftKings": -111
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.010126-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "eb6dd313-30c6-4bc9-a916-95c74a4aaa84",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "DraftKings": 123,
+      "Betano": 235
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.016621-04:00",
+      "Betano": "2026-08-27T02:27:11.501902-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "265a10fe-8bd1-4241-b4c8-4c6e437cf5b5",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "DraftKings": -160,
+      "Betano": -385
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.017569-04:00",
+      "Betano": "2026-08-27T02:27:11.510532-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "ff738493-c6ab-48b5-bf83-7112e3b8fa97",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 2.5,
+    "book_odds": {
+      "DraftKings": 114
+    },
+    "updated_at": {
+      "DraftKings": "2026-08-27T02:27:11.017244-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "01a4e722-ba3f-4dfd-85ae-56b6d5f5ab9f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 9.5,
+    "book_odds": {
+      "FanDuel": 148
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c5b4cc1f-dfd1-4b8f-9bd4-b893915d145d",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -9.5,
+    "book_odds": {
+      "FanDuel": -200
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "7106d0f9-b2dd-400e-a154-234dc3138d24",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 8000
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "bd7a0a6f-f5ba-4a7e-b7e0-91263026019a",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -20000
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "93cc8b97-65c5-4da6-8be2-8027a1e72e85",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 14.5,
+    "book_odds": {
+      "FanDuel": 102
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "a3203225-b9e7-42df-ab24-d225b924d03f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 14.5,
+    "book_odds": {
+      "FanDuel": -136
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3a6dff41-9572-4794-bf31-0bc7ed1dc695",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 104
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "db4534f9-eb13-4663-bcdc-165fd87ea47c",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -136
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "482f984a-ea95-4204-832b-6137aa677100",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -190
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c3a08534-52b4-454c-979b-c453f1f9eb5e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 170
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "fdf35e5e-de41-40a9-8228-18eee1ef36bc",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 5.5,
+    "book_odds": {
+      "FanDuel": -125
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "fdfdda4c-c946-48a8-a9e9-1b9c8753ba6e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 5.5,
+    "book_odds": {
+      "FanDuel": -106
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "4ead2d4d-5328-46a3-a81e-d815a5ea2a0e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 154
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "47121da3-ecde-4250-9686-71544b74dc3b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -210
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "03bb0a3d-0571-4b4f-93ed-3819a3a75c8c",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -120
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "315f5b14-bc67-4195-b637-8644d3260482",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 105
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "e66a0b5e-d002-4f56-b9d5-3b09f602af44",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 6.5,
+    "book_odds": {
+      "FanDuel": -104
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3b9ba2f1-14ef-40bb-af69-5a81b27bc3d2",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 6.5,
+    "book_odds": {
+      "FanDuel": -128
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "cb8e8f32-ca50-49c4-9fe1-d32c6500c25f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 116
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "919c630d-49d1-4b00-baf8-d0feffb17e4b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -154
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "9e143ec5-a267-4f56-944f-e5f70607fb19",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -140
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "44792e9e-cc3c-46d6-bf6a-a53858125aa3",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 125
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "72552499-8087-48b8-8da7-74c1e8182300",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 9.5,
+    "book_odds": {
+      "FanDuel": 102
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "2ebf61ec-787f-4d09-9140-ce7587c4b054",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 9.5,
+    "book_odds": {
+      "FanDuel": -136
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "2864ec5a-81ae-406c-a0e7-42e5cb05b8f7",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": -125
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "63376f0f-af2b-4a9c-9637-7d3720f349a6",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -106
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "2fdf9b2f-68c5-43d0-a3c0-4903b302c847",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -180
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "a5064b48-fc52-4516-9b1d-b14975e07957",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 160
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "7e5b1d29-de40-48bd-ab0b-b6f015131d3e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": -152
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6c7bc5f9-b401-4786-8cb7-12a9e0852cc3",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": 114
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "96c1b811-f7ac-4e67-9648-4e566b7ff987",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -178
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b5d5e7d0-b45c-4aa9-8911-2809c5b3c9b0",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 132
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "2babc294-10fd-4872-a8a2-473f3b09ba7a",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 170
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "1643977f-d79d-4cb9-81f7-173ef9a2b4eb",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -195
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "146b078d-e12a-4705-8a41-dd1676d56505",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 6.5,
+    "book_odds": {
+      "FanDuel": -106
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "5edc81fc-a627-464b-848f-8a3f84455c14",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 6.5,
+    "book_odds": {
+      "FanDuel": -125
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "960fd711-0c4f-421e-8773-1994cb1e508c",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 116
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "69b4d890-5a22-4447-ba64-9860c9624e66",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -154
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c8b8fdc3-a1eb-44ba-86ee-3b15017010c2",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -145
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "cd2ce97b-1988-4bf7-a711-3cd7a9756b9d",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 130
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "9f1fbac6-52f2-443d-9107-9b493c23a67f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 7.5,
+    "book_odds": {
+      "FanDuel": -136
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "dfb3bf4d-b194-4e3a-b357-36c1a85d5c8f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 7.5,
+    "book_odds": {
+      "FanDuel": 102
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "736e8d8c-7e90-436f-9592-5435704b6a30",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -110
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c0ba8f8d-e096-4b26-acb5-710dd60db205",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": -120
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3ba33d74-cb62-4bfb-bce0-f78e6c6de096",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 230
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "299a22af-e187-49b1-bea8-8d74d91c1871",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -270
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "89c4d32c-e1b6-47c3-b91a-4b44bd982822",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 6.5,
+    "book_odds": {
+      "FanDuel": -108
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "54d5a824-3a27-458a-81c6-2af28a7fdde0",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 6.5,
+    "book_odds": {
+      "FanDuel": -122
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3e816c5f-b0b2-48c0-babc-ea53d3b1b98c",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": -140
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "430e9675-c181-45a1-ab86-300ffa2a7b49",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": 106
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "e41123c2-9db7-46b7-bfbb-ab1beb4ee47b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -220
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "8abdaa22-f45a-42fd-972f-d4447f4a93cb",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 190
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "d644cf23-c850-4255-92c2-4fed3a35dfe9",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": -144
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "0b1a68af-80de-4408-bfac-c208b89d3d41",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": 108
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "4b188012-ca48-4ea9-8873-be9a1d5dae44",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -134
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "45de81b2-4087-4561-a597-9e71c063cbde",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 112
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "2467766f-ab48-4d8f-9a7e-3277754eb7d4",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 170
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "4cbb84f2-6bbd-4f89-bbe1-673f9d382628",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -184
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "e46fa168-8585-42cf-b6f3-dbc13a031f46",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.0,
+    "book_odds": {
+      "FanDuel": -110
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "452387df-b17b-47ea-ae65-833fcffccaeb",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.0,
+    "book_odds": {
+      "FanDuel": -110
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "0139f6ea-d44b-4d43-9046-0186eedb6409",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 105
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "55c4f3c4-9db5-46a8-bd64-231a581bb3d5",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -126
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "8a5d9f53-3e49-4f5b-ba04-2c69ccdfb7e0",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -132
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "11e295cf-27c1-402d-a687-56a824f851c7",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 122
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "43778d8a-8908-48a8-8920-419609a3ce96",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 10.5,
+    "book_odds": {
+      "FanDuel": -132
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "697820e1-b7e7-40a2-9b6a-67e565d00a5d",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 10.5,
+    "book_odds": {
+      "FanDuel": 108
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6f94b588-b9ff-4cf9-a334-3af0a354f71b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -172
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "9f93c97a-c7ca-46ef-bdab-e532ecce5c71",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 140
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "8deda085-9e3e-4f6a-a1e1-3965602ff3a5",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 128
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "abe43aeb-cd71-4084-b4df-7ac552783a0a",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -138
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "e759e4b3-b075-42f1-be88-7897a64c8d3d",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.0,
+    "book_odds": {
+      "FanDuel": 100
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "625ca7be-b49d-454b-a5aa-f9dc471eb434",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.0,
+    "book_odds": {
+      "FanDuel": -122
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "8593c2a3-bb52-46dc-a13a-03551d4cfe07",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 146
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6a972713-5e50-40df-8a52-87486377e02f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -176
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6981a450-97e0-4cf4-910b-b61b932279c8",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -108
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "702da0a3-4ebd-4ffb-a824-7555a924a18e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -108
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "bf56b96f-8362-4e82-9d99-5fff2cdf105f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": -114
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "7d6abbaf-deac-457f-8059-510666c8b381",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": -106
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "65f7bbb4-c39e-4487-bd6a-4ccd90064980",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -118
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "00de83e7-6d0c-4bec-8f78-22fe69497594",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": -102
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b1fb7b27-ec01-43da-b3ca-fc07a80ab56b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 184
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "582df7f7-768d-4d42-b417-9d60436fd92b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -220
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c6c7a001-c425-4419-9a7a-7a266d0d2193",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 7.5,
+    "book_odds": {
+      "FanDuel": -120
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "fba312f3-22db-4a80-9c88-ddcedea66efe",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 7.5,
+    "book_odds": {
+      "FanDuel": -102
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "345c130a-e5f4-436f-90b9-55c76f336c5d",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -176
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c5bd2131-2ef1-4173-940b-901669ba5c7b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 146
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c6d9415b-1711-4e97-be7f-33186502e447",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 118
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "1d7dba96-868d-4a9d-b9c7-d9af59bf06a2",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -138
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "8620c3e0-3545-4d7a-af63-d992ccf6a4e3",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": 102
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "1a3a02f6-f535-4b70-8119-326c9199ee4d",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": -124
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3def64dd-9dac-4285-9a98-14d61ec657d2",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -154
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "312ee8c7-c974-42e1-9418-9b67b425d607",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 128
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "9b4f7458-ce7c-4d63-813c-0ad368c8954a",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 136
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c436bd7e-5eb6-4611-a560-0e0e94429039",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -162
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "88d0067d-45a2-470c-97ae-87ba51d50436",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.0,
+    "book_odds": {
+      "FanDuel": -118
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "a6390ab4-85f6-4bac-acfa-af11abd63b80",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.0,
+    "book_odds": {
+      "FanDuel": -104
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "657ccf8f-254d-4d0a-a63d-0844597ed637",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -126
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "5c8e8016-e6ae-4890-b136-14fb503c19e0",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 105
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3c8bd141-41d4-48ab-b86f-9c9ec474a62b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 184
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "eb64e7ea-9f14-4c06-9203-53c0d030c9df",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -220
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b2b3e888-40f5-41b3-b3b8-1661e27a0a11",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.0,
+    "book_odds": {
+      "FanDuel": -115
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6ba51fbc-0171-4c11-b3d7-cad7622bc4f7",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.0,
+    "book_odds": {
+      "FanDuel": -105
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "bc8152cd-135c-414f-a4ab-a33967095750",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": -106
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c22d094f-e139-4131-81c8-749c56140423",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -113
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "5fe059a2-09dd-4fe3-bb85-0f6f59f2c468",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -164
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6a2b4c8d-ccbe-4c16-af25-d75bc859294b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 138
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b14c9d11-2c05-4071-9b7f-f0c98b4e921c",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 11.0,
+    "book_odds": {
+      "FanDuel": -106
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "cae57b2b-0a0b-4fd6-b498-d0c4a8d4ca20",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 11.0,
+    "book_odds": {
+      "FanDuel": -114
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "0f928565-ae9f-4f61-9cf5-205b47bcb6ae",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -104
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "335a2897-e7ed-4750-a1c3-bea26355b9b3",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": -115
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "0e48143a-e075-4a86-b22c-a75420d9f009",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 235
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "16e39425-1e3a-4717-a7eb-a3a5fa98ff88",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -290
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6273f12f-e555-4b70-9743-15514f2ad259",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": 100
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "2398dc48-91bb-44cf-9d1e-59d5571e7cb3",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": -122
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6daa86fa-5eed-491d-b19b-c2a7d2e674c4",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 142
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "d44461e3-ec10-461c-afe6-516aaa0fa337",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -172
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "bfc6967e-a944-4531-8f2c-ff6704967871",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -112
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "74beca7c-a03d-4f6d-a328-4aaf7551dff6",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -104
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "34d5e4f1-e101-4791-8aef-e58dd73c7a7f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 7.5,
+    "book_odds": {
+      "FanDuel": -114
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "08ed03f7-552f-47bf-a57f-118cb930035e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 7.5,
+    "book_odds": {
+      "FanDuel": -106
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "14baf015-aa07-4153-99a3-68e3be27517d",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -176
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "73bbec5e-8961-4a8e-8a47-6028bac8a7d2",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 146
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "a6cac2c9-7dbf-42a8-8564-d2c54287ae30",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 116
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "5fccc81b-ec5a-44fb-8fe5-5af27f25a949",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -134
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "10cc667d-8f1d-4233-ae94-49126706e825",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": -115
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "0af89b33-c22c-4cce-9ce7-77027615e2c3",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": -105
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b797112f-3cc5-4178-8707-6e58d73fe710",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -194
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "46b0aea3-ae4b-46ef-b23c-bdf25d97603e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 160
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "04d70049-da1d-44e2-8949-d3d1636550a8",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 108
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3e20ed2a-1964-46dd-8408-65f3ffc84aa3",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -126
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6125eba0-420e-44c7-a001-a228d5831178",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": -112
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "e812d936-362b-4d13-a300-dad0ce8133f9",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "FanDuel": -108
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "e1d40b61-56f7-42a7-ba9c-dbd654b7b34a",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "FanDuel": -182
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "4f855d6a-e524-43ce-83f4-ba971de94889",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "FanDuel": 150
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b344edb2-123e-42a2-a1f1-e4bd37a0802e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "FanDuel": 116
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "fca15a05-b35b-4943-be32-d42bf4ffc0ad",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "FanDuel": -134
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6a7a69a4-5fd3-492e-87e9-053c0a7fddab",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 7.5,
+    "book_odds": {
+      "FanDuel": -114
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "902b8670-6fce-44a2-8588-27e2baf20c26",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 7.5,
+    "book_odds": {
+      "FanDuel": -106
+    },
+    "updated_at": {
+      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "df2f87c7-2803-4672-a6eb-0c63169c1acf",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -15.5,
+    "book_odds": {
+      "BetMGM": 280
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.416826-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "ec13d713-590c-4e89-b88c-86c4347a5f46",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 15.5,
+    "book_odds": {
+      "BetMGM": -375
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.416826-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "1bc6ae04-4b7d-4b15-8f33-efdf83eb81cc",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -14.5,
+    "book_odds": {
+      "BetMGM": 140
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.420229-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "e187e6ce-302f-4e57-86ae-8b5f525e5f97",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 14.5,
+    "book_odds": {
+      "BetMGM": -185
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.420229-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3b2589a3-bbf1-42ee-bca6-fce17fc940e2",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -13.5,
+    "book_odds": {
+      "BetMGM": -325
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.420538-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "220076ed-2fee-42ba-86d4-7221d39e1405",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 13.5,
+    "book_odds": {
+      "BetMGM": 240
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.420538-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "ac8f5349-6c0c-41cc-9597-087e86e1c7e5",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 19.5,
+    "book_odds": {
+      "BetMGM": -220
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.417782-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "33b5bf1d-ef56-44d9-a5e2-32093bade2f9",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 19.5,
+    "book_odds": {
+      "BetMGM": 170
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.417782-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "e8838edc-b74b-4529-8ec8-78d2f3db290a",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 18.5,
+    "book_odds": {
+      "BetMGM": -1000
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.418092-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6ff4b4d7-733e-43f8-8ff6-a52dd12fdc83",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 18.5,
+    "book_odds": {
+      "BetMGM": 550
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.418092-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3d40c4a4-bb67-4dc9-8785-02ef18453a85",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 21.5,
+    "book_odds": {
+      "BetMGM": 210
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.419115-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "d09547eb-3ed7-4437-9e31-1ce47b0d92f3",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 21.5,
+    "book_odds": {
+      "BetMGM": -275
+    },
+    "updated_at": {
+      "BetMGM": "2026-08-27T02:27:11.419115-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "d49995b8-007b-43df-a272-47975833880d",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -3.5,
+    "book_odds": {
+      "Caesars": 125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.525226-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6a699631-1db9-42cf-9f92-81e661c395d6",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": 669
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.496416-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b3b5bfb2-63d3-48aa-a9bb-dfb27c527577",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 15.5,
+    "book_odds": {
+      "Caesars": 100
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.495854-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "aef4d2f7-2464-4d86-bad0-0a2ef5618526",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -3.5,
+    "book_odds": {
+      "Caesars": -167
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.525649-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "d440b419-b66b-4028-9e78-e0f1e5af5a80",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -2.5,
+    "book_odds": {
+      "Caesars": -200
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.515053-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "38b9230e-f30e-4b85-a199-e9739526e948",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": -1804
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.496730-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "d2d05936-7150-41ed-965e-256f6dc2b9a6",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 15.5,
+    "book_odds": {
+      "Caesars": -138
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.496128-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "246479d2-e52d-4a8c-9880-69ddbe720146",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 2.5,
+    "book_odds": {
+      "Caesars": 100
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.518731-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b7e2afa5-0a2e-46b2-9382-7b3d39bfea63",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": -404
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.517503-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "aa86c4d6-7e7c-439b-9826-6ce5bd943983",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 7.5,
+    "book_odds": {
+      "Caesars": -105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.406614-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "7a99125b-4e8e-48c9-8991-737ac5434098",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 2.5,
+    "book_odds": {
+      "Caesars": -138
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.519010-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "d236ca7d-1f77-4576-8e67-2581822acaff",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": 262
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.517780-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "7ba5d0ac-0c3a-43ac-9ee3-a8295c20cc59",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 7.5,
+    "book_odds": {
+      "Caesars": -125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.409449-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "54d38f3a-6a2b-42bb-b4e2-775e0a6fc4f2",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -2.5,
+    "book_odds": {
+      "Caesars": -167
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.412325-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "305f344a-50e2-4752-9c34-2c58c75f8423",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": 287
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.485122-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "5d98ca7d-58b5-441e-92fe-19e7fd6febd3",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 7.5,
+    "book_odds": {
+      "Caesars": -110
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.498376-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "4955d688-cc1e-44a7-b5ad-949527e7a37d",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -2.5,
+    "book_odds": {
+      "Caesars": 125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.416794-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "6ebfe85c-78da-4f0b-868f-c19b95bc85d7",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": -454
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.485428-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "1adb7c51-5731-41ed-97d7-f2384491d8e9",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": 835
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.516464-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "ea2f8d5c-3c50-45c4-83d7-48f48798a20f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 7.5,
+    "book_odds": {
+      "Caesars": -110
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.498655-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c59d4a65-2992-4cc5-a6e4-81ed6bd8d3cb",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 2.5,
+    "book_odds": {
+      "Caesars": -105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.455772-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "dbb2e359-e446-4b31-8f13-7bd7840749f1",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": -579
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.519991-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3ee629eb-96c6-4ae1-b6fd-6c652b9525a9",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "Caesars": -110
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.424994-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "94f68d5b-15ad-498d-8cfd-e609928c1487",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 2.5,
+    "book_odds": {
+      "Caesars": -125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.456067-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "5c1cfacf-44b6-4ce1-8929-a23cc052eca6",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": 345
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.520413-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "85790feb-5d19-4108-abad-565c34683abc",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "Caesars": -110
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.427530-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "e898215e-caf8-4ae1-908e-4aa508714d3a",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -6.5,
+    "book_odds": {
+      "Caesars": 100
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.488167-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "a1c0cb14-2368-428d-8b40-edfd8214f465",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": 1000
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.489047-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "065118b9-aa6d-4391-8880-85482c50939e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 13.5,
+    "book_odds": {
+      "Caesars": 100
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.433515-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "f0263aad-4023-4456-89d8-abaafbb1219e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -6.5,
+    "book_odds": {
+      "Caesars": -138
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.488457-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "ea627af7-bdb7-430d-a0f9-0895830cf8b5",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": -7502
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.489324-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "9a0694e6-7a96-4586-a455-d211210a41b9",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 5.5,
+    "book_odds": {
+      "Caesars": -125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.499696-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b12a03ff-23e8-421f-bc49-ca1cb3e6f8cc",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 13.5,
+    "book_odds": {
+      "Caesars": -138
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.436912-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "d0ec0b72-806c-49a2-b0ad-880ff34b6590",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": -143
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.521407-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b4d08310-42da-45fc-8a7a-3f86fadeae23",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": 190
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.441963-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "4c8a2078-9c73-4bb6-8ad9-6a4794c902e6",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 10.5,
+    "book_odds": {
+      "Caesars": 105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.522213-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "600c639b-554c-4bb2-ac90-ab824ae03a2a",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": 105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.521932-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "1f1bf1a6-8d1f-48a6-90cc-8a5fc83979a1",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": -274
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.445218-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "9b439391-ae6e-4de0-93da-47f8ec718ff5",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -2.5,
+    "book_odds": {
+      "Caesars": 150
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.515334-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "97abf022-6d51-40e8-9bba-5c002fc6ff07",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 10.5,
+    "book_odds": {
+      "Caesars": -143
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.522516-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "4bb92da9-0446-4e26-962c-b3dc84083620",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -4.5,
+    "book_odds": {
+      "Caesars": -105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.501713-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "a43dcbae-1889-4efc-b4af-8d303726ec1a",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": 881
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.503400-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "4be53c6f-d7e4-4598-b72f-466930394e1c",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "Caesars": -105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.452296-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "62461782-ea0f-43aa-ae85-bf10d905da6f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -4.5,
+    "book_odds": {
+      "Caesars": -125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.501994-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "2ac9a26a-bfc0-4d57-a0cb-fb3a2e96b47b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": -4003
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.503972-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "0d42175e-cf9b-4e42-b3b4-bacb0f53f420",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": -3304
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.516742-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "9d59ead4-f69f-4412-bc48-f53af8c7ea95",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "Caesars": -125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.455175-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "bf68c903-6fbb-4eee-97d5-5cfdeab382df",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": -150
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.458257-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "f9f76cef-fb63-4614-becc-0fe11bd60054",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": 172
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.459708-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "7d0621de-4f6a-4739-a68d-11d1209901e7",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "Caesars": -105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.461634-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "48d5c209-1409-4ea8-9266-b8f0cd561c0d",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": 110
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.462424-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "7a4f3bd7-fd5c-4440-b89c-5ccf8a6365fb",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 5.5,
+    "book_odds": {
+      "Caesars": -105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.499974-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "2819155f-2add-4ebe-a01c-ada3a59164eb",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": -244
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.463473-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "4a2f2abe-2877-4319-844d-a7282e8d169e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "Caesars": -125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.464204-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "5cde1590-ff4c-46c7-91d3-3d6d4360ee61",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": -138
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.486249-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "92db858a-01bc-4796-b601-01ef88be6ad8",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": 172
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.510821-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "cc5960ae-6165-4caa-b53f-9663c7cbdfd1",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 5.5,
+    "book_odds": {
+      "Caesars": -138
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.470338-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "9ee00be6-f550-4472-9c58-b5c28ea57401",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": 100
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.486540-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b7a7bded-b94a-41eb-bb1f-2afa559b1853",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": -244
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.511111-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "dfa15d73-da6e-41a6-b0c8-26dc70ad5968",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 5.5,
+    "book_odds": {
+      "Caesars": 100
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.472899-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "53a2c4df-9ade-4a39-8c59-aef82ffe2057",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": -225
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.474095-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "f1e545d3-b843-4a8c-a9e1-b752b2828c45",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": -120
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.475273-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "ad671a01-17b5-4f17-bd0c-04668391eb86",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": 185
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.476673-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "036cc2cd-7b51-4598-89af-04a5f1dbd5d4",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": 100
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.477674-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "8cb28438-b4a7-465e-9eb1-e4db8261a649",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 6.5,
+    "book_odds": {
+      "Caesars": 100
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.481452-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "d8364a1b-24ff-44b2-a5c5-799bc6d012ca",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 6.5,
+    "book_odds": {
+      "Caesars": -138
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.481734-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3ece2419-5246-4b95-a588-01871c446a62",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": 120
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.494244-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "0555b06c-a353-4eaf-a591-57a2ea183370",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": -164
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.494522-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "288e4abe-a979-4cfd-9eec-65c8cca6a1ec",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 2.5,
+    "book_odds": {
+      "Caesars": 120
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.490896-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "096d339b-703b-474a-a3dc-f27814d5e6f4",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 7.5,
+    "book_odds": {
+      "Caesars": -125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.502533-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "7763639b-6e52-4ed6-af98-747ba38ac555",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 7.5,
+    "book_odds": {
+      "Caesars": -105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.502815-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "1a8f2a8a-bf92-456f-bcbd-2745c2346875",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 8.5,
+    "book_odds": {
+      "Caesars": -115
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.505370-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "5999be63-f231-485f-909c-bc6e8148a426",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 8.5,
+    "book_odds": {
+      "Caesars": -105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.506145-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "579e4249-a8a7-4fbf-9f77-d4df55e2d290",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": -479
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.507000-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "d6c82ab7-cf29-47b0-b2ab-947b6e9e892f",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 12.5,
+    "book_odds": {
+      "Caesars": -138
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.509062-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "3c7bcbc8-6702-4435-8846-f4168d477112",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 12.5,
+    "book_odds": {
+      "Caesars": 100
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.509343-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "f7693e28-10e6-4d18-80d5-f269a979f8c8",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": 1.5,
+    "book_odds": {
+      "Caesars": -150
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.513077-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "aa6c47d9-46de-4e63-9cc1-c1bb5ca1b74e",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 4.5,
+    "book_odds": {
+      "Caesars": -250
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.515898-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "1ad903be-ead8-4439-8740-30d559f1e1b6",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 4.5,
+    "book_odds": {
+      "Caesars": 175
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.516177-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "7486c937-89a0-4b15-8672-cc4b0d2a2710",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 6.5,
+    "book_odds": {
+      "Caesars": -110
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.524405-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "fe0e8ff9-1362-4442-94d5-1071c043c686",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -7.5,
+    "book_odds": {
+      "Caesars": -138
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.527940-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b04e7b3e-7772-4a39-b511-dede2c94fefe",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -7.5,
+    "book_odds": {
+      "Caesars": 100
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.528677-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "b863a914-74de-466a-83f7-4915b7281003",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": 1.5,
+    "book_odds": {
+      "Caesars": -125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.529802-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "21ee4151-4660-43a1-b95b-8e57fd38fdca",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": 300
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.531300-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "794f6afd-707a-436d-9072-c70167bba64c",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 6.5,
+    "book_odds": {
+      "Caesars": -110
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.532427-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "c00fc458-7e15-4a58-8460-d4261cc9d2b0",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "away",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": -225
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.536003-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "823006b0-ca4b-43e4-947f-d12545966049",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "away",
+    "line": null,
+    "book_odds": {
+      "Caesars": 126
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.538190-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "acb316f7-9f0b-48f4-b5b6-8bd7b1acd0fe",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "over",
+    "line": 13.5,
+    "book_odds": {
+      "Caesars": -105
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.540735-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "7dc4d97f-d7c7-495c-a1bf-e4c9f836d8dc",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "run_line",
+    "selection": "home",
+    "line": -1.5,
+    "book_odds": {
+      "Caesars": 162
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.542147-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "ce9d1f70-3459-4fb1-900c-abb3f45dfef6",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "moneyline",
+    "selection": "home",
+    "line": null,
+    "book_odds": {
+      "Caesars": -174
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.544019-04:00"
+    }
+  },
+  {
+    "canonical_game_id": "0cbf4407-01b6-45fa-8962-f420629eac1b",
+    "sport_key": "Baseball",
+    "league_key": "MLB",
+    "market_type": "total",
+    "selection": "under",
+    "line": 13.5,
+    "book_odds": {
+      "Caesars": -125
+    },
+    "updated_at": {
+      "Caesars": "2026-08-27T02:27:12.545449-04:00"
+    }
+  }
+]

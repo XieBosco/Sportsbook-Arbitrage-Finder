@@ -121,19 +121,34 @@ def main():
     print("Writing text formatted OddsUpdates to:", updates_path)
     with open(updates_path, "w", encoding="utf-8") as f:
         # Header
-        f.write(f"{'BOOK':<12} | {'EVENT_ID':<25} | {'HOME TEAM':<30} | {'AWAY TEAM':<30} | {'MARKET':<30} | {'SELECTION':<35} | {'LINE':<6} | {'PRICE':<6}\n")
-        f.write("-" * 187 + "\n")
+        f.write(
+            f"{'BOOK':<10} | {'SPORT':<10} | {'LEAGUE':<20} | {'START_TIME':<25} | "
+            f"{'EVENT_ID':<20} | {'HOME TEAM':<25} | {'AWAY TEAM':<25} | "
+            f"{'MARKET':<30} | {'SELECTION':<30} | {'LINE':<6} | "
+            f"{'ODDS':<8} | {'FMT':<6} | {'CAPTURED_AT'}\n"
+        )
+        f.write("-" * 250 + "\n")
         for u in all_updates:
-            line_str = str(u.line) if u.line is not None else ""
-            price_str = str(u.price_american) if u.price_american is not None else ""
+            line_str = str(u.raw_line) if u.raw_line is not None else ""
+            price_str = str(u.odds_value) if u.odds_value is not None else ""
             
-            ev_id = str(u.event_id)[:25]
-            home = str(u.home_team)[:30]
-            away = str(u.away_team)[:30]
-            market = str(u.market)[:30]
-            sel = str(u.selection)[:35]
+            sport = str(u.raw_sport_code)[:10]
+            league = str(u.raw_league_name)[:20]
+            start = str(u.raw_start_time)[:25]
+            ev_id = str(u.raw_event_id)[:20]
+            home = str(u.raw_home_team)[:25]
+            away = str(u.raw_away_team)[:25]
+            market = str(u.raw_market_type)[:30]
+            sel = str(u.raw_selection)[:30]
+            fmt = str(u.odds_format)[:8]
+            cap = u.captured_at.isoformat()
             
-            f.write(f"{u.book:<12} | {ev_id:<25} | {home:<30} | {away:<30} | {market:<30} | {sel:<35} | {line_str:<6} | {price_str:<6}\n")
+            f.write(
+                f"{u.book_id:<10} | {sport:<10} | {league:<20} | {start:<25} | "
+                f"{ev_id:<20} | {home:<25} | {away:<25} | "
+                f"{market:<30} | {sel:<30} | {line_str:<6} | "
+                f"{price_str:<8} | {fmt:<6} | {cap}\n"
+            )
 
     print("Writing full JSON reference dictionaries to:", refs_path)
     with open(refs_path, "w", encoding="utf-8") as f:

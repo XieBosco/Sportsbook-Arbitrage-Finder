@@ -17,8 +17,8 @@ from datetime import datetime
 
 import lz4.frame
 
-from arbfinder.normalize.models import OddsUpdate
-from arbfinder.normalize.odds_math import decimal_to_american
+from arbfinder.normalization.models import OddsUpdate
+from arbfinder.normalization.odds_math import decimal_to_american
 from arbfinder.parsers._helpers import split_fixture_name
 from arbfinder.parsers.base import BookParser
 
@@ -34,7 +34,12 @@ _LIVE_OVERVIEW_URL_RE = re.compile(
 def _build_event_dict(ev_data: dict) -> dict:
     """Build an event reference entry, resolving home/away teams from the
     two-participant list when present."""
-    ev_dict = {"name": ev_data.get("name")}
+    ev_dict = {
+        "name": ev_data.get("name"),
+        "sport_code": str(ev_data.get("sportId") or ev_data.get("ardSportId", "")),
+        "league_name": str(ev_data.get("leagueId", "")),
+        "start_time": str(ev_data.get("startTime", "")),
+    }
     participants = ev_data.get("participants", [])
     if len(participants) == 2:
         t1, t2 = participants[0], participants[1]
@@ -182,6 +187,7 @@ class BetanoParser(BookParser):
     def _process_selection_changes(
         self,
         event_id: str,
+        event_meta: dict,
         home_team: str,
         away_team: str,
         selection_changes: object,
@@ -221,15 +227,19 @@ class BetanoParser(BookParser):
 
                 updates.append(
                     OddsUpdate(
-                        book=self.book_name,
-                        event_id=event_id,
-                        home_team=home_team,
-                        away_team=away_team,
-                        market=market_name,
-                        selection=sel_name,
-                        line=handicap_val,
-                        price_american=american_odds,
-                        timestamp=now,
+                        book_id=self.book_name,
+                        raw_event_id=event_id,
+                        raw_sport_code=event_meta.get("sport_code", ""),
+                        raw_league_name=event_meta.get("league_name", ""),
+                        raw_home_team=home_team,
+                        raw_away_team=away_team,
+                        raw_start_time=event_meta.get("start_time", ""),
+                        raw_market_type=market_name,
+                        raw_selection=sel_name,
+                        raw_line=handicap_val,
+                        odds_value=float(american_odds),
+                        odds_format="american",
+                        captured_at=now,
                     )
                 )
 
@@ -238,6 +248,7 @@ class BetanoParser(BookParser):
     def _process_new_market(
         self,
         event_id: str,
+        event_meta: dict,
         home_team: str,
         away_team: str,
         new_market: object,
@@ -272,15 +283,19 @@ class BetanoParser(BookParser):
 
             updates.append(
                 OddsUpdate(
-                    book=self.book_name,
-                    event_id=event_id,
-                    home_team=home_team,
-                    away_team=away_team,
-                    market=market_name,
-                    selection=sel_name,
-                    line=handicap_val,
-                    price_american=american_odds,
-                    timestamp=now,
+                    book_id=self.book_name,
+                    raw_event_id=event_id,
+                    raw_sport_code=event_meta.get("sport_code", ""),
+                    raw_league_name=event_meta.get("league_name", ""),
+                    raw_home_team=home_team,
+                    raw_away_team=away_team,
+                    raw_start_time=event_meta.get("start_time", ""),
+                    raw_market_type=market_name,
+                    raw_selection=sel_name,
+                    raw_line=handicap_val,
+                    odds_value=float(american_odds),
+                    odds_format="american",
+                    captured_at=now,
                 )
             )
 
@@ -310,6 +325,7 @@ class BetanoParser(BookParser):
         updates.extend(
             self._process_selection_changes(
                 event_id,
+                event_meta,
                 home_team,
                 away_team,
                 payload_data.get("selectionChanges", {}),
@@ -318,7 +334,7 @@ class BetanoParser(BookParser):
         )
         updates.extend(
             self._process_new_market(
-                event_id, home_team, away_team, payload_data.get("market"), now
+                event_id, event_meta, home_team, away_team, payload_data.get("market"), now
             )
         )
         return updates

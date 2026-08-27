@@ -1,5 +1,5 @@
 """Market matching logic."""
-from arbfinder.normalize.models import OddsUpdate
+from arbfinder.normalization.models import OddsUpdate
 
 __all__ = ["MarketMatcher"]
 

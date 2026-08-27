@@ -1,0 +1,25 @@
+{
+    "over": {
+        "DraftKings": "Over",
+        "FanDuel": "Over",
+        "BetMGM": "Over",
+        "Caesars": "Over",
+        "Betano": "Over"
+    },
+    "under": {
+        "DraftKings": "Under",
+        "FanDuel": "Under",
+        "BetMGM": "Under",
+        "Caesars": "Under",
+        "Betano": "Under"
+    },
+    "draw": {
+        "Betano": "Tie"
+    },
+    "yes": {
+        "Betano": "Yes"
+    },
+    "no": {
+        "Betano": "No"
+    }
+}
