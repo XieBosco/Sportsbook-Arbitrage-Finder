@@ -20,6 +20,8 @@ class MatchedSelection:
     canonical_game_id: str
     sport_key: str
     league_key: str
+    home_team: str
+    away_team: str
     market_type: str
     selection: str
     line: float | None
@@ -43,6 +45,8 @@ class MatchOutputBuilder:
             canonical_game_id=bucket.canonical_game_id,
             sport_key=bucket.key.sport_key,
             league_key=bucket.key.league_key,
+            home_team=bucket.key.home_team,
+            away_team=bucket.key.away_team,
             market_type=bucket.key.market_type,
             selection=bucket.key.selection,
             line=bucket.key.line,

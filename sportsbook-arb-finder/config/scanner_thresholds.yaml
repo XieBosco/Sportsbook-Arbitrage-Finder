@@ -1,0 +1,7 @@
+# Scanner threshold configuration
+# Invalid values will cause a startup error via pydantic validation.
+
+min_margin: 0.01                # minimum margin (as a fraction, e.g. 0.01 = 1%)
+max_odds_age_seconds: 5.0       # reject legs older than this many seconds
+min_legs_required: 2            # minimum number of legs to form an arb
+excluded_book_pairs: []         # list of [BookA, BookB] pairs to exclude

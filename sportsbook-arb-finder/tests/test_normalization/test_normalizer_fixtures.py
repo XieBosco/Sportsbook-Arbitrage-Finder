@@ -32,7 +32,7 @@ from arbfinder.parsers.caesars import CaesarsParser
 from arbfinder.parsers.draftkings import DraftKingsParser
 from arbfinder.parsers.fanduel import FanDuelParser
 
-FIXTURES = os.path.join(os.path.dirname(__file__), "fixtures")
+FIXTURES = os.path.join(os.path.dirname(__file__), "../fixtures")
 
 ALLOWED_SELECTIONS = {
     "home", "away", "over", "under", "draw",

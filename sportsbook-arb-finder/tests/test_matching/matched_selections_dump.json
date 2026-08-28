@@ -1,8 +1,10 @@
 [
   {
-    "canonical_game_id": "ec506ddb-fe64-49f2-8648-062312eef53b",
+    "canonical_game_id": "f6eecfd2-4bae-494b-af67-5339d87abbbb",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "home",
     "line": 11.5,
@@ -11,14 +13,16 @@
       "Betano": -125
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.019507-04:00",
-      "Betano": "2026-08-27T02:27:11.506348-04:00"
+      "DraftKings": "2026-08-27T15:47:53.796301-04:00",
+      "Betano": "2026-08-27T15:47:54.470484-04:00"
     }
   },
   {
-    "canonical_game_id": "94a989a8-2138-4ebe-a0cf-f80cea3652e2",
+    "canonical_game_id": "7d09a03c-8fb5-4495-a215-3be5ede137d3",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "over",
     "line": 20.5,
@@ -27,14 +31,16 @@
       "BetMGM": 175
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.019821-04:00",
-      "BetMGM": "2026-08-27T02:27:11.419931-04:00"
+      "DraftKings": "2026-08-27T15:47:53.796731-04:00",
+      "BetMGM": "2026-08-27T15:47:54.372446-04:00"
     }
   },
   {
-    "canonical_game_id": "3229a8e9-15b6-4daa-b184-e2ecb1fd2d20",
+    "canonical_game_id": "d71d6138-3d7d-4437-b8af-0f50bb91dfca",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "away",
     "line": -11.5,
@@ -43,14 +49,16 @@
       "Betano": -115
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.020140-04:00",
-      "Betano": "2026-08-27T02:27:11.506348-04:00"
+      "DraftKings": "2026-08-27T15:47:53.797194-04:00",
+      "Betano": "2026-08-27T15:47:54.470484-04:00"
     }
   },
   {
-    "canonical_game_id": "9aa9ca95-9765-40f1-a0d6-038143b253f7",
+    "canonical_game_id": "2a8ae2bd-d27f-4e98-83ce-4ec7db342cbf",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "under",
     "line": 20.5,
@@ -59,14 +67,16 @@
       "BetMGM": -225
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.020754-04:00",
-      "BetMGM": "2026-08-27T02:27:11.419931-04:00"
+      "DraftKings": "2026-08-27T15:47:53.798011-04:00",
+      "BetMGM": "2026-08-27T15:47:54.372446-04:00"
     }
   },
   {
-    "canonical_game_id": "928e7902-f1a5-44cf-b9f3-359afc37e143",
+    "canonical_game_id": "778f61cd-ce4a-493a-8111-e47c7f41551f",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Washington Nationals",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -75,14 +85,16 @@
       "Betano": -455
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.015684-04:00",
-      "Betano": "2026-08-27T02:27:11.501902-04:00"
+      "DraftKings": "2026-08-27T15:47:53.790866-04:00",
+      "Betano": "2026-08-27T15:47:54.465786-04:00"
     }
   },
   {
-    "canonical_game_id": "dcf43a87-3276-4221-a60f-50d70f42e5ab",
+    "canonical_game_id": "97b45f41-2cbe-4a47-a9a4-c0ca250b902c",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Washington Nationals",
     "market_type": "total",
     "selection": "over",
     "line": 3.5,
@@ -90,13 +102,15 @@
       "DraftKings": -117
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.009744-04:00"
+      "DraftKings": "2026-08-27T15:47:53.784811-04:00"
     }
   },
   {
-    "canonical_game_id": "133ddb41-530c-43a0-ab46-434638607dc5",
+    "canonical_game_id": "bc7c4678-2279-467b-a4b9-c8679cfdb007",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Washington Nationals",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -105,14 +119,16 @@
       "Betano": 340
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.016308-04:00",
-      "Betano": "2026-08-27T02:27:11.510532-04:00"
+      "DraftKings": "2026-08-27T15:47:53.791561-04:00",
+      "Betano": "2026-08-27T15:47:54.474916-04:00"
     }
   },
   {
-    "canonical_game_id": "1e22077b-922a-4e25-bba0-3e852c65fe6e",
+    "canonical_game_id": "6e7b8d2d-2725-48d9-b247-19556bd84659",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Washington Nationals",
     "market_type": "total",
     "selection": "under",
     "line": 3.5,
@@ -120,13 +136,15 @@
       "DraftKings": -111
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.010126-04:00"
+      "DraftKings": "2026-08-27T15:47:53.785163-04:00"
     }
   },
   {
-    "canonical_game_id": "eb6dd313-30c6-4bc9-a916-95c74a4aaa84",
+    "canonical_game_id": "95fe6062-ec9e-41d9-8001-2c702b723a5a",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Washington Nationals",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -135,14 +153,16 @@
       "Betano": 235
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.016621-04:00",
-      "Betano": "2026-08-27T02:27:11.501902-04:00"
+      "DraftKings": "2026-08-27T15:47:53.791907-04:00",
+      "Betano": "2026-08-27T15:47:54.465786-04:00"
     }
   },
   {
-    "canonical_game_id": "265a10fe-8bd1-4241-b4c8-4c6e437cf5b5",
+    "canonical_game_id": "4fbfda87-4377-4fb8-9321-41cdee830f02",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Washington Nationals",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -151,14 +171,16 @@
       "Betano": -385
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.017569-04:00",
-      "Betano": "2026-08-27T02:27:11.510532-04:00"
+      "DraftKings": "2026-08-27T15:47:53.793082-04:00",
+      "Betano": "2026-08-27T15:47:54.474916-04:00"
     }
   },
   {
-    "canonical_game_id": "ff738493-c6ab-48b5-bf83-7112e3b8fa97",
+    "canonical_game_id": "0bcd6eb7-09b1-4c1e-9c8f-b2b74a3665ae",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Washington Nationals",
     "market_type": "total",
     "selection": "under",
     "line": 2.5,
@@ -166,13 +188,15 @@
       "DraftKings": 114
     },
     "updated_at": {
-      "DraftKings": "2026-08-27T02:27:11.017244-04:00"
+      "DraftKings": "2026-08-27T15:47:53.792601-04:00"
     }
   },
   {
-    "canonical_game_id": "01a4e722-ba3f-4dfd-85ae-56b6d5f5ab9f",
+    "canonical_game_id": "8b6986e7-00c6-45a0-920b-9e6e435425f5",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "run_line",
     "selection": "away",
     "line": 9.5,
@@ -180,13 +204,15 @@
       "FanDuel": 148
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "c5b4cc1f-dfd1-4b8f-9bd4-b893915d145d",
+    "canonical_game_id": "defdb3a8-f98c-438c-91ab-1618367b094c",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "run_line",
     "selection": "home",
     "line": -9.5,
@@ -194,13 +220,15 @@
       "FanDuel": -200
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "7106d0f9-b2dd-400e-a154-234dc3138d24",
+    "canonical_game_id": "ce910072-405c-442f-9943-2131f58107d1",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -208,13 +236,15 @@
       "FanDuel": 8000
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "bd7a0a6f-f5ba-4a7e-b7e0-91263026019a",
+    "canonical_game_id": "38da029b-1959-4d70-b1eb-2ed1bf5bbc8f",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -222,13 +252,15 @@
       "FanDuel": -20000
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "93cc8b97-65c5-4da6-8be2-8027a1e72e85",
+    "canonical_game_id": "c4eeb369-b931-40a0-941f-12e682162791",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "total",
     "selection": "over",
     "line": 14.5,
@@ -236,13 +268,15 @@
       "FanDuel": 102
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "a3203225-b9e7-42df-ab24-d225b924d03f",
+    "canonical_game_id": "88c8eb69-3c38-4ca3-bbd3-4e53ff79d784",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "total",
     "selection": "under",
     "line": 14.5,
@@ -250,13 +284,15 @@
       "FanDuel": -136
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "3a6dff41-9572-4794-bf31-0bc7ed1dc695",
+    "canonical_game_id": "c8bf6cbe-fccf-4e93-957b-c26f1c2ec379",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -264,13 +300,15 @@
       "FanDuel": 104
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "db4534f9-eb13-4663-bcdc-165fd87ea47c",
+    "canonical_game_id": "00fa3e1a-c240-4d65-b6e7-4947f97566e1",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -278,13 +316,15 @@
       "FanDuel": -136
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "482f984a-ea95-4204-832b-6137aa677100",
+    "canonical_game_id": "714ed130-019f-4e3a-bef1-cfa317fae408",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -292,13 +332,15 @@
       "FanDuel": -190
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "c3a08534-52b4-454c-979b-c453f1f9eb5e",
+    "canonical_game_id": "1519a762-8a43-4462-9726-48f412423bb6",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -306,13 +348,15 @@
       "FanDuel": 170
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "fdf35e5e-de41-40a9-8228-18eee1ef36bc",
+    "canonical_game_id": "8a2796f0-836b-4dfa-8973-410a57602569",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "total",
     "selection": "over",
     "line": 5.5,
@@ -320,13 +364,15 @@
       "FanDuel": -125
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "fdfdda4c-c946-48a8-a9e9-1b9c8753ba6e",
+    "canonical_game_id": "2766a446-90b3-47a5-94aa-0eb06cdde360",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "total",
     "selection": "under",
     "line": 5.5,
@@ -334,13 +380,15 @@
       "FanDuel": -106
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "4ead2d4d-5328-46a3-a81e-d815a5ea2a0e",
+    "canonical_game_id": "2f29f480-b606-46b1-bb8d-b63aa539b8aa",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -348,13 +396,15 @@
       "FanDuel": 154
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "47121da3-ecde-4250-9686-71544b74dc3b",
+    "canonical_game_id": "e46e4363-80f2-453b-a87a-994b3b8f9fee",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -362,13 +412,15 @@
       "FanDuel": -210
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "03bb0a3d-0571-4b4f-93ed-3819a3a75c8c",
+    "canonical_game_id": "5ff74285-a011-42e7-8d1f-e293a7b5dea7",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Los Angeles Angels",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -376,13 +428,15 @@
       "FanDuel": -120
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "315f5b14-bc67-4195-b637-8644d3260482",
+    "canonical_game_id": "25771437-90f1-4e57-a06c-e76b961bcb7a",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Los Angeles Angels",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -390,13 +444,15 @@
       "FanDuel": 105
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "e66a0b5e-d002-4f56-b9d5-3b09f602af44",
+    "canonical_game_id": "24b94f20-c21f-459b-a9ad-5d2e626a27e9",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "over",
     "line": 6.5,
@@ -404,13 +460,15 @@
       "FanDuel": -104
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "3b9ba2f1-14ef-40bb-af69-5a81b27bc3d2",
+    "canonical_game_id": "430e1d19-ab8c-43f8-94c1-98ada3cb5433",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "under",
     "line": 6.5,
@@ -418,13 +476,15 @@
       "FanDuel": -128
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "cb8e8f32-ca50-49c4-9fe1-d32c6500c25f",
+    "canonical_game_id": "260b2313-d64f-4792-bd86-21a4a329a8f9",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "New York Mets",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -432,13 +492,15 @@
       "FanDuel": 116
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "919c630d-49d1-4b00-baf8-d0feffb17e4b",
+    "canonical_game_id": "88f9ae88-8633-4ae3-a7bd-0963de89a7ce",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "New York Mets",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -446,13 +508,15 @@
       "FanDuel": -154
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "9e143ec5-a267-4f56-944f-e5f70607fb19",
+    "canonical_game_id": "1163e804-427c-43ce-bf1b-d1e323d10d09",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "New York Mets",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -460,13 +524,15 @@
       "FanDuel": -140
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "44792e9e-cc3c-46d6-bf6a-a53858125aa3",
+    "canonical_game_id": "0a384eb8-adae-4ad9-bc51-abcdcfbdb349",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "New York Mets",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -474,13 +540,15 @@
       "FanDuel": 125
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "72552499-8087-48b8-8da7-74c1e8182300",
+    "canonical_game_id": "c0e644d6-a09e-4a5d-9140-52c261b7f6f7",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "New York Mets",
     "market_type": "total",
     "selection": "over",
     "line": 9.5,
@@ -488,13 +556,15 @@
       "FanDuel": 102
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "2ebf61ec-787f-4d09-9140-ce7587c4b054",
+    "canonical_game_id": "6b84b17c-5cba-4ed8-bb54-d05cb39b720d",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "New York Mets",
     "market_type": "total",
     "selection": "under",
     "line": 9.5,
@@ -502,13 +572,15 @@
       "FanDuel": -136
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "2864ec5a-81ae-406c-a0e7-42e5cb05b8f7",
+    "canonical_game_id": "943d81a6-c908-441d-aa36-502dc371e920",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Oakland Athletics",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -516,13 +588,15 @@
       "FanDuel": -125
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "63376f0f-af2b-4a9c-9637-7d3720f349a6",
+    "canonical_game_id": "30151c7d-cb4b-44c6-afa5-173d39e8d681",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Oakland Athletics",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -530,13 +604,15 @@
       "FanDuel": -106
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "2fdf9b2f-68c5-43d0-a3c0-4903b302c847",
+    "canonical_game_id": "afb6eb75-4aa9-4ab8-8329-1a1c4aaf5fe0",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Oakland Athletics",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -544,13 +620,15 @@
       "FanDuel": -180
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "a5064b48-fc52-4516-9b1d-b14975e07957",
+    "canonical_game_id": "d052e2af-56cb-4d86-b099-cd1fd2cf6c96",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Oakland Athletics",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -558,13 +636,15 @@
       "FanDuel": 160
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "7e5b1d29-de40-48bd-ab0b-b6f015131d3e",
+    "canonical_game_id": "1e608147-9b04-47c9-9db9-c838a0932e50",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Oakland Athletics",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -572,13 +652,15 @@
       "FanDuel": -152
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "6c7bc5f9-b401-4786-8cb7-12a9e0852cc3",
+    "canonical_game_id": "0cb9a83d-8744-41b6-b953-4cbbedf5256d",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Oakland Athletics",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -586,13 +668,15 @@
       "FanDuel": 114
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "96c1b811-f7ac-4e67-9648-4e566b7ff987",
+    "canonical_game_id": "c0106f3d-ee69-4450-9e6a-935a56260712",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Kansas City Royals",
+    "away_team": "Detroit Tigers",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -600,13 +684,15 @@
       "FanDuel": -178
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "b5d5e7d0-b45c-4aa9-8911-2809c5b3c9b0",
+    "canonical_game_id": "86281c1d-1de1-4bdc-9a00-9faeabb24d47",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Kansas City Royals",
+    "away_team": "Detroit Tigers",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -614,13 +700,15 @@
       "FanDuel": 132
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "2babc294-10fd-4872-a8a2-473f3b09ba7a",
+    "canonical_game_id": "e70f6ac6-77c2-4a65-8e6b-eaa78958584b",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Kansas City Royals",
+    "away_team": "Detroit Tigers",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -628,13 +716,15 @@
       "FanDuel": 170
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "1643977f-d79d-4cb9-81f7-173ef9a2b4eb",
+    "canonical_game_id": "fbc7e27f-e8ea-4fbe-a4e8-461d07db39b6",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Kansas City Royals",
+    "away_team": "Detroit Tigers",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -642,13 +732,15 @@
       "FanDuel": -195
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "146b078d-e12a-4705-8a41-dd1676d56505",
+    "canonical_game_id": "5b5e7598-d575-4dc6-9504-20a76ffbe26d",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Kansas City Royals",
+    "away_team": "Detroit Tigers",
     "market_type": "total",
     "selection": "over",
     "line": 6.5,
@@ -656,13 +748,15 @@
       "FanDuel": -106
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "5edc81fc-a627-464b-848f-8a3f84455c14",
+    "canonical_game_id": "e6ba9ee8-0e85-4189-ad9f-adbabd141dc1",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Kansas City Royals",
+    "away_team": "Detroit Tigers",
     "market_type": "total",
     "selection": "under",
     "line": 6.5,
@@ -670,13 +764,15 @@
       "FanDuel": -125
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "960fd711-0c4f-421e-8773-1994cb1e508c",
+    "canonical_game_id": "eda255c4-f170-4d79-81fa-b6fb1d1e5edf",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -684,13 +780,15 @@
       "FanDuel": 116
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "69b4d890-5a22-4447-ba64-9860c9624e66",
+    "canonical_game_id": "14b0edeb-f1d5-4dfb-b1f9-c49f384e217a",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -698,13 +796,15 @@
       "FanDuel": -154
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "c8b8fdc3-a1eb-44ba-86ee-3b15017010c2",
+    "canonical_game_id": "0b25ad44-50b1-4d90-aab2-32071ab4267c",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -712,13 +812,15 @@
       "FanDuel": -145
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "cd2ce97b-1988-4bf7-a711-3cd7a9756b9d",
+    "canonical_game_id": "77ede9db-f3f3-4afb-b5e0-5cfb82f11cfd",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -726,13 +828,15 @@
       "FanDuel": 130
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "9f1fbac6-52f2-443d-9107-9b493c23a67f",
+    "canonical_game_id": "59021ffb-368a-4a4e-982a-4f8c5e32b20b",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "total",
     "selection": "over",
     "line": 7.5,
@@ -740,13 +844,15 @@
       "FanDuel": -136
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "dfb3bf4d-b194-4e3a-b357-36c1a85d5c8f",
+    "canonical_game_id": "7510ba11-e811-4770-9449-0fd939b533f5",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "total",
     "selection": "under",
     "line": 7.5,
@@ -754,13 +860,15 @@
       "FanDuel": 102
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "736e8d8c-7e90-436f-9592-5435704b6a30",
+    "canonical_game_id": "c2366243-0d8f-4357-99bf-0306b8b8baf4",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -768,13 +876,15 @@
       "FanDuel": -110
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "c0ba8f8d-e096-4b26-acb5-710dd60db205",
+    "canonical_game_id": "6f9e2faa-6905-48dc-a832-c389173bd767",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -782,13 +892,15 @@
       "FanDuel": -120
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "3ba33d74-cb62-4bfb-bce0-f78e6c6de096",
+    "canonical_game_id": "b20bed0d-3aa8-4795-bb3a-d7ad05fba441",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -796,13 +908,15 @@
       "FanDuel": 230
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "299a22af-e187-49b1-bea8-8d74d91c1871",
+    "canonical_game_id": "051f23e7-1917-4850-b355-9ad990d9c723",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -810,13 +924,15 @@
       "FanDuel": -270
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "89c4d32c-e1b6-47c3-b91a-4b44bd982822",
+    "canonical_game_id": "3f8d5b84-1ff1-46af-b9b0-306fd130c7b6",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "total",
     "selection": "over",
     "line": 6.5,
@@ -824,13 +940,15 @@
       "FanDuel": -108
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "54d5a824-3a27-458a-81c6-2af28a7fdde0",
+    "canonical_game_id": "5b22f605-c411-4558-b85f-7886f221a0d1",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "total",
     "selection": "under",
     "line": 6.5,
@@ -838,13 +956,15 @@
       "FanDuel": -122
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "3e816c5f-b0b2-48c0-babc-ea53d3b1b98c",
+    "canonical_game_id": "9bd4dc8f-ff4c-419f-8fc6-9c1c19feb59e",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -852,13 +972,15 @@
       "FanDuel": -140
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "430e9675-c181-45a1-ab86-300ffa2a7b49",
+    "canonical_game_id": "c66e42e9-2914-4612-b585-69fd61d7d4c9",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -866,13 +988,15 @@
       "FanDuel": 106
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "e41123c2-9db7-46b7-bfbb-ab1beb4ee47b",
+    "canonical_game_id": "ffda8133-0e41-4843-9db8-a3be8e69b9a1",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -880,13 +1004,15 @@
       "FanDuel": -220
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "8abdaa22-f45a-42fd-972f-d4447f4a93cb",
+    "canonical_game_id": "ef54d0b0-c503-41d2-b21c-4d0916254ed7",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -894,13 +1020,15 @@
       "FanDuel": 190
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "d644cf23-c850-4255-92c2-4fed3a35dfe9",
+    "canonical_game_id": "f7f0fcd3-d917-41da-b14f-37135e800066",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -908,13 +1036,15 @@
       "FanDuel": -144
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "0b1a68af-80de-4408-bfac-c208b89d3d41",
+    "canonical_game_id": "74b06f19-8d5c-4d2b-af43-c54116550dc8",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -922,13 +1052,15 @@
       "FanDuel": 108
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "4b188012-ca48-4ea9-8873-be9a1d5dae44",
+    "canonical_game_id": "54ea5e85-7cb7-4353-914b-563aa51676ca",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -936,13 +1068,15 @@
       "FanDuel": -134
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "45de81b2-4087-4561-a597-9e71c063cbde",
+    "canonical_game_id": "f56787d5-dc3c-4fe8-914b-36f243797cc9",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -950,13 +1084,15 @@
       "FanDuel": 112
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "2467766f-ab48-4d8f-9a7e-3277754eb7d4",
+    "canonical_game_id": "7846e3e3-9d1e-4d13-bd73-866a5a2a1f35",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -964,13 +1100,15 @@
       "FanDuel": 170
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "4cbb84f2-6bbd-4f89-bbe1-673f9d382628",
+    "canonical_game_id": "98b8bc2e-55bd-4742-bc9e-c7fe480e92f8",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -978,13 +1116,15 @@
       "FanDuel": -184
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "e46fa168-8585-42cf-b6f3-dbc13a031f46",
+    "canonical_game_id": "bbc7bfee-dc84-422c-b2b3-88807a57df4b",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "total",
     "selection": "over",
     "line": 8.0,
@@ -992,13 +1132,15 @@
       "FanDuel": -110
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "452387df-b17b-47ea-ae65-833fcffccaeb",
+    "canonical_game_id": "48775b87-36ea-4d96-87de-75e5bbc43e78",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "total",
     "selection": "under",
     "line": 8.0,
@@ -1006,13 +1148,15 @@
       "FanDuel": -110
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "0139f6ea-d44b-4d43-9046-0186eedb6409",
+    "canonical_game_id": "8dc6aa2e-56f3-40d2-bb9c-c340c1e2c9dd",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -1020,13 +1164,15 @@
       "FanDuel": 105
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "55c4f3c4-9db5-46a8-bd64-231a581bb3d5",
+    "canonical_game_id": "65bd747c-a8da-49f5-930f-6897e34210e9",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -1034,13 +1180,15 @@
       "FanDuel": -126
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "8a5d9f53-3e49-4f5b-ba04-2c69ccdfb7e0",
+    "canonical_game_id": "cbd808b2-2567-4765-b286-8bef0c59247a",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1048,13 +1196,15 @@
       "FanDuel": -132
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "11e295cf-27c1-402d-a687-56a824f851c7",
+    "canonical_game_id": "7eb57776-7db4-481c-a3d6-0ced04434349",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1062,13 +1212,15 @@
       "FanDuel": 122
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "43778d8a-8908-48a8-8920-419609a3ce96",
+    "canonical_game_id": "0de15112-e1f5-46d1-9e4a-f195811cb9a6",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "total",
     "selection": "over",
     "line": 10.5,
@@ -1076,13 +1228,15 @@
       "FanDuel": -132
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "697820e1-b7e7-40a2-9b6a-67e565d00a5d",
+    "canonical_game_id": "5fc98c2b-54ae-47c3-aac5-e00de3cb3ce4",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "total",
     "selection": "under",
     "line": 10.5,
@@ -1090,13 +1244,15 @@
       "FanDuel": 108
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "6f94b588-b9ff-4cf9-a334-3af0a354f71b",
+    "canonical_game_id": "2aad2ed5-c1e0-4e58-9803-d62d234033ad",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -1104,13 +1260,15 @@
       "FanDuel": -172
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "9f93c97a-c7ca-46ef-bdab-e532ecce5c71",
+    "canonical_game_id": "4b67f190-f7cc-435f-90bf-ded9f3d58230",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -1118,13 +1276,15 @@
       "FanDuel": 140
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "8deda085-9e3e-4f6a-a1e1-3965602ff3a5",
+    "canonical_game_id": "534f9703-5be9-4ea3-bc36-cc9530da2e40",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1132,13 +1292,15 @@
       "FanDuel": 128
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "abe43aeb-cd71-4084-b4df-7ac552783a0a",
+    "canonical_game_id": "4b29fcfb-63af-4128-b83d-2d40e0eebcec",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1146,13 +1308,15 @@
       "FanDuel": -138
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "e759e4b3-b075-42f1-be88-7897a64c8d3d",
+    "canonical_game_id": "be05ac47-cb3e-4570-8f1a-096d609bce1a",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "total",
     "selection": "over",
     "line": 8.0,
@@ -1160,13 +1324,15 @@
       "FanDuel": 100
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "625ca7be-b49d-454b-a5aa-f9dc471eb434",
+    "canonical_game_id": "59ffac0b-822a-4933-b86f-b493479f7fc1",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "total",
     "selection": "under",
     "line": 8.0,
@@ -1174,13 +1340,15 @@
       "FanDuel": -122
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "8593c2a3-bb52-46dc-a13a-03551d4cfe07",
+    "canonical_game_id": "22c99a99-23f3-4b72-ba20-29f6ae237297",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -1188,13 +1356,15 @@
       "FanDuel": 146
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "6a972713-5e50-40df-8a52-87486377e02f",
+    "canonical_game_id": "87b94224-169b-4356-b04c-cedef5b0b778",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -1202,13 +1372,15 @@
       "FanDuel": -176
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "6981a450-97e0-4cf4-910b-b61b932279c8",
+    "canonical_game_id": "5c7ac8b2-4c57-4ab3-a031-4dfaaa59feed",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1216,13 +1388,15 @@
       "FanDuel": -108
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "702da0a3-4ebd-4ffb-a824-7555a924a18e",
+    "canonical_game_id": "b9f8a4fd-b629-4450-9d60-9d9df8578000",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1230,13 +1404,15 @@
       "FanDuel": -108
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "bf56b96f-8362-4e82-9d99-5fff2cdf105f",
+    "canonical_game_id": "cc99998d-eb63-4d10-81a3-f00f3941d131",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -1244,13 +1420,15 @@
       "FanDuel": -114
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "7d6abbaf-deac-457f-8059-510666c8b381",
+    "canonical_game_id": "08492a93-6c97-4c69-bfc0-23cff69f3517",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -1258,13 +1436,15 @@
       "FanDuel": -106
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "65f7bbb4-c39e-4487-bd6a-4ccd90064980",
+    "canonical_game_id": "4bf84a74-a4fa-492b-84d3-2bb71319ecb6",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -1272,13 +1452,15 @@
       "FanDuel": -118
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "00de83e7-6d0c-4bec-8f78-22fe69497594",
+    "canonical_game_id": "e6ef15c5-5a51-4bbf-a643-3908fd6d532e",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -1286,13 +1468,15 @@
       "FanDuel": -102
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "b1fb7b27-ec01-43da-b3ca-fc07a80ab56b",
+    "canonical_game_id": "9ecc922b-7003-4600-a7b6-29f8ba806732",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1300,13 +1484,15 @@
       "FanDuel": 184
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "582df7f7-768d-4d42-b417-9d60436fd92b",
+    "canonical_game_id": "a06cf2cc-c721-4e9b-abec-157e1082f5ba",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1314,13 +1500,15 @@
       "FanDuel": -220
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "c6c7a001-c425-4419-9a7a-7a266d0d2193",
+    "canonical_game_id": "7f781d41-3419-4002-8eb4-315628c4f911",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "total",
     "selection": "over",
     "line": 7.5,
@@ -1328,13 +1516,15 @@
       "FanDuel": -120
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "fba312f3-22db-4a80-9c88-ddcedea66efe",
+    "canonical_game_id": "ab74a1e1-3acd-4499-ab03-12d48295a144",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Philadelphia Phillies",
+    "away_team": "St. Louis Cardinals",
     "market_type": "total",
     "selection": "under",
     "line": 7.5,
@@ -1342,13 +1532,15 @@
       "FanDuel": -102
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "345c130a-e5f4-436f-90b9-55c76f336c5d",
+    "canonical_game_id": "7a09a85d-73a8-4d60-97ee-dfaa7df9412c",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Yankees",
+    "away_team": "Toronto Blue Jays",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -1356,13 +1548,15 @@
       "FanDuel": -176
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "c5bd2131-2ef1-4173-940b-901669ba5c7b",
+    "canonical_game_id": "662ed282-2329-42b3-93b5-4b6f4b74e5c8",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Yankees",
+    "away_team": "Toronto Blue Jays",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -1370,13 +1564,15 @@
       "FanDuel": 146
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "c6d9415b-1711-4e97-be7f-33186502e447",
+    "canonical_game_id": "a3a79f6d-2f35-4f8a-8714-5eba88f1e801",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Yankees",
+    "away_team": "Toronto Blue Jays",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1384,13 +1580,15 @@
       "FanDuel": 118
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "1d7dba96-868d-4a9d-b9c7-d9af59bf06a2",
+    "canonical_game_id": "036ac565-c653-4b13-b9dd-d3b776dbf7a8",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Yankees",
+    "away_team": "Toronto Blue Jays",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1398,13 +1596,15 @@
       "FanDuel": -138
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "8620c3e0-3545-4d7a-af63-d992ccf6a4e3",
+    "canonical_game_id": "46ff4e9d-0760-43e9-9435-0f57f0e2c175",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Yankees",
+    "away_team": "Toronto Blue Jays",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -1412,13 +1612,15 @@
       "FanDuel": 102
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "1a3a02f6-f535-4b70-8119-326c9199ee4d",
+    "canonical_game_id": "bd045756-bef2-4ee5-8e9f-7da8319da582",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Yankees",
+    "away_team": "Toronto Blue Jays",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -1426,13 +1628,15 @@
       "FanDuel": -124
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "3def64dd-9dac-4285-9a98-14d61ec657d2",
+    "canonical_game_id": "49a8481f-f4e8-451f-9c03-7303f7b75980",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "Washington Nationals",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -1440,13 +1644,15 @@
       "FanDuel": -154
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "312ee8c7-c974-42e1-9418-9b67b425d607",
+    "canonical_game_id": "9525fead-b49a-472e-8303-048897e5e438",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "Washington Nationals",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -1454,13 +1660,15 @@
       "FanDuel": 128
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "9b4f7458-ce7c-4d63-813c-0ad368c8954a",
+    "canonical_game_id": "a4567969-cc03-4fab-9318-4ce824070eba",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "Washington Nationals",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1468,13 +1676,15 @@
       "FanDuel": 136
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "c436bd7e-5eb6-4611-a560-0e0e94429039",
+    "canonical_game_id": "e035d176-0fce-4a3b-8b51-7df2b9b42642",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "Washington Nationals",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1482,13 +1692,15 @@
       "FanDuel": -162
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "88d0067d-45a2-470c-97ae-87ba51d50436",
+    "canonical_game_id": "5f10c9d6-7259-4072-8cfb-1ed7502f1030",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "Washington Nationals",
     "market_type": "total",
     "selection": "over",
     "line": 8.0,
@@ -1496,13 +1708,15 @@
       "FanDuel": -118
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "a6390ab4-85f6-4bac-acfa-af11abd63b80",
+    "canonical_game_id": "77a17439-27e6-458c-8ba7-2105cfc77124",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "Washington Nationals",
     "market_type": "total",
     "selection": "under",
     "line": 8.0,
@@ -1510,13 +1724,15 @@
       "FanDuel": -104
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "657ccf8f-254d-4d0a-a63d-0844597ed637",
+    "canonical_game_id": "db961e04-b87f-467e-a718-08de67a4ef45",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -1524,13 +1740,15 @@
       "FanDuel": -126
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "5c8e8016-e6ae-4890-b136-14fb503c19e0",
+    "canonical_game_id": "2261b7ba-270e-4496-8d4a-94819990d4a4",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -1538,13 +1756,15 @@
       "FanDuel": 105
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "3c8bd141-41d4-48ab-b86f-9c9ec474a62b",
+    "canonical_game_id": "9538051c-dada-42b4-b002-d244f08130ef",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1552,13 +1772,15 @@
       "FanDuel": 184
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "eb64e7ea-9f14-4c06-9203-53c0d030c9df",
+    "canonical_game_id": "838cc604-f2b3-46de-abee-a4a639250e2b",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1566,13 +1788,15 @@
       "FanDuel": -220
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "b2b3e888-40f5-41b3-b3b8-1661e27a0a11",
+    "canonical_game_id": "ac579fc9-4efb-4ba9-b571-79f91d89c2f9",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "total",
     "selection": "over",
     "line": 8.0,
@@ -1580,13 +1804,15 @@
       "FanDuel": -115
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "6ba51fbc-0171-4c11-b3d7-cad7622bc4f7",
+    "canonical_game_id": "4203a052-c291-4c5c-8951-65e6c8269d20",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Francisco Giants",
     "market_type": "total",
     "selection": "under",
     "line": 8.0,
@@ -1594,13 +1820,15 @@
       "FanDuel": -105
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "bc8152cd-135c-414f-a4ab-a33967095750",
+    "canonical_game_id": "d2e70db4-5ad5-4d63-a6da-783d3f187ea7",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -1608,13 +1836,15 @@
       "FanDuel": -106
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "c22d094f-e139-4131-81c8-749c56140423",
+    "canonical_game_id": "74d1d84f-9df2-4fcc-82d5-ba423e110d7d",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -1622,13 +1852,15 @@
       "FanDuel": -113
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "5fe059a2-09dd-4fe3-bb85-0f6f59f2c468",
+    "canonical_game_id": "8ce46f9c-9604-4a1b-beeb-3333061cf0ec",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1636,13 +1868,15 @@
       "FanDuel": -164
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "6a2b4c8d-ccbe-4c16-af25-d75bc859294b",
+    "canonical_game_id": "f20e77b3-350d-4b2b-9415-4e44a23935d5",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1650,13 +1884,15 @@
       "FanDuel": 138
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "b14c9d11-2c05-4071-9b7f-f0c98b4e921c",
+    "canonical_game_id": "d9a61ecb-cd43-4f72-a137-ac56a228e617",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "total",
     "selection": "over",
     "line": 11.0,
@@ -1664,13 +1900,15 @@
       "FanDuel": -106
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "cae57b2b-0a0b-4fd6-b498-d0c4a8d4ca20",
+    "canonical_game_id": "c15463da-c274-43d1-b247-5e046b3099c6",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Colorado Rockies",
+    "away_team": "Cleveland Guardians",
     "market_type": "total",
     "selection": "under",
     "line": 11.0,
@@ -1678,13 +1916,15 @@
       "FanDuel": -114
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "0f928565-ae9f-4f61-9cf5-205b47bcb6ae",
+    "canonical_game_id": "51dc3365-3b51-4b18-959e-230641cfcb3f",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -1692,13 +1932,15 @@
       "FanDuel": -104
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "335a2897-e7ed-4750-a1c3-bea26355b9b3",
+    "canonical_game_id": "d41c33d7-8416-4801-acf9-df569efcdc33",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -1706,13 +1948,15 @@
       "FanDuel": -115
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "0e48143a-e075-4a86-b22c-a75420d9f009",
+    "canonical_game_id": "1c2a3d88-d59b-4f90-845a-03b587c6ca8e",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1720,13 +1964,15 @@
       "FanDuel": 235
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "16e39425-1e3a-4717-a7eb-a3a5fa98ff88",
+    "canonical_game_id": "8fa9310a-cc0a-4190-b4dd-c35a02c69b15",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1734,13 +1980,15 @@
       "FanDuel": -290
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "6273f12f-e555-4b70-9743-15514f2ad259",
+    "canonical_game_id": "d0d42fd8-0788-4ebd-9ff4-9d06906d81eb",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -1748,13 +1996,15 @@
       "FanDuel": 100
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "2398dc48-91bb-44cf-9d1e-59d5571e7cb3",
+    "canonical_game_id": "e1c0e4f4-2470-4217-ab26-2ec2e9d96ba3",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Pittsburgh Pirates",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -1762,13 +2012,15 @@
       "FanDuel": -122
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "6daa86fa-5eed-491d-b19b-c2a7d2e674c4",
+    "canonical_game_id": "4f2f0db8-03a7-439e-aa5c-1656e1ad6da0",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -1776,13 +2028,15 @@
       "FanDuel": 142
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "d44461e3-ec10-461c-afe6-516aaa0fa337",
+    "canonical_game_id": "f93b9e0f-770a-4624-9bff-e39794b1fc85",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -1790,13 +2044,15 @@
       "FanDuel": -172
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "bfc6967e-a944-4531-8f2c-ff6704967871",
+    "canonical_game_id": "7f70534c-55e9-4fe7-bc7b-282101383fc9",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1804,13 +2060,15 @@
       "FanDuel": -112
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "74beca7c-a03d-4f6d-a328-4aaf7551dff6",
+    "canonical_game_id": "8d66311f-9519-4024-963d-eb6203b5f628",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1818,13 +2076,15 @@
       "FanDuel": -104
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "34d5e4f1-e101-4791-8aef-e58dd73c7a7f",
+    "canonical_game_id": "8c6121a0-aecb-432f-946c-62ee9a023127",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "total",
     "selection": "over",
     "line": 7.5,
@@ -1832,13 +2092,15 @@
       "FanDuel": -114
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "08ed03f7-552f-47bf-a57f-118cb930035e",
+    "canonical_game_id": "c0ecf519-7c17-4cbb-bccf-1c4c2cf2f76e",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago Cubs",
     "market_type": "total",
     "selection": "under",
     "line": 7.5,
@@ -1846,13 +2108,15 @@
       "FanDuel": -106
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "14baf015-aa07-4153-99a3-68e3be27517d",
+    "canonical_game_id": "f367221b-90c3-457d-bedc-403761c4f3a8",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -1860,13 +2124,15 @@
       "FanDuel": -176
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "73bbec5e-8961-4a8e-8a47-6028bac8a7d2",
+    "canonical_game_id": "e48a271d-109f-4d14-a540-2f8338157390",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -1874,13 +2140,15 @@
       "FanDuel": 146
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "a6cac2c9-7dbf-42a8-8564-d2c54287ae30",
+    "canonical_game_id": "dd27d66b-1598-4849-bca4-530f2bf72b1f",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1888,13 +2156,15 @@
       "FanDuel": 116
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "5fccc81b-ec5a-44fb-8fe5-5af27f25a949",
+    "canonical_game_id": "d46d0fa6-363f-4094-8ef1-ad6229e00379",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1902,13 +2172,15 @@
       "FanDuel": -134
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "10cc667d-8f1d-4233-ae94-49126706e825",
+    "canonical_game_id": "c95b83bf-53e5-4f22-9bab-26896537dd1c",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -1916,13 +2188,15 @@
       "FanDuel": -115
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "0af89b33-c22c-4cce-9ce7-77027615e2c3",
+    "canonical_game_id": "25cc48ec-96ff-4d09-b966-2f1364b96506",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Diego Padres",
+    "away_team": "Minnesota Twins",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -1930,13 +2204,15 @@
       "FanDuel": -105
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "b797112f-3cc5-4178-8707-6e58d73fe710",
+    "canonical_game_id": "8bd7aeb9-b9f8-4415-98a7-8f2f543f6275",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -1944,13 +2220,15 @@
       "FanDuel": -194
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "46b0aea3-ae4b-46ef-b23c-bdf25d97603e",
+    "canonical_game_id": "cff19a71-1cf8-4904-bdab-1f1caf32abc9",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -1958,13 +2236,15 @@
       "FanDuel": 160
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "04d70049-da1d-44e2-8949-d3d1636550a8",
+    "canonical_game_id": "bd740b08-ecc4-4497-aabd-a11573b2db0c",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -1972,13 +2252,15 @@
       "FanDuel": 108
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "3e20ed2a-1964-46dd-8408-65f3ffc84aa3",
+    "canonical_game_id": "24c038fd-3f35-4353-a1bd-49cc09ff8af0",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -1986,13 +2268,15 @@
       "FanDuel": -126
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "6125eba0-420e-44c7-a001-a228d5831178",
+    "canonical_game_id": "06e2e134-9ef3-4870-adfa-6ea026d1fc71",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -2000,13 +2284,15 @@
       "FanDuel": -112
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "e812d936-362b-4d13-a300-dad0ce8133f9",
+    "canonical_game_id": "88013dc6-4dfa-44af-bf94-e3e5f89b02f2",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Cincinnati Reds",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -2014,13 +2300,15 @@
       "FanDuel": -108
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "e1d40b61-56f7-42a7-ba9c-dbd654b7b34a",
+    "canonical_game_id": "477a56cd-6a5b-43ee-adc7-3655dba36e4f",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Atlanta Braves",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -2028,13 +2316,15 @@
       "FanDuel": -182
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "4f855d6a-e524-43ce-83f4-ba971de94889",
+    "canonical_game_id": "6a860155-7d17-4181-9c80-a01884f3e26f",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Atlanta Braves",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -2042,13 +2332,15 @@
       "FanDuel": 150
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "b344edb2-123e-42a2-a1f1-e4bd37a0802e",
+    "canonical_game_id": "72cd143a-8bc5-453b-9830-67b401e0835f",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Atlanta Braves",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -2056,13 +2348,15 @@
       "FanDuel": 116
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "fca15a05-b35b-4943-be32-d42bf4ffc0ad",
+    "canonical_game_id": "bdac49a2-3170-4be3-94e6-bf41280f2a68",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Atlanta Braves",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -2070,13 +2364,15 @@
       "FanDuel": -134
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "6a7a69a4-5fd3-492e-87e9-053c0a7fddab",
+    "canonical_game_id": "ecbd836b-aa6e-48c2-aae4-1f9580c3841a",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Atlanta Braves",
     "market_type": "total",
     "selection": "over",
     "line": 7.5,
@@ -2084,13 +2380,15 @@
       "FanDuel": -114
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "902b8670-6fce-44a2-8588-27e2baf20c26",
+    "canonical_game_id": "58a60b44-3974-4ce8-9af4-fc9d3da465ae",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Atlanta Braves",
     "market_type": "total",
     "selection": "under",
     "line": 7.5,
@@ -2098,13 +2396,15 @@
       "FanDuel": -106
     },
     "updated_at": {
-      "FanDuel": "2026-08-27T02:27:11.306909-04:00"
+      "FanDuel": "2026-08-27T15:47:54.215767-04:00"
     }
   },
   {
-    "canonical_game_id": "df2f87c7-2803-4672-a6eb-0c63169c1acf",
+    "canonical_game_id": "19a778ed-adae-4619-ba95-c645c0300b26",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "away",
     "line": -15.5,
@@ -2112,13 +2412,15 @@
       "BetMGM": 280
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.416826-04:00"
+      "BetMGM": "2026-08-27T15:47:54.357768-04:00"
     }
   },
   {
-    "canonical_game_id": "ec13d713-590c-4e89-b88c-86c4347a5f46",
+    "canonical_game_id": "d46b0578-ec7d-4810-852b-00aaaef8b864",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "home",
     "line": 15.5,
@@ -2126,13 +2428,15 @@
       "BetMGM": -375
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.416826-04:00"
+      "BetMGM": "2026-08-27T15:47:54.357768-04:00"
     }
   },
   {
-    "canonical_game_id": "1bc6ae04-4b7d-4b15-8f33-efdf83eb81cc",
+    "canonical_game_id": "5ebcc424-739d-4e75-9682-bbe744bb2e1f",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "away",
     "line": -14.5,
@@ -2140,13 +2444,15 @@
       "BetMGM": 140
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.420229-04:00"
+      "BetMGM": "2026-08-27T15:47:54.372773-04:00"
     }
   },
   {
-    "canonical_game_id": "e187e6ce-302f-4e57-86ae-8b5f525e5f97",
+    "canonical_game_id": "c96df9dc-bd21-4abd-9565-811edf3b6201",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "home",
     "line": 14.5,
@@ -2154,13 +2460,15 @@
       "BetMGM": -185
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.420229-04:00"
+      "BetMGM": "2026-08-27T15:47:54.372773-04:00"
     }
   },
   {
-    "canonical_game_id": "3b2589a3-bbf1-42ee-bca6-fce17fc940e2",
+    "canonical_game_id": "4231387d-13f4-463f-8370-b89c3ae3b22d",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "away",
     "line": -13.5,
@@ -2168,13 +2476,15 @@
       "BetMGM": -325
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.420538-04:00"
+      "BetMGM": "2026-08-27T15:47:54.373113-04:00"
     }
   },
   {
-    "canonical_game_id": "220076ed-2fee-42ba-86d4-7221d39e1405",
+    "canonical_game_id": "570beae8-c29a-4082-ac30-c9f006195356",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "home",
     "line": 13.5,
@@ -2182,13 +2492,15 @@
       "BetMGM": 240
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.420538-04:00"
+      "BetMGM": "2026-08-27T15:47:54.373113-04:00"
     }
   },
   {
-    "canonical_game_id": "ac8f5349-6c0c-41cc-9597-087e86e1c7e5",
+    "canonical_game_id": "457456d8-fedd-4f7c-9816-3c0dfd89d6ce",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "over",
     "line": 19.5,
@@ -2196,13 +2508,15 @@
       "BetMGM": -220
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.417782-04:00"
+      "BetMGM": "2026-08-27T15:47:54.369282-04:00"
     }
   },
   {
-    "canonical_game_id": "33b5bf1d-ef56-44d9-a5e2-32093bade2f9",
+    "canonical_game_id": "1ec544c4-7459-4981-9ffa-4f2ef3ae26be",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "under",
     "line": 19.5,
@@ -2210,13 +2524,15 @@
       "BetMGM": 170
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.417782-04:00"
+      "BetMGM": "2026-08-27T15:47:54.369282-04:00"
     }
   },
   {
-    "canonical_game_id": "e8838edc-b74b-4529-8ec8-78d2f3db290a",
+    "canonical_game_id": "0d13131f-fb66-48cf-98a9-43781c06138a",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "over",
     "line": 18.5,
@@ -2224,13 +2540,15 @@
       "BetMGM": -1000
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.418092-04:00"
+      "BetMGM": "2026-08-27T15:47:54.369761-04:00"
     }
   },
   {
-    "canonical_game_id": "6ff4b4d7-733e-43f8-8ff6-a52dd12fdc83",
+    "canonical_game_id": "41636b0b-e765-4bf3-a168-5480054fa617",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "under",
     "line": 18.5,
@@ -2238,13 +2556,15 @@
       "BetMGM": 550
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.418092-04:00"
+      "BetMGM": "2026-08-27T15:47:54.369761-04:00"
     }
   },
   {
-    "canonical_game_id": "3d40c4a4-bb67-4dc9-8785-02ef18453a85",
+    "canonical_game_id": "bca62186-22c3-4590-81be-07fe226b50ba",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "over",
     "line": 21.5,
@@ -2252,13 +2572,15 @@
       "BetMGM": 210
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.419115-04:00"
+      "BetMGM": "2026-08-27T15:47:54.371302-04:00"
     }
   },
   {
-    "canonical_game_id": "d09547eb-3ed7-4437-9e31-1ce47b0d92f3",
+    "canonical_game_id": "2ede6dcf-6b04-4d92-a128-ff090209180e",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Houston Astros",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "under",
     "line": 21.5,
@@ -2266,13 +2588,15 @@
       "BetMGM": -275
     },
     "updated_at": {
-      "BetMGM": "2026-08-27T02:27:11.419115-04:00"
+      "BetMGM": "2026-08-27T15:47:54.371302-04:00"
     }
   },
   {
-    "canonical_game_id": "d49995b8-007b-43df-a272-47975833880d",
+    "canonical_game_id": "dfcea937-5062-4699-a614-f55ab4553343",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Chicago Cubs",
     "market_type": "run_line",
     "selection": "away",
     "line": -3.5,
@@ -2280,13 +2604,15 @@
       "Caesars": 125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.525226-04:00"
+      "Caesars": "2026-08-27T15:47:55.544744-04:00"
     }
   },
   {
-    "canonical_game_id": "6a699631-1db9-42cf-9f92-81e661c395d6",
+    "canonical_game_id": "cda9bf67-ea2f-42df-ac60-70468d0f41ac",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Chicago Cubs",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -2294,13 +2620,15 @@
       "Caesars": 669
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.496416-04:00"
+      "Caesars": "2026-08-27T15:47:55.511546-04:00"
     }
   },
   {
-    "canonical_game_id": "b3b5bfb2-63d3-48aa-a9bb-dfb27c527577",
+    "canonical_game_id": "9d9085b7-0725-4489-b325-eccefd16fffa",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Chicago Cubs",
     "market_type": "total",
     "selection": "over",
     "line": 15.5,
@@ -2308,13 +2636,15 @@
       "Caesars": 100
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.495854-04:00"
+      "Caesars": "2026-08-27T15:47:55.510766-04:00"
     }
   },
   {
-    "canonical_game_id": "aef4d2f7-2464-4d86-bad0-0a2ef5618526",
+    "canonical_game_id": "116c2bb1-d374-4dcd-b864-05101d623efe",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Chicago Cubs",
     "market_type": "run_line",
     "selection": "home",
     "line": -3.5,
@@ -2322,13 +2652,15 @@
       "Caesars": -167
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.525649-04:00"
+      "Caesars": "2026-08-27T15:47:55.545090-04:00"
     }
   },
   {
-    "canonical_game_id": "d440b419-b66b-4028-9e78-e0f1e5af5a80",
+    "canonical_game_id": "ff1f6aaf-3c6a-41ea-bd42-11b00bdbfbb6",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "Toronto Blue Jays",
     "market_type": "run_line",
     "selection": "away",
     "line": -2.5,
@@ -2336,13 +2668,15 @@
       "Caesars": -200
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.515053-04:00"
+      "Caesars": "2026-08-27T15:47:55.533403-04:00"
     }
   },
   {
-    "canonical_game_id": "38b9230e-f30e-4b85-a199-e9739526e948",
+    "canonical_game_id": "4faf2638-68a8-4c11-bad6-b7620f7e12f2",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Chicago Cubs",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -2350,13 +2684,15 @@
       "Caesars": -1804
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.496730-04:00"
+      "Caesars": "2026-08-27T15:47:55.511869-04:00"
     }
   },
   {
-    "canonical_game_id": "d2d05936-7150-41ed-965e-256f6dc2b9a6",
+    "canonical_game_id": "f30bd9ca-87ce-4d8a-88e2-d1d4bb526f70",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Chicago Cubs",
     "market_type": "total",
     "selection": "under",
     "line": 15.5,
@@ -2364,13 +2700,15 @@
       "Caesars": -138
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.496128-04:00"
+      "Caesars": "2026-08-27T15:47:55.511193-04:00"
     }
   },
   {
-    "canonical_game_id": "246479d2-e52d-4a8c-9880-69ddbe720146",
+    "canonical_game_id": "7e7d6bb7-6dda-49ff-946f-fd17de3410bc",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Detroit Tigers",
+    "away_team": "Kansas City Royals",
     "market_type": "run_line",
     "selection": "away",
     "line": 2.5,
@@ -2378,13 +2716,15 @@
       "Caesars": 100
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.518731-04:00"
+      "Caesars": "2026-08-27T15:47:55.537604-04:00"
     }
   },
   {
-    "canonical_game_id": "b7e2afa5-0a2e-46b2-9382-7b3d39bfea63",
+    "canonical_game_id": "977c1292-fded-41ae-8b88-9c49e3b46990",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Detroit Tigers",
+    "away_team": "Kansas City Royals",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -2392,13 +2732,15 @@
       "Caesars": -404
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.517503-04:00"
+      "Caesars": "2026-08-27T15:47:55.536178-04:00"
     }
   },
   {
-    "canonical_game_id": "aa86c4d6-7e7c-439b-9826-6ce5bd943983",
+    "canonical_game_id": "7c66c2ee-6062-43ec-a91e-8d3a4818b111",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Detroit Tigers",
+    "away_team": "Kansas City Royals",
     "market_type": "total",
     "selection": "over",
     "line": 7.5,
@@ -2406,13 +2748,15 @@
       "Caesars": -105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.406614-04:00"
+      "Caesars": "2026-08-27T15:47:55.404358-04:00"
     }
   },
   {
-    "canonical_game_id": "7a99125b-4e8e-48c9-8991-737ac5434098",
+    "canonical_game_id": "d427c342-b4b5-4dce-a5a8-6b5db489d11b",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Detroit Tigers",
+    "away_team": "Kansas City Royals",
     "market_type": "run_line",
     "selection": "home",
     "line": 2.5,
@@ -2420,13 +2764,15 @@
       "Caesars": -138
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.519010-04:00"
+      "Caesars": "2026-08-27T15:47:55.537948-04:00"
     }
   },
   {
-    "canonical_game_id": "d236ca7d-1f77-4576-8e67-2581822acaff",
+    "canonical_game_id": "c4deef79-b433-47e2-ae31-39736794e404",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Detroit Tigers",
+    "away_team": "Kansas City Royals",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -2434,13 +2780,15 @@
       "Caesars": 262
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.517780-04:00"
+      "Caesars": "2026-08-27T15:47:55.536508-04:00"
     }
   },
   {
-    "canonical_game_id": "7ba5d0ac-0c3a-43ac-9ee3-a8295c20cc59",
+    "canonical_game_id": "47b5d787-963b-4cdd-a20e-29be85ad1606",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Detroit Tigers",
+    "away_team": "Kansas City Royals",
     "market_type": "total",
     "selection": "under",
     "line": 7.5,
@@ -2448,13 +2796,15 @@
       "Caesars": -125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.409449-04:00"
+      "Caesars": "2026-08-27T15:47:55.407383-04:00"
     }
   },
   {
-    "canonical_game_id": "54d38f3a-6a2b-42bb-b4e2-775e0a6fc4f2",
+    "canonical_game_id": "7e63d9e3-e99d-47d6-aec3-1829d3e8a8a6",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "San Diego Padres",
     "market_type": "run_line",
     "selection": "away",
     "line": -2.5,
@@ -2462,13 +2812,15 @@
       "Caesars": -167
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.412325-04:00"
+      "Caesars": "2026-08-27T15:47:55.410456-04:00"
     }
   },
   {
-    "canonical_game_id": "305f344a-50e2-4752-9c34-2c58c75f8423",
+    "canonical_game_id": "d29f5885-85a7-4c5f-a8f5-bcb748935485",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "San Diego Padres",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -2476,13 +2828,15 @@
       "Caesars": 287
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.485122-04:00"
+      "Caesars": "2026-08-27T15:47:55.498754-04:00"
     }
   },
   {
-    "canonical_game_id": "5d98ca7d-58b5-441e-92fe-19e7fd6febd3",
+    "canonical_game_id": "a5f309ce-04d7-4363-afce-e646c5a142f7",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "San Diego Padres",
     "market_type": "total",
     "selection": "over",
     "line": 7.5,
@@ -2490,13 +2844,15 @@
       "Caesars": -110
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.498376-04:00"
+      "Caesars": "2026-08-27T15:47:55.513912-04:00"
     }
   },
   {
-    "canonical_game_id": "4955d688-cc1e-44a7-b5ad-949527e7a37d",
+    "canonical_game_id": "2f8975b8-6857-4732-96f9-946438801c75",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "San Diego Padres",
     "market_type": "run_line",
     "selection": "home",
     "line": -2.5,
@@ -2504,13 +2860,15 @@
       "Caesars": 125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.416794-04:00"
+      "Caesars": "2026-08-27T15:47:55.415319-04:00"
     }
   },
   {
-    "canonical_game_id": "6ebfe85c-78da-4f0b-868f-c19b95bc85d7",
+    "canonical_game_id": "bd269795-757f-4618-847e-f2f8e2bbc095",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "San Diego Padres",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -2518,13 +2876,15 @@
       "Caesars": -454
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.485428-04:00"
+      "Caesars": "2026-08-27T15:47:55.499053-04:00"
     }
   },
   {
-    "canonical_game_id": "1adb7c51-5731-41ed-97d7-f2384491d8e9",
+    "canonical_game_id": "0d82ad53-ddd2-475c-99fd-82e85f8b3568",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "Toronto Blue Jays",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -2532,13 +2892,15 @@
       "Caesars": 835
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.516464-04:00"
+      "Caesars": "2026-08-27T15:47:55.535003-04:00"
     }
   },
   {
-    "canonical_game_id": "ea2f8d5c-3c50-45c4-83d7-48f48798a20f",
+    "canonical_game_id": "26f5524d-207d-4635-b705-c5a00e34956e",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "San Diego Padres",
     "market_type": "total",
     "selection": "under",
     "line": 7.5,
@@ -2546,13 +2908,15 @@
       "Caesars": -110
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.498655-04:00"
+      "Caesars": "2026-08-27T15:47:55.514276-04:00"
     }
   },
   {
-    "canonical_game_id": "c59d4a65-2992-4cc5-a6e4-81ed6bd8d3cb",
+    "canonical_game_id": "a52efe64-f410-4b63-9dd9-abc5b18e8f97",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Mets",
+    "away_team": "Los Angeles Dodgers",
     "market_type": "run_line",
     "selection": "away",
     "line": 2.5,
@@ -2560,13 +2924,15 @@
       "Caesars": -105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.455772-04:00"
+      "Caesars": "2026-08-27T15:47:55.462060-04:00"
     }
   },
   {
-    "canonical_game_id": "dbb2e359-e446-4b31-8f13-7bd7840749f1",
+    "canonical_game_id": "5f94b5e1-b0a8-4a09-8da1-f4db9da79b58",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Mets",
+    "away_team": "Los Angeles Dodgers",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -2574,13 +2940,15 @@
       "Caesars": -579
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.519991-04:00"
+      "Caesars": "2026-08-27T15:47:55.539073-04:00"
     }
   },
   {
-    "canonical_game_id": "3ee629eb-96c6-4ae1-b6fd-6c652b9525a9",
+    "canonical_game_id": "ebf0b1e1-75bb-4707-8f6f-58283adae1e5",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Mets",
+    "away_team": "Los Angeles Dodgers",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -2588,13 +2956,15 @@
       "Caesars": -110
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.424994-04:00"
+      "Caesars": "2026-08-27T15:47:55.427658-04:00"
     }
   },
   {
-    "canonical_game_id": "94f68d5b-15ad-498d-8cfd-e609928c1487",
+    "canonical_game_id": "1ce636b7-8197-4238-8c93-1b3001b3482b",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Mets",
+    "away_team": "Los Angeles Dodgers",
     "market_type": "run_line",
     "selection": "home",
     "line": 2.5,
@@ -2602,13 +2972,15 @@
       "Caesars": -125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.456067-04:00"
+      "Caesars": "2026-08-27T15:47:55.462406-04:00"
     }
   },
   {
-    "canonical_game_id": "5c1cfacf-44b6-4ce1-8929-a23cc052eca6",
+    "canonical_game_id": "6e9c5b99-7f1a-4e11-a320-2491b3b793cd",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Mets",
+    "away_team": "Los Angeles Dodgers",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -2616,13 +2988,15 @@
       "Caesars": 345
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.520413-04:00"
+      "Caesars": "2026-08-27T15:47:55.539461-04:00"
     }
   },
   {
-    "canonical_game_id": "85790feb-5d19-4108-abad-565c34683abc",
+    "canonical_game_id": "dd752177-8898-4cad-a806-350c30fcf4ce",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "New York Mets",
+    "away_team": "Los Angeles Dodgers",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -2630,13 +3004,15 @@
       "Caesars": -110
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.427530-04:00"
+      "Caesars": "2026-08-27T15:47:55.430971-04:00"
     }
   },
   {
-    "canonical_game_id": "e898215e-caf8-4ae1-908e-4aa508714d3a",
+    "canonical_game_id": "133bcb23-aed7-4f90-bcb4-13897ae7b57d",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Minnesota Twins",
+    "away_team": "Oakland Athletics",
     "market_type": "run_line",
     "selection": "away",
     "line": -6.5,
@@ -2644,13 +3020,15 @@
       "Caesars": 100
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.488167-04:00"
+      "Caesars": "2026-08-27T15:47:55.501838-04:00"
     }
   },
   {
-    "canonical_game_id": "a1c0cb14-2368-428d-8b40-edfd8214f465",
+    "canonical_game_id": "1b24b736-4189-4ccb-b908-2fc79738ad08",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Minnesota Twins",
+    "away_team": "Oakland Athletics",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -2658,13 +3036,15 @@
       "Caesars": 1000
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.489047-04:00"
+      "Caesars": "2026-08-27T15:47:55.502774-04:00"
     }
   },
   {
-    "canonical_game_id": "065118b9-aa6d-4391-8880-85482c50939e",
+    "canonical_game_id": "53e63dee-eff2-4ea1-bcc4-e148729cf256",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Minnesota Twins",
+    "away_team": "Oakland Athletics",
     "market_type": "total",
     "selection": "over",
     "line": 13.5,
@@ -2672,13 +3052,15 @@
       "Caesars": 100
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.433515-04:00"
+      "Caesars": "2026-08-27T15:47:55.438100-04:00"
     }
   },
   {
-    "canonical_game_id": "f0263aad-4023-4456-89d8-abaafbb1219e",
+    "canonical_game_id": "590f73db-55f3-4ba9-a194-61c6290a45a1",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Minnesota Twins",
+    "away_team": "Oakland Athletics",
     "market_type": "run_line",
     "selection": "home",
     "line": -6.5,
@@ -2686,13 +3068,15 @@
       "Caesars": -138
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.488457-04:00"
+      "Caesars": "2026-08-27T15:47:55.502155-04:00"
     }
   },
   {
-    "canonical_game_id": "ea627af7-bdb7-430d-a0f9-0895830cf8b5",
+    "canonical_game_id": "4fd807d6-ff75-43f1-99c5-72258e80c765",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Minnesota Twins",
+    "away_team": "Oakland Athletics",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -2700,13 +3084,15 @@
       "Caesars": -7502
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.489324-04:00"
+      "Caesars": "2026-08-27T15:47:55.503088-04:00"
     }
   },
   {
-    "canonical_game_id": "9a0694e6-7a96-4586-a455-d211210a41b9",
+    "canonical_game_id": "7cf0761d-351c-4c9f-b34e-b6ace6141840",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "Toronto Blue Jays",
     "market_type": "total",
     "selection": "over",
     "line": 5.5,
@@ -2714,13 +3100,15 @@
       "Caesars": -125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.499696-04:00"
+      "Caesars": "2026-08-27T15:47:55.515572-04:00"
     }
   },
   {
-    "canonical_game_id": "b12a03ff-23e8-421f-bc49-ca1cb3e6f8cc",
+    "canonical_game_id": "953308ac-e752-4d76-b627-092375b6e9d8",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Minnesota Twins",
+    "away_team": "Oakland Athletics",
     "market_type": "total",
     "selection": "under",
     "line": 13.5,
@@ -2728,13 +3116,15 @@
       "Caesars": -138
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.436912-04:00"
+      "Caesars": "2026-08-27T15:47:55.441307-04:00"
     }
   },
   {
-    "canonical_game_id": "d0ec0b72-806c-49a2-b0ad-880ff34b6590",
+    "canonical_game_id": "0125414d-35b2-4cd3-bf2e-36142e6bf1ac",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "Houston Astros",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -2742,13 +3132,15 @@
       "Caesars": -143
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.521407-04:00"
+      "Caesars": "2026-08-27T15:47:55.540411-04:00"
     }
   },
   {
-    "canonical_game_id": "b4d08310-42da-45fc-8a7a-3f86fadeae23",
+    "canonical_game_id": "08f8f8c7-0f83-4434-9ef3-4fcf9ae09b6e",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "Houston Astros",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -2756,13 +3148,15 @@
       "Caesars": 190
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.441963-04:00"
+      "Caesars": "2026-08-27T15:47:55.446063-04:00"
     }
   },
   {
-    "canonical_game_id": "4c8a2078-9c73-4bb6-8ad9-6a4794c902e6",
+    "canonical_game_id": "6eabfd1d-171e-4f30-8457-70d7e9efbd25",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "Houston Astros",
     "market_type": "total",
     "selection": "over",
     "line": 10.5,
@@ -2770,13 +3164,15 @@
       "Caesars": 105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.522213-04:00"
+      "Caesars": "2026-08-27T15:47:55.541317-04:00"
     }
   },
   {
-    "canonical_game_id": "600c639b-554c-4bb2-ac90-ab824ae03a2a",
+    "canonical_game_id": "4f4aa2dc-37c4-430d-9177-9738af64d127",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "Houston Astros",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -2784,13 +3180,15 @@
       "Caesars": 105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.521932-04:00"
+      "Caesars": "2026-08-27T15:47:55.541003-04:00"
     }
   },
   {
-    "canonical_game_id": "1f1bf1a6-8d1f-48a6-90cc-8a5fc83979a1",
+    "canonical_game_id": "92adb565-f3f6-411a-b0c9-cb980cdcd385",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "Houston Astros",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -2798,13 +3196,15 @@
       "Caesars": -274
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.445218-04:00"
+      "Caesars": "2026-08-27T15:47:55.449813-04:00"
     }
   },
   {
-    "canonical_game_id": "9b439391-ae6e-4de0-93da-47f8ec718ff5",
+    "canonical_game_id": "d59ff3eb-f96d-4b42-a306-9ffd296a814c",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "Toronto Blue Jays",
     "market_type": "run_line",
     "selection": "home",
     "line": -2.5,
@@ -2812,13 +3212,15 @@
       "Caesars": 150
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.515334-04:00"
+      "Caesars": "2026-08-27T15:47:55.533711-04:00"
     }
   },
   {
-    "canonical_game_id": "97abf022-6d51-40e8-9bba-5c002fc6ff07",
+    "canonical_game_id": "6e728089-a47b-465b-be4f-d96e8f31cc7b",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Chicago White Sox",
+    "away_team": "Houston Astros",
     "market_type": "total",
     "selection": "under",
     "line": 10.5,
@@ -2826,13 +3228,15 @@
       "Caesars": -143
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.522516-04:00"
+      "Caesars": "2026-08-27T15:47:55.541616-04:00"
     }
   },
   {
-    "canonical_game_id": "4bb92da9-0446-4e26-962c-b3dc84083620",
+    "canonical_game_id": "aabb452e-4d9d-4735-95da-38471ea6c78a",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Colorado Rockies",
     "market_type": "run_line",
     "selection": "away",
     "line": -4.5,
@@ -2840,13 +3244,15 @@
       "Caesars": -105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.501713-04:00"
+      "Caesars": "2026-08-27T15:47:55.517975-04:00"
     }
   },
   {
-    "canonical_game_id": "a43dcbae-1889-4efc-b4af-8d303726ec1a",
+    "canonical_game_id": "07a88dbb-9fb4-4f04-b4f4-474886ad2c03",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Colorado Rockies",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -2854,13 +3260,15 @@
       "Caesars": 881
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.503400-04:00"
+      "Caesars": "2026-08-27T15:47:55.519947-04:00"
     }
   },
   {
-    "canonical_game_id": "4be53c6f-d7e4-4598-b72f-466930394e1c",
+    "canonical_game_id": "be861619-c095-4595-8fa0-6a30254fdcbc",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Colorado Rockies",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -2868,13 +3276,15 @@
       "Caesars": -105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.452296-04:00"
+      "Caesars": "2026-08-27T15:47:55.457727-04:00"
     }
   },
   {
-    "canonical_game_id": "62461782-ea0f-43aa-ae85-bf10d905da6f",
+    "canonical_game_id": "8795d139-1470-48e2-96c6-20f70f3ab2b9",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Colorado Rockies",
     "market_type": "run_line",
     "selection": "home",
     "line": -4.5,
@@ -2882,13 +3292,15 @@
       "Caesars": -125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.501994-04:00"
+      "Caesars": "2026-08-27T15:47:55.518306-04:00"
     }
   },
   {
-    "canonical_game_id": "2ac9a26a-bfc0-4d57-a0cb-fb3a2e96b47b",
+    "canonical_game_id": "61d8a36f-da52-449a-a9a1-e2d7332c04af",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Colorado Rockies",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -2896,13 +3308,15 @@
       "Caesars": -4003
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.503972-04:00"
+      "Caesars": "2026-08-27T15:47:55.520551-04:00"
     }
   },
   {
-    "canonical_game_id": "0d42175e-cf9b-4e42-b3b4-bacb0f53f420",
+    "canonical_game_id": "42b5b06d-197b-4fcf-89d6-8a0601c9d77a",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "Toronto Blue Jays",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -2910,13 +3324,15 @@
       "Caesars": -3304
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.516742-04:00"
+      "Caesars": "2026-08-27T15:47:55.535318-04:00"
     }
   },
   {
-    "canonical_game_id": "9d59ead4-f69f-4412-bc48-f53af8c7ea95",
+    "canonical_game_id": "58ceb4fa-3c83-44a0-8d51-8311104db8c3",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Colorado Rockies",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -2924,13 +3340,15 @@
       "Caesars": -125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.455175-04:00"
+      "Caesars": "2026-08-27T15:47:55.461294-04:00"
     }
   },
   {
-    "canonical_game_id": "bf68c903-6fbb-4eee-97d5-5cfdeab382df",
+    "canonical_game_id": "1ba2299e-02df-42c0-8413-655d21547354",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "St. Louis Cardinals",
+    "away_team": "Cincinnati Reds",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -2938,13 +3356,15 @@
       "Caesars": -150
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.458257-04:00"
+      "Caesars": "2026-08-27T15:47:55.464945-04:00"
     }
   },
   {
-    "canonical_game_id": "f9f76cef-fb63-4614-becc-0fe11bd60054",
+    "canonical_game_id": "2ae3c9a4-aa98-47e8-810c-7f30b29c4fe7",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "St. Louis Cardinals",
+    "away_team": "Cincinnati Reds",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -2952,13 +3372,15 @@
       "Caesars": 172
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.459708-04:00"
+      "Caesars": "2026-08-27T15:47:55.467195-04:00"
     }
   },
   {
-    "canonical_game_id": "7d0621de-4f6a-4739-a68d-11d1209901e7",
+    "canonical_game_id": "3cd49768-928b-46ed-9b8d-b2699f705425",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "St. Louis Cardinals",
+    "away_team": "Cincinnati Reds",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -2966,13 +3388,15 @@
       "Caesars": -105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.461634-04:00"
+      "Caesars": "2026-08-27T15:47:55.469180-04:00"
     }
   },
   {
-    "canonical_game_id": "48d5c209-1409-4ea8-9266-b8f0cd561c0d",
+    "canonical_game_id": "acdffdb4-7a58-42bb-9201-83a56b5f5a04",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "St. Louis Cardinals",
+    "away_team": "Cincinnati Reds",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -2980,13 +3404,15 @@
       "Caesars": 110
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.462424-04:00"
+      "Caesars": "2026-08-27T15:47:55.470115-04:00"
     }
   },
   {
-    "canonical_game_id": "7a4f3bd7-fd5c-4440-b89c-5ccf8a6365fb",
+    "canonical_game_id": "62900d76-0061-4d0b-a3a4-e5f0dea4c0b8",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "Toronto Blue Jays",
     "market_type": "total",
     "selection": "under",
     "line": 5.5,
@@ -2994,13 +3420,15 @@
       "Caesars": -105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.499974-04:00"
+      "Caesars": "2026-08-27T15:47:55.515899-04:00"
     }
   },
   {
-    "canonical_game_id": "2819155f-2add-4ebe-a01c-ada3a59164eb",
+    "canonical_game_id": "7f76a960-62f7-4597-8894-475d982633de",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "St. Louis Cardinals",
+    "away_team": "Cincinnati Reds",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -3008,13 +3436,15 @@
       "Caesars": -244
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.463473-04:00"
+      "Caesars": "2026-08-27T15:47:55.471339-04:00"
     }
   },
   {
-    "canonical_game_id": "4a2f2abe-2877-4319-844d-a7282e8d169e",
+    "canonical_game_id": "c3d05c45-a6e9-437e-adb8-f70058187349",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "St. Louis Cardinals",
+    "away_team": "Cincinnati Reds",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -3022,13 +3452,15 @@
       "Caesars": -125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.464204-04:00"
+      "Caesars": "2026-08-27T15:47:55.472182-04:00"
     }
   },
   {
-    "canonical_game_id": "5cde1590-ff4c-46c7-91d3-3d6d4360ee61",
+    "canonical_game_id": "4a194334-b5dc-4409-8714-dfa64757b032",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Seattle Mariners",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -3036,13 +3468,15 @@
       "Caesars": -138
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.486249-04:00"
+      "Caesars": "2026-08-27T15:47:55.499844-04:00"
     }
   },
   {
-    "canonical_game_id": "92db858a-01bc-4796-b601-01ef88be6ad8",
+    "canonical_game_id": "aeed1299-7492-41ac-852d-5473bf9a2696",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Seattle Mariners",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -3050,13 +3484,15 @@
       "Caesars": 172
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.510821-04:00"
+      "Caesars": "2026-08-27T15:47:55.528445-04:00"
     }
   },
   {
-    "canonical_game_id": "cc5960ae-6165-4caa-b53f-9663c7cbdfd1",
+    "canonical_game_id": "75311f5e-4a25-4bf7-b78a-545d7d68efa1",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Seattle Mariners",
     "market_type": "total",
     "selection": "over",
     "line": 5.5,
@@ -3064,13 +3500,15 @@
       "Caesars": -138
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.470338-04:00"
+      "Caesars": "2026-08-27T15:47:55.478807-04:00"
     }
   },
   {
-    "canonical_game_id": "9ee00be6-f550-4472-9c58-b5c28ea57401",
+    "canonical_game_id": "18cefc5f-c157-44b8-b5c5-f20f71761523",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Seattle Mariners",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -3078,13 +3516,15 @@
       "Caesars": 100
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.486540-04:00"
+      "Caesars": "2026-08-27T15:47:55.500149-04:00"
     }
   },
   {
-    "canonical_game_id": "b7a7bded-b94a-41eb-bb1f-2afa559b1853",
+    "canonical_game_id": "4f8bff48-b349-433a-9b88-c034a089e4ce",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Seattle Mariners",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -3092,13 +3532,15 @@
       "Caesars": -244
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.511111-04:00"
+      "Caesars": "2026-08-27T15:47:55.528759-04:00"
     }
   },
   {
-    "canonical_game_id": "dfa15d73-da6e-41a6-b0c8-26dc70ad5968",
+    "canonical_game_id": "0af5841a-6a54-435d-a9e0-a279321f346c",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Seattle Mariners",
     "market_type": "total",
     "selection": "under",
     "line": 5.5,
@@ -3106,13 +3548,15 @@
       "Caesars": 100
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.472899-04:00"
+      "Caesars": "2026-08-27T15:47:55.481698-04:00"
     }
   },
   {
-    "canonical_game_id": "53a2c4df-9ade-4a39-8c59-aef82ffe2057",
+    "canonical_game_id": "18d94583-ac0d-4474-bf1a-138679751b1a",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Francisco Giants",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -3120,13 +3564,15 @@
       "Caesars": -225
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.474095-04:00"
+      "Caesars": "2026-08-27T15:47:55.483406-04:00"
     }
   },
   {
-    "canonical_game_id": "f1e545d3-b843-4a8c-a9e1-b752b2828c45",
+    "canonical_game_id": "5f91557e-91b3-40d6-8407-f9591cef2066",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Francisco Giants",
+    "away_team": "Los Angeles Angels",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -3134,13 +3580,15 @@
       "Caesars": -120
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.475273-04:00"
+      "Caesars": "2026-08-27T15:47:55.485641-04:00"
     }
   },
   {
-    "canonical_game_id": "ad671a01-17b5-4f17-bd0c-04668391eb86",
+    "canonical_game_id": "0e9bb73c-ec51-41d8-bcc3-7d0e4ac3c3d7",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Francisco Giants",
+    "away_team": "Los Angeles Angels",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -3148,13 +3596,15 @@
       "Caesars": 185
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.476673-04:00"
+      "Caesars": "2026-08-27T15:47:55.487876-04:00"
     }
   },
   {
-    "canonical_game_id": "036cc2cd-7b51-4598-89af-04a5f1dbd5d4",
+    "canonical_game_id": "47ca40a1-92fa-409a-b819-54821d2e8f43",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Francisco Giants",
+    "away_team": "Los Angeles Angels",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -3162,13 +3612,15 @@
       "Caesars": 100
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.477674-04:00"
+      "Caesars": "2026-08-27T15:47:55.489771-04:00"
     }
   },
   {
-    "canonical_game_id": "8cb28438-b4a7-465e-9eb1-e4db8261a649",
+    "canonical_game_id": "7fbf9eaf-82de-491a-9f29-c239c8bcebd6",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Seattle Mariners",
     "market_type": "total",
     "selection": "over",
     "line": 6.5,
@@ -3176,13 +3628,15 @@
       "Caesars": 100
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.481452-04:00"
+      "Caesars": "2026-08-27T15:47:55.494477-04:00"
     }
   },
   {
-    "canonical_game_id": "d8364a1b-24ff-44b2-a5c5-799bc6d012ca",
+    "canonical_game_id": "3ad31382-1757-4841-99b3-a3100a4ebaed",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Texas Rangers",
+    "away_team": "Seattle Mariners",
     "market_type": "total",
     "selection": "under",
     "line": 6.5,
@@ -3190,13 +3644,15 @@
       "Caesars": -138
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.481734-04:00"
+      "Caesars": "2026-08-27T15:47:55.494818-04:00"
     }
   },
   {
-    "canonical_game_id": "3ece2419-5246-4b95-a588-01871c446a62",
+    "canonical_game_id": "935d1206-b5fd-47cc-88eb-7109f96e73a6",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "San Diego Padres",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -3204,13 +3660,15 @@
       "Caesars": 120
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.494244-04:00"
+      "Caesars": "2026-08-27T15:47:55.508436-04:00"
     }
   },
   {
-    "canonical_game_id": "0555b06c-a353-4eaf-a591-57a2ea183370",
+    "canonical_game_id": "b7a0c501-39b2-4a67-96dc-738c0bd65ab7",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Miami Marlins",
+    "away_team": "San Diego Padres",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -3218,13 +3676,15 @@
       "Caesars": -164
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.494522-04:00"
+      "Caesars": "2026-08-27T15:47:55.508818-04:00"
     }
   },
   {
-    "canonical_game_id": "288e4abe-a979-4cfd-9eec-65c8cca6a1ec",
+    "canonical_game_id": "82cf5a78-cea9-4966-be77-fcce8f6817e5",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Atlanta Braves",
     "market_type": "run_line",
     "selection": "away",
     "line": 2.5,
@@ -3232,13 +3692,15 @@
       "Caesars": 120
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.490896-04:00"
+      "Caesars": "2026-08-27T15:47:55.504564-04:00"
     }
   },
   {
-    "canonical_game_id": "096d339b-703b-474a-a3dc-f27814d5e6f4",
+    "canonical_game_id": "028fad8d-ef19-45f6-bae6-fd4a036d67a0",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Colorado Rockies",
     "market_type": "total",
     "selection": "over",
     "line": 7.5,
@@ -3246,13 +3708,15 @@
       "Caesars": -125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.502533-04:00"
+      "Caesars": "2026-08-27T15:47:55.518963-04:00"
     }
   },
   {
-    "canonical_game_id": "7763639b-6e52-4ed6-af98-747ba38ac555",
+    "canonical_game_id": "28a662a2-5f1e-444b-bb44-f62244975ade",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Colorado Rockies",
     "market_type": "total",
     "selection": "under",
     "line": 7.5,
@@ -3260,13 +3724,15 @@
       "Caesars": -105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.502815-04:00"
+      "Caesars": "2026-08-27T15:47:55.519312-04:00"
     }
   },
   {
-    "canonical_game_id": "1a8f2a8a-bf92-456f-bcbd-2745c2346875",
+    "canonical_game_id": "76984435-b24c-40a9-a664-72d71f53b1ef",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Francisco Giants",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "over",
     "line": 8.5,
@@ -3274,13 +3740,15 @@
       "Caesars": -115
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.505370-04:00"
+      "Caesars": "2026-08-27T15:47:55.522082-04:00"
     }
   },
   {
-    "canonical_game_id": "5999be63-f231-485f-909c-bc6e8148a426",
+    "canonical_game_id": "1210e386-7eb1-4fa3-a358-e971907cc205",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "San Francisco Giants",
+    "away_team": "Los Angeles Angels",
     "market_type": "total",
     "selection": "under",
     "line": 8.5,
@@ -3288,13 +3756,15 @@
       "Caesars": -105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.506145-04:00"
+      "Caesars": "2026-08-27T15:47:55.522729-04:00"
     }
   },
   {
-    "canonical_game_id": "579e4249-a8a7-4fbf-9f77-d4df55e2d290",
+    "canonical_game_id": "97dde8ec-f10d-4763-8b40-f190a8b0d272",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Atlanta Braves",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -3302,13 +3772,15 @@
       "Caesars": -479
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.507000-04:00"
+      "Caesars": "2026-08-27T15:47:55.523736-04:00"
     }
   },
   {
-    "canonical_game_id": "d6c82ab7-cf29-47b0-b2ab-947b6e9e892f",
+    "canonical_game_id": "26eb74ad-e236-4026-8742-7aeb9bcc5231",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Minnesota Twins",
+    "away_team": "Oakland Athletics",
     "market_type": "total",
     "selection": "over",
     "line": 12.5,
@@ -3316,13 +3788,15 @@
       "Caesars": -138
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.509062-04:00"
+      "Caesars": "2026-08-27T15:47:55.526409-04:00"
     }
   },
   {
-    "canonical_game_id": "3c7bcbc8-6702-4435-8846-f4168d477112",
+    "canonical_game_id": "6e26b124-ab61-4881-bcfe-f8e79e23c93f",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Minnesota Twins",
+    "away_team": "Oakland Athletics",
     "market_type": "total",
     "selection": "under",
     "line": 12.5,
@@ -3330,13 +3804,15 @@
       "Caesars": 100
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.509343-04:00"
+      "Caesars": "2026-08-27T15:47:55.526803-04:00"
     }
   },
   {
-    "canonical_game_id": "f7693e28-10e6-4d18-80d5-f269a979f8c8",
+    "canonical_game_id": "39bb4a9e-9992-41a6-8a44-50a066fe9dce",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Atlanta Braves",
     "market_type": "run_line",
     "selection": "away",
     "line": 1.5,
@@ -3344,13 +3820,15 @@
       "Caesars": -150
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.513077-04:00"
+      "Caesars": "2026-08-27T15:47:55.531191-04:00"
     }
   },
   {
-    "canonical_game_id": "aa6c47d9-46de-4e63-9cc1-c1bb5ca1b74e",
+    "canonical_game_id": "aaf92952-9fb3-4bd9-b2d2-58bb703cdf4e",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "Toronto Blue Jays",
     "market_type": "total",
     "selection": "over",
     "line": 4.5,
@@ -3358,13 +3836,15 @@
       "Caesars": -250
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.515898-04:00"
+      "Caesars": "2026-08-27T15:47:55.534368-04:00"
     }
   },
   {
-    "canonical_game_id": "1ad903be-ead8-4439-8740-30d559f1e1b6",
+    "canonical_game_id": "7b791bc9-aef0-4b63-8639-0556e436f1f3",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Boston Red Sox",
+    "away_team": "Toronto Blue Jays",
     "market_type": "total",
     "selection": "under",
     "line": 4.5,
@@ -3372,13 +3852,15 @@
       "Caesars": 175
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.516177-04:00"
+      "Caesars": "2026-08-27T15:47:55.534667-04:00"
     }
   },
   {
-    "canonical_game_id": "7486c937-89a0-4b15-8672-cc4b0d2a2710",
+    "canonical_game_id": "2083e6bd-d5f7-48d7-a873-e9623735b0dc",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Atlanta Braves",
     "market_type": "total",
     "selection": "over",
     "line": 6.5,
@@ -3386,13 +3868,15 @@
       "Caesars": -110
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.524405-04:00"
+      "Caesars": "2026-08-27T15:47:55.543750-04:00"
     }
   },
   {
-    "canonical_game_id": "fe0e8ff9-1362-4442-94d5-1071c043c686",
+    "canonical_game_id": "26673da3-a319-4d3a-97a2-165eaed7a05b",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Minnesota Twins",
+    "away_team": "Oakland Athletics",
     "market_type": "run_line",
     "selection": "away",
     "line": -7.5,
@@ -3400,13 +3884,15 @@
       "Caesars": -138
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.527940-04:00"
+      "Caesars": "2026-08-27T15:47:55.546918-04:00"
     }
   },
   {
-    "canonical_game_id": "b04e7b3e-7772-4a39-b511-dede2c94fefe",
+    "canonical_game_id": "d6d681ef-9e99-4fcc-8d1d-00315f7efe66",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Minnesota Twins",
+    "away_team": "Oakland Athletics",
     "market_type": "run_line",
     "selection": "home",
     "line": -7.5,
@@ -3414,13 +3900,15 @@
       "Caesars": 100
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.528677-04:00"
+      "Caesars": "2026-08-27T15:47:55.547518-04:00"
     }
   },
   {
-    "canonical_game_id": "b863a914-74de-466a-83f7-4915b7281003",
+    "canonical_game_id": "3c3c4c36-059b-43e6-816d-eb8ed704a889",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Atlanta Braves",
     "market_type": "run_line",
     "selection": "home",
     "line": 1.5,
@@ -3428,13 +3916,15 @@
       "Caesars": -125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.529802-04:00"
+      "Caesars": "2026-08-27T15:47:55.548403-04:00"
     }
   },
   {
-    "canonical_game_id": "21ee4151-4660-43a1-b95b-8e57fd38fdca",
+    "canonical_game_id": "07c4ce94-494c-43ae-adc4-26a9f2d3914b",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Atlanta Braves",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -3442,13 +3932,15 @@
       "Caesars": 300
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.531300-04:00"
+      "Caesars": "2026-08-27T15:47:55.549657-04:00"
     }
   },
   {
-    "canonical_game_id": "794f6afd-707a-436d-9072-c70167bba64c",
+    "canonical_game_id": "afe1097b-3c9d-41c7-895f-7bda47f4dd6d",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Atlanta Braves",
     "market_type": "total",
     "selection": "under",
     "line": 6.5,
@@ -3456,13 +3948,15 @@
       "Caesars": -110
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.532427-04:00"
+      "Caesars": "2026-08-27T15:47:55.550633-04:00"
     }
   },
   {
-    "canonical_game_id": "c00fc458-7e15-4a58-8460-d4261cc9d2b0",
+    "canonical_game_id": "12df7ad6-e2ae-4d8e-bba3-b83d9a308c06",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Washington Nationals",
+    "away_team": "Arizona Diamondbacks",
     "market_type": "run_line",
     "selection": "away",
     "line": -1.5,
@@ -3470,13 +3964,15 @@
       "Caesars": -225
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.536003-04:00"
+      "Caesars": "2026-08-27T15:47:55.553689-04:00"
     }
   },
   {
-    "canonical_game_id": "823006b0-ca4b-43e4-947f-d12545966049",
+    "canonical_game_id": "d443b3f9-4471-43c8-8b96-a30635089036",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Washington Nationals",
+    "away_team": "Arizona Diamondbacks",
     "market_type": "moneyline",
     "selection": "away",
     "line": null,
@@ -3484,13 +3980,15 @@
       "Caesars": 126
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.538190-04:00"
+      "Caesars": "2026-08-27T15:47:55.555444-04:00"
     }
   },
   {
-    "canonical_game_id": "acb316f7-9f0b-48f4-b5b6-8bd7b1acd0fe",
+    "canonical_game_id": "72e76516-f517-4ba6-aab8-d3aa13ede211",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Washington Nationals",
+    "away_team": "Arizona Diamondbacks",
     "market_type": "total",
     "selection": "over",
     "line": 13.5,
@@ -3498,13 +3996,15 @@
       "Caesars": -105
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.540735-04:00"
+      "Caesars": "2026-08-27T15:47:55.557533-04:00"
     }
   },
   {
-    "canonical_game_id": "7dc4d97f-d7c7-495c-a1bf-e4c9f836d8dc",
+    "canonical_game_id": "af4316be-d738-4b09-a7ee-3417d2289a27",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Washington Nationals",
+    "away_team": "Arizona Diamondbacks",
     "market_type": "run_line",
     "selection": "home",
     "line": -1.5,
@@ -3512,13 +4012,15 @@
       "Caesars": 162
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.542147-04:00"
+      "Caesars": "2026-08-27T15:47:55.558427-04:00"
     }
   },
   {
-    "canonical_game_id": "ce9d1f70-3459-4fb1-900c-abb3f45dfef6",
+    "canonical_game_id": "5994b76a-0a80-49a4-9d10-e93c0d4e4748",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Washington Nationals",
+    "away_team": "Arizona Diamondbacks",
     "market_type": "moneyline",
     "selection": "home",
     "line": null,
@@ -3526,13 +4028,15 @@
       "Caesars": -174
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.544019-04:00"
+      "Caesars": "2026-08-27T15:47:55.559699-04:00"
     }
   },
   {
-    "canonical_game_id": "0cbf4407-01b6-45fa-8962-f420629eac1b",
+    "canonical_game_id": "75545339-d8e9-4cf9-8c28-e9dcfff7e5b4",
     "sport_key": "Baseball",
     "league_key": "MLB",
+    "home_team": "Washington Nationals",
+    "away_team": "Arizona Diamondbacks",
     "market_type": "total",
     "selection": "under",
     "line": 13.5,
@@ -3540,7 +4044,7 @@
       "Caesars": -125
     },
     "updated_at": {
-      "Caesars": "2026-08-27T02:27:12.545449-04:00"
+      "Caesars": "2026-08-27T15:47:55.560981-04:00"
     }
   }
 ]

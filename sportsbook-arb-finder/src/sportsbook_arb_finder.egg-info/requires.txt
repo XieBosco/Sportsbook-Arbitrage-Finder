@@ -1,6 +1,10 @@
 websocket-client
 requests
 pyyaml
+pydantic
 fastapi
 uvicorn
+msgpack
+lz4
 pytest
+tzdata

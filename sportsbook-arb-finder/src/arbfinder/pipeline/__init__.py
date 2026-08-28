@@ -1,5 +1,5 @@
-"""Pipeline — full parse → normalise → match → output flow."""
+"""Pipeline — full parse → normalise → match → output → scan flow."""
 
-from arbfinder.pipeline.orchestrator import handle_raw_payload
+from arbfinder.pipeline.scanner_orchestrator import handle_matched_selection
 
-__all__ = ["handle_raw_payload"]
+__all__ = ["handle_matched_selection", "handle_raw_payload"]
