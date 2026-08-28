@@ -645,3 +645,140 @@ needed given the pure-function/dataclass design):
 
 Keep every stage's function signature exactly as specified above so each module can be tested 
 in isolation with no dependency on the others beyond the shared dataclasses.
+
+# Scanner Implementation Prompt
+
+Build a Python scanner module that consumes MatchedSelection objects (already 
+produced by an existing matching module) and detects arbitrage opportunities. Use frozen 
+dataclasses, type hints throughout, and no external dependencies beyond the standard library 
+except where noted (pydantic for config validation).
+
+CONTEXT — existing MatchedSelection schema (already implemented upstream, do not modify):
+@dataclass
+class MatchedSelection:
+    canonical_game_id: str
+    sport_key: str
+    league_key: str
+    home_team: str
+    away_team: str
+    market_type: str
+    selection: str
+    line: float | None
+    book_odds: dict[str, float]      # book_id -> odds
+    updated_at: dict[str, datetime]  # book_id -> captured_at (UTC, tz-aware)
+
+MODULE 1 — scanner/schema.py
+Define frozen dataclass `Leg`: book_id (str), selection (str), odds_decimal (float), 
+stake (float), captured_at (datetime).
+Define frozen dataclass `Opportunity`: opportunity_id (str, uuid4), canonical_game_id (str), 
+sport_key (str), league_key (str), home_team (str), away_team (str), market_type (str),
+line (float | None), margin (float), legs (list[Leg]), 
+detected_at (datetime), expires_hint_seconds (float | None).
+
+MODULE 2 — scanner/market_grouper.py
+Define frozen dataclass `MarketGroupKey`: canonical_game_id (str), market_type (str), 
+period (str), line (float | None).
+Implement class `MarketGrouper` with an internal dict[MarketGroupKey, dict[str, MatchedSelection]] 
+(inner dict keyed by `selection` string). Methods:
+- `add(self, selection: MatchedSelection) -> MarketGroupKey` — builds the key, inserts/updates 
+  the group, returns the key.
+- `get_group(self, key: MarketGroupKey) -> dict[str, MatchedSelection]` — returns {} if absent.
+- `is_complete(self, key: MarketGroupKey, expected_selections: set[str]) -> bool` — checks 
+  expected_selections.issubset(group.keys()).
+
+MODULE 3 — scanner/staleness_filter.py
+Implement class `StalenessFilter` with constructor `__init__(self, max_age_seconds: float)`. 
+Method `is_fresh(self, matched: MatchedSelection, now: datetime) -> bool` returns True only if 
+every value in matched.updated_at is within max_age_seconds of `now`. This guards against 
+silently disconnected feeds (dead websocket/backgrounded browser tab) and suspended markets 
+whose last-known price is stale but still present in the bucket — both produce phantom 
+arbitrage if not filtered.
+
+MODULE 4 — core/arbitrage.py (pure functions, no I/O, highest test priority)
+Define frozen dataclass `ArbCheckResult`: is_arbitrage (bool), margin (float), 
+best_odds_by_selection (dict[str, tuple[str, float]])  # selection -> (book_id, odds_decimal)
+Implement `check_arbitrage(group: dict[str, MatchedSelection]) -> ArbCheckResult`:
+for each selection, find the book offering the best (highest) odds_decimal; compute 
+implied_sum = sum(1/odds for each best odds); margin = 1 - implied_sum; is_arbitrage = margin > 0.
+Implement `has_single_book_conflict(result: ArbCheckResult) -> bool`: returns True if the same 
+book_id appears as the best price for more than one selection (this would mean the "arb" isn't 
+actually hedged across different books and must be rejected).
+
+MODULE 5 — core/stake_calculator.py
+Implement `compute_stakes(odds_by_selection: dict[str, float], total_stake: float) -> dict[str, float]`:
+for each selection, stake = total_stake * (1/odds) / sum(1/odds for all odds). Returns a dict 
+selection -> stake, summing to total_stake (allow for floating point tolerance).
+
+MODULE 6 — scanner/threshold_config.py
+Use pydantic BaseModel (not raw dataclass) for `ScannerThresholds`: min_margin (float, e.g. 
+default 0.01), max_odds_age_seconds (float, e.g. default 5.0), min_legs_required (int, default 2), 
+excluded_book_pairs (set of tuple[str, str], default empty). Load from a YAML file at 
+config/scanner_thresholds.yaml with schema validation — invalid config must raise at startup, 
+not silently fall back to defaults.
+
+MODULE 7 — scanner/dedup_tracker.py
+Implement class `DedupTracker` with constructor `__init__(self, cooldown_seconds: float)`. 
+Internal dict[MarketGroupKey, datetime]. Method `should_emit(self, key: MarketGroupKey, 
+now: datetime) -> bool`: returns True and updates the internal timestamp if no prior alert 
+exists for this key within cooldown_seconds, else returns False. This prevents re-alerting 
+on every single odds tick for an arb that remains open across multiple updates.
+
+MODULE 8 — scanner/sinks/base_sink.py
+Define abstract class `OpportunitySink` with abstract method 
+`emit(self, opportunity: Opportunity) -> None`.
+Provide two concrete stub implementations for now (to be filled in against real alerting/storage 
+modules later): 
+- `scanner/sinks/console_sink.py`: `ConsoleSink(OpportunitySink)` that prints a formatted 
+  summary of the opportunity (game, margin, legs with book/odds/stake).
+- `scanner/sinks/storage_sink.py`: `StorageSink(OpportunitySink)` with a stub `emit` that 
+  appends the opportunity (as a dict, via dataclasses.asdict) to an in-memory list, exposing 
+  `get_all(self) -> list[dict]` for later inspection/testing.
+
+MODULE 9 — scanner/scanner.py
+Implement class `Scanner`, constructor takes: grouper (MarketGrouper), 
+thresholds (ScannerThresholds), staleness_filter (StalenessFilter), dedup (DedupTracker), 
+sinks (list[OpportunitySink]), expected_selections_by_market (dict[str, set[str]] — e.g. 
+{"moneyline": {"home","draw","away"}, "total": {"over","under"}} — a simplified stand-in for 
+full per-sport MarketRules, to be replaced later), stake_budget_fn (Callable[[MarketGroupKey], float] 
+— injected function providing available stake per opportunity, stub this as a fixed constant 
+for now).
+Method `process(self, matched: MatchedSelection) -> Opportunity | None`:
+1. Add to grouper, get group_key.
+2. Look up expected selections for matched.market_type; if group is not complete 
+   (grouper.is_complete), return None.
+3. Get the full group; if any leg fails staleness_filter.is_fresh(), return None.
+4. Run check_arbitrage(group). If not is_arbitrage or margin < thresholds.min_margin, return None.
+5. If has_single_book_conflict(result), return None.
+6. If not dedup.should_emit(group_key, now), return None.
+7. Get stake_budget via stake_budget_fn(group_key), compute stakes via compute_stakes.
+8. Build and return an Opportunity, populating all fields (home_team/away_team/sport_key/
+   league_key carried from any MatchedSelection in the group — they're identical across the group 
+   by construction since they share canonical_game_id).
+9. Call emit() on every sink with the built Opportunity, in order, continuing even if one sink 
+   raises (log the exception, don't let one broken sink block the others).
+
+MODULE 10 — pipeline/scanner_orchestrator.py
+Implement function `handle_matched_selection(matched: MatchedSelection, scanner: Scanner) -> Opportunity | None` 
+as a thin pass-through, matching the style of the existing parser/normalizer/matcher orchestration 
+functions already in the codebase.
+
+TESTING — pytest, plain dataclass fixtures, no mocking framework needed:
+- test_arbitrage.py: verify known two-way and three-way arbitrage/non-arbitrage cases against 
+  hand-computed margins; verify has_single_book_conflict correctly flags same-book-both-legs cases.
+- test_stake_calculator.py: verify stakes sum to total_stake and are inversely proportional to odds.
+- test_market_grouper.py: verify selections with matching keys group together; verify differing 
+  `period` values do NOT merge into the same group even with identical market_type/line.
+- test_staleness_filter.py: verify a group with one stale leg (among otherwise-fresh legs) is 
+  rejected.
+- test_scanner_integration.py: end-to-end from a sequence of MatchedSelection objects (simulating 
+  incremental updates arriving one selection at a time) through to a Scanner.process() call, 
+  verifying: no Opportunity is emitted until the group is complete; a real arb produces exactly 
+  one Opportunity; a repeat scan of the same still-open arb within cooldown does not re-emit; 
+  a margin below min_margin does not emit.
+
+Keep every function signature exactly as specified so each module is independently testable 
+using only the dataclasses defined above — no dependency on the real matching or alerting 
+modules required for tests.
+
+ADDITIONAL INFO:
+.venv contains dependencies needed run this project.

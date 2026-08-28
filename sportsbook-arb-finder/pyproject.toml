@@ -9,6 +9,7 @@ dependencies = [
     "websocket-client",
     "requests",
     "pyyaml",
+    "pydantic",
     "fastapi",
     "uvicorn",
     "msgpack",

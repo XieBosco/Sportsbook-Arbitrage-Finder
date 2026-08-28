@@ -4,6 +4,10 @@ Version: 0.1.0
 Requires-Dist: websocket-client
 Requires-Dist: requests
 Requires-Dist: pyyaml
+Requires-Dist: pydantic
 Requires-Dist: fastapi
 Requires-Dist: uvicorn
+Requires-Dist: msgpack
+Requires-Dist: lz4
 Requires-Dist: pytest
+Requires-Dist: tzdata
