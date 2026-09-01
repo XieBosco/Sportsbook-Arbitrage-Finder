@@ -102,9 +102,21 @@ class FanDuelParser(BookParser):
             m_id = str(market.get("marketId"))
 
             # Lookup metadata from the reference dictionary
-            market_meta = self.reference_data["markets"].get(m_id, {})
+            market_meta = self.reference_data["markets"].get(m_id)
+            if not market_meta:
+                from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+                record_unresolved_parser_id(self.book_name, "market_id", m_id)
+                market_meta = {}
+            
             event_id = market_meta.get("eventId", "")
-            event_meta = self.reference_data["events"].get(event_id, {})
+            event_meta = self.reference_data["events"].get(event_id)
+            if not event_meta and event_id:
+                from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+                record_unresolved_parser_id(self.book_name, "event_id", event_id)
+                event_meta = {}
+            elif not event_meta:
+                event_meta = {}
+
             event_name = event_meta.get("name", "Unknown Game")
             market_type = market_meta.get("marketType", "UNKNOWN_MARKET")
 
@@ -122,9 +134,16 @@ class FanDuelParser(BookParser):
                     continue
 
                 # Lookup Selection metadata
-                sel_meta = self.reference_data["selections"].get(f"{m_id}_{s_id}", {})
+                sel_meta = self.reference_data["selections"].get(f"{m_id}_{s_id}")
+                if not sel_meta:
+                    from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+                    record_unresolved_parser_id(self.book_name, "selection_id", f"{m_id}_{s_id}")
+                    sel_meta = {}
+                
                 runner_name = sel_meta.get("name", f"Selection {s_id}")
-                handicap = sel_meta.get("handicap", 0)
+                
+                # Use live handicap if available, otherwise fall back to cached
+                handicap = runner.get("handicap", sel_meta.get("handicap", 0))
 
                 handicap_val = None if handicap == 0 else float(handicap)
 

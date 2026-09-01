@@ -65,13 +65,14 @@ class Scanner:
         self._expected = expected_selections_by_market
         self._budget_fn = stake_budget_fn
 
-    def process(self, matched: MatchedSelection) -> Opportunity | None:
+    def process(self, matched: MatchedSelection, now: datetime | None = None) -> Opportunity | None:
         """Process a single *matched* selection through the full pipeline.
 
         Returns an :class:`Opportunity` if an arb is detected and passes
         all filters, or ``None`` otherwise.
         """
-        now = datetime.now(timezone.utc)
+        if now is None:
+            now = datetime.now(timezone.utc)
 
         # 1. Add to grouper, get group_key
         group_key = self._grouper.add(matched)
@@ -85,12 +86,15 @@ class Scanner:
 
         # 3. Staleness check on all legs in the group
         group = self._grouper.get_group(group_key)
-        for ms in group.values():
-            if not self._staleness.is_fresh(ms, now):
+        filtered_group = {}
+        for sel, ms in group.items():
+            filtered_ms = self._staleness.filter_stale_books(ms, now)
+            if filtered_ms is None:
                 return None
+            filtered_group[sel] = filtered_ms
 
         # 4. Arbitrage check
-        result = check_arbitrage(group)
+        result = check_arbitrage(filtered_group)
         if not result.is_arbitrage or result.margin < self._thresholds.min_margin:
             return None
 
@@ -110,13 +114,13 @@ class Scanner:
         stakes = compute_stakes(odds_by_selection, total_stake)
 
         # 8. Build Opportunity
-        # Pick any MatchedSelection in the group for shared fields
+        # Pick any MatchedSelection in the filtered group for shared fields
         # (they're identical across the group by construction).
-        representative = next(iter(group.values()))
+        representative = next(iter(filtered_group.values()))
 
         legs = []
         for sel, (book_id, decimal_odds) in result.best_odds_by_selection.items():
-            ms = group[sel]
+            ms = filtered_group[sel]
             captured_at = ms.updated_at.get(book_id, now)
             legs.append(
                 Leg(

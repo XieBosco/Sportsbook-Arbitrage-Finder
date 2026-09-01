@@ -26,171 +26,247 @@
         "Caesars": "Washington Nationals"
     },
     "Detroit Tigers": {
+        "DraftKings": "DET Tigers",
         "FanDuel": "Detroit Tigers",
         "BetMGM": "Detroit Tigers",
         "Betano": "Detroit Tigers",
         "Caesars": "Detroit Tigers"
     },
     "Miami Marlins": {
+        "DraftKings": "MIA Marlins",
         "FanDuel": "Miami Marlins",
         "BetMGM": "Miami Marlins",
         "Betano": "Miami Marlins",
         "Caesars": "Miami Marlins"
     },
     "Milwaukee Brewers": {
+        "DraftKings": "MIL Brewers",
         "FanDuel": "Milwaukee Brewers",
         "BetMGM": "Milwaukee Brewers",
         "Betano": "Milwaukee Brewers",
         "Caesars": "Milwaukee Brewers"
     },
     "Oakland Athletics": {
+        "DraftKings": "Athletics",
         "FanDuel": "Athletics",
         "BetMGM": "Athletics",
         "Betano": "Athletics",
         "Caesars": "Athletics"
     },
     "Atlanta Braves": {
+        "DraftKings": "ATL Braves",
         "FanDuel": "Atlanta Braves",
         "BetMGM": "Atlanta Braves",
         "Betano": "Atlanta Braves",
         "Caesars": "Atlanta Braves"
     },
     "St. Louis Cardinals": {
+        "DraftKings": "STL Cardinals",
         "FanDuel": "St. Louis Cardinals",
         "BetMGM": "St. Louis Cardinals",
         "Betano": "St. Louis Cardinals",
         "Caesars": "St. Louis Cardinals"
     },
     "New York Mets": {
+        "DraftKings": "NY Mets",
         "FanDuel": "New York Mets",
         "BetMGM": "New York Mets",
         "Betano": "New York Mets",
         "Caesars": "New York Mets"
     },
     "Chicago Cubs": {
+        "DraftKings": "CHI Cubs",
         "FanDuel": "Chicago Cubs",
         "BetMGM": "Chicago Cubs",
         "Betano": "Chicago Cubs",
         "Caesars": "Chicago Cubs"
     },
     "Boston Red Sox": {
+        "DraftKings": "BOS Red Sox",
         "FanDuel": "Boston Red Sox",
         "BetMGM": "Boston Red Sox",
         "Betano": "Boston Red Sox",
         "Caesars": "Boston Red Sox"
     },
     "Houston Texans": {
+        "DraftKings": "Houston Texans",
         "FanDuel": "Houston Texans",
         "BetMGM": "Houston Texans",
         "Betano": "Houston Texans",
         "Caesars": "Houston Texans"
     },
     "Los Angeles Chargers": {
+        "DraftKings": "Los Angeles Chargers",
         "FanDuel": "Los Angeles Chargers",
         "BetMGM": "Los Angeles Chargers",
         "Betano": "Los Angeles Chargers",
         "Caesars": "Los Angeles Chargers"
     },
     "San Diego Padres": {
+        "DraftKings": "SD Padres",
         "FanDuel": "San Diego Padres",
         "BetMGM": "San Diego Padres",
         "Betano": "San Diego Padres",
         "Caesars": "San Diego Padres"
     },
     "Arizona Diamondbacks": {
+        "DraftKings": "ARI Diamondbacks",
         "FanDuel": "Arizona Diamondbacks",
         "BetMGM": "Arizona Diamondbacks",
         "Betano": "Arizona Diamondbacks",
         "Caesars": "Arizona Diamondbacks"
     },
     "Philadelphia Phillies": {
+        "DraftKings": "PHI Phillies",
         "FanDuel": "Philadelphia Phillies",
         "BetMGM": "Philadelphia Phillies",
         "Betano": "Philadelphia Phillies",
         "Caesars": "Philadelphia Phillies"
     },
     "Baltimore Orioles": {
+        "DraftKings": "BAL Orioles",
         "FanDuel": "Baltimore Orioles",
         "BetMGM": "Baltimore Orioles",
         "Betano": "Baltimore Orioles",
         "Caesars": "Baltimore Orioles"
     },
     "Chicago White Sox": {
+        "DraftKings": "CHI White Sox",
         "FanDuel": "Chicago White Sox",
         "BetMGM": "Chicago White Sox",
         "Betano": "Chicago White Sox",
         "Caesars": "Chicago White Sox"
     },
     "Kansas City Royals": {
+        "DraftKings": "KC Royals",
         "FanDuel": "Kansas City Royals",
         "BetMGM": "Kansas City Royals",
         "Betano": "Kansas City Royals",
         "Caesars": "Kansas City Royals"
     },
     "San Francisco Giants": {
+        "DraftKings": "SF Giants",
         "FanDuel": "San Francisco Giants",
         "BetMGM": "San Francisco Giants",
         "Betano": "San Francisco Giants",
         "Caesars": "San Francisco Giants"
     },
     "Seattle Mariners": {
+        "DraftKings": "SEA Mariners",
         "FanDuel": "Seattle Mariners",
         "BetMGM": "Seattle Mariners",
         "Betano": "Seattle Mariners",
         "Caesars": "Seattle Mariners"
     },
     "Los Angeles Dodgers": {
+        "DraftKings": "LA Dodgers",
         "FanDuel": "Los Angeles Dodgers",
         "BetMGM": "Los Angeles Dodgers",
         "Betano": "Los Angeles Dodgers",
         "Caesars": "Los Angeles Dodgers"
     },
     "Tampa Bay Rays": {
+        "DraftKings": "TB Rays",
         "FanDuel": "Tampa Bay Rays",
         "BetMGM": "Tampa Bay Rays",
         "Betano": "Tampa Bay Rays",
         "Caesars": "Tampa Bay Rays"
     },
     "Minnesota Twins": {
+        "DraftKings": "MIN Twins",
         "FanDuel": "Minnesota Twins",
         "BetMGM": "Minnesota Twins",
         "Betano": "Minnesota Twins",
         "Caesars": "Minnesota Twins"
     },
     "Colorado Rockies": {
+        "DraftKings": "COL Rockies",
         "FanDuel": "Colorado Rockies",
         "BetMGM": "Colorado Rockies",
         "Betano": "Colorado Rockies",
         "Caesars": "Colorado Rockies"
     },
     "Cincinnati Reds": {
+        "DraftKings": "CIN Reds",
         "FanDuel": "Cincinnati Reds",
         "BetMGM": "Cincinnati Reds",
         "Betano": "Cincinnati Reds",
         "Caesars": "Cincinnati Reds"
     },
     "Pittsburgh Pirates": {
+        "DraftKings": "PIT Pirates",
         "FanDuel": "Pittsburgh Pirates",
         "BetMGM": "Pittsburgh Pirates",
         "Betano": "Pittsburgh Pirates",
         "Caesars": "Pittsburgh Pirates"
     },
     "New York Yankees": {
+        "DraftKings": "NY Yankees",
         "FanDuel": "New York Yankees",
         "BetMGM": "New York Yankees",
         "Betano": "New York Yankees",
         "Caesars": "New York Yankees"
     },
     "Toronto Blue Jays": {
+        "DraftKings": "TOR Blue Jays",
         "FanDuel": "Toronto Blue Jays",
         "BetMGM": "Toronto Blue Jays",
         "Betano": "Toronto Blue Jays",
         "Caesars": "Toronto Blue Jays"
     },
     "Cleveland Guardians": {
+        "DraftKings": "CLE Guardians",
         "FanDuel": "Cleveland Guardians",
         "BetMGM": "Cleveland Guardians",
         "Betano": "Cleveland Guardians",
         "Caesars": "Cleveland Guardians"
+    },
+    "Koki Matsuda": {
+        "Betano": "Koki Matsuda"
+    },
+    "Kaito Uesugi": {
+        "Betano": "Kaito Uesugi"
+    },
+    "Brunswick City U23": {
+        "Betano": "Brunswick City U23"
+    },
+    "FC Melbourne Serbia U23": {
+        "Betano": "FC Melbourne Serbia U23"
+    },
+    "Tianhui Zhang": {
+        "Betano": "Tianhui Zhang"
+    },
+    "Rigele Te": {
+        "Betano": "Rigele Te"
+    },
+    "Han Shi": {
+        "Betano": "Han Shi"
+    },
+    "Jiangxue Han": {
+        "Betano": "Jiangxue Han"
+    },
+    "Boroondara Eagles (W) U20": {
+        "Betano": "Boroondara Eagles (W) U20"
+    },
+    "Keilor Park (W) U20": {
+        "Betano": "Keilor Park (W) U20"
+    },
+    "Orlando Magic (LAW)": {
+        "Betano": "Orlando Magic (LAW)"
+    },
+    "Denver Nuggets (MALICE)": {
+        "Betano": "Denver Nuggets (MALICE)"
+    },
+    "Dominik Palan": {
+        "Betano": "Dominik Palan"
+    },
+    "Ji Sung Nam": {
+        "Betano": "Ji Sung Nam"
+    },
+    "Manchester City FC (Odin) (Esports)": {
+        "Betano": "Manchester City FC (Odin) (Esports)"
+    },
+    "Atletico M. (Alexis) (Esports)": {
+        "Betano": "Atletico M. (Alexis) (Esports)"
     }
 }

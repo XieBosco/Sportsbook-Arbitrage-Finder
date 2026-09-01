@@ -32,7 +32,7 @@ def _clean_selection_name(name: str) -> str:
     if low.startswith("under "):
         return "Under"
     import re
-    return re.sub(r"\s+[+-][\d.]+$", "", name).strip()
+    return re.sub(r"\s*[+-][\d.,]+$", "", name).strip()
 
 
 
@@ -87,6 +87,8 @@ class BetMGMParser(BookParser):
         """Look up a fixture's metadata by ID, or None if the fixture is unknown."""
         meta = self.reference_data["events"].get(str(fixture_id))
         if not meta:
+            from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+            record_unresolved_parser_id(self.book_name, "fixture_id", str(fixture_id))
             return None
         return meta
 

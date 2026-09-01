@@ -94,6 +94,13 @@ class BetMGMNormalizer(BaseNormalizer):
         if sel_resolved:
             return sel_resolved
             
+        # Fallback to substring matching (e.g., 'Mariners' in 'Seattle Mariners' or vice versa)
+        if raw_selection:
+            if raw_selection in home_team or home_team in raw_selection:
+                return "home"
+            if raw_selection in away_team or away_team in raw_selection:
+                return "away"
+            
         return None
 
     def normalize(self, update: OddsUpdate) -> NormalizedOddsUpdate | None:

@@ -160,20 +160,37 @@ class DraftKingsParser(BookParser):
         core_id_match = _CORE_ID_RE.search(selection_id)
         if core_id_match:
             core_id = core_id_match.group(1)
-            # Find any known selection with this core ID
-            for known_sel_id, known_market_id in self.reference_data[
-                "selections"
-            ].items():
-                if core_id in known_sel_id:
-                    fallback_meta = self.reference_data["markets"].get(
-                        known_market_id, {}
-                    )
-                    fallback_event_id = fallback_meta.get("eventId", "")
-                    if fallback_event_id in self.reference_data["events"]:
-                        event_id = fallback_event_id
-                        event_meta = self.reference_data["events"][fallback_event_id]
-                        event_name = event_meta.get("name", "Unknown Game")
-                        break
+            
+            # O(1) Optimized Inference: construct the expected market_id directly
+            inferred_market_id = ""
+            if selection_id.startswith("0ML"):
+                inferred_market_id = f"1_{core_id}"
+            elif selection_id.startswith("0HC"):
+                inferred_market_id = f"2_{core_id}"
+            elif selection_id.startswith("0OU"):
+                inferred_market_id = f"3_{core_id}"
+                
+            if inferred_market_id:
+                fallback_meta = self.reference_data["markets"].get(inferred_market_id, {})
+                fallback_event_id = fallback_meta.get("eventId", "")
+                if fallback_event_id in self.reference_data["events"]:
+                    event_id = fallback_event_id
+                    event_meta = self.reference_data["events"][fallback_event_id]
+                    event_name = event_meta.get("name", "Unknown Game")
+                    # Cache it for future updates
+                    self.reference_data["selections"][selection_id] = inferred_market_id
+                    
+            # If inference didn't work, fall back to O(N) scan of known selections
+            if event_name == "Unknown Game":
+                for known_sel_id, known_market_id in self.reference_data["selections"].items():
+                    if core_id in known_sel_id:
+                        fallback_meta = self.reference_data["markets"].get(known_market_id, {})
+                        fallback_event_id = fallback_meta.get("eventId", "")
+                        if fallback_event_id in self.reference_data["events"]:
+                            event_id = fallback_event_id
+                            event_meta = self.reference_data["events"][fallback_event_id]
+                            event_name = event_meta.get("name", "Unknown Game")
+                            break
 
         # If STILL unknown, try the string-matching heuristic for Spreads/Moneylines
         if event_name == "Unknown Game":
@@ -220,9 +237,14 @@ class DraftKingsParser(BookParser):
 
             # Some updates have the market_id as the last element of the outcome array!
             if not market_id and len(outcome) > 0 and isinstance(outcome[-1], str):
-                market_id = str(outcome[-1])
+                potential_market = str(outcome[-1])
+                if potential_market != selection_id:
+                    market_id = potential_market
 
-            market_meta = self.reference_data["markets"].get(market_id, {})
+            market_meta = self.reference_data["markets"].get(market_id)
+            if not market_meta:
+                market_meta = {}
+
             market_type = self._resolve_market_type(market_meta, selection_id, outcome)
 
             event_id = market_meta.get("eventId", "")
@@ -233,6 +255,12 @@ class DraftKingsParser(BookParser):
 
             handicap_val = self._resolve_handicap(market_type, outcome)
             event_name = event_meta.get("name", "Unknown Game")
+            if event_name == "Unknown Game":
+                from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+                if not market_meta:
+                    record_unresolved_parser_id(self.book_name, "market_id", market_id or selection_id)
+                record_unresolved_parser_id(self.book_name, "event_id", event_id or "UNKNOWN")
+
             home_team, away_team = split_fixture_name(event_name)
 
             updates.append(
