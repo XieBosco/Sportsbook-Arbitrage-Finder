@@ -202,7 +202,12 @@ class BetanoParser(BookParser):
             if not isinstance(changes, list):
                 continue
 
-            market_meta = self.reference_data["markets"].get(str(market_id_str), {})
+            market_meta = self.reference_data["markets"].get(str(market_id_str))
+            if not market_meta:
+                from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+                record_unresolved_parser_id(self.book_name, "market_id", str(market_id_str))
+                market_meta = {}
+                
             market_name = market_meta.get("name", f"Market {market_id_str}")
 
             for change in changes:
@@ -219,7 +224,12 @@ class BetanoParser(BookParser):
                 except (ValueError, TypeError, ZeroDivisionError):
                     continue
 
-                sel_meta = self.reference_data["selections"].get(selection_id, {})
+                sel_meta = self.reference_data["selections"].get(selection_id)
+                if not sel_meta:
+                    from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+                    record_unresolved_parser_id(self.book_name, "selection_id", selection_id)
+                    sel_meta = {}
+                    
                 sel_name = sel_meta.get(
                     "fullName", sel_meta.get("name", f"Selection {selection_id}")
                 )
@@ -318,7 +328,13 @@ class BetanoParser(BookParser):
         if "participants" in payload_data:
             self.reference_data["events"][event_id] = _build_event_dict(payload_data)
 
-        event_meta = self.reference_data["events"].get(event_id, {})
+        event_meta = self.reference_data["events"].get(event_id)
+        if not event_meta and event_id:
+            from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+            record_unresolved_parser_id(self.book_name, "event_id", event_id)
+            event_meta = {}
+        elif not event_meta:
+            event_meta = {}
         home_team, away_team = self._resolve_teams(event_id, event_meta)
 
         updates = []

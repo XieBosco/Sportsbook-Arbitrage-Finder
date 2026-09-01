@@ -18,16 +18,18 @@ class MarketGroupKey:
     bucket (i.e. per selection), so complementary sides of the same
     market would never match on UUID alone.
 
-    ``line`` stores ``abs(line)`` so that sign-flipped spread lines
-    (e.g. home −1.5 / away +1.5) are grouped together.
+    ``line`` stores the line from the home team's perspective so that
+    sign-flipped spread lines (e.g. home -1.5 / away +1.5) are grouped
+    together under -1.5, while home +1.5 / away -1.5 are grouped under 1.5.
     """
 
     sport_key: str
     league_key: str
+    time_window: str
     home_team: str
     away_team: str
     market_type: str
-    line: float | None  # abs(line) for proper grouping
+    line: float | None  # home team's line
 
 
 class MarketGrouper:
@@ -43,13 +45,22 @@ class MarketGrouper:
 
     def add(self, selection: MatchedSelection) -> MarketGroupKey:
         """Insert or update *selection* in its group, returning the key."""
+        if selection.line is not None:
+            if selection.selection == "away":
+                group_line = -selection.line
+            else:
+                group_line = selection.line
+        else:
+            group_line = None
+
         key = MarketGroupKey(
             sport_key=selection.sport_key,
             league_key=selection.league_key,
+            time_window=selection.time_window,
             home_team=selection.home_team,
             away_team=selection.away_team,
             market_type=selection.market_type,
-            line=abs(selection.line) if selection.line is not None else None,
+            line=group_line,
         )
         group = self._groups.setdefault(key, {})
         group[selection.selection] = selection

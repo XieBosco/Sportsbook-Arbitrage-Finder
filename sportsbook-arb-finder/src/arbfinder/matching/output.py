@@ -22,6 +22,7 @@ class MatchedSelection:
     league_key: str
     home_team: str
     away_team: str
+    time_window: str
     market_type: str
     selection: str
     line: float | None
@@ -47,6 +48,7 @@ class MatchOutputBuilder:
             league_key=bucket.key.league_key,
             home_team=bucket.key.home_team,
             away_team=bucket.key.away_team,
+            time_window=bucket.key.time_window,
             market_type=bucket.key.market_type,
             selection=bucket.key.selection,
             line=bucket.key.line,

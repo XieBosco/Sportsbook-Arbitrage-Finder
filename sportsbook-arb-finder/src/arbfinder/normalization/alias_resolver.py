@@ -43,11 +43,14 @@ class AliasResolver:
             logger.warning("Alias file not found: %s", path)
             return
         with open(path, encoding="utf-8") as fh:
-            data: dict[str, dict[str, str]] = json.load(fh)
+            data: dict[str, dict[str, str | list[str]]] = json.load(fh)
         for canonical, book_map in data.items():
-            for book_id, raw_name in book_map.items():
-                key = (book_id.lower(), raw_name.lower())
-                self._reverse[key] = canonical
+            for book_id, raw_names in book_map.items():
+                if isinstance(raw_names, str):
+                    raw_names = [raw_names]
+                for raw_name in raw_names:
+                    key = (book_id.lower(), raw_name.lower())
+                    self._reverse[key] = canonical
 
     def resolve(self, book_id: str, raw_value: str) -> str | None:
         """Return the canonical name for *raw_value* as reported by *book_id*.

@@ -26,8 +26,10 @@ import base64, json, os, struct, sys, zlib
 
 # ── paths ────────────────────────────────────────────────────────────────────
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-LOG_DIR = os.path.join(SCRIPT_DIR, "caesars_full_logs")
-HOME_JSON = os.path.join(LOG_DIR, "json_5.json")
+# LOG_DIR = os.path.join(SCRIPT_DIR, "caesars_full_logs")
+# HOME_JSON = os.path.join(LOG_DIR, "json_5.json")
+LOG_DIR = "C:\\Users\\fiona\\Desktop\\arbitrage_tool\\sportsbook-arb-finder\\scripts\\data2\\caesars\\messages"
+HOME_JSON = os.path.join(LOG_DIR, "json_8.json")
 OUTPUT_FILE = os.path.join(SCRIPT_DIR, "decoded_odds.json")
 
 

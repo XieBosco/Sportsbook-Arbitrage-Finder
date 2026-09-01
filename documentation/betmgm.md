@@ -51,6 +51,7 @@ BetMGM does not include human-readable game names (like "Indiana Fever at Las Ve
 - To map this ID, intercept HTTP responses (`Network.responseReceived`) where the URL contains `fixture-view`.
 - Use the `Network.getResponseBody` CDP command with the corresponding `requestId` to retrieve the JSON payload.
 - Extract the `fixtureId` and the human-readable game name, and store this mapping in memory.
+- Lazy Loading: Note that BetMGM lazy-loads these reference dictionaries as you scroll up and down the page. When a specific game becomes fully visible in the viewport, a separate JSON payload is sent from the server for that single fixture. To capture all reference data, your scraper logic must handle and merge multiple `fixture-view` payloads as they stream in, rather than expecting a single large dictionary at page load.
 
 ### 3. SignalR and the `\x1e` Terminator (CRITICAL)
 BetMGM's WebSocket data runs on SignalR. This introduces a major parsing trap:

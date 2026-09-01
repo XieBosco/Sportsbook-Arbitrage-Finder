@@ -49,7 +49,7 @@ def main():
     # into a dict with string keys for JSON serialization.
     groups_dict = {}
     for key, group in grouper._groups.items():
-        str_key = f"{key.sport_key}|{key.league_key}|{key.home_team}|{key.away_team}|{key.market_type}|{key.line}"
+        str_key = f"{key.sport_key}|{key.league_key}|{key.time_window}|{key.home_team}|{key.away_team}|{key.market_type}|{key.line}"
         groups_dict[str_key] = group
 
     with open(out_path, "w", encoding="utf-8") as f:

@@ -31,4 +31,4 @@ Write-Host "[*] Launching Chrome with CDP remote debugging on port $Port..." -Fo
 Write-Host "    Executable: $chromeExe" -ForegroundColor Gray
 Write-Host "    Profile   : $ProfileDir" -ForegroundColor Gray
 
-Start-Process -FilePath $chromeExe -ArgumentList "--remote-debugging-port=$Port", "--user-data-dir=`"$ProfileDir`""
+Start-Process -FilePath $chromeExe -ArgumentList "--remote-debugging-port=$Port", "--user-data-dir=`"$ProfileDir`"", "--disable-background-timer-throttling", "--disable-backgrounding-occluded-windows", "--disable-renderer-backgrounding"

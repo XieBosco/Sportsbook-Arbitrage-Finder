@@ -1,0 +1,2381 @@
+Arbitrage Opportunities (with durations):
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.60%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 6.5
+Duration: 14.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:09:36.847622+00:00 | End: 2026-08-30T03:09:51.000131+00:00
+  [BetMGM] over: +110 (Stake: $49.40)
+  [Caesars] under: +105 (Stake: $50.60)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 9.41%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 0.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:13:13.211333+00:00 | End: 2026-08-30T03:13:13.736653+00:00
+  [BetMGM] away: +154 (Stake: $43.46)
+  [Betano] home: -105 (Stake: $56.54)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.55%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 7.5
+Duration: 0.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:13:13.211333+00:00 | End: 2026-08-30T03:13:13.745665+00:00
+  [BetMGM] over: +175 (Stake: $38.91)
+  [Betano] under: -133 (Stake: $61.09)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.19%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 1.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:13:13.211333+00:00 | End: 2026-08-30T03:13:14.753679+00:00
+  [Betano] home: +350 (Stake: $23.94)
+  [FanDuel] away: -240 (Stake: $76.06)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 8.83%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 6.5
+Duration: 95.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:13:13.750596+00:00 | End: 2026-08-30T03:14:49.287274+00:00
+  [FanDuel] over: +102 (Stake: $54.30)
+  [BetMGM] under: +140 (Stake: $45.70)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 10.97%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -1.5
+Duration: 96.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:13:13.742586+00:00 | End: 2026-08-30T03:14:49.737474+00:00
+  [DraftKings] away: -120 (Stake: $61.27)
+  [BetMGM] home: +190 (Stake: $38.73)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.33%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -3.5
+Duration: 0.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:15:32.214727+00:00 | End: 2026-08-30T03:15:33.053491+00:00
+  [BetMGM] away: +170 (Stake: $37.92)
+  [Betano] home: -154 (Stake: $62.08)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.19%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 6.5
+Duration: 0.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:16:25.224560+00:00 | End: 2026-08-30T03:16:25.224560+00:00
+  [BetMGM] over: +140 (Stake: $42.60)
+  [Betano] under: -128 (Stake: $57.40)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.91%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 1.5
+Duration: 0.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:16:25.224560+00:00 | End: 2026-08-30T03:16:25.559854+00:00
+  [Betano] away: -263 (Stake: $73.86)
+  [BetMGM] home: +290 (Stake: $26.14)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.63%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 3.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:16:25.175769+00:00 | End: 2026-08-30T03:16:28.339289+00:00
+  [DraftKings] home: -102 (Stake: $52.40)
+  [Betano] away: +118 (Stake: $47.60)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.74%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 6.5
+Duration: 0.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:17:32.098743+00:00 | End: 2026-08-30T03:17:32.692191+00:00
+  [Caesars] over: -135 (Stake: $58.46)
+  [BetMGM] under: +145 (Stake: $41.54)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.74%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 13.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:18:06.492867+00:00 | End: 2026-08-30T03:18:19.761370+00:00
+  [Caesars] home: -135 (Stake: $58.46)
+  [FanDuel] away: +145 (Stake: $41.54)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.07%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 1.5
+Duration: 8.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:18:39.026676+00:00 | End: 2026-08-30T03:18:47.663085+00:00
+  [BetMGM] away: -180 (Stake: $67.01)
+  [DraftKings] home: +216 (Stake: $32.99)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 9.47%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 36.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:18:32.283864+00:00 | End: 2026-08-30T03:19:09.168638+00:00
+  [Caesars] home: -115 (Stake: $59.09)
+  [FanDuel] away: +170 (Stake: $40.91)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.23%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 1.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:20:46.284103+00:00 | End: 2026-08-30T03:20:47.299788+00:00
+  [BetMGM] home: -125 (Stake: $58.62)
+  [FanDuel] away: +155 (Stake: $41.38)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.62%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 6.5
+Duration: 10.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:20:46.788054+00:00 | End: 2026-08-30T03:20:57.667828+00:00
+  [BetMGM] over: +118 (Stake: $48.10)
+  [DraftKings] under: +102 (Stake: $51.90)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.50%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 1.5
+Duration: 16.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:20:46.804099+00:00 | End: 2026-08-30T03:21:02.765949+00:00
+  [DraftKings] away: -158 (Stake: $65.50)
+  [FanDuel] home: +210 (Stake: $34.50)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 9.11%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 14.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:20:48.760494+00:00 | End: 2026-08-30T03:21:02.765949+00:00
+  [FanDuel] home: -130 (Stake: $62.19)
+  [DraftKings] away: +191 (Stake: $37.81)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.11%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 3.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:21:44.914231+00:00 | End: 2026-08-30T03:21:48.824370+00:00
+  [BetMGM] away: +115 (Stake: $47.03)
+  [DraftKings] home: -110 (Stake: $52.97)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.56%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 5.5
+Duration: 60.0 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:20:59.719775+00:00 | End: 2026-08-30T03:21:59.719775+00:00
+  [FanDuel] over: -136 (Stake: $58.54)
+  [BetMGM] under: +145 (Stake: $41.46)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.33%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 2.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:22:02.768635+00:00 | End: 2026-08-30T03:22:04.820528+00:00
+  [DraftKings] home: -156 (Stake: $61.76)
+  [FanDuel] away: +165 (Stake: $38.24)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.20%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 7.5
+Duration: 60.0 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:22:07.865809+00:00 | End: 2026-08-30T03:23:07.865809+00:00
+  [BetMGM] over: +145 (Stake: $41.31)
+  [FanDuel] under: -138 (Stake: $58.69)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.07%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 4.5
+Duration: 7.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:24:34.155821+00:00 | End: 2026-08-30T03:24:42.087857+00:00
+  [Caesars] over: -115 (Stake: $54.62)
+  [BetMGM] under: +125 (Stake: $45.38)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.80%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 2.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:25:32.265613+00:00 | End: 2026-08-30T03:25:34.265540+00:00
+  [Betano] home: +285 (Stake: $26.45)
+  [FanDuel] away: -260 (Stake: $73.55)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.10%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 1.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:25:38.267398+00:00 | End: 2026-08-30T03:25:39.881247+00:00
+  [DraftKings] home: +264 (Stake: $27.78)
+  [Betano] away: -250 (Stake: $72.22)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.55%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 2.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:25:39.883613+00:00 | End: 2026-08-30T03:25:42.563841+00:00
+  [FanDuel] home: +260 (Stake: $28.21)
+  [DraftKings] away: -241 (Stake: $71.79)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.04%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 4.5
+Duration: 4.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:25:38.569704+00:00 | End: 2026-08-30T03:25:42.563841+00:00
+  [FanDuel] over: -128 (Stake: $57.90)
+  [BetMGM] under: +145 (Stake: $42.10)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 11.78%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 7.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:25:53.798430+00:00 | End: 2026-08-30T03:26:01.660127+00:00
+  [DraftKings] home: -181 (Stake: $73.01)
+  [BetMGM] away: +320 (Stake: $26.99)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 13.07%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 6.5
+Duration: 8.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:25:53.613274+00:00 | End: 2026-08-30T03:26:02.036926+00:00
+  [DraftKings] over: -105 (Stake: $58.92)
+  [BetMGM] under: +180 (Stake: $41.08)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 14.36%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 1.5
+Duration: 8.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:25:53.608569+00:00 | End: 2026-08-30T03:26:02.069656+00:00
+  [BetMGM] away: +110 (Stake: $55.60)
+  [DraftKings] home: +163 (Stake: $44.40)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.47%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 5.5
+Duration: 3.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:26:51.919740+00:00 | End: 2026-08-30T03:26:55.458284+00:00
+  [BetMGM] over: +145 (Stake: $41.85)
+  [DraftKings] under: -131 (Stake: $58.15)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.01%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 6.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:26:49.282712+00:00 | End: 2026-08-30T03:26:55.488098+00:00
+  [Betano] home: +290 (Stake: $26.44)
+  [DraftKings] away: -249 (Stake: $73.56)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 11.11%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 14.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:26:43.922855+00:00 | End: 2026-08-30T03:26:58.218232+00:00
+  [Betano] home: -200 (Stake: $75.00)
+  [FanDuel] away: +350 (Stake: $25.00)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.27%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 0.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:26:58.176975+00:00 | End: 2026-08-30T03:26:58.566782+00:00
+  [BetMGM] over: +115 (Stake: $47.59)
+  [Caesars] under: -105 (Stake: $52.41)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 9.65%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 1.5
+Duration: 16.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:26:43.913215+00:00 | End: 2026-08-30T03:26:59.998468+00:00
+  [BetMGM] away: +110 (Stake: $52.70)
+  [DraftKings] home: +134 (Stake: $47.30)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.03%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 5.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:26:57.699407+00:00 | End: 2026-08-30T03:27:03.279226+00:00
+  [Betano] home: +290 (Stake: $25.91)
+  [BetMGM] away: -275 (Stake: $74.09)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 8.93%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 6.5
+Duration: 64.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:26:44.219820+00:00 | End: 2026-08-30T03:27:48.812841+00:00
+  [DraftKings] over: -124 (Stake: $60.78)
+  [BetMGM] under: +180 (Stake: $39.22)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 10.31%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 3.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:27:48.521042+00:00 | End: 2026-08-30T03:27:51.702800+00:00
+  [FanDuel] home: -380 (Stake: $88.26)
+  [BetMGM] away: +850 (Stake: $11.74)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.80%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
+Duration: 14.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:27:51.281635+00:00 | End: 2026-08-30T03:28:05.669519+00:00
+  [Caesars] over: -110 (Stake: $56.20)
+  [BetMGM] under: +145 (Stake: $43.80)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.82%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 3.5
+Duration: 1.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:28:05.288677+00:00 | End: 2026-08-30T03:28:07.172597+00:00
+  [FanDuel] away: +114 (Stake: $50.69)
+  [BetMGM] home: +120 (Stake: $49.31)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.19%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 15.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:27:51.702800+00:00 | End: 2026-08-30T03:28:07.172597+00:00
+  [Caesars] home: -600 (Stake: $90.41)
+  [FanDuel] away: +1000 (Stake: $9.59)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.16%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 4.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:28:19.287565+00:00 | End: 2026-08-30T03:28:23.505893+00:00
+  [Betano] home: +320 (Stake: $24.34)
+  [BetMGM] away: -285 (Stake: $75.66)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 22.29%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 72.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:27:49.268625+00:00 | End: 2026-08-30T03:29:01.338616+00:00
+  [BetMGM] away: +210 (Stake: $41.51)
+  [Caesars] home: +120 (Stake: $58.49)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 22.55%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 1.5
+Duration: 72.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:27:48.516241+00:00 | End: 2026-08-30T03:29:01.341869+00:00
+  [BetMGM] away: +400 (Stake: $25.82)
+  [Caesars] home: -135 (Stake: $74.18)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 21.73%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 72.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:27:48.808013+00:00 | End: 2026-08-30T03:29:01.675354+00:00
+  [FanDuel] over: -102 (Stake: $64.51)
+  [BetMGM] under: +260 (Stake: $35.49)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.79%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 9.5
+Duration: 76.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:28:05.666128+00:00 | End: 2026-08-30T03:29:22.454153+00:00
+  [BetMGM] over: +140 (Stake: $43.31)
+  [FanDuel] under: -120 (Stake: $56.69)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.76%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 5.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:30:00.305571+00:00 | End: 2026-08-30T03:30:05.746003+00:00
+  [Betano] home: +390 (Stake: $20.77)
+  [DraftKings] away: -351 (Stake: $79.23)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.44%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 3.5
+Duration: 0.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:30:11.310384+00:00 | End: 2026-08-30T03:30:11.498216+00:00
+  [Betano] away: +105 (Stake: $50.00)
+  [BetMGM] home: +105 (Stake: $50.00)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.57%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 9.5
+Duration: 0.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:30:11.310384+00:00 | End: 2026-08-30T03:30:11.900208+00:00
+  [BetMGM] over: +130 (Stake: $44.17)
+  [Betano] under: -122 (Stake: $55.83)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.22%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 4.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:30:13.429045+00:00 | End: 2026-08-30T03:30:17.936696+00:00
+  [DraftKings] home: -870 (Stake: $90.80)
+  [FanDuel] away: +1000 (Stake: $9.20)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.17%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 1.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:30:18.267013+00:00 | End: 2026-08-30T03:30:20.198466+00:00
+  [DraftKings] home: -870 (Stake: $92.62)
+  [BetMGM] away: +1300 (Stake: $7.38)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 11.56%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 9.5
+Duration: 1.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:30:19.176453+00:00 | End: 2026-08-30T03:30:20.536787+00:00
+  [Caesars] over: +110 (Stake: $53.85)
+  [BetMGM] under: +145 (Stake: $46.15)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 22.02%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 3.5
+Duration: 11.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:30:11.498216+00:00 | End: 2026-08-30T03:30:23.050093+00:00
+  [BetMGM] away: +220 (Stake: $40.07)
+  [DraftKings] home: +114 (Stake: $59.93)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.25%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 13.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:30:39.630596+00:00 | End: 2026-08-30T03:30:53.069801+00:00
+  [Betano] home: +370 (Stake: $21.77)
+  [BetMGM] away: -325 (Stake: $78.23)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 17.54%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
+Duration: 68.6 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:30:11.913540+00:00 | End: 2026-08-30T03:31:20.552285+00:00
+  [FanDuel] over: -128 (Stake: $68.09)
+  [BetMGM] under: +280 (Stake: $31.91)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.80%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
+Duration: 0.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:31:39.440399+00:00 | End: 2026-08-30T03:31:40.283798+00:00
+  [Caesars] over: -110 (Stake: $56.20)
+  [BetMGM] under: +145 (Stake: $43.80)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.21%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 0.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:31:39.443124+00:00 | End: 2026-08-30T03:31:40.289911+00:00
+  [BetMGM] away: +220 (Stake: $33.68)
+  [Caesars] home: -160 (Stake: $66.32)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.45%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 3.5
+Duration: 26.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:31:40.286572+00:00 | End: 2026-08-30T03:32:06.377130+00:00
+  [DraftKings] away: +100 (Stake: $54.02)
+  [BetMGM] home: +135 (Stake: $45.98)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.45%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 9.5
+Duration: 55.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:31:40.280212+00:00 | End: 2026-08-30T03:32:35.500897+00:00
+  [BetMGM] over: +155 (Stake: $41.92)
+  [DraftKings] under: -119 (Stake: $58.08)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.14%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
+Duration: 2.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:32:35.251409+00:00 | End: 2026-08-30T03:32:37.828071+00:00
+  [Caesars] over: +105 (Stake: $50.36)
+  [FanDuel] under: +108 (Stake: $49.64)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.17%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 0.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:32:59.177377+00:00 | End: 2026-08-30T03:32:59.317760+00:00
+  [Betano] home: +375 (Stake: $21.30)
+  [BetMGM] away: -350 (Stake: $78.70)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.49%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 4.5
+Duration: 2.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:32:59.879111+00:00 | End: 2026-08-30T03:33:02.206260+00:00
+  [Caesars] over: +115 (Stake: $48.19)
+  [DraftKings] under: +100 (Stake: $51.81)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.01%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -2.5
+Duration: 60.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:32:59.153113+00:00 | End: 2026-08-30T03:33:59.324325+00:00
+  [BetMGM] away: +175 (Stake: $37.49)
+  [Betano] home: -154 (Stake: $62.51)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.39%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 62.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:32:57.896178+00:00 | End: 2026-08-30T03:33:59.858175+00:00
+  [DraftKings] home: -620 (Stake: $87.32)
+  [FanDuel] away: +700 (Stake: $12.68)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.01%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -2.5
+Duration: 0.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:33:59.324325+00:00 | End: 2026-08-30T03:33:59.869284+00:00
+  [BetMGM] away: +175 (Stake: $37.49)
+  [Betano] home: -154 (Stake: $62.51)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.44%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 4.5
+Duration: 5.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:33:59.324325+00:00 | End: 2026-08-30T03:34:05.001105+00:00
+  [Caesars] over: +105 (Stake: $50.00)
+  [Betano] under: +105 (Stake: $50.00)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.21%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 5.5
+Duration: 28.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:33:50.638187+00:00 | End: 2026-08-30T03:34:18.590734+00:00
+  [Caesars] over: -140 (Stake: $60.26)
+  [BetMGM] under: +160 (Stake: $39.74)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 10.59%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 7.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:34:15.329833+00:00 | End: 2026-08-30T03:34:22.330043+00:00
+  [Betano] home: -333 (Stake: $86.02)
+  [FanDuel] away: +700 (Stake: $13.98)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.86%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 10.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:34:15.493740+00:00 | End: 2026-08-30T03:34:26.369833+00:00
+  [FanDuel] away: +124 (Stake: $46.92)
+  [BetMGM] home: -102 (Stake: $53.08)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.49%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 3.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:34:23.238599+00:00 | End: 2026-08-30T03:34:26.369833+00:00
+  [DraftKings] home: -567 (Stake: $87.18)
+  [FanDuel] away: +700 (Stake: $12.82)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.11%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 6.5
+Duration: 6.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:34:44.075486+00:00 | End: 2026-08-30T03:34:50.341945+00:00
+  [BetMGM] over: +115 (Stake: $47.03)
+  [Caesars] under: -110 (Stake: $52.97)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.43%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 10.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:34:44.063613+00:00 | End: 2026-08-30T03:34:54.244977+00:00
+  [BetMGM] away: +110 (Stake: $50.35)
+  [DraftKings] home: +113 (Stake: $49.65)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.31%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 9.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:34:44.942142+00:00 | End: 2026-08-30T03:34:54.530462+00:00
+  [DraftKings] home: +504 (Stake: $16.95)
+  [FanDuel] away: -430 (Stake: $83.05)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.21%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 6.5
+Duration: 0.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:35:29.343162+00:00 | End: 2026-08-30T03:35:29.589310+00:00
+  [BetMGM] over: +110 (Stake: $50.24)
+  [Betano] under: +112 (Stake: $49.76)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 9.58%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -3.5
+Duration: 0.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:35:29.290601+00:00 | End: 2026-08-30T03:35:29.610524+00:00
+  [BetMGM] away: +210 (Stake: $35.68)
+  [Betano] home: -139 (Stake: $64.32)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.66%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 1.5
+Duration: 63.1 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:34:15.497017+00:00 | End: 2026-08-30T03:35:18.571775+00:00
+  [BetMGM] away: +180 (Stake: $37.07)
+  [Betano] home: -154 (Stake: $62.93)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 9.79%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 4.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:35:29.123649+00:00 | End: 2026-08-30T03:35:33.644629+00:00
+  [DraftKings] home: +1140 (Stake: $8.94)
+  [FanDuel] away: -460 (Stake: $91.06)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.74%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 0.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:35:33.644629+00:00 | End: 2026-08-30T03:35:33.647355+00:00
+  [FanDuel] home: +1200 (Stake: $7.83)
+  [DraftKings] away: -960 (Stake: $92.17)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.55%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 7.5
+Duration: 13.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:35:32.307243+00:00 | End: 2026-08-30T03:35:45.391095+00:00
+  [Caesars] over: +100 (Stake: $52.38)
+  [BetMGM] under: +120 (Stake: $47.62)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 9.35%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
+Duration: 108.0 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:34:16.043493+00:00 | End: 2026-08-30T03:36:03.996960+00:00
+  [BetMGM] over: +130 (Stake: $47.96)
+  [Betano] under: +112 (Stake: $52.04)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.29%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 4.5
+Duration: 7.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:36:03.772871+00:00 | End: 2026-08-30T03:36:11.507464+00:00
+  [BetMGM] over: +125 (Stake: $47.43)
+  [DraftKings] under: +103 (Stake: $52.57)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.13%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -1.5
+Duration: 4.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:36:06.899821+00:00 | End: 2026-08-30T03:36:11.511150+00:00
+  [BetMGM] away: +110 (Stake: $51.28)
+  [DraftKings] home: +121 (Stake: $48.72)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.26%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 4.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:36:06.904431+00:00 | End: 2026-08-30T03:36:11.513993+00:00
+  [DraftKings] home: +360 (Stake: $22.47)
+  [BetMGM] away: -300 (Stake: $77.53)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 24.85%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 64.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:35:29.616103+00:00 | End: 2026-08-30T03:36:33.601552+00:00
+  [FanDuel] away: +102 (Stake: $65.88)
+  [BetMGM] home: +290 (Stake: $34.12)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 14.27%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -3.5
+Duration: 61.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:35:32.026936+00:00 | End: 2026-08-30T03:36:33.606400+00:00
+  [Caesars] away: +115 (Stake: $54.26)
+  [BetMGM] home: +155 (Stake: $45.74)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 16.37%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 6.5
+Duration: 64.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:35:29.589310+00:00 | End: 2026-08-30T03:36:33.632175+00:00
+  [FanDuel] over: -110 (Stake: $62.63)
+  [BetMGM] under: +220 (Stake: $37.37)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 25.40%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 5.5
+Duration: 64.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:35:29.603277+00:00 | End: 2026-08-30T03:36:33.635520+00:00
+  [Caesars] over: -125 (Stake: $74.47)
+  [BetMGM] under: +425 (Stake: $25.53)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 8.90%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -2.5
+Duration: 31.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:36:02.733322+00:00 | End: 2026-08-30T03:36:34.578791+00:00
+  [BetMGM] away: +240 (Stake: $32.29)
+  [Betano] home: -161 (Stake: $67.71)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.26%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -4.5
+Duration: 61.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:36:41.269811+00:00 | End: 2026-08-30T03:37:42.673624+00:00
+  [BetMGM] away: +155 (Stake: $40.96)
+  [FanDuel] home: -130 (Stake: $59.04)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.12%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -1.5
+Duration: 1.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:37:46.055362+00:00 | End: 2026-08-30T03:37:47.884644+00:00
+  [BetMGM] away: +110 (Stake: $49.15)
+  [DraftKings] home: +103 (Stake: $50.85)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.01%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 4.5
+Duration: 1.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:37:46.058579+00:00 | End: 2026-08-30T03:37:47.889909+00:00
+  [BetMGM] over: +125 (Stake: $44.90)
+  [DraftKings] under: -120 (Stake: $55.10)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.22%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 2.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:38:16.081211+00:00 | End: 2026-08-30T03:38:18.049933+00:00
+  [BetMGM] over: +105 (Stake: $49.38)
+  [DraftKings] under: +100 (Stake: $50.62)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.69%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 8.5
+Duration: 93.2 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:36:41.260112+00:00 | End: 2026-08-30T03:38:14.434071+00:00
+  [BetMGM] over: +160 (Stake: $39.53)
+  [Betano] under: -143 (Stake: $60.47)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.88%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 0.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:39:31.368654+00:00 | End: 2026-08-30T03:39:31.594100+00:00
+  [BetMGM] over: +110 (Stake: $49.03)
+  [Betano] under: +102 (Stake: $50.97)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.22%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 0.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:39:31.686113+00:00 | End: 2026-08-30T03:39:31.744456+00:00
+  [FanDuel] over: +100 (Stake: $50.62)
+  [Caesars] under: +105 (Stake: $49.38)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.76%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 5.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:39:31.368654+00:00 | End: 2026-08-30T03:39:36.911903+00:00
+  [FanDuel] away: +128 (Stake: $45.57)
+  [BetMGM] home: -110 (Stake: $54.43)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.38%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 18.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:39:31.368654+00:00 | End: 2026-08-30T03:39:50.065638+00:00
+  [DraftKings] home: -590 (Stake: $88.50)
+  [FanDuel] away: +800 (Stake: $11.50)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.24%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 28.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:39:51.655863+00:00 | End: 2026-08-30T03:40:20.449702+00:00
+  [DraftKings] home: -590 (Stake: $89.29)
+  [BetMGM] away: +875 (Stake: $10.71)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.43%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 4.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:40:16.361671+00:00 | End: 2026-08-30T03:40:20.457601+00:00
+  [BetMGM] away: +145 (Stake: $42.71)
+  [DraftKings] home: -121 (Stake: $57.29)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.07%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -3.5
+Duration: 0.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:40:20.005120+00:00 | End: 2026-08-30T03:40:20.946974+00:00
+  [BetMGM] away: -115 (Stake: $54.62)
+  [Caesars] home: +125 (Stake: $45.38)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.11%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 2.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:40:20.473758+00:00 | End: 2026-08-30T03:40:23.327720+00:00
+  [DraftKings] home: -800 (Stake: $89.89)
+  [BetMGM] away: +900 (Stake: $10.11)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.94%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 9.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:40:13.727729+00:00 | End: 2026-08-30T03:40:23.338728+00:00
+  [BetMGM] over: +135 (Stake: $46.22)
+  [DraftKings] under: +102 (Stake: $53.78)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.46%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -3.5
+Duration: 4.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:40:21.634292+00:00 | End: 2026-08-30T03:40:25.980233+00:00
+  [BetMGM] away: -115 (Stake: $54.84)
+  [DraftKings] home: +127 (Stake: $45.16)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.14%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 2.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:40:30.374198+00:00 | End: 2026-08-30T03:40:32.372552+00:00
+  [Betano] home: +350 (Stake: $22.48)
+  [DraftKings] away: -328 (Stake: $77.52)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.51%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -4.5
+Duration: 51.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:40:20.018811+00:00 | End: 2026-08-30T03:41:11.044852+00:00
+  [BetMGM] away: +185 (Stake: $35.99)
+  [FanDuel] home: -166 (Stake: $64.01)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.01%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -3.5
+Duration: 4.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:41:11.992463+00:00 | End: 2026-08-30T03:41:16.451030+00:00
+  [DraftKings] away: -120 (Stake: $55.10)
+  [Caesars] home: +125 (Stake: $44.90)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.19%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 1.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:41:15.242522+00:00 | End: 2026-08-30T03:41:16.636826+00:00
+  [FanDuel] home: +1100 (Stake: $8.52)
+  [DraftKings] away: -850 (Stake: $91.48)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.20%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 8.5
+Duration: 6.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:41:11.407681+00:00 | End: 2026-08-30T03:41:17.866561+00:00
+  [BetMGM] over: +145 (Stake: $41.31)
+  [FanDuel] under: -138 (Stake: $58.69)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 11.22%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
+Duration: 94.0 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:40:13.724909+00:00 | End: 2026-08-30T03:41:47.752957+00:00
+  [BetMGM] over: +210 (Stake: $36.33)
+  [Caesars] under: -130 (Stake: $63.67)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.20%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 8.5
+Duration: 34.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:41:44.122436+00:00 | End: 2026-08-30T03:42:18.808057+00:00
+  [BetMGM] over: +145 (Stake: $41.31)
+  [FanDuel] under: -138 (Stake: $58.69)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.40%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 3.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:42:19.385178+00:00 | End: 2026-08-30T03:42:22.565136+00:00
+  [FanDuel] home: +1000 (Stake: $9.31)
+  [DraftKings] away: -770 (Stake: $90.69)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.71%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 1.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:42:38.810191+00:00 | End: 2026-08-30T03:42:40.278165+00:00
+  [Caesars] over: +105 (Stake: $49.63)
+  [DraftKings] under: +102 (Stake: $50.37)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.74%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -4.5
+Duration: 25.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:42:20.403627+00:00 | End: 2026-08-30T03:42:45.564484+00:00
+  [BetMGM] away: +180 (Stake: $36.35)
+  [Betano] home: -167 (Stake: $63.65)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.09%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -4.5
+Duration: 18.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:43:05.026824+00:00 | End: 2026-08-30T03:43:23.930785+00:00
+  [BetMGM] away: +175 (Stake: $36.76)
+  [Betano] home: -167 (Stake: $63.24)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.67%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 0.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:43:39.687848+00:00 | End: 2026-08-30T03:43:40.096871+00:00
+  [FanDuel] home: +650 (Stake: $13.70)
+  [BetMGM] away: -525 (Stake: $86.30)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.49%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 8.5
+Duration: 0.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:43:39.682178+00:00 | End: 2026-08-30T03:43:40.096871+00:00
+  [FanDuel] over: +100 (Stake: $51.81)
+  [BetMGM] under: +115 (Stake: $48.19)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.34%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 6.5
+Duration: 0.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:43:46.788429+00:00 | End: 2026-08-30T03:43:47.346793+00:00
+  [Caesars] over: -135 (Stake: $59.43)
+  [BetMGM] under: +155 (Stake: $40.57)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.58%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 18.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:43:30.388934+00:00 | End: 2026-08-30T03:43:49.097108+00:00
+  [BetMGM] over: +140 (Stake: $42.77)
+  [DraftKings] under: -126 (Stake: $57.23)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.52%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -3.5
+Duration: 69.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:43:39.664506+00:00 | End: 2026-08-30T03:44:49.396811+00:00
+  [BetMGM] away: +135 (Stake: $45.04)
+  [FanDuel] home: -108 (Stake: $54.96)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.11%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 7.5
+Duration: 77.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:43:39.699392+00:00 | End: 2026-08-30T03:44:57.523701+00:00
+  [Caesars] over: -130 (Stake: $60.85)
+  [BetMGM] under: +175 (Stake: $39.15)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.79%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 3.5
+Duration: 93.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:43:47.011435+00:00 | End: 2026-08-30T03:45:19.973058+00:00
+  [Caesars] away: -170 (Stake: $66.83)
+  [BetMGM] home: +220 (Stake: $33.17)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.66%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -3.5
+Duration: 23.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:45:43.799018+00:00 | End: 2026-08-30T03:46:07.605378+00:00
+  [BetMGM] away: +180 (Stake: $37.07)
+  [Betano] home: -154 (Stake: $62.93)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 16.13%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 9.5
+Duration: 13.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:46:07.406652+00:00 | End: 2026-08-30T03:46:20.513855+00:00
+  [Caesars] over: +105 (Stake: $58.16)
+  [BetMGM] under: +185 (Stake: $41.84)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 16.71%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 15.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:46:07.406652+00:00 | End: 2026-08-30T03:46:22.674046+00:00
+  [DraftKings] home: +392 (Stake: $24.40)
+  [BetMGM] away: -170 (Stake: $75.60)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 15.16%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 9.5
+Duration: 1.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:46:21.338646+00:00 | End: 2026-08-30T03:46:22.929912+00:00
+  [DraftKings] over: +101 (Stake: $58.64)
+  [BetMGM] under: +185 (Stake: $41.36)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 11.07%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -1.5
+Duration: 1.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:46:21.358710+00:00 | End: 2026-08-30T03:46:22.949764+00:00
+  [BetMGM] away: +130 (Stake: $48.89)
+  [Caesars] home: +120 (Stake: $51.11)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.57%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 3.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:46:32.157127+00:00 | End: 2026-08-30T03:46:35.407811+00:00
+  [Caesars] over: +115 (Stake: $47.25)
+  [Betano] under: -108 (Stake: $52.75)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 24.60%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 69.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:46:07.608508+00:00 | End: 2026-08-30T03:47:17.355227+00:00
+  [BetMGM] away: +260 (Stake: $36.84)
+  [Caesars] home: +110 (Stake: $63.16)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.99%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 42.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:46:50.412176+00:00 | End: 2026-08-30T03:47:32.781038+00:00
+  [Caesars] over: +115 (Stake: $47.95)
+  [Betano] under: -102 (Stake: $52.05)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 21.67%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 8.5
+Duration: 126.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:46:07.584771+00:00 | End: 2026-08-30T03:48:14.460972+00:00
+  [Caesars] over: -140 (Stake: $74.47)
+  [BetMGM] under: +400 (Stake: $25.53)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.91%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 3.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:48:14.643149+00:00 | End: 2026-08-30T03:48:18.330640+00:00
+  [BetMGM] over: +118 (Stake: $47.25)
+  [DraftKings] under: -105 (Stake: $52.75)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.01%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 6.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:48:26.704733+00:00 | End: 2026-08-30T03:48:33.453961+00:00
+  [Caesars] over: +125 (Stake: $44.90)
+  [Betano] under: -120 (Stake: $55.10)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 10.38%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 15.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:48:44.362940+00:00 | End: 2026-08-30T03:48:59.428285+00:00
+  [DraftKings] away: +115 (Stake: $51.90)
+  [FanDuel] home: +132 (Stake: $48.10)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 8.20%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 9.5
+Duration: 16.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:48:44.338568+00:00 | End: 2026-08-30T03:49:00.613634+00:00
+  [BetMGM] over: +145 (Stake: $44.46)
+  [DraftKings] under: -104 (Stake: $55.54)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 15.19%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 16.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:48:43.922653+00:00 | End: 2026-08-30T03:49:00.668138+00:00
+  [FanDuel] home: +750 (Stake: $13.87)
+  [DraftKings] away: -271 (Stake: $86.13)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.58%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 8.5
+Duration: 5.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:48:55.517971+00:00 | End: 2026-08-30T03:49:00.668138+00:00
+  [FanDuel] over: -104 (Stake: $53.42)
+  [BetMGM] under: +125 (Stake: $46.58)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.50%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -1.5
+Duration: 1.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:49:43.145010+00:00 | End: 2026-08-30T03:49:45.079993+00:00
+  [BetMGM] away: +125 (Stake: $45.59)
+  [DraftKings] home: -113 (Stake: $54.41)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.43%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 2.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:49:42.815092+00:00 | End: 2026-08-30T03:49:45.084408+00:00
+  [BetMGM] over: +145 (Stake: $42.27)
+  [DraftKings] under: -126 (Stake: $57.73)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 11.65%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -3.5
+Duration: 72.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:49:00.652585+00:00 | End: 2026-08-30T03:50:13.081581+00:00
+  [BetMGM] away: +320 (Stake: $26.95)
+  [FanDuel] home: -182 (Stake: $73.05)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.07%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 9.5
+Duration: 20.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:49:53.135848+00:00 | End: 2026-08-30T03:50:13.941612+00:00
+  [BetMGM] over: +130 (Stake: $45.80)
+  [FanDuel] under: -106 (Stake: $54.20)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 17.30%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 21.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:49:52.633999+00:00 | End: 2026-08-30T03:50:13.944820+00:00
+  [BetMGM] away: +170 (Stake: $44.79)
+  [DraftKings] home: +119 (Stake: $55.21)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 8.05%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 22.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:49:52.630782+00:00 | End: 2026-08-30T03:50:14.624991+00:00
+  [FanDuel] home: +490 (Stake: $18.43)
+  [BetMGM] away: -300 (Stake: $81.57)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.42%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 1.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:50:14.628999+00:00 | End: 2026-08-30T03:50:15.841457+00:00
+  [BetMGM] away: +170 (Stake: $37.57)
+  [DraftKings] home: -160 (Stake: $62.43)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.02%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 1.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:50:56.587882+00:00 | End: 2026-08-30T03:50:58.390746+00:00
+  [Caesars] over: +145 (Stake: $41.24)
+  [Betano] under: -139 (Stake: $58.76)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 14.45%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 8.5
+Duration: 73.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:49:53.201093+00:00 | End: 2026-08-30T03:51:06.857497+00:00
+  [Betano] over: -128 (Stake: $65.62)
+  [BetMGM] under: +240 (Stake: $34.38)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.12%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 0.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:51:49.443229+00:00 | End: 2026-08-30T03:51:49.540428+00:00
+  [BetMGM] over: +170 (Stake: $38.23)
+  [Betano] under: -149 (Stake: $61.77)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.55%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 2.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:51:49.126491+00:00 | End: 2026-08-30T03:51:52.068456+00:00
+  [FanDuel] away: +120 (Stake: $47.62)
+  [BetMGM] home: +100 (Stake: $52.38)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.56%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 2.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:51:49.443229+00:00 | End: 2026-08-30T03:51:52.068456+00:00
+  [DraftKings] home: -610 (Stake: $89.09)
+  [FanDuel] away: +850 (Stake: $10.91)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.02%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 0.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:52:17.386986+00:00 | End: 2026-08-30T03:52:17.445554+00:00
+  [BetMGM] over: +145 (Stake: $41.24)
+  [Betano] under: -139 (Stake: $58.76)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.15%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 0.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:52:17.555699+00:00 | End: 2026-08-30T03:52:18.350004+00:00
+  [Caesars] over: +150 (Stake: $40.47)
+  [DraftKings] under: -143 (Stake: $59.53)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.11%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 6.5
+Duration: 59.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:51:49.544377+00:00 | End: 2026-08-30T03:52:49.093309+00:00
+  [DraftKings] over: -130 (Stake: $58.94)
+  [BetMGM] under: +154 (Stake: $41.06)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.24%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 0.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:52:49.093309+00:00 | End: 2026-08-30T03:52:49.277537+00:00
+  [DraftKings] home: -586 (Stake: $86.50)
+  [FanDuel] away: +650 (Stake: $13.50)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.22%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 0.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:06.319149+00:00 | End: 2026-08-30T03:53:06.445761+00:00
+  [Betano] away: +105 (Stake: $49.38)
+  [BetMGM] home: +100 (Stake: $50.62)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.10%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 0.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:29.817497+00:00 | End: 2026-08-30T03:53:30.459653+00:00
+  [Caesars] home: -550 (Stake: $85.56)
+  [FanDuel] away: +600 (Stake: $14.44)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.39%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -1.5
+Duration: 0.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:36.830621+00:00 | End: 2026-08-30T03:53:37.582153+00:00
+  [DraftKings] away: +111 (Stake: $48.06)
+  [Caesars] home: -105 (Stake: $51.94)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.38%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 3.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:37.575352+00:00 | End: 2026-08-30T03:53:40.768899+00:00
+  [FanDuel] home: +200 (Stake: $34.15)
+  [DraftKings] away: -180 (Stake: $65.85)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.49%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 13.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:29.142155+00:00 | End: 2026-08-30T03:53:42.454022+00:00
+  [Betano] away: +100 (Stake: $51.81)
+  [BetMGM] home: +115 (Stake: $48.19)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.78%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 6.5
+Duration: 19.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:29.127819+00:00 | End: 2026-08-30T03:53:48.245837+00:00
+  [Caesars] over: -145 (Stake: $61.51)
+  [BetMGM] under: +170 (Stake: $38.49)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.49%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 1.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:48.239673+00:00 | End: 2026-08-30T03:53:49.223320+00:00
+  [Betano] away: +115 (Stake: $48.19)
+  [Caesars] home: +100 (Stake: $51.81)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.14%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 6.5
+Duration: 3.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:51.264550+00:00 | End: 2026-08-30T03:53:54.466462+00:00
+  [BetMGM] over: -105 (Stake: $53.43)
+  [FanDuel] under: +124 (Stake: $46.57)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 8.33%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 12.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:49.225694+00:00 | End: 2026-08-30T03:54:01.439481+00:00
+  [BetMGM] away: +140 (Stake: $45.45)
+  [FanDuel] home: +100 (Stake: $54.55)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.56%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 13.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:48.260828+00:00 | End: 2026-08-30T03:54:01.439481+00:00
+  [DraftKings] home: -563 (Stake: $89.92)
+  [BetMGM] away: +950 (Stake: $10.08)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.00%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 9.5
+Duration: 27.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:36.791806+00:00 | End: 2026-08-30T03:54:04.191461+00:00
+  [FanDuel] over: -136 (Stake: $59.41)
+  [BetMGM] under: +154 (Stake: $40.59)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.94%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 9.5
+Duration: 0.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:54:41.455950+00:00 | End: 2026-08-30T03:54:41.690251+00:00
+  [Betano] over: +102 (Stake: $53.78)
+  [BetMGM] under: +135 (Stake: $46.22)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.60%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 9.5
+Duration: 3.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:54:44.380662+00:00 | End: 2026-08-30T03:54:47.581479+00:00
+  [BetMGM] over: +110 (Stake: $49.40)
+  [DraftKings] under: +105 (Stake: $50.60)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 13.00%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 12.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:54:41.315802+00:00 | End: 2026-08-30T03:54:53.282583+00:00
+  [BetMGM] home: +400 (Stake: $22.99)
+  [DraftKings] away: -203 (Stake: $77.01)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.49%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 0.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:54:53.282583+00:00 | End: 2026-08-30T03:54:53.455248+00:00
+  [FanDuel] home: +460 (Stake: $18.13)
+  [Betano] away: -417 (Stake: $81.87)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 8.73%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 67.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:53:48.219542+00:00 | End: 2026-08-30T03:54:56.016170+00:00
+  [BetMGM] over: +210 (Stake: $35.34)
+  [FanDuel] under: -144 (Stake: $64.66)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.10%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 3.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:54:55.384608+00:00 | End: 2026-08-30T03:54:58.429786+00:00
+  [DraftKings] home: -540 (Stake: $88.91)
+  [FanDuel] away: +850 (Stake: $11.09)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.35%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 6.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:54:54.360053+00:00 | End: 2026-08-30T03:55:00.461548+00:00
+  [FanDuel] away: +118 (Stake: $48.46)
+  [BetMGM] home: +105 (Stake: $51.54)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.58%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 12.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:54:53.455248+00:00 | End: 2026-08-30T03:55:05.456068+00:00
+  [Betano] home: +570 (Stake: $15.16)
+  [DraftKings] away: -506 (Stake: $84.84)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.64%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 0.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:55:08.731058+00:00 | End: 2026-08-30T03:55:08.894638+00:00
+  [FanDuel] home: +490 (Stake: $17.23)
+  [DraftKings] away: -438 (Stake: $82.77)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.41%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
+Duration: 0.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:55:27.457918+00:00 | End: 2026-08-30T03:55:27.669338+00:00
+  [BetMGM] over: +170 (Stake: $40.00)
+  [Betano] under: -125 (Stake: $60.00)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.43%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 15.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:55:24.352103+00:00 | End: 2026-08-30T03:55:39.447663+00:00
+  [FanDuel] home: +490 (Stake: $17.20)
+  [DraftKings] away: -444 (Stake: $82.80)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 11.50%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 13.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:55:27.320816+00:00 | End: 2026-08-30T03:55:40.702208+00:00
+  [DraftKings] home: -255 (Stake: $81.17)
+  [FanDuel] away: +500 (Stake: $18.83)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.80%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 1.5
+Duration: 11.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:55:28.925074+00:00 | End: 2026-08-30T03:55:40.719493+00:00
+  [Caesars] away: +125 (Stake: $47.18)
+  [DraftKings] home: +101 (Stake: $52.82)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.89%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
+Duration: 0.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:55:40.583082+00:00 | End: 2026-08-30T03:55:41.164469+00:00
+  [Caesars] over: +110 (Stake: $48.53)
+  [Betano] under: -102 (Stake: $51.47)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.85%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 2.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:55:42.446637+00:00 | End: 2026-08-30T03:55:44.859902+00:00
+  [DraftKings] home: -255 (Stake: $73.19)
+  [FanDuel] away: +280 (Stake: $26.81)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.80%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 69.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:54:40.630496+00:00 | End: 2026-08-30T03:55:50.457515+00:00
+  [BetMGM] over: +175 (Stake: $37.03)
+  [DraftKings] under: -162 (Stake: $62.97)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 11.74%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -1.5
+Duration: 87.9 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:54:41.313169+00:00 | End: 2026-08-30T03:56:09.184338+00:00
+  [Betano] away: -105 (Stake: $58.03)
+  [BetMGM] home: +170 (Stake: $41.97)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.98%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 8.5
+Duration: 90.8 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:54:53.455248+00:00 | End: 2026-08-30T03:56:24.212271+00:00
+  [Betano] over: -125 (Stake: $59.09)
+  [BetMGM] under: +160 (Stake: $40.91)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.54%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 2.5
+Duration: 2.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:56:39.246640+00:00 | End: 2026-08-30T03:56:41.433150+00:00
+  [BetMGM] over: -120 (Stake: $55.96)
+  [DraftKings] under: +133 (Stake: $44.04)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.10%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 2.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:56:39.265049+00:00 | End: 2026-08-30T03:56:41.603104+00:00
+  [BetMGM] home: +550 (Stake: $15.71)
+  [DraftKings] away: -472 (Stake: $84.29)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 20.96%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 6.5
+Duration: 88.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:55:27.672728+00:00 | End: 2026-08-30T03:56:56.529745+00:00
+  [FanDuel] over: -138 (Stake: $73.36)
+  [BetMGM] under: +375 (Stake: $26.64)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 15.78%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 93.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:55:23.358939+00:00 | End: 2026-08-30T03:56:56.958467+00:00
+  [Caesars] over: +135 (Stake: $50.53)
+  [BetMGM] under: +140 (Stake: $49.47)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.70%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 1.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:56:56.464520+00:00 | End: 2026-08-30T03:56:58.341320+00:00
+  [DraftKings] home: -257 (Stake: $73.23)
+  [Betano] away: +280 (Stake: $26.77)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 10.58%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 10.5
+Duration: 123.8 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:54:41.677896+00:00 | End: 2026-08-30T03:56:45.444438+00:00
+  [BetMGM] over: +175 (Stake: $40.67)
+  [DraftKings] under: -113 (Stake: $59.33)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 23.78%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 80.4 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:55:27.665587+00:00 | End: 2026-08-30T03:56:48.038581+00:00
+  [Caesars] away: -115 (Stake: $70.18)
+  [BetMGM] home: +340 (Stake: $29.82)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 9.86%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 1.5
+Duration: 8.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:57:40.199028+00:00 | End: 2026-08-30T03:57:48.880337+00:00
+  [Betano] away: +127 (Stake: $48.87)
+  [DraftKings] home: +117 (Stake: $51.13)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 11.44%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 8.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:57:40.194939+00:00 | End: 2026-08-30T03:57:48.880337+00:00
+  [DraftKings] home: -228 (Stake: $78.49)
+  [BetMGM] away: +425 (Stake: $21.51)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 8.90%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
+Duration: 9.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:57:40.168373+00:00 | End: 2026-08-30T03:57:50.113343+00:00
+  [BetMGM] over: +130 (Stake: $47.73)
+  [DraftKings] under: +110 (Stake: $52.27)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.81%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 0.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:58:29.061388+00:00 | End: 2026-08-30T03:58:29.913625+00:00
+  [BetMGM] away: +140 (Stake: $42.44)
+  [Caesars] home: -130 (Stake: $57.56)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.55%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 3.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:58:30.778295+00:00 | End: 2026-08-30T03:58:33.749034+00:00
+  [BetMGM] away: +175 (Stake: $38.91)
+  [DraftKings] home: -133 (Stake: $61.09)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 10.71%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 9.5
+Duration: 100.3 seconds (Closed by: Timeout)
+Start: 2026-08-30T03:57:42.138326+00:00 | End: 2026-08-30T03:59:22.465187+00:00
+  [BetMGM] over: +270 (Stake: $30.27)
+  [DraftKings] under: -165 (Stake: $69.73)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.10%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 21.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:59:23.082507+00:00 | End: 2026-08-30T03:59:44.655347+00:00
+  [BetMGM] away: +175 (Stake: $37.14)
+  [Caesars] home: -160 (Stake: $62.86)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.72%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 9.5
+Duration: 21.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:59:23.446298+00:00 | End: 2026-08-30T03:59:44.661387+00:00
+  [BetMGM] over: +170 (Stake: $37.69)
+  [DraftKings] under: -158 (Stake: $62.31)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.88%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 44.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T03:59:56.862028+00:00 | End: 2026-08-30T04:00:41.643819+00:00
+  [BetMGM] away: +190 (Stake: $35.14)
+  [DraftKings] home: -175 (Stake: $64.86)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.16%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 3.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:00:51.851948+00:00 | End: 2026-08-30T04:00:55.473165+00:00
+  [DraftKings] home: -285 (Stake: $75.66)
+  [FanDuel] away: +320 (Stake: $24.34)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.00%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 34.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:01:10.208137+00:00 | End: 2026-08-30T04:01:44.459516+00:00
+  [DraftKings] home: -269 (Stake: $75.16)
+  [Betano] away: +315 (Stake: $24.84)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 5.87%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -1.5
+Duration: 20.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:01:31.263729+00:00 | End: 2026-08-30T04:01:51.504514+00:00
+  [Caesars] away: +115 (Stake: $49.41)
+  [BetMGM] home: +110 (Stake: $50.59)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.85%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 26.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:01:47.092058+00:00 | End: 2026-08-30T04:02:13.535018+00:00
+  [DraftKings] home: -294 (Stake: $76.03)
+  [Betano] away: +325 (Stake: $23.97)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.38%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 0.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:02:12.929097+00:00 | End: 2026-08-30T04:02:13.548151+00:00
+  [FanDuel] home: +850 (Stake: $10.67)
+  [DraftKings] away: -740 (Stake: $89.33)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 9.51%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 1.5
+Duration: 9.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:02:44.505890+00:00 | End: 2026-08-30T04:02:54.416446+00:00
+  [Caesars] away: +175 (Stake: $40.18)
+  [DraftKings] home: -118 (Stake: $59.82)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 10.34%
+Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
+Duration: 9.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:02:44.505890+00:00 | End: 2026-08-30T04:02:54.416446+00:00
+  [DraftKings] home: -306 (Stake: $84.07)
+  [BetMGM] away: +600 (Stake: $15.93)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.86%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -1.5
+Duration: 59.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:02:12.449821+00:00 | End: 2026-08-30T04:03:12.304646+00:00
+  [DraftKings] away: -142 (Stake: $60.41)
+  [Caesars] home: +160 (Stake: $39.59)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.08%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 2.5
+Duration: 101.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:01:31.248422+00:00 | End: 2026-08-30T04:03:12.318547+00:00
+  [Caesars] over: -120 (Stake: $58.08)
+  [BetMGM] under: +154 (Stake: $41.92)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.22%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 0.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:03:51.227794+00:00 | End: 2026-08-30T04:03:51.288399+00:00
+  [BetMGM] away: +210 (Stake: $32.99)
+  [Caesars] home: -190 (Stake: $67.01)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.74%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 0.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:03:51.514520+00:00 | End: 2026-08-30T04:03:51.516459+00:00
+  [FanDuel] home: +490 (Stake: $17.25)
+  [Betano] away: -435 (Stake: $82.75)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 12.47%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
+Duration: 64.3 seconds (Closed by: Timeout)
+Start: 2026-08-30T04:02:44.879423+00:00 | End: 2026-08-30T04:03:49.224714+00:00
+  [BetMGM] over: +170 (Stake: $42.31)
+  [DraftKings] under: -102 (Stake: $57.69)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.71%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 2.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:03:53.580113+00:00 | End: 2026-08-30T04:03:55.546017+00:00
+  [FanDuel] home: +490 (Stake: $17.24)
+  [DraftKings] away: -436 (Stake: $82.76)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.07%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 1.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:03:56.515526+00:00 | End: 2026-08-30T04:03:57.553511+00:00
+  [Caesars] over: +110 (Stake: $49.64)
+  [Betano] under: +107 (Stake: $50.36)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.64%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -2.5
+Duration: 3.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:03:57.937335+00:00 | End: 2026-08-30T04:04:01.508586+00:00
+  [DraftKings] away: +144 (Stake: $43.90)
+  [BetMGM] home: -110 (Stake: $56.10)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.30%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 3.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:03:57.942394+00:00 | End: 2026-08-30T04:04:01.525325+00:00
+  [DraftKings] over: +111 (Stake: $49.52)
+  [Betano] under: +107 (Stake: $50.48)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.63%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 0.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:04:53.529722+00:00 | End: 2026-08-30T04:04:54.005294+00:00
+  [FanDuel] home: +1000 (Stake: $9.24)
+  [Betano] away: -833 (Stake: $90.76)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.60%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -1.5
+Duration: 0.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:04:58.998900+00:00 | End: 2026-08-30T04:04:59.199682+00:00
+  [BetMGM] away: +105 (Stake: $50.60)
+  [FanDuel] home: +110 (Stake: $49.40)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 4.71%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -1.5
+Duration: 21.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:04:59.199682+00:00 | End: 2026-08-30T04:05:20.511133+00:00
+  [Betano] away: +115 (Stake: $48.81)
+  [Caesars] home: +105 (Stake: $51.19)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.07%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 2.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:05:22.534152+00:00 | End: 2026-08-30T04:05:24.979743+00:00
+  [FanDuel] home: +490 (Stake: $17.13)
+  [Betano] away: -455 (Stake: $82.87)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 17.54%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -2.5
+Duration: 62.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:04:53.215387+00:00 | End: 2026-08-30T04:05:55.931661+00:00
+  [BetMGM] away: +240 (Stake: $35.67)
+  [DraftKings] home: -113 (Stake: $64.33)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 16.26%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 62.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:04:53.529722+00:00 | End: 2026-08-30T04:05:55.931661+00:00
+  [BetMGM] over: +190 (Stake: $41.18)
+  [DraftKings] under: +103 (Stake: $58.82)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 21.08%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -2.5
+Duration: 10.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:05:55.931661+00:00 | End: 2026-08-30T04:06:06.232512+00:00
+  [BetMGM] away: +240 (Stake: $37.27)
+  [FanDuel] home: +102 (Stake: $62.73)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 17.90%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 10.3 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:05:55.931661+00:00 | End: 2026-08-30T04:06:06.232512+00:00
+  [BetMGM] over: +190 (Stake: $42.00)
+  [FanDuel] under: +110 (Stake: $58.00)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.34%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -1.5
+Duration: 1.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:06:15.159559+00:00 | End: 2026-08-30T04:06:16.611826+00:00
+  [BetMGM] away: -155 (Stake: $61.61)
+  [FanDuel] home: +164 (Stake: $38.39)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.76%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 1.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:06:15.179695+00:00 | End: 2026-08-30T04:06:16.611826+00:00
+  [FanDuel] home: +480 (Stake: $17.73)
+  [Betano] away: -400 (Stake: $82.27)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.37%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 25.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:05:55.931661+00:00 | End: 2026-08-30T04:06:21.741957+00:00
+  [FanDuel] home: +1400 (Stake: $7.12)
+  [Betano] away: -667 (Stake: $92.88)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 3.36%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 5.7 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:06:44.868243+00:00 | End: 2026-08-30T04:06:50.618103+00:00
+  [DraftKings] over: +104 (Stake: $50.72)
+  [BetMGM] under: +110 (Stake: $49.28)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.08%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 78.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:05:39.807265+00:00 | End: 2026-08-30T04:06:57.774903+00:00
+  [BetMGM] away: +220 (Stake: $31.91)
+  [Caesars] home: -200 (Stake: $68.09)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 2.66%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 9.5
+Duration: 0.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:07:09.662621+00:00 | End: 2026-08-30T04:07:10.516969+00:00
+  [BetMGM] over: +145 (Stake: $41.93)
+  [Caesars] under: -130 (Stake: $58.07)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 12.86%
+Match: Baltimore Orioles @ Oakland Athletics | moneyline | Line: None
+Duration: 4.9 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:07:08.543764+00:00 | End: 2026-08-30T04:07:13.398531+00:00
+  [FanDuel] home: +360 (Stake: $24.95)
+  [DraftKings] away: -189 (Stake: $75.05)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 9.03%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
+Duration: 10.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:07:08.850218+00:00 | End: 2026-08-30T04:07:19.080994+00:00
+  [BetMGM] away: +350 (Stake: $24.43)
+  [FanDuel] home: -220 (Stake: $75.57)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 17.68%
+Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -1.5
+Duration: 12.0 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:07:08.543764+00:00 | End: 2026-08-30T04:07:20.541031+00:00
+  [BetMGM] away: +140 (Stake: $50.62)
+  [FanDuel] home: +146 (Stake: $49.38)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 6.67%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 8.5 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:07:41.081413+00:00 | End: 2026-08-30T04:07:49.588110+00:00
+  [FanDuel] home: +1400 (Stake: $7.14)
+  [DraftKings] away: -650 (Stake: $92.86)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 12.33%
+Match: Baltimore Orioles @ Oakland Athletics | total | Line: 8.5
+Duration: 73.4 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:07:08.816530+00:00 | End: 2026-08-30T04:08:22.224894+00:00
+  [FanDuel] over: -132 (Stake: $64.90)
+  [BetMGM] under: +225 (Stake: $35.10)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.11%
+Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 3.5
+Duration: 65.1 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:07:50.603042+00:00 | End: 2026-08-30T04:08:55.739473+00:00
+  [BetMGM] over: +210 (Stake: $34.73)
+  [FanDuel] under: -154 (Stake: $65.27)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.94%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -2.5
+Duration: 77.2 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:07:50.600130+00:00 | End: 2026-08-30T04:09:07.814338+00:00
+  [BetMGM] away: +260 (Stake: $30.17)
+  [FanDuel] home: -180 (Stake: $69.83)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 1.17%
+Match: Philadelphia Phillies @ Los Angeles Angels | moneyline | Line: None
+Duration: 8.6 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:09:12.924836+00:00 | End: 2026-08-30T04:09:21.548605+00:00
+  [FanDuel] home: +800 (Stake: $11.24)
+  [Betano] away: -714 (Stake: $88.76)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 7.20%
+Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 7.5
+Duration: 29.8 seconds (Closed by: Line moved or book stale)
+Start: 2026-08-30T04:08:53.808982+00:00 | End: 2026-08-30T04:09:23.610514+00:00
+  [BetMGM] over: +135 (Stake: $45.85)
+  [DraftKings] under: -101 (Stake: $54.15)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 12.57%
+Match: Arizona Diamondbacks @ San Francisco Giants | run_line | Line: 2.5
+Duration: 72.5 seconds (Closed by: End of timeline)
+Start: 2026-08-30T04:08:52.521901+00:00 | End: 2026-08-30T04:10:05.058940+00:00
+  [DraftKings] away: -177 (Stake: $73.09)
+  [BetMGM] home: +325 (Stake: $26.91)
+================================================================================
+
+
+================================================================================
+OPPORTUNITY DETECTED! Margin: 15.78%
+Match: Philadelphia Phillies @ Los Angeles Angels | run_line | Line: -1.5
+Duration: 57.5 seconds (Closed by: End of timeline)
+Start: 2026-08-30T04:09:07.574600+00:00 | End: 2026-08-30T04:10:05.058940+00:00
+  [Caesars] away: +135 (Stake: $50.53)
+  [BetMGM] home: +140 (Stake: $49.47)
+================================================================================
+

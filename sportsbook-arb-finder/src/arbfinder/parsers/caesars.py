@@ -150,6 +150,7 @@ class CaesarsParser(BookParser):
             self.reference_data["selections"][sel_id] = {
                 "name": sel_name,
                 "market_id": market_id,
+                "type": sel.get("type", ""),
             }
 
     def update_enrichment_line(
@@ -176,11 +177,29 @@ class CaesarsParser(BookParser):
         if "d" not in price:
             return []
 
-        enr = self.reference_data["selections"].get(uuid, {})
+        enr = self.reference_data["selections"].get(uuid)
+        if not enr:
+            from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+            record_unresolved_parser_id(self.book_name, "selection_id", uuid)
+            enr = {}
+            
         market_id = enr.get("market_id", "")
-        market_enr = self.reference_data["markets"].get(market_id, {})
+        market_enr = self.reference_data["markets"].get(market_id)
+        if market_id and not market_enr:
+            from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+            record_unresolved_parser_id(self.book_name, "market_id", market_id)
+            market_enr = {}
+        elif not market_enr:
+            market_enr = {}
+            
         event_id = market_enr.get("event_id", "")
-        event_enr = self.reference_data["events"].get(event_id, {})
+        event_enr = self.reference_data["events"].get(event_id)
+        if event_id and not event_enr:
+            from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
+            record_unresolved_parser_id(self.book_name, "event_id", event_id)
+            event_enr = {}
+        elif not event_enr:
+            event_enr = {}
 
         # Caesars CBOR selection objects carry their own name (e.g. '|Baltimore Orioles|').
         # If REST /v4/home enrichment lookup misses (e.g. mid-session new selection),
@@ -194,19 +213,25 @@ class CaesarsParser(BookParser):
         ev_name = event_enr.get("name", "")
         ev_id = event_id
 
-        market_line = market_enr.get("handicap")
-        handicap_val = None
-        if market_line is not None:
-            try:
-                handicap_val = float(market_line)
-            except (ValueError, TypeError):
-                pass
-
         # Heuristic assumption (not sourced from prototype — prototype prints full event_name):
         # Caesars fixture names typically follow "Away Team at Home Team"
         home_team, away_team = split_fixture_name(ev_name)
         # split_fixture_name returns (home, away) for ' at '/' @ ' delimiters,
         # which matches the Caesars convention.
+
+        market_line = market_enr.get("handicap")
+        handicap_val = None
+        if market_line is not None:
+            try:
+                handicap_val = float(market_line)
+                sel_type = enr.get("type", "")
+                # By cross-referencing with Moneyline odds, Caesars' market line 
+                # ALWAYS represents the Home team's handicap.
+                # We must invert it for the Away team.
+                if sel_type == "away" or (not sel_type and sel_name == away_team):
+                    handicap_val = -handicap_val
+            except (ValueError, TypeError):
+                pass
 
         try:
             price_val = float(price.get("d"))
