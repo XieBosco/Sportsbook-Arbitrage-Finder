@@ -55,6 +55,11 @@ def create_app(connection_manager: ConnectionManager, config: AppConfig) -> Fast
 
     # ---- Static files ----
     app.mount(
+        "/assets",
+        StaticFiles(directory=str(_STATIC_DIR.parent.parent.parent / "assets")),
+        name="assets",
+    )
+    app.mount(
         "/static",
         StaticFiles(directory=str(_STATIC_DIR)),
         name="static",

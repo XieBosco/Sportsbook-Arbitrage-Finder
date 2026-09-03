@@ -55,7 +55,7 @@ class Scanner:
         dedup: DedupTracker,
         sinks: list[OpportunitySink],
         expected_selections_by_market: dict[str, set[str]],
-        stake_budget_fn: Callable[[MarketGroupKey], float],
+        stake_budget_fn: Callable[[MarketGroupKey], tuple[float, int]],
     ) -> None:
         self._grouper = grouper
         self._thresholds = thresholds
@@ -189,11 +189,11 @@ class Scanner:
             return None
 
         # 7. Compute stakes
-        total_stake = self._budget_fn(group_key)
+        amount, method = self._budget_fn(group_key)
         odds_by_selection = {
             sel: odds for sel, (_, odds) in result.best_odds_by_selection.items()
         }
-        stakes = compute_stakes(odds_by_selection, total_stake)
+        stakes = compute_stakes(odds_by_selection, amount, method)
 
         # 8. Build Opportunity
         # Pick any MatchedSelection in the filtered group for shared fields

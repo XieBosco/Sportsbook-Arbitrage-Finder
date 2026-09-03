@@ -44,10 +44,6 @@
                 <div class="settings-section">
                     <h3>Arbitrage Config</h3>
                     <label>
-                        Min Profit Percentage:
-                        <input type="number" step="0.01" name="arb_min_profit_percentage">
-                    </label>
-                    <label>
                         Total Bet Amount:
                         <input type="number" step="1" name="arb_total_bet_amount">
                     </label>
@@ -57,7 +53,10 @@
                     </label>
                     <label>
                         Stake Calculating Method:
-                        <input type="number" step="1" name="arb_stake_calculating_method">
+                        <select name="arb_stake_calculating_method">
+                            <option value="1">Total Bet Amount</option>
+                            <option value="2">Fixed Underdog Stake</option>
+                        </select>
                     </label>
                     <label>
                         Mainlines Only:
@@ -87,14 +86,30 @@
                         Min Legs Required:
                         <input type="number" step="1" name="scan_min_legs_required">
                     </label>
-                    <label>
-                        Excluded Books (comma-separated):
-                        <input type="text" name="scan_excluded_books">
-                    </label>
-                    <label>
-                        Excluded Markets (comma-separated):
-                        <input type="text" name="scan_excluded_markets">
-                    </label>
+                    <div class="settings-field">
+                        <span>Excluded Books:</span>
+                        <div class="multi-select" id="books-dropdown">
+                            <div class="multi-select-header" id="books-header">Select books...</div>
+                            <div class="multi-select-options">
+                                <label><input type="checkbox" name="exclude_book" value="draftkings"> DraftKings</label>
+                                <label><input type="checkbox" name="exclude_book" value="fanduel"> FanDuel</label>
+                                <label><input type="checkbox" name="exclude_book" value="betmgm"> BetMGM</label>
+                                <label><input type="checkbox" name="exclude_book" value="caesars"> Caesars</label>
+                                <label><input type="checkbox" name="exclude_book" value="betano"> Betano</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-field">
+                        <span>Excluded Markets:</span>
+                        <div class="multi-select" id="markets-dropdown">
+                            <div class="multi-select-header" id="markets-header">Select markets...</div>
+                            <div class="multi-select-options">
+                                <label><input type="checkbox" name="exclude_market" value="moneyline"> Moneyline</label>
+                                <label><input type="checkbox" name="exclude_market" value="total"> Totals</label>
+                                <label><input type="checkbox" name="exclude_market" value="run_line"> Run Line</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="settings-section">

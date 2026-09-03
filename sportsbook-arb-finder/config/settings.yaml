@@ -39,7 +39,6 @@ books:
 
 # Arbitrage parameters (from original config.yaml)
 arbitrage:
-  min_profit_percentage: 2.5
   total_bet_amount: 100.0
   unit_size: 100.0
   stake_calculating_method: 2    # 1 = total_bet_amount, 2 = unit_size

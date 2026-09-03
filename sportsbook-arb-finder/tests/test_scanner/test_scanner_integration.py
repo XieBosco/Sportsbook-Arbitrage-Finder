@@ -64,7 +64,7 @@ def _make_scanner(
             "moneyline": {"home", "away"},
             "total": {"over", "under"},
         },
-        stake_budget_fn=lambda _key: 100.0,
+        stake_budget_fn=lambda _key: (100.0, 1),
     )
     return scanner, storage
 
@@ -222,7 +222,7 @@ class TestScannerIntegration:
             dedup=DedupTracker(30.0),
             sinks=[FailingSink(), storage],  # failing sink first
             expected_selections_by_market={"moneyline": {"home", "away"}},
-            stake_budget_fn=lambda _: 100.0,
+            stake_budget_fn=lambda _: (100.0, 1),
         )
 
         ts = _fresh_now()

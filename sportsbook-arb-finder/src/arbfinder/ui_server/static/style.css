@@ -239,6 +239,18 @@ body {
 }
 
 /* ---- Legs table ---- */
+.book-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.book-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
 .legs-table {
     width: 100%;
     border-collapse: collapse;
@@ -314,8 +326,11 @@ body {
    ========================================================== */
 
 .icon-btn {
-    background: transparent;
+    background: transparent !important;
+    appearance: none;
+    -webkit-appearance: none;
     border: none;
+    outline: none;
     color: var(--text-secondary);
     cursor: pointer;
     padding: 6px;
@@ -341,7 +356,7 @@ body {
     margin: auto;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    background: var(--bg-card);
+    background: var(--bg-card) !important;
     color: var(--text-primary);
     padding: 24px;
     width: 90%;
@@ -349,8 +364,12 @@ body {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
+.settings-modal[open] {
+    display: block;
+}
+
 .settings-modal::backdrop {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(15, 17, 23, 0.8) !important;
     backdrop-filter: blur(4px);
 }
 
@@ -389,19 +408,103 @@ body {
 .settings-section input[type="number"],
 .settings-section input[type="text"],
 .settings-section select {
-    background: var(--bg-secondary);
+    background: var(--bg-primary) !important;
     border: 1px solid var(--border-accent);
-    color: var(--text-primary);
-    padding: 6px 10px;
+    color: var(--text-primary) !important;
+    padding: 8px 12px;
     border-radius: var(--radius-sm);
-    width: 200px;
+    width: 240px;
     font-family: var(--font-sans);
+    outline: none;
+}
+
+.settings-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.multi-select {
+    position: relative;
+    width: 240px;
+}
+
+.multi-select-header {
+    background: var(--bg-primary) !important;
+    border: 1px solid var(--border-accent);
+    color: var(--text-primary) !important;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    user-select: none;
+    font-family: var(--font-sans);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.multi-select-header::after {
+    content: "▼";
+    font-size: 0.7em;
+    color: var(--text-secondary);
+}
+
+.multi-select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-card);
+    border: 1px solid var(--border-accent);
+    border-top: none;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    z-index: 100;
+    max-height: 220px;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.multi-select.open .multi-select-options {
+    display: block;
+}
+
+.multi-select-options label {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    margin: 0;
+    cursor: pointer;
+    justify-content: flex-start;
+    color: var(--text-primary);
+    transition: background 0.2s;
+}
+
+.multi-select-options label:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.multi-select-options input[type="checkbox"] {
+    margin-right: 12px;
+    margin-bottom: 0;
+}
+
+.settings-section input[type="number"]:focus,
+.settings-section input[type="text"]:focus,
+.settings-section select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent);
 }
 
 .settings-section input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     accent-color: var(--accent);
+    background: var(--bg-primary);
+    cursor: pointer;
 }
 
 .modal-actions {

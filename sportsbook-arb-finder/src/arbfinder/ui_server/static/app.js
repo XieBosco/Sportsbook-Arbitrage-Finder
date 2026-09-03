@@ -200,7 +200,12 @@
                 <tbody>
                     ${opp.legs.map(leg => `
                     <tr>
-                        <td>${esc(leg.book_id)}</td>
+                        <td>
+                            <div class="book-info">
+                                <img class="book-logo" src="/assets/images/${leg.book_id.toLowerCase()}.png" alt="${esc(leg.book_id)}" onerror="this.style.display='none'">
+                                <span>${esc(leg.book_id)}</span>
+                            </div>
+                        </td>
                         <td>${esc(leg.selection)}</td>
                         <td class="col-odds">${esc(leg.odds_formatted)}</td>
                         <td class="col-stake">$${leg.stake.toFixed(2)}</td>
@@ -322,11 +327,50 @@
     const settingsForm = document.getElementById("settings-form");
     const settingsCancel = document.getElementById("settings-cancel");
 
+    // Custom Dropdown Logic
+    function updateMultiSelectHeader(headerId, count, itemType) {
+        const header = document.getElementById(headerId);
+        if (count === 0) {
+            header.textContent = `Select ${itemType}...`;
+        } else {
+            header.textContent = `${count} ${itemType} excluded`;
+        }
+    }
+
+    document.querySelectorAll('.multi-select-header').forEach(header => {
+        header.addEventListener('click', (e) => {
+            const parent = header.closest('.multi-select');
+            const wasOpen = parent.classList.contains('open');
+            document.querySelectorAll('.multi-select').forEach(ms => ms.classList.remove('open'));
+            if (!wasOpen) parent.classList.add('open');
+            e.stopPropagation();
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.multi-select')) {
+            document.querySelectorAll('.multi-select').forEach(ms => ms.classList.remove('open'));
+        }
+    });
+
+    document.querySelectorAll('input[name="exclude_book"]').forEach(cb => {
+        cb.addEventListener('change', () => {
+            const count = document.querySelectorAll('input[name="exclude_book"]:checked').length;
+            updateMultiSelectHeader("books-header", count, "books");
+        });
+    });
+
+    document.querySelectorAll('input[name="exclude_market"]').forEach(cb => {
+        cb.addEventListener('change', () => {
+            const count = document.querySelectorAll('input[name="exclude_market"]:checked').length;
+            updateMultiSelectHeader("markets-header", count, "markets");
+        });
+    });
+
     settingsBtn.addEventListener("click", async () => {
         const data = await fetchConfig();
         if (data) {
             // Populate form
-            settingsForm.arb_min_profit_percentage.value = data.arbitrage.min_profit_percentage;
             settingsForm.arb_total_bet_amount.value = data.arbitrage.total_bet_amount;
             settingsForm.arb_unit_size.value = data.arbitrage.unit_size;
             settingsForm.arb_stake_calculating_method.value = data.arbitrage.stake_calculating_method;
@@ -337,8 +381,18 @@
             settingsForm.scan_min_margin.value = data.scanner.min_margin;
             settingsForm.scan_max_odds_age_seconds.value = data.scanner.max_odds_age_seconds;
             settingsForm.scan_min_legs_required.value = data.scanner.min_legs_required;
-            settingsForm.scan_excluded_books.value = data.scanner.excluded_books.join(", ");
-            settingsForm.scan_excluded_markets.value = data.scanner.excluded_markets.join(", ");
+            
+            const excludedBooks = data.scanner.excluded_books || [];
+            document.querySelectorAll('input[name="exclude_book"]').forEach(cb => {
+                cb.checked = excludedBooks.includes(cb.value);
+            });
+            updateMultiSelectHeader("books-header", excludedBooks.length, "books");
+
+            const excludedMarkets = data.scanner.excluded_markets || [];
+            document.querySelectorAll('input[name="exclude_market"]').forEach(cb => {
+                cb.checked = excludedMarkets.includes(cb.value);
+            });
+            updateMultiSelectHeader("markets-header", excludedMarkets.length, "markets");
 
             settingsForm.sinks_odds_format.value = data.sinks.odds_format;
             settingsForm.ui_sort_by.value = data.ui_sort_by;
@@ -355,7 +409,6 @@
         
         const payload = {
             arbitrage: {
-                min_profit_percentage: parseFloat(settingsForm.arb_min_profit_percentage.value),
                 total_bet_amount: parseFloat(settingsForm.arb_total_bet_amount.value),
                 unit_size: parseFloat(settingsForm.arb_unit_size.value),
                 stake_calculating_method: parseInt(settingsForm.arb_stake_calculating_method.value, 10),
@@ -367,8 +420,8 @@
                 min_margin: parseFloat(settingsForm.scan_min_margin.value),
                 max_odds_age_seconds: parseFloat(settingsForm.scan_max_odds_age_seconds.value),
                 min_legs_required: parseInt(settingsForm.scan_min_legs_required.value, 10),
-                excluded_books: settingsForm.scan_excluded_books.value.split(",").map(s => s.trim()).filter(Boolean),
-                excluded_markets: settingsForm.scan_excluded_markets.value.split(",").map(s => s.trim()).filter(Boolean),
+                excluded_books: Array.from(document.querySelectorAll('input[name="exclude_book"]:checked')).map(cb => cb.value),
+                excluded_markets: Array.from(document.querySelectorAll('input[name="exclude_market"]:checked')).map(cb => cb.value),
             },
             odds_format: settingsForm.sinks_odds_format.value,
             ui_sort_by: settingsForm.ui_sort_by.value,
