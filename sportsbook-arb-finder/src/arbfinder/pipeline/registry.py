@@ -134,8 +134,10 @@ def build_pipeline_components(config: AppConfig) -> PipelineComponents:
     dedup = DedupTracker(cooldown_seconds=_DEDUP_COOLDOWN_SECONDS)
     grouper = MarketGrouper()
 
-    def stake_budget_fn(key: MarketGroupKey) -> float:
-        return config.arbitrage.total_bet_amount
+    def stake_budget_fn(key: MarketGroupKey) -> tuple[float, int]:
+        if config.arbitrage.stake_calculating_method == 2:
+            return config.arbitrage.unit_size, 2
+        return config.arbitrage.total_bet_amount, 1
 
     scanner = Scanner(
         grouper=grouper,

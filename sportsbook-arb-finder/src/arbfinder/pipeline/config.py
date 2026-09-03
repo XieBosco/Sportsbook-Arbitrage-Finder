@@ -34,7 +34,6 @@ class BookConfig(BaseModel):
 class ArbitrageConfig(BaseModel):
     """Arbitrage detection parameters."""
 
-    min_profit_percentage: float = 2.5
     total_bet_amount: float = 100.0
     unit_size: float = 100.0
     stake_calculating_method: int = 2

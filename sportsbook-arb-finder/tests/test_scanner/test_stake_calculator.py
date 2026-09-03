@@ -49,5 +49,38 @@ class TestComputeStakes:
         """Non-default total stake."""
         odds = {"over": 1.8, "under": 2.1}
         total = 500.0
-        stakes = compute_stakes(odds, total)
+        stakes = compute_stakes(odds, total, method=1)
         assert math.isclose(sum(stakes.values()), total, rel_tol=1e-9)
+
+    def test_unit_size_method(self) -> None:
+        """Method 2: underdog gets unit size, favorite gets target_payout/odds."""
+        odds = {"home": 1.5, "away": 4.0}
+        unit_size = 100.0
+        stakes = compute_stakes(odds, unit_size, method=2)
+        
+        # Underdog is 'away' with 4.0 odds.
+        # It should get exactly the unit_size.
+        assert math.isclose(stakes["away"], 100.0)
+        
+        # Payout should be 400.
+        # Favorite 'home' with 1.5 odds needs stake = 400 / 1.5 = 266.666...
+        assert math.isclose(stakes["home"], 400.0 / 1.5)
+        
+        # Both legs should yield the same payout
+        assert math.isclose(stakes["away"] * odds["away"], stakes["home"] * odds["home"])
+
+    def test_unit_size_three_way(self) -> None:
+        """Method 2 applies correctly to 3-way markets."""
+        odds = {"home": 2.0, "draw": 3.0, "away": 7.0}
+        unit_size = 50.0
+        stakes = compute_stakes(odds, unit_size, method=2)
+        
+        # Underdog is 'away' with 7.0 odds.
+        assert math.isclose(stakes["away"], 50.0)
+        
+        target_payout = 50.0 * 7.0 # 350.0
+        assert math.isclose(stakes["home"], 350.0 / 2.0)
+        assert math.isclose(stakes["draw"], 350.0 / 3.0)
+        
+        assert math.isclose(stakes["home"] * odds["home"], target_payout)
+        assert math.isclose(stakes["draw"] * odds["draw"], target_payout)
