@@ -32,6 +32,7 @@ def _ms(
         league_key="MLB",
         home_team="Team A",
         away_team="Team B",
+        time_window="full_game",
         market_type=market_type,
         selection=selection,
         line=line,
@@ -56,7 +57,7 @@ def _make_scanner(
     scanner = Scanner(
         grouper=MarketGrouper(),
         thresholds=thresholds,
-        staleness_filter=StalenessFilter(max_age),
+        staleness_filter=StalenessFilter(thresholds),
         dedup=DedupTracker(cooldown),
         sinks=[storage],
         expected_selections_by_market={
@@ -206,6 +207,8 @@ class TestScannerIntegration:
         class FailingSink(OpportunitySink):
             def emit(self, opportunity: Opportunity) -> None:
                 raise RuntimeError("boom")
+            def emit_close(self, canonical_game_id: str, market_type: str, line: float | None) -> None:
+                pass
 
         storage = StorageSink()
         thresholds = ScannerThresholds(
@@ -215,7 +218,7 @@ class TestScannerIntegration:
         scanner = Scanner(
             grouper=MarketGrouper(),
             thresholds=thresholds,
-            staleness_filter=StalenessFilter(60.0),
+            staleness_filter=StalenessFilter(thresholds),
             dedup=DedupTracker(30.0),
             sinks=[FailingSink(), storage],  # failing sink first
             expected_selections_by_market={"moneyline": {"home", "away"}},

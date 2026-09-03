@@ -64,6 +64,67 @@ class Scanner:
         self._sinks = sinks
         self._expected = expected_selections_by_market
         self._budget_fn = stake_budget_fn
+        self._active_arbs: dict[MarketGroupKey, tuple[str, str, float | None]] = {}
+
+    def _close_if_active(self, group_key: MarketGroupKey) -> None:
+        if group_key in self._active_arbs:
+            canon_id, market_type, line = self._active_arbs.pop(group_key)
+            for sink in self._sinks:
+                try:
+                    sink.emit_close(canon_id, market_type, line)
+                except Exception:
+                    logger.exception(
+                        "Sink %r failed to emit close for %s",
+                        sink,
+                        canon_id,
+                    )
+
+    def sweep_active_arbs(self, now: datetime | None = None) -> None:
+        """Periodically evaluate all active arbs to evict stale ones."""
+        if now is None:
+            now = datetime.now(timezone.utc)
+
+        for group_key in list(self._active_arbs.keys()):
+            if group_key.market_type.lower() in self._thresholds.excluded_markets:
+                self._close_if_active(group_key)
+                continue
+
+            expected = self._expected.get(group_key.market_type)
+            if expected is None or not self._grouper.is_complete(group_key, expected):
+                self._close_if_active(group_key)
+                continue
+
+            group = self._grouper.get_group(group_key)
+            filtered_group = {}
+            excluded = self._thresholds.excluded_books
+            
+            for sel, ms in group.items():
+                filtered_ms = self._staleness.filter_stale_books(ms, now)
+                if filtered_ms is None:
+                    break
+                    
+                if excluded:
+                    to_remove = [b for b in filtered_ms.book_odds if b.lower() in excluded]
+                    for b in to_remove:
+                        filtered_ms.book_odds.pop(b, None)
+                        filtered_ms.updated_at.pop(b, None)
+                        
+                    if not filtered_ms.book_odds:
+                        break
+                        
+                filtered_group[sel] = filtered_ms
+
+            if len(filtered_group) < len(group):
+                self._close_if_active(group_key)
+                continue
+
+            result = check_arbitrage(filtered_group)
+            if not result.is_arbitrage or result.margin < self._thresholds.min_margin:
+                self._close_if_active(group_key)
+                continue
+
+            if has_single_book_conflict(result):
+                self._close_if_active(group_key)
 
     def process(self, matched: MatchedSelection, now: datetime | None = None) -> Opportunity | None:
         """Process a single *matched* selection through the full pipeline.
@@ -71,6 +132,9 @@ class Scanner:
         Returns an :class:`Opportunity` if an arb is detected and passes
         all filters, or ``None`` otherwise.
         """
+        if matched.market_type.lower() in self._thresholds.excluded_markets:
+            return None
+
         if now is None:
             now = datetime.now(timezone.utc)
 
@@ -80,26 +144,44 @@ class Scanner:
         # 2. Check completeness
         expected = self._expected.get(matched.market_type)
         if expected is None:
+            self._close_if_active(group_key)
             return None
         if not self._grouper.is_complete(group_key, expected):
+            self._close_if_active(group_key)
             return None
 
-        # 3. Staleness check on all legs in the group
+        # 3. Staleness check and excluded books filtering
         group = self._grouper.get_group(group_key)
         filtered_group = {}
+        excluded = self._thresholds.excluded_books
+        
         for sel, ms in group.items():
             filtered_ms = self._staleness.filter_stale_books(ms, now)
             if filtered_ms is None:
+                self._close_if_active(group_key)
                 return None
+                
+            if excluded:
+                to_remove = [b for b in filtered_ms.book_odds if b.lower() in excluded]
+                for b in to_remove:
+                    filtered_ms.book_odds.pop(b, None)
+                    filtered_ms.updated_at.pop(b, None)
+                    
+                if not filtered_ms.book_odds:
+                    self._close_if_active(group_key)
+                    return None
+                    
             filtered_group[sel] = filtered_ms
 
         # 4. Arbitrage check
         result = check_arbitrage(filtered_group)
         if not result.is_arbitrage or result.margin < self._thresholds.min_margin:
+            self._close_if_active(group_key)
             return None
 
         # 5. Single-book conflict check
         if has_single_book_conflict(result):
+            self._close_if_active(group_key)
             return None
 
         # 6. Dedup check
@@ -145,6 +227,13 @@ class Scanner:
             legs=legs,
             detected_at=now,
             expires_hint_seconds=self._thresholds.max_odds_age_seconds,
+        )
+
+        # Record as active
+        self._active_arbs[group_key] = (
+            opportunity.canonical_game_id,
+            opportunity.market_type,
+            opportunity.line,
         )
 
         # 9. Emit to all sinks (catch per-sink exceptions)

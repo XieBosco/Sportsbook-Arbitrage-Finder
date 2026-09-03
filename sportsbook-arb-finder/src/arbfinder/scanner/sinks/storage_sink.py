@@ -26,3 +26,10 @@ class StorageSink(OpportunitySink):
     def get_all(self) -> list[dict]:
         """Return all stored opportunities."""
         return list(self._items)
+
+    def emit_close(
+        self, canonical_game_id: str, market_type: str, line: float | None
+    ) -> None:
+        """Handle the closure of a previously emitted opportunity."""
+        # For simple storage, we just ignore closes
+        pass

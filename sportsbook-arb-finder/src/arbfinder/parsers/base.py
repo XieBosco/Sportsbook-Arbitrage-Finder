@@ -44,3 +44,16 @@ class BookParser(ABC):
         Default no-op. Override in parsers that maintain session state
         (e.g. Caesars Diffusion alias store).
         """
+
+    @property
+    def is_initialized(self) -> bool:
+        """Whether the parser has processed its initial full-state payload.
+
+        Default implementation checks if ``self.reference_data["events"]``
+        is populated.  Stateless parsers (no ``reference_data`` attribute)
+        return ``True``.  Override for book-specific initialization criteria.
+        """
+        ref = getattr(self, "reference_data", None)
+        if ref is None:
+            return True  # Stateless parser — always ready
+        return bool(ref.get("events"))

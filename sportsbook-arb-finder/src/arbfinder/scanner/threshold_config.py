@@ -22,6 +22,24 @@ class ScannerThresholds(BaseModel):
     max_odds_age_seconds: float = 5.0
     min_legs_required: int = 2
     excluded_book_pairs: set[tuple[str, str]] = set()
+    excluded_books: set[str] = set()
+    excluded_markets: set[str] = set()
+
+    @field_validator("excluded_markets", mode="before")
+    @classmethod
+    def _coerce_excluded_markets(cls, v: Any) -> set[str]:
+        """Accept a list of strings and coerce to lowercase set."""
+        if isinstance(v, (list, set)):
+            return {str(market).lower() for market in v}
+        return v
+
+    @field_validator("excluded_books", mode="before")
+    @classmethod
+    def _coerce_excluded_books(cls, v: Any) -> set[str]:
+        """Accept a list of strings and coerce to lowercase set."""
+        if isinstance(v, (list, set)):
+            return {str(book).lower() for book in v}
+        return v
 
     @field_validator("excluded_book_pairs", mode="before")
     @classmethod
@@ -30,8 +48,6 @@ class ScannerThresholds(BaseModel):
         if isinstance(v, (list, set)):
             return {tuple(pair) for pair in v}
         return v
-
-    model_config = {"frozen": True}
 
 
 def load_scanner_thresholds(path: Path) -> ScannerThresholds:

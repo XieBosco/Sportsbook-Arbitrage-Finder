@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sportsbook Arbitrage Finder — Live opportunity dashboard">
+    <title>Arbitrage Finder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- ===== Header ===== -->
+    <header id="app-header">
+        <div class="header-content">
+            <h1>Arbitrage Finder</h1>
+            <div class="header-actions">
+                <div id="connection-status" class="status-badge disconnected">
+                    <span class="status-dot"></span>
+                    <span id="status-text">Disconnected</span>
+                </div>
+                <button id="settings-btn" class="icon-btn" aria-label="Settings">
+                    <!-- SVG Gear Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <p class="subtitle" id="opp-count">0 opportunities</p>
+    </header>
+
+    <!-- ===== Main content ===== -->
+    <main id="opportunities-container">
+        <div id="empty-state" class="empty-state">
+            <div class="empty-icon">📡</div>
+            <p>Waiting for live opportunities…</p>
+            <p class="muted">The scanner will push arbitrage events here in real time.</p>
+        </div>
+    </main>
+
+    <dialog id="settings-modal" class="settings-modal">
+        <div class="modal-content">
+            <h2>Settings</h2>
+            <form id="settings-form">
+                
+                <div class="settings-section">
+                    <h3>Arbitrage Config</h3>
+                    <label>
+                        Min Profit Percentage:
+                        <input type="number" step="0.01" name="arb_min_profit_percentage">
+                    </label>
+                    <label>
+                        Total Bet Amount:
+                        <input type="number" step="1" name="arb_total_bet_amount">
+                    </label>
+                    <label>
+                        Unit Size:
+                        <input type="number" step="1" name="arb_unit_size">
+                    </label>
+                    <label>
+                        Stake Calculating Method:
+                        <input type="number" step="1" name="arb_stake_calculating_method">
+                    </label>
+                    <label>
+                        Mainlines Only:
+                        <input type="checkbox" name="arb_mainlines_only">
+                    </label>
+                    <label>
+                        Kelly Bankroll:
+                        <input type="number" step="1" name="arb_kelly_bankroll">
+                    </label>
+                    <label>
+                        Kelly Multiplier:
+                        <input type="number" step="0.01" name="arb_kelly_multiplier">
+                    </label>
+                </div>
+
+                <div class="settings-section">
+                    <h3>Scanner Config</h3>
+                    <label>
+                        Min Margin:
+                        <input type="number" step="0.01" name="scan_min_margin">
+                    </label>
+                    <label>
+                        Max Odds Age (seconds):
+                        <input type="number" step="0.1" name="scan_max_odds_age_seconds">
+                    </label>
+                    <label>
+                        Min Legs Required:
+                        <input type="number" step="1" name="scan_min_legs_required">
+                    </label>
+                    <label>
+                        Excluded Books (comma-separated):
+                        <input type="text" name="scan_excluded_books">
+                    </label>
+                    <label>
+                        Excluded Markets (comma-separated):
+                        <input type="text" name="scan_excluded_markets">
+                    </label>
+                </div>
+
+                <div class="settings-section">
+                    <h3>UI & Display</h3>
+                    <label>
+                        Odds Format:
+                        <select name="sinks_odds_format">
+                            <option value="american">American</option>
+                            <option value="decimal">Decimal</option>
+                            <option value="fractional">Fractional</option>
+                        </select>
+                    </label>
+                    <label>
+                        Sort By:
+                        <select name="ui_sort_by">
+                            <option value="timecreated">Time Created</option>
+                            <option value="margin">Margin</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" id="settings-cancel" class="btn secondary">Cancel</button>
+                    <button type="submit" class="btn primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

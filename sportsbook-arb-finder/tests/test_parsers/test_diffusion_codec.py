@@ -99,7 +99,7 @@ def test_apply_binary_delta_sequence():
     obj_v1, end_pos_v1 = decode_cbor_item(cbor_v1, 0)
     assert end_pos_v1 == len(cbor_v1)
     assert obj_v1["id"] == "bd9bf767-a588-31d9-b297-215f9ff45921"
-    assert obj_v1["price"]["a"] == "+130"
+    assert obj_v1["price"]["a"] == 130
     assert obj_v1["price"]["f"] == "13/10"
     assert obj_v1["state"] == "open"
 

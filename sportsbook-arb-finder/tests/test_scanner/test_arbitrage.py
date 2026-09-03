@@ -22,6 +22,7 @@ def _ms(
         league_key="MLB",
         home_team="Team A",
         away_team="Team B",
+        time_window="full_game",
         market_type=market_type,
         selection=selection,
         line=line,

@@ -66,62 +66,62 @@ def main():
             msg_body = json.dumps(d.get("data", d))
         all_updates.extend(parser.handle_http_body("https://smp.on.sportsbook.fanduel.ca/api/sports/fixedodds/readonly/v1/getMarketPrices?priceHistory=1", msg_body))
 
-    # # --- BetMGM ---
-    # print("Parsing BetMGM...")
-    # parser = BetMGMParser()
-    # json_files = sorted(glob.glob(os.path.join(FIXTURES_DIR, "betmgm", "betmgm_messages", "json_*.json")))
-    # for ref_path in json_files:
-    #     with open(ref_path, "r", encoding="utf-8") as f:
-    #         d = json.load(f)
-    #         parser.handle_http_body("fixture-view", json.dumps(d.get("data", d)))
+    # --- BetMGM ---
+    print("Parsing BetMGM...")
+    parser = BetMGMParser()
+    json_files = sorted(glob.glob(os.path.join(FIXTURES_DIR, "betmgm", "betmgm_messages", "json_*.json")))
+    for ref_path in json_files:
+        with open(ref_path, "r", encoding="utf-8") as f:
+            d = json.load(f)
+            parser.handle_http_body("fixture-view", json.dumps(d.get("data", d)))
         
-    # all_refs["BetMGM"] = parser.reference_data
+    all_refs["BetMGM"] = parser.reference_data
     
-    # msg_files = glob.glob(os.path.join(FIXTURES_DIR, "betmgm", "betmgm_messages", "ws_*.txt"))
-    # msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
-    # for mf in msg_files:
-    #     with open(mf, "r", encoding="utf-8") as f:
-    #         raw = f.read().strip()
-    #     all_updates.extend(parser.handle_ws_frame(raw + "\x1e"))
+    msg_files = glob.glob(os.path.join(FIXTURES_DIR, "betmgm", "betmgm_messages", "ws_*.txt"))
+    msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
+    for mf in msg_files:
+        with open(mf, "r", encoding="utf-8") as f:
+            raw = f.read().strip()
+        all_updates.extend(parser.handle_ws_frame(raw + "\x1e"))
 
-    # # --- Betano ---
-    # print("Parsing Betano...")
-    # parser = BetanoParser()
-    # ref_path = os.path.join(FIXTURES_DIR, "betano", "betano_messages", "json_1.json")
-    # with open(ref_path, "r", encoding="utf-8") as f:
-    #     d = json.load(f)
-    #     parser.handle_http_body("https://www.betano.ca/danae-webapi/api/live/overview/1", json.dumps(d.get("data", d)))
+    # --- Betano ---
+    print("Parsing Betano...")
+    parser = BetanoParser()
+    ref_path = os.path.join(FIXTURES_DIR, "betano", "betano_messages", "json_1.json")
+    with open(ref_path, "r", encoding="utf-8") as f:
+        d = json.load(f)
+        parser.handle_http_body("https://www.betano.ca/danae-webapi/api/live/overview/1", json.dumps(d.get("data", d)))
         
-    # all_refs["Betano"] = parser.reference_data
+    all_refs["Betano"] = parser.reference_data
     
-    # msg_files = glob.glob(os.path.join(FIXTURES_DIR, "betano", "betano_messages", "ws_*.txt"))
-    # msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
-    # for mf in msg_files:
-    #     with open(mf, "r", encoding="utf-8") as f:
-    #         raw = f.read().strip()
-    #     all_updates.extend(parser.handle_ws_frame(raw + "\x1e"))
+    msg_files = glob.glob(os.path.join(FIXTURES_DIR, "betano", "betano_messages", "ws_*.txt"))
+    msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
+    for mf in msg_files:
+        with open(mf, "r", encoding="utf-8") as f:
+            raw = f.read().strip()
+        all_updates.extend(parser.handle_ws_frame(raw + "\x1e"))
 
-    # # --- Caesars ---
-    # print("Parsing Caesars...")
-    # parser = CaesarsParser()
-    # json_files = glob.glob(os.path.join(FIXTURES_DIR, "caesars", "messages", "json_*.json"))
-    # for jf in json_files:
-    #     with open(jf, "r", encoding="utf-8") as f:
-    #         parser.handle_http_body("https://api.americanwagering.com/v4/home", f.read())
+    # --- Caesars ---
+    print("Parsing Caesars...")
+    parser = CaesarsParser()
+    json_files = glob.glob(os.path.join(FIXTURES_DIR, "caesars", "messages", "json_*.json"))
+    for jf in json_files:
+        with open(jf, "r", encoding="utf-8") as f:
+            parser.handle_http_body("https://api.americanwagering.com/v4/home", f.read())
         
-    # all_refs["Caesars"] = {
-    #     "events": parser.reference_data["events"],
-    #     "markets": parser.reference_data["markets"],
-    #     "selections": parser.reference_data["selections"],
-    #     "alias_uuid": dict(parser.store._id)
-    # }
+    all_refs["Caesars"] = {
+        "events": parser.reference_data["events"],
+        "markets": parser.reference_data["markets"],
+        "selections": parser.reference_data["selections"],
+        "alias_uuid": dict(parser.store._id)
+    }
     
-    # msg_files = glob.glob(os.path.join(FIXTURES_DIR, "caesars", "messages", "ws_*.txt"))
-    # msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
-    # for mf in msg_files:
-    #     with open(mf, "r", encoding="utf-8") as f:
-    #         b64_payload = f.read().strip()
-    #     all_updates.extend(parser.handle_ws_frame(b64_payload))
+    msg_files = glob.glob(os.path.join(FIXTURES_DIR, "caesars", "messages", "ws_*.txt"))
+    msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
+    for mf in msg_files:
+        with open(mf, "r", encoding="utf-8") as f:
+            b64_payload = f.read().strip()
+        all_updates.extend(parser.handle_ws_frame(b64_payload))
 
     # --- Write Outputs ---
     updates_path = os.path.join(OUTPUTS_DIR, "parsed_messages_output.txt")
