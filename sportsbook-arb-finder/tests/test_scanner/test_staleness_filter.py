@@ -4,6 +4,7 @@ from datetime import datetime, timedelta, timezone
 
 from arbfinder.matching.output import MatchedSelection
 from arbfinder.scanner.staleness_filter import StalenessFilter
+from arbfinder.scanner.threshold_config import ScannerThresholds
 
 
 def _ms(
@@ -16,6 +17,7 @@ def _ms(
         league_key="MLB",
         home_team="Team A",
         away_team="Team B",
+        time_window="full_game",
         market_type="moneyline",
         selection="home",
         line=None,
@@ -30,54 +32,65 @@ class TestStalenessFilter:
     def test_all_fresh(self) -> None:
         """All timestamps within max_age → fresh."""
         now = datetime.now(timezone.utc)
-        sf = StalenessFilter(max_age_seconds=5.0)
+        sf = StalenessFilter(thresholds=ScannerThresholds(max_odds_age_seconds=5.0))
         ms = _ms({
             "BookA": now - timedelta(seconds=2),
             "BookB": now - timedelta(seconds=3),
         })
-        assert sf.is_fresh(ms, now) is True
+        result = sf.filter_stale_books(ms, now)
+        assert result is not None
+        assert "BookA" in result.book_odds
+        assert "BookB" in result.book_odds
 
     def test_one_stale_leg_rejected(self) -> None:
         """One stale leg among otherwise-fresh legs → rejected."""
         now = datetime.now(timezone.utc)
-        sf = StalenessFilter(max_age_seconds=5.0)
+        sf = StalenessFilter(thresholds=ScannerThresholds(max_odds_age_seconds=5.0))
         ms = _ms({
             "BookA": now - timedelta(seconds=2),  # fresh
             "BookB": now - timedelta(seconds=10),  # stale
         })
-        assert sf.is_fresh(ms, now) is False
+        result = sf.filter_stale_books(ms, now)
+        assert result is not None
+        assert "BookA" in result.book_odds
+        assert "BookB" not in result.book_odds
 
     def test_all_stale(self) -> None:
         """All timestamps stale → rejected."""
         now = datetime.now(timezone.utc)
-        sf = StalenessFilter(max_age_seconds=5.0)
+        sf = StalenessFilter(thresholds=ScannerThresholds(max_odds_age_seconds=5.0))
         ms = _ms({
             "BookA": now - timedelta(seconds=10),
             "BookB": now - timedelta(seconds=20),
         })
-        assert sf.is_fresh(ms, now) is False
+        result = sf.filter_stale_books(ms, now)
+        assert result is None
 
     def test_exactly_at_boundary(self) -> None:
         """Timestamp exactly at max_age boundary → still fresh (<=)."""
         now = datetime.now(timezone.utc)
-        sf = StalenessFilter(max_age_seconds=5.0)
+        sf = StalenessFilter(thresholds=ScannerThresholds(max_odds_age_seconds=5.0))
         ms = _ms({
             "BookA": now - timedelta(seconds=5),
         })
-        assert sf.is_fresh(ms, now) is True
+        result = sf.filter_stale_books(ms, now)
+        assert result is not None
+        assert "BookA" in result.book_odds
 
     def test_just_past_boundary(self) -> None:
         """Timestamp just past max_age → stale."""
         now = datetime.now(timezone.utc)
-        sf = StalenessFilter(max_age_seconds=5.0)
+        sf = StalenessFilter(thresholds=ScannerThresholds(max_odds_age_seconds=5.0))
         ms = _ms({
             "BookA": now - timedelta(seconds=5, microseconds=1),
         })
-        assert sf.is_fresh(ms, now) is False
+        result = sf.filter_stale_books(ms, now)
+        assert result is None
 
     def test_empty_updated_at(self) -> None:
         """No timestamps → not fresh."""
         now = datetime.now(timezone.utc)
-        sf = StalenessFilter(max_age_seconds=5.0)
+        sf = StalenessFilter(thresholds=ScannerThresholds(max_odds_age_seconds=5.0))
         ms = _ms({})
-        assert sf.is_fresh(ms, now) is False
+        result = sf.filter_stale_books(ms, now)
+        assert result is None

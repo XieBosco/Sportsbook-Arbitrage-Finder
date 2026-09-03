@@ -38,7 +38,7 @@ def test_betmgm_http_reference_parsing(sample_betmgm_ref):
     parser.handle_http_body("fixture-view", json.dumps(sample_betmgm_ref))
 
     assert "987654" in parser.reference_data["events"]
-    assert parser.reference_data["events"]["987654"] == "Chicago Cubs @ St. Louis Cardinals"
+    assert parser.reference_data["events"]["987654"]["name"] == "Chicago Cubs @ St. Louis Cardinals"
 
 
 def test_betmgm_ws_game_update(sample_betmgm_ref):

@@ -146,21 +146,21 @@ def test_caesars_ws_type04_and_type05_flow(sample_home_json):
     assert updates_t4[0].raw_selection == "Boston Red Sox"
     assert updates_t4[0].raw_home_team == "New York Yankees"
     assert updates_t4[0].raw_away_team == "Boston Red Sox"
-    assert updates_t4[0].odds_value == "+130"
+    assert updates_t4[0].odds_value == 2.3
 
     # Process Type 0x05 delta frame (ws_454) -> moves to +137
     ws_454_b64 = "BRDh+7sAGDxBiRg9BU31wo9cKPZhZmQxMS84GFAL"
     updates_t5_454 = parser.handle_ws_frame(ws_454_b64)
     assert len(updates_t5_454) == 1
     assert updates_t5_454[0].raw_selection == "Boston Red Sox"
-    assert updates_t5_454[0].odds_value == 137
+    assert updates_t5_454[0].odds_value == 2.37
 
     # Process Type 0x05 delta frame (ws_508) -> moves to -200
     ws_508_b64 = "BRDh+7sAGDtNOMdhZPk+AGFmYzEvMhhPCw=="
     updates_t5_508 = parser.handle_ws_frame(ws_508_b64)
     assert len(updates_t5_508) == 1
     assert updates_t5_508[0].raw_selection == "Boston Red Sox"
-    assert updates_t5_508[0].odds_value == -200
+    assert updates_t5_508[0].odds_value == 1.5
 
 
 def test_caesars_replay_full_fixture_stream():
@@ -233,7 +233,7 @@ def test_caesars_odds_fallback():
     }
     updates = parser._build_odds_update(obj, "sel-dec", None)
     assert len(updates) == 1
-    assert updates[0].odds_value == 150
+    assert updates[0].odds_value == 2.5
 
 
 def test_caesars_cbor_name_fallback():
@@ -248,4 +248,4 @@ def test_caesars_cbor_name_fallback():
     updates = parser._build_odds_update(obj, "112dc0d1-d0a4-3798-a2a6-0593336d80f1", None)
     assert len(updates) == 1
     assert updates[0].raw_selection == "Baltimore Orioles"
-    assert updates[0].odds_value == 300
+    assert updates[0].odds_value == 4.0

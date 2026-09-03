@@ -36,7 +36,7 @@ def test_draftkings_http_reference_parsing(sample_dk_ref):
     parser.handle_http_body("api/sportscontent/v1/markets", json.dumps(sample_dk_ref))
 
     assert "ev-100" in parser.reference_data["events"]
-    assert parser.reference_data["events"]["ev-100"] == "Los Angeles Dodgers @ San Francisco Giants"
+    assert parser.reference_data["events"]["ev-100"]["name"] == "Los Angeles Dodgers @ San Francisco Giants"
     assert "m-200" in parser.reference_data["markets"]
     assert "0ML12345_1" in parser.reference_data["selections"]
 
@@ -114,4 +114,4 @@ def test_draftkings_unicode_minus_odds(sample_dk_ref):
 
     updates = parser.handle_ws_frame(b64_payload)
     assert len(updates) == 1
-    assert updates[0].odds_value == -248
+    assert updates[0].odds_value == "\u2212248"

@@ -648,137 +648,281 @@ in isolation with no dependency on the others beyond the shared dataclasses.
 
 # Scanner Implementation Prompt
 
-Build a Python scanner module that consumes MatchedSelection objects (already 
-produced by an existing matching module) and detects arbitrage opportunities. Use frozen 
-dataclasses, type hints throughout, and no external dependencies beyond the standard library 
-except where noted (pydantic for config validation).
+Build the top-level orchestrator and entry point for the Sportsbook Arbitrage Finder pipeline 
+described in the attached DEVELOPER_GUIDE.md. All component modules already exist and are 
+validated: CDP-based browser ingestion (attaches to Chrome via CDP debugging port, intercepts 
+WebSocket frames and HTTP/SSE response bodies), per-book parsers (subclasses of BookParser 
+producing OddsUpdate), normalizers (producing NormalizedOddsUpdate), a matcher 
+(BucketStore + TimeResolver + Matcher, producing MatchedSelection), and a scanner 
+(MarketGrouper + StalenessFilter + DedupTracker + Scanner, producing Opportunity, emitted to 
+sinks: ConsoleSink, FileSink, WebSocketSink). Do not modify the internals of any existing 
+module — only wire them together and add startup/shutdown/error-handling logic.
 
-CONTEXT — existing MatchedSelection schema (already implemented upstream, do not modify):
-@dataclass
-class MatchedSelection:
-    canonical_game_id: str
-    sport_key: str
-    league_key: str
-    home_team: str
-    away_team: str
-    market_type: str
-    selection: str
-    line: float | None
-    book_odds: dict[str, float]      # book_id -> odds
-    updated_at: dict[str, datetime]  # book_id -> captured_at (UTC, tz-aware)
+Use Python, asyncio throughout (single event loop for the whole pipeline unless an 
+attached file shows otherwise), structured logging (standard `logging` module, configured from 
+YAML), and pydantic for config validation.
 
-MODULE 1 — scanner/schema.py
-Define frozen dataclass `Leg`: book_id (str), selection (str), odds_decimal (float), 
-stake (float), captured_at (datetime).
-Define frozen dataclass `Opportunity`: opportunity_id (str, uuid4), canonical_game_id (str), 
-sport_key (str), league_key (str), home_team (str), away_team (str), market_type (str),
-line (float | None), margin (float), legs (list[Leg]), 
-detected_at (datetime), expires_hint_seconds (float | None).
+CRITICAL CONTEXT FROM THE GUIDE — parser statefulness:
+Per DEVELOPER_GUIDE.md Layer 2, many BookParser implementations are stateful: they must process 
+an initial full-state HTTP payload (mapping internal UUIDs to team names) via `handle_http_body()` 
+BEFORE any `handle_ws_frame()` calls will decode correctly, since live ticks are minimal deltas 
+keyed by those UUIDs. The orchestrator's per-book startup sequence MUST fetch/process the 
+initial state payload first and only begin subscribing to the live WS/SSE stream once the 
+parser confirms it has initialized its ID map. If the attached BookParser base class exposes an 
+`is_initialized` property or similar, gate the live subscription on it; if not, flag this 
+explicitly in your output as a gap that needs a base_parser.py change (do not silently skip 
+this requirement).
 
-MODULE 2 — scanner/market_grouper.py
-Define frozen dataclass `MarketGroupKey`: canonical_game_id (str), market_type (str), 
-period (str), line (float | None).
-Implement class `MarketGrouper` with an internal dict[MarketGroupKey, dict[str, MatchedSelection]] 
-(inner dict keyed by `selection` string). Methods:
-- `add(self, selection: MatchedSelection) -> MarketGroupKey` — builds the key, inserts/updates 
-  the group, returns the key.
-- `get_group(self, key: MarketGroupKey) -> dict[str, MatchedSelection]` — returns {} if absent.
-- `is_complete(self, key: MarketGroupKey, expected_selections: set[str]) -> bool` — checks 
-  expected_selections.issubset(group.keys()).
+DIRECTORY STRUCTURE TO CREATE:
+src/arbfinder/pipeline/
+├── __init__.py
+├── config.py              # pydantic Settings model + loader for config/settings.yaml
+├── registry.py             # builds and wires all component instances from config
+├── book_pipeline.py         # per-book: CDP connect -> init state -> parse -> normalize -> match -> scan
+├── health.py                  # per-book HealthTracker (referenced in guide's Layer 6)
+└── orchestrator.py             # top-level startup, run loop, graceful shutdown
 
-MODULE 3 — scanner/staleness_filter.py
-Implement class `StalenessFilter` with constructor `__init__(self, max_age_seconds: float)`. 
-Method `is_fresh(self, matched: MatchedSelection, now: datetime) -> bool` returns True only if 
-every value in matched.updated_at is within max_age_seconds of `now`. This guards against 
-silently disconnected feeds (dead websocket/backgrounded browser tab) and suspended markets 
-whose last-known price is stale but still present in the bucket — both produce phantom 
-arbitrage if not filtered.
+main.py                        # entry point at project root
 
-MODULE 4 — core/arbitrage.py (pure functions, no I/O, highest test priority)
-Define frozen dataclass `ArbCheckResult`: is_arbitrage (bool), margin (float), 
-best_odds_by_selection (dict[str, tuple[str, float]])  # selection -> (book_id, odds_decimal)
-Implement `check_arbitrage(group: dict[str, MatchedSelection]) -> ArbCheckResult`:
-for each selection, find the book offering the best (highest) odds_decimal; compute 
-implied_sum = sum(1/odds for each best odds); margin = 1 - implied_sum; is_arbitrage = margin > 0.
-Implement `has_single_book_conflict(result: ArbCheckResult) -> bool`: returns True if the same 
-book_id appears as the best price for more than one selection (this would mean the "arb" isn't 
-actually hedged across different books and must be rejected).
+MODULE 1 — pipeline/config.py
+Pydantic `AppConfig` matching the existing config/settings.yaml structure described in guide 
+Section 5 ("Update Config: Add the new book to config/settings.yaml") — read the attached 
+settings.yaml (if provided) and match its real schema exactly rather than inventing field names. 
+If no settings.yaml is attached, define: 
+- `books: list[BookConfig]` — book_id, enabled, cdp_endpoint, target_url_pattern, 
+  initial_state_url_pattern (str — identifies the HTTP endpoint containing the full-state 
+  payload the parser needs before processing ticks), parser_class (dotted path), 
+  normalizer_class (dotted path).
+- `scanner: ScannerThresholds` (import the existing model, do not redefine).
+- `sinks: SinksConfig` — console_enabled, file_enabled (writes to FileSink per the guide, 
+  which also doubles as input for the replay system per Section 4 — confirm output format 
+  matches what tests/test_scanner/test_replay.py expects if that file is attached), 
+  websocket_enabled, execution_enabled (default False).
+- `server: ServerConfig` — host, port.
+- `logging_config_path: str`.
+Fail loudly (raise, don't default silently) on missing/invalid required fields.
 
-MODULE 5 — core/stake_calculator.py
-Implement `compute_stakes(odds_by_selection: dict[str, float], total_stake: float) -> dict[str, float]`:
-for each selection, stake = total_stake * (1/odds) / sum(1/odds for all odds). Returns a dict 
-selection -> stake, summing to total_stake (allow for floating point tolerance).
+MODULE 2 — pipeline/health.py
+Implement `HealthTracker` as referenced in guide Layer 6 ("the health/liveness of each 
+sportsbook feed"). Dataclass `BookHealth`: book_id, connected (bool), initialized (bool — 
+whether the stateful parser has processed its initial-state payload), last_update_at 
+(datetime | None), last_error (str | None), consecutive_errors (int).
+Methods: mark_connected, mark_initialized, mark_update, mark_error, get_all, 
+get_stale_books(max_silence_seconds) -> list[str]. Per the guide's "Hanging Odds / Ghost Arbs" 
+section, a book that's connected but silent is a known real failure mode (independent of the 
+StalenessFilter, which operates on individual odds updates already in the pipeline) — 
+HealthTracker's job is to catch the feed-level version of this before it ever reaches the 
+scanner.
 
-MODULE 6 — scanner/threshold_config.py
-Use pydantic BaseModel (not raw dataclass) for `ScannerThresholds`: min_margin (float, e.g. 
-default 0.01), max_odds_age_seconds (float, e.g. default 5.0), min_legs_required (int, default 2), 
-excluded_book_pairs (set of tuple[str, str], default empty). Load from a YAML file at 
-config/scanner_thresholds.yaml with schema validation — invalid config must raise at startup, 
-not silently fall back to defaults.
+MODULE 3 — pipeline/book_pipeline.py
+Implement async `run_book_pipeline(book_config, normalizer_registry, matcher, scanner, 
+health_tracker, stop_event) -> None`:
+1. Dynamically import/instantiate the CDP client and BookParser subclass from book_config's 
+   dotted paths.
+2. Connect via CDP with exponential backoff retry (1s to 30s cap) until stop_event is set; 
+   mark_connected/mark_error accordingly.
+3. Fetch and process the initial full-state payload via parser.handle_http_body() BEFORE 
+   subscribing to live updates — per the statefulness requirement above. Call 
+   health_tracker.mark_initialized() only after this succeeds. If this step fails, retry with 
+   backoff rather than proceeding to subscribe on an uninitialized parser (decoding ticks 
+   against a missing ID map would silently produce garbage OddsUpdate objects).
+4. Subscribe to the live WS-frame or HTTP-body callback (per book — CDP intercepts both per the 
+   guide's Layer 1 description) and route each to parser.handle_ws_frame() or the equivalent 
+   the attached client exposes.
+5. Wrap each parse call in try/except — log with book_id and continue, never crash the book's 
+   task on one bad payload.
+6. Normalize -> match -> build MatchedSelection -> scanner.process() (check the attached 
+   scanner.py for sync/async calling convention and match exactly).
+7. mark_update() on each successfully processed payload.
+8. Wrap the full per-payload handling in an outer try/except too, so no single tick can kill 
+   the subscription loop.
+9. On stop_event, cleanly disconnect the CDP client and return.
 
-MODULE 7 — scanner/dedup_tracker.py
-Implement class `DedupTracker` with constructor `__init__(self, cooldown_seconds: float)`. 
-Internal dict[MarketGroupKey, datetime]. Method `should_emit(self, key: MarketGroupKey, 
-now: datetime) -> bool`: returns True and updates the internal timestamp if no prior alert 
-exists for this key within cooldown_seconds, else returns False. This prevents re-alerting 
-on every single odds tick for an arb that remains open across multiple updates.
+MODULE 4 — pipeline/registry.py
+`build_pipeline_components(config) -> PipelineComponents`: instantiates shared BucketStore/
+TimeResolver/Matcher, per-book normalizer_registry (dynamic import per BookConfig), the sink 
+list (ConsoleSink if console_enabled, FileSink if file_enabled — note per guide Section 4 this 
+file format should stay compatible with the existing replay system's expectations if 
+test_replay.py is attached, WebSocketSink + ConnectionManager if websocket_enabled, 
+ExecutionSink only if execution_enabled with a prominent startup warning logged), and the 
+Scanner wired with all its dependencies from config.scanner.
 
-MODULE 8 — scanner/sinks/base_sink.py
-Define abstract class `OpportunitySink` with abstract method 
-`emit(self, opportunity: Opportunity) -> None`.
-Provide two concrete stub implementations for now (to be filled in against real alerting/storage 
-modules later): 
-- `scanner/sinks/console_sink.py`: `ConsoleSink(OpportunitySink)` that prints a formatted 
-  summary of the opportunity (game, margin, legs with book/odds/stake).
-- `scanner/sinks/storage_sink.py`: `StorageSink(OpportunitySink)` with a stub `emit` that 
-  appends the opportunity (as a dict, via dataclasses.asdict) to an in-memory list, exposing 
-  `get_all(self) -> list[dict]` for later inspection/testing.
+MODULE 5 — pipeline/orchestrator.py
+Implement async `run(config) -> None`:
+1. Configure logging from config.logging_config_path.
+2. build_pipeline_components(config).
+3. If websocket_enabled: start the existing FastAPI/uvicorn UI server as a background task, 
+   sharing the same ConnectionManager instance with WebSocketSink.
+4. Create shared stop_event. Launch one asyncio.Task per enabled book via run_book_pipeline.
+5. Background task polling health_tracker.get_stale_books() every ~30s, logging warnings — 
+   this is the feed-liveness monitor described above, distinct from per-update staleness 
+   filtering which already happens inside the scanner.
+6. SIGINT/SIGTERM handlers set stop_event; await asyncio.gather(*book_tasks, 
+   return_exceptions=True) with a shutdown timeout; log any tasks that failed to exit cleanly 
+   or raised; flush/close FileSink if it buffers writes.
+7. Return once shutdown completes.
 
-MODULE 9 — scanner/scanner.py
-Implement class `Scanner`, constructor takes: grouper (MarketGrouper), 
-thresholds (ScannerThresholds), staleness_filter (StalenessFilter), dedup (DedupTracker), 
-sinks (list[OpportunitySink]), expected_selections_by_market (dict[str, set[str]] — e.g. 
-{"moneyline": {"home","draw","away"}, "total": {"over","under"}} — a simplified stand-in for 
-full per-sport MarketRules, to be replaced later), stake_budget_fn (Callable[[MarketGroupKey], float] 
-— injected function providing available stake per opportunity, stub this as a fixed constant 
-for now).
-Method `process(self, matched: MatchedSelection) -> Opportunity | None`:
-1. Add to grouper, get group_key.
-2. Look up expected selections for matched.market_type; if group is not complete 
-   (grouper.is_complete), return None.
-3. Get the full group; if any leg fails staleness_filter.is_fresh(), return None.
-4. Run check_arbitrage(group). If not is_arbitrage or margin < thresholds.min_margin, return None.
-5. If has_single_book_conflict(result), return None.
-6. If not dedup.should_emit(group_key, now), return None.
-7. Get stake_budget via stake_budget_fn(group_key), compute stakes via compute_stakes.
-8. Build and return an Opportunity, populating all fields (home_team/away_team/sport_key/
-   league_key carried from any MatchedSelection in the group — they're identical across the group 
-   by construction since they share canonical_game_id).
-9. Call emit() on every sink with the built Opportunity, in order, continuing even if one sink 
-   raises (log the exception, don't let one broken sink block the others).
+MODULE 6 — main.py
+Minimal entry point: load_config() then asyncio.run(run(config)). No logic beyond that — 
+everything testable belongs in orchestrator.py.
 
-MODULE 10 — pipeline/scanner_orchestrator.py
-Implement function `handle_matched_selection(matched: MatchedSelection, scanner: Scanner) -> Opportunity | None` 
-as a thin pass-through, matching the style of the existing parser/normalizer/matcher orchestration 
-functions already in the codebase.
+ERROR HANDLING REQUIREMENTS:
+- No exception from one book's pipeline (including a parser statefulness failure, e.g. the 
+  initial-state fetch failing repeatedly) may crash another book's task or the orchestrator.
+- Escaped exceptions from a book task must be logged with full traceback, book marked unhealthy, 
+  orchestrator continues running other books.
+- Config validation failures exit immediately with a clear message — this is the one place 
+  where failing fast and loud is correct.
 
-TESTING — pytest, plain dataclass fixtures, no mocking framework needed:
-- test_arbitrage.py: verify known two-way and three-way arbitrage/non-arbitrage cases against 
-  hand-computed margins; verify has_single_book_conflict correctly flags same-book-both-legs cases.
-- test_stake_calculator.py: verify stakes sum to total_stake and are inversely proportional to odds.
-- test_market_grouper.py: verify selections with matching keys group together; verify differing 
-  `period` values do NOT merge into the same group even with identical market_type/line.
-- test_staleness_filter.py: verify a group with one stale leg (among otherwise-fresh legs) is 
-  rejected.
-- test_scanner_integration.py: end-to-end from a sequence of MatchedSelection objects (simulating 
-  incremental updates arriving one selection at a time) through to a Scanner.process() call, 
-  verifying: no Opportunity is emitted until the group is complete; a real arb produces exactly 
-  one Opportunity; a repeat scan of the same still-open arb within cooldown does not re-emit; 
-  a margin below min_margin does not emit.
+TESTING — align with the existing replay convention from guide Section 4 where possible:
+- test_config.py: valid/invalid settings.yaml loading.
+- test_health_tracker.py: mark_update/mark_error/mark_initialized/get_stale_books with a fake 
+  clock.
+- test_book_pipeline_initialization_order.py: using a fake BookParser stub, verify 
+  handle_http_body() is called and its success confirmed (mark_initialized) BEFORE any 
+  handle_ws_frame() call is processed; verify a failed initial-state fetch retries rather than 
+  proceeding to subscribe.
+- test_book_pipeline_error_isolation.py: fake CDP client/parser/normalizer that raise on 
+  specific calls; verify logging-and-continue behavior, not propagation.
+- test_orchestrator_shutdown.py: stop_event triggers all book tasks to exit within a bounded 
+  time, run() returns cleanly.
+- If tests/test_scanner/test_replay.py is attached: verify the orchestrator's per-book pipeline 
+  logic (steps 3-7 of book_pipeline.py) can be exercised via the same timeline.jsonl replay 
+  mechanism already used for scanner testing, rather than requiring a live CDP connection — 
+  this keeps orchestrator-level integration tests deterministic and consistent with existing 
+  test conventions.
 
-Keep every function signature exactly as specified so each module is independently testable 
-using only the dataclasses defined above — no dependency on the real matching or alerting 
-modules required for tests.
+Keep every function signature exactly as specified so orchestrator wiring can be tested with 
+fake/stub CDP clients, parsers, normalizers, matcher, and scanner — no live browser or network 
+connection required.
 
-ADDITIONAL INFO:
-.venv contains dependencies needed run this project.
+# UI Implementation Prompt
+
+Build the local UI component for the Sportsbook Arbitrage Finder: a FastAPI server exposing a 
+WebSocket endpoint that streams Opportunity objects, plus a vanilla HTML/CSS/JS frontend served 
+from the same process, viewable at http://localhost:<port> on the user's own machine. This 
+server is started as a background asyncio task by the existing orchestrator (pipeline/orchestrator.py) 
+and fed by a WebSocketSink already wired into the scanner's sink list — do not modify the 
+orchestrator or scanner; only build the server and frontend, plus the WebSocketSink 
+implementation that bridges scanner output into this server.
+
+Use Python, FastAPI, uvicorn, asyncio. No frontend build tooling — plain HTML/CSS/JS only, 
+no React/npm, since this needs to run with zero setup on the user's device.
+
+DIRECTORY STRUCTURE:
+src/arbfinder/ui_server/
+├── __init__.py
+├── app.py                    # FastAPI app: WebSocket endpoint, static file serving, health endpoint
+├── connection_manager.py     # tracks connected clients, broadcasts messages, prunes dead connections
+├── serializers.py            # Opportunity -> JSON-safe dict
+└── static/
+    ├── index.html
+    ├── style.css
+    └── app.js                # WebSocket client, rendering, reconnect logic
+
+src/arbfinder/scanner/sinks/
+└── websocket_sink.py          # new OpportunitySink implementation bridging Scanner -> ConnectionManager
+
+MODULE 1 — ui_server/connection_manager.py
+Implement class `ConnectionManager`:
+- `_active: list[WebSocket]` internal state.
+- `async def connect(self, websocket: WebSocket) -> None` — accepts and registers.
+- `def disconnect(self, websocket: WebSocket) -> None` — removes if present, no error if absent.
+- `async def broadcast(self, message: dict) -> None` — sends to every active connection; wraps 
+  each send in try/except, collecting failures, and disconnects any client that failed to 
+  receive rather than letting one dead connection break the broadcast loop for everyone else. 
+  This must be safe to call from multiple concurrent scanner ticks without connections list 
+  corruption (use a lock around mutation of _active if instantiating/removing during an active 
+  broadcast is a realistic race — reason about this explicitly and note your choice).
+
+MODULE 2 — ui_server/serializers.py
+Implement `serialize_opportunity(opp: Opportunity) -> dict` converting the real Opportunity 
+dataclass (attached — use its actual field names and types, do not assume) into a JSON-safe 
+dict: all datetime fields as ISO 8601 strings, all floats rounded to reasonable display 
+precision (margin to 4 decimal places, margin_pct = margin*100 to 2 decimal places, odds to 2, 
+stakes to 2). Include every field needed for the frontend to render a full opportunity card 
+with no missing data — cross-check against the attached Opportunity/Leg schema field by field 
+rather than reproducing my earlier draft's field list, which may not match your actual 
+implementation.
+
+MODULE 3 — ui_server/app.py
+FastAPI app with:
+- `GET /` — serves static/index.html.
+- `GET /static/*` — mounted StaticFiles serving the static/ directory.
+- `WS /ws/opportunities` — accepts the connection via ConnectionManager.connect(), then loops 
+  on `await websocket.receive_text()` purely to detect disconnects (ignore/log any content 
+  received — this endpoint is push-only from the server's side for now), handling 
+  WebSocketDisconnect by calling manager.disconnect().
+- `GET /health` — returns a simple JSON status (e.g. {"status": "ok", "connected_clients": N}) 
+  for basic manual verification the server is alive.
+Expose a module-level function `create_app(connection_manager: ConnectionManager) -> FastAPI` 
+(rather than a bare global app instance) so the orchestrator can inject the same 
+ConnectionManager instance that WebSocketSink uses — this is the critical wiring point, get the 
+dependency injection right rather than using a global.
+
+MODULE 4 — scanner/sinks/websocket_sink.py
+Implement class `WebSocketSink(OpportunitySink)` (matching the existing OpportunitySink 
+interface exactly — attach base_sink.py and confirm sync vs async `emit()`):
+- Constructor takes a ConnectionManager instance.
+- `emit()` calls serialize_opportunity() then broadcasts {"type": "opportunity", "data": payload} 
+  via the connection manager.
+- If the existing Scanner/sink interface is synchronous but this server runs in an asyncio event 
+  loop, bridge correctly (e.g. asyncio.create_task if called from within the loop, or 
+  asyncio.run_coroutine_threadsafe if the scanner runs in a separate thread — determine which 
+  applies from the attached orchestrator/scanner code and implement accordingly; do not guess 
+  silently, state which case applies in a comment).
+
+MODULE 5 — ui_server/static/index.html
+A single page with:
+- A header showing overall connection status (connected/disconnected/reconnecting), driven by 
+  the WebSocket readyState.
+- A live-updating table/card list of opportunities, newest first, each showing: game 
+  (home vs away), sport/league, market type + period + line, margin %, a per-leg breakdown 
+  (book, selection, odds, stake), detected timestamp, and — critically — a distinct visual 
+  treatment (e.g. a warning-colored badge/border) for any opportunity with flagged_as_ghost_risk 
+  true, with a short inline label like "High margin — verify before acting" rather than silently 
+  treating it the same as a normal opportunity.
+- No external CSS/JS frameworks or CDN dependencies — everything self-contained so this works 
+  fully offline on localhost.
+
+MODULE 6 — ui_server/static/app.js
+- Connects to `ws://<same-host>/ws/opportunities` (derive host from `location.host`, don't 
+  hardcode).
+- On message: parse JSON, route by `type` field (only "opportunity" for now, but structure the 
+  handler with a switch/if so new message types can be added later without a rewrite).
+- Maintain a `Map` from a stable grouping key (canonical_game_id + market_type + period + line — 
+  NOT opportunity_id, which is fresh every emission) to the DOM row/card for that market, so a 
+  re-emitted opportunity for the same still-open arb updates the existing element in place 
+  (new margin, new legs) instead of appending a duplicate row.
+- Implement basic reconnect-on-close logic with exponential backoff (start at 1s, cap at ~15s), 
+  updating the connection-status header while reconnecting, and re-render is not required to 
+  clear existing rows on reconnect (stale display until fresh data arrives is acceptable and 
+  should be visually indicated, e.g. dimmed, rather than clearing to blank).
+- Keep the DOM bounded: cap displayed opportunities at a reasonable number (e.g. most recent 100 
+  distinct market-keys) to avoid unbounded growth during sustained live volume, evicting the 
+  oldest-updated entries first.
+
+MODULE 7 — ui_server/static/style.css
+Clean, readable, minimal — a plain table/card layout, clear connection-status indicator (green/red/yellow dot or 
+similar), no framework dependency.
+
+INTEGRATION NOTE FOR ORCHESTRATOR WIRING (do not implement this part — the orchestrator already 
+exists — but confirm your app.py / websocket_sink.py signatures are compatible with this call 
+pattern used in pipeline/orchestrator.py and pipeline/registry.py):
+    connection_manager = ConnectionManager()
+    ws_sink = WebSocketSink(connection_manager)
+    app = create_app(connection_manager)
+    # orchestrator starts uvicorn.Server(...) running `app` as a background asyncio task
+
+TESTING:
+- test_connection_manager.py: verify broadcast delivers to all active connections; verify a 
+  connection that raises on send is pruned without affecting delivery to others; use FastAPI's 
+  TestClient or a fake WebSocket stub, no real network needed.
+- test_serializers.py: verify serialize_opportunity produces correct JSON-safe output from a 
+  real Opportunity fixture (attach real sample data).
+- test_websocket_sink.py: verify emit() correctly serializes and calls broadcast with the 
+  expected payload shape, using a fake ConnectionManager.
+- test_app_websocket_endpoint.py: using FastAPI's TestClient WebSocket test support, verify a 
+  client can connect to /ws/opportunities, and verify /health returns expected shape.
+No test should require a live browser, live scanner, or live sportsbook connection — all 
+driven by fixtures and stubs.

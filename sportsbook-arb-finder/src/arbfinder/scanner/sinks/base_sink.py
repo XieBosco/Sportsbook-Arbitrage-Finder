@@ -15,3 +15,8 @@ class OpportunitySink(ABC):
     @abstractmethod
     def emit(self, opportunity: Opportunity) -> None:
         """Handle a detected opportunity (alert, store, log, etc.)."""
+    @abstractmethod
+    def emit_close(
+        self, canonical_game_id: str, market_type: str, line: float | None
+    ) -> None:
+        """Handle the closure of a previously emitted opportunity."""

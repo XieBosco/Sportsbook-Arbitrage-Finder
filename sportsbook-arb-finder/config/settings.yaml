@@ -1,0 +1,73 @@
+# Unified settings for the Sportsbook Arbitrage Finder
+# ====================================================
+# Combines sportsbook definitions, arbitrage parameters,
+# scanner thresholds, and sink/server configuration.
+# Validated by pydantic at startup — invalid values fail loudly.
+
+cdp_port: 19222
+
+books:
+  - name: DraftKings
+    enabled: true
+    url_pattern: "draftkings.com"
+    parser_class: "arbfinder.parsers.draftkings.DraftKingsParser"
+    normalizer_class: "arbfinder.normalization.book_normalizers.draftkings_normalizer.DraftKingsNormalizer"
+
+  - name: Betano
+    enabled: true
+    url_pattern: "betano.ca"
+    parser_class: "arbfinder.parsers.betano.BetanoParser"
+    normalizer_class: "arbfinder.normalization.book_normalizers.betano_normalizer.BetanoNormalizer"
+
+  - name: Caesars
+    enabled: true
+    url_pattern: "caesars.com"
+    parser_class: "arbfinder.parsers.caesars.CaesarsParser"
+    normalizer_class: "arbfinder.normalization.book_normalizers.caesars_normalizer.CaesarsNormalizer"
+
+  - name: FanDuel
+    enabled: true
+    url_pattern: "fanduel"
+    parser_class: "arbfinder.parsers.fanduel.FanDuelParser"
+    normalizer_class: "arbfinder.normalization.book_normalizers.fanduel_normalizer.FanDuelNormalizer"
+
+  - name: BetMGM
+    enabled: true
+    url_pattern: "betmgm"
+    parser_class: "arbfinder.parsers.betmgm.BetMGMParser"
+    normalizer_class: "arbfinder.normalization.book_normalizers.betmgm_normalizer.BetMGMNormalizer"
+
+# Arbitrage parameters (from original config.yaml)
+arbitrage:
+  min_profit_percentage: 2.5
+  total_bet_amount: 100.0
+  unit_size: 100.0
+  stake_calculating_method: 2    # 1 = total_bet_amount, 2 = unit_size
+  mainlines_only: true
+  kelly_bankroll: 1000.0
+  kelly_multiplier: 0.25
+
+# Scanner thresholds (from original scanner_thresholds.yaml)
+scanner:
+  min_margin: 0.00               # minimum margin as fraction (0.01 = 1%)
+  max_odds_age_seconds: 60.0     # reject legs older than this (1 minutes)
+  min_legs_required: 2
+  excluded_book_pairs: []
+  excluded_books: ["BetMGM"]
+  excluded_markets: ["total", "run_line"]    # markets include: "moneyline", "total", "run_line"
+
+# Output sinks
+sinks:
+  console_enabled: true
+  file_enabled: false
+  websocket_enabled: true
+  execution_enabled: false       # ⚠️  enables real-money execution
+  odds_format: "american"        # Supported formats: american, decimal, fractional
+
+# Web UI / API server
+server:
+  host: "127.0.0.1"
+  port: 8000                     # Open http://localhost:{port} (e.g. http://localhost:8000)
+  ui_sort_by: "timecreated" # Change this from "timecreated" to "margin"
+
+logging_config_path: "config/logging.yaml"

@@ -36,59 +36,59 @@ def main():
 
     all_normalized_updates = []
 
-    # # --- DraftKings ---
-    # print("Normalizing DraftKings...")
-    # parser = DraftKingsParser()
-    # ref_path = os.path.join(FIXTURES_DIR, "draftkings", "draftkings_messages", "json_1.json")
-    # with open(ref_path, "r", encoding="utf-8") as f:
-    #     d = json.load(f)
-    #     parser.handle_http_body("api/sportscontent/v1/markets", json.dumps(d.get("data", d)))
+    # --- DraftKings ---
+    print("Normalizing DraftKings...")
+    parser = DraftKingsParser()
+    ref_path = os.path.join(FIXTURES_DIR, "draftkings", "draftkings_messages", "json_1.json")
+    with open(ref_path, "r", encoding="utf-8") as f:
+        d = json.load(f)
+        parser.handle_http_body("api/sportscontent/v1/markets", json.dumps(d.get("data", d)))
     
-    # updates = []
-    # msg_files = glob.glob(os.path.join(FIXTURES_DIR, "draftkings", "draftkings_messages", "ws_*.txt"))
-    # msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
-    # for mf in msg_files:
-    #     with open(mf, "r", encoding="utf-8") as f:
-    #         b64_payload = f.read().strip()
-    #     updates.extend(parser.handle_ws_frame(b64_payload))
-    # all_normalized_updates.extend(normalizer.normalize_batch(updates))
+    updates = []
+    msg_files = glob.glob(os.path.join(FIXTURES_DIR, "draftkings", "draftkings_messages", "ws_*.txt"))
+    msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
+    for mf in msg_files:
+        with open(mf, "r", encoding="utf-8") as f:
+            b64_payload = f.read().strip()
+        updates.extend(parser.handle_ws_frame(b64_payload))
+    all_normalized_updates.extend(normalizer.normalize_batch(updates))
 
-    # # --- FanDuel ---
-    # print("Normalizing FanDuel...")
-    # parser = FanDuelParser()
-    # ref_path = os.path.join(FIXTURES_DIR, "fanduel", "fanduel_messages", "json_1.json")
-    # with open(ref_path, "r", encoding="utf-8") as f:
-    #     d = json.load(f)
-    #     parser.handle_http_body("content-managed-page", json.dumps(d.get("data", d)))
+    # --- FanDuel ---
+    print("Normalizing FanDuel...")
+    parser = FanDuelParser()
+    ref_path = os.path.join(FIXTURES_DIR, "fanduel", "fanduel_messages", "json_1.json")
+    with open(ref_path, "r", encoding="utf-8") as f:
+        d = json.load(f)
+        parser.handle_http_body("content-managed-page", json.dumps(d.get("data", d)))
         
-    # updates = []
-    # msg_dir = os.path.join(FIXTURES_DIR, "fanduel", "fanduel_messages")
-    # msg_files = glob.glob(os.path.join(msg_dir, "ws_*.txt"))
-    # msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
-    # for mf in msg_files:
-    #     with open(mf, "r", encoding="utf-8") as f:
-    #         d = json.load(f)
-    #         msg_body = json.dumps(d.get("data", d))
-    #     updates.extend(parser.handle_http_body("https://smp.on.sportsbook.fanduel.ca/api/sports/fixedodds/readonly/v1/getMarketPrices?priceHistory=1", msg_body))
-    # all_normalized_updates.extend(normalizer.normalize_batch(updates))
+    updates = []
+    msg_dir = os.path.join(FIXTURES_DIR, "fanduel", "fanduel_messages")
+    msg_files = glob.glob(os.path.join(msg_dir, "ws_*.txt"))
+    msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
+    for mf in msg_files:
+        with open(mf, "r", encoding="utf-8") as f:
+            d = json.load(f)
+            msg_body = json.dumps(d.get("data", d))
+        updates.extend(parser.handle_http_body("https://smp.on.sportsbook.fanduel.ca/api/sports/fixedodds/readonly/v1/getMarketPrices?priceHistory=1", msg_body))
+    all_normalized_updates.extend(normalizer.normalize_batch(updates))
 
-    # # --- BetMGM ---
-    # print("Normalizing BetMGM...")
-    # parser = BetMGMParser()
-    # json_files = glob.glob(os.path.join(FIXTURES_DIR, "betmgm", "betmgm_messages", "json_*.json"))
-    # for ref_path in json_files:
-    #     with open(ref_path, "r", encoding="utf-8") as f:
-    #         d = json.load(f)
-    #         parser.handle_http_body("fixture-view", json.dumps(d.get("data", d)))
+    # --- BetMGM ---
+    print("Normalizing BetMGM...")
+    parser = BetMGMParser()
+    json_files = glob.glob(os.path.join(FIXTURES_DIR, "betmgm", "betmgm_messages", "json_*.json"))
+    for ref_path in json_files:
+        with open(ref_path, "r", encoding="utf-8") as f:
+            d = json.load(f)
+            parser.handle_http_body("fixture-view", json.dumps(d.get("data", d)))
         
-    # updates = []
-    # msg_files = glob.glob(os.path.join(FIXTURES_DIR, "betmgm", "betmgm_messages", "ws_*.txt"))
-    # msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
-    # for mf in msg_files:
-    #     with open(mf, "r", encoding="utf-8") as f:
-    #         raw = f.read().strip()
-    #     updates.extend(parser.handle_ws_frame(raw + "\x1e"))
-    # all_normalized_updates.extend(normalizer.normalize_batch(updates))
+    updates = []
+    msg_files = glob.glob(os.path.join(FIXTURES_DIR, "betmgm", "betmgm_messages", "ws_*.txt"))
+    msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
+    for mf in msg_files:
+        with open(mf, "r", encoding="utf-8") as f:
+            raw = f.read().strip()
+        updates.extend(parser.handle_ws_frame(raw + "\x1e"))
+    all_normalized_updates.extend(normalizer.normalize_batch(updates))
 
     # --- Betano ---
     print("Normalizing Betano...")
@@ -110,22 +110,22 @@ def main():
                 updates.append(p)
     all_normalized_updates.extend(normalizer.normalize_batch(updates))
 
-    # # --- Caesars ---
-    # print("Normalizing Caesars...")
-    # parser = CaesarsParser()
-    # json_files = glob.glob(os.path.join(FIXTURES_DIR, "caesars", "messages", "json_*.json"))
-    # for jf in json_files:
-    #     with open(jf, "r", encoding="utf-8") as f:
-    #         parser.handle_http_body("https://api.americanwagering.com/v4/home", f.read())
+    # --- Caesars ---
+    print("Normalizing Caesars...")
+    parser = CaesarsParser()
+    json_files = glob.glob(os.path.join(FIXTURES_DIR, "caesars", "messages", "json_*.json"))
+    for jf in json_files:
+        with open(jf, "r", encoding="utf-8") as f:
+            parser.handle_http_body("https://api.americanwagering.com/v4/home", f.read())
         
-    # updates = []
-    # msg_files = glob.glob(os.path.join(FIXTURES_DIR, "caesars", "messages", "ws_*.txt"))
-    # msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
-    # for mf in msg_files:
-    #     with open(mf, "r", encoding="utf-8") as f:
-    #         b64_payload = f.read().strip()
-    #     updates.extend(parser.handle_ws_frame(b64_payload))
-    # all_normalized_updates.extend(normalizer.normalize_batch(updates))
+    updates = []
+    msg_files = glob.glob(os.path.join(FIXTURES_DIR, "caesars", "messages", "ws_*.txt"))
+    msg_files.sort(key=lambda x: int(os.path.basename(x)[3:-4]))
+    for mf in msg_files:
+        with open(mf, "r", encoding="utf-8") as f:
+            b64_payload = f.read().strip()
+        updates.extend(parser.handle_ws_frame(b64_payload))
+    all_normalized_updates.extend(normalizer.normalize_batch(updates))
 
     # --- Write Outputs ---
     updates_path = os.path.join(OUTPUTS_DIR, "normalized_messages_output.txt")
