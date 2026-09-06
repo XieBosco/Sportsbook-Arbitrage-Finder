@@ -40,6 +40,12 @@ class WebSocketSink(OpportunitySink):
     def __init__(self, connection_manager: ConnectionManager, sinks_config: SinksConfig) -> None:
         self._manager = connection_manager
         self._sinks_config = sinks_config
+        self._tasks: set[asyncio.Task] = set()
+
+    def _schedule_broadcast(self, loop: asyncio.AbstractEventLoop, message: dict) -> None:
+        task = loop.create_task(self._manager.broadcast(message))
+        self._tasks.add(task)
+        task.add_done_callback(self._tasks.discard)
 
     def emit(self, opportunity: Opportunity) -> None:
         """Serialise *opportunity* and schedule an async broadcast.
@@ -63,7 +69,7 @@ class WebSocketSink(OpportunitySink):
             )
             return
 
-        loop.create_task(self._manager.broadcast(message))
+        self._schedule_broadcast(loop, message)
 
     def emit_close(
         self, canonical_game_id: str, market_type: str, line: float | None
@@ -83,4 +89,4 @@ class WebSocketSink(OpportunitySink):
         except RuntimeError:
             return
 
-        loop.create_task(self._manager.broadcast(message))
+        self._schedule_broadcast(loop, message)

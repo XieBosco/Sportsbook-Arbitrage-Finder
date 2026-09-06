@@ -25,7 +25,15 @@ def _ms(
     ts: datetime | None = None,
 ) -> MatchedSelection:
     """Build a MatchedSelection with timestamps near *ts* (default: now)."""
+    from arbfinder.normalization.odds_math import american_to_decimal
     ts = ts or _fresh_now()
+    decimal_book_odds = {}
+    for book, odds in book_odds.items():
+        if odds <= 0 or odds >= 100:
+            decimal_book_odds[book] = american_to_decimal(int(round(odds)))
+        else:
+            decimal_book_odds[book] = float(odds)
+
     return MatchedSelection(
         canonical_game_id=canonical_game_id,
         sport_key="Baseball",
@@ -36,7 +44,7 @@ def _ms(
         market_type=market_type,
         selection=selection,
         line=line,
-        book_odds=book_odds,
+        book_odds=decimal_book_odds,
         updated_at={book: ts for book in book_odds},
     )
 

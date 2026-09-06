@@ -3,6 +3,7 @@
 import base64
 import json
 import logging
+import threading
 import time
 from collections.abc import Callable
 from typing import Any
@@ -41,19 +42,25 @@ class CDPClient:
         self._last_sweep = time.time()
         self.ws: websocket.WebSocketApp | None = None
         self._running = False
+        self._send_lock = threading.Lock()
 
     def send(self, method: str, params: dict | None = None) -> int:
         """Send a CDP method with optional parameters and return the request ID."""
-        if not self.ws:
-            return -1
+        with self._send_lock:
+            if not self.ws:
+                return -1
 
-        self.cmd_id += 1
-        msg = {"id": self.cmd_id, "method": method}
-        if params:
-            msg["params"] = params
+            self.cmd_id += 1
+            msg = {"id": self.cmd_id, "method": method}
+            if params:
+                msg["params"] = params
 
-        self.ws.send(json.dumps(msg))
-        return self.cmd_id
+            try:
+                self.ws.send(json.dumps(msg))
+            except Exception as e:
+                logger.error(f"Failed to send CDP message: {e}")
+                return -1
+            return self.cmd_id
 
     def run(self) -> None:
         """Start the CDP client blocking event loop."""

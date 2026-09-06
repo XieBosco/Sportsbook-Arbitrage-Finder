@@ -50,6 +50,7 @@ arbitrage:
 scanner:
   min_margin: 0.00               # minimum margin as fraction (0.01 = 1%)
   max_odds_age_seconds: 60.0     # reject legs older than this (1 minutes)
+  dedup_cooldown_seconds: 0.1    # cooldown before re-alerting on same open arb
   min_legs_required: 2
   excluded_book_pairs: []
   excluded_books: ["BetMGM"]

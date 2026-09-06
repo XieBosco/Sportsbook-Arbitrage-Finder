@@ -1,0 +1,76 @@
+/* ==========================================================
+   Arbitrage Finder — Team Logo Mappings
+   Separate asset mapping file loaded before app.js.
+   All 30 MLB teams currently available.
+   ========================================================== */
+
+(function () {
+    "use strict";
+
+    window.MLB_TEAM_LOGOS = Object.freeze({
+        // Full canonical names
+        "arizona diamondbacks": "arizona_diamondbacks.png",
+        "atlanta braves": "atlanta_braves.png",
+        "baltimore orioles": "baltimore_orioles.png",
+        "boston red sox": "boston_red_sox.png",
+        "chicago cubs": "chicago_cubs.png",
+        "chicago white sox": "chicago_white_sox.png",
+        "cincinnati reds": "cincinnati_reds.png",
+        "cleveland guardians": "cleveland_guardians.png",
+        "colorado rockies": "colorado_rockies.png",
+        "detroit tigers": "detroit_tigers.png",
+        "houston astros": "houston_astros.png",
+        "kansas city royals": "kansas_city_royals.png",
+        "los angeles angels": "los_angeles_angels.png",
+        "los angeles dodgers": "los_angeles_dodgers.png",
+        "miami marlins": "miami_marlins.png",
+        "milwaukee brewers": "milwaukee_brewers.png",
+        "minnesota twins": "minnesota_twins.png",
+        "new york mets": "new_york_mets.png",
+        "new york yankees": "new_york_yankees.png",
+        "oakland athletics": "athletics.png",
+        "athletics": "athletics.png",
+        "philadelphia phillies": "philadelphia_phillies.png",
+        "pittsburgh pirates": "pittsburgh_pirates.png",
+        "san diego padres": "san_diego_padres.png",
+        "san francisco giants": "san_francisco_giants.png",
+        "seattle mariners": "seattle_mariners.png",
+        "st. louis cardinals": "st_louis_cardinals.png",
+        "st louis cardinals": "st_louis_cardinals.png",
+        "tampa bay rays": "tampa_bay_rays.png",
+        "texas rangers": "texas_rangers.png",
+        "toronto blue jays": "toronto_blue_jays.png",
+        "washington nationals": "washington_nationals.png",
+
+        // Common nicknames & city shorthands
+        "diamondbacks": "arizona_diamondbacks.png",
+        "braves": "atlanta_braves.png",
+        "orioles": "baltimore_orioles.png",
+        "red sox": "boston_red_sox.png",
+        "cubs": "chicago_cubs.png",
+        "white sox": "chicago_white_sox.png",
+        "reds": "cincinnati_reds.png",
+        "guardians": "cleveland_guardians.png",
+        "rockies": "colorado_rockies.png",
+        "tigers": "detroit_tigers.png",
+        "astros": "houston_astros.png",
+        "royals": "kansas_city_royals.png",
+        "angels": "los_angeles_angels.png",
+        "dodgers": "los_angeles_dodgers.png",
+        "marlins": "miami_marlins.png",
+        "brewers": "milwaukee_brewers.png",
+        "twins": "minnesota_twins.png",
+        "mets": "new_york_mets.png",
+        "yankees": "new_york_yankees.png",
+        "phillies": "philadelphia_phillies.png",
+        "pirates": "pittsburgh_pirates.png",
+        "padres": "san_diego_padres.png",
+        "giants": "san_francisco_giants.png",
+        "mariners": "seattle_mariners.png",
+        "cardinals": "st_louis_cardinals.png",
+        "rays": "tampa_bay_rays.png",
+        "rangers": "texas_rangers.png",
+        "blue jays": "toronto_blue_jays.png",
+        "nationals": "washington_nationals.png",
+    });
+})();

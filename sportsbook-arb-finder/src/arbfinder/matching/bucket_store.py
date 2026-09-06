@@ -100,3 +100,30 @@ class BucketStore:
             )
             self._index[key] = bucket
             return bucket
+
+    def evict_expired(
+        self, max_age_seconds: float = 86400.0, now: datetime | None = None
+    ) -> int:
+        """Evict buckets whose last_updated timestamp is older than max_age_seconds."""
+        if now is None:
+            now = datetime.now(timezone.utc)
+        elif now.tzinfo is None:
+            now = now.replace(tzinfo=timezone.utc)
+
+        with self._lock:
+            keys_to_remove = [
+                key
+                for key, bucket in self._index.items()
+                if (
+                    now
+                    - (
+                        bucket.last_updated
+                        if bucket.last_updated.tzinfo is not None
+                        else bucket.last_updated.replace(tzinfo=timezone.utc)
+                    )
+                ).total_seconds()
+                > max_age_seconds
+            ]
+            for key in keys_to_remove:
+                del self._index[key]
+            return len(keys_to_remove)

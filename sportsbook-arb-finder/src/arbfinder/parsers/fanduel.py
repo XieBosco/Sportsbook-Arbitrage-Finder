@@ -2,11 +2,12 @@
 
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 
 from arbfinder.normalization.models import OddsUpdate
 from arbfinder.parsers._helpers import split_fixture_name
 from arbfinder.parsers.base import BookParser
+from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
 
 __all__ = ["FanDuelParser"]
 
@@ -104,14 +105,12 @@ class FanDuelParser(BookParser):
             # Lookup metadata from the reference dictionary
             market_meta = self.reference_data["markets"].get(m_id)
             if not market_meta:
-                from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
                 record_unresolved_parser_id(self.book_name, "market_id", m_id)
                 market_meta = {}
             
             event_id = market_meta.get("eventId", "")
             event_meta = self.reference_data["events"].get(event_id)
             if not event_meta and event_id:
-                from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
                 record_unresolved_parser_id(self.book_name, "event_id", event_id)
                 event_meta = {}
             elif not event_meta:
@@ -136,7 +135,6 @@ class FanDuelParser(BookParser):
                 # Lookup Selection metadata
                 sel_meta = self.reference_data["selections"].get(f"{m_id}_{s_id}")
                 if not sel_meta:
-                    from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
                     record_unresolved_parser_id(self.book_name, "selection_id", f"{m_id}_{s_id}")
                     sel_meta = {}
                 
@@ -162,6 +160,8 @@ class FanDuelParser(BookParser):
                         odds_value=raw_odds,
                         odds_format="american",
                         captured_at=now,
+                        raw_selection_id=str(s_id),
+                        raw_market_id=str(m_id),
                     )
                 )
 
@@ -180,7 +180,7 @@ class FanDuelParser(BookParser):
             return []
 
         # --- PARSE LIVE ODDS UPDATE ---
-        return self._parse_live_odds(payload, datetime.now())
+        return self._parse_live_odds(payload, datetime.now(timezone.utc))
 
     def handle_ws_frame(self, payload: str) -> list[OddsUpdate]:
         """FanDuel uses long-polling HTTP requests for updates, no WebSocket odds."""

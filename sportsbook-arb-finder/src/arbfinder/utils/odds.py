@@ -16,7 +16,9 @@ def format_odds(decimal: float, odds_format: str = "american") -> str:
         frac = Fraction(decimal - 1).limit_denominator(100)
         return f"{frac.numerator}/{frac.denominator}"
     else:  # american default
-        if decimal >= 2.0:
+        if decimal <= 1.0:
+            return "0"
+        elif decimal >= 2.0:
             american = round((decimal - 1) * 100)
             return f"+{american}"
         else:

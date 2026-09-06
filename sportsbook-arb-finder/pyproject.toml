@@ -15,5 +15,10 @@ dependencies = [
     "msgpack",
     "lz4",
     "pytest",
+    "pytest-asyncio",
+    "httpx",
     "tzdata"
 ]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

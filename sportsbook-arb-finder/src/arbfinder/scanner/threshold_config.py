@@ -20,6 +20,7 @@ class ScannerThresholds(BaseModel):
 
     min_margin: float = 0.01
     max_odds_age_seconds: float = 5.0
+    dedup_cooldown_seconds: float = 0.1
     min_legs_required: int = 2
     excluded_book_pairs: set[tuple[str, str]] = set()
     excluded_books: set[str] = set()

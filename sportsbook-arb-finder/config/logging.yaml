@@ -25,9 +25,24 @@ handlers:
     encoding: utf-8
 
 loggers:
+  arbfinder.parsers.unresolved_log:
+    level: WARNING
+    handlers: [file]
+    propagate: false
+
+  arbfinder.parsers.unresolved_log.file:
+    level: INFO
+    handlers: []
+    propagate: false
+
   arbfinder.normalization.unresolved_log:
     level: WARNING
     handlers: [file]
+    propagate: false
+
+  arbfinder.normalization.unresolved_log.file:
+    level: INFO
+    handlers: []
     propagate: false
 
   arbfinder:

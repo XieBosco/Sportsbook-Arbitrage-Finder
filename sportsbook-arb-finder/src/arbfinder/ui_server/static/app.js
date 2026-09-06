@@ -165,6 +165,202 @@
         }
     }
 
+    // ==================================================================
+    // Team Logo Assets & Helpers
+    // ==================================================================
+
+    /**
+     * Team logo lookup mapping loaded from external team_logos.js / team_logos.json.
+     */
+    let teamLogosMap = window.MLB_TEAM_LOGOS || {};
+
+    // Fallback async fetch for team_logos.json if window.MLB_TEAM_LOGOS is not populated
+    if (Object.keys(teamLogosMap).length === 0) {
+        fetch("/static/team_logos.json")
+            .then(res => res.ok ? res.json() : null)
+            .then(data => {
+                if (data) {
+                    teamLogosMap = data;
+                }
+            })
+            .catch(() => {});
+    }
+
+    /**
+     * Resolve the logo image URL for a given team and league.
+     * Returns null if no logo is available.
+     */
+    function getTeamLogoUrl(teamName, leagueKey) {
+        if (!teamName) return null;
+        const clean = String(teamName).toLowerCase().trim();
+        const map = teamLogosMap || window.MLB_TEAM_LOGOS || {};
+
+        // Direct key match
+        if (map[clean]) {
+            return `/static/mlb_team_logos/${map[clean]}`;
+        }
+
+        // Match if clean name ends with a known key (e.g. "ARI Diamondbacks" -> ends with "diamondbacks")
+        for (const [key, filename] of Object.entries(map)) {
+            if (clean.endsWith(` ${key}`) || clean.endsWith(key)) {
+                return `/static/mlb_team_logos/${filename}`;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Render a team name with its optional team icon.
+     * @param {string} teamName
+     * @param {string} leagueKey
+     * @param {"left"|"right"} [logoPosition="left"] - Place logo before or after the team name
+     */
+    function renderTeamBadge(teamName, leagueKey, logoPosition = "left") {
+        const logoUrl = getTeamLogoUrl(teamName, leagueKey);
+        const nameEsc = esc(teamName);
+        if (!logoUrl) {
+            return `<span class="team-badge"><span class="team-name">${nameEsc}</span></span>`;
+        }
+
+        const imgTag = `<img class="team-logo" src="${logoUrl}" alt="${nameEsc}" onerror="this.style.display='none'">`;
+        const nameTag = `<span class="team-name">${nameEsc}</span>`;
+
+        if (logoPosition === "right") {
+            return `<span class="team-badge team-badge-right">${nameTag}${imgTag}</span>`;
+        }
+        return `<span class="team-badge team-badge-left">${imgTag}${nameTag}</span>`;
+    }
+
+    /**
+     * Render the Selection column cell in the legs table.
+     * Enriches "home" or "away" with team logos and labels.
+     */
+    function renderSelectionCell(selection, opp) {
+        const sLower = String(selection).toLowerCase();
+        let targetTeam = null;
+        let suffix = "";
+
+        if (sLower === "home") {
+            targetTeam = opp.home_team;
+            suffix = ` <span class="selection-team-sub">(${esc(opp.home_team)})</span>`;
+        } else if (sLower === "away") {
+            targetTeam = opp.away_team;
+            suffix = ` <span class="selection-team-sub">(${esc(opp.away_team)})</span>`;
+        } else {
+            targetTeam = selection;
+        }
+
+        const logoUrl = getTeamLogoUrl(targetTeam, opp.league_key);
+        if (logoUrl) {
+            return `<div class="selection-info"><img class="selection-logo" src="${logoUrl}" alt="${esc(targetTeam)}" onerror="this.style.display='none'"><span>${esc(selection)}</span>${suffix}</div>`;
+        }
+        return `<span>${esc(selection)}</span>${suffix}`;
+    }
+
+    // ==================================================================
+    // Deeplinks & Dual Bet Widget
+    // ==================================================================
+
+    /**
+     * Resolve or build a direct clickable deeplink for a sportsbook leg
+     * adhering to documentation schemas for DraftKings, FanDuel, BetMGM, Caesars, Betano.
+     */
+    function getLegDeeplink(leg, opp) {
+        if (!leg) return "#";
+        if (leg.deeplink && typeof leg.deeplink === "string" && leg.deeplink.startsWith("http")) {
+            return leg.deeplink;
+        }
+
+        const book = String(leg.book_id || "").toLowerCase().trim();
+        const home = (opp && opp.home_team) || "";
+        const away = (opp && opp.away_team) || "";
+        const homeSlug = home.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+        const awaySlug = away.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+        const matchSlug = (awaySlug && homeSlug) ? `${awaySlug}-vs-${homeSlug}` : "match";
+
+        const selId = leg.selection_id || leg.raw_selection_id || "";
+        const mId = leg.market_id || leg.raw_market_id || "";
+        const evId = leg.event_id || leg.raw_event_id || (opp && opp.canonical_game_id) || "";
+
+        // 1. DraftKings (documentation/draftkings.md)
+        if (book.includes("draftkings")) {
+            if (selId) {
+                return evId
+                    ? `https://sportsbook.draftkings.com/event/${encodeURIComponent(evId)}?outcomes=${encodeURIComponent(selId)}`
+                    : `https://sportsbook.draftkings.com/?outcomes=${encodeURIComponent(selId)}`;
+            }
+            if (evId) return `https://sportsbook.draftkings.com/event/${encodeURIComponent(matchSlug)}/${encodeURIComponent(evId)}`;
+            return "https://sportsbook.draftkings.com/";
+        }
+
+        // 2. FanDuel (documentation/fanduel.md)
+        if (book.includes("fanduel")) {
+            if (mId && selId) {
+                return `https://on.sportsbook.fanduel.ca/addToBetslip?marketId[0]=${encodeURIComponent(mId)}&selectionId[0]=${encodeURIComponent(selId)}`;
+            }
+            if (selId) {
+                return `https://on.sportsbook.fanduel.ca/addToBetslip?selectionId[0]=${encodeURIComponent(selId)}`;
+            }
+            if (evId) return `https://on.sportsbook.fanduel.ca/sports/event/${encodeURIComponent(evId)}`;
+            return "https://on.sportsbook.fanduel.ca/";
+        }
+
+        // 3. BetMGM (documentation/betmgm.md)
+        if (book.includes("betmgm")) {
+            if (evId && mId && selId) {
+                return `https://www.on.betmgm.ca/en/sports?options=${encodeURIComponent(evId)}-${encodeURIComponent(mId)}-${encodeURIComponent(selId)}`;
+            }
+            if (selId) {
+                return `https://www.on.betmgm.ca/en/sports?options=${encodeURIComponent(selId)}`;
+            }
+            if (evId) return `https://www.on.betmgm.ca/en/sports/events/${encodeURIComponent(matchSlug)}-${encodeURIComponent(evId)}`;
+            return "https://www.on.betmgm.ca/en/sports";
+        }
+
+        // 4. Caesars (documentation/caesars.md)
+        if (book.includes("caesars") || book.includes("czr")) {
+            if (selId) {
+                return `https://sportsbook.caesars.com/ca/on/bet/betslip?selectionIds=${encodeURIComponent(selId)}`;
+            }
+            if (evId) return `https://sportsbook.caesars.com/ca/on/bet/event/${encodeURIComponent(evId)}`;
+            return "https://sportsbook.caesars.com/ca/on/bet";
+        }
+
+        // 5. Betano (documentation/betano.md)
+        if (book.includes("betano")) {
+            if (evId) {
+                return `https://www.betano.ca/live/${encodeURIComponent(matchSlug)}/${encodeURIComponent(evId)}/`;
+            }
+            return "https://www.betano.ca/";
+        }
+
+        return "#";
+    }
+
+    /**
+     * Render the dual-bet action box with top/bottom sportsbook links
+     * and center DUAL button opening both in one click.
+     */
+    function renderDualBetWidget(opp) {
+        if (!opp.legs || opp.legs.length === 0) return "";
+        const leg1 = opp.legs[0];
+        const leg2 = opp.legs.length > 1 ? opp.legs[1] : null;
+        const link1 = getLegDeeplink(leg1, opp);
+        const link2 = leg2 ? getLegDeeplink(leg2, opp) : "#";
+
+        return `
+            <div class="dual-bet-box">
+                <a class="bet-btn-side" href="${esc(link1)}" target="_blank" rel="noopener noreferrer" title="Open ${esc(leg1.book_id)} deeplink">${esc(leg1.book_id)}</a>
+                <button type="button" class="dual-bet-btn" data-link1="${esc(link1)}" data-link2="${esc(link2)}" title="Open both sportsbooks">
+                    <span>DUAL</span>
+                    <svg class="dual-arrow-icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </button>
+                ${leg2 ? `<a class="bet-btn-side" href="${esc(link2)}" target="_blank" rel="noopener noreferrer" title="Open ${esc(leg2.book_id)} deeplink">${esc(leg2.book_id)}</a>` : ""}
+            </div>
+        `;
+    }
+
     function buildCard(opp) {
         const card = document.createElement("div");
         card.className = "opportunity-card";
@@ -173,19 +369,26 @@
         // Format line display
         const linePart = opp.line !== null ? ` ${opp.line > 0 ? "+" : ""}${opp.line}` : "";
         const marketDisplay = opp.market_type.replace(/_/g, " ") + linePart;
+        const gameTimeFormatted = formatGameStartTime(opp.start_time);
 
         card.innerHTML = `
             <div class="card-header">
                 <div>
-                    <div class="card-game">${esc(opp.home_team)} vs ${esc(opp.away_team)}</div>
+                    <div class="card-game">
+                        ${renderTeamBadge(opp.home_team, opp.league_key, "left")}
+                        <span class="game-vs">vs</span>
+                        ${renderTeamBadge(opp.away_team, opp.league_key, "right")}
+                    </div>
                     <div class="card-meta">
                         <span class="tag tag-sport">${esc(opp.sport_key)} / ${esc(opp.league_key)}</span>
                         <span class="tag tag-market">${esc(marketDisplay)}</span>
                     </div>
                 </div>
-                <div class="card-margin">
-                    <div class="margin-value">${opp.margin_pct.toFixed(2)}%</div>
-                    <div class="margin-label">margin</div>
+                <div class="card-header-right">
+                    <div class="card-margin">
+                        <div class="margin-value">${opp.margin_pct.toFixed(2)}%</div>
+                        <div class="margin-label">margin</div>
+                    </div>
                 </div>
             </div>
             <table class="legs-table">
@@ -193,27 +396,42 @@
                     <tr>
                         <th>Book</th>
                         <th>Selection</th>
+                        <th class="col-dual-th"></th>
                         <th>Odds</th>
                         <th>Stake</th>
                     </tr>
                 </thead>
                 <tbody>
-                    ${opp.legs.map(leg => `
-                    <tr>
-                        <td>
-                            <div class="book-info">
-                                <img class="book-logo" src="/assets/images/${leg.book_id.toLowerCase()}.png" alt="${esc(leg.book_id)}" onerror="this.style.display='none'">
-                                <span>${esc(leg.book_id)}</span>
-                            </div>
-                        </td>
-                        <td>${esc(leg.selection)}</td>
-                        <td class="col-odds">${esc(leg.odds_formatted)}</td>
-                        <td class="col-stake">$${leg.stake.toFixed(2)}</td>
-                    </tr>`).join("")}
+                    ${opp.legs.map((leg, idx) => {
+                        const legLink = getLegDeeplink(leg, opp);
+                        const dualCell = idx === 0 && opp.legs.length > 0
+                            ? `<td rowspan="${opp.legs.length}" class="col-dual-cell">${renderDualBetWidget(opp)}</td>`
+                            : "";
+                        return `
+                        <tr>
+                            <td>
+                                <a class="book-row-link" href="${esc(legLink)}" target="_blank" rel="noopener noreferrer" title="Open ${esc(leg.book_id)} deeplink">
+                                    <div class="book-info">
+                                        <img class="book-logo" src="/assets/images/${leg.book_id.toLowerCase()}.png" alt="${esc(leg.book_id)}" onerror="this.style.display='none'">
+                                        <span>${esc(leg.book_id)}</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>${renderSelectionCell(leg.selection, opp)}</td>
+                            ${dualCell}
+                            <td class="col-odds">${esc(leg.odds_formatted)}</td>
+                            <td class="col-stake">$${leg.stake.toFixed(2)}</td>
+                        </tr>`;
+                    }).join("")}
                 </tbody>
             </table>
             <div class="card-footer">
-                <span>Detected ${formatTime(opp.detected_at)}</span>
+                <div class="card-footer-left">
+                    ${gameTimeFormatted ? `<span class="game-time">${esc(gameTimeFormatted)}</span>` : ""}
+                </div>
+                <div class="card-footer-right">
+                    <span>Detected ${formatTime(opp.detected_at)}</span>
+                </div>
             </div>
         `;
         return card;
@@ -278,8 +496,40 @@
         }
     }
 
+    /**
+     * Format game start time to match the required format:
+     * e.g. "Tue, Jan 23 : 10:00 PM"
+     */
+    function formatGameStartTime(isoStr) {
+        if (!isoStr) return "";
+        try {
+            const d = new Date(isoStr);
+            if (isNaN(d.getTime())) return "";
+
+            const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            const dayName = days[d.getDay()];
+            const monthName = months[d.getMonth()];
+            const dayNum = d.getDate();
+
+            let hours = d.getHours();
+            const minutes = String(d.getMinutes()).padStart(2, "0");
+            const ampm = hours >= 12 ? "PM" : "AM";
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+
+            return `${dayName}, ${monthName} ${dayNum} : ${hours}:${minutes} ${ampm}`;
+        } catch (_) {
+            return "";
+        }
+    }
+
     function updateCounter() {
         oppCount.textContent = `${cardMap.size} opportunit${cardMap.size === 1 ? "y" : "ies"}`;
+        if (emptyState) {
+            emptyState.style.display = cardMap.size === 0 ? "flex" : "none";
+        }
     }
 
     function sortContainer() {
@@ -448,10 +698,144 @@
     });
 
     // ==================================================================
+    // Feed Health Interactive Tab & Dropdown
+    // ==================================================================
+    const feedsTabWrapper = document.getElementById("feeds-tab-wrapper");
+    const feedsTabBtn = document.getElementById("feeds-tab-btn");
+    const feedsDropdown = document.getElementById("feeds-dropdown");
+    const feedsSummaryDot = document.getElementById("feeds-summary-dot");
+    const feedsSummaryBadge = document.getElementById("feeds-summary-badge");
+    const feedsList = document.getElementById("feeds-list");
+    const feedsRefreshTime = document.getElementById("feeds-refresh-time");
+
+    if (feedsTabBtn && feedsDropdown) {
+        feedsTabBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const isOpen = feedsDropdown.classList.toggle("open");
+            feedsTabBtn.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", (e) => {
+            if (feedsDropdown.classList.contains("open") && feedsTabWrapper && !feedsTabWrapper.contains(e.target)) {
+                feedsDropdown.classList.remove("open");
+                feedsTabBtn.setAttribute("aria-expanded", "false");
+            }
+        });
+
+        // Close dropdown on Escape
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && feedsDropdown.classList.contains("open")) {
+                feedsDropdown.classList.remove("open");
+                feedsTabBtn.setAttribute("aria-expanded", "false");
+            }
+        });
+    }
+
+    async function updateBookHealth() {
+        if (!feedsList || !feedsSummaryBadge) return;
+        try {
+            const res = await fetch("/api/health");
+            if (!res.ok) return;
+            const data = await res.json();
+            const sportsbooks = data.sportsbooks || {};
+            const bookNames = Object.keys(sportsbooks).sort();
+            
+            if (bookNames.length === 0) {
+                feedsSummaryBadge.textContent = "0 Feeds";
+                feedsSummaryBadge.className = "feeds-badge";
+                feedsList.innerHTML = `<div class="muted" style="padding: 8px; text-align: center;">No feeds active</div>`;
+                return;
+            }
+
+            let liveCount = 0;
+            let initCount = 0;
+            let offlineCount = 0;
+
+            feedsList.innerHTML = bookNames.map(book => {
+                const info = sportsbooks[book];
+                let statusClass = "offline";
+                let statusBadgeText = "Offline";
+
+                if (info.is_connected && info.is_initialized) {
+                    statusClass = "live";
+                    statusBadgeText = "Live";
+                    liveCount++;
+                } else if (info.is_connected) {
+                    statusClass = "init";
+                    statusBadgeText = "Init";
+                    initCount++;
+                } else {
+                    offlineCount++;
+                }
+
+                let timeText = "";
+                if (info.last_update_at) {
+                    timeText = formatTime(info.last_update_at);
+                } else {
+                    timeText = "No data";
+                }
+
+                return `
+                    <div class="feed-item">
+                        <div class="feed-item-left">
+                            <span class="status-dot" style="background: var(--${statusClass === "live" ? "green" : statusClass === "init" ? "yellow" : "red"}); width: 7px; height: 7px;"></span>
+                            <span class="feed-name">${esc(book)}</span>
+                        </div>
+                        <div class="feed-item-right">
+                            <span class="feed-time">${esc(timeText)}</span>
+                            <span class="feed-status-badge ${statusClass}">${statusBadgeText}</span>
+                        </div>
+                    </div>
+                `;
+            }).join("");
+
+            // Update summary badge & dot
+            feedsSummaryBadge.textContent = `${liveCount}/${bookNames.length} Live`;
+            if (liveCount === bookNames.length) {
+                feedsSummaryBadge.className = "feeds-badge all-live";
+                if (feedsSummaryDot) feedsSummaryDot.style.background = "var(--green)";
+            } else if (liveCount > 0 || initCount > 0) {
+                feedsSummaryBadge.className = "feeds-badge has-warning";
+                if (feedsSummaryDot) feedsSummaryDot.style.background = "var(--yellow)";
+            } else {
+                feedsSummaryBadge.className = "feeds-badge has-offline";
+                if (feedsSummaryDot) feedsSummaryDot.style.background = "var(--red)";
+            }
+
+            if (feedsRefreshTime) {
+                const now = new Date();
+                feedsRefreshTime.textContent = `Updated ${now.toLocaleTimeString()}`;
+            }
+        } catch (_) {
+            // Silently ignore health polling errors
+        }
+    }
+
+    // Open both legs when clicking DUAL button
+    document.addEventListener("click", function (e) {
+        const btn = e.target.closest(".dual-bet-btn");
+        if (!btn) return;
+        e.preventDefault();
+        e.stopPropagation();
+
+        const l1 = btn.getAttribute("data-link1");
+        const l2 = btn.getAttribute("data-link2");
+        if (l1 && l1 !== "#") {
+            window.open(l1, "_blank", "noopener,noreferrer");
+        }
+        if (l2 && l2 !== "#") {
+            window.open(l2, "_blank", "noopener,noreferrer");
+        }
+    });
+
+    // ==================================================================
     // Init
     // ==================================================================
     fetchConfig().then(() => {
         connect();
+        updateBookHealth();
         setInterval(evictExpired, 5000); // Check for expired arbs every 5 seconds
+        setInterval(updateBookHealth, 10000); // Check feed health every 10 seconds
     });
 })();

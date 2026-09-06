@@ -381,12 +381,12 @@ Start: 2026-08-30T03:27:48.521042+00:00 | End: 2026-08-30T03:27:51.702800+00:00
 
 
 ================================================================================
-OPPORTUNITY DETECTED! Margin: 6.80%
+OPPORTUNITY DETECTED! Margin: 6.83%
 Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
 Duration: 14.4 seconds (Closed by: Line moved or book stale)
 Start: 2026-08-30T03:27:51.281635+00:00 | End: 2026-08-30T03:28:05.669519+00:00
-  [Caesars] over: -110 (Stake: $56.20)
-  [BetMGM] under: +145 (Stake: $43.80)
+  [Caesars] over: -110 (Stake: $56.19)
+  [BetMGM] under: +145 (Stake: $43.81)
 ================================================================================
 
 
@@ -401,7 +401,7 @@ Start: 2026-08-30T03:28:05.288677+00:00 | End: 2026-08-30T03:28:07.172597+00:00
 
 
 ================================================================================
-OPPORTUNITY DETECTED! Margin: 5.19%
+OPPORTUNITY DETECTED! Margin: 5.20%
 Match: Arizona Diamondbacks @ San Francisco Giants | moneyline | Line: None
 Duration: 15.5 seconds (Closed by: Line moved or book stale)
 Start: 2026-08-30T03:27:51.702800+00:00 | End: 2026-08-30T03:28:07.172597+00:00
@@ -551,12 +551,12 @@ Start: 2026-08-30T03:30:11.913540+00:00 | End: 2026-08-30T03:31:20.552285+00:00
 
 
 ================================================================================
-OPPORTUNITY DETECTED! Margin: 6.80%
+OPPORTUNITY DETECTED! Margin: 6.83%
 Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
 Duration: 0.8 seconds (Closed by: Line moved or book stale)
 Start: 2026-08-30T03:31:39.440399+00:00 | End: 2026-08-30T03:31:40.283798+00:00
-  [Caesars] over: -110 (Stake: $56.20)
-  [BetMGM] under: +145 (Stake: $43.80)
+  [Caesars] over: -110 (Stake: $56.19)
+  [BetMGM] under: +145 (Stake: $43.81)
 ================================================================================
 
 
@@ -701,12 +701,12 @@ Start: 2026-08-30T03:34:23.238599+00:00 | End: 2026-08-30T03:34:26.369833+00:00
 
 
 ================================================================================
-OPPORTUNITY DETECTED! Margin: 1.11%
+OPPORTUNITY DETECTED! Margin: 1.13%
 Match: Baltimore Orioles @ Oakland Athletics | total | Line: 6.5
 Duration: 6.3 seconds (Closed by: Line moved or book stale)
 Start: 2026-08-30T03:34:44.075486+00:00 | End: 2026-08-30T03:34:50.341945+00:00
-  [BetMGM] over: +115 (Stake: $47.03)
-  [Caesars] under: -110 (Stake: $52.97)
+  [BetMGM] over: +115 (Stake: $47.04)
+  [Caesars] under: -110 (Stake: $52.96)
 ================================================================================
 
 
@@ -1081,12 +1081,12 @@ Start: 2026-08-30T03:41:11.407681+00:00 | End: 2026-08-30T03:41:17.866561+00:00
 
 
 ================================================================================
-OPPORTUNITY DETECTED! Margin: 11.22%
+OPPORTUNITY DETECTED! Margin: 11.24%
 Match: Arizona Diamondbacks @ San Francisco Giants | total | Line: 8.5
 Duration: 94.0 seconds (Closed by: Timeout)
 Start: 2026-08-30T03:40:13.724909+00:00 | End: 2026-08-30T03:41:47.752957+00:00
-  [BetMGM] over: +210 (Stake: $36.33)
-  [Caesars] under: -130 (Stake: $63.67)
+  [BetMGM] over: +210 (Stake: $36.34)
+  [Caesars] under: -130 (Stake: $63.66)
 ================================================================================
 
 
@@ -1191,12 +1191,12 @@ Start: 2026-08-30T03:43:39.664506+00:00 | End: 2026-08-30T03:44:49.396811+00:00
 
 
 ================================================================================
-OPPORTUNITY DETECTED! Margin: 7.11%
+OPPORTUNITY DETECTED! Margin: 7.14%
 Match: Baltimore Orioles @ Oakland Athletics | total | Line: 7.5
 Duration: 77.8 seconds (Closed by: Line moved or book stale)
 Start: 2026-08-30T03:43:39.699392+00:00 | End: 2026-08-30T03:44:57.523701+00:00
-  [Caesars] over: -130 (Stake: $60.85)
-  [BetMGM] under: +175 (Stake: $39.15)
+  [Caesars] over: -130 (Stake: $60.84)
+  [BetMGM] under: +175 (Stake: $39.16)
 ================================================================================
 
 
@@ -1911,12 +1911,12 @@ Start: 2026-08-30T03:57:40.168373+00:00 | End: 2026-08-30T03:57:50.113343+00:00
 
 
 ================================================================================
-OPPORTUNITY DETECTED! Margin: 1.81%
+OPPORTUNITY DETECTED! Margin: 1.84%
 Match: Baltimore Orioles @ Oakland Athletics | run_line | Line: -2.5
 Duration: 0.9 seconds (Closed by: Line moved or book stale)
 Start: 2026-08-30T03:58:29.061388+00:00 | End: 2026-08-30T03:58:29.913625+00:00
-  [BetMGM] away: +140 (Stake: $42.44)
-  [Caesars] home: -130 (Stake: $57.56)
+  [BetMGM] away: +140 (Stake: $42.45)
+  [Caesars] home: -130 (Stake: $57.55)
 ================================================================================
 
 
@@ -2051,12 +2051,12 @@ Start: 2026-08-30T04:02:12.449821+00:00 | End: 2026-08-30T04:03:12.304646+00:00
 
 
 ================================================================================
-OPPORTUNITY DETECTED! Margin: 6.08%
+OPPORTUNITY DETECTED! Margin: 5.99%
 Match: Philadelphia Phillies @ Los Angeles Angels | total | Line: 2.5
 Duration: 101.1 seconds (Closed by: Line moved or book stale)
 Start: 2026-08-30T04:01:31.248422+00:00 | End: 2026-08-30T04:03:12.318547+00:00
-  [Caesars] over: -120 (Stake: $58.08)
-  [BetMGM] under: +154 (Stake: $41.92)
+  [Caesars] over: -120 (Stake: $58.12)
+  [BetMGM] under: +154 (Stake: $41.88)
 ================================================================================
 
 
@@ -2261,12 +2261,12 @@ Start: 2026-08-30T04:05:39.807265+00:00 | End: 2026-08-30T04:06:57.774903+00:00
 
 
 ================================================================================
-OPPORTUNITY DETECTED! Margin: 2.66%
+OPPORTUNITY DETECTED! Margin: 2.69%
 Match: Baltimore Orioles @ Oakland Athletics | total | Line: 9.5
 Duration: 0.9 seconds (Closed by: Line moved or book stale)
 Start: 2026-08-30T04:07:09.662621+00:00 | End: 2026-08-30T04:07:10.516969+00:00
-  [BetMGM] over: +145 (Stake: $41.93)
-  [Caesars] under: -130 (Stake: $58.07)
+  [BetMGM] over: +145 (Stake: $41.94)
+  [Caesars] under: -130 (Stake: $58.06)
 ================================================================================
 
 

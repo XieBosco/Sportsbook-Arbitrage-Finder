@@ -17,6 +17,7 @@ class Leg:
     odds_decimal: float
     stake: float
     captured_at: datetime
+    deeplink: str | None = None
 
 
 @dataclass(frozen=True)
@@ -35,3 +36,4 @@ class Opportunity:
     legs: list[Leg]
     detected_at: datetime
     expires_hint_seconds: float | None
+    start_time: datetime | None = None

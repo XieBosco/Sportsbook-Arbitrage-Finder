@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 
 from arbfinder.matching.bucket import Bucket
@@ -28,6 +28,8 @@ class MatchedSelection:
     line: float | None
     book_odds: dict[str, float]           # book_id -> odds
     updated_at: dict[str, datetime]       # book_id -> captured_at
+    start_time: datetime | None = None
+    book_deeplinks: dict[str, str] = field(default_factory=dict)
 
 
 class MatchOutputBuilder:
@@ -38,9 +40,22 @@ class MatchOutputBuilder:
         """Build a ``MatchedSelection`` from a populated bucket."""
         book_odds: dict[str, float] = {}
         updated_at: dict[str, datetime] = {}
+        book_deeplinks: dict[str, str] = {}
+        start_time: datetime | None = None
+
         for book_id, entry in bucket.entries.items():
             book_odds[book_id] = entry.odds
             updated_at[book_id] = entry.captured_at
+            if getattr(entry, "deeplink", None):
+                book_deeplinks[book_id] = entry.deeplink
+            if start_time is None and getattr(entry, "start_time", None) is not None:
+                start_time = entry.start_time
+
+        if start_time is None and bucket.key.time_window:
+            try:
+                start_time = datetime.fromisoformat(bucket.key.time_window)
+            except Exception:
+                pass
 
         return MatchedSelection(
             canonical_game_id=bucket.canonical_game_id,
@@ -54,4 +69,6 @@ class MatchOutputBuilder:
             line=bucket.key.line,
             book_odds=book_odds,
             updated_at=updated_at,
+            start_time=start_time,
+            book_deeplinks=book_deeplinks,
         )

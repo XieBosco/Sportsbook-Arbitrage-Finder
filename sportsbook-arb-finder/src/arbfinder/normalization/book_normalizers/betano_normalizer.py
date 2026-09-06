@@ -21,6 +21,7 @@ from arbfinder.normalization.models import OddsUpdate, NormalizedOddsUpdate
 from arbfinder.normalization.odds_math import american_to_decimal
 
 from arbfinder.normalization.unresolved_log import record_unresolved_variable
+from arbfinder.utils.deeplinks import generate_deeplink
 
 __all__ = ["BetanoNormalizer"]
 
@@ -32,7 +33,7 @@ _MAPS_DIR = Path(__file__).resolve().parent.parent / "maps"
 class BetanoNormalizer(BaseNormalizer):
     """Normalizer for Betano."""
 
-    def __init__(self, target_odds_format: str = "american", target_timezone: str = "America/New_York") -> None:
+    def __init__(self, target_odds_format: str = "decimal", target_timezone: str = "America/New_York") -> None:
         super().__init__(target_odds_format, target_timezone)
         self._team_resolver = AliasResolver(_MAPS_DIR / "team_aliases.json")
         self._league_resolver = AliasResolver(_MAPS_DIR / "league_map.json")
@@ -63,8 +64,10 @@ class BetanoNormalizer(BaseNormalizer):
     @staticmethod
     def _parse_odds(odds_value: float | int | str) -> float | None:
         try:
-            american = int(float(str(odds_value)))
-            return american_to_decimal(american)
+            val = float(odds_value)
+            if 1.0 < val < 100:
+                return val
+            return american_to_decimal(int(val))
         except (ValueError, TypeError):
             return None
 
@@ -133,6 +136,14 @@ class BetanoNormalizer(BaseNormalizer):
         line = update.raw_line
 
         captured_at = self._format_datetime(update.captured_at)
+        deeplink = generate_deeplink(
+            book_id=book_id,
+            selection_id=update.raw_selection_id,
+            market_id=update.raw_market_id,
+            event_id=update.raw_event_id,
+            home_team=home_team,
+            away_team=away_team,
+        )
 
         return NormalizedOddsUpdate(
             book_id=book_id,
@@ -147,4 +158,5 @@ class BetanoNormalizer(BaseNormalizer):
             line=line,
             odds=odds,
             captured_at=captured_at,
+            deeplink=deeplink,
         )

@@ -84,3 +84,30 @@ class TestComputeStakes:
         
         assert math.isclose(stakes["home"] * odds["home"], target_payout)
         assert math.isclose(stakes["draw"] * odds["draw"], target_payout)
+
+    def test_empty_odds_dict(self) -> None:
+        """Empty odds dict should return empty dict without raising."""
+        assert compute_stakes({}, 100.0) == {}
+
+    def test_invalid_odds_raises(self) -> None:
+        """Odds <= 1.0 must raise ValueError."""
+        import pytest
+        with pytest.raises(ValueError, match="Odds must be greater than 1.0"):
+            compute_stakes({"home": 1.0, "away": 2.0}, 100.0)
+        with pytest.raises(ValueError, match="Odds must be greater than 1.0"):
+            compute_stakes({"home": -1.5, "away": 2.0}, 100.0)
+
+    def test_negative_amount_raises(self) -> None:
+        """Negative stake amount must raise ValueError."""
+        import pytest
+        with pytest.raises(ValueError, match="Stake amount must be non-negative"):
+            compute_stakes({"home": 2.0, "away": 2.0}, -50.0)
+
+    def test_enum_method(self) -> None:
+        """StakeCalculationMethod enum works identically to int."""
+        from arbfinder.core.stake_calculator import StakeCalculationMethod
+        odds = {"home": 2.0, "away": 2.0}
+        s1 = compute_stakes(odds, 100.0, method=StakeCalculationMethod.TOTAL_BET_AMOUNT)
+        assert math.isclose(s1["home"], 50.0)
+        s2 = compute_stakes(odds, 100.0, method=StakeCalculationMethod.UNIT_SIZE)
+        assert math.isclose(s2["home"], 100.0)

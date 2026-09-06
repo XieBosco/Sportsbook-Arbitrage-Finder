@@ -13,7 +13,7 @@ import base64
 import json
 import logging
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 
 import lz4.frame
 
@@ -250,6 +250,8 @@ class BetanoParser(BookParser):
                         odds_value=float(american_odds),
                         odds_format="american",
                         captured_at=now,
+                        raw_selection_id=selection_id,
+                        raw_market_id=market_id_str,
                     )
                 )
 
@@ -306,6 +308,8 @@ class BetanoParser(BookParser):
                     odds_value=float(american_odds),
                     odds_format="american",
                     captured_at=now,
+                    raw_selection_id=selection_id,
+                    raw_market_id=market_id_str,
                 )
             )
 
@@ -366,7 +370,7 @@ class BetanoParser(BookParser):
             return []
 
         updates: list[OddsUpdate] = []
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
 
         # SignalR messages are delimited by the ASCII record separator (\x1e)
         for segment in payload.split("\x1e"):

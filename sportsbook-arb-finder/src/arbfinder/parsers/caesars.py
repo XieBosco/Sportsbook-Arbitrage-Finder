@@ -8,7 +8,7 @@ enrichment dictionaries to emit standardized OddsUpdate instances.
 import base64
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 
 from arbfinder.normalization.models import OddsUpdate
 from arbfinder.normalization.odds_math import decimal_to_american
@@ -94,6 +94,9 @@ class CaesarsParser(BookParser):
         try:
             json_data = json.loads(body)
         except (json.JSONDecodeError, TypeError):
+            return []
+
+        if not isinstance(json_data, dict):
             return []
 
         home = json_data.get("data", json_data)
@@ -253,6 +256,8 @@ class CaesarsParser(BookParser):
                 odds_value=price_val,
                 odds_format="decimal",
                 captured_at=now,
+                raw_selection_id=uuid,
+                raw_market_id=market_id,
             )
         ]
 
@@ -332,7 +337,7 @@ class CaesarsParser(BookParser):
             return []
 
         msg_type = raw_bytes[0]
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
 
         # ── 0x23 Handshake ──────────────────────────────────────────
         if msg_type == 0x23:

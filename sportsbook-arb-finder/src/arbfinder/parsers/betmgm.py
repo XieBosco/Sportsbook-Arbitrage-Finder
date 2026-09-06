@@ -2,13 +2,15 @@
 
 import json
 import logging
+import re
 from collections.abc import Callable
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any
 
 from arbfinder.normalization.models import OddsUpdate
 from arbfinder.parsers._helpers import clean_american_odds, split_fixture_name
 from arbfinder.parsers.base import BookParser
+from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
 
 __all__ = ["BetMGMParser"]
 
@@ -31,7 +33,6 @@ def _clean_selection_name(name: str) -> str:
         return "Over"
     if low.startswith("under "):
         return "Under"
-    import re
     return re.sub(r"\s*[+-][\d.,]+$", "", name).strip()
 
 
@@ -87,7 +88,6 @@ class BetMGMParser(BookParser):
         """Look up a fixture's metadata by ID, or None if the fixture is unknown."""
         meta = self.reference_data["events"].get(str(fixture_id))
         if not meta:
-            from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
             record_unresolved_parser_id(self.book_name, "fixture_id", str(fixture_id))
             return None
         return meta
@@ -96,6 +96,7 @@ class BetMGMParser(BookParser):
         self,
         *,
         fixture_id: object,
+        market_id: object = None,
         market_name: str,
         items: list[dict],
         get_name: Callable[[dict], str],
@@ -127,6 +128,8 @@ class BetMGMParser(BookParser):
             if attr is None:
                 attr = fallback_attr
             handicap_val = _to_float_or_none(attr)
+            sel_id = str(item.get("id", ""))
+            m_id = str(market_id or "")
 
             updates.append(
                 OddsUpdate(
@@ -143,6 +146,8 @@ class BetMGMParser(BookParser):
                     odds_value=float(odds),
                     odds_format="american",
                     captured_at=now,
+                    raw_selection_id=sel_id,
+                    raw_market_id=m_id,
                 )
             )
 
@@ -157,6 +162,7 @@ class BetMGMParser(BookParser):
 
         return self._build_selection_updates(
             fixture_id=fixture_id,
+            market_id=market_id,
             market_name=market_name,
             items=results,
             get_name=lambda r: r.get("name", {}).get("value", "Unknown Selection"),
@@ -178,6 +184,7 @@ class BetMGMParser(BookParser):
 
         return self._build_selection_updates(
             fixture_id=fixture_id,
+            market_id=market_id,
             market_name=market_name,
             items=options,
             get_name=lambda o: o.get("name", {}).get("value", "Unknown Selection"),
@@ -194,7 +201,7 @@ class BetMGMParser(BookParser):
         # see betmgm.md - BetMGM uses SignalR, which delimits messages with the ASCII record separator (\x1e)
         # MUST split by \x1e BEFORE parsing JSON
         signalr_frames = payload.split("\x1e")
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
 
         for s_frame in signalr_frames:
             if not s_frame:

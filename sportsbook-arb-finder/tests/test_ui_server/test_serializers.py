@@ -51,9 +51,32 @@ def test_top_level_fields():
     assert result["league_key"] == "MLB"
     assert result["home_team"] == "Philadelphia Phillies"
     assert result["away_team"] == "Los Angeles Angels"
+    assert result["start_time"] is None
     assert result["market_type"] == "moneyline"
     assert result["line"] is None
     assert result["expires_hint_seconds"] == 5.0
+
+
+def test_start_time_serialization():
+    opp = _make_opportunity()
+    st = datetime(2026, 1, 23, 22, 0, 0, tzinfo=timezone.utc)
+    opp_with_st = Opportunity(
+        opportunity_id=opp.opportunity_id,
+        canonical_game_id=opp.canonical_game_id,
+        sport_key=opp.sport_key,
+        league_key=opp.league_key,
+        home_team=opp.home_team,
+        away_team=opp.away_team,
+        market_type=opp.market_type,
+        line=opp.line,
+        margin=opp.margin,
+        legs=opp.legs,
+        detected_at=opp.detected_at,
+        expires_hint_seconds=opp.expires_hint_seconds,
+        start_time=st,
+    )
+    result = serialize_opportunity(opp_with_st)
+    assert result["start_time"] == "2026-01-23T22:00:00+00:00"
 
 
 def test_margin_rounding():
@@ -98,6 +121,7 @@ def test_leg_fields_complete():
         assert "odds_decimal" in leg
         assert "stake" in leg
         assert "captured_at" in leg
+        assert "deeplink" in leg
 
 
 def test_line_with_value():
