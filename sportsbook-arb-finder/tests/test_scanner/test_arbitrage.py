@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 
 from arbfinder.core.arbitrage import ArbCheckResult, check_arbitrage, has_single_book_conflict
 from arbfinder.matching.output import MatchedSelection
+from arbfinder.normalization.odds_math import american_to_decimal
 
 
 def _ms(
@@ -16,6 +17,13 @@ def _ms(
 ) -> MatchedSelection:
     """Build a minimal MatchedSelection for testing."""
     now = datetime.now(timezone.utc)
+    decimal_book_odds = {}
+    for book, odds in book_odds.items():
+        if odds <= 0 or odds >= 100:
+            decimal_book_odds[book] = american_to_decimal(int(round(odds)))
+        else:
+            decimal_book_odds[book] = float(odds)
+
     return MatchedSelection(
         canonical_game_id=canonical_game_id,
         sport_key="Baseball",
@@ -26,7 +34,7 @@ def _ms(
         market_type=market_type,
         selection=selection,
         line=line,
-        book_odds=book_odds,
+        book_odds=decimal_book_odds,
         updated_at={book: now for book in book_odds},
     )
 

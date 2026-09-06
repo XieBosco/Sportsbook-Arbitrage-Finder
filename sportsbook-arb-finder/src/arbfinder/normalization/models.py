@@ -23,6 +23,8 @@ class OddsUpdate:
     odds_value: float | int | str         # as reported by book (raw string/number)
     odds_format: Literal["decimal", "american", "fractional"]
     captured_at: datetime                  # UTC timestamp when parser observed this — NOT book's clock
+    raw_selection_id: str = ""
+    raw_market_id: str = ""
 
 
 @dataclass(frozen=True)
@@ -44,5 +46,6 @@ class NormalizedOddsUpdate:
     market_type: str
     selection: str
     line: float | None
-    odds: float | str
+    odds: float
     captured_at: datetime
+    deeplink: str = ""

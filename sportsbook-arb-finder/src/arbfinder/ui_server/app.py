@@ -23,6 +23,7 @@ if TYPE_CHECKING:
     from arbfinder.pipeline.config import AppConfig
 
 from pydantic import BaseModel
+from arbfinder.pipeline.health import HealthTracker
 from arbfinder.ui_server.connection_manager import ConnectionManager
 
 __all__ = ["create_app"]
@@ -39,7 +40,11 @@ class SettingsUpdate(BaseModel):
     ui_sort_by: str
 
 
-def create_app(connection_manager: ConnectionManager, config: AppConfig) -> FastAPI:
+def create_app(
+    connection_manager: ConnectionManager,
+    config: AppConfig,
+    health_tracker: HealthTracker | None = None,
+) -> FastAPI:
     """Build and return a configured :class:`FastAPI` instance.
 
     Parameters
@@ -47,18 +52,23 @@ def create_app(connection_manager: ConnectionManager, config: AppConfig) -> Fast
     connection_manager:
         The shared :class:`ConnectionManager` that bridges scanner output
         (via ``WebSocketSink``) to connected browser clients.
+    config:
+        Application configuration.
+    health_tracker:
+        Optional health tracker providing per-sportsbook liveness and status.
     """
     app = FastAPI(title="Arbitrage Finder UI", docs_url=None, redoc_url=None)
 
     # Store on app.state so route handlers can access it.
     app.state.manager = connection_manager
+    if health_tracker is not None:
+        app.state.health_tracker = health_tracker
 
     # ---- Static files ----
-    app.mount(
-        "/assets",
-        StaticFiles(directory=str(_STATIC_DIR.parent.parent.parent / "assets")),
-        name="assets",
-    )
+    assets_dir = _STATIC_DIR.parent.parent.parent / "assets"
+    if assets_dir.exists():
+        app.mount("/assets", StaticFiles(directory=str(assets_dir)), name="assets")
+
     app.mount(
         "/static",
         StaticFiles(directory=str(_STATIC_DIR)),
@@ -75,9 +85,35 @@ def create_app(connection_manager: ConnectionManager, config: AppConfig) -> Fast
     @app.get("/health")
     async def health():
         """Simple liveness / readiness check."""
+        resp = {
+            "status": "ok",
+            "connected_clients": connection_manager.active_count,
+        }
+        if health_tracker is not None:
+            resp["sportsbooks"] = {
+                b: {"connected": h.connected, "initialized": h.initialized}
+                for b, h in health_tracker.get_all().items()
+            }
+        return resp
+
+    @app.get("/api/health")
+    async def api_health():
+        """Detailed sportsbook feed health status."""
+        sportsbooks_data = {}
+        if health_tracker is not None:
+            for book_id, h in health_tracker.get_all().items():
+                sportsbooks_data[book_id] = {
+                    "book_id": h.book_id,
+                    "is_connected": h.connected,
+                    "is_initialized": h.initialized,
+                    "last_update_at": h.last_update_at.isoformat() if h.last_update_at else None,
+                    "last_error": h.last_error,
+                    "consecutive_errors": h.consecutive_errors,
+                }
         return {
             "status": "ok",
             "connected_clients": connection_manager.active_count,
+            "sportsbooks": sportsbooks_data,
         }
 
     @app.get("/api/config")
@@ -97,14 +133,21 @@ def create_app(connection_manager: ConnectionManager, config: AppConfig) -> Fast
 
     @app.post("/api/settings")
     async def update_settings(payload: SettingsUpdate):
-        """Update dynamic settings in-place."""
+        """Update dynamic settings in-place with proper validation and coercion."""
         for k, v in payload.arbitrage.items():
             if hasattr(config.arbitrage, k):
                 setattr(config.arbitrage, k, v)
                 
         for k, v in payload.scanner.items():
             if hasattr(config.scanner, k):
-                setattr(config.scanner, k, v)
+                if k in ("excluded_books", "excluded_markets"):
+                    coerced = {str(x).lower() for x in v} if isinstance(v, (list, set)) else v
+                    setattr(config.scanner, k, coerced)
+                elif k == "excluded_book_pairs":
+                    coerced = {tuple(p) for p in v} if isinstance(v, (list, set)) else v
+                    setattr(config.scanner, k, coerced)
+                else:
+                    setattr(config.scanner, k, v)
                 
         config.sinks.odds_format = payload.odds_format
         config.server.ui_sort_by = payload.ui_sort_by

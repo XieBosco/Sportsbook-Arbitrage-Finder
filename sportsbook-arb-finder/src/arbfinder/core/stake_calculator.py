@@ -2,13 +2,21 @@
 
 from __future__ import annotations
 
-__all__ = ["compute_stakes"]
+from enum import IntEnum
+
+__all__ = ["StakeCalculationMethod", "compute_stakes"]
+
+
+class StakeCalculationMethod(IntEnum):
+    """Supported stake calculation methods."""
+    TOTAL_BET_AMOUNT = 1
+    UNIT_SIZE = 2
 
 
 def compute_stakes(
     odds_by_selection: dict[str, float],
     amount: float,
-    method: int = 1,
+    method: int | StakeCalculationMethod = StakeCalculationMethod.TOTAL_BET_AMOUNT,
 ) -> dict[str, float]:
     """Compute stakes for each selection to form a fully hedged arbitrage.
 
@@ -27,14 +35,24 @@ def compute_stakes(
     dict[str, float]
         Mapping of ``selection -> stake``
     """
-    if method == 1:
+    if not odds_by_selection:
+        return {}
+
+    if amount < 0:
+        raise ValueError(f"Stake amount must be non-negative, got {amount}")
+
+    for sel, odds in odds_by_selection.items():
+        if odds <= 1.0:
+            raise ValueError(f"Odds must be greater than 1.0, got {odds} for selection {sel!r}")
+
+    if method == 1 or method == StakeCalculationMethod.TOTAL_BET_AMOUNT:
         total_stake = amount
         inv_sum = sum(1.0 / odds for odds in odds_by_selection.values())
         return {
             selection: total_stake * (1.0 / odds) / inv_sum
             for selection, odds in odds_by_selection.items()
         }
-    elif method == 2:
+    elif method == 2 or method == StakeCalculationMethod.UNIT_SIZE:
         unit_size = amount
         # Find the underdog leg (highest decimal odds)
         underdog_selection = max(odds_by_selection, key=odds_by_selection.get)

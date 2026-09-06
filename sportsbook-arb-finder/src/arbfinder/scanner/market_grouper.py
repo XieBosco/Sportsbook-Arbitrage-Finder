@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from datetime import datetime, timezone
+
 from arbfinder.matching.output import MatchedSelection
 
 __all__ = ["MarketGroupKey", "MarketGrouper"]
@@ -46,10 +48,8 @@ class MarketGrouper:
     def add(self, selection: MatchedSelection) -> MarketGroupKey:
         """Insert or update *selection* in its group, returning the key."""
         if selection.line is not None:
-            if selection.selection == "away":
-                group_line = -selection.line
-            else:
-                group_line = selection.line
+            raw_line = -selection.line if selection.selection == "away" else selection.line
+            group_line = round(raw_line, 2)
         else:
             group_line = None
 
@@ -76,4 +76,30 @@ class MarketGrouper:
         """Return True if all *expected_selections* are present in the group."""
         group = self._groups.get(key, {})
         return expected_selections.issubset(group.keys())
+
+    def evict_expired(
+        self, max_age_seconds: float = 86400.0, now: datetime | None = None
+    ) -> int:
+        """Evict groups whose newest selection timestamp is older than max_age_seconds."""
+        if now is None:
+            now = datetime.now(timezone.utc)
+        elif now.tzinfo is None:
+            now = now.replace(tzinfo=timezone.utc)
+
+        keys_to_remove = []
+        for key, group in self._groups.items():
+            newest_ts = None
+            for sel in group.values():
+                for ts in sel.updated_at.values():
+                    if ts.tzinfo is None:
+                        ts = ts.replace(tzinfo=timezone.utc)
+                    if newest_ts is None or ts > newest_ts:
+                        newest_ts = ts
+            if newest_ts is not None and (now - newest_ts).total_seconds() > max_age_seconds:
+                keys_to_remove.append(key)
+
+        for key in keys_to_remove:
+            del self._groups[key]
+
+        return len(keys_to_remove)
 

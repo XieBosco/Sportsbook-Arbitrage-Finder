@@ -33,3 +33,19 @@ class DedupTracker:
 
         self._last_emitted[key] = now
         return True
+
+    def prune_expired(self, now: datetime | None = None) -> int:
+        """Remove entries whose last emitted time is older than twice the cooldown."""
+        if now is None:
+            now = datetime.now(timezone.utc)
+        elif now.tzinfo is None:
+            now = now.replace(tzinfo=timezone.utc)
+
+        threshold = self._cooldown * 2
+        keys_to_remove = [
+            k for k, ts in self._last_emitted.items()
+            if (now - ts) > threshold
+        ]
+        for k in keys_to_remove:
+            del self._last_emitted[k]
+        return len(keys_to_remove)

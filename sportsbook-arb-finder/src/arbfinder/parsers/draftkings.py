@@ -4,13 +4,14 @@ import base64
 import json
 import logging
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 
 import msgpack
 
 from arbfinder.normalization.models import OddsUpdate
 from arbfinder.parsers._helpers import split_fixture_name
 from arbfinder.parsers.base import BookParser
+from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
 __all__ = ["DraftKingsParser"]
 
 logger = logging.getLogger(__name__)
@@ -222,7 +223,7 @@ class DraftKingsParser(BookParser):
         if not outcomes or not self.reference_data["events"]:
             return updates
 
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
 
         for outcome in outcomes:
             selection_id = str(outcome[0])
@@ -256,7 +257,6 @@ class DraftKingsParser(BookParser):
             handicap_val = self._resolve_handicap(market_type, outcome)
             event_name = event_meta.get("name", "Unknown Game")
             if event_name == "Unknown Game":
-                from arbfinder.parsers.unresolved_log import record_unresolved_parser_id
                 if not market_meta:
                     record_unresolved_parser_id(self.book_name, "market_id", market_id or selection_id)
                 record_unresolved_parser_id(self.book_name, "event_id", event_id or "UNKNOWN")
@@ -278,6 +278,8 @@ class DraftKingsParser(BookParser):
                     odds_value=raw_odds,
                     odds_format="american",
                     captured_at=now,
+                    raw_selection_id=selection_id,
+                    raw_market_id=market_id or "",
                 )
             )
 

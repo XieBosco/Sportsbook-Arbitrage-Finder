@@ -1,2 +1,30 @@
 scripts/data/
 scripts/data2/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Caches & tools
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Environments
+.env
+.venv/
+env/
+venv/
+
+# Build & packaging
+dist/
+build/
+*.egg-info/

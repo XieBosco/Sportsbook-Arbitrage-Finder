@@ -87,6 +87,9 @@ def _record(reason: str, store: list[dict], update: OddsUpdate, extra: dict | No
         **_update_to_dict(update),
     }
     store.append(record)
+    if len(store) > 1000:
+        del store[:-1000]
+    _file_logger.propagate = False
     _file_logger.info(json.dumps(record))
 
 

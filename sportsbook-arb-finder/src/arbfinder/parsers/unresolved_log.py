@@ -65,6 +65,9 @@ def record_unresolved_parser_id(
         record["raw_payload"] = raw_payload
 
     unresolved_parser_records.append(record)
+    if len(unresolved_parser_records) > 1000:
+        del unresolved_parser_records[:-1000]
+    _file_logger.propagate = False
     _file_logger.info(json.dumps(record))
     logger.debug(
         "Unresolved %s '%s' for book %r",

@@ -14,12 +14,14 @@ def implied_prob(american_odds: int) -> float:
         return 100 / (american_odds + 100)
 
 
-def american_to_decimal(american_odds: int) -> float:
+def american_to_decimal(american_odds: int | float) -> float:
     """Convert American odds to decimal odds."""
+    if american_odds == 0:
+        return 1.0
     if american_odds < 0:
-        return 1 - (100 / american_odds)
+        return 1.0 - (100.0 / american_odds)
     else:
-        return 1 + (american_odds / 100)
+        return 1.0 + (american_odds / 100.0)
 
 
 def decimal_to_american(decimal_odds: float) -> int:

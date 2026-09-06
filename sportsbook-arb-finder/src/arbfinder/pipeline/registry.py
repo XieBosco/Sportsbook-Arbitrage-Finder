@@ -99,6 +99,11 @@ def build_pipeline_components(config: AppConfig) -> PipelineComponents:
     matcher = Matcher(bucket_store, time_resolver)
 
     # ------------------------------------------------------------------
+    # Health tracker
+    # ------------------------------------------------------------------
+    health_tracker = HealthTracker()
+
+    # ------------------------------------------------------------------
     # Sinks
     # ------------------------------------------------------------------
     sinks: list[OpportunitySink] = []
@@ -113,7 +118,7 @@ def build_pipeline_components(config: AppConfig) -> PipelineComponents:
         connection_manager = ConnectionManager()
         ws_sink = WebSocketSink(connection_manager, sinks_config=config.sinks)
         sinks.append(ws_sink)
-        app = create_app(connection_manager, config=config)
+        app = create_app(connection_manager, config=config, health_tracker=health_tracker)
         logger.info(
             "WebSocket sink enabled — UI at http://%s:%d",
             config.server.host,
@@ -131,7 +136,8 @@ def build_pipeline_components(config: AppConfig) -> PipelineComponents:
     staleness_filter = StalenessFilter(
         thresholds=config.scanner,
     )
-    dedup = DedupTracker(cooldown_seconds=_DEDUP_COOLDOWN_SECONDS)
+    dedup_cooldown = getattr(config.scanner, "dedup_cooldown_seconds", _DEDUP_COOLDOWN_SECONDS)
+    dedup = DedupTracker(cooldown_seconds=dedup_cooldown)
     grouper = MarketGrouper()
 
     def stake_budget_fn(key: MarketGroupKey) -> tuple[float, int]:
@@ -148,11 +154,6 @@ def build_pipeline_components(config: AppConfig) -> PipelineComponents:
         expected_selections_by_market=EXPECTED_SELECTIONS_BY_MARKET,
         stake_budget_fn=stake_budget_fn,
     )
-
-    # ------------------------------------------------------------------
-    # Health tracker
-    # ------------------------------------------------------------------
-    health_tracker = HealthTracker()
 
     return PipelineComponents(
         normalizer=normalizer,

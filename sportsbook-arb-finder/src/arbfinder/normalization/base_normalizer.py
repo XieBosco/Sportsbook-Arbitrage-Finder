@@ -22,13 +22,15 @@ class BaseNormalizer(ABC):
     when a field (e.g. an unknown team name) cannot be resolved.
     """
 
-    def __init__(self, target_odds_format: str = "american", target_timezone: str = "America/New_York") -> None:
+    def __init__(self, target_odds_format: str = "decimal", target_timezone: str = "America/New_York") -> None:
         self.target_odds_format = target_odds_format
         self.target_timezone = target_timezone
         self._tz = zoneinfo.ZoneInfo(self.target_timezone)
 
     def _format_odds(self, decimal_odds: float) -> float | str:
         """Format the parsed decimal odds to the configured target format."""
+        if self.target_odds_format == "decimal":
+            return decimal_odds
         return convert_odds(decimal_odds, self.target_odds_format)
 
     def _format_datetime(self, dt: datetime) -> datetime:

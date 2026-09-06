@@ -26,6 +26,7 @@ def _serialize_leg(leg: Leg, odds_format: str) -> dict:
         "odds_formatted": format_odds(leg.odds_decimal, odds_format),
         "stake": round(leg.stake, 2),
         "captured_at": leg.captured_at.isoformat(),
+        "deeplink": leg.deeplink,
     }
 
 
@@ -42,6 +43,7 @@ def serialize_opportunity(opp: Opportunity, odds_format: str = "american") -> di
         "league_key": opp.league_key,
         "home_team": opp.home_team,
         "away_team": opp.away_team,
+        "start_time": opp.start_time.isoformat() if opp.start_time is not None else None,
         "market_type": opp.market_type,
         "line": round(opp.line, 1) if opp.line is not None else None,
         "margin": round(opp.margin, 4),

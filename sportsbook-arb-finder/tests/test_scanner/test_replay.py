@@ -99,7 +99,7 @@ def main():
 
     grouper = MarketGrouper()
     thresholds = ScannerThresholds(min_margin=0.01, max_odds_age_seconds=60.0) # 60s for realistic test
-    staleness = StalenessFilter(max_age_seconds=60.0) 
+    staleness = StalenessFilter(thresholds=thresholds) 
     dedup = DedupTracker(cooldown_seconds=0.0) # Set to 0 so we get continuous Opportunity objects while arb is active
     
     output_file = os.path.join(os.path.dirname(__file__), "arbs_output.txt")
@@ -150,8 +150,12 @@ def main():
                     
                 if is_json:
                     d = json.load(f)
-                    payload = d.get("data", d)
-                    url = d.get("_DEBUG_URL", "")
+                    if isinstance(d, dict):
+                        payload = d.get("data", d)
+                        url = d.get("_DEBUG_URL", "")
+                    else:
+                        payload = d
+                        url = ""
                     
                     if not url:
                         # Fallback for fixture loading

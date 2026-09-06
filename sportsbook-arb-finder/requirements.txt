@@ -1,4 +1,12 @@
 websocket-client
 requests
-lz4
+pyyaml
+pydantic
+fastapi
+uvicorn
 msgpack
+lz4
+pytest
+pytest-asyncio
+httpx
+tzdata

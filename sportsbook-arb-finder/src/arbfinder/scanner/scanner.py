@@ -80,12 +80,16 @@ class Scanner:
                     )
 
     def sweep_active_arbs(self, now: datetime | None = None) -> None:
-        """Periodically evaluate all active arbs to evict stale ones."""
+        """Periodic sweep to detect and close arbs that have naturally died out."""
         if now is None:
             now = datetime.now(timezone.utc)
 
+        # Periodic memory cleanup of old groups and dedup entries
+        self._grouper.evict_expired(max_age_seconds=86400.0, now=now)
+        self._dedup.prune_expired(now=now)
+
         for group_key in list(self._active_arbs.keys()):
-            if group_key.market_type.lower() in self._thresholds.excluded_markets:
+            if group_key.market_type.lower() in {str(m).lower() for m in self._thresholds.excluded_markets}:
                 self._close_if_active(group_key)
                 continue
 
@@ -96,7 +100,7 @@ class Scanner:
 
             group = self._grouper.get_group(group_key)
             filtered_group = {}
-            excluded = self._thresholds.excluded_books
+            excluded = {str(b).lower() for b in self._thresholds.excluded_books}
             
             for sel, ms in group.items():
                 filtered_ms = self._staleness.filter_stale_books(ms, now)
@@ -132,28 +136,25 @@ class Scanner:
         Returns an :class:`Opportunity` if an arb is detected and passes
         all filters, or ``None`` otherwise.
         """
-        if matched.market_type.lower() in self._thresholds.excluded_markets:
+        if matched.market_type.lower() in {str(m).lower() for m in self._thresholds.excluded_markets}:
             return None
 
         if now is None:
             now = datetime.now(timezone.utc)
 
-        # 1. Add to grouper, get group_key
+        # 1. Add to grouper
         group_key = self._grouper.add(matched)
 
-        # 2. Check completeness
-        expected = self._expected.get(matched.market_type)
-        if expected is None:
-            self._close_if_active(group_key)
-            return None
-        if not self._grouper.is_complete(group_key, expected):
+        # 2. Completeness check
+        expected = self._expected.get(group_key.market_type)
+        if expected is None or not self._grouper.is_complete(group_key, expected):
             self._close_if_active(group_key)
             return None
 
         # 3. Staleness check and excluded books filtering
         group = self._grouper.get_group(group_key)
         filtered_group = {}
-        excluded = self._thresholds.excluded_books
+        excluded = {str(b).lower() for b in self._thresholds.excluded_books}
         
         for sel, ms in group.items():
             filtered_ms = self._staleness.filter_stale_books(ms, now)
@@ -189,7 +190,12 @@ class Scanner:
             return None
 
         # 7. Compute stakes
-        amount, method = self._budget_fn(group_key)
+        budget = self._budget_fn(group_key)
+        if isinstance(budget, (tuple, list)):
+            amount, method = budget[0], budget[1]
+        else:
+            amount, method = float(budget), 1
+
         odds_by_selection = {
             sel: odds for sel, (_, odds) in result.best_odds_by_selection.items()
         }
@@ -204,6 +210,7 @@ class Scanner:
         for sel, (book_id, decimal_odds) in result.best_odds_by_selection.items():
             ms = filtered_group[sel]
             captured_at = ms.updated_at.get(book_id, now)
+            deeplink = ms.book_deeplinks.get(book_id) or "#"
             legs.append(
                 Leg(
                     book_id=book_id,
@@ -211,6 +218,7 @@ class Scanner:
                     odds_decimal=decimal_odds,
                     stake=stakes[sel],
                     captured_at=captured_at,
+                    deeplink=deeplink,
                 )
             )
 
@@ -227,6 +235,7 @@ class Scanner:
             legs=legs,
             detected_at=now,
             expires_hint_seconds=self._thresholds.max_odds_age_seconds,
+            start_time=representative.start_time,
         )
 
         # Record as active

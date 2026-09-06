@@ -5,7 +5,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from arbfinder.matching.output import MatchedSelection
-from arbfinder.normalization.odds_math import american_to_decimal
 
 __all__ = ["ArbCheckResult", "check_arbitrage", "has_single_book_conflict"]
 
@@ -23,21 +22,14 @@ class ArbCheckResult:
 def check_arbitrage(
     group: dict[str, MatchedSelection],
 ) -> ArbCheckResult:
-    """Check whether a complete group of selections constitutes an arb.
-
-    For each selection, finds the book offering the highest decimal odds
-    (converting from American format).  Computes the implied-probability
-    sum across all best prices:
-
-        implied_sum = Σ (1 / best_decimal_odds)
-        margin      = 1 − implied_sum
-        is_arb      = margin > 0
+    """Evaluate whether a set of matched selections constitutes an arbitrage.
 
     Parameters
     ----------
-    group:
-        Mapping of ``selection -> MatchedSelection``, e.g.
-        ``{"home": <ms>, "away": <ms>}``.
+    group : dict[str, MatchedSelection]
+        Mapping of selection name to the corresponding ``MatchedSelection``.
+        All selections within the group are expected to have the same
+        canonical game ID, market type, time window, and line.
 
     Returns
     -------
@@ -50,8 +42,20 @@ def check_arbitrage(
         best_book: str | None = None
         best_decimal: float = 0.0
 
-        for book_id, american_odds in matched.book_odds.items():
-            decimal_odds = american_to_decimal(int(american_odds))
+        for book_id, raw_odds in matched.book_odds.items():
+            if raw_odds is None:
+                continue
+            try:
+                odds_num = float(raw_odds)
+            except (ValueError, TypeError):
+                continue
+
+            # Strict pipeline invariant: MatchedSelection.book_odds is always canonical decimal float > 1.0
+            if odds_num > 1.0:
+                decimal_odds = odds_num
+            else:
+                continue
+
             if decimal_odds > best_decimal:
                 best_decimal = decimal_odds
                 best_book = book_id
@@ -59,11 +63,11 @@ def check_arbitrage(
         if best_book is not None:
             best_odds_by_selection[selection] = (best_book, best_decimal)
 
-    if not best_odds_by_selection:
+    if len(best_odds_by_selection) < len(group):
         return ArbCheckResult(
             is_arbitrage=False,
             margin=0.0,
-            best_odds_by_selection={},
+            best_odds_by_selection=best_odds_by_selection,
         )
 
     implied_sum = sum(
