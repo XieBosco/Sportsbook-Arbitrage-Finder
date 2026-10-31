@@ -1,0 +1,60 @@
+{
+  "nhl_data_mock_server": {
+    "dataset": "nhl_data",
+    "events_ingested": 60,
+    "markets_ingested": 164,
+    "selections_ingested": 335,
+    "frames_expected": 1014,
+    "frames_received": 1014,
+    "updates_emitted": 430,
+    "parser_stats": {
+      "http_processed": 1,
+      "ws_frames": 1014,
+      "handshakes": 1,
+      "full_states": 22,
+      "deltas": 511,
+      "updates_emitted": 430,
+      "delta_failures": 0,
+      "errors": []
+    },
+    "anomalies_count": 0,
+    "anomalies": [],
+    "status": "PASSED"
+  },
+  "nhl_data_timeline": {
+    "dataset": "nhl_data",
+    "timeline_events": 1125,
+    "updates_emitted": 430,
+    "anomalies": 0,
+    "status": "PASSED"
+  },
+  "data2_mock_server": {
+    "dataset": "data2",
+    "events_ingested": 60,
+    "markets_ingested": 144,
+    "selections_ingested": 376,
+    "frames_expected": 2623,
+    "frames_received": 2623,
+    "updates_emitted": 1333,
+    "parser_stats": {
+      "http_processed": 1,
+      "ws_frames": 2623,
+      "handshakes": 1,
+      "full_states": 68,
+      "deltas": 1569,
+      "updates_emitted": 1333,
+      "delta_failures": 0,
+      "errors": []
+    },
+    "anomalies_count": 0,
+    "anomalies": [],
+    "status": "PASSED"
+  },
+  "data2_timeline": {
+    "dataset": "data2",
+    "timeline_events": 2698,
+    "updates_emitted": 1313,
+    "anomalies": 0,
+    "status": "PASSED"
+  }
+}

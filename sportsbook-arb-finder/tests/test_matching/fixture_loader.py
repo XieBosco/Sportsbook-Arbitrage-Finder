@@ -15,7 +15,7 @@ from arbfinder.normalization.book_normalizers.caesars_normalizer import CaesarsN
 from arbfinder.normalization.book_normalizers.draftkings_normalizer import DraftKingsNormalizer
 from arbfinder.normalization.book_normalizers.fanduel_normalizer import FanDuelNormalizer
 
-FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "..", "../scripts/data2")
+FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "..", "../scripts/nhl_data")
 
 def get_all_normalized_updates():
     normalizer = Normalizer(
@@ -97,7 +97,7 @@ def get_all_normalized_updates():
         parsed = parser.handle_ws_frame(raw + "\x1e")
         # In test_matching/fixture_loader.py, we only want MLB (league 1662) for Betano to prevent thousands of normalizer failures from unmapped tennis/esports teams
         for p in parsed:
-            if p.raw_league_name == "1662":
+            if p.raw_league_name == "10118":
                 updates.append(p)
     all_normalized_updates.extend(normalizer.normalize_batch(updates))
 

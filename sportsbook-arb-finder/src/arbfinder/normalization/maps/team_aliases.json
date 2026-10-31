@@ -221,6 +221,182 @@
         "Betano": "Cleveland Guardians",
         "Caesars": "Cleveland Guardians"
     },
+
+
+    "Boston Bruins": {
+        "FanDuel": "Boston Bruins",
+        "Betano": "Boston Bruins",
+        "Caesars": "Boston Bruins"
+    },
+    "Buffalo Sabres": {
+        "FanDuel": "Buffalo Sabres",
+        "Betano": "Buffalo Sabres",
+        "Caesars": "Buffalo Sabres"
+    },
+    "Detroit Red Wings": {
+        "DraftKings": "DET Red Wings",
+        "FanDuel": "Detroit Red Wings",
+        "Betano": "Detroit Red Wings",
+        "Caesars": "Detroit Red Wings"
+    },
+    "Florida Panthers": {
+        "FanDuel": "Florida Panthers",
+        "Betano": "Florida Panthers",
+        "Caesars": "Florida Panthers"
+    },
+    "Montreal Canadiens": {
+        "FanDuel": "Montreal Canadiens",
+        "Betano": "Montreal Canadiens",
+        "Caesars": "Montreal Canadiens"
+    },
+    "Ottawa Senators": {
+        "FanDuel": "Ottawa Senators",
+        "Betano": "Ottawa Senators",
+        "Caesars": "Ottawa Senators"
+    },
+    "Tampa Bay Lightning": {
+        "FanDuel": "Tampa Bay Lightning",
+        "Betano": "Tampa Bay Lightning",
+        "Caesars": "Tampa Bay Lightning"
+    },
+    "Toronto Maple Leafs": {
+        "DraftKings": "TOR Maple Leafs",
+        "FanDuel": "Toronto Maple Leafs",
+        "Betano": "Toronto Maple Leafs",
+        "Caesars": "Toronto Maple Leafs"
+    },
+    "Carolina Hurricanes": {
+        "FanDuel": "Carolina Hurricanes",
+        "Betano": "Carolina Hurricanes",
+        "Caesars": "Carolina Hurricanes"
+    },
+    "Columbus Blue Jackets": {
+        "FanDuel": "Columbus Blue Jackets",
+        "Betano": "Columbus Blue Jackets",
+        "Caesars": "Columbus Blue Jackets"
+    },
+    "New Jersey Devils": {
+        "FanDuel": "New Jersey Devils",
+        "Betano": "New Jersey Devils",
+        "Caesars": "New Jersey Devils"
+    },
+    "New York Islanders": {
+        "DraftKings": "NY Islanders",
+        "FanDuel": "New York Islanders",
+        "Betano": "New York Islanders",
+        "Caesars": "New York Islanders"
+    },
+    "New York Rangers": {
+        "FanDuel": "New York Rangers",
+        "Betano": "New York Rangers",
+        "Caesars": "New York Rangers"
+    },
+    "Philadelphia Flyers": {
+        "DraftKings": "PHI Flyers",
+        "FanDuel": "Philadelphia Flyers",
+        "Betano": "Philadelphia Flyers",
+        "Caesars": "Philadelphia Flyers"
+    },
+    "Pittsburgh Penguins": {
+        "DraftKings": "PIT Penguins",
+        "FanDuel": "Pittsburgh Penguins",
+        "Betano": "Pittsburgh Penguins",
+        "Caesars": "Pittsburgh Penguins"
+    },
+    "Washington Capitals": {
+        "FanDuel": "Washington Capitals",
+        "Betano": "Washington Capitals",
+        "Caesars": "Washington Capitals"
+    },
+    "Chicago Blackhawks": {
+        "DraftKings": "CHI Blackhawks",
+        "FanDuel": "Chicago Blackhawks",
+        "Betano": "Chicago Blackhawks",
+        "Caesars": "Chicago Blackhawks"
+    },
+    "Colorado Avalanche": {
+        "FanDuel": "Colorado Avalanche",
+        "Betano": "Colorado Avalanche",
+        "Caesars": "Colorado Avalanche"
+    },
+    "Dallas Stars": {
+        "FanDuel": "Dallas Stars",
+        "Betano": "Dallas Stars",
+        "Caesars": "Dallas Stars"
+    },
+    "Minnesota Wild": {
+        "FanDuel": "Minnesota Wild",
+        "Betano": "Minnesota Wild",
+        "Caesars": "Minnesota Wild"
+    },
+    "Nashville Predators": {
+        "DraftKings": "NSH Predators",
+        "FanDuel": "Nashville Predators",
+        "Betano": "Nashville Predators",
+        "Caesars": "Nashville Predators"
+    },
+    "St. Louis Blues": {
+        "FanDuel": "St. Louis Blues",
+        "Betano": "St. Louis Blues",
+        "Caesars": "St. Louis Blues"
+    },
+    "Utah Mammoth": {
+        "FanDuel": "Utah Mammoth",
+        "Betano": "Utah Mammoth",
+        "Caesars": "Utah Mammoth"
+    },
+    "Winnipeg Jets": {
+        "FanDuel": "Winnipeg Jets",
+        "Betano": "Winnipeg Jets",
+        "Caesars": "Winnipeg Jets"
+    },
+    "Anaheim Ducks": {
+        "FanDuel": "Anaheim Ducks",
+        "Betano": "Anaheim Ducks",
+        "Caesars": "Anaheim Ducks"
+    },
+    "Calgary Flames": {
+        "DraftKings": "CGY Flames",
+        "FanDuel": "Calgary Flames",
+        "Betano": "Calgary Flames",
+        "Caesars": "Calgary Flames"
+    },
+    "Edmonton Oilers": {
+        "DraftKings": "EDM Oilers",
+        "FanDuel": "Edmonton Oilers",
+        "Betano": "Edmonton Oilers",
+        "Caesars": "Edmonton Oilers"
+    },
+    "Los Angeles Kings": {
+        "FanDuel": "Los Angeles Kings",
+        "Betano": "Los Angeles Kings",
+        "Caesars": "Los Angeles Kings"
+    },
+    "San Jose Sharks": {
+        "DraftKings": "SJ Sharks",
+        "FanDuel": "San Jose Sharks",
+        "Betano": "San Jose Sharks",
+        "Caesars": "San Jose Sharks"
+    },
+    "Seattle Kraken": {
+        "FanDuel": "Seattle Kraken",
+        "Betano": "Seattle Kraken",
+        "Caesars": "Seattle Kraken"
+    },
+    "Vancouver Canucks": {
+        "DraftKings": "VAN Canucks",
+        "FanDuel": "Vancouver Canucks",
+        "Betano": "Vancouver Canucks",
+        "Caesars": "Vancouver Canucks"
+    },
+    "Vegas Golden Knights": {
+        "DraftKings": "VGK Golden Knights",
+        "FanDuel": "Vegas Golden Knights",
+        "Betano": "Vegas Golden Knights",
+        "Caesars": "Vegas Golden Knights"
+    },
+
+
     "Koki Matsuda": {
         "Betano": "Koki Matsuda"
     },

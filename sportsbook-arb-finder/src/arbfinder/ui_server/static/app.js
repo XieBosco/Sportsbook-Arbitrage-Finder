@@ -171,16 +171,31 @@
 
     /**
      * Team logo lookup mapping loaded from external team_logos.js / team_logos.json.
+     * Supports both MLB and NHL logo maps.
      */
-    let teamLogosMap = window.MLB_TEAM_LOGOS || {};
+    let teamLogosMap = {
+        mlb: (window.TEAM_LOGOS && window.TEAM_LOGOS.mlb) || window.MLB_TEAM_LOGOS || {},
+        nhl: (window.TEAM_LOGOS && window.TEAM_LOGOS.nhl) || window.NHL_TEAM_LOGOS || {},
+    };
 
-    // Fallback async fetch for team_logos.json if window.MLB_TEAM_LOGOS is not populated
-    if (Object.keys(teamLogosMap).length === 0) {
+    // Fallback async fetch for team_logos.json if window globals are not yet populated
+    if (Object.keys(teamLogosMap.mlb).length === 0 && Object.keys(teamLogosMap.nhl).length === 0) {
         fetch("/static/team_logos.json")
             .then(res => res.ok ? res.json() : null)
             .then(data => {
                 if (data) {
-                    teamLogosMap = data;
+                    if (data.mlb || data.nhl) {
+                        teamLogosMap = {
+                            mlb: data.mlb || {},
+                            nhl: data.nhl || {},
+                        };
+                    } else {
+                        // Flat format fallback
+                        teamLogosMap = {
+                            mlb: data,
+                            nhl: {},
+                        };
+                    }
                 }
             })
             .catch(() => {});
@@ -188,23 +203,54 @@
 
     /**
      * Resolve the logo image URL for a given team and league.
+     * Routes NHL teams to /static/nhl_team_logos/ and MLB teams to /static/mlb_team_logos/.
      * Returns null if no logo is available.
+     *
+     * @param {string} teamName - Full or shortened team name / nickname
+     * @param {string} [leagueKey] - League or sport identifier (e.g. "NHL", "MLB", "Hockey")
+     * @returns {string|null} URL to the team logo or null
      */
     function getTeamLogoUrl(teamName, leagueKey) {
         if (!teamName) return null;
         const clean = String(teamName).toLowerCase().trim();
-        const map = teamLogosMap || window.MLB_TEAM_LOGOS || {};
+        const lKey = leagueKey ? String(leagueKey).toLowerCase().trim() : "";
 
-        // Direct key match
-        if (map[clean]) {
-            return `/static/mlb_team_logos/${map[clean]}`;
+        const mlbMap = (teamLogosMap && teamLogosMap.mlb) || window.MLB_TEAM_LOGOS || {};
+        const nhlMap = (teamLogosMap && teamLogosMap.nhl) || window.NHL_TEAM_LOGOS || {};
+
+        function matchInMap(map) {
+            if (!map) return null;
+            // 1. Direct exact key match
+            if (map[clean]) return map[clean];
+            // 2. Name ends with known key (e.g. "ARI Diamondbacks" -> "diamondbacks", "EDM Oilers" -> "oilers")
+            for (const [key, filename] of Object.entries(map)) {
+                if (clean === key || clean.endsWith(` ${key}`) || clean.endsWith(key)) {
+                    return filename;
+                }
+            }
+            return null;
         }
 
-        // Match if clean name ends with a known key (e.g. "ARI Diamondbacks" -> ends with "diamondbacks")
-        for (const [key, filename] of Object.entries(map)) {
-            if (clean.endsWith(` ${key}`) || clean.endsWith(key)) {
-                return `/static/mlb_team_logos/${filename}`;
-            }
+        const isNhl = lKey.includes("nhl") || lKey.includes("hockey");
+        const isMlb = lKey.includes("mlb") || lKey.includes("baseball");
+
+        if (isNhl) {
+            const hit = matchInMap(nhlMap);
+            if (hit) return `/static/nhl_team_logos/${hit}`;
+        } else if (isMlb) {
+            const hit = matchInMap(mlbMap);
+            if (hit) return `/static/mlb_team_logos/${hit}`;
+        } else {
+            // League not specified or unrecognized:
+            // Check direct exact match first to prevent ambiguous nickname collisions (e.g. "rangers")
+            if (nhlMap[clean]) return `/static/nhl_team_logos/${nhlMap[clean]}`;
+            if (mlbMap[clean]) return `/static/mlb_team_logos/${mlbMap[clean]}`;
+
+            // Suffix match fallback
+            const nhlHit = matchInMap(nhlMap);
+            if (nhlHit) return `/static/nhl_team_logos/${nhlHit}`;
+            const mlbHit = matchInMap(mlbMap);
+            if (mlbHit) return `/static/mlb_team_logos/${mlbHit}`;
         }
 
         return null;
@@ -251,7 +297,7 @@
             targetTeam = selection;
         }
 
-        const logoUrl = getTeamLogoUrl(targetTeam, opp.league_key);
+        const logoUrl = getTeamLogoUrl(targetTeam, opp.league_key || opp.sport_key);
         if (logoUrl) {
             return `<div class="selection-info"><img class="selection-logo" src="${logoUrl}" alt="${esc(targetTeam)}" onerror="this.style.display='none'"><span>${esc(selection)}</span>${suffix}</div>`;
         }
@@ -375,9 +421,9 @@
             <div class="card-header">
                 <div>
                     <div class="card-game">
-                        ${renderTeamBadge(opp.home_team, opp.league_key, "left")}
+                        ${renderTeamBadge(opp.home_team, opp.league_key || opp.sport_key, "left")}
                         <span class="game-vs">vs</span>
-                        ${renderTeamBadge(opp.away_team, opp.league_key, "right")}
+                        ${renderTeamBadge(opp.away_team, opp.league_key || opp.sport_key, "right")}
                     </div>
                     <div class="card-meta">
                         <span class="tag tag-sport">${esc(opp.sport_key)} / ${esc(opp.league_key)}</span>

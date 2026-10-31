@@ -87,8 +87,8 @@ def test_caesars_http_reference_parsing(sample_home_json):
     assert parser.reference_data["selections"]["sel-301"]["market_id"] == "market-200"
 
 
-def test_caesars_handshake_reset():
-    """Handshake 0x23 byte resets AliasStateStore on new connection."""
+def test_caesars_handshake_preserves_alias_state():
+    """Handshake 0x23 frame acknowledges connection without clearing active alias state."""
     parser = CaesarsParser()
     parser.store.set("aabbcc", b"\x01\x02\x03")
     parser.store.set_uuid("aabbcc", "some-uuid")
@@ -99,8 +99,9 @@ def test_caesars_handshake_reset():
     updates = parser.handle_ws_frame(handshake_payload)
 
     assert updates == []
-    assert not parser.store.contains("aabbcc")
-    assert parser.store.get_uuid("aabbcc") is None
+    assert parser.stats["handshakes"] == 1
+    assert parser.store.contains("aabbcc")
+    assert parser.store.get_uuid("aabbcc") == "some-uuid"
 
 
 def test_caesars_socket_close_reset():
@@ -249,3 +250,229 @@ def test_caesars_cbor_name_fallback():
     assert len(updates) == 1
     assert updates[0].raw_selection == "Baltimore Orioles"
     assert updates[0].odds_value == 4.0
+
+
+def test_caesars_handle_full_state_invalid_cbor_does_not_poison_store():
+    """Verify that if a full-state frame fails to decode, the corrupt bytes are NOT stored."""
+    from datetime import datetime, timezone
+    parser = CaesarsParser()
+    alias = "8d7cf9"
+    # Pass undecodable garbage bytes
+    bad_bytes = b"\xff\xff\xff\xff"
+    res = parser._handle_full_state(alias, bad_bytes, datetime.now(timezone.utc))
+    assert res == []
+    # CRITICAL: alias MUST NOT be stored in store!
+    assert not parser.store.contains(alias)
+
+
+def test_caesars_dynamic_market_line_update_reflects_in_selection():
+    """Verify that a market line update (e.g. Total 5.5 -> 6.5) updates enrichment
+    and that selection odds updates reflect the updated line (preventing phantom arbs)."""
+    from datetime import datetime, timezone
+    import cbor2
+    parser = CaesarsParser()
+
+    # Pre-game: Devils vs Flyers Total Goals 5.5
+    parser.reference_data["events"]["ev-devils"] = {
+        "name": "Philadelphia Flyers at New Jersey Devils",
+        "sport_code": "Hockey",
+        "league_name": "NHL",
+        "start_time": "2026-10-01T23:00:00Z",
+    }
+    parser.reference_data["markets"]["mkt-total"] = {
+        "name": "Total Goals",
+        "handicap": 5.5,
+        "event_id": "ev-devils",
+    }
+    parser.reference_data["selections"]["sel-under"] = {
+        "name": "Under",
+        "market_id": "mkt-total",
+        "type": "under",
+    }
+
+    # Market moves to 6.5 in live play via WebSocket
+    mkt_cbor = cbor2.dumps({
+        "id": "mkt-total",
+        "name": "|Total Goals Live|",
+        "line": 6.5,
+        "templateId": 1234,
+        "marketCode": "TOTAL_GOALS",
+    })
+    parser._handle_full_state("alias_mkt", mkt_cbor, datetime.now(timezone.utc))
+
+    # Reference data line must now be 6.5
+    assert parser.reference_data["markets"]["mkt-total"]["handicap"] == 6.5
+
+    # Selection price update arrives for Under @ +127 (decimal 2.27)
+    sel_cbor = cbor2.dumps({
+        "id": "sel-under",
+        "name": "|Under|",
+        "price": {"a": 127, "d": 2.27},
+    })
+    updates = parser._handle_full_state("alias_sel", sel_cbor, datetime.now(timezone.utc))
+
+    assert len(updates) == 1
+    # Line MUST be 6.5, NOT the stale 5.5!
+    assert updates[0].raw_line == 6.5
+    assert updates[0].odds_value == 2.27
+
+
+def test_caesars_delta_failure_preserves_alias_in_store():
+    """Verify that if a delta fails to apply, the alias is NOT evicted from store
+    because Caesars only establishes topic aliases once per session."""
+    from datetime import datetime, timezone
+    parser = CaesarsParser()
+    alias = "8ea710"
+    original_cbor = b"\xa1\x62id\x01"
+    parser.store.set(alias, original_cbor)  # {"id": 1}
+    assert parser.store.contains(alias)
+
+    # Pass corrupt delta payload that causes apply_binary_delta or decode to fail
+    corrupt_delta = b"\xff\xff\xff\xff"
+    res = parser._handle_binary_delta(alias, corrupt_delta, datetime.now(timezone.utc))
+    assert res == []
+    # Alias must be preserved in store so subsequent deltas can still be received
+    assert parser.store.contains(alias)
+    assert parser.store.get(alias) == original_cbor
+
+
+def test_caesars_american_odds_fallback():
+    """Verify that if decimal odds 'd' is missing, American odds 'a' is converted."""
+    from datetime import datetime, timezone
+    parser = CaesarsParser()
+    parser.reference_data["events"]["ev-1"] = {
+        "name": "Boston Bruins at New York Rangers",
+        "sport_code": "Ice Hockey",
+        "league_name": "NHL",
+        "start_time": "2026-10-02T00:00:00Z",
+    }
+    parser.reference_data["markets"]["mkt-1"] = {
+        "name": "Money Line",
+        "event_id": "ev-1",
+        "handicap": None,
+    }
+    parser.reference_data["selections"]["sel-1"] = {
+        "name": "Boston Bruins",
+        "market_id": "mkt-1",
+        "type": "away",
+    }
+
+    # Selection with only American odds "a": +150 (decimal 2.5)
+    obj = {
+        "id": "sel-1",
+        "name": "|Boston Bruins|",
+        "price": {"a": 150},
+    }
+    updates = parser._build_odds_update(obj, "sel-1", datetime.now(timezone.utc))
+    assert len(updates) == 1
+    assert updates[0].odds_value == 2.5
+    assert updates[0].odds_format == "decimal"
+
+
+def test_caesars_event_object_ignored_for_odds_and_tracks_uuid():
+    """Verify that event objects received via WS return [] for odds and map alias to UUID."""
+    from datetime import datetime, timezone
+    import cbor2
+    parser = CaesarsParser()
+    ev_cbor = cbor2.dumps({
+        "id": "ev-live-1",
+        "started": True,
+        "tradedInPlay": True,
+        "state": "open",
+    })
+    updates = parser._handle_full_state("alias_ev", ev_cbor, datetime.now(timezone.utc))
+    assert updates == []
+    assert parser.store.get_uuid("alias_ev") == "ev-live-1"
+
+
+def test_caesars_handicap_inversion_for_away_team():
+    """Verify that Caesars spread/puck line handicaps are inverted for away selections,
+    while home selections and totals markets remain unchanged."""
+    from datetime import datetime, timezone
+    parser = CaesarsParser()
+
+    # Setup fixture: Edmonton Oilers (Home) vs Vancouver Canucks (Away)
+    parser.reference_data["events"]["ev-puck"] = {
+        "name": "Vancouver Canucks at Edmonton Oilers",
+        "sport_code": "Ice Hockey",
+        "league_name": "NHL",
+        "start_time": "2026-10-02T02:15:00Z",
+    }
+    # Market line -1.5: Edmonton Oilers is favored by 1.5 goals
+    parser.reference_data["markets"]["mkt-puck"] = {
+        "name": "Puck Line Live",
+        "handicap": -1.5,
+        "event_id": "ev-puck",
+    }
+    parser.reference_data["selections"]["sel-edm"] = {
+        "name": "Edmonton Oilers",
+        "market_id": "mkt-puck",
+        "type": "home",
+    }
+    parser.reference_data["selections"]["sel-van"] = {
+        "name": "Vancouver Canucks",
+        "market_id": "mkt-puck",
+        "type": "away",
+    }
+
+    # 1. Home selection: Edmonton Oilers -> -1.5
+    edm_update = parser._build_odds_update(
+        {"id": "sel-edm", "name": "|Edmonton Oilers|", "price": {"d": 2.95}},
+        "sel-edm",
+        datetime.now(timezone.utc),
+    )
+    assert len(edm_update) == 1
+    assert edm_update[0].raw_line == -1.5
+    assert edm_update[0].raw_selection == "Edmonton Oilers"
+
+    # 2. Away selection: Vancouver Canucks -> +1.5 (inverted)
+    van_update = parser._build_odds_update(
+        {"id": "sel-van", "name": "|Vancouver Canucks|", "price": {"d": 1.40}},
+        "sel-van",
+        datetime.now(timezone.utc),
+    )
+    assert len(van_update) == 1
+    assert van_update[0].raw_line == 1.5
+    assert van_update[0].raw_selection == "Vancouver Canucks"
+
+    # 3. Fallback when type is missing: name matches away_team
+    parser.reference_data["selections"]["sel-van-notype"] = {
+        "name": "Vancouver Canucks",
+        "market_id": "mkt-puck",
+    }
+    van_notype_update = parser._build_odds_update(
+        {"id": "sel-van-notype", "name": "|Vancouver Canucks|", "price": {"d": 1.40}},
+        "sel-van-notype",
+        datetime.now(timezone.utc),
+    )
+    assert len(van_notype_update) == 1
+    assert van_notype_update[0].raw_line == 1.5
+
+    # 4. Totals market: line must NOT be inverted for Over or Under
+    parser.reference_data["markets"]["mkt-tot"] = {
+        "name": "Total Goals Live",
+        "handicap": 6.5,
+        "event_id": "ev-puck",
+    }
+    parser.reference_data["selections"]["sel-over"] = {
+        "name": "Over",
+        "market_id": "mkt-tot",
+        "type": "over",
+    }
+    parser.reference_data["selections"]["sel-under"] = {
+        "name": "Under",
+        "market_id": "mkt-tot",
+        "type": "under",
+    }
+    over_update = parser._build_odds_update(
+        {"id": "sel-over", "name": "|Over|", "price": {"d": 1.85}},
+        "sel-over",
+        datetime.now(timezone.utc),
+    )
+    under_update = parser._build_odds_update(
+        {"id": "sel-under", "name": "|Under|", "price": {"d": 1.95}},
+        "sel-under",
+        datetime.now(timezone.utc),
+    )
+    assert over_update[0].raw_line == 6.5
+    assert under_update[0].raw_line == 6.5

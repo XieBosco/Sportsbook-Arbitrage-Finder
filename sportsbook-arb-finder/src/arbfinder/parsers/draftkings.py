@@ -3,6 +3,7 @@
 import base64
 import json
 import logging
+from pathlib import Path
 import re
 from datetime import datetime, timezone
 
@@ -19,15 +20,33 @@ logger = logging.getLogger(__name__)
 # see draftkings.md §4 — core-ID fallback
 # DraftKings IDs look like: 0OU85458301O850_1 (Prefix + CoreID + Handicap)
 _CORE_ID_RE = re.compile(r"^0[A-Z]{2}(\d+)")
+_B64_CLEAN_RE = re.compile(r"[^a-zA-Z0-9+/=]")
 
-_HANDICAP_MARKET_TYPES = {
-    "Spread",
-    "Total",
-    "Run Line",
-    "Total Runs",
-    "Point Spread",
-    "Total Points",
-}
+_MAPS_DIR = Path(__file__).resolve().parent.parent / "normalization" / "maps"
+
+
+def _load_handicap_market_types(map_path: Path | None = None) -> set[str]:
+    """Load handicap/line-based market types for DraftKings from normalization/maps."""
+    path = map_path or (_MAPS_DIR / "market_type_map.json")
+    types: set[str] = set()
+    if path.exists():
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for canonical, book_map in data.items():
+                if canonical == "moneyline":
+                    continue
+                dk_names = book_map.get("DraftKings")
+                if isinstance(dk_names, str):
+                    types.add(dk_names)
+                elif isinstance(dk_names, (list, tuple, set)):
+                    types.update(dk_names)
+        except Exception as e:
+            logger.warning("Failed to load handicap market types from %s: %s", path, e)
+    return types
+
+
+_HANDICAP_MARKET_TYPES = _load_handicap_market_types()
 
 
 class DraftKingsParser(BookParser):
@@ -81,7 +100,7 @@ class DraftKingsParser(BookParser):
 
     def _decode_payload(self, b64_payload: str) -> list:
         # Clean the string
-        cleaned = re.sub(r"[^a-zA-Z0-9+/=]", "", b64_payload)
+        cleaned = _B64_CLEAN_RE.sub("", b64_payload)
         # Add padding if necessary
         cleaned += "=" * ((4 - len(cleaned) % 4) % 4)
 
@@ -113,10 +132,10 @@ class DraftKingsParser(BookParser):
                 and isinstance(obj[-2], list)
             ):
                 outcomes.append(obj)
-
-            # Traverse recursively
-            for item in obj:
-                outcomes.extend(self._find_outcomes(item))
+            else:
+                # Traverse recursively only if this list is not an outcome leaf node
+                for item in obj:
+                    outcomes.extend(self._find_outcomes(item))
 
         elif isinstance(obj, dict):
             for k, v in obj.items():
@@ -158,49 +177,14 @@ class DraftKingsParser(BookParser):
         if event_name != "Unknown Game":
             return event_id, event_meta
 
-        core_id_match = _CORE_ID_RE.search(selection_id)
-        if core_id_match:
-            core_id = core_id_match.group(1)
-            
-            # O(1) Optimized Inference: construct the expected market_id directly
-            inferred_market_id = ""
-            if selection_id.startswith("0ML"):
-                inferred_market_id = f"1_{core_id}"
-            elif selection_id.startswith("0HC"):
-                inferred_market_id = f"2_{core_id}"
-            elif selection_id.startswith("0OU"):
-                inferred_market_id = f"3_{core_id}"
-                
-            if inferred_market_id:
-                fallback_meta = self.reference_data["markets"].get(inferred_market_id, {})
-                fallback_event_id = fallback_meta.get("eventId", "")
-                if fallback_event_id in self.reference_data["events"]:
-                    event_id = fallback_event_id
-                    event_meta = self.reference_data["events"][fallback_event_id]
-                    event_name = event_meta.get("name", "Unknown Game")
-                    # Cache it for future updates
-                    self.reference_data["selections"][selection_id] = inferred_market_id
-                    
-            # If inference didn't work, fall back to O(N) scan of known selections
-            if event_name == "Unknown Game":
-                for known_sel_id, known_market_id in self.reference_data["selections"].items():
-                    if core_id in known_sel_id:
-                        fallback_meta = self.reference_data["markets"].get(known_market_id, {})
-                        fallback_event_id = fallback_meta.get("eventId", "")
-                        if fallback_event_id in self.reference_data["events"]:
-                            event_id = fallback_event_id
-                            event_meta = self.reference_data["events"][fallback_event_id]
-                            event_name = event_meta.get("name", "Unknown Game")
-                            break
-
-        # If STILL unknown, try the string-matching heuristic for Spreads/Moneylines
-        if event_name == "Unknown Game":
+        # Fall back to string-matching heuristic for Spreads/Moneylines
+        clean_selection = (
+            selection_name.replace("Over ", "").replace("Under ", "").strip()
+        )
+        if clean_selection:
             for known_id, known_meta in self.reference_data["events"].items():
                 known_game = known_meta.get("name", "")
-                clean_selection = (
-                    selection_name.replace("Over ", "").replace("Under ", "").strip()
-                )
-                if clean_selection and clean_selection in known_game:
+                if clean_selection in known_game:
                     event_meta = known_meta
                     event_id = known_id
                     break
@@ -209,10 +193,51 @@ class DraftKingsParser(BookParser):
 
     @staticmethod
     def _resolve_handicap(market_type: str, outcome: list) -> float | None:
-        if market_type in _HANDICAP_MARKET_TYPES:
+        if (
+            market_type in _HANDICAP_MARKET_TYPES
+            or (len(outcome) > 0 and str(outcome[0]).startswith(("0HC", "0OU")))
+        ):
             if len(outcome) > 4 and isinstance(outcome[4], (int, float)):
                 return float(outcome[4])
         return None
+
+    def _resolve_market_id(self, selection_id: str, outcome: list) -> str:
+        """Resolve market ID for a selection, using dictionary lookups and core-ID inference."""
+        market_id = self.reference_data["selections"].get(selection_id, "")
+        if market_id:
+            return market_id
+
+        core_id_match = _CORE_ID_RE.search(selection_id)
+        if core_id_match:
+            core_id = core_id_match.group(1)
+            candidate = ""
+            if selection_id.startswith("0ML"):
+                candidate = f"1_{core_id}"
+            elif selection_id.startswith("0HC"):
+                candidate = f"2_{core_id}"
+            elif selection_id.startswith("0OU"):
+                candidate = f"3_{core_id}"
+
+            if candidate and candidate in self.reference_data["markets"]:
+                self.reference_data["selections"][selection_id] = candidate
+                return candidate
+
+            for known_sel_id, known_m_id in self.reference_data["selections"].items():
+                if core_id in known_sel_id:
+                    self.reference_data["selections"][selection_id] = known_m_id
+                    return known_m_id
+
+        if len(outcome) > 0 and isinstance(outcome[-1], str) and outcome[-1] != selection_id:
+            potential_market = outcome[-1]
+            if potential_market in self.reference_data["markets"]:
+                self.reference_data["selections"][selection_id] = potential_market
+                return potential_market
+            if potential_market in self.reference_data["selections"]:
+                mapped_m_id = self.reference_data["selections"][potential_market]
+                self.reference_data["selections"][selection_id] = mapped_m_id
+                return mapped_m_id
+
+        return ""
 
     def handle_ws_frame(self, payload: str) -> list[OddsUpdate]:
         """Parse a raw WebSocket frame payload."""
@@ -234,14 +259,7 @@ class DraftKingsParser(BookParser):
             if raw_odds is None:
                 continue
 
-            market_id = self.reference_data["selections"].get(selection_id, "")
-
-            # Some updates have the market_id as the last element of the outcome array!
-            if not market_id and len(outcome) > 0 and isinstance(outcome[-1], str):
-                potential_market = str(outcome[-1])
-                if potential_market != selection_id:
-                    market_id = potential_market
-
+            market_id = self._resolve_market_id(selection_id, outcome)
             market_meta = self.reference_data["markets"].get(market_id)
             if not market_meta:
                 market_meta = {}

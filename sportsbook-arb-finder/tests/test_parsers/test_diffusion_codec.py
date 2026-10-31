@@ -13,6 +13,7 @@ from arbfinder.parsers.diffusion_codec import (
     find_alias_and_cbor_type04,
     find_alias_and_cbor_type84,
     parse_type05,
+    parse_type85,
 )
 
 
@@ -233,3 +234,151 @@ def test_alias_state_store_uuid_and_reset():
     assert store.get(alias) is None
     assert store.get_uuid(alias) is None
     assert not store.contains(alias)
+
+
+def test_apply_binary_delta_multi_jump_copy():
+    """Verify deltas containing consecutive jump/copy operations without intermediate bytes (e.g. deletions)."""
+    # Base buffer: 20 bytes
+    old_buf = b"0123456789ABCDEFGHIJ"
+    # Delta: copy 5, insert b'XYZ', jump to 8, copy 2, jump to 15, copy 3
+    # items: [5, b'XYZ', 8, 2, 15, 3]
+    # Expected result: old[0:5] ('01234') + b'XYZ' + old[8:10] ('89') + old[15:18] ('FGH')
+    # = b'01234XYZ89FGH'
+    from arbfinder.parsers.diffusion_codec import apply_binary_delta
+    import cbor2
+    # Encode items as CBOR stream
+    payload = bytearray()
+    for it in [5, b"XYZ", 8, 2, 15, 3]:
+        payload.extend(cbor2.dumps(it))
+
+    new_buf = apply_binary_delta(old_buf, bytes(payload))
+    assert new_buf == b"01234XYZ89FGH"
+
+
+def test_cbor_semantic_tag_and_undefined():
+    # Major type 6: Tag 0 (standard datetime string) wrapping text string "2026-10-01T00:00:00Z"
+    # Tag 0 is 0xC0
+    import cbor2
+    tagged_bytes = cbor2.dumps(cbor2.CBORTag(0, "2026-10-01T00:00:00Z"))
+    val, pos = decode_cbor_item(tagged_bytes, 0)
+    assert val == "2026-10-01T00:00:00Z"
+    assert pos == len(tagged_bytes)
+
+    # Major type 7: simple value 23 (undefined) -> returns None
+    assert decode_cbor_item(bytes([0xF7]), 0) == (None, 1)
+
+
+def test_find_alias_and_cbor_type84_validation():
+    # Valid compressed CBOR dict
+    import cbor2
+    cbor_data = cbor2.dumps({"id": "market-1", "line": 6.5})
+    compressed = zlib.compress(cbor_data)
+    # 0x84 frame with 2-byte alias b'\x8d\x7c'
+    frame = b"\x84\x00\x8d\x7c" + compressed
+    alias, decoded = find_alias_and_cbor_type84(frame)
+    assert alias == "8d7c"
+    assert decoded == cbor_data
+
+    # Frame with zlib header that decompresses into non-CBOR garbage
+    bad_compressed = zlib.compress(b"not valid cbor at all!")
+    bad_frame = b"\x84\x00\x8d\x7c" + bad_compressed
+    bad_alias, bad_decoded = find_alias_and_cbor_type84(bad_frame)
+    assert bad_alias is None
+    assert bad_decoded is None
+
+
+def test_parse_type85():
+    # 0x85 compressed delta
+    delta_bytes = b"\x18\x64\x43XYZ"
+    compressed_delta = zlib.compress(delta_bytes)
+    frame = b"\x85\x00\x8d\x7c\x00" + compressed_delta
+    alias, payload = parse_type85(frame)
+    assert alias == "8d7c"
+    assert payload == delta_bytes
+
+
+def test_cbor_indefinite_length_handling():
+    # 0xBF is indefinite-length map, terminated by 0xFF
+    # e.g., 0xBF, 0x62, 'i', 'd', 0x01, 0xFF -> {"id": 1}
+    indef_map = bytes([0xBF, 0x62, ord('i'), ord('d'), 0x01, 0xFF])
+    obj, pos = decode_cbor_item(indef_map, 0)
+    assert obj == {"id": 1}
+    assert pos == len(indef_map)
+
+    # 0x9F is indefinite-length array: 0x9F, 0x01, 0x02, 0xFF -> [1, 2]
+    indef_arr = bytes([0x9F, 0x01, 0x02, 0xFF])
+    arr, pos = decode_cbor_item(indef_arr, 0)
+    assert arr == [1, 2]
+    assert pos == len(indef_arr)
+
+
+def test_cbor_unhashable_map_key_handled():
+    # Construct a CBOR map where key is a dict: 0xA1, 0xA1, 0x61, 'a', 0x01, 0x02
+    # which is {{"a": 1}: 2}
+    map_with_dict_key = bytes([0xA1, 0xA1, 0x61, ord('a'), 0x01, 0x02])
+    obj, pos = decode_cbor_item(map_with_dict_key, 0)
+    assert isinstance(obj, dict)
+    assert "{'a': 1}" in obj
+    assert obj["{'a': 1}"] == 2
+
+
+def test_find_alias_and_cbor_type04_requires_map():
+    # Create a message where byte 4 looks like a tag (0xdf) or int, but the actual map starts at offset 5
+    raw_cbor = bytes([0xA1, 0x62, 0x69, 0x64, 0x01])  # {"id": 1}
+    # Alias is 3 bytes: fa 70 df
+    msg = bytes([0x04, 0x00, 0xFA, 0x70, 0xDF]) + raw_cbor
+    alias, cbor_bytes = find_alias_and_cbor_type04(msg)
+    assert alias == "fa70df"
+    assert cbor_bytes == raw_cbor
+
+
+def test_parse_type05_with_internal_zero():
+    # Alias with internal zero: 8e a7 00, delimiter at index 5: 00
+    msg = bytes([0x05, 0x00, 0x8E, 0xA7, 0x00, 0x00, 0x18, 0x2A])
+    alias, payload = parse_type05(msg)
+    assert alias == "8ea700"
+    assert payload == bytes([0x18, 0x2A])
+
+
+def test_alias_state_store_remove():
+    store = AliasStateStore()
+    store.set("8ea710", b"test")
+    store.set_uuid("8ea710", "uuid-123")
+    assert store.contains("8ea710")
+    assert store.get_uuid("8ea710") == "uuid-123"
+
+    store.remove("8ea710")
+    assert not store.contains("8ea710")
+    assert store.get("8ea710") is None
+    assert store.get_uuid("8ea710") is None
+
+
+def test_cbor_indefinite_map_break_code_before_value():
+    """Verify indefinite-length map terminates cleanly when 0xFF break code follows key without value."""
+    # 0xBF, text 'a', int 1, text 'b', 0xFF -> {'a': 1}
+    raw = bytes([0xBF, 0x61, ord('a'), 0x01, 0x61, ord('b'), 0xFF])
+    obj, pos = decode_cbor_item(raw, 0)
+    assert obj == {"a": 1}
+    assert pos == len(raw)
+
+
+def test_cbor_nested_indefinite_map_with_break_code():
+    """Exact reproduction test for live Caesars alias crash: nested indefinite map with trailing 0xFF."""
+    # Outer indef map (0xBF), key "foo", inner indef map (0xBF), key "bar", break (0xFF), outer break (0xFF)
+    payload = b"\xbf\x63foo\xbf\x63bar\xff\xff"
+    obj, pos = decode_cbor_item(payload, 0)
+    assert obj == {"foo": {}}
+    assert pos == len(payload)
+
+
+def test_cbor_fallback_to_cbor2_complex_structure():
+    """Verify cbor2 fallback handles complex CBOR types (e.g. 1-byte simple values) transparently."""
+    import cbor2
+    # Simple value 32 (major 7, additional 24, next byte 32): 0xF8, 0x20
+    cbor_bytes = bytes([0xF8, 0x20])
+    decoded, pos = decode_cbor_item(cbor_bytes, 0)
+    assert decoded == cbor2.CBORSimpleValue(32)
+    assert pos == len(cbor_bytes)
+
+
+

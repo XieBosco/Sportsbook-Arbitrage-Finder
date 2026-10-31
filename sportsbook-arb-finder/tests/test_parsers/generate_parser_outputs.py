@@ -16,7 +16,7 @@ from arbfinder.parsers.fanduel import FanDuelParser
 
 # FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "..", "fixtures")
 # FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "..", "../scripts/data")
-FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "..", "../scripts/data2")
+FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "..", "../scripts/nhl_data")
 OUTPUTS_DIR = os.path.dirname(__file__)
 
 

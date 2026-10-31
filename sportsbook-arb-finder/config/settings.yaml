@@ -40,7 +40,7 @@ books:
 # Arbitrage parameters (from original config.yaml)
 arbitrage:
   total_bet_amount: 100.0
-  unit_size: 100.0
+  unit_size: 300.0
   stake_calculating_method: 2    # 1 = total_bet_amount, 2 = unit_size
   mainlines_only: true
   kelly_bankroll: 1000.0
@@ -54,7 +54,7 @@ scanner:
   min_legs_required: 2
   excluded_book_pairs: []
   excluded_books: ["BetMGM"]
-  excluded_markets: ["total", "run_line"]    # markets include: "moneyline", "total", "run_line"
+  excluded_markets: []    # markets include: "moneyline", "total", "run_line"
 
 # Output sinks
 sinks:
