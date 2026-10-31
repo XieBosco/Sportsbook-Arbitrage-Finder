@@ -19,7 +19,7 @@ counters = {
 }
 
 # Base dir should be 'data' in the scripts folder
-BASE_DIR = os.path.join(os.path.dirname(__file__), "data2")
+BASE_DIR = os.path.join(os.path.dirname(__file__), "nhl_data")
 
 def log_to_timeline(sb, file_type, file_name):
     with file_lock:

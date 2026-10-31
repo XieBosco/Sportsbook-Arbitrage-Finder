@@ -8,5 +8,12 @@
         "BetMGM": "MLB",
         "Betano": "1662",
         "Caesars": "MLB"
+    },
+    "NHL": {
+        "DraftKings": "42133",
+        "FanDuel": "12550521",
+        "BetMGM": "NHL",
+        "Betano": "10118",
+        "Caesars": "NHL"
     }
 }

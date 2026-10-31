@@ -3,8 +3,10 @@
 from __future__ import annotations
 
 import importlib
+import json
 import logging
 from dataclasses import dataclass
+from pathlib import Path
 
 from arbfinder.matching.bucket_store import BucketStore
 from arbfinder.matching.matcher import Matcher
@@ -28,15 +30,31 @@ __all__ = ["PipelineComponents", "build_pipeline_components"]
 
 logger = logging.getLogger(__name__)
 
-# Default expected selections by market type — matches the conventions
-# used in test_replay.py and the existing normalizer outputs.
-EXPECTED_SELECTIONS_BY_MARKET: dict[str, set[str]] = {
-    "moneyline": {"home", "away"},
-    "run_line": {"home", "away"},
-    "total": {"over", "under"},
-    "spread": {"home", "away"},
-    "two-way-handicap": {"home", "away"},
-}
+_MAPS_DIR = Path(__file__).resolve().parent.parent / "normalization" / "maps"
+
+
+def _load_expected_selections(map_path: Path | None = None) -> dict[str, set[str]]:
+    """Load expected selections by market type from normalization/maps."""
+    path = map_path or (_MAPS_DIR / "expected_selections_map.json")
+    if path.exists():
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            return {market: set(selections) for market, selections in data.items()}
+        except Exception as e:
+            logger.warning("Failed to load expected selections from %s: %s", path, e)
+    # Fallback dictionary if map file cannot be loaded
+    return {
+        "moneyline": {"home", "away"},
+        "run_line": {"home", "away"},
+        "puck_line": {"home", "away"},
+        "total": {"over", "under"},
+        "spread": {"home", "away"},
+        "two-way-handicap": {"home", "away"},
+    }
+
+
+EXPECTED_SELECTIONS_BY_MARKET: dict[str, set[str]] = _load_expected_selections()
 
 # Dedup cooldown — how long before re-alerting on the same open arb.
 # _DEDUP_COOLDOWN_SECONDS = 5.0

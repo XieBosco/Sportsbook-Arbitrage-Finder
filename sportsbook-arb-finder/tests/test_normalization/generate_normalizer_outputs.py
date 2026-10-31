@@ -18,7 +18,7 @@ from arbfinder.normalization.book_normalizers.caesars_normalizer import CaesarsN
 from arbfinder.normalization.book_normalizers.draftkings_normalizer import DraftKingsNormalizer
 from arbfinder.normalization.book_normalizers.fanduel_normalizer import FanDuelNormalizer
 
-FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "..", "../scripts/data2")
+FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "..", "../scripts/nhl_data")
 # FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "..", "fixtures")
 OUTPUTS_DIR = os.path.dirname(__file__)
 
@@ -106,7 +106,7 @@ def main():
             raw = f.read().strip()
         parsed = parser.handle_ws_frame(raw + "\x1e")
         for p in parsed:
-            if p.raw_league_name == "1662":
+            if p.raw_league_name == "10118":
                 updates.append(p)
     all_normalized_updates.extend(normalizer.normalize_batch(updates))
 

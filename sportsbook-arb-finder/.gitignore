@@ -1,5 +1,6 @@
 scripts/data/
 scripts/data2/
+scripts/nhl_data/
 
 # Python bytecode & cache
 __pycache__/

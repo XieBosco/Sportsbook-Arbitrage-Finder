@@ -44,3 +44,36 @@ def test_websocket_connect(client: TestClient):
         # Connection succeeded — verify health shows 1 client
         resp = client.get("/health")
         assert resp.json()["connected_clients"] == 1
+
+
+def test_static_team_logos_json_served(client: TestClient):
+    resp = client.get("/static/team_logos.json")
+    assert resp.status_code == 200
+    assert "application/json" in resp.headers["content-type"]
+    data = resp.json()
+    assert "mlb" in data
+    assert "nhl" in data
+    assert "boston bruins" in data["nhl"]
+    assert "vegas golden knights" in data["nhl"]
+    assert "new york yankees" in data["mlb"]
+
+
+def test_static_team_logos_js_served(client: TestClient):
+    resp = client.get("/static/team_logos.js")
+    assert resp.status_code == 200
+    assert "MLB_TEAM_LOGOS" in resp.text
+    assert "NHL_TEAM_LOGOS" in resp.text
+    assert "TEAM_LOGOS" in resp.text
+
+
+def test_static_nhl_and_mlb_logo_images_served(client: TestClient):
+    # Test NHL logo
+    nhl_resp = client.get("/static/nhl_team_logos/boston_bruins.png")
+    assert nhl_resp.status_code == 200
+    assert "image/png" in nhl_resp.headers["content-type"]
+
+    # Test MLB logo
+    mlb_resp = client.get("/static/mlb_team_logos/new_york_yankees.png")
+    assert mlb_resp.status_code == 200
+    assert "image/png" in mlb_resp.headers["content-type"]
+

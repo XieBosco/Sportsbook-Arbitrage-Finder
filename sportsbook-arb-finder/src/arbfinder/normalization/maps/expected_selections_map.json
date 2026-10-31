@@ -1,0 +1,34 @@
+{
+    "moneyline": [
+        "home",
+        "away"
+    ],
+    "run_line": [
+        "home",
+        "away"
+    ],
+    "puck_line": [
+        "home",
+        "away"
+    ],
+    "total": [
+        "over",
+        "under"
+    ],
+    "spread": [
+        "home",
+        "away"
+    ],
+    "two-way-handicap": [
+        "home",
+        "away"
+    ],
+    "f5_run_line": [
+        "home",
+        "away"
+    ],
+    "f5_total": [
+        "over",
+        "under"
+    ]
+}

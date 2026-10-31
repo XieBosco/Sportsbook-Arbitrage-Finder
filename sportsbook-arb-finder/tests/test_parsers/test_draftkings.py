@@ -115,3 +115,43 @@ def test_draftkings_unicode_minus_odds(sample_dk_ref):
     updates = parser.handle_ws_frame(b64_payload)
     assert len(updates) == 1
     assert updates[0].odds_value == "\u2212248"
+
+
+def test_draftkings_puck_line_parsing():
+    """Verify that Puck Line market handicap and core ID resolution work properly."""
+    parser = DraftKingsParser()
+    ref_data = {
+        "events": [
+            {"id": "34400015", "name": "VAN Canucks @ EDM Oilers", "sportId": "8", "leagueId": "42133"}
+        ],
+        "markets": [
+            {"id": "2_86518832", "eventId": "34400015", "name": "Puck Line"}
+        ],
+        "selections": [
+            {"id": "0HC86518832P150_3", "marketId": "2_86518832"}
+        ]
+    }
+    parser.handle_http_body("test_url", json.dumps(ref_data))
+
+    # A dynamic puck line selection not yet in reference selections: 0HC86518832N150_3
+    outcome = [
+        "0HC86518832N150_3",
+        "VAN Canucks",
+        ["−166", "1.60"],
+        None,
+        -1.5,
+        ["Puck Line"],
+        "0HC86518832P150_3"  # last element is sibling selection ID
+    ]
+    packed = msgpack.packb([outcome])
+    b64_payload = base64.b64encode(packed).decode("ascii")
+
+    updates = parser.handle_ws_frame(b64_payload)
+    assert len(updates) == 1
+    assert updates[0].raw_market_type == "Puck Line"
+    assert updates[0].raw_line == -1.5
+    assert updates[0].raw_market_id == "2_86518832"
+    assert updates[0].raw_event_id == "34400015"
+    assert updates[0].raw_home_team == "EDM Oilers"
+    assert updates[0].raw_away_team == "VAN Canucks"
+

@@ -34,6 +34,7 @@ from arbfinder.scanner.threshold_config import ScannerThresholds
 from arbfinder.scanner.scanner import Scanner
 
 from arbfinder.scanner.market_grouper import MarketGroupKey
+from arbfinder.pipeline.registry import EXPECTED_SELECTIONS_BY_MARKET
 
 def decimal_to_american(decimal_odds: float) -> str:
     if decimal_odds >= 2.0:
@@ -67,7 +68,7 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser(description="Replay a recorded sports betting timeline through the scanner.")
-    default_timeline = os.path.join(os.path.dirname(__file__), "..", "..", "scripts", "data2", "timeline.jsonl")
+    default_timeline = os.path.join(os.path.dirname(__file__), "..", "..", "scripts", "nhl_data", "timeline.jsonl")
     parser.add_argument("--timeline", type=str, default=default_timeline, help="Path to the timeline.jsonl file.")
     args = parser.parse_args()
 
@@ -106,13 +107,7 @@ def main():
     with open(output_file, "w") as f:
         f.write("Arbitrage Opportunities (with durations):\n")
         
-    expected = {
-        "moneyline": {"away", "home"},
-        "run_line": {"away", "home"},
-        "total": {"over", "under"},
-        "spread": {"away", "home"},
-        "two-way-handicap": {"away", "home"}
-    }
+    expected = EXPECTED_SELECTIONS_BY_MARKET
     
     scanner = Scanner(grouper, thresholds, staleness, dedup, [], expected, lambda _: 100.0)
 

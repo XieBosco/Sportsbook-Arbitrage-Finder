@@ -6,6 +6,12 @@
         "Betano": "BASE",
         "Caesars": "Baseball"
     },
+    "Hockey": {
+        "DraftKings": "8",
+        "FanDuel": "7524",
+        "Betano": "ICEH",
+        "Caesars": "Hockey"
+    },
     "Basketball": {
         "Betano": "BASK"
     },
